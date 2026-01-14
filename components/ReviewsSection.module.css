@@ -1,0 +1,160 @@
+.reviewsSection {
+    position: relative;
+    background-image: url('/images/reviews-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0;
+    min-height: 600px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.reviewsContent {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+    color: white;
+}
+
+.eyebrow {
+    color: #901820;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+    color: #1a1a1a;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    line-height: 1.2;
+    color: #1a1a1a;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    color: white;
+    /* Keep this white if it's over the dark horse area */
+}
+
+.moreLink {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.underlineLink {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* Testimonial Box 1:1 Match */
+.testimonialBox {
+    background-color: white;
+    color: #1a1a1a;
+    padding: 3rem;
+    position: relative;
+}
+
+.quoteMark {
+    color: #901820;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.quoteTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.quoteText {
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.quoteAuthor {
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.quoteLocation {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 992px) {
+    .reviewsSection {
+        padding: 4rem 0;
+        min-height: auto;
+    }
+
+    .reviewsContent {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .subtitle {
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .description {
+        margin-bottom: 2rem;
+    }
+
+    .testimonialSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonialBox {
+        padding: 2rem;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .dot,
+    .dotActive {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .dotActive {
+        background-color: white;
+    }
+}

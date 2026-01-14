@@ -1,0 +1,149 @@
+.webinarSection {
+    background-color: #f9fafb;
+    padding: 2rem 0;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.toggleButton {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.toggleButton:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    border-color: #901820;
+}
+
+.toggleButton.active {
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.buttonContent {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #901820;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.eventInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.nextEvent {
+    color: #901820;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+.eventDate {
+    font-size: 1rem;
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.iconWrapper {
+    background-color: #f3f4f6;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.active .iconWrapper {
+    transform: rotate(180deg);
+    background-color: #901820;
+    color: white;
+}
+
+.chevron {
+    transition: transform 0.3s ease;
+}
+
+.contentWrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-top: none;
+}
+
+.contentWrapper.opened {
+    max-height: 2000px;
+    transition: max-height 0.8s ease-in-out;
+}
+
+.formInner {
+    padding: 2rem 5rem 5rem 5rem;
+}
+
+.hubspotForm {
+    min-height: 400px;
+}
+
+@media (max-width: 768px) {
+    .webinarSection {
+        padding: 1rem 0;
+    }
+
+    .toggleButton {
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .formInner {
+        padding: 2rem 1.5rem;
+    }
+}

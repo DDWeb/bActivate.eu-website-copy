@@ -1,0 +1,205 @@
+.header {
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: none;
+    /* Mobile first */
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .nav {
+        display: flex;
+    }
+}
+
+
+
+.navItem {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #444;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navItem:hover {
+    color: #901820;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdownTrigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.2s;
+}
+
+.dropdown:hover .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdownItem {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    color: #444;
+    text-decoration: none;
+}
+
+.dropdownItem:hover {
+    background-color: #f9fafb;
+    color: #901820;
+}
+
+/* Header Right */
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+
+.flags {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.flagLink {
+    display: flex;
+    align-items: center;
+}
+
+.flagIcon {
+    width: 18px;
+    height: auto;
+    display: block;
+}
+
+/* Shop Button 1:1 Match */
+.shopButton {
+    background-color: #901820;
+    color: #FFFFFF;
+    font-size: 12.25px;
+    padding: 0 30px;
+    line-height: 38px;
+    height: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0;
+    /* Square corners */
+    transition: background-color 0.2s;
+}
+
+.shopButton:hover {
+    background-color: #721319;
+}
+
+/* Mobile Menu */
+.mobileMenuBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #444;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+@media (min-width: 1024px) {
+    .mobileMenuBtn {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .nav {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: white;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+        display: flex;
+        /* Override display: none from base layout */
+        z-index: 999;
+        overflow-y: auto;
+        align-items: center;
+    }
+
+    .navOpen {
+        transform: translateX(0);
+    }
+
+    .headerRight {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .shopButton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logoLink img {
+        width: 20px !important;
+        height: auto !important;
+    }
+}

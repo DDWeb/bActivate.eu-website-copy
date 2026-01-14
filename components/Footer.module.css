@@ -1,0 +1,140 @@
+.footer {
+    background-color: #1a1a1a;
+    color: #9ca3af;
+    /* Gray text by default */
+    padding: 4rem 0;
+    font-family: 'Times New Roman', serif;
+    /* Serif font as requested */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1.5fr 1fr 1fr;
+        /* First column wider */
+    }
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLogo {
+    height: 60px;
+    width: auto;
+    margin-bottom: 2rem;
+    align-self: flex-start;
+}
+
+.companyName {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    font-family: inherit;
+}
+
+.legalLinks p,
+.copyright p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.7;
+}
+
+.legalLinks {
+    margin-bottom: 2rem;
+}
+
+.copyright {
+    margin-top: 2rem;
+}
+
+.heading {
+    color: #9ca3af;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    font-family: inherit;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.contactIcon {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.contactLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socialIcon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    /* Placeholder for icon text/symbol */
+    transition: background-color 0.3s;
+}
+
+.socialIcon:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.address {
+    font-style: normal;
+    color: white;
+    line-height: 1.6;
+}
+
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linkList li {
+    margin-bottom: 1rem;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
