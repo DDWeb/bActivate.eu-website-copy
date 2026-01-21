@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -51,13 +51,13 @@ export default function Footer() {
                 <div className={styles.column}>
                     <h3 className={styles.heading}>Quick links</h3>
                     <ul className={styles.linkList}>
-                        <li><Link href="/terms-and-conditions" className={styles.link}>Terms and Conditions</Link></li>
-                        <li><Link href="/what-is-bactivate" className={styles.link}>What is bActivate?</Link></li>
-                        <li><Link href="/when-to-use" className={styles.link}>When to use?</Link></li>
-                        <li><Link href="/how-to-use" className={styles.link}>How to use?</Link></li>
-                        <li><Link href="/about-us" className={styles.link}>About us</Link></li>
-                        <li><Link href="/shop" className={styles.link}>Shop</Link></li>
-                        <li><Link href="/our-distributors" className={styles.link}>Our distributors</Link></li>
+                        <li><Link to="/terms-and-conditions" className={styles.link}>Terms and Conditions</Link></li>
+                        <li><Link to="/what-is-bactivate" className={styles.link}>What is bActivate?</Link></li>
+                        <li><Link to="/when-to-use" className={styles.link}>When to use?</Link></li>
+                        <li><Link to="/how-to-use" className={styles.link}>How to use?</Link></li>
+                        <li><Link to="/about-us" className={styles.link}>About us</Link></li>
+                        <li><Link to="/shop" className={styles.link}>Shop</Link></li>
+                        <li><Link to="/our-distributors" className={styles.link}>Our distributors</Link></li>
                     </ul>
                 </div>
             </div>

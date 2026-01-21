@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./page.module.css";
-import ReviewsSection from "@/components/ReviewsSection";
-import WebinarSignup from "@/components/WebinarSignup";
+import { Link } from 'react-router-dom';
+import styles from './Home.module.css';
+import ReviewsSection from '@/components/ReviewsSection';
+import WebinarSignup from '@/components/WebinarSignup';
 
 export default function Home() {
   return (
@@ -22,14 +21,12 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.heroSilhouette}>
-              <Image
+              <img
                 src="/images/bActivate-hest-roed.gif"
                 alt="Silhouette"
                 width={300}
                 height={300}
                 className={styles.silhouetteImageHero}
-                priority
-                unoptimized
               />
             </div>
           </div>
@@ -54,7 +51,7 @@ export default function Home() {
               <p className={styles.description}>
                 Dormant bacteria are difficult to diagnose by standard techniques and highly tolerant to antibiotic. Efficient handling thus requires re-activation of the bacteria. This can be achieved by instillation of bActivate, a bacterial growth medium, into the uterus.
               </p>
-              <Link href="/how-to-use" className={styles.btnRedSquare}>
+              <Link to="/how-to-use" className={styles.btnRedSquare}>
                 READ MORE
               </Link>
             </div>
@@ -79,7 +76,7 @@ export default function Home() {
             <p className={styles.description}>
               bActivate is a bacterial growth medium capable of re-activating dormant streptococcal infections in the uterus of brood mares.
             </p>
-            <Link href="/what-is-bactivate" className={styles.btnRedSquare}>
+            <Link to="/what-is-bactivate" className={styles.btnRedSquare}>
               READ MORE
             </Link>
           </div>
@@ -91,8 +88,8 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.featureGridTwoImages}>
             <div className={styles.twoImagesGroup}>
-              <Image src="/images/2_77.jpg" alt="Mare 1" width={400} height={300} className={styles.featureImg} />
-              <Image src="/images/3_82.jpg" alt="Mare 2" width={400} height={300} className={styles.featureImg} />
+              <img src="/images/2_77.jpg" alt="Mare 1" width={400} height={300} className={styles.featureImg} />
+              <img src="/images/3_82.jpg" alt="Mare 2" width={400} height={300} className={styles.featureImg} />
             </div>
             <div className={styles.featureTextSide}>
               <div className={styles.eyebrowRed}>Application</div>
@@ -100,7 +97,7 @@ export default function Home() {
               <p className={styles.description}>
                 5-15% of all mares are not pregnant at the end of the breeding season, despite fertilised stallions and supervised by experienced veterinarians.
               </p>
-              <Link href="/when-to-use" className={styles.btnRedSquare}>
+              <Link to="/when-to-use" className={styles.btnRedSquare}>
                 READ MORE
               </Link>
             </div>
@@ -118,13 +115,13 @@ export default function Home() {
               <p className={styles.description}>
                 bActivate is to be used in mares with reduced uterine defense mechanisms and in mares suspected of having a chronic subclinical infection.
               </p>
-              <Link href="/how-to-use" className={styles.btnRedSquare}>
+              <Link to="/how-to-use" className={styles.btnRedSquare}>
                 READ MORE
               </Link>
             </div>
             <div className={styles.twoImagesGroup}>
-              <Image src="/images/colt-in-field-4078876_1920.jpg" alt="Colt" width={400} height={300} className={styles.featureImg} />
-              <Image src="/images/horses-2504677_1920.jpg" alt="Mare and foal" width={400} height={300} className={styles.featureImg} />
+              <img src="/images/colt-in-field-4078876_1920.jpg" alt="Colt" width={400} height={300} className={styles.featureImg} />
+              <img src="/images/horses-2504677_1920.jpg" alt="Mare and foal" width={400} height={300} className={styles.featureImg} />
             </div>
           </div>
         </div>
@@ -140,7 +137,7 @@ export default function Home() {
               <p className={styles.description}>
                 The concept behind bActivate (promoting bacterial-activation) was discovered by Morten Rønn Petersen, DVM, PhD and Professor Anders Miki Bojesen, DVM, PhD.
               </p>
-              <Link href="/shop" className={styles.btnRedSmall}>
+              <Link to="/shop" className={styles.btnRedSmall}>
                 SHOP
               </Link>
             </div>
@@ -154,9 +151,9 @@ export default function Home() {
           <div className={styles.menBehindContent}>
             <h2 className={styles.menBehindTitle}>The Men Behind bActivate</h2>
             <p className={styles.menBehindText}>
-              Ten percent of all mares struggle to get in foal. Now two Danish researchers have identified what might be wrong and produced a product, which can facilitate diagnostics. Veterinarians at the world’s largest equine hospital in Kentucky have successfully tested the product.
+              Ten percent of all mares struggle to get in foal. Now two Danish researchers have identified what might be wrong and produced a product, which can facilitate diagnostics. Veterinarians at the world's largest equine hospital in Kentucky have successfully tested the product.
             </p>
-            <Link href="/about-us" className={styles.btnWhiteSolid}>
+            <Link to="/about-us" className={styles.btnWhiteSolid}>
               READ MORE ABOUT US
             </Link>
           </div>

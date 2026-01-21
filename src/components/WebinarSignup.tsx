@@ -1,5 +1,3 @@
-'use client';
-
 import { useState, useEffect } from 'react';
 import styles from './WebinarSignup.module.css';
 
@@ -8,7 +6,6 @@ export default function WebinarSignup() {
 
     useEffect(() => {
         if (isOpen) {
-            // Load HubSpot script only when opened for better performance
             const script = document.createElement('script');
             script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
             script.charset = "utf-8";
@@ -28,8 +25,6 @@ export default function WebinarSignup() {
             document.head.appendChild(script);
 
             return () => {
-                // Cleanup if needed, though HubSpot forms usually handle themselves
-                // But we should at least prevent double injection if toggled quickly
                 if (document.head.contains(script)) {
                     document.head.removeChild(script);
                 }
@@ -70,7 +65,6 @@ export default function WebinarSignup() {
                 <div className={`${styles.contentWrapper} ${isOpen ? styles.opened : ''}`}>
                     <div className={styles.formInner}>
                         <div id="hubspotFormContainer" className={styles.hubspotForm}>
-                            {/* HubSpot Form will be injected here */}
                         </div>
                     </div>
                 </div>
