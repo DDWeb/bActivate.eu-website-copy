@@ -1,0 +1,81 @@
+.section {
+    padding: 4rem 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    color: #111827;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .title {
+        text-align: left;
+    }
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .eyebrow {
+        text-align: left;
+    }
+}
+
+.content {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.content h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #111827;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.content p {
+    margin-bottom: 1rem;
+}
+
+.content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content li {
+    margin-bottom: 0.5rem;
+}
+
+.content a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.content a:hover {
+    text-decoration: none;
+}

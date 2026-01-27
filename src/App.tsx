@@ -2,14 +2,16 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-
-// Placeholder pages - to be filled in later
-const PlaceholderPage = ({ title }: { title: string }) => (
-  <main style={{ minHeight: '60vh', padding: '4rem 2rem', textAlign: 'center' }}>
-    <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{title}</h1>
-    <p style={{ color: '#666' }}>Content coming soon...</p>
-  </main>
-);
+import AboutUs from './pages/AboutUs';
+import WhatIsBactivate from './pages/WhatIsBactivate';
+import WhenToUse from './pages/WhenToUse';
+import HowToUse from './pages/HowToUse';
+import OurDistributors from './pages/OurDistributors';
+import StudiesEffect from './pages/StudiesEffect';
+import Podcast from './pages/Podcast';
+import Blog from './pages/Blog';
+import Shop from './pages/Shop';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -17,17 +19,17 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<PlaceholderPage title="About Us" />} />
-        <Route path="/what-is-bactivate" element={<PlaceholderPage title="What is bActivate?" />} />
-        <Route path="/when-to-use" element={<PlaceholderPage title="When to Use?" />} />
-        <Route path="/how-to-use" element={<PlaceholderPage title="How to Use?" />} />
-        <Route path="/our-distributors" element={<PlaceholderPage title="Our Distributors" />} />
-        <Route path="/studies-effect" element={<PlaceholderPage title="Studies & Effect" />} />
-        <Route path="/podcast" element={<PlaceholderPage title="Podcast" />} />
-        <Route path="/blog" element={<PlaceholderPage title="Blog" />} />
-        <Route path="/shop" element={<PlaceholderPage title="Shop" />} />
-        <Route path="/terms-and-conditions" element={<PlaceholderPage title="Terms and Conditions" />} />
-        <Route path="*" element={<PlaceholderPage title="Page Not Found" />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/what-is-bactivate" element={<WhatIsBactivate />} />
+        <Route path="/when-to-use" element={<WhenToUse />} />
+        <Route path="/how-to-use" element={<HowToUse />} />
+        <Route path="/our-distributors" element={<OurDistributors />} />
+        <Route path="/studies-effect" element={<StudiesEffect />} />
+        <Route path="/podcast" element={<Podcast />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
     </>

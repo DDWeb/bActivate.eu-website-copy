@@ -1,0 +1,80 @@
+.section {
+    padding: 4rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 960px) {
+    .grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.textBlock {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.storageSection {
+    background-color: var(--primary);
+    /* Now Red */
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.storageTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.instructionList {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.instructionList li {
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+.timeImageContainer {
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+}
