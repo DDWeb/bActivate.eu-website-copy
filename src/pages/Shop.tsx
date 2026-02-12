@@ -13,7 +13,7 @@ export default function Shop() {
         script.type = 'text/javascript';
         script.charset = 'utf-8';
         script.async = true;
-        script.src = 'https://app.business.shop/script.js?100041286&data_platform=code&data_date=2024-04-09';
+        script.src = 'https://app.business.shop/script.js?130367502&data_platform=code&data_date=2024-04-09';
 
         script.onload = () => {
             // @ts-ignore
@@ -24,21 +24,21 @@ export default function Shop() {
                     "views=grid(20,3) list(60) table(60)",
                     "categoryView=grid",
                     "searchView=list",
-                    "defaultProductId=634422108",
+                    "defaultProductId=815977402",
                     "defaultSlug=bactivate-1-vial",
-                    "id=my-store-100041286"
+                    "id=my-store-130367502"
                 );
             }
         };
 
-        document.getElementById('my-store-100041286')?.appendChild(script);
+        document.getElementById('my-store-130367502')?.appendChild(script);
     }, []);
 
     return (
         <main>
             <section className="py-16">
                 <div className="container mx-auto px-4">
-                    <div id="my-store-100041286" className="min-h-[500px]"></div>
+                    <div id="my-store-130367502" className="min-h-[500px]"></div>
                 </div>
             </section>
             <ReviewsSection />
