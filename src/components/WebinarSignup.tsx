@@ -1,36 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from './WebinarSignup.module.css';
 
 export default function WebinarSignup() {
     const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        if (isOpen) {
-            const script = document.createElement('script');
-            script.src = "//js-eu1.hsforms.net/forms/embed/v2.js";
-            script.charset = "utf-8";
-            script.type = "text/javascript";
-
-            script.onload = () => {
-                if ((window as any).hbspt) {
-                    (window as any).hbspt.forms.create({
-                        region: "eu1",
-                        portalId: "143266232",
-                        formId: "f9367a3c-fbeb-4916-8c43-58a89a96c8e8",
-                        target: "#hubspotFormContainer"
-                    });
-                }
-            };
-
-            document.head.appendChild(script);
-
-            return () => {
-                if (document.head.contains(script)) {
-                    document.head.removeChild(script);
-                }
-            };
-        }
-    }, [isOpen]);
 
     return (
         <section className={styles.webinarSection}>
@@ -40,14 +12,16 @@ export default function WebinarSignup() {
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <div className={styles.buttonContent}>
-                        <span className={styles.eyebrow}>Exclusive Event</span>
+                        <span className={styles.eyebrow}>Free Expert Webinar</span>
                         <h2 className={styles.title}>WATCH OUR WEBINAR</h2>
-                        <div className={styles.eventInfo}>
-                            <span className={styles.nextEvent}>NEXT EVENT:</span>
-                            <span className={styles.eventDate}>February 12th at 4:00 PM CET</span>
-                        </div>
+                        <p className={styles.description}>
+                            Watch our webinar on diagnosis and treatment of problem mares — now available as a recording.
+                        </p>
+                        <p className={styles.speakers}>
+                            <strong>Morten R\u00f8nn Petersen</strong>, DVM, PhD, Dipl. ACT &amp; <strong>Anders Miki Bojesen</strong>, Professor of Veterinary Microbiology
+                        </p>
                         <p className={styles.subtitle}>
-                            {isOpen ? 'Close' : 'Click here to sign up and watch'}
+                            {isOpen ? 'Close' : 'Click here to watch'}
                         </p>
                     </div>
                     <div className={styles.iconWrapper}>
@@ -64,7 +38,16 @@ export default function WebinarSignup() {
 
                 <div className={`${styles.contentWrapper} ${isOpen ? styles.opened : ''}`}>
                     <div className={styles.formInner}>
-                        <div id="hubspotFormContainer" className={styles.hubspotForm}>
+                        <div className={styles.videoWrapper}>
+                            <iframe
+                                width="100%"
+                                height="500"
+                                src="https://www.youtube.com/embed/LemEnrcgVVY"
+                                title="bActivate Webinar — Diagnosis and Treatment of Problem Mares"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                     </div>
                 </div>
