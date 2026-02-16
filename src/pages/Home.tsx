@@ -33,10 +33,14 @@ export default function Home() {
 
           <div className={styles.heroVideoWrapper}>
             <div className={styles.videoContainer}>
-              <video controls className={styles.video} poster="/images/hero-poster.png">
-                <source src="/images/final_v2.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                  className={styles.video}
+                  src="https://www.youtube.com/embed/_1QPkyXkFgs"
+                  title="bActivate - Facilitate Mare Pregnancy"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
             </div>
           </div>
         </div>
@@ -57,10 +61,14 @@ export default function Home() {
             </div>
             <div className={styles.howItWorksVideo}>
               <div className={styles.videoContainer}>
-                <video controls className={styles.video}>
-                  <source src="/images/agent-square-english.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <iframe
+                    className={styles.video}
+                    src="https://www.youtube.com/embed/acpF8se6Co8"
+                    title="How bActivate Works"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  ></iframe>
               </div>
             </div>
           </div>
