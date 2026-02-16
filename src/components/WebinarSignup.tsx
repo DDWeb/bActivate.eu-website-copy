@@ -18,7 +18,7 @@ export default function WebinarSignup() {
                             Watch our webinar on diagnosis and treatment of problem mares — now available as a recording.
                         </p>
                         <p className={styles.speakers}>
-                            <strong>Morten R\u00f8nn Petersen</strong>, DVM, PhD, Dipl. ACT &amp; <strong>Anders Miki Bojesen</strong>, Professor of Veterinary Microbiology
+                            <strong>Morten Rønn Petersen</strong>, DVM, PhD, Dipl. ACT &amp; <strong>Anders Miki Bojesen</strong>, Professor of Veterinary Microbiology
                         </p>
                         <p className={styles.subtitle}>
                             {isOpen ? 'Close' : 'Click here to watch'}
