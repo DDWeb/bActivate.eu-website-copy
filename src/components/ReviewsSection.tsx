@@ -22,7 +22,7 @@ export default function ReviewsSection() {
                     <div className={styles.testimonialSide}>
                         <div className={styles.testimonialBox}>
                             <div className={styles.quoteMark}>❝</div>
-                            <p className={styles.quoteText}>I used bActivate in 2016 and after one covering got a COLT foal in 2017 (after 3 years of hardship ie mare went in foal but never managed to produce a live foal).</p>
+                            <p className={styles.quoteText}>I used bActivate and after just one covering got a COLT foal — after 3 years of hardship where the mare went in foal but never managed to produce a live foal.</p>
                             <p className={styles.quoteAuthor}>Breeder Mary Davison,</p>
                             <p className={styles.quoteLocation}>Cathrinestown Stud Farm, Leixlip, Ireland</p>
                         </div>
