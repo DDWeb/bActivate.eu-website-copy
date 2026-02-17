@@ -28,10 +28,11 @@ export default function AboutUs() {
                                     className={styles.profileImage}
                                 />
                                 <h3 className="text-xl font-bold mt-4 mb-1">Morten Rønn Petersen</h3>
-                                <div className={styles.profileRole}>Founder & owner</div>
+                                <div className={styles.profileRole}>DVM PhD. Dipl, ACT</div>
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:petersen@bactivate.eu">petersen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4560712169">+45 60 71 21 69</a></div>
+                                    <div className="mt-2"><a href="https://www.linkedin.com/in/mortenrpetersen" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
                                 </div>
                             </div>
                             <div className={styles.bio}>
@@ -55,10 +56,11 @@ export default function AboutUs() {
                                     className={styles.profileImage}
                                 />
                                 <h3 className="text-xl font-bold mt-4 mb-1">Anders Miki Bojesen</h3>
-                                <div className={styles.profileRole}>Founder & owner</div>
+                                <div className={styles.profileRole}>Professor of Veterinary Microbiology</div>
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:bojesen@bactivate.eu">bojesen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4523844188">+45 23 84 41 88</a></div>
+                                    <div className="mt-2"><a href="https://www.linkedin.com/in/anders-miki-bojesen/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
                                 </div>
                             </div>
                             <div className={styles.bio}>
