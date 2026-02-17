@@ -91,35 +91,6 @@ export default function WhatIsBactivate() {
                 </div>
             </section>
 
-            {/* Contact Section */}
-            <section className={styles.sectionMuted}>
-                <div className={styles.container}>
-                    <div className={styles.contactGrid}>
-                        <div className="flex flex-col justify-center">
-                            <h2 className="text-3xl mb-4">Contact</h2>
-                            <div className={styles.contactInfo}>
-                                <p><strong>bActivate</strong></p>
-                                <p>Strandboulevarden 23</p>
-                                <p>2100 Copenhagen</p>
-                                <p>DK Denmark</p>
-                                <p className="mt-4">VAT-Number: 34690324</p>
-                            </div>
-                        </div>
-
-                        <div>
-                            <form className="max-w-md">
-                                <input type="text" placeholder="Navn *" className={styles.inputField} />
-                                <input type="tel" placeholder="Tlf. *" className={styles.inputField} />
-                                <input type="email" placeholder="E-mail *" className={styles.inputField} />
-                                <input type="text" placeholder="Emne" className={styles.inputField} />
-                                <textarea rows={5} placeholder="Besked" className={styles.inputField}></textarea>
-                                <button type="button" className={styles.submitButton}>Send besked</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <ReviewsSection />
         </main>
     );
