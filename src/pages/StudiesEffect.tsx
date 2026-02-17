@@ -28,7 +28,7 @@ export default function StudiesEffect() {
                             <p>This document showcases advancements in diagnosing and treating latent endometritis in mares, supported by leading equine specialists such as <strong>Dr. Kristina Lu</strong> and the theriogenology team at <strong>Hagyard Equine Medical Institute</strong>. Their work with innovative tools <strong>bActivate</strong> has transformed the management of dormant infections, enabling precise diagnosis and successful treatment. A total of 64 problem mares were included and subsequently bred. Pregnancy was established in 53 (83%) mares</p>
                         </div>
                         <div className={styles.buttonGroup}>
-                            <a href="https://bactivate.eu/wp-content/uploads/hagyarddavidsonandmcgeeinaprojectledbydr.kristinalu.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
+                            <a href="/images/hagyarddavidsonandmcgeeinaprojectledbydr.kristinalu.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
                             <a href="https://open.spotify.com/episode/5CqtUbpJe9YO9j96a5Zx4R" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ export default function StudiesEffect() {
                             <p className="mt-4"><strong>Conclusion</strong><br />Latent infections significantly reduce fertility in mares, with dormant bacteria negatively affecting pregnancy outcomes. The use of bActivate dramatically improves diagnostic accuracy and treatment success, leading to enhanced reproductive performance.</p>
                         </div>
                         <div className={styles.buttonGroup}>
-                            <a href="https://bactivate.eu/wp-content/uploads/latentendomtrititsanddormantstreptococci-effectonfertility.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
+                            <a href="/images/latentendomtrititsanddormantstreptococci-effectonfertility.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
                             <a href="https://open.spotify.com/episode/2eCFocRnJEJh8IJOdTu3pP" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ export default function StudiesEffect() {
                                 <p>This study explores how <strong>Streptococcus equi subsp. zooepidemicus</strong> invades and survives within epithelial cells, contributing to latent endometritis in mares. The research, led by <strong>Associate Professor Bolette Skive</strong> and <strong>Professor Manfred Rohde</strong>, reveals three distinct bacterial invasion mechanisms.</p>
                             </div>
                             <div className="mt-4">
-                                <a href="https://bactivate.eu/wp-content/uploads/strepzoo_frontcellinfectmicrobioloriginalresearch.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
+                                <a href="/images/strepzoo_frontcellinfectmicrobioloriginalresearch.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
                             </div>
                         </article>
 
@@ -63,7 +63,7 @@ export default function StudiesEffect() {
                             </div>
                             <div className={styles.meta}>Key Contributor • Professor Ralph Bertram</div>
                             <div className="mt-4">
-                                <a href="https://bactivate.eu/wp-content/uploads/bacterialtolerancetoantimicrobials-factorsaffectingtreatmentsuccessrossdalenon-pregnantmarecoursejan2025-3.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
+                                <a href="/images/bacterialtolerancetoantimicrobials-factorsaffectingtreatmentsuccessrossdalenon-pregnantmarecoursejan2025-3.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
                             </div>
                         </article>
 
@@ -74,7 +74,7 @@ export default function StudiesEffect() {
                             </div>
                             <div className={styles.meta}>Key Contributor • Professor Anders Miki Bojesen</div>
                             <div className="mt-4">
-                                <a href="https://bactivate.eu/wp-content/uploads/scientificandpracticalevidencesupportingbactivateforproblemmares.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
+                                <a href="/images/scientificandpracticalevidencesupportingbactivateforproblemmares.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
                             </div>
                         </article>
                     </div>
