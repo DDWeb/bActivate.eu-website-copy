@@ -73,18 +73,22 @@ export default function WhatIsBactivate() {
             {/* Background Info - Multi Column */}
             <section className={styles.section}>
                 <div className={styles.container}>
-                    <div className={styles.textColumnTwo}>
-                        <h2 className="text-2xl font-bold mb-4">Background information</h2>
-                        <p className="mb-4">Bacterial infections in the uterus can cause reduced fertility in the mare. Bacteria gain access to the uterus through the cervix, due to poor conformation or during breeding or foaling. Healthy young mares clear bacteria rapidly. In mares with compromised uterine defense mechanisms bacteria can establish an infection in the uterus. If the infection is unnoticed or left untreated, the infection may become chronic.</p>
-                        <p className="mb-8">The most commonly isolated bacteria from such conditions are Streptococcus equi subspecies zooepidemicus (Strep. zoo). In the chronically infected mare Strep. zoo can establish an infection deep within the uterine lining (endometrium). Strep zoo appear to lower its metabolic rate during chronic infection, thus complicating diagnostics and antimicrobial treatment dependent of active bacterial growth.</p>
+                    <div className={styles.infoGrid}>
+                        <div>
+                            <h2 className="text-2xl font-bold mb-4">Background information</h2>
+                            <p className="mb-4">Bacterial infections in the uterus can cause reduced fertility in the mare. Bacteria gain access to the uterus through the cervix, due to poor conformation or during breeding or foaling. Healthy young mares clear bacteria rapidly. In mares with compromised uterine defense mechanisms bacteria can establish an infection in the uterus. If the infection is unnoticed or left untreated, the infection may become chronic.</p>
+                            <p>The most commonly isolated bacteria from such conditions are Streptococcus equi subspecies zooepidemicus (Strep. zoo). In the chronically infected mare Strep. zoo can establish an infection deep within the uterine lining (endometrium). Strep zoo appear to lower its metabolic rate during chronic infection, thus complicating diagnostics and antimicrobial treatment dependent of active bacterial growth.</p>
+                        </div>
 
-                        <h2 className="text-2xl font-bold mb-4">Product description</h2>
-                        <p className="mb-4">bActivate is a growth medium enabling detection of chronic subclinical uterine infections associated with Strep. zoo in mares. If a chronic infection with Strep. zoo is present in the endometrium it will be activated when bActivate is instilled in the uterus. Activated Strep. zoo will thus become available for standard microbial diagnostic procedures.</p>
+                        <div>
+                            <h2 className="text-2xl font-bold mb-4">Product description</h2>
+                            <p className="mb-4">bActivate is a growth medium enabling detection of chronic subclinical uterine infections associated with Strep. zoo in mares. If a chronic infection with Strep. zoo is present in the endometrium it will be activated when bActivate is instilled in the uterus. Activated Strep. zoo will thus become available for standard microbial diagnostic procedures.</p>
 
-                        <div className={styles.videoContainer}>
-                            {/* Placeholder for local video or embed */}
-                            <div className="absolute inset-0 bg-black flex items-center justify-center text-white">
-                                Video Placeholder (hero.mp4)
+                            <div className={styles.videoContainer}>
+                                {/* Placeholder for local video or embed */}
+                                <div className="absolute inset-0 bg-black flex items-center justify-center text-white">
+                                    Video Placeholder (hero.mp4)
+                                </div>
                             </div>
                         </div>
                     </div>
