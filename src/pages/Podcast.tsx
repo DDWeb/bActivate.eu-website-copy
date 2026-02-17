@@ -28,6 +28,7 @@ export default function Podcast() {
                         </div>
                     </div>
                     <div>
+                        <h2 className={styles.title}>Speakers</h2>
                         <div className={styles.leadText}>
                             <p className="mb-6"><strong>Dr. Morten Rønn Petersen DVM, PhD, Dipl, ACT</strong> – Equine Reproduction Specialist & Veterinarian<br /><br /><strong>Prof. Anders Miki Bojesen</strong> – Veterinary Microbiologist & Infectious Disease Expert</p>
                         </div>
