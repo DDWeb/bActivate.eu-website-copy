@@ -40,8 +40,9 @@ export default function Header() {
 
                     <div className={styles.headerRight}>
                         <div className={styles.flags}>
-                            <a href="https://bactivate.eu" className={styles.flagLink} title="Visit bactivate.eu">
-                                <span className={styles.flagIcon} role="img" aria-label="EU site">🇪🇺</span>
+                            <a href="https://bactivate.eu" className={styles.flagLink} title="Switch to bactivate.eu">
+                                <span className={styles.switchText}>Switch to</span>
+                                <img src="https://flagcdn.com/w20/eu.png" alt="EU" className={styles.flagIcon} />
                             </a>
                         </div>
                         <Link to="/shop" className={styles.shopButton} onClick={() => setIsMenuOpen(false)}>
