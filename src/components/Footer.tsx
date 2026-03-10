@@ -17,7 +17,6 @@ export default function Footer() {
 
                     <div className={styles.copyright}>
                         <p>&copy; 2021 Bojesen and Petersen Biotech ApS. All rights reserved.</p>
-                        <p>Created and hosted by Group Online</p>
                     </div>
                 </div>
 
