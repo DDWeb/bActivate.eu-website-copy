@@ -1,7 +1,19 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.trustindex.io/loader.js?4bdc29b66947786e6a067c1fd01';
+        script.defer = true;
+        script.async = true;
+        document.body.appendChild(script);
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -58,6 +70,14 @@ export default function Footer() {
                         <li><Link to="/shop" className={styles.link}>Shop</Link></li>
                         <li><Link to="/our-distributors" className={styles.link}>Our distributors</Link></li>
                     </ul>
+                </div>
+
+                {/* Column 4: Google Reviews */}
+                <div className={styles.column}>
+                    <h3 className={styles.heading}>Reviews</h3>
+                    <div className={styles.reviewsWidget}>
+                        <div data-widget-id="4bdc29b66947786e6a067c1fd01"></div>
+                    </div>
                 </div>
             </div>
         </footer>
