@@ -1,19 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://cdn.trustindex.io/loader.js?4bdc29b66947786e6a067c1fd01';
-        script.defer = true;
-        script.async = true;
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        };
-    }, []);
-
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
