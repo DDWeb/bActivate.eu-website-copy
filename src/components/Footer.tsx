@@ -34,9 +34,9 @@ export default function Footer() {
                     </div>
 
                     <div className={styles.socialIcons}>
-                        <a href="#" className={styles.socialIcon}>TikTok</a>
-                        <a href="#" className={styles.socialIcon}>FB</a>
-                        <a href="#" className={styles.socialIcon}>IN</a>
+                        <a href="https://www.tiktok.com/@bactivate.eu" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>TikTok</a>
+                        <a href="https://www.facebook.com/Bojesen.and.Petersen.Biotech/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>FB</a>
+                        <a href="https://www.linkedin.com/company/bojesenandpetersenbiotech/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>IN</a>
                     </div>
 
                     <h3 className={styles.heading} style={{ marginTop: '2rem' }}>Address</h3>
