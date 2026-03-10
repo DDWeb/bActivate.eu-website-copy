@@ -27,6 +27,10 @@ export default function Footer() {
                         <p>VAT-Number: 34690324</p>
                     </div>
 
+                    <div className={styles.reviewsWidget}>
+                        <div data-widget-id="4bdc29b66947786e6a067c1fd01"></div>
+                    </div>
+
                     <div className={styles.copyright}>
                         <p>&copy; 2021 Bojesen and Petersen Biotech ApS. All rights reserved.</p>
                     </div>
@@ -72,13 +76,6 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                {/* Column 4: Google Reviews */}
-                <div className={styles.column}>
-                    <h3 className={styles.heading}>Reviews</h3>
-                    <div className={styles.reviewsWidget}>
-                        <div data-widget-id="4bdc29b66947786e6a067c1fd01"></div>
-                    </div>
-                </div>
             </div>
         </footer>
     );
