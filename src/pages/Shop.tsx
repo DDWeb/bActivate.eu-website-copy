@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import ReviewsSection from '@/components/ReviewsSection';
-import GoogleMerchantBadge from '@/components/GoogleMerchantBadge';
 
 export default function Shop() {
     useEffect(() => {
@@ -78,7 +77,7 @@ export default function Shop() {
                 </div>
             </section>
             <ReviewsSection />
-            <GoogleMerchantBadge />
+
         </main>
     );
 }

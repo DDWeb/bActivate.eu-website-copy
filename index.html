@@ -41,5 +41,32 @@
   <!-- Affiliatly tracking -->
   <script>var url = "https://static.affiliatly.com/framework/other.js?affiliatly_code=AF-1074392";var script = document.createElement("script");script.type = "text/javascript";script.src = url;document.getElementsByTagName("head")[0].appendChild(script);</script>
   <!-- End Affiliatly tracking -->
+  <!-- Google Merchant Badge -->
+  <script id="merchantWidgetScript" src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
+  <script>
+    var allowedPaths = ['/', '/shop', '/studies-effect'];
+    function tryStartMerchantWidget() {
+      try {
+        if (typeof merchantwidget !== 'undefined' && allowedPaths.indexOf(window.location.pathname) !== -1) {
+          merchantwidget.start({
+            merchant_id: 5744487013,
+            position: merchantwidget.BOTTOM_RIGHT,
+            region: 'DK'
+          });
+        }
+      } catch(e) {}
+    }
+    document.getElementById('merchantWidgetScript').addEventListener('load', function() {
+      tryStartMerchantWidget();
+      // Re-check on SPA navigation
+      window.addEventListener('popstate', tryStartMerchantWidget);
+      var origPushState = history.pushState;
+      history.pushState = function() {
+        origPushState.apply(this, arguments);
+        setTimeout(tryStartMerchantWidget, 100);
+      };
+    });
+  </script>
+  <!-- End Google Merchant Badge -->
   </body>
 </html>

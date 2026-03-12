@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import styles from './Home.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 import WebinarSignup from '@/components/WebinarSignup';
-import GoogleMerchantBadge from '@/components/GoogleMerchantBadge';
 
 export default function Home() {
   return (
@@ -172,7 +171,7 @@ export default function Home() {
       <WebinarSignup />
 
       <ReviewsSection />
-      <GoogleMerchantBadge />
+
     </main>
   );
 }

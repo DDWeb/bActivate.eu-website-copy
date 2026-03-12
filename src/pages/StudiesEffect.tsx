@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './StudiesEffect.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
-import GoogleMerchantBadge from '@/components/GoogleMerchantBadge';
 
 export default function StudiesEffect() {
     return (
@@ -83,7 +82,7 @@ export default function StudiesEffect() {
             </section>
 
             <ReviewsSection />
-            <GoogleMerchantBadge />
+
         </main>
     );
 }
