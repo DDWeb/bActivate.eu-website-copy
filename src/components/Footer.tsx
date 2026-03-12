@@ -72,6 +72,7 @@ export default function Footer() {
                         <li><Link to="/about-us" className={styles.link}>About us</Link></li>
                         <li><Link to="/shop" className={styles.link}>Shop</Link></li>
                         <li><Link to="/our-distributors" className={styles.link}>Our distributors</Link></li>
+                        <li><a href="https://app.affiliatly.com/front/register?affiliatly_code=AF-1074392" target="_blank" rel="noopener noreferrer" className={styles.link}>Affiliate Program</a></li>
                     </ul>
                 </div>
 
