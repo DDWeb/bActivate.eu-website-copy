@@ -24,6 +24,112 @@
   <link rel="alternate" hreflang="nl" href="https://lege-merrie.nl" />
   <link rel="alternate" hreflang="es" href="https://yegua-infertil.es" />
   <link rel="alternate" hreflang="x-default" href="https://barren-mare.com" />
+
+  <!-- Structured Data - Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bojesen & Petersen Biotech ApS",
+    "url": "https://bactivate.us",
+    "email": "hinz@bactivate.eu",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Strandboulevarden 23",
+      "addressLocality": "Copenhagen",
+      "postalCode": "2100",
+      "addressCountry": "DK"
+    },
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Morten Rønn Petersen",
+        "jobTitle": "DVM, PhD, Dipl. ACT",
+        "sameAs": [
+          "https://www.linkedin.com/in/mortenrpetersen",
+          "https://www.researchgate.net/profile/Morten-Roenn-Petersen",
+          "https://research.regionh.dk/rigshospitalet/en/persons/morten-roenn-petersen(9e068a54-7ddf-4865-b915-791c314944b5).html"
+        ]
+      },
+      {
+        "@type": "Person",
+        "name": "Anders Miki Bojesen",
+        "jobTitle": "Professor of Veterinary Microbiology",
+        "sameAs": [
+          "https://www.linkedin.com/in/anders-miki-bojesen",
+          "https://www.frontiersin.org/people/u/146695",
+          "https://researchprofiles.ku.dk/en/persons/anders-miki-bojesen"
+        ]
+      }
+    ],
+    "knowsAbout": ["Equine reproductive health", "Subclinical endometritis", "Biofilm infections", "bActivate", "Streptococcus zooepidemicus"]
+  }
+  </script>
+
+  <!-- Structured Data - Person: Morten Rønn Petersen -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://bactivate.us/#morten-petersen",
+    "name": "Morten Rønn Petersen",
+    "honorificSuffix": "DVM, PhD, Dipl. ACT",
+    "jobTitle": "Veterinarian, Co-founder — Head of Laboratory, Fertility Clinic Rigshospitalet",
+    "image": "https://bactivate.us/images/morten.jpg",
+    "worksFor": [
+      { "@type": "Organization", "name": "Bojesen & Petersen Biotech ApS", "url": "https://bactivate.us" },
+      { "@type": "MedicalOrganization", "name": "Rigshospitalet, Fertility Clinic, Section 4071", "url": "https://www.rigshospitalet.dk" }
+    ],
+    "knowsAbout": ["Equine reproduction", "Theriogenology", "Subclinical endometritis", "Streptococcus zooepidemicus", "bActivate"],
+    "sameAs": [
+      "https://www.linkedin.com/in/mortenrpetersen",
+      "https://www.researchgate.net/profile/Morten-Roenn-Petersen",
+      "https://research.regionh.dk/rigshospitalet/en/persons/morten-roenn-petersen(9e068a54-7ddf-4865-b915-791c314944b5).html"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data - Person: Anders Miki Bojesen -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://bactivate.us/#anders-bojesen",
+    "name": "Anders Miki Bojesen",
+    "honorificPrefix": "Professor",
+    "honorificSuffix": "DVM, PhD, Diplomate ECPVS",
+    "jobTitle": "Professor of Veterinary Microbiology, Co-founder",
+    "image": "https://bactivate.us/images/anders.jpg",
+    "worksFor": [
+      { "@type": "Organization", "name": "Bojesen & Petersen Biotech ApS", "url": "https://bactivate.us" },
+      { "@type": "EducationalOrganization", "name": "University of Copenhagen, Faculty of Health and Medical Sciences", "url": "https://www.ku.dk" }
+    ],
+    "knowsAbout": ["Veterinary microbiology", "Host-pathogen interaction", "Streptococcus zooepidemicus", "Biofilm infections", "Equine endometritis"],
+    "sameAs": [
+      "https://www.linkedin.com/in/anders-miki-bojesen",
+      "https://www.frontiersin.org/people/u/146695",
+      "https://researchprofiles.ku.dk/en/persons/anders-miki-bojesen"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data - ScholarlyArticle: Key bActivate publication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Activation of persistent Streptococcus equi subsp. zooepidemicus in mares with subclinical endometritis",
+    "author": [
+      { "@type": "Person", "name": "Morten Rønn Petersen", "sameAs": "https://bactivate.us/#morten-petersen" },
+      { "@type": "Person", "name": "Anders Miki Bojesen", "sameAs": "https://bactivate.us/#anders-bojesen" }
+    ],
+    "datePublished": "2015",
+    "publisher": { "@type": "Organization", "name": "Veterinary Microbiology" },
+    "url": "https://doi.org/10.1016/j.vetmic.2015.07.020",
+    "about": "Scientific basis for bActivate — dormant Streptococcus zooepidemicus in subclinically infected mares",
+    "keywords": ["Streptococcus zooepidemicus", "subclinical endometritis", "mares", "biofilm", "bActivate", "equine reproduction"]
+  }
+  </script>
 </head>
   <body>
     <div id="root"></div>
