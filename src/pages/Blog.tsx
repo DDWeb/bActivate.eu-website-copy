@@ -31,7 +31,7 @@ export default function Blog() {
                                 <article key={index} className={styles.card}>
                                     <h3 className={styles.postTitle} dangerouslySetInnerHTML={{ __html: post.title }}></h3>
                                     <div className={styles.date}>{post.date}</div>
-                                    <Link href={`/blog/${post.slug}`} className={styles.readMore}>
+                                    <Link to={`/blog/${post.slug}`} className={styles.readMore}>
                                         Read more <span className={styles.arrow}>&rarr;</span>
                                     </Link>
                                 </article>
