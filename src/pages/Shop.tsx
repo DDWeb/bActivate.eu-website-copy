@@ -5,6 +5,11 @@ import ReviewsSection from '@/components/ReviewsSection';
 
 export default function Shop() {
     useEffect(() => {
+        document.title = 'Buy bActivate | Equine Uterine Treatment — €229 per Dose';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate online — €229 per vial. Available for delivery across Europe. One vial per treatment cycle for problem mares with hidden uterine infections.');
+    }, []);
+
+    useEffect(() => {
         // Only load script if not already loaded
         if (document.getElementById('ecwid-script')) return;
 

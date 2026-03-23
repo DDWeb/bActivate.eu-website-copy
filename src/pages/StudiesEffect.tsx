@@ -1,8 +1,12 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import styles from './StudiesEffect.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function StudiesEffect() {
+    useEffect(() => {
+        document.title = 'bActivate Clinical Results | 83% Pregnancy Rate in Problem Mares';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan–Godolphin. Peer-reviewed studies on bActivate and latent endometritis in mares.');
+    }, []);
     return (
         <main>
             <section className={styles.section}>

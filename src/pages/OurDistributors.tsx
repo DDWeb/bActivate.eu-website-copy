@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import styles from './OurDistributors.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function OurDistributors() {
+    useEffect(() => {
+        document.title = 'bActivate Distributors | Find a Vet in Europe or the US';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate through authorised distributors in the US (Hagyard, Midwest Veterinary Supply), UK, Netherlands, Denmark, Australia, and direct from Europe.');
+    }, []);
     const distributors = [
         {
             region: 'UK',

@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import styles from './Podcast.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function Podcast() {
+    useEffect(() => {
+        document.title = 'bActivate Podcast | Equine Reproductive Health with Bojesen & Petersen';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Podcast and videos with Dr. Morten Rønn Petersen (DVM, PhD) and Prof. Anders Miki Bojesen on dormant Streptococcus zooepidemicus and the problem mare.');
+    }, []);
     const danishVideos = [
         "Dr2ridUGLus",
         "mIar9PYcUIA",
