@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import FAQSection from './components/FAQSection';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import WhatIsBactivate from './pages/WhatIsBactivate';
@@ -43,6 +44,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="*" element={<Home />} />
       </Routes>
+      <FAQSection />
       <Footer />
     </>
   );
