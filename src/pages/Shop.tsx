@@ -7,6 +7,55 @@ export default function Shop() {
     useEffect(() => {
         document.title = 'Buy bActivate | Equine Uterine Treatment for Problem Mares';
         document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate online. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US. One vial per treatment cycle for problem mares.');
+
+        // Product schema
+        const existing = document.getElementById('product-schema');
+        if (!existing) {
+            const script = document.createElement('script');
+            script.id = 'product-schema';
+            script.type = 'application/ld+json';
+            script.text = JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": "bActivate",
+                "description": "Veterinary uterine treatment for problem mares. Reactivates dormant Streptococcus equi subspecies zooepidemicus infections enabling accurate diagnosis and targeted antibiotic treatment. 83% pregnancy rate in clinical trials at Hagyard Equine Medical Institute.",
+                "url": "https://bactivate.us/shop",
+                "image": "https://bactivate.us/images/hero.gif",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Bojesen & Petersen Biotech ApS"
+                },
+                "manufacturer": {
+                    "@type": "Organization",
+                    "name": "Bojesen & Petersen Biotech ApS",
+                    "url": "https://bactivate.us"
+                },
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "Veterinarians, Equine reproduction specialists"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://bactivate.us/shop",
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Hagyard Pharmacy / Midwest Veterinary Supply",
+                        "url": "https://bactivate.us/our-distributors"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "12"
+                }
+            });
+            document.head.appendChild(script);
+        }
+        return () => {
+            document.getElementById('product-schema')?.remove();
+        };
     }, []);
 
     useEffect(() => {
