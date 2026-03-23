@@ -7,6 +7,57 @@ export default function Shop() {
     useEffect(() => {
         document.title = 'Buy bActivate | Equine Uterine Treatment — €229 per Dose';
         document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate online — €229 per vial. Available for delivery across Europe. One vial per treatment cycle for problem mares with hidden uterine infections.');
+
+        // Product schema
+        const existing = document.getElementById('product-schema');
+        if (!existing) {
+            const script = document.createElement('script');
+            script.id = 'product-schema';
+            script.type = 'application/ld+json';
+            script.text = JSON.stringify({
+                "@context": "https://schema.org/",
+                "@type": "Product",
+                "name": "bActivate",
+                "description": "Veterinary uterine treatment for problem mares. Reactivates dormant Streptococcus equi subspecies zooepidemicus infections enabling accurate diagnosis and targeted antibiotic treatment. 83% pregnancy rate in clinical trials at Hagyard Equine Medical Institute.",
+                "url": "https://bactivate.eu/shop",
+                "image": "https://bactivate.eu/images/hero.gif",
+                "brand": {
+                    "@type": "Brand",
+                    "name": "Bojesen & Petersen Biotech ApS"
+                },
+                "manufacturer": {
+                    "@type": "Organization",
+                    "name": "Bojesen & Petersen Biotech ApS",
+                    "url": "https://bactivate.eu"
+                },
+                "audience": {
+                    "@type": "Audience",
+                    "audienceType": "Veterinarians, Equine reproduction specialists"
+                },
+                "offers": {
+                    "@type": "Offer",
+                    "url": "https://bactivate.eu/shop",
+                    "price": "229",
+                    "priceCurrency": "EUR",
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "seller": {
+                        "@type": "Organization",
+                        "name": "Bojesen & Petersen Biotech ApS",
+                        "url": "https://bactivate.eu"
+                    }
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "12"
+                }
+            });
+            document.head.appendChild(script);
+        }
+        return () => {
+            document.getElementById('product-schema')?.remove();
+        };
     }, []);
 
     useEffect(() => {
