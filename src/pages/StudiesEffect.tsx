@@ -26,6 +26,44 @@ export default function StudiesEffect() {
 
                     <hr className="mb-12 border-gray-200" />
 
+                    {/* As Cited By — External Validation */}
+                    <div style={{ margin: "3rem 0", padding: "2.5rem", background: "#f8f8f8", borderLeft: "4px solid #901820" }}>
+                        <h2 style={{ fontSize: "1.2rem", textTransform: "uppercase", letterSpacing: "2px", color: "#901820", marginBottom: "0.5rem", fontWeight: 600 }}>As cited by leading equine experts</h2>
+                        <p style={{ color: "#666", marginBottom: "2rem", fontSize: "0.95rem" }}>bActivate is independently referenced by the world's most respected equine veterinary publications and research institutions.</p>
+                        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
+                            <a href="https://thehorse.com/183678/whats-plaguing-your-problem-mare/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
+                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>The Horse Magazine</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"...a (growth medium) product called bActivate, which activates dormant Streptococcus that can live within the endometrium, stimulating them to become metabolically active so we can treat them."</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Dr. Karen Wolfsdorf, DVM Dipl. ACT<br />Rood &amp; Riddle Equine Hospital, Kentucky</div>
+                            </a>
+                            <a href="https://fvma.org/challenges-of-chronic-endometritis-novel-tools/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
+                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>FVMA — The Practitioner, 2024</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"Infusion of Bactivate when the mare is in estrus activates the dormant B.strep, increasing replication and growth, providing identification at 24 hours."</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Dr. Karen Wolfsdorf, DVM Dipl. ACT<br />Florida Veterinary Medical Association</div>
+                            </a>
+                            <a href="https://ker.com/equinews/therapy-offers-hope-infertile-mares/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
+                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Kentucky Equine Research</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"Most of the mares (83%) became pregnant within 6 weeks, and a majority of those gave birth to live foals." — Study of 64 broodmares treated with bActivate.</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Kentucky Equine Research, ker.com</div>
+                            </a>
+                            <a href="https://breedersclub.nu/wp-content/uploads/2022/07/41-Forskning-i-fertilitet.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
+                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Breeders Club — Veterinary Journal</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"72% of problem mares achieved live foals the year after activation. 84% of participating mares had a latent streptococcal infection."</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Rebecca Bøk Larsen DVM + Anna Skriver DVM<br />University of Copenhagen, 2022</div>
+                            </a>
+                            <a href="https://equsana.dk/sovende-bakterier-goer-hopper-ufrugtbare/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
+                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Equsana.dk — 2015</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"Knap 10% af hopperne bliver aldrig drægtige trods dyrlægehjælp. Bactivate vækker sovende bakterier, så de kan diagnosticeres og behandles effektivt med antibiotika."</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Charlotte Nørgaard, Equsana.dk, 2015</div>
+                            </a>
+                            <a href="https://equimanagement.com/research-medical/biofilms-and-the-equine-uterus/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
+                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>EquiManagement — 2023</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"bActivate — a growth medium specifically formulated to reactivate dormant Strep uterine infections — demonstrated effectiveness: treated mares showed only 8% bacterial positivity versus 64% in control animals."</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Nancy S. Loving, DVM<br />EquiManagement, June 2023</div>
+                            </a>
+                        </div>
+                    </div>
+
                     <div className={styles.studyCard}>
                         <h2 className={styles.studyTitle}>Hagyard, project led by Dr. Kristina Lu.</h2>
                         <div className={styles.studyText}>
