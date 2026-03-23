@@ -1,19 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
-    const widgetRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        if (widgetRef.current) {
-            const script = document.createElement('script');
-            script.src = 'https://cdn.trustindex.io/loader.js?4bdc29b66947786e6a067c1fd01';
-            script.defer = true;
-            script.async = true;
-            widgetRef.current.appendChild(script);
-        }
-    }, []);
 
     return (
         <footer className={styles.footer}>
@@ -27,8 +15,6 @@ export default function Footer() {
                         <p>Terms and conditions apply.</p>
                         <p>VAT-Number: 34690324</p>
                     </div>
-
-                    <div className={styles.reviewsWidget} ref={widgetRef}></div>
 
                     <div className={styles.copyright}>
                         <p>&copy; 2021 Bojesen and Petersen Biotech ApS. All rights reserved.</p>

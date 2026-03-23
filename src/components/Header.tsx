@@ -39,12 +39,6 @@ export default function Header() {
                     <Link to="/about-us" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About us</Link>
 
                     <div className={styles.headerRight}>
-                        <div className={styles.flags}>
-                            <a href="https://bactivate.us" className={styles.flagLink} title="Switch to bactivate.us">
-                                <span className={styles.switchText}>Switch to</span>
-                                <img src="https://flagcdn.com/w20/us.png" alt="US" className={styles.flagIcon} />
-                            </a>
-                        </div>
                         <Link to="/shop" className={styles.shopButton} onClick={() => setIsMenuOpen(false)}>
                             SHOP
                         </Link>
