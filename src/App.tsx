@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -10,12 +11,22 @@ import OurDistributors from './pages/OurDistributors';
 import StudiesEffect from './pages/StudiesEffect';
 import Podcast from './pages/Podcast';
 import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 import Shop from './pages/Shop';
 import TermsAndConditions from './pages/TermsAndConditions';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,6 +38,7 @@ function App() {
         <Route path="/studies-effect" element={<StudiesEffect />} />
         <Route path="/podcast" element={<Podcast />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="*" element={<Home />} />
