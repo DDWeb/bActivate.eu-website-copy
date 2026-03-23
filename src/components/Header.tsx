@@ -39,6 +39,15 @@ export default function Header() {
                     <Link to="/about-us" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About us</Link>
 
                     <div className={styles.headerRight}>
+                        <a
+                            href="https://portal.non-pregnant-mare.com/free-trial"
+                            className={styles.navItem}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Free Trial
+                        </a>
                         <Link to="/shop" className={styles.shopButton} onClick={() => setIsMenuOpen(false)}>
                             SHOP
                         </Link>
