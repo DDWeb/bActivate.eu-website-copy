@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import styles from './StudiesEffect.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
+import InternalLinks from '@/components/InternalLinks';
 
 export default function StudiesEffect() {
     useEffect(() => {
@@ -123,6 +124,12 @@ export default function StudiesEffect() {
                 </div>
             </section>
 
+            <InternalLinks links={[
+                { to: '/shop', label: 'Order bActivate', description: '€229 per vial — ships from Copenhagen' },
+                { to: '/how-to-use', label: 'How to Use', description: 'Full veterinary protocol for diagnosis and treatment' },
+                { to: '/our-distributors', label: 'Find a Distributor', description: 'UK, Netherlands, Denmark, Australia and more' },
+                { to: '/about-us', label: 'Meet the Founders', description: 'Prof. Bojesen & Dr. Petersen — 20+ years of research' },
+            ]} />
             <ReviewsSection />
 
         </main>

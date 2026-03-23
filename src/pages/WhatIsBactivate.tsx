@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './WhatIsBactivate.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
+import InternalLinks from '@/components/InternalLinks';
 
 export default function WhatIsBactivate() {
     useEffect(() => {
@@ -100,6 +101,12 @@ export default function WhatIsBactivate() {
                 </div>
             </section>
 
+            <InternalLinks links={[
+                { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
+                { to: '/studies-effect', label: 'Clinical Results', description: '83% pregnancy rate at Hagyard — see the evidence' },
+                { to: '/how-to-use', label: 'Veterinary Protocol', description: 'Step-by-step instructions for veterinarians' },
+                { to: '/shop', label: 'Order bActivate', description: '€229 per vial — order directly from Europe' },
+            ]} />
             <ReviewsSection />
         </main>
     );
