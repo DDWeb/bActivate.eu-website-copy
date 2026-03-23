@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './HowToUse.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
+import InternalLinks from '@/components/InternalLinks';
 
 export default function HowToUse() {
     useEffect(() => {
@@ -90,6 +91,12 @@ export default function HowToUse() {
                 </div>
             </section>
 
+            <InternalLinks links={[
+                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate — Hagyard, Godolphin, and more' },
+                { to: '/shop', label: 'Order bActivate', description: 'One vial per treatment cycle' },
+                { to: '/our-distributors', label: 'US Distributors', description: 'Hagyard Pharmacy and Midwest Veterinary Supply' },
+                { to: '/about-us', label: 'About the Founders', description: 'Prof. Bojesen & Dr. Petersen — the science team' },
+            ]} />
             <ReviewsSection />
         </main>
     );

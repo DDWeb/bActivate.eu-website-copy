@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './WhenToUse.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
+import InternalLinks from '@/components/InternalLinks';
 
 export default function WhenToUse() {
     useEffect(() => {
@@ -79,6 +80,12 @@ export default function WhenToUse() {
                 </div>
             </section>
 
+            <InternalLinks links={[
+                { to: '/how-to-use', label: 'How to Use bActivate', description: 'Full veterinary protocol — instillation and follow-up' },
+                { to: '/studies-effect', label: 'Clinical Evidence', description: '83% pregnancy rate in 64 problem mares at Hagyard' },
+                { to: '/our-distributors', label: 'Find a Distributor', description: 'Hagyard, Midwest Vet Supply and more' },
+                { to: '/shop', label: 'Order bActivate', description: 'Order directly online' },
+            ]} />
             <ReviewsSection />
         </main>
     );
