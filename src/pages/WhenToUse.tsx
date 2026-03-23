@@ -1,8 +1,13 @@
 
+import { useEffect } from 'react';
 import styles from './WhenToUse.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function WhenToUse() {
+    useEffect(() => {
+        document.title = 'When to Use bActivate | Signs Your Mare Has a Hidden Infection';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Use bActivate when your mare fails to conceive despite fertile breeding, has recurring uterine fluid, or previous infections. 50–75% of open mares are chronically infected.');
+    }, []);
     return (
         <main>
             <section className={styles.section}>

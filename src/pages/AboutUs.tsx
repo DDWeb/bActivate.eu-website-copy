@@ -1,8 +1,13 @@
 
+import { useEffect } from 'react';
 import styles from './AboutUs.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function AboutUs() {
+    useEffect(() => {
+        document.title = 'About bActivate | Bojesen & Petersen Biotech ApS';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Meet the founders: Morten Rønn Petersen DVM PhD (Dipl. ACT) and Professor Anders Miki Bojesen — the veterinary scientists who discovered and developed bActivate.');
+    }, []);
     return (
         <main>
             <section className={styles.section}>

@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import styles from './Home.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 import WebinarSignup from '@/components/WebinarSignup';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'bActivate | Treat Hidden Uterine Infections in Problem Mares';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', '70–80% of problem mares have a hidden uterine infection. bActivate activates dormant bacteria so your mare\'s immune system can find and clear them. 83% pregnancy rate at Hagyard.');
+  }, []);
   return (
     <main>
       {/* Hero Section */}

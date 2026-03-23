@@ -138,3 +138,8 @@
 .link:hover {
     text-decoration: underline;
 }
+
+.reviewsWidget {
+    max-width: 100%;
+    overflow: hidden;
+}

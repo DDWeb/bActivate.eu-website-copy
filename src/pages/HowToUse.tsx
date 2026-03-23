@@ -1,8 +1,13 @@
 
+import { useEffect } from 'react';
 import styles from './HowToUse.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function HowToUse() {
+    useEffect(() => {
+        document.title = 'How to Use bActivate | Veterinary Protocol';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Step-by-step veterinary protocol: instill 10 ml bActivate during early estrus, culture after 48 hours, treat with targeted antibiotics. Full instructions for veterinarians.');
+    }, []);
     return (
         <main>
             <section className={styles.section}>

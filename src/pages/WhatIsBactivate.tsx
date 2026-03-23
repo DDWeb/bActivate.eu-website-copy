@@ -1,8 +1,13 @@
 
+import { useEffect } from 'react';
 import styles from './WhatIsBactivate.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function WhatIsBactivate() {
+    useEffect(() => {
+        document.title = 'What is bActivate? | Uterine Treatment for Problem Mares';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate is a diagnostic aid for detecting dormant Streptococcus zooepidemicus infections in problem mares — the hidden cause of 70–80% of recurring fertility failure.');
+    }, []);
     return (
         <main>
             <section className={styles.section}>

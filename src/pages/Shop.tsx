@@ -5,6 +5,11 @@ import ReviewsSection from '@/components/ReviewsSection';
 
 export default function Shop() {
     useEffect(() => {
+        document.title = 'Buy bActivate | Equine Uterine Treatment for Problem Mares';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate online. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US. One vial per treatment cycle for problem mares.');
+    }, []);
+
+    useEffect(() => {
         // Only load script if not already loaded
         if (document.getElementById('ecwid-script')) return;
 
