@@ -17,7 +17,7 @@ export default function Footer() {
                     </div>
 
                     <div className={styles.copyright}>
-                        <p>&copy; 2021 Bojesen and Petersen Biotech ApS. All rights reserved.</p>
+                        <p>&copy; 2021–2026 Bojesen and Petersen Biotech ApS. All rights reserved.</p>
                     </div>
                 </div>
 
