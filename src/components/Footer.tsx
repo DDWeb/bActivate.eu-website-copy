@@ -1,20 +1,7 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
 import styles from './Footer.module.css';
 
 export default function Footer() {
-    const widgetRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        if (widgetRef.current) {
-            const script = document.createElement('script');
-            script.src = 'https://cdn.trustindex.io/loader.js?4bdc29b66947786e6a067c1fd01';
-            script.defer = true;
-            script.async = true;
-            widgetRef.current.appendChild(script);
-        }
-    }, []);
-
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
@@ -28,10 +15,9 @@ export default function Footer() {
                         <p>VAT-Number: 34690324</p>
                     </div>
 
-                    <div className={styles.reviewsWidget} ref={widgetRef}></div>
-
                     <div className={styles.copyright}>
                         <p>&copy; 2021 Bojesen and Petersen Biotech ApS. All rights reserved.</p>
+                        <p>Created and hosted by Group Online</p>
                     </div>
                 </div>
 
@@ -72,10 +58,8 @@ export default function Footer() {
                         <li><Link to="/about-us" className={styles.link}>About us</Link></li>
                         <li><Link to="/shop" className={styles.link}>Shop</Link></li>
                         <li><Link to="/our-distributors" className={styles.link}>Our distributors</Link></li>
-                        <li><a href="https://www.affiliatly.com/af-1074392/affiliate.panel?mode=register" target="_blank" rel="noopener noreferrer" className={styles.link}>Affiliate Program</a></li>
                     </ul>
                 </div>
-
             </div>
         </footer>
     );

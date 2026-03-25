@@ -176,9 +176,22 @@
 }
 
 .blogSection {
-    position: relative;
-    z-index: 3;
-    margin-top: -6rem;
-    padding: 0 1rem 4rem;
-    background: transparent;
+    padding: 4rem 1rem;
+    background-color: #111;
+}
+
+@media (max-width: 767px) {
+    .hero {
+        height: 45vh;
+        min-height: 250px;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .blogSection {
+        padding: 2rem 1rem;
+    }
+    .card {
+        padding: 1.5rem;
+    }
 }
