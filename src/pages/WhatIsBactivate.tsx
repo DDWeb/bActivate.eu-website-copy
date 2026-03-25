@@ -91,10 +91,15 @@ export default function WhatIsBactivate() {
                             <p className="mb-4">bActivate is a growth medium enabling detection of chronic subclinical uterine infections associated with Strep. zoo in mares. If a chronic infection with Strep. zoo is present in the endometrium it will be activated when bActivate is instilled in the uterus. Activated Strep. zoo will thus become available for standard microbial diagnostic procedures.</p>
 
                             <div className={styles.videoContainer}>
-                                {/* Placeholder for local video or embed */}
-                                <div className="absolute inset-0 bg-black flex items-center justify-center text-white">
-                                    Video Placeholder (hero.mp4)
-                                </div>
+                                <video
+                                    autoPlay
+                                    muted
+                                    loop
+                                    playsInline
+                                    aria-label="bActivate product overview video"
+                                >
+                                    <source src="/images/hero.mp4" type="video/mp4" />
+                                </video>
                             </div>
                         </div>
                     </div>
