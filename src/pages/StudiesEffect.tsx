@@ -14,6 +14,10 @@ export default function StudiesEffect() {
                 <div className={styles.container}>
                     <h1 className={styles.title}>Studies & effect</h1>
 
+                    <div className="bg-white border border-gray-200 rounded p-6 mb-8">
+                        <p className="text-gray-700 leading-relaxed">Three independent clinical evaluations document bActivate's efficacy. At <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY), Dr. Kristina Lu treated 64 problem mares — <strong>83% became pregnant</strong>. At <strong>Kildangan Stud</strong>, operated by Godolphin, <strong>89% of 19 problem mares</strong> achieved pregnancy. A collaborative study between Copenhagen University and the Breeders Club reported a <strong>72% live foal rate</strong> across treated mares. All three studies were conducted independently of the manufacturer.</p>
+                    </div>
+
                     <div className={styles.textGrid}>
                         <div className="bg-gray-50 p-6 rounded">
                             <p className="mb-4">Hidden infections. Persistent infertility. Missed opportunities. For too long, problem mares—those with recurring fertility issues—have faced unseen barriers to reproduction.<br />Below studies show that 80% of these mares harbor hidden uterine infections that traditional tests fail to detect, making pregnancy an uphill battle.</p>
@@ -80,6 +84,7 @@ export default function StudiesEffect() {
                         <h2 className={styles.studyTitle}>Dormant Strepzoo Studie at Kildangan – Godolphin</h2>
                         <div className={styles.studyText}>
                             <p>This study investigates the impact of latent infections caused by <strong>Streptococcus equi subsp. zooepidemicus</strong> on fertility in mares. Dormant bacteria are shown to persist intracellularly within the uterus, evading detection by traditional methods. These infections disrupt the establishment and maintenance of pregnancy, highlighting the necessity for advanced diagnostic tools like <strong>bActivate</strong>, which enables the detection and effective treatment of dormant infections.</p>
+                            <p className="mt-4"><strong>In 19 problem mares treated at Kildangan Stud, 89% achieved pregnancy.</strong></p>
                             <p className="mt-4"><strong>Conclusion</strong><br />Latent infections significantly reduce fertility in mares, with dormant bacteria negatively affecting pregnancy outcomes. The use of bActivate dramatically improves diagnostic accuracy and treatment success, leading to enhanced reproductive performance.</p>
                         </div>
                         <div className={styles.buttonGroup}>

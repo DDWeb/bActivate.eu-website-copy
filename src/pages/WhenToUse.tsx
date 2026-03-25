@@ -16,8 +16,8 @@ export default function WhenToUse() {
                     <div className={styles.grid}>
                         <div>
                             <div>
-                                <div className={styles.eyebrow}>Om bActivate</div>
-                                <h1 className={styles.title}>When to use?</h1>
+                                <div className={styles.eyebrow}>About bActivate</div>
+                                <h1 className={styles.title}>When to Use bActivate for Problem Mares</h1>
 
                                 <div className={styles.introBlock}>
                                     <h2 className={styles.subtitle}>bActivate – a diagnostic aid for the problem mare</h2>
