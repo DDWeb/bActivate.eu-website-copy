@@ -15,7 +15,7 @@ export default function WhatIsBactivate() {
                 <div className={styles.container}>
                     <div className={styles.grid}>
                         <div className="relative">
-                            <div className={styles.eyebrow}>Om bActivate</div>
+                            <div className={styles.eyebrow}>About bActivate</div>
                             <h1 className={styles.title}>What is bActivate?</h1>
                             <div className={styles.leadText}>
                                 <p>bActivate is a diagnostic aid for the detection and clearance of dormant uterine infections in mares — the hidden cause of infertility in barren mares worldwide. Dormant infections have a significant negative effect on fertility.</p>
