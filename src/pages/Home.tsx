@@ -22,7 +22,7 @@ export default function Home() {
                 bActivate is the best solution.
               </h1>
               <p className={styles.heroSubtitle}>
-                70-80% of all problem mares carry a hidden uterine infection with a clear negative effect on fertility.
+                70-80% of all problem mares carry a hidden uterine infection with a clear negative effect on fertility. bActivate gives barren mares a second chance — by activating the dormant infections that standard tests miss.
               </p>
             </div>
             <div className={styles.heroSilhouette}>
