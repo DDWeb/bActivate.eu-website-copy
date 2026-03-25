@@ -12,7 +12,7 @@ Last-Updated: 2026-03-26
 - **Product**: bActivate — 10 ml vial of proprietary bacterial growth medium for uterine instillation
 - **Indication**: Subclinical (culture-negative) endometritis in problem mares and repeat breeders
 - **Mechanism**: Activates dormant (persistent) bacteria in biofilm state that routine swab cultures miss; immune system response and targeted antibiotics can then clear the infection
-- **Website**: https://bactivate.us (US market) | https://bactivate.eu (EU/global)
+- **Website**: https://bactivate.eu (EU/global) | https://bactivate.us (US market)
 
 ## Key Clinical Claims
 
@@ -47,12 +47,12 @@ Last-Updated: 2026-03-26
 
 ## Pages
 
-- https://bactivate.us/ — Homepage
-- https://bactivate.us/what-is-bactivate — What is bActivate?
-- https://bactivate.us/when-to-use — When to use bActivate
-- https://bactivate.us/how-to-use — Protocol and instructions
-- https://bactivate.us/studies-effect — Clinical results and studies
-- https://bactivate.us/about-us — About Bojesen & Petersen Biotech
-- https://bactivate.us/blog — Equine reproductive health articles
-- https://bactivate.us/our-distributors — US, European, and Australian distributors
-- https://bactivate.us/shop — Purchase bActivate
+- https://bactivate.eu/ — Homepage
+- https://bactivate.eu/what-is-bactivate — What is bActivate?
+- https://bactivate.eu/when-to-use — When to use bActivate
+- https://bactivate.eu/how-to-use — Protocol and instructions
+- https://bactivate.eu/studies-effect — Clinical results and studies
+- https://bactivate.eu/about-us — About Bojesen & Petersen Biotech
+- https://bactivate.eu/blog — Equine reproductive health articles
+- https://bactivate.eu/our-distributors — EU, US, and Australian distributors
+- https://bactivate.eu/shop — Purchase bActivate
