@@ -1,3 +1,8 @@
+# 301 redirects — renamed blog slugs (K5)
+Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares-2-2-2 /blog/how-bactivate-tackles-dormant-bacteria-in-mares
+Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares-2-2 /blog/enhancing-mare-fertility-bactivate-revolutionary-approach
+Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares-2 /blog/addressing-challenges-of-problem-mares
+
 # SPA routing — redirect all non-file requests to index.html
 <IfModule mod_rewrite.c>
     RewriteEngine On
