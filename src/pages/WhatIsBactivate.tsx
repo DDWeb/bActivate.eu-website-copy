@@ -8,6 +8,36 @@ export default function WhatIsBactivate() {
     useEffect(() => {
         document.title = 'What is bActivate? | Uterine Treatment for Problem Mares';
         document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate is a diagnostic aid for detecting dormant Streptococcus zooepidemicus infections in problem mares — the hidden cause of 70–80% of recurring fertility failure.');
+
+        let schema = document.getElementById('medcond-schema') as HTMLScriptElement | null;
+        if (!schema) {
+            schema = document.createElement('script');
+            schema.id = 'medcond-schema';
+            schema.setAttribute('type', 'application/ld+json');
+            document.head.appendChild(schema);
+        }
+        schema.textContent = JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'MedicalCondition',
+            'name': 'Subclinical Endometritis in Mares',
+            'alternateName': ['Equine subclinical endometritis', 'Dormant uterine infection in mares', 'Chronic subclinical endometritis', 'Culture-negative endometritis'],
+            'description': 'Subclinical endometritis is a persistent low-grade uterine infection in broodmares caused by dormant Streptococcus equi subspecies zooepidemicus in a biofilm state. Standard uterine swab cultures yield false-negative results in over 60% of affected mares because the bacteria have lowered their metabolic rate and resist detection. The condition causes recurring fertility failure, accumulation of uterine fluid, and early embryo loss. It is estimated to affect 70–80% of mares that remain open at the end of the breeding season. Diagnosis requires reactivation of the dormant bacteria — achieved by uterine instillation of bActivate — followed by a post-activation culture 48 hours later.',
+            'associatedAnatomy': { '@type': 'AnatomicalStructure', 'name': 'Equine uterus (endometrium)' },
+            'signOrSymptom': [
+                { '@type': 'MedicalSymptom', 'name': 'Failure to conceive despite breeding to fertile stallion' },
+                { '@type': 'MedicalSymptom', 'name': 'Recurring accumulation of uterine fluid' },
+                { '@type': 'MedicalSymptom', 'name': 'Early embryo loss' },
+                { '@type': 'MedicalSymptom', 'name': 'Negative routine uterine culture despite clinical signs' }
+            ],
+            'possibleTreatment': {
+                '@type': 'MedicalTherapy',
+                'name': 'bActivate followed by targeted antibiotic therapy',
+                'description': 'Uterine instillation of bActivate reactivates dormant bacteria within 48 hours. A post-activation culture identifies the pathogen, enabling targeted systemic and local antibiotic treatment. 83% pregnancy rate achieved in 64 problem mares at Hagyard Equine Medical Institute.'
+            },
+            'recognizingAuthority': { '@type': 'Organization', 'name': 'American College of Theriogenologists' }
+        });
+
+        return () => { document.getElementById('medcond-schema')?.remove(); };
     }, []);
     return (
         <main>
