@@ -48,7 +48,7 @@ export default function WhatIsBactivate() {
                             <div className={styles.eyebrow}>About bActivate</div>
                             <h1 className={styles.title}>What is bActivate?</h1>
                             <div className={styles.leadText}>
-                                <p>bActivate is a diagnostic aid for the detection and clearance of dormant uterine infections in mares — the hidden cause of infertility in barren mares worldwide. Dormant infections have a significant negative effect on fertility.</p>
+                                <p>bActivate is a veterinary bacterial growth medium that reactivates dormant <em>Streptococcus equi</em> subspecies <em>zooepidemicus</em> in the equine uterus. Developed by Prof. Anders Miki Bojesen DVM PhD and Dr. Morten Rønn Petersen DVM PhD Dipl. ACT (Bojesen &amp; Petersen Biotech ApS, Copenhagen), it is instilled by a veterinarian into the uterus of problem mares that fail to conceive despite normal cycles and negative routine cultures. Dormant bacteria reactivate within 48 hours, becoming detectable by standard swab culture. Targeted antibiotic treatment then clears the infection. In clinical studies: <strong>83% pregnancy rate</strong> (Hagyard Equine Medical Institute, 64 mares, Dr. Kristina Lu); <strong>89% pregnancy rate</strong> (Kildangan Stud / Godolphin, 19 mares). Peer-reviewed: Petersen &amp; Bojesen, <em>Theriogenology</em>, 2015. DOI: <a href="https://doi.org/10.1016/j.theriogenology.2015.04.009" target="_blank" rel="noopener noreferrer">10.1016/j.theriogenology.2015.04.009</a>.</p>
                             </div>
 
                             <div className="relative mt-8">
