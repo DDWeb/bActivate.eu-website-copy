@@ -33,5 +33,9 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /*?trk=
+Disallow: /*?profiletab=
+Disallow: /*?wordfence_lh=
+Disallow: /*?wordfence_whitelisted=
 
 Sitemap: https://bactivate.us/sitemap.xml
