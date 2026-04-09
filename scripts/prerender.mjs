@@ -14,6 +14,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
 const BASE_URL = 'https://bactivate.us';
+const PEER_URL = 'https://bactivate.eu';
 
 // Per-page metadata for canonical, title and meta description injection
 const PAGE_META = {
@@ -34,7 +35,7 @@ const PAGE_META = {
     description: 'Step-by-step veterinary protocol: instill 10 ml bActivate during early estrus, culture after 48 hours, treat with targeted antibiotics. Full instructions for veterinarians.',
   },
   '/studies-effect': {
-    title: 'Clinical Studies | 83% Pregnancy Rate — Hagyard & Godolphin',
+    title: 'bActivate Results — Validated at Hagyard Equine Medical Institute, Kentucky',
     description: '83% pregnancy rate in 64 problem mares at Hagyard Equine Medical Institute. 89% at Kildangan Stud. Peer-reviewed: Petersen & Bojesen, Veterinary Microbiology, 2015.',
   },
   '/shop': {
@@ -46,7 +47,7 @@ const PAGE_META = {
     description: 'Find your local bActivate distributor. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US, and veterinary suppliers across Europe and Australia.',
   },
   '/about-us': {
-    title: 'About Us | Prof. Bojesen & Dr. Petersen — bActivate Founders',
+    title: 'About bActivate — Founded by Equine Reproductive Veterinarians',
     description: 'bActivate was developed by Prof. Anders Miki Bojesen DVM PhD and Dr. Morten Rønn Petersen DVM PhD Dipl. ACT — leading experts in equine reproductive microbiology.',
   },
   '/podcast': {
@@ -54,7 +55,7 @@ const PAGE_META = {
     description: 'Listen to the bActivate podcast on equine reproduction, subclinical endometritis, and fertility in problem mares. For veterinarians and horse breeders.',
   },
   '/blog': {
-    title: 'bActivate Blog | Equine Endometritis & Mare Fertility Research',
+    title: 'bActivate Blog — Equine Fertility and the Mare That Won\'t Catch',
     description: 'Research, clinical insights and news on subclinical endometritis, dormant bacteria, and treatment with bActivate. For veterinarians and equine reproduction specialists.',
   },
   '/terms-and-conditions': {
@@ -121,7 +122,8 @@ async function main() {
   for (const route of allRoutes) {
     try {
       const appHtml = render(route);
-      const pageUrl = `${BASE_URL}${route === '/' ? '/' : route}`;
+      const routeSuffix = route === '/' ? '/' : route;
+      const pageUrl = `${BASE_URL}${routeSuffix}`;
       const meta = PAGE_META[route];
 
       let html = template.replace(
@@ -134,15 +136,31 @@ async function main() {
         /(<link rel="canonical" href=")[^"]*(")/,
         `$1${pageUrl}$2`
       );
+
       // Inject og:url for every page
       html = html.replace(
         /(<meta property="og:url" content=")[^"]*(")/,
         `$1${pageUrl}$2`
       );
+
       // Inject twitter:url for every page
       html = html.replace(
         /(<meta name="twitter:url" content=")[^"]*(")/,
         `$1${pageUrl}$2`
+      );
+
+      // Inject per-page hreflang: en-US (self), en-GB (peer), x-default (peer=eu)
+      html = html.replace(
+        /(<link rel="alternate" hreflang="en-US" href=")[^"]*(")/,
+        `$1${BASE_URL}${routeSuffix}$2`
+      );
+      html = html.replace(
+        /(<link rel="alternate" hreflang="en-GB" href=")[^"]*(")/,
+        `$1${PEER_URL}${routeSuffix}$2`
+      );
+      html = html.replace(
+        /(<link rel="alternate" hreflang="x-default" href=")[^"]*(")/,
+        `$1${PEER_URL}${routeSuffix}$2`
       );
 
       // Inject page-specific title and description if defined
