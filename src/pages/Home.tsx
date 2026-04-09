@@ -73,6 +73,7 @@ export default function Home() {
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
+                    loading="lazy"
                   ></iframe>
               </div>
             </div>
@@ -101,8 +102,8 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.featureGridTwoImages}>
             <div className={styles.twoImagesGroup}>
-              <img src="/images/2_77.jpg" alt="Mare 1" width={400} height={300} className={styles.featureImg} />
-              <img src="/images/3_82.jpg" alt="Mare 2" width={400} height={300} className={styles.featureImg} />
+              <img src="/images/2_77.jpg" alt="Mare 1" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/3_82.jpg" alt="Mare 2" width={400} height={300} className={styles.featureImg} loading="lazy" />
             </div>
             <div className={styles.featureTextSide}>
               <div className={styles.eyebrowRed}>Application</div>
@@ -133,8 +134,8 @@ export default function Home() {
               </Link>
             </div>
             <div className={styles.twoImagesGroup}>
-              <img src="/images/colt-in-field-4078876_1920.jpg" alt="Colt" width={400} height={300} className={styles.featureImg} />
-              <img src="/images/horses-2504677_1920.jpg" alt="Mare and foal" width={400} height={300} className={styles.featureImg} />
+              <img src="/images/colt-in-field-4078876_1920.jpg" alt="Colt" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/horses-2504677_1920.jpg" alt="Mare and foal" width={400} height={300} className={styles.featureImg} loading="lazy" />
             </div>
           </div>
         </div>

@@ -97,6 +97,7 @@ export default function HowToUse() {
                                 width={773}
                                 height={239}
                                 className="w-full h-auto"
+                                loading="lazy"
                             />
                         </div>
 
