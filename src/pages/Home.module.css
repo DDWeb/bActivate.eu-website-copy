@@ -166,6 +166,96 @@
   text-decoration: none;
 }
 
+/* Hagyard Case Study Banner */
+.hagyardSection {
+  background-color: #901820;
+  padding: 3.5rem 0;
+  color: white;
+}
+
+.hagyardEyebrow {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.hagyardGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.hagyardStat {
+  padding: 1rem;
+}
+
+.hagyardNumber {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.hagyardLabel {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+}
+
+.hagyardStatCenter {
+  padding: 1.5rem 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hagyardInstitute {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.hagyardSubtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.hagyardMeta {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .hagyardGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hagyardStatCenter {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 1.5rem 1rem;
+  }
+
+  .hagyardNumber {
+    font-size: 3rem;
+  }
+}
+
 /* Sections */
 .howItWorksSection {
   padding: 4rem 0;

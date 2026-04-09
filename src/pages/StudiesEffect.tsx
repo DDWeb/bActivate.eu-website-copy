@@ -81,6 +81,24 @@ export default function StudiesEffect() {
                     </div>
 
                     <div className={styles.studyCard}>
+                        <h2 className={styles.studyTitle}>University of Copenhagen — Emilie Kähler Hjenner &amp; Kathrine Kjeldsen Ravn, 2025</h2>
+                        <div className={styles.studyText}>
+                            <p>A veterinary thesis from the <strong>University of Copenhagen</strong>, Department of Veterinary and Animal Sciences, supervised by <strong>Prof. Anders Miki Bojesen</strong>. The study investigated the role of subclinical <em>Streptococcus equi</em> subsp. <em>zooepidemicus</em> infection in 31 problem mares from Ireland and Denmark — combining bacteriology, histology (Kenney-score), and Fluorescence In Situ Hybridization (FISH).</p>
+                            <ul style={{ marginTop: '1rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
+                                <li><strong>100% pregnancy rate</strong> in mares successfully activated with bActivate and treated for S. zooepidemicus — regardless of Kenney category</li>
+                                <li><strong>86.7% (13/15)</strong> of subfertile mares tested positive for dormant S. zooepidemicus after bActivate activation — all had been negative on standard culture before</li>
+                                <li><strong>FISH detected Streptococcus spp. in 100% (16/16)</strong> of mares, including those negative on bActivate activation — confirming bacteria hiding deep in the endometrium (50–500+ µm) and intracellularly</li>
+                                <li>Live-foal rates after treatment: <strong>100%</strong> (Kenney I), <strong>83.3%</strong> (Kenney IIAi), <strong>66.7%</strong> (Kenney IIB) — all higher than Kenney–Doig predicted rates</li>
+                            </ul>
+                            <p style={{ marginTop: '1rem' }}><strong>Conclusion:</strong> Subclinical S. zooepidemicus infection has a markedly negative impact on fertility in mares — but this effect can be <strong>reversed by activation with bActivate and targeted antibiotic treatment</strong>.</p>
+                        </div>
+                        <div className={styles.buttonGroup}>
+                            <a href="/images/specialerapport-kathrine-emilie-ku-2025.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
+                            <a href="https://open.spotify.com/episode/1JP9FDxlJh55AKnMAGvaoG" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
+                        </div>
+                    </div>
+
+                    <div className={styles.studyCard}>
                         <h2 className={styles.studyTitle}>Dormant Strepzoo Studie at Kildangan – Godolphin</h2>
                         <div className={styles.studyText}>
                             <p>This study investigates the impact of latent infections caused by <strong>Streptococcus equi subsp. zooepidemicus</strong> on fertility in mares. Dormant bacteria are shown to persist intracellularly within the uterus, evading detection by traditional methods. These infections disrupt the establishment and maintenance of pregnancy, highlighting the necessity for advanced diagnostic tools like <strong>bActivate</strong>, which enables the detection and effective treatment of dormant infections.</p>

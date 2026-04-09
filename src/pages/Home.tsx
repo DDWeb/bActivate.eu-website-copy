@@ -36,16 +36,29 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.heroVideoWrapper}>
-            <div className={styles.videoContainer}>
-              <iframe
-                  className={styles.video}
-                  src="https://www.youtube.com/embed/_1QPkyXkFgs"
-                  title="bActivate - Facilitate Mare Pregnancy"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+        </div>
+      </section>
+
+      {/* Hagyard Case Study Banner */}
+      <section className={styles.hagyardSection}>
+        <div className={styles.container}>
+          <div className={styles.hagyardEyebrow}>Clinical Evidence — United States</div>
+          <div className={styles.hagyardGrid}>
+            <div className={styles.hagyardStat}>
+              <div className={styles.hagyardNumber}>83%</div>
+              <div className={styles.hagyardLabel}>pregnancy rate in problem mares</div>
+            </div>
+            <div className={styles.hagyardStatCenter}>
+              <div className={styles.hagyardInstitute}>Hagyard Equine Medical Institute</div>
+              <div className={styles.hagyardSubtitle}>World's largest equine hospital<br />Lexington, Kentucky</div>
+              <div className={styles.hagyardMeta}>64 mares · Dr. Kristina Lu, DVM</div>
+              <Link to="/studies-effect" className={styles.btnRedSquare} style={{ marginTop: '1.5rem' }}>
+                SEE THE EVIDENCE
+              </Link>
+            </div>
+            <div className={styles.hagyardStat}>
+              <div className={styles.hagyardNumber}>64</div>
+              <div className={styles.hagyardLabel}>problem mares treated in field study</div>
             </div>
           </div>
         </div>
@@ -68,7 +81,7 @@ export default function Home() {
               <div className={styles.videoContainer}>
                 <iframe
                     className={styles.video}
-                    src="https://www.youtube.com/embed/acpF8se6Co8"
+                    src="https://www.youtube.com/embed/_1QPkyXkFgs"
                     title="How bActivate Works"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

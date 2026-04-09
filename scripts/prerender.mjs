@@ -13,6 +13,56 @@ import { fileURLToPath, pathToFileURL } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 
+const BASE_URL = 'https://bactivate.us';
+
+// Per-page metadata for canonical, title and meta description injection
+const PAGE_META = {
+  '/': {
+    title: 'bActivate | Treat Hidden Uterine Infections in Problem Mares',
+    description: '70–80% of problem mares have a hidden uterine infection. bActivate activates dormant bacteria so your mare\'s immune system can find and clear them. 83% pregnancy rate at Hagyard.',
+  },
+  '/what-is-bactivate': {
+    title: 'What is bActivate? | Uterine Treatment for Problem Mares',
+    description: 'bActivate is a diagnostic aid for detecting dormant Streptococcus zooepidemicus infections in problem mares — the hidden cause of 70–80% of recurring fertility failure.',
+  },
+  '/when-to-use': {
+    title: 'When to Use bActivate | Signs of Hidden Uterine Infection in Mares',
+    description: 'Is your mare failing to conceive despite clean swabs? Learn the signs of dormant uterine infection and when bActivate is indicated — for veterinarians and horse breeders.',
+  },
+  '/how-to-use': {
+    title: 'How to Use bActivate | Veterinary Protocol',
+    description: 'Step-by-step veterinary protocol: instill 10 ml bActivate during early estrus, culture after 48 hours, treat with targeted antibiotics. Full instructions for veterinarians.',
+  },
+  '/studies-effect': {
+    title: 'Clinical Studies | 83% Pregnancy Rate — Hagyard & Godolphin',
+    description: '83% pregnancy rate in 64 problem mares at Hagyard Equine Medical Institute. 89% at Kildangan Stud. Peer-reviewed: Petersen & Bojesen, Veterinary Microbiology, 2015.',
+  },
+  '/shop': {
+    title: 'Order bActivate | Veterinary Treatment for Problem Mares',
+    description: 'Order bActivate for use in problem mares. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US. One vial per treatment cycle.',
+  },
+  '/our-distributors': {
+    title: 'bActivate Distributors | US, Europe & Australia',
+    description: 'Find your local bActivate distributor. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US, and veterinary suppliers across Europe and Australia.',
+  },
+  '/about-us': {
+    title: 'About Us | Prof. Bojesen & Dr. Petersen — bActivate Founders',
+    description: 'bActivate was developed by Prof. Anders Miki Bojesen DVM PhD and Dr. Morten Rønn Petersen DVM PhD Dipl. ACT — leading experts in equine reproductive microbiology.',
+  },
+  '/podcast': {
+    title: 'bActivate Podcast | Equine Reproduction & Mare Fertility',
+    description: 'Listen to the bActivate podcast on equine reproduction, subclinical endometritis, and fertility in problem mares. For veterinarians and horse breeders.',
+  },
+  '/blog': {
+    title: 'bActivate Blog | Equine Endometritis & Mare Fertility Research',
+    description: 'Research, clinical insights and news on subclinical endometritis, dormant bacteria, and treatment with bActivate. For veterinarians and equine reproduction specialists.',
+  },
+  '/terms-and-conditions': {
+    title: 'Terms and Conditions | bActivate',
+    description: 'Terms and conditions for the use of bActivate. Read before administering bActivate to mares.',
+  },
+};
+
 const STATIC_ROUTES = [
   '/',
   '/about-us',
@@ -71,10 +121,58 @@ async function main() {
   for (const route of allRoutes) {
     try {
       const appHtml = render(route);
-      const html = template.replace(
+      const pageUrl = `${BASE_URL}${route === '/' ? '/' : route}`;
+      const meta = PAGE_META[route];
+
+      let html = template.replace(
         '<div id="root"></div>',
         `<div id="root">${appHtml}</div>`
       );
+
+      // Inject canonical URL for every page
+      html = html.replace(
+        /(<link rel="canonical" href=")[^"]*(")/,
+        `$1${pageUrl}$2`
+      );
+      // Inject og:url for every page
+      html = html.replace(
+        /(<meta property="og:url" content=")[^"]*(")/,
+        `$1${pageUrl}$2`
+      );
+      // Inject twitter:url for every page
+      html = html.replace(
+        /(<meta name="twitter:url" content=")[^"]*(")/,
+        `$1${pageUrl}$2`
+      );
+
+      // Inject page-specific title and description if defined
+      if (meta) {
+        html = html.replace(
+          /(<title>)[^<]*(< \/title>|<\/title>)/,
+          `$1${meta.title}</title>`
+        );
+        html = html.replace(
+          /(<meta name="description" content=")[^"]*(")/,
+          `$1${meta.description}$2`
+        );
+        html = html.replace(
+          /(<meta property="og:title" content=")[^"]*(")/,
+          `$1${meta.title}$2`
+        );
+        html = html.replace(
+          /(<meta property="og:description" content=")[^"]*(")/,
+          `$1${meta.description}$2`
+        );
+        html = html.replace(
+          /(<meta name="twitter:title" content=")[^"]*(")/,
+          `$1${meta.title}$2`
+        );
+        html = html.replace(
+          /(<meta name="twitter:description" content=")[^"]*(")/,
+          `$1${meta.description}$2`
+        );
+      }
+
       const outPath = routeToOutputPath(route);
       mkdirSync(path.dirname(outPath), { recursive: true });
       writeFileSync(outPath, html, 'utf8');
