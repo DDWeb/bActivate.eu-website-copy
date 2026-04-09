@@ -15,6 +15,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Shop from './pages/Shop';
 import TermsAndConditions from './pages/TermsAndConditions';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,6 +47,7 @@ function App() {
       </Routes>
       <FAQSection />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
