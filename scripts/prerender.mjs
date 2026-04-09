@@ -174,10 +174,32 @@ const STATIC_ROUTES = [
   '/privacy-policy',
 ];
 
+function parseBlogDate(dateStr) {
+  const months = { January: '01', February: '02', March: '03', April: '04', May: '05', June: '06', July: '07', August: '08', September: '09', October: '10', November: '11', December: '12' };
+  const m = dateStr.match(/(\d+)\.\s+(\w+)\s+(\d{4})/);
+  if (!m) return dateStr;
+  return `${m[3]}-${months[m[2]] || '01'}-${m[1].padStart(2, '0')}`;
+}
+
 function getBlogSlugs() {
   const content = readFileSync(path.resolve(ROOT, 'src/lib/blogData.ts'), 'utf8');
   const matches = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)];
   return matches.map(m => m[1]);
+}
+
+function getBlogPostData() {
+  const content = readFileSync(path.resolve(ROOT, 'src/lib/blogData.ts'), 'utf8');
+  const slugs = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)].map(m => m[1]);
+  const titles = [...content.matchAll(/title:\s*"([^"]+)"/g)].map(m =>
+    m[1].replace(/&amp;/g, '&').replace(/&ndash;/g, '–').replace(/&mdash;/g, '—').replace(/&nbsp;/g, ' ')
+  );
+  const dates = [...content.matchAll(/date:\s*"([^"]+)"/g)].map(m => m[1]);
+  const images = [...content.matchAll(/image:\s*"([^"]+)"/g)].map(m => m[1]);
+  const result = {};
+  slugs.forEach((slug, i) => {
+    result[slug] = { title: titles[i] || slug, date: parseBlogDate(dates[i] || ''), image: images[i] || '' };
+  });
+  return result;
 }
 
 function getBlogTitles() {
@@ -221,6 +243,7 @@ function routeToOutputPath(route) {
 async function main() {
   const blogSlugs = getBlogSlugs();
   const blogTitles = getBlogTitles();
+  const blogPostData = getBlogPostData();
   const allRoutes = [
     ...STATIC_ROUTES,
     ...blogSlugs.map(slug => `/blog/${slug}`),
@@ -325,6 +348,30 @@ async function main() {
       const breadcrumb = buildBreadcrumbSchema(route, BASE_URL, blogTitles);
       if (breadcrumb) {
         html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>\n</head>`);
+      }
+
+      // Inject Article schema for blog posts
+      if (route.startsWith('/blog/')) {
+        const slug = route.replace('/blog/', '');
+        const post = blogPostData[slug];
+        if (post) {
+          const articleSchema = {
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            'headline': post.title,
+            'datePublished': post.date,
+            'dateModified': post.date,
+            'image': post.image ? `${BASE_URL}${post.image}` : `${BASE_URL}/og-image.jpg`,
+            'url': `${BASE_URL}${route}`,
+            'author': [
+              { '@type': 'Person', '@id': `${BASE_URL}/#anders-bojesen`, 'name': 'Anders Miki Bojesen', 'url': `${BASE_URL}/about-us` },
+              { '@type': 'Person', '@id': `${BASE_URL}/#morten-petersen`, 'name': 'Morten Rønn Petersen', 'url': `${BASE_URL}/about-us` },
+            ],
+            'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
+            'isPartOf': { '@type': 'WebSite', '@id': `${BASE_URL}/#website` },
+          };
+          html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(articleSchema)}</script>\n</head>`);
+        }
       }
 
       // Inject per-route schemas (Product, HowTo etc.)
