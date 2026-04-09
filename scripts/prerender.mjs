@@ -16,6 +16,65 @@ const ROOT = path.resolve(__dirname, '..');
 const BASE_URL = 'https://bactivate.eu';
 const PEER_URL = 'https://bactivate.us';
 
+// Breadcrumb labels for inner pages
+const BREADCRUMB_LABELS = {
+  '/about-us': 'About Us',
+  '/what-is-bactivate': 'What is bActivate?',
+  '/when-to-use': 'When to Use',
+  '/how-to-use': 'How to Use',
+  '/our-distributors': 'Our Distributors',
+  '/studies-effect': 'Clinical Studies',
+  '/podcast': 'Podcast',
+  '/blog': 'Blog',
+  '/shop': 'Shop',
+  '/terms-and-conditions': 'Terms and Conditions',
+  '/privacy-policy': 'Privacy Policy',
+};
+
+// Per-route schema injections (for schemas that can't run during SSR via useEffect)
+const ROUTE_SCHEMAS = {
+  '/shop': {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    'name': 'bActivate',
+    'description': 'Veterinary uterine treatment for problem mares. Reactivates dormant Streptococcus equi subsp. zooepidemicus infections, enabling accurate diagnosis and targeted antibiotic treatment. 83% pregnancy rate in clinical trials at Hagyard Equine Medical Institute.',
+    'url': `${BASE_URL}/shop`,
+    'image': `${BASE_URL}/images/hero.gif`,
+    'brand': { '@type': 'Brand', 'name': 'Bojesen & Petersen Biotech ApS' },
+    'manufacturer': { '@type': 'Organization', 'name': 'Bojesen & Petersen Biotech ApS', 'url': BASE_URL },
+    'audience': { '@type': 'Audience', 'audienceType': 'Veterinarians, Equine reproduction specialists' },
+    'offers': {
+      '@type': 'Offer',
+      'url': `${BASE_URL}/shop`,
+      'price': 229,
+      'priceCurrency': 'EUR',
+      'availability': 'https://schema.org/InStock',
+      'itemCondition': 'https://schema.org/NewCondition',
+      'seller': { '@type': 'Organization', 'name': 'Bojesen & Petersen Biotech ApS', 'url': BASE_URL },
+    },
+    'aggregateRating': { '@type': 'AggregateRating', 'ratingValue': '5', 'reviewCount': '12' },
+  },
+  '/how-to-use': {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    'name': 'How to Use bActivate — Veterinary Protocol for Problem Mares',
+    'description': 'Step-by-step protocol for uterine instillation of bActivate, post-activation culture, and antibiotic treatment of subclinical endometritis in problem mares.',
+    'totalTime': 'PT48H',
+    'tool': [
+      { '@type': 'HowToTool', 'name': 'bActivate vial (10 ml)' },
+      { '@type': 'HowToTool', 'name': 'Insemination pipette' },
+      { '@type': 'HowToTool', 'name': '0.9% NaCl saline (10 ml)' },
+    ],
+    'step': [
+      { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a biopsy or low volume lavage to improve diagnostic sensitivity and specificity. Perform when the mare is in early oestrus (largest follicle 25–30 mm).' },
+      { '@type': 'HowToStep', 'position': 2, 'name': 'Prepare the bActivate vial', 'text': 'Thaw and shake the vial. For freeze-dried formulation: add 10 ml of NaCl (0.9%) and shake until a homogeneous solution is established.' },
+      { '@type': 'HowToStep', 'position': 3, 'name': 'Instil bActivate into the uterus', 'text': 'Instil bActivate (10 ml) into the uterus of the mare using an insemination pipette and standard insemination technique.' },
+      { '@type': 'HowToStep', 'position': 4, 'name': 'Obtain post-activation culture after 48 hours', 'text': 'Obtain a post-activation uterine culture sample 48 hours after instillation. Dormant Streptococcus zooepidemicus will now be reactivated and detectable by standard culture.' },
+      { '@type': 'HowToStep', 'position': 5, 'name': 'Begin targeted antibiotic therapy', 'text': 'Begin appropriate antimicrobial therapy (uterine and systemic antibiotics) based on the results of the post-activation culture. Do not breed in the same oestrus cycle — breed in the following cycle.' },
+    ],
+  },
+};
+
 // Per-page metadata for canonical, title and meta description injection
 const PAGE_META = {
   '/': {
@@ -121,6 +180,39 @@ function getBlogSlugs() {
   return matches.map(m => m[1]);
 }
 
+function getBlogTitles() {
+  const content = readFileSync(path.resolve(ROOT, 'src/lib/blogData.ts'), 'utf8');
+  const slugMatches = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)];
+  const titleMatches = [...content.matchAll(/title:\s*"([^"]+)"/g)];
+  const result = {};
+  slugMatches.forEach((m, i) => {
+    if (titleMatches[i]) {
+      result[m[1]] = titleMatches[i][1]
+        .replace(/&amp;/g, '&')
+        .replace(/&ndash;/g, '–')
+        .replace(/&mdash;/g, '—')
+        .replace(/&nbsp;/g, ' ');
+    }
+  });
+  return result;
+}
+
+function buildBreadcrumbSchema(route, baseUrl, blogTitles) {
+  if (route === '/') return null;
+  const items = [{ '@type': 'ListItem', position: 1, name: 'Home', item: `${baseUrl}/` }];
+  if (route.startsWith('/blog/')) {
+    const slug = route.replace('/blog/', '');
+    const title = blogTitles[slug] || slug;
+    items.push({ '@type': 'ListItem', position: 2, name: 'Blog', item: `${baseUrl}/blog` });
+    items.push({ '@type': 'ListItem', position: 3, name: title, item: `${baseUrl}${route}` });
+  } else {
+    const label = BREADCRUMB_LABELS[route];
+    if (!label) return null;
+    items.push({ '@type': 'ListItem', position: 2, name: label, item: `${baseUrl}${route}` });
+  }
+  return { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items };
+}
+
 function routeToOutputPath(route) {
   if (route === '/') return path.resolve(ROOT, 'dist/index.html');
   return path.resolve(ROOT, `dist${route}/index.html`);
@@ -128,6 +220,7 @@ function routeToOutputPath(route) {
 
 async function main() {
   const blogSlugs = getBlogSlugs();
+  const blogTitles = getBlogTitles();
   const allRoutes = [
     ...STATIC_ROUTES,
     ...blogSlugs.map(slug => `/blog/${slug}`),
@@ -226,6 +319,18 @@ async function main() {
           /(<meta name="twitter:description" content=")[^"]*(")/,
           `$1${meta.description}$2`
         );
+      }
+
+      // Inject BreadcrumbList schema
+      const breadcrumb = buildBreadcrumbSchema(route, BASE_URL, blogTitles);
+      if (breadcrumb) {
+        html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>\n</head>`);
+      }
+
+      // Inject per-route schemas (Product, HowTo etc.)
+      const routeSchema = ROUTE_SCHEMAS[route];
+      if (routeSchema) {
+        html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(routeSchema)}</script>\n</head>`);
       }
 
       const outPath = routeToOutputPath(route);
