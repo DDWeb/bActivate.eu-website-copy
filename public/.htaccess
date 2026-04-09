@@ -8,8 +8,8 @@
 # www → non-www
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{HTTP_HOST} ^www\.bactivate\.eu [NC]
-    RewriteRule ^ https://bactivate.eu%{REQUEST_URI} [R=301,L]
+    RewriteCond %{HTTP_HOST} ^www\.bactivate\.us [NC]
+    RewriteRule ^ https://bactivate.us%{REQUEST_URI} [R=301,L]
 </IfModule>
 
 # Remove trailing slash
