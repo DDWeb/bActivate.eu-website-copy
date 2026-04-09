@@ -1,7 +1,7 @@
 import styles from './WhatsAppButton.module.css';
 
 const WHATSAPP_NUMBER = '4523991004';
-const MESSAGE = 'Hi, I'd like to know more about bActivate';
+const MESSAGE = "Hi, I'd like to know more about bActivate";
 
 export default function WhatsAppButton() {
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(MESSAGE)}`;
