@@ -52,6 +52,7 @@ export default function Footer() {
                     <h3 className={styles.heading}>Quick links</h3>
                     <ul className={styles.linkList}>
                         <li><Link to="/terms-and-conditions" className={styles.link}>Terms and Conditions</Link></li>
+                        <li><Link to="/privacy-policy" className={styles.link}>Privacy Policy</Link></li>
                         <li><Link to="/what-is-bactivate" className={styles.link}>What is bActivate?</Link></li>
                         <li><Link to="/when-to-use" className={styles.link}>When to use?</Link></li>
                         <li><Link to="/how-to-use" className={styles.link}>How to use?</Link></li>

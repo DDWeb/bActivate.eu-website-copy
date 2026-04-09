@@ -15,6 +15,7 @@ import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Shop from './pages/Shop';
 import TermsAndConditions from './pages/TermsAndConditions';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 import WhatsAppButton from './components/WhatsAppButton';
 
 function ScrollToTop() {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <FAQSection />
