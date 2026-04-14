@@ -17,10 +17,12 @@
     RewriteRule ^ https://bactivate.eu%{REQUEST_URI} [R=301,L]
 </IfModule>
 
-# Remove trailing slash
+# Prevent server from auto-adding trailing slash to directory URLs
+DirectorySlash Off
+
+# Remove trailing slash (DirectorySlash Off prevents the redirect loop)
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [R=301,L]
 </IfModule>
 
@@ -53,6 +55,7 @@
 Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares-2-2-2 /blog/how-bactivate-tackles-dormant-bacteria-in-mares
 Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares-2-2 /blog/enhancing-mare-fertility-bactivate-revolutionary-approach
 Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares-2 /blog/addressing-challenges-of-problem-mares
+Redirect 301 /blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-maresbojesen-petersen-biotech-aps-copenhagen-denmark /blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares
 
 # SPA routing — redirect all non-file requests to index.html
 <IfModule mod_rewrite.c>
