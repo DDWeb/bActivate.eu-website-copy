@@ -45,6 +45,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    /* Last row: if only 1 card remains, centre it */
+    justify-items: stretch;
 }
 
 .card {

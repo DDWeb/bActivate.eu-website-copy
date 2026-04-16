@@ -30,11 +30,25 @@ const testimonials = [
         tag: "Veterinarian"
     },
     {
-        quote: "I used bActivate and after just one covering got a colt foal — after 3 years of hardship where the mare went in foal but never managed to produce a live foal.",
+        quote: "I used bActivate and after just one covering got a colt foal — after 3 years of hardship where the mare went in foal but never managed to produce a live foal. I cannot recommend bActivate enough.",
         name: "Mary Davison",
         title: "Cathrinestown Stud Farm, Leixlip, Ireland",
         initials: "MD",
         tag: "Breeder"
+    },
+    {
+        quote: "Our 18-year-old mare had failed for five consecutive seasons. After bActivate she was confirmed strongly positive for Streptococcus — an infection standard testing had completely missed. She was treated, covered in September, and for the first time in five seasons there was no fluid present at ovulation. She is now 34 days in foal. This is the first time a pregnancy has not involved invasive flushing, excessive drugs and a battle to hold it.",
+        name: "Holly Graham-Jones",
+        title: "Mare Owner, Ireland",
+        initials: "HG",
+        tag: "Breeder"
+    },
+    {
+        quote: "bActivate enabled us to identify chronically infected mares which were found to be clean on culture and cytology using routine diagnostics. We will use it for our problem mares in the coming season.",
+        name: "Drs. Anja Rosenbrock & Meta Osborne",
+        title: "Tinnakill House, Ireland",
+        initials: "TR",
+        tag: "Veterinarian"
     }
 ];
 
