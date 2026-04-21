@@ -32,13 +32,21 @@ export default function Header() {
                             <Link to="/how-to-use" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>How to use?</Link>
                         </div>
                     </div>
-                    <Link to="/our-distributors" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Our distributors</Link>
                     <Link to="/studies-effect" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Studies & effect</Link>
                     <Link to="/podcast" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Podcast</Link>
                     <Link to="/blog" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Blog</Link>
                     <Link to="/about-us" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About us</Link>
 
                     <div className={styles.headerRight}>
+                        <a
+                            href="https://share-eu1.hsforms.com/1r_ir4DV2RSukWkIyzs8bzw2daoxk"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.consultButton}
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Free Consultation
+                        </a>
                         <Link to="/shop" className={styles.shopButton} onClick={() => setIsMenuOpen(false)}>
                             SHOP
                         </Link>
