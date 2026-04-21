@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
 import styles from './TermsAndConditions.module.css';
 
 export default function TermsAndConditions() {
+    useEffect(() => {
+        document.title = 'Terms and Conditions | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/terms-and-conditions';
+    }, []);
+
     return (
         <main className={styles.section}>
             <div className={styles.container}>

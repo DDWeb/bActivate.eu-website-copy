@@ -5,6 +5,15 @@ import ReviewsSection from '@/components/ReviewsSection';
 
 export default function Shop() {
     useEffect(() => {
+        document.title = 'Shop | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/shop';
+
         // Only load script if not already loaded
         if (document.getElementById('ecwid-script')) return;
 

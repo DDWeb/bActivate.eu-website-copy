@@ -1,7 +1,18 @@
+import { useEffect } from 'react';
 import styles from './Podcast.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function Podcast() {
+    useEffect(() => {
+        document.title = 'Podcast | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/podcast';
+    }, []);
     const danishVideos = [
         "Dr2ridUGLus",
         "mIar9PYcUIA",

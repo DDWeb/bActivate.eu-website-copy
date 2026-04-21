@@ -1,8 +1,20 @@
 
+import { useEffect } from 'react';
 import styles from './AboutUs.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function AboutUs() {
+    useEffect(() => {
+        document.title = 'About Us | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/about-us';
+    }, []);
+
     return (
         <main>
             <section className={styles.section}>

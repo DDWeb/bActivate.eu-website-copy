@@ -1,8 +1,20 @@
 
+import { useEffect } from 'react';
 import styles from './WhatIsBactivate.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function WhatIsBactivate() {
+    useEffect(() => {
+        document.title = 'What is bActivate? | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/what-is-bactivate';
+    }, []);
+
     return (
         <main>
             <section className={styles.section}>

@@ -21,6 +21,17 @@ export default function Blog() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    document.title = 'Blog | bActivate';
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = 'https://bactivate.us/blog';
+  }, []);
+
+  useEffect(() => {
     async function fetchPosts() {
       const { data, error } = await supabase
         .from("blog_posts")

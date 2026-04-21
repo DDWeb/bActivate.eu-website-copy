@@ -1,8 +1,20 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import styles from './StudiesEffect.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function StudiesEffect() {
+    useEffect(() => {
+        document.title = 'Studies & Effect | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/studies-effect';
+    }, []);
+
     return (
         <main>
             <section className={styles.section}>

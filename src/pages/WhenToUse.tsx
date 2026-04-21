@@ -1,8 +1,20 @@
 
+import { useEffect } from 'react';
 import styles from './WhenToUse.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function WhenToUse() {
+    useEffect(() => {
+        document.title = 'When to Use | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/when-to-use';
+    }, []);
+
     return (
         <main>
             <section className={styles.section}>

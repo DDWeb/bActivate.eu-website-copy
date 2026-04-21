@@ -1,7 +1,18 @@
+import { useEffect } from 'react';
 import styles from './OurDistributors.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function OurDistributors() {
+    useEffect(() => {
+        document.title = 'Our Distributors | bActivate';
+        let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.rel = 'canonical';
+            document.head.appendChild(canonical);
+        }
+        canonical.href = 'https://bactivate.us/our-distributors';
+    }, []);
     const distributors = [
         {
             region: 'UK',

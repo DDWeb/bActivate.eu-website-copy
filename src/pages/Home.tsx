@@ -1,9 +1,21 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import styles from './Home.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 import WebinarSignup from '@/components/WebinarSignup';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'bActivate | Facilitate Mare Pregnancy';
+    let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.rel = 'canonical';
+      document.head.appendChild(canonical);
+    }
+    canonical.href = 'https://bactivate.us/';
+  }, []);
+
   return (
     <main>
       {/* Hero Section */}
