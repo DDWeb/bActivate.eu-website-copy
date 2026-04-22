@@ -16,6 +16,7 @@ import BlogPost from './pages/BlogPost';
 import Shop from './pages/Shop';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import ConsultationConfirmed from './pages/ConsultationConfirmed';
 import WhatsAppButton from './components/WhatsAppButton';
 
 function ScrollToTop() {
@@ -27,6 +28,9 @@ function ScrollToTop() {
 }
 
 function App() {
+  const { pathname } = useLocation();
+  const isConfirmationPage = pathname === '/consultation-confirmed';
+
   return (
     <>
       <ScrollToTop />
@@ -45,9 +49,10 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/consultation-confirmed" element={<ConsultationConfirmed />} />
         <Route path="*" element={<Home />} />
       </Routes>
-      <FAQSection />
+      {!isConfirmationPage && <FAQSection />}
       <Footer />
       <WhatsAppButton />
     </>
