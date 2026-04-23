@@ -61,17 +61,7 @@ export default function Shop() {
     }, []);
 
     useEffect(() => {
-        // Only load script if not already loaded
-        if (document.getElementById('ecwid-script')) return;
-
-        const script = document.createElement('script');
-        script.id = 'ecwid-script';
-        script.type = 'text/javascript';
-        script.charset = 'utf-8';
-        script.async = true;
-        script.src = 'https://app.business.shop/script.js?130367502&data_platform=code&data_date=2024-04-09';
-
-        script.onload = () => {
+        const initEcwid = () => {
             // @ts-ignore
             if (window.xProductBrowser) {
                 // @ts-ignore
@@ -87,7 +77,22 @@ export default function Shop() {
             }
         };
 
-        document.getElementById('my-store-130367502')?.appendChild(script);
+        if (document.getElementById('ecwid-script')) {
+            // Script already loaded — just reinitialise the widget in the new div
+            initEcwid();
+            return;
+        }
+
+        const script = document.createElement('script');
+        script.id = 'ecwid-script';
+        script.type = 'text/javascript';
+        script.charset = 'utf-8';
+        script.async = true;
+        script.src = 'https://app.business.shop/script.js?130367502&data_platform=code&data_date=2024-04-09';
+        script.onload = initEcwid;
+
+        // Append to body — not to the store div (which React recreates on navigation)
+        document.body.appendChild(script);
 
         // Google Customer Reviews - survey opt-in after order placement
         // @ts-ignore
