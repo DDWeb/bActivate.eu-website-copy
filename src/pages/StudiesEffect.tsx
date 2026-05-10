@@ -99,7 +99,7 @@ export default function StudiesEffect() {
                     </div>
 
                     <div className={styles.studyCard}>
-                        <h2 className={styles.studyTitle}>Dormant Strepzoo Studie at Kildangan – Godolphin</h2>
+                        <h2 className={styles.studyTitle}>Kildangan Stud, Godolphin — project involving M. Osborne (Meta Osborne)</h2>
                         <div className={styles.studyText}>
                             <p>This study investigates the impact of latent infections caused by <strong>Streptococcus equi subsp. zooepidemicus</strong> on fertility in mares. Dormant bacteria are shown to persist intracellularly within the uterus, evading detection by traditional methods. These infections disrupt the establishment and maintenance of pregnancy, highlighting the necessity for advanced diagnostic tools like <strong>bActivate</strong>, which enables the detection and effective treatment of dormant infections.</p>
                             <p className="mt-4"><strong>In 19 problem mares treated at Kildangan Stud, 89% achieved pregnancy.</strong></p>
