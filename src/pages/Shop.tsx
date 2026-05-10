@@ -30,10 +30,6 @@ export default function Shop() {
                     "name": "Bojesen & Petersen Biotech ApS",
                     "url": "https://bactivate.us"
                 },
-                "audience": {
-                    "@type": "Audience",
-                    "audienceType": "Veterinarians, Equine reproduction specialists"
-                },
                 "offers": {
                     "@type": "Offer",
                     "url": "https://bactivate.us/shop",
