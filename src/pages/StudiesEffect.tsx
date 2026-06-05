@@ -15,7 +15,7 @@ export default function StudiesEffect() {
                     <h1 className={styles.title}>Studies & effect</h1>
 
                     <div className="bg-white border border-gray-200 rounded p-6 mb-8">
-                        <p className="text-gray-700 leading-relaxed">Three independent clinical evaluations document bActivate's efficacy. At <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY), Dr. Kristina Lu treated 64 problem mares — <strong>83% became pregnant</strong>. At <strong>Kildangan Stud</strong>, operated by Godolphin, <strong>89% of 19 problem mares</strong> achieved pregnancy. A collaborative study between Copenhagen University and the Breeders Club reported a <strong>72% live foal rate</strong> across treated mares. All three studies were conducted independently of the manufacturer.</p>
+                        <p className="text-gray-700 leading-relaxed">Three independent clinical evaluations document bActivate's efficacy. At <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY), Dr. Kristina Lu treated 64 problem Thoroughbred mares (barren ≥3 cycles) — <strong>83% became pregnant</strong> (53/64) and <strong>70% achieved live foals</strong> (32/46 with known outcome) (<a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen &amp; Bojesen, Clinical Theriogenology 2014</a>). At <strong>Kildangan Stud</strong>, operated by Godolphin, <strong>89% of 19 problem mares</strong> achieved pregnancy. The peer-reviewed laboratory study (<a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen et al., Vet Microbiol 2015</a>) confirmed bActivate activated dormant bacteria in <strong>64% of treated mares</strong> versus 8% in PBS controls (n=37). All studies were conducted independently of the manufacturer.</p>
                     </div>
 
                     <div className={styles.textGrid}>
@@ -63,8 +63,8 @@ export default function StudiesEffect() {
                             </a>
                             <a href="https://equimanagement.com/research-medical/biofilms-and-the-equine-uterus/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>EquiManagement — 2023</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"bActivate — a growth medium specifically formulated to reactivate dormant Strep uterine infections — demonstrated effectiveness: treated mares showed only 8% bacterial positivity versus 64% in control animals."</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Nancy S. Loving, DVM<br />EquiManagement, June 2023</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"bActivate — a growth medium specifically formulated to reactivate dormant Strep uterine infections — demonstrated effectiveness: bActivate-treated mares showed 64% bacterial activation versus only 8% in PBS controls."</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>— Nancy S. Loving, DVM<br />EquiManagement, June 2023<br /><span style={{ fontSize: "0.75rem", fontStyle: "italic" }}>Source: <a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" style={{ color: "#901820" }}>Petersen et al., Vet Microbiol 2015</a> — PMID 26123371, n=37 (25 bActivate / 12 PBS)</span></div>
                             </a>
                         </div>
                     </div>
@@ -88,12 +88,19 @@ export default function StudiesEffect() {
                     </div>
 
                     <div className={styles.studyCard}>
-                        <h2 className={styles.studyTitle}>Hagyard, project led by Dr. Kristina Lu.</h2>
+                        <h2 className={styles.studyTitle}>Hagyard, Davidson &amp; McGee — project led by Dr. Kristina Lu</h2>
                         <div className={styles.studyText}>
-                            <p>This document showcases advancements in diagnosing and treating latent endometritis in mares, supported by leading equine specialists such as <strong>Dr. Kristina Lu</strong> and the theriogenology team at <strong>Hagyard Equine Medical Institute</strong>. Their work with innovative tools <strong>bActivate</strong> has transformed the management of dormant infections, enabling precise diagnosis and successful treatment. A total of 64 problem mares were included and subsequently bred. Pregnancy was established in 53 (83%) mares</p>
+                            <p>A clinical study at <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY) led by <strong>Dr. Kristina Lu</strong>, reported by <strong>Petersen &amp; Bojesen</strong> at the Society for Theriogenology Annual Conference 2014 (<em>Clinical Theriogenology</em> 6(3):313–314). A total of <strong>64 Thoroughbred problem mares</strong> (barren ≥3 consecutive cycles) were included and subsequently bred.</p>
+                            <ul style={{ marginTop: '1rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
+                                <li><strong>83% pregnancy rate</strong> — 53 of 64 mares became pregnant</li>
+                                <li><strong>70% live foal rate</strong> — 32 live foals from 46 mares with known outcome</li>
+                                <li><strong>47% activation-positive</strong> — 30 of 64 mares tested positive for dormant <em>S. zooepidemicus</em> after bActivate</li>
+                            </ul>
+                            <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#666', fontStyle: 'italic' }}>Disclosure: As no placebo group was included in this clinical study, it is not possible to determine whether fertility was significantly increased following activation and treatment solely due to bActivate. The authors disclose this limitation in the proceedings.</p>
                         </div>
                         <div className={styles.buttonGroup}>
-                            <a href="/images/hagyarddavidsonandmcgeeinaprojectledbydr.kristinalu.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
+                            <a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View proceedings (Therio 2014)</a>
+                            <a href="/images/hagyarddavidsonandmcgeeinaprojectledbydr.kristinalu.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View clinical document</a>
                             <a href="https://open.spotify.com/episode/5CqtUbpJe9YO9j96a5Zx4R" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
                         </div>
                     </div>
