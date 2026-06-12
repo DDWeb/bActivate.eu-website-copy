@@ -5,14 +5,14 @@ import InternalLinks from '@/components/InternalLinks';
 
 export default function StudiesEffect() {
     useEffect(() => {
-        document.title = 'bActivate Clinical Results | 83% Pregnancy Rate in Problem Mares';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan–Godolphin. Peer-reviewed studies on bActivate and latent endometritis in mares.');
+        document.title = 'bActivate Clinical Evidence | 83% Pregnancy Rate in Problem & Non-Pregnant Mares';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan–Godolphin. Studies on hidden uterine infections in problem mares, non-pregnant mares, and barren mares.');
     }, []);
     return (
         <main>
             <section className={styles.section}>
                 <div className={styles.container}>
-                    <h1 className={styles.title}>Studies & effect</h1>
+                    <h1 className={styles.title}>Clinical evidence: bActivate for problem mares and non-pregnant mares</h1>
 
                     <div className="bg-white border border-gray-200 rounded p-6 mb-8">
                         <p className="text-gray-700 leading-relaxed">Three independent clinical evaluations document bActivate's efficacy. At <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY), Dr. Kristina Lu treated 64 problem Thoroughbred mares (barren ≥3 cycles) — <strong>83% became pregnant</strong> (53/64) and <strong>70% achieved live foals</strong> (32/46 with known outcome) (<a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen &amp; Bojesen, Clinical Theriogenology 2014</a>). At <strong>Kildangan Stud</strong>, operated by Godolphin, <strong>89% of 19 problem mares</strong> achieved pregnancy. The peer-reviewed laboratory study (<a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen et al., Vet Microbiol 2015</a>) confirmed bActivate activated dormant bacteria in <strong>64% of treated mares</strong> versus 8% in PBS controls (n=37). All studies were conducted independently of the manufacturer.</p>
@@ -20,8 +20,8 @@ export default function StudiesEffect() {
 
                     <div className={styles.textGrid}>
                         <div className="bg-gray-50 p-6 rounded">
-                            <p className="mb-4">Hidden infections. Persistent infertility. Missed opportunities. For too long, problem mares—those with recurring fertility issues—have faced unseen barriers to reproduction.<br />Below studies show that 80% of these mares harbor hidden uterine infections that traditional tests fail to detect, making pregnancy an uphill battle.</p>
-                            <p>This collection introduces a breakthrough: <b>bActivate</b>. By reactivating dormant <b>Streptococcus equi subsp. zooepidemicus</b>, the most common cause of chronic uterine infections, bActivate uncovers what was once invisible. For the first time, veterinarians can accurately diagnose and effectively treat these elusive infections.</p>
+                            <p className="mb-4">Hidden infections. Persistent infertility. Missed opportunities. For too long, problem mares — non-pregnant mares that fail to conceive despite clean swabs, normal cycles, and confirmed stallion fertility — have faced unseen barriers to reproduction.<br />Studies show that 80% of these barren mares harbour hidden uterine infections that traditional tests fail to detect, making pregnancy an uphill battle.</p>
+                            <p>This collection introduces a breakthrough: <b>bActivate</b>. By reactivating dormant <b>Streptococcus equi subsp. zooepidemicus</b> — the most common cause of chronic uterine infections in non-pregnant mares — bActivate uncovers what was once invisible, enabling accurate diagnosis of these elusive infections for the first time.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded">
                             <p className="mb-4">Supported by our studies and real-world evidence, this body of work repeatedly demonstrates the profound success of bActivate in restoring fertility in problem mares. With proven results, practical solutions, and renewed hope, this is a roadmap for transforming equine reproductive health.</p>
