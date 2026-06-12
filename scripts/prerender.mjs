@@ -82,8 +82,8 @@ const PAGE_META = {
     description: '70–80% of problem mares have a hidden uterine infection. bActivate activates dormant bacteria so your mare\'s immune system can find and clear them. 83% pregnancy rate at Hagyard.',
   },
   '/what-is-bactivate': {
-    title: 'What is bActivate? | Uterine Treatment for Problem Mares',
-    description: 'bActivate is a diagnostic aid for detecting dormant Streptococcus zooepidemicus infections in problem mares — the hidden cause of 70–80% of recurring fertility failure.',
+    title: 'What is bActivate? | Diagnosing Hidden Infections in Problem & Non-Pregnant Mares',
+    description: 'bActivate diagnoses dormant Streptococcus zooepidemicus in non-pregnant mares and barren mares, a hidden infection causing 70–80% of recurring fertility failure in problem mares.',
   },
   '/when-to-use': {
     title: 'When to Use bActivate | Signs of Hidden Uterine Infection in Mares',
@@ -94,8 +94,8 @@ const PAGE_META = {
     description: 'Step-by-step veterinary protocol: instill 10 ml bActivate during early estrus, culture after 48 hours, treat with targeted antibiotics. Full instructions for veterinarians.',
   },
   '/studies-effect': {
-    title: 'bActivate Results — Validated at Hagyard Equine Medical Institute, Kentucky',
-    description: '83% pregnancy rate in 64 problem mares at Hagyard Equine Medical Institute. 89% at Kildangan Stud. Peer-reviewed: Petersen & Bojesen, Veterinary Microbiology, 2015.',
+    title: 'bActivate Clinical Evidence | 83% Pregnancy Rate in Problem & Non-Pregnant Mares',
+    description: 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan–Godolphin. Studies on hidden uterine infections in problem mares, non-pregnant mares, and barren mares.',
   },
   '/shop': {
     title: 'Order bActivate | Veterinary Treatment for Problem Mares',
