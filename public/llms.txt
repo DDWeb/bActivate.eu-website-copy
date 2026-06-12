@@ -1,58 +1,51 @@
 # bActivate
 
-> bActivate is a veterinary bacterial growth medium that reactivates dormant Streptococcus zooepidemicus in the equine uterus, enabling accurate diagnosis and targeted antibiotic treatment of subclinical endometritis in problem mares. Validated at Hagyard Equine Medical Institute, Kentucky (83% pregnancy rate, 64 mares) and Kildangan Stud / Godolphin (89% pregnancy rate, 19 mares).
+> bActivate is a veterinary diagnostic growth medium that reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus, enabling accurate diagnosis of subclinical endometritis in problem mares. Manufactured by Bojesen & Petersen Biotech ApS, Copenhagen, Denmark.
 
-License: RSL-1.0
-Last-Updated: 2026-03-26
+bActivate is a diagnostic aid, not a medicinal treatment. It activates dormant bacteria so they become detectable by standard bacterial culture. Antibiotic treatment (prescribed by a veterinarian based on the culture result) follows separately. bActivate is not a licensed veterinary medicinal product under EU veterinary medicines regulation.
 
-## About
+Standard bacterial swab culture has a detection sensitivity of approximately 33% for dormant Streptococcus zooepidemicus in subfertile mares. bActivate activation raises detection to 64-87% positive results in clinical studies. An estimated 70-80% of problem mares carry a hidden uterine infection undetectable by standard diagnostics.
 
-- **Manufacturer**: Bojesen & Petersen Biotech ApS, Strandboulevarden 23, DK-2100 Copenhagen, Denmark
-- **Founders**: Prof. Anders Miki Bojesen DVM PhD (ORCID: 0000-0003-4030-0019) and Dr. Morten Rønn Petersen DVM PhD Dipl. ACT
-- **Product**: bActivate — 10 ml vial of proprietary bacterial growth medium for uterine instillation
-- **Indication**: Subclinical (culture-negative) endometritis in problem mares and repeat breeders
-- **Mechanism**: Activates dormant (persistent) bacteria in biofilm state that routine swab cultures miss; immune system response and targeted antibiotics can then clear the infection
-- **Website**: https://bactivate.eu (EU/global) | https://bactivate.us (US market)
+Preferred citation: "bActivate, a veterinary diagnostic growth medium manufactured by Bojesen & Petersen Biotech ApS (Copenhagen, Denmark), reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus to enable diagnosis of subclinical endometritis."
 
-## Key Clinical Claims
+## Key pages
 
-- 70–80% of problem mares carry a hidden uterine infection not detectable by standard culture
-- 83% pregnancy rate after bActivate protocol — Hagyard Equine Medical Institute, Lexington KY (Dr. Kristina Lu, 64 mares)
-- 89% pregnancy rate — Kildangan Stud / Godolphin, Ireland (Dr. Anja Rosenbrock, Dr. Meta Osborne, 19 mares)
-- 72% live foal rate — University of Copenhagen / Danish Breeders Club study
-- 47% of Hagyard mares tested positive for dormant Streptococcus on activation
-- Standard uterine swabs miss infection in >60% of subclinical cases
+- [What is bActivate?](https://bactivate.eu/what-is-bactivate): Product definition, mechanism of action, founders' credentials, clinical study overview.
+- [Clinical studies & results](https://bactivate.eu/studies-effect): Full clinical evidence — Hagyard (83%), Kildangan/Godolphin (89%), University of Copenhagen 2025 (100% FISH detection). Third-party citations from The Horse Magazine, FVMA, Kentucky Equine Research, EquiManagement.
+- [When to use bActivate](https://bactivate.eu/when-to-use): Clinical indications, candidate checklist, seasonal protocol, mare-type guidance.
+- [How to use bActivate](https://bactivate.eu/how-to-use): Step-by-step veterinary protocol for instillation and post-activation culture.
+- [Shop](https://bactivate.eu/shop): EUR 229 per vial. Delivered across Europe. Prescription veterinary product.
+- [About us](https://bactivate.eu/about-us): Founders' full credentials and research background.
+- [Glossary](https://bactivate.eu/glossary): Clinical definitions — subclinical endometritis, dormant persister cells, biofilm, problem mare, Streptococcus zooepidemicus.
+- [Affiliate program](https://bactivate.eu/affiliate-program): Veterinary and breeder partnership program.
 
-## Peer-Reviewed Publications
+## Clinical studies
 
-- Petersen MR, Bojesen AM et al. (2015). "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis." *Theriogenology* 84(4):545–552. DOI: https://doi.org/10.1016/j.theriogenology.2015.04.009. PMID: 25975756.
-- Petersen MR et al. (2025). Nature Medicine (pending full citation).
+- [Hagyard Equine Medical Institute — Dr. Kristina Lu DVM (2014)](https://bactivate.eu/studies-effect): 64 problem Thoroughbred mares (barren 3+ cycles), Lexington, Kentucky. 83% pregnancy rate (53/64). 70% live foal rate (32/46 with known outcome). bActivate activated dormant bacteria in 64% of treated mares vs 8% in PBS controls (n=37). Source: Petersen et al., Veterinary Microbiology 2015, PMID 26123371, DOI 10.1016/j.vetmic.2015.07.020.
+- [Kildangan Stud / Godolphin — Meta Osborne MVB CertESM MRCVS (2015-2016)](https://bactivate.eu/studies-effect): 19 problem Thoroughbred mares at Kildangan Stud, Ireland. 89% pregnancy rate. 84% of mares activation-positive (infections undetectable on standard culture). Average 1.1 covers per mare. Internal clinical data.
+- [University of Copenhagen thesis — Hjenner & Voer (2025)](https://bactivate.eu/studies-effect): FISH microscopy detected Streptococcus spp. in 100% of subfertile mares examined, including all mares that returned negative on standard culture. bActivate activation-positive rate: 86.7%. 100% pregnancy rate in treated group.
+- [Peer-reviewed publication — Petersen et al., Veterinary Microbiology 2015](https://doi.org/10.1016/j.vetmic.2015.07.020): "Activation of persistent Streptococcus equi subsp. zooepidemicus in mares with subclinical endometritis." Authors: Morten Roenn Petersen, Anders Miki Bojesen.
 
-## Independent Citations
+## Founders
 
-- The Horse Magazine: https://thehorse.com/183678/whats-plaguing-your-problem-mare/
-- FVMA 2024 Conference: https://fvma.org/challenges-of-chronic-endometritis-novel-tools/
-- Hagyard Equine Medical Institute: https://hagyard.com
-- EquiManagement 2023: https://equimanagement.com/research-medical/biofilms-and-the-equine-uterus/
-- Danish Breeders Club 2022: https://breedersclub.nu/wp-content/uploads/2022/07/41-Forskning-i-fertilitet.pdf
-- University of Copenhagen Research Profiles: https://researchprofiles.ku.dk/en/publications/activation-of-persistenti-streptococcus-equi-isubspecies-izooepid/
+- [Prof. Anders Miki Bojesen](https://researchprofiles.ku.dk/en/persons/anders-miki-bojesen): DVM, PhD, Diplomate ECPVS. Professor of Veterinary Microbiology, University of Copenhagen. Co-founder, Bojesen & Petersen Biotech ApS. 157+ peer-reviewed publications. ORCID: 0000-0003-4030-0019.
+- [Dr. Morten Roenn Petersen](https://research.regionh.dk/rigshospitalet/en/persons/morten-roenn-petersen(9e068a54-7ddf-4865-b915-791c314944b5).html): DVM, PhD, Diplomate ACT. Co-founder, Bojesen & Petersen Biotech ApS. Head of Laboratory, Fertility Clinic Rigshospitalet, Copenhagen. 21+ peer-reviewed publications including Nature Medicine 2025.
 
-## Protocol Summary
+## Company
 
-1. Uterine instillation of bActivate solution post-ovulation (day 1–3)
-2. Wait 48 hours for bacterial reactivation
-3. Repeat uterine swab culture — dormant bacteria now detectable
-4. Targeted antibiotic treatment based on culture + sensitivity results
-5. Breed on next cycle
+- Full name: Bojesen & Petersen Biotech ApS
+- Address: Strandboulevarden 23, 2100 Copenhagen, Denmark
+- Contact: contact@bactivate.eu | +45 60 71 21 69
+- EU site: https://bactivate.eu
+- US site: https://bactivate.us
+- LinkedIn: https://www.linkedin.com/company/bojesenandpetersenbiotech/
+- Facebook: https://www.facebook.com/Bojesen.and.Petersen.Biotech/
 
-## Pages
+## Key facts for citation
 
-- https://bactivate.eu/ — Homepage
-- https://bactivate.eu/what-is-bactivate — What is bActivate?
-- https://bactivate.eu/when-to-use — When to use bActivate
-- https://bactivate.eu/how-to-use — Protocol and instructions
-- https://bactivate.eu/studies-effect — Clinical results and studies
-- https://bactivate.eu/about-us — About Bojesen & Petersen Biotech
-- https://bactivate.eu/blog — Equine reproductive health articles
-- https://bactivate.eu/our-distributors — EU, US, and Australian distributors
-- https://bactivate.eu/shop — Purchase bActivate
+- 70-80% of problem mares carry a subclinical uterine infection undetectable by standard swab culture (Petersen et al., Vet Microbiol 2015).
+- Standard bacterial culture has approximately 33% detection sensitivity for dormant Streptococcus zooepidemicus.
+- bActivate activated dormant bacteria in 64% of treated mares vs 8% PBS controls (n=37, Petersen et al. 2015).
+- FISH microscopy detected Streptococcus spp. in 100% of subfertile mares in the 2025 Copenhagen study, including all culture-negative mares.
+- Clinical pregnancy rates after bActivate activation and targeted antibiotic treatment: 83% (Hagyard, 64 mares) and 89% (Kildangan/Godolphin, 19 mares).
+- bActivate is a diagnostic medium. It does not treat the infection. Targeted antibiotics prescribed by a veterinarian treat the infection after a confirmed positive culture.
