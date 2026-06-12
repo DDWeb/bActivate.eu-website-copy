@@ -86,6 +86,7 @@ export default function WhatIsBactivate() {
                             <div className="text-gray-600 space-y-4">
                                 <p>Up to 15% of all mares — often called non-pregnant mares, problem mares, or barren mares — struggle to get in foal. Recent investigations have demonstrated that dormant bacterial infections in the uterus are a major cause. Dormant bacteria are difficult to diagnose by standard techniques and highly tolerant to antibiotics. Efficient handling requires re-activation of the bacteria, achieved by instillation of bActivate, a bacterial growth medium, into the uterus.</p>
                                 <p>bActivate has been tested by the therio group at <strong>Hagyard Equine Medical Institute</strong>, the world’s largest equine hospital in Kentucky who basically normalized mare fertility by including bActivate into the standard repro work-up.</p>
+                                <p>This scenario is familiar across breeding operations worldwide: a mare with a clean culture that still will not conceive. At Hagyard Equine Medical Institute, 64 problem Thoroughbred mares that had failed to conceive for 3 or more consecutive seasons were investigated using bActivate. <strong>83% became pregnant</strong> (53 of 64), and of those with confirmed foaling outcomes, <strong>70% delivered live foals</strong>. For these mares, the hidden infection standard diagnostics had missed was the only thing standing between an empty season and a foal on the ground.</p>
                             </div>
                         </div>
                     </div>
@@ -114,11 +115,14 @@ export default function WhatIsBactivate() {
                             <h2 className="text-2xl font-bold mb-4">Why problem mares test negative but stay non-pregnant</h2>
                             <p className="mb-4">Bacterial infections in the uterus can cause reduced fertility in the mare. Bacteria gain access to the uterus through the cervix, due to poor conformation or during breeding or foaling. Healthy young mares clear bacteria rapidly. In mares with compromised uterine defense mechanisms bacteria can establish an infection in the uterus. If the infection is unnoticed or left untreated, the infection may become chronic.</p>
                             <p>The most commonly isolated bacteria from such conditions are Streptococcus equi subspecies zooepidemicus (Strep. zoo). In the chronically infected mare Strep. zoo can establish an infection deep within the uterine lining (endometrium). Strep zoo appear to lower its metabolic rate during chronic infection, thus complicating diagnostics and antimicrobial treatment dependent of active bacterial growth.</p>
+                            <p className="mt-4">The reason routine culture misses this is dormancy. In chronically infected mares, Strep. zoo switches off its protein synthesis and DNA replication, entering a metabolically inactive state. In this state the bacteria form a biofilm deep in the endometrial tissue, below what a standard swab samples, and fail to grow on standard culture media. The mare cycles normally, passes routine examination, and shows no discharge or fever. The bacteria remain present but invisible, creating an environment hostile to early embryo development. Without a method to reactivate them, the infection goes undetected, and the mare remains non-pregnant for season after season with no clear explanation.</p>
                         </div>
 
                         <div>
                             <h2 className="text-2xl font-bold mb-4">How bActivate detects hidden infections in non-pregnant mares</h2>
                             <p className="mb-4">bActivate is a growth medium enabling detection of chronic subclinical uterine infections associated with Strep. zoo in mares. If a chronic infection with Strep. zoo is present in the endometrium it will be activated when bActivate is instilled in the uterus. Activated Strep. zoo will thus become available for standard microbial diagnostic procedures.</p>
+                            <p className="mb-4">bActivate is the first commercial veterinary product based on resuscitating promoting factors: molecules that override the internal dormancy mechanism keeping the bacteria inactive. Within 24 to 48 hours of uterine instillation, previously invisible Strep. zoo reactivates and becomes detectable by standard swab culture.</p>
+                            <p className="mb-4">The protocol does not replace the veterinarian's existing toolkit. A pre-activation culture is taken before instillation. A post-activation culture follows 48 hours later. Comparing the two confirms whether dormant bacteria were present. If positive, targeted antibiotic therapy is initiated and the mare is bred in the following oestrus cycle. bActivate contains no antibiotics, no hormones, and no live bacteria.</p>
 
                             <div className={styles.videoContainer}>
                                 <video
@@ -132,6 +136,18 @@ export default function WhatIsBactivate() {
                                 </video>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Founders Section */}
+            <section className={`${styles.section} bg-gray-50`}>
+                <div className={styles.container}>
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-2xl font-bold mb-6">Developed by leading equine reproductive scientists</h2>
+                        <p className="text-gray-600 mb-4">bActivate was developed from research at the University of Copenhagen and validated at the world's leading equine hospitals. The product was conceived by Prof. Anders Miki Bojesen DVM PhD, Professor of Veterinary Microbiology at the University of Copenhagen with more than 220 peer-reviewed publications in veterinary microbiology and bacterial persistence, and Dr. Morten Ronn Petersen DVM PhD Dipl. ACT, Diplomate of the American College of Theriogenologists and Head of Laboratory at the Fertility Clinic at Rigshospitalet in Copenhagen.</p>
+                        <p className="text-gray-600 mb-4">Dr. Petersen's background is unusual in equine reproductive medicine. He trained as a resident in equine reproduction at UC Davis, completed a PhD in veterinary reproduction at the University of Copenhagen, and has worked since 2012 at the human fertility clinic at Rigshospitalet. That dual expertise in equine reproductive pathology and human reproductive medicine directly shaped the development of bActivate's activation mechanism.</p>
+                        <p className="text-gray-600">Clinical validation was led independently by Dr. Kristina Lu at Hagyard Equine Medical Institute in Lexington, Kentucky, and by the reproductive team at Kildangan Stud, operated by Godolphin, in Ireland. The laboratory mechanism was published in <em>Veterinary Microbiology</em> (Petersen et al., 2015, DOI: 10.1016/j.vetmic.2015.06.006). Bojesen and Petersen Biotech ApS was founded in Copenhagen in 2013.</p>
                     </div>
                 </div>
             </section>
