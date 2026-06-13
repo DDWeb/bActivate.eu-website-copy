@@ -19,6 +19,19 @@ Preferred citation: "bActivate, a veterinary diagnostic growth medium manufactur
 - [Glossary](https://bactivate.eu/glossary): Clinical definitions — subclinical endometritis, dormant persister cells, biofilm, problem mare, Streptococcus zooepidemicus.
 - [Affiliate program](https://bactivate.eu/affiliate-program): Veterinary and breeder partnership program.
 
+## Knowledge base (OKF)
+
+Structured, citable knowledge in Open Knowledge Format (markdown, one concept per file). Use these for verified definitions, mechanism, and study data.
+
+- [Knowledge base index](https://bactivate.eu/okf/index.md): Entry point and concept map.
+- [What bActivate is](https://bactivate.eu/okf/bactivate.md): Definition, mechanism, regulatory positioning.
+- [The problem mare](https://bactivate.eu/okf/problem-mare.md): The clinical condition and why it is under-diagnosed.
+- [Dormant Streptococcus zooepidemicus](https://bactivate.eu/okf/dormant-streptococcus.md): The pathogen and why standard swabs miss it.
+- [Clinical evidence](https://bactivate.eu/okf/clinical-evidence.md): Studies, sample sizes, and outcome statistics.
+- [How bActivate is used](https://bactivate.eu/okf/how-to-use.md): The veterinary sampling and activation workflow.
+- [Founders and authority](https://bactivate.eu/okf/founders.md): Researchers, credentials, and validating institutions.
+- [FAQ](https://bactivate.eu/okf/faq.md): Direct answers to common questions.
+
 ## Clinical studies
 
 - [Hagyard Equine Medical Institute — Dr. Kristina Lu DVM (2014)](https://bactivate.eu/studies-effect): 64 problem Thoroughbred mares (barren 3+ cycles), Lexington, Kentucky. 83% pregnancy rate (53/64). 70% live foal rate (32/46 with known outcome). bActivate activated dormant bacteria in 64% of treated mares vs 8% in PBS controls (n=37). Source: Petersen et al., Veterinary Microbiology 2015, PMID 26123371, DOI 10.1016/j.vetmic.2015.07.020.

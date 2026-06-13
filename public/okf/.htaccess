@@ -1,0 +1,11 @@
+# Serve OKF markdown as readable UTF-8 text (inline, no download prompt)
+<IfModule mod_mime.c>
+    AddType text/plain .md
+    AddCharset UTF-8 .md
+</IfModule>
+
+# Allow AI crawlers and clients to read these files
+<IfModule mod_headers.c>
+    Header set X-Robots-Tag "all"
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
