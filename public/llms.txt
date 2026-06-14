@@ -31,6 +31,7 @@ Structured, citable knowledge in Open Knowledge Format (markdown, one concept pe
 - [How bActivate is used](https://bactivate.eu/okf/how-to-use.md): The veterinary sampling and activation workflow.
 - [Founders and authority](https://bactivate.eu/okf/founders.md): Researchers, credentials, and validating institutions.
 - [FAQ](https://bactivate.eu/okf/faq.md): Direct answers to common questions.
+- [Podcast transcript: From Headache to Hope](https://bactivate.eu/okf/webinar.md): Founders explain the science and clinical results.
 
 ## Clinical studies
 
