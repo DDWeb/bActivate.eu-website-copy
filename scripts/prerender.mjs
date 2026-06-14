@@ -398,6 +398,24 @@ async function main() {
 
   const template = readFileSync(path.resolve(ROOT, 'dist/index.html'), 'utf8');
 
+  // Parse sitemap lastmod dates so every page can carry an honest dateModified freshness signal
+  const sitemapDates = {};
+  try {
+    const sitemapXml = readFileSync(path.resolve(ROOT, 'public/sitemap.xml'), 'utf8');
+    const urlBlocks = sitemapXml.match(/<url>[\s\S]*?<\/url>/g) || [];
+    for (const block of urlBlocks) {
+      const loc = block.match(/<loc>([^<]+)<\/loc>/);
+      const mod = block.match(/<lastmod>([^<]+)<\/lastmod>/);
+      if (loc && mod) {
+        const routePath = loc[1].replace(BASE_URL, '').replace(/\/$/, '') || '/';
+        sitemapDates[routePath] = mod[1];
+      }
+    }
+  } catch (e) {
+    console.warn(`  ! could not parse sitemap dates: ${e.message}`);
+  }
+  const buildDate = new Date().toISOString().slice(0, 10);
+
   let success = 0, fail = 0;
 
   for (const route of allRoutes) {
@@ -483,14 +501,31 @@ async function main() {
         const slug = route.replace('/blog/', '');
         const post = blogPostData[slug];
         if (post) {
+          const pageMeta = PAGE_META[route];
+          const articleBody = appHtml
+            .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, ' ')
+            .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, ' ')
+            .replace(/<nav\b[^>]*>[\s\S]*?<\/nav>/gi, ' ')
+            .replace(/<header\b[^>]*>[\s\S]*?<\/header>/gi, ' ')
+            .replace(/<footer\b[^>]*>[\s\S]*?<\/footer>/gi, ' ')
+            .replace(/<[^>]+>/g, ' ')
+            .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+            .replace(/\s+/g, ' ')
+            .trim()
+            .slice(0, 9000);
           const articleSchema = {
             '@context': 'https://schema.org',
-            '@type': 'Article',
+            '@type': 'BlogPosting',
             'headline': post.title,
+            'description': pageMeta ? pageMeta.description : post.title,
+            'articleBody': articleBody,
             'datePublished': post.date,
             'dateModified': post.date,
             'image': post.image ? `${BASE_URL}${post.image}` : `${BASE_URL}/og-image.jpg`,
             'url': `${BASE_URL}${route}`,
+            'inLanguage': 'en',
+            'articleSection': 'Equine Reproductive Health',
+            'keywords': ['problem mare', 'barren mare', 'non-pregnant mare', 'Streptococcus zooepidemicus', 'subclinical endometritis', 'mare fertility', 'bActivate'],
             'author': [
               { '@type': 'Person', '@id': `${BASE_URL}/#anders-bojesen`, 'name': 'Anders Miki Bojesen', 'url': `${BASE_URL}/about-us` },
               { '@type': 'Person', '@id': `${BASE_URL}/#morten-petersen`, 'name': 'Morten Rønn Petersen', 'url': `${BASE_URL}/about-us` },
@@ -506,6 +541,73 @@ async function main() {
       const routeSchema = ROUTE_SCHEMAS[route];
       if (routeSchema) {
         html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(routeSchema)}</script>\n</head>`);
+      }
+
+      // Inject MedicalWebPage schema for clinical guidance pages
+      const MEDICAL_PAGE_SCHEMAS = {
+        '/when-to-use': {
+          '@context': 'https://schema.org',
+          '@type': 'MedicalWebPage',
+          'name': 'When to Use bActivate for Problem Mares | Clinical Indications',
+          'description': 'Clinical indicators for bActivate use: mares with repeated failure to conceive, culture-negative swabs combined with unexplained infertility, recurring uterine fluid, early embryo loss, or chronic subclinical endometritis.',
+          'url': `${BASE_URL}/when-to-use`,
+          'inLanguage': 'en',
+          'about': { '@type': 'MedicalCondition', 'name': 'Subclinical Endometritis in Mares', '@id': `${BASE_URL}/#subclinical-endometritis` },
+          'audience': { '@type': 'MedicalAudience', 'audienceType': 'Veterinarian' },
+          'lastReviewed': '2026-06-12',
+          'reviewedBy': [
+            { '@type': 'Person', 'name': 'Anders Miki Bojesen', 'honorificPrefix': 'Prof.', 'honorificSuffix': 'DVM PhD' },
+            { '@type': 'Person', 'name': 'Morten Rønn Petersen', 'honorificPrefix': 'Dr.', 'honorificSuffix': 'DVM PhD Dipl. ACT' },
+          ],
+          'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
+          'isPartOf': { '@type': 'WebSite', '@id': `${BASE_URL}/#website` },
+        },
+        '/how-to-use': {
+          '@context': 'https://schema.org',
+          '@type': 'MedicalWebPage',
+          'name': 'How to Use bActivate — Veterinary Protocol for Problem Mares',
+          'description': 'Step-by-step veterinary protocol: pre-activation uterine culture, bActivate instillation during early oestrus, post-activation culture at 48 hours, and targeted antibiotic therapy based on culture results.',
+          'url': `${BASE_URL}/how-to-use`,
+          'inLanguage': 'en',
+          'about': {
+            '@type': 'MedicalProcedure',
+            'name': 'bActivate Bacterial Activation Protocol',
+            'procedureType': 'https://schema.org/DiagnosticProcedure',
+            'description': 'Uterine instillation of bActivate to reactivate dormant Streptococcus zooepidemicus, enabling accurate diagnosis and targeted antibiotic therapy in problem mares.',
+          },
+          'audience': { '@type': 'MedicalAudience', 'audienceType': 'Veterinarian' },
+          'lastReviewed': '2026-06-12',
+          'reviewedBy': [
+            { '@type': 'Person', 'name': 'Anders Miki Bojesen', 'honorificPrefix': 'Prof.', 'honorificSuffix': 'DVM PhD' },
+            { '@type': 'Person', 'name': 'Morten Rønn Petersen', 'honorificPrefix': 'Dr.', 'honorificSuffix': 'DVM PhD Dipl. ACT' },
+          ],
+          'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
+          'isPartOf': { '@type': 'WebSite', '@id': `${BASE_URL}/#website` },
+        },
+      };
+      const medicalPageSchema = MEDICAL_PAGE_SCHEMAS[route];
+      if (medicalPageSchema) {
+        html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(medicalPageSchema)}</script>\n</head>`);
+      }
+
+      // Inject WebPage freshness signal (dateModified) for non-blog routes.
+      // Individual blog posts already carry dateModified via their BlogPosting schema.
+      const isBlogPost = route.startsWith('/blog/');
+      if (!isBlogPost) {
+        const modifiedDate = sitemapDates[route] || buildDate;
+        const webPageSchema = {
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          'url': pageUrl,
+          'name': meta ? meta.title : undefined,
+          'description': meta ? meta.description : undefined,
+          'inLanguage': 'en',
+          'datePublished': modifiedDate,
+          'dateModified': modifiedDate,
+          'isPartOf': { '@type': 'WebSite', '@id': `${BASE_URL}/#website` },
+          'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
+        };
+        html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(webPageSchema)}</script>\n</head>`);
       }
 
       const outPath = routeToOutputPath(route);
