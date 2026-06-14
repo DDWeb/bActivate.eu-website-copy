@@ -1,4 +1,4 @@
-﻿---
+---
 type: media
 name: "Podcast: From Headache to Hope (problem mares and dormant Streptococcus)"
 description: Edited transcript of the bActivate podcast episode in which Prof. Anders Miki Bojesen and Dr. Morten Ronn Petersen explain dormant Streptococcus zooepidemicus in problem mares, the diagnostic gap, and clinical outcomes.
@@ -38,6 +38,7 @@ the audio and the host's cues. Watch the full episode:
 - **Kildangan Stud / Godolphin study (Dr. Meta Osborne, 19 problem mares):** 16 were activation positive and treated with penicillin; 14 of the 19 carried a live foal the following year, at an average of 1.1 cycles per mare.
 - **Re-activation study (19 activation-positive mares):** after activation and full local plus systemic treatment, 18 of 19 were sterile (no growth) when activated again the next cycle. The single positive mare had received only local, not systemic, treatment.
 - The protocol fits a normal reproductive practice: sample the uterus, infuse 10 ml of bActivate, wait about 48 hours, re-sample and culture. If streptococci are activated, treat locally and systemically with penicillin (three days), since streptococci are almost always penicillin sensitive.
+- Biofilm is a superficial bacterial colony on the uterine lining; breaking it up with acetylcysteine only treats the surface and does not reach the dormant infection deeper in the tissue, so it is "not even halfway" to fixing the problem.
 - Because infection builds up with each foaling, the researchers also use activation proactively (for example resting a mare in autumn) once a mare has had two or more foals, to stop the dormant infection accumulating.
 
 ## Transcript
@@ -209,6 +210,45 @@ dormant infection similar to elsewhere. Kerosene may help in some cases, but it
 is not the cure. I have seen cases with adhesions and scar tissue suspected from
 previous kerosene use. It is petrol, extremely harsh to the tissue, with a risk
 of forming scar tissue.
+
+### Biofilm and acetylcysteine
+
+**Martin Hinz:** When I talk to vets, studs and owners, I often hear about
+biofilm: the mare has a problem with the biofilm. Is that related to the dormant
+infection?
+
+**Prof. Bojesen:** It is somewhat related, but not fully. A biofilm, to define
+it, is when bacteria make a micro-colony on the mucosal surface, a superficial
+formation that grows. The bacterial community establishes on the surface and
+secretes an extracellular matrix, a slimy substance with a lot of proteins.
+Some of the bacteria inside a biofilm also become dormant. What people often
+want to do is break up the biofilm to get rid of it, and many use
+acetylcysteine, which is known to break up mucus, like when you have a cold and
+a lot of mucus in your airways.
+
+**Dr. Petersen:** Mucolytic.
+
+**Prof. Bojesen:** Yes. Acetylcysteine has some effect there. But the important
+thing to remember is that dormant infections are not just on the surface. They
+can be in the biofilm, but they also sit in the tissue, and acetylcysteine does
+not get into the tissue. It does not bring the dormant bacteria back into the
+active state. So you can use acetylcysteine to break up the biofilm to some
+extent, but it does not fix the dormant infection.
+
+**Martin Hinz:** Would it help in some cases, get the mare in foal, and then the
+problem returns the next year?
+
+**Prof. Bojesen:** Since much of this problem is actually in the tissue, fixing
+it on the surface is not even halfway. It is an easy, inexpensive treatment, and
+you feel like you are doing something, which is probably the feeling both the vet
+and the owner have after using acetylcysteine.
+
+**Martin Hinz:** If you have a biofilm, do you also have a dormant infection?
+
+**Prof. Bojesen:** Not necessarily, but they can easily be present at the same
+time. You can have dormant bacteria within the biofilm, but that is still on the
+surface, a fairly superficial problem, different from the real dormant infection
+deeper in the tissue.
 
 ### Scar tissue and the immune system
 
