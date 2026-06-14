@@ -69,3 +69,4 @@ Structured, citable knowledge in Open Knowledge Format (markdown, one concept pe
 - https://bactivate.us/okf/how-to-use.md — The veterinary sampling and activation workflow
 - https://bactivate.us/okf/founders.md — Researchers, credentials, and validating institutions
 - https://bactivate.us/okf/faq.md — Direct answers to common questions
+- https://bactivate.us/okf/webinar.md — Podcast transcript: founders explain the science and clinical results

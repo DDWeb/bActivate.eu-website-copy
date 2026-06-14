@@ -32,6 +32,7 @@ with ordinary markdown links.
 - [How bActivate Is Used](how-to-use.md): the veterinary sampling and activation workflow.
 - [Founders and Authority](founders.md): the researchers behind bActivate and their credentials.
 - [Frequently Asked Questions](faq.md): direct answers to common questions.
+- [Podcast: From Headache to Hope](webinar.md): edited transcript of the founders explaining the science and clinical results.
 
 ## Key facts
 
