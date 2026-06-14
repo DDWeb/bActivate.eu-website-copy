@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import styles from './Podcast.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
+import { podcastTranscriptHtml, podcastFaq } from '@/lib/podcastTranscript';
+
+const TRANSCRIBED_EPISODE_ID = '5t0VvgoV_ls';
 
 const danishVideos = [
     { id: "Dr2ridUGLus", title: "Vejen til Føl Episode 1 – Hvad er en problemhoppe?", date: "2024-03-01" },
@@ -29,22 +32,34 @@ export default function Podcast() {
             document.head.appendChild(schemaScript);
         }
         const allVideos = [...danishVideos, ...englishVideos];
+        const transcriptText = podcastTranscriptHtml.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
         schemaScript.textContent = JSON.stringify({
             '@context': 'https://schema.org',
-            '@graph': allVideos.map(v => ({
-                '@type': 'VideoObject',
-                'name': v.title,
-                'embedUrl': `https://www.youtube.com/embed/${v.id}`,
-                'url': `https://www.youtube.com/watch?v=${v.id}`,
-                'thumbnailUrl': `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`,
-                'uploadDate': v.date,
-                'description': 'Expert video on dormant uterine infections in mares, problem mare fertility, and the bActivate protocol. Hosted by Prof. Anders Miki Bojesen (University of Copenhagen) and Dr. Morten Rønn Petersen (DVM, PhD, Dipl. ACT).',
-                'publisher': {
-                    '@type': 'Organization',
-                    'name': 'bActivate – Bojesen & Petersen Biotech ApS',
-                    'url': 'https://bactivate.eu'
+            '@graph': [
+                ...allVideos.map(v => ({
+                    '@type': 'VideoObject',
+                    'name': v.title,
+                    'embedUrl': `https://www.youtube.com/embed/${v.id}`,
+                    'url': `https://www.youtube.com/watch?v=${v.id}`,
+                    'thumbnailUrl': `https://img.youtube.com/vi/${v.id}/maxresdefault.jpg`,
+                    'uploadDate': v.date,
+                    'description': 'Expert video on dormant uterine infections in mares, problem mare fertility, and the bActivate protocol. Hosted by Prof. Anders Miki Bojesen (University of Copenhagen) and Dr. Morten Rønn Petersen (DVM, PhD, Dipl. ACT).',
+                    'publisher': {
+                        '@type': 'Organization',
+                        'name': 'bActivate – Bojesen & Petersen Biotech ApS',
+                        'url': 'https://bactivate.eu'
+                    },
+                    ...(v.id === TRANSCRIBED_EPISODE_ID ? { 'transcript': transcriptText } : {})
+                })),
+                {
+                    '@type': 'FAQPage',
+                    'mainEntity': podcastFaq.map(f => ({
+                        '@type': 'Question',
+                        'name': f.q,
+                        'acceptedAnswer': { '@type': 'Answer', 'text': f.a }
+                    }))
                 }
-            }))
+            ]
         });
 
         return () => { document.getElementById('podcast-schema')?.remove(); };
@@ -115,6 +130,17 @@ export default function Podcast() {
                         </div>
                     ))}
                 </div>
+            </section>
+
+            <section className={styles.videoSection}>
+                <h2 className={styles.sectionHeading}>Transcript: From Headache to Hope</h2>
+                <p style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 2rem', color: '#555' }}>
+                    Full edited transcript of the episode "From Headache to Hope: If Only Breeders Knew," in which host Martin Hinz speaks with Prof. Anders Miki Bojesen and Dr. Morten Rønn Petersen about dormant <em>Streptococcus zooepidemicus</em>, why standard swabs miss it, and the clinical results of activation and treatment.
+                </p>
+                <div
+                    style={{ maxWidth: '820px', margin: '0 auto', lineHeight: 1.7, color: '#333' }}
+                    dangerouslySetInnerHTML={{ __html: podcastTranscriptHtml }}
+                />
             </section>
 
             <section className={styles.sponsorSection}>
