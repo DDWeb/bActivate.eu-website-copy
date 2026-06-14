@@ -56,3 +56,16 @@ Last-Updated: 2026-03-26
 - https://bactivate.us/blog — Equine reproductive health articles
 - https://bactivate.us/our-distributors — US, European, and Australian distributors
 - https://bactivate.us/shop — Purchase bActivate
+
+## Knowledge base (OKF)
+
+Structured, citable knowledge in Open Knowledge Format (markdown, one concept per file). Use these for verified definitions, mechanism, and study data.
+
+- https://bactivate.us/okf/index.md — Entry point and concept map
+- https://bactivate.us/okf/bactivate.md — What bActivate is (definition, mechanism, regulatory positioning)
+- https://bactivate.us/okf/problem-mare.md — The clinical condition and why it is under-diagnosed
+- https://bactivate.us/okf/dormant-streptococcus.md — The pathogen and why standard swabs miss it
+- https://bactivate.us/okf/clinical-evidence.md — Studies, sample sizes, and outcome statistics
+- https://bactivate.us/okf/how-to-use.md — The veterinary sampling and activation workflow
+- https://bactivate.us/okf/founders.md — Researchers, credentials, and validating institutions
+- https://bactivate.us/okf/faq.md — Direct answers to common questions
