@@ -123,6 +123,8 @@ export default function Shop() {
         <main>
             <section className="py-16">
                 <div className="container mx-auto px-4">
+                    <h1 className="text-3xl font-bold mb-2">Buy bActivate for Problem Mares</h1>
+                    <p className="text-gray-600 mb-8">Order bActivate online. A veterinary diagnostic aid for detecting dormant <em>Streptococcus zooepidemicus</em> infections in problem mares and non-pregnant mares. Available in the US through Hagyard Pharmacy and Midwest Veterinary Supply.</p>
                     <div id="my-store-130367502" className="min-h-[500px]"></div>
                 </div>
             </section>
