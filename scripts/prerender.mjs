@@ -206,24 +206,24 @@ const ROUTE_SCHEMAS = {
 // Per-page metadata for canonical, title and meta description injection
 const PAGE_META = {
   '/': {
-    title: 'bActivate | Treat Hidden Uterine Infections in Problem Mares',
-    description: '70–80% of problem mares have a hidden uterine infection. bActivate activates dormant bacteria so your mare\'s immune system can find and clear them. 83% pregnancy rate at Hagyard.',
+    title: 'bActivate | Diagnose Hidden Infections in Problem Mares',
+    description: '70–80% of problem mares carry a hidden infection. bActivate reactivates dormant bacteria so they can be found and cleared. 83% pregnancy rate at Hagyard.',
   },
   '/what-is-bactivate': {
-    title: 'What is bActivate? | Diagnosing Hidden Infections in Problem & Non-Pregnant Mares',
-    description: 'bActivate diagnoses dormant Streptococcus zooepidemicus in non-pregnant mares and barren mares, a hidden infection causing 70–80% of recurring fertility failure in problem mares.',
+    title: 'What is bActivate? | Diagnosing Infections in Problem Mares',
+    description: 'bActivate diagnoses dormant Streptococcus zooepidemicus in problem and non-pregnant mares, a hidden infection behind 70–80% of recurring fertility failure.',
   },
   '/when-to-use': {
-    title: 'When to Use bActivate | Signs of Hidden Uterine Infection in Mares',
-    description: 'Is your mare failing to conceive despite clean swabs? Learn the signs of dormant uterine infection and when bActivate is indicated — for veterinarians and horse breeders.',
+    title: 'When to Use bActivate | Signs of Hidden Infection in Mares',
+    description: 'Is your mare failing to conceive despite clean swabs? Learn the signs of dormant uterine infection and when bActivate is indicated.',
   },
   '/how-to-use': {
     title: 'How to Use bActivate | Veterinary Protocol',
-    description: 'Step-by-step veterinary protocol: instill 10 ml bActivate during early estrus, culture after 48 hours, treat with targeted antibiotics. Full instructions for veterinarians.',
+    description: 'Step-by-step veterinary protocol: instill 10 ml bActivate in early estrus, culture after 48 hours, then treat with targeted antibiotics.',
   },
   '/studies-effect': {
-    title: 'bActivate Clinical Evidence | 83% Pregnancy Rate in Problem & Non-Pregnant Mares',
-    description: 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan–Godolphin. Studies on hidden uterine infections in problem mares, non-pregnant mares, and barren mares.',
+    title: 'bActivate Clinical Evidence | 83% Pregnancy in Problem Mares',
+    description: 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan–Godolphin. Studies on hidden uterine infections in problem mares.',
   },
   '/shop': {
     title: 'Order bActivate | Veterinary Treatment for Problem Mares',
@@ -231,19 +231,19 @@ const PAGE_META = {
   },
   '/our-distributors': {
     title: 'bActivate Distributors | US, Europe & Australia',
-    description: 'Find your local bActivate distributor. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US, and veterinary suppliers across Europe and Australia.',
+    description: 'Find your local bActivate distributor: Hagyard Pharmacy and Midwest Veterinary Supply in the US, plus veterinary suppliers across Europe and Australia.',
   },
   '/about-us': {
-    title: 'About bActivate — Founded by Equine Reproductive Veterinarians',
-    description: 'bActivate was developed by Prof. Anders Miki Bojesen DVM PhD and Dr. Morten Rønn Petersen DVM PhD Dipl. ACT — leading experts in equine reproductive microbiology.',
+    title: 'About bActivate | Founded by Reproductive Veterinarians',
+    description: 'bActivate was developed by Prof. Anders Miki Bojesen DVM PhD and Dr. Morten Rønn Petersen DVM PhD — leading experts in equine reproductive microbiology.',
   },
   '/podcast': {
     title: 'bActivate Podcast | Equine Reproduction & Mare Fertility',
     description: 'Listen to the bActivate podcast on equine reproduction, subclinical endometritis, and fertility in problem mares. For veterinarians and horse breeders.',
   },
   '/blog': {
-    title: 'bActivate Blog — Equine Fertility and the Mare That Won\'t Catch',
-    description: 'Research, clinical insights and news on subclinical endometritis, dormant bacteria, and treatment with bActivate. For veterinarians and equine reproduction specialists.',
+    title: 'bActivate Blog | Equine Fertility & Problem Mares',
+    description: 'Research, clinical insights and news on subclinical endometritis, dormant bacteria, and bActivate. For vets and equine reproduction specialists.',
   },
   '/terms-and-conditions': {
     title: 'Terms and Conditions | bActivate',
@@ -254,36 +254,44 @@ const PAGE_META = {
     description: 'Privacy policy for bactivate.eu — how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.',
   },
   '/blog/bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares': {
-    title: 'Dormant Bacteria & Antibiotics: The Activate-First Protocol | bActivate Blog',
-    description: 'Dormant Streptococcus zooepidemicus evades swabs and resists antibiotics. Learn why activating hidden bacteria with bActivate before antibiotic treatment is the key to clearing chronic endometritis.',
+    title: 'Dormant Bacteria & Antibiotics: The Activate-First Protocol',
+    description: 'Dormant Streptococcus zooepidemicus evades swabs and resists antibiotics. See why activating it before antibiotic treatment clears chronic endometritis.',
   },
   '/blog/how-bactivate-tackles-dormant-bacteria-in-mares': {
-    title: 'How bActivate Tackles Dormant Bacteria in Mares | bActivate Blog',
-    description: 'bActivate wakes dormant streptococcal bacteria in mares, making them detectable and treatable. 89% of barren mares at Godolphin/Kildangan conceived after treatment.',
+    title: 'How bActivate Tackles Dormant Bacteria in Mares',
+    description: 'bActivate wakes dormant streptococcal bacteria in mares, making them detectable. 89% of barren mares at Godolphin/Kildangan conceived after treatment.',
   },
   '/blog/enhancing-mare-fertility-bactivate-revolutionary-approach': {
-    title: 'Enhancing Mare Fertility with bActivate | bActivate Blog',
-    description: 'Dormant streptococcal infections hide deep in the uterine wall, invisible to standard swabs. bActivate reactivates them for accurate diagnosis and effective treatment — raising pregnancy rates.',
+    title: 'Enhancing Mare Fertility with bActivate',
+    description: 'Dormant streptococcal infections hide deep in the uterine wall, invisible to standard swabs. bActivate reactivates them for accurate diagnosis and treatment.',
   },
   '/blog/addressing-challenges-of-problem-mares': {
-    title: 'Addressing the Challenges of Problem Mares | bActivate Blog',
-    description: '25.9% of mares have uterine bacteria — 79.8% Streptococcus. Prof. Bojesen and Dr. Petersen on detecting dormant infections and treating problem mares effectively with bActivate.',
+    title: 'Addressing the Challenges of Problem Mares',
+    description: '25.9% of mares carry uterine bacteria, 79.8% Streptococcus. Prof. Bojesen and Dr. Petersen on detecting dormant infections in problem mares with bActivate.',
   },
   '/blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares': {
-    title: 'A Guide to Handling Endometritis in Mares | bActivate Blog',
-    description: 'Endometritis in mares is often caused by dormant Streptococcus zooepidemicus missed by standard swabs. Signs, treatment options, and why bActivate addresses what antibiotics alone cannot.',
+    title: 'A Guide to Handling Endometritis in Mares',
+    description: 'Endometritis in mares is often caused by dormant Streptococcus missed by swabs. Signs, options, and why bActivate finds what antibiotics alone cannot.',
   },
   '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares': {
-    title: 'Save Time and Money on Endometritis Treatment | bActivate Blog',
-    description: 'Repeated breeding failures from hidden endometritis are costly. bActivate activates dormant uterine bacteria so targeted antibiotics can eliminate the root cause — saving time and money.',
+    title: 'Save Time and Money on Endometritis Treatment',
+    description: 'Repeated breeding failures from hidden endometritis are costly. bActivate activates dormant uterine bacteria so targeted antibiotics clear the root cause.',
   },
   '/blog/insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health': {
-    title: 'German Study: Bacterial Spectrum in Mare Uterine Health | bActivate Blog',
-    description: '28,887 endometrial swabs: 25.9% showed pathogenic bacteria, 79.7% β-hemolytic Streptococci. What this landmark German study means for precision treatment and mare fertility management.',
+    title: 'German Study: Bacterial Spectrum in Mare Uterine Health',
+    description: '28,887 endometrial swabs: 25.9% showed pathogenic bacteria, 79.7% β-hemolytic Streptococci. What this landmark German study means for mare fertility.',
   },
   '/blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-maresbojesen-petersen-biotech-aps-copenhagen-denmark': {
-    title: '89% Pregnancy Rate in Thoroughbred Mares at Godolphin | bActivate Blog',
+    title: '89% Pregnancy Rate in Thoroughbred Mares at Godolphin',
     description: 'Kildangan/Godolphin stud study: 89% of thoroughbred mares (16/19) conceived after bActivate treatment. All 14 who conceived delivered healthy live foals.',
+  },
+  '/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough': {
+    title: 'Biofilm in the Mare\'s Uterus: Breaking It Up Is Not Enough',
+    description: 'Streptococcus zooepidemicus hides in a biofilm that shields it from swabs and antibiotics. Why bActivate reaches dormant bacteria standard treatment misses.',
+  },
+  '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare': {
+    title: 'Why a Clean Swab Doesn\'t Rule Out Infection in a Mare',
+    description: 'A negative swab does not mean your problem mare is infection-free. How dormant Streptococcus evades culture, and how bActivate reveals it for treatment.',
   },
 };
 
