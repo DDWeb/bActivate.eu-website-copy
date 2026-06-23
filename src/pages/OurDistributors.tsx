@@ -22,7 +22,7 @@ export default function OurDistributors() {
             address: ['Strandboulevarden 23,', 'DK-2100, Copenhagen, Denmark'],
             phone: '+45 60 71 21 69',
             email: 'contact@bactivate.eu',
-            website: 'http://www.bactivate.eu/'
+            website: 'https://bactivate.eu/'
         },
         {
             region: 'The Netherlands',
