@@ -66,7 +66,12 @@ export default function AboutUs() {
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:bojesen@bactivate.eu">bojesen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4523844188">+45 23 84 41 88</a></div>
-                                    <div className="mt-2"><a href="https://www.linkedin.com/in/anders-miki-bojesen/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+                                    <div className="mt-2">
+                                        <a href="https://www.linkedin.com/in/anders-miki-bojesen/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                        {' · '}<a href="https://orcid.org/0000-0003-4030-0019" target="_blank" rel="noopener noreferrer">ORCID</a>
+                                        {' · '}<a href="https://scholar.google.dk/citations?user=qfpCDSgAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+                                        {' · '}<a href="https://www.wikidata.org/wiki/Q88257686" target="_blank" rel="noopener noreferrer">Wikidata</a>
+                                    </div>
                                 </div>
                             </div>
                             <div className={styles.bio}>
