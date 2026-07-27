@@ -57,6 +57,12 @@ Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-m
 Redirect 301 /blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares-2 /blog/addressing-challenges-of-problem-mares
 Redirect 301 /blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-maresbojesen-petersen-biotech-aps-copenhagen-denmark /blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares
 
+# Campaign landing page — serve static candidate.html at /candidate
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^candidate/?$ /candidate.html [L]
+</IfModule>
+
 # SPA routing — redirect all non-file requests to index.html
 <IfModule mod_rewrite.c>
     RewriteEngine On
