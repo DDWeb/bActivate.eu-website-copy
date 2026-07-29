@@ -35,10 +35,10 @@ Structured, citable knowledge in Open Knowledge Format (markdown, one concept pe
 
 ## Clinical studies
 
-- [Hagyard Equine Medical Institute — Dr. Kristina Lu DVM (2014)](https://bactivate.eu/studies-effect): 64 problem Thoroughbred mares (barren 3+ cycles), Lexington, Kentucky. 83% pregnancy rate (53/64). 70% live foal rate (32/46 with known outcome). bActivate activated dormant bacteria in 64% of treated mares vs 8% in PBS controls (n=37). Source: Petersen et al., Veterinary Microbiology 2015, PMID 26123371, DOI 10.1016/j.vetmic.2015.07.020.
+- [Hagyard Equine Medical Institute — Dr. Kristina Lu DVM (2014)](https://bactivate.eu/studies-effect): 64 problem Thoroughbred mares (barren 3+ cycles), Lexington, Kentucky. 83% pregnancy rate (53/64). 70% live foal rate (32/46 with known outcome). bActivate activated dormant bacteria in 64% of treated mares vs 8% in PBS controls (n=37). Source: Petersen et al., Veterinary Microbiology 2015, PMID 26123371, DOI 10.1016/j.vetmic.2015.06.006.
 - [Kildangan Stud / Godolphin — Meta Osborne MVB CertESM MRCVS (2015-2016)](https://bactivate.eu/studies-effect): 19 problem Thoroughbred mares at Kildangan Stud, Ireland. 89% pregnancy rate. 84% of mares activation-positive (infections undetectable on standard culture). Average 1.1 covers per mare. Internal clinical data.
 - [University of Copenhagen thesis — Hjenner & Voer (2025)](https://bactivate.eu/studies-effect): FISH microscopy detected Streptococcus spp. in 100% of subfertile mares examined, including all mares that returned negative on standard culture. bActivate activation-positive rate: 86.7%. 100% pregnancy rate in treated group.
-- [Peer-reviewed publication — Petersen et al., Veterinary Microbiology 2015](https://doi.org/10.1016/j.vetmic.2015.07.020): "Activation of persistent Streptococcus equi subsp. zooepidemicus in mares with subclinical endometritis." Authors: Morten Roenn Petersen, Anders Miki Bojesen.
+- [Peer-reviewed publication — Petersen et al., Veterinary Microbiology 2015](https://doi.org/10.1016/j.vetmic.2015.06.006): "Activation of persistent Streptococcus equi subsp. zooepidemicus in mares with subclinical endometritis." Authors: Morten Roenn Petersen, Anders Miki Bojesen.
 
 ## Founders
 

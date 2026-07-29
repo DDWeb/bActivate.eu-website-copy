@@ -5,7 +5,7 @@ description: Peer-reviewed and clinical data on bActivate, including the Hagyard
 last_updated: 2026-06-13
 sources:
   - https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf
-  - https://doi.org/10.1016/j.vetmic.2015.07.020
+  - https://doi.org/10.1016/j.vetmic.2015.06.006
 canonical_url: https://bactivate.eu/studies-effect
 ---
 
