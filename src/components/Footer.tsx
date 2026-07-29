@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
+import LanguageMesh from './LanguageMesh';
 
 export default function Footer() {
 
@@ -63,6 +64,8 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
+
+            <LanguageMesh />
         </footer>
     );
 }
