@@ -5,7 +5,7 @@ description: A veterinary bacterial growth medium that reactivates dormant Strep
 category: veterinary diagnostic
 last_updated: 2026-06-13
 sources:
-  - https://doi.org/10.1016/j.vetmic.2015.07.020
+  - https://doi.org/10.1016/j.vetmic.2015.06.006
 canonical_url: https://bactivate.us/what-is-bactivate
 ---
 

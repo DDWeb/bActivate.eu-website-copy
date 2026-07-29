@@ -5,7 +5,7 @@ description: A dormant, culture-negative state of Streptococcus equi subspecies 
 scientific_name: Streptococcus equi subspecies zooepidemicus
 last_updated: 2026-06-13
 sources:
-  - https://doi.org/10.1016/j.vetmic.2015.07.020
+  - https://doi.org/10.1016/j.vetmic.2015.06.006
 canonical_url: https://bactivate.us/what-is-bactivate
 ---
 
