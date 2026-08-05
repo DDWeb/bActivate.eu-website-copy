@@ -7,10 +7,10 @@
  */
 
 const LANGUAGES = [
-    { code: 'de', label: 'Deutsch', site: 'Leere Stute', href: 'https://leere-stute.de/', flag: 'de' },
-    { code: 'fr', label: 'Français', site: 'Jument Infertile', href: 'https://jument-infertile.fr/', flag: 'fr' },
-    { code: 'nl', label: 'Nederlands', site: 'Lege Merrie', href: 'https://lege-merrie.nl/', flag: 'nl' },
-    { code: 'es', label: 'Español', site: 'Yegua Infértil', href: 'https://yegua-infertil.es/', flag: 'es' },
+    { code: 'de', label: 'Deutsch', site: 'Problem-Stute', href: 'https://problem-stute.de/', flag: 'de' },
+    { code: 'fr', label: 'Français', site: 'Jument Non-Gestante', href: 'https://jument-non-gestante.fr/', flag: 'fr' },
+    { code: 'nl', label: 'Nederlands', site: 'Probleem Merrie', href: 'https://probleem-merrie.nl/', flag: 'nl' },
+    { code: 'es', label: 'Español', site: 'Yegua No-Gestante', href: 'https://yegua-no-gestante.es/', flag: 'es' },
 ];
 
 export default function LanguageMesh() {
