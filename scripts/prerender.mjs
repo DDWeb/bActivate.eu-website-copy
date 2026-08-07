@@ -33,6 +33,32 @@ const BREADCRUMB_LABELS = {
 
 // Per-route schema injections (for schemas that can't run during SSR via useEffect)
 const ROUTE_SCHEMAS = {
+  '/blog/streptococcus-zooepidemicus-in-horses': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      {
+        '@type': 'Question',
+        'name': 'Is Streptococcus zooepidemicus the same as strangles?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Strangles is caused by Streptococcus equi subspecies equi. Streptococcus equi subspecies zooepidemicus (Strep zoo) is a different, opportunistic subspecies that causes secondary respiratory, wound and uterine infections, and it is much less contagious than strangles.' },
+      },
+      {
+        '@type': 'Question',
+        'name': 'What antibiotic treats Streptococcus zooepidemicus in horses?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Penicillin is usually the first choice, ideally guided by culture and sensitivity testing. In a German study of 28,887 endometrial samples, 99.5% of beta-haemolytic streptococci were penicillin-sensitive. Penicillin works on active infections but not on dormant uterine bacteria that are not actively growing.' },
+      },
+      {
+        '@type': 'Question',
+        'name': 'Why does my mare have a clean swab but still will not get in foal?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Dormant Streptococcus zooepidemicus deep in the uterine lining does not grow on a standard culture, so the swab reads negative even though the infection is present and preventing conception. Reactivating the dormant bacteria before culture, for example with bActivate, makes the hidden infection detectable and treatable.' },
+      },
+      {
+        '@type': 'Question',
+        'name': 'Can Streptococcus zooepidemicus infect people?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Rarely. Human infections are uncommon and usually linked to unpasteurised dairy products or close contact with infected animals. Basic hygiene around sick horses is a sensible precaution.' },
+      },
+    ],
+  },
   '/shop': {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -252,6 +278,10 @@ const PAGE_META = {
   '/privacy-policy': {
     title: 'Privacy Policy | bActivate',
     description: 'Privacy policy for bactivate.eu — how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.',
+  },
+  '/blog/streptococcus-zooepidemicus-in-horses': {
+    title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
+    description: 'Streptococcus zooepidemicus is the most common opportunistic bacterium in horses, behind respiratory and uterine infections. Symptoms, spread and treatment.',
   },
   '/blog/bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares': {
     title: 'Dormant Bacteria & Antibiotics: The Activate-First Protocol',

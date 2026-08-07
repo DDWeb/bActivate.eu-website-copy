@@ -74,6 +74,12 @@
   </url>
   <!-- Blog posts -->
   <url>
+    <loc>https://bactivate.eu/blog/streptococcus-zooepidemicus-in-horses</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bactivate.eu/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare</loc>
     <lastmod>2026-06-14</lastmod>
     <changefreq>yearly</changefreq>
