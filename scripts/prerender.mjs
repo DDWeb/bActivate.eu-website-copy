@@ -398,6 +398,38 @@ function routeToOutputPath(route) {
   return path.resolve(ROOT, `dist${route}/index.html`);
 }
 
+// Routes whose page component injects its own FAQPage at runtime (inside an
+// @graph). The global FAQPage must go for these too, or the rendered DOM ends
+// up with two.
+const ROUTES_WITH_CLIENT_FAQ = new Set(['/podcast']);
+
+// True if a route schema carries a FAQPage, whether it is a single object,
+// an array of schemas, or an @graph.
+function schemaHasFaqPage(schema) {
+  if (Array.isArray(schema)) return schema.some(schemaHasFaqPage);
+  if (!schema || typeof schema !== 'object') return false;
+  if (schema['@graph']) return schemaHasFaqPage(schema['@graph']);
+  return schema['@type'] === 'FAQPage';
+}
+
+// index.html carries a site-wide FAQPage. Google expects one FAQPage per URL,
+// so on routes that supply their own, more specific FAQ we drop the global one.
+// Each ld+json block is parsed rather than regex-matched, so only a block that
+// really is a FAQPage is removed.
+function stripGlobalFaqPage(html) {
+  const blockRe = /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
+  return html.replace(blockRe, (match, body) => {
+    try {
+      const parsed = JSON.parse(body.trim());
+      const nodes = Array.isArray(parsed) ? parsed : [parsed];
+      if (nodes.length && nodes.every((n) => n && n['@type'] === 'FAQPage')) return '';
+    } catch {
+      // Not parseable, leave the block untouched.
+    }
+    return match;
+  });
+}
+
 async function main() {
   const blogSlugs = getBlogSlugs();
   const blogTitles = getBlogTitles();
@@ -569,6 +601,9 @@ async function main() {
 
       // Inject per-route schemas (Product, HowTo etc.)
       const routeSchema = ROUTE_SCHEMAS[route];
+      if (ROUTES_WITH_CLIENT_FAQ.has(route) || schemaHasFaqPage(routeSchema)) {
+        html = stripGlobalFaqPage(html);
+      }
       if (routeSchema) {
         html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(routeSchema)}</script>\n</head>`);
       }
