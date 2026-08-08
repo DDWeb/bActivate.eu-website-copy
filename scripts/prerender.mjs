@@ -311,7 +311,7 @@ const PAGE_META = {
     title: 'German Study: Bacterial Spectrum in Mare Uterine Health',
     description: '28,887 endometrial swabs: 25.9% showed pathogenic bacteria, 79.7% β-hemolytic Streptococci. What this landmark German study means for mare fertility.',
   },
-  '/blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-maresbojesen-petersen-biotech-aps-copenhagen-denmark': {
+  '/blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares': {
     title: '89% Pregnancy Rate in Thoroughbred Mares at Godolphin',
     description: 'Kildangan/Godolphin stud study: 89% of thoroughbred mares (16/19) conceived after bActivate treatment. All 14 who conceived delivered healthy live foals.',
   },
