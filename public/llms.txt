@@ -25,7 +25,7 @@ Last-Updated: 2026-03-26
 
 ## Peer-Reviewed Publications
 
-- Petersen MR, Bojesen AM et al. (2015). "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis." *Theriogenology* 84(4):545–552. DOI: https://doi.org/10.1016/j.vetmic.2015.06.006. PMID: 25975756.
+- Petersen MR, Bojesen AM et al. (2015). "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis." *Veterinary Microbiology* 179(1-2):119-125. DOI: https://doi.org/10.1016/j.vetmic.2015.06.006. PMID: 26123371.
 - Petersen MR et al. (2025). Nature Medicine (pending full citation).
 
 ## Independent Citations
