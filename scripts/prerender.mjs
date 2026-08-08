@@ -411,6 +411,15 @@ function routeToOutputPath(route) {
 // up with two.
 const ROUTES_WITH_CLIENT_FAQ = new Set(['/podcast']);
 
+// True if a route schema carries a FAQPage, whether it is a single object,
+// an array of schemas, or an @graph.
+function schemaHasFaqPage(schema) {
+  if (Array.isArray(schema)) return schema.some(schemaHasFaqPage);
+  if (!schema || typeof schema !== 'object') return false;
+  if (schema['@graph']) return schemaHasFaqPage(schema['@graph']);
+  return schema['@type'] === 'FAQPage';
+}
+
 // index.html carries a site-wide FAQPage. Google expects one FAQPage per URL,
 // so on routes that supply their own, more specific FAQ we drop the global one.
 // Each ld+json block is parsed rather than regex-matched, so only a block that
@@ -565,13 +574,10 @@ async function main() {
 
       // Inject per-route schemas (Product, HowTo etc.)
       const routeSchema = ROUTE_SCHEMAS[route];
-      if (ROUTES_WITH_CLIENT_FAQ.has(route)) {
+      if (ROUTES_WITH_CLIENT_FAQ.has(route) || schemaHasFaqPage(routeSchema)) {
         html = stripGlobalFaqPage(html);
       }
       if (routeSchema) {
-        if (routeSchema['@type'] === 'FAQPage') {
-          html = stripGlobalFaqPage(html);
-        }
         html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(routeSchema)}</script>\n</head>`);
       }
 
