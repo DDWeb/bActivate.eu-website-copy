@@ -7,7 +7,7 @@ const faqItems = [
   },
   {
     question: "Why can't my mare get in foal despite clean swabs?",
-    answer: "70–80% of problem mares carry a hidden uterine infection caused by dormant bacteria. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and resists antibiotics. Standard swabs miss this infection in over 60% of cases. bActivate reactivates the bacteria so they can be accurately diagnosed and treated.",
+    answer: "Across clinical studies, 47–87% of problem mares tested activation-positive, meaning they carried a hidden uterine infection caused by dormant bacteria. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and resists antibiotics. Standard swab culture has a detection sensitivity of about 34%, so it misses roughly 60% of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated.",
   },
   {
     question: "What is subclinical endometritis and why is it hard to detect?",
@@ -31,7 +31,7 @@ const faqItems = [
   },
   {
     question: "What pregnancy rates has bActivate achieved in clinical studies?",
-    answer: "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, 83% of 64 problem mares became pregnant after bActivate treatment. At Kildangan Stud (Godolphin), 89% pregnancy rate was achieved in 19 problem mares. Copenhagen University data showed a 72% live foal rate.",
+    answer: "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, 83% of 64 problem mares became pregnant after bActivate-guided diagnosis and treatment, and 70% produced a live foal. The study included no placebo group; the historic expected foaling rate for this group of mares is 15–50%. At Kildangan Stud (Godolphin), an 89% pregnancy rate was recorded in 19 problem mares (internal clinical data).",
   },
   {
     question: "When should bActivate be used?",
