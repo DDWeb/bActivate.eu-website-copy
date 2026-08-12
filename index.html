@@ -153,7 +153,7 @@
         "name": "Why can't my mare get in foal despite clean swabs?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "70–80% of problem mares carry a hidden uterine infection caused by dormant bacteria. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and resists antibiotics. Standard swabs miss this infection in over 60% of cases. bActivate reactivates the bacteria so they can be accurately diagnosed and treated."
+          "text": "Across clinical studies, 47–87% of problem mares tested activation-positive, meaning they carried a hidden uterine infection caused by dormant bacteria. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and resists antibiotics. Standard swab culture has a detection sensitivity of about 34%, so it misses roughly 60% of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated."
         }
       },
       {
@@ -201,7 +201,7 @@
         "name": "What pregnancy rates has bActivate achieved in clinical studies?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, 83% of 64 problem mares became pregnant after bActivate treatment. At Kildangan Stud (Godolphin), 89% pregnancy rate was achieved in 19 problem mares. Copenhagen University data showed a 72% live foal rate. At Hagyard, 47% of treated mares tested positive for dormant Strep — infections that had been missed by prior standard testing."
+          "text": "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, 83% of 64 problem mares became pregnant after bActivate-guided diagnosis and treatment, and 70% produced a live foal. The study included no placebo group; the historic expected foaling rate for this group of mares is 15–50%. At Kildangan Stud (Godolphin), an 89% pregnancy rate was recorded in 19 problem mares (internal clinical data). At Hagyard, 47% of tested mares were positive for dormant Strep, infections that standard testing had missed."
         }
       },
       {
@@ -240,23 +240,102 @@
   }
   </script>
 
-  <!-- Structured Data - ScholarlyArticle: Key bActivate publication -->
+  <!-- Structured Data - Publications: the two peer-reviewed papers and the reference textbook chapter.
+       Author entries reuse the Person @ids defined above so the entity graph resolves. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "@id": "https://doi.org/10.1016/j.vetmic.2015.06.006",
-    "headline": "Activation of persistent Streptococcus equi subsp. zooepidemicus in mares with subclinical endometritis",
-    "author": [
-      { "@type": "Person", "@id": "https://bactivate.eu/#morten-petersen", "name": "Morten Rønn Petersen" },
-      { "@type": "Person", "@id": "https://bactivate.eu/#anders-bojesen", "name": "Anders Miki Bojesen" }
-    ],
-    "datePublished": "2015-08-31",
-    "identifier": { "@type": "PropertyValue", "propertyID": "PMID", "value": "26123371" },
-    "publisher": { "@type": "Organization", "name": "Elsevier" },
-    "isPartOf": { "@type": "Periodical", "name": "Veterinary Microbiology", "issn": "0378-1135" },
-    "url": "https://doi.org/10.1016/j.vetmic.2015.06.006",
-    "keywords": ["Streptococcus zooepidemicus", "subclinical endometritis", "mares", "biofilm", "bActivate", "equine reproduction"]
+    "@graph": [
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://doi.org/10.1016/j.vetmic.2015.06.006",
+        "name": "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis",
+        "headline": "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis",
+        "author": [
+          { "@type": "Person", "@id": "https://bactivate.eu/#morten-petersen", "name": "Morten Rønn Petersen" },
+          { "@type": "Person", "name": "Bolette Skive" },
+          { "@type": "Person", "name": "Mette Christoffersen" },
+          { "@type": "Person", "name": "Kristina Lu", "affiliation": { "@type": "Organization", "name": "Hagyard Equine Medical Institute" } },
+          { "@type": "Person", "name": "Jesper M. Nielsen" },
+          { "@type": "Person", "name": "Mats H. T. Troedsson", "affiliation": { "@type": "EducationalOrganization", "name": "Maxwell H. Gluck Equine Research Center, University of Kentucky" } },
+          { "@type": "Person", "@id": "https://bactivate.eu/#anders-bojesen", "name": "Anders Miki Bojesen" }
+        ],
+        "datePublished": "2015-08",
+        "pagination": "119-125",
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.1016/j.vetmic.2015.06.006" },
+          { "@type": "PropertyValue", "propertyID": "PMID", "value": "26123371" }
+        ],
+        "sameAs": "https://doi.org/10.1016/j.vetmic.2015.06.006",
+        "url": "https://doi.org/10.1016/j.vetmic.2015.06.006",
+        "publisher": { "@type": "Organization", "name": "Elsevier" },
+        "isPartOf": {
+          "@type": "PublicationIssue",
+          "issueNumber": "1-2",
+          "isPartOf": {
+            "@type": "PublicationVolume",
+            "volumeNumber": "179",
+            "isPartOf": { "@type": "Periodical", "name": "Veterinary Microbiology", "issn": "0378-1135" }
+          }
+        },
+        "keywords": ["Streptococcus zooepidemicus", "subclinical endometritis", "mares", "bActivate", "equine reproduction"]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://clinicaltheriogenology.net/index.php/CT/article/view/12588",
+        "name": "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares",
+        "headline": "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares",
+        "author": [
+          { "@type": "Person", "@id": "https://bactivate.eu/#morten-petersen", "name": "Morten Rønn Petersen" },
+          { "@type": "Person", "name": "Jesper M. Nielsen" },
+          { "@type": "Person", "name": "H. Lehn-Jensen" },
+          { "@type": "Person", "@id": "https://bactivate.eu/#anders-bojesen", "name": "Anders Miki Bojesen" }
+        ],
+        "datePublished": "2009-08-03",
+        "pagination": "393-409",
+        "url": "https://clinicaltheriogenology.net/index.php/CT/article/view/12588",
+        "publisher": { "@type": "Organization", "name": "Society for Theriogenology" },
+        "isPartOf": {
+          "@type": "PublicationVolume",
+          "volumeNumber": "1",
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": "Clinical Theriogenology",
+            "issn": "2154-3968",
+            "url": "https://clinicaltheriogenology.net/index.php/CT"
+          }
+        },
+        "keywords": ["Endometritis", "Streptococcus equi subspecies zooepidemicus", "localization", "chronic infections", "equine", "fluorescence in situ hybridization"]
+      },
+      {
+        "@type": "Chapter",
+        "@id": "https://doi.org/10.1002/9781119556015.ch38",
+        "name": "Latent Uterine Bacterial Infections",
+        "headline": "Latent Uterine Bacterial Infections",
+        "author": [
+          { "@type": "Person", "@id": "https://bactivate.eu/#morten-petersen", "name": "Morten Rønn Petersen" },
+          { "@type": "Person", "@id": "https://bactivate.eu/#anders-bojesen", "name": "Anders Miki Bojesen" }
+        ],
+        "datePublished": "2021-02-19",
+        "pagination": "141-142",
+        "identifier": { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.1002/9781119556015.ch38" },
+        "sameAs": "https://doi.org/10.1002/9781119556015.ch38",
+        "url": "https://doi.org/10.1002/9781119556015.ch38",
+        "isPartOf": {
+          "@type": "Book",
+          "name": "Equine Reproductive Procedures",
+          "bookEdition": "2nd",
+          "isbn": "9781119555988",
+          "datePublished": "2021-02-19",
+          "publisher": { "@type": "Organization", "name": "Wiley-Blackwell" },
+          "editor": [
+            { "@type": "Person", "name": "John J. Dascanio", "affiliation": { "@type": "EducationalOrganization", "name": "Texas Tech University" } },
+            { "@type": "Person", "name": "Patrick M. McCue", "affiliation": { "@type": "EducationalOrganization", "name": "Colorado State University" } }
+          ]
+        },
+        "keywords": ["latent endometritis", "dormant bacteria", "Streptococcus zooepidemicus", "equine reproduction", "bActivate"]
+      }
+    ]
   }
   </script>
 
@@ -320,7 +399,7 @@
     <noscript>
       <main>
         <h2>bActivate — Diagnose Hidden Uterine Infections in Problem Mares</h2>
-        <p>70–80% of problem mares carry a hidden uterine infection caused by dormant Streptococcus equi subsp. zooepidemicus. bActivate is a bacterial growth medium instilled by a veterinarian to reactivate dormant infections, enabling accurate diagnosis and targeted treatment. 83% pregnancy rate in 64 problem mares at Hagyard Equine Medical Institute (Dr. Kristina Lu). 89% pregnancy rate at Kildangan Stud – Godolphin (19 mares). 72% live foal rate, Copenhagen University / Breeders Club.</p>
+        <p>Across clinical studies, 47–87% of problem mares tested activation-positive, meaning they carried a hidden uterine infection caused by dormant Streptococcus equi subsp. zooepidemicus that standard culture had not detected. bActivate is a bacterial growth medium instilled by a veterinarian to reactivate dormant infections, enabling accurate diagnosis and targeted treatment. 83% pregnancy rate and 70% foaling rate in 64 problem mares at Hagyard Equine Medical Institute, in a study led by Dr. Kristina Lu. 89% pregnancy rate at Kildangan Stud – Godolphin (19 mares, internal clinical data).</p>
 
         <h2>What is bActivate?</h2>
         <p>bActivate is a diagnostic aid for detecting dormant Streptococcus equi subsp. zooepidemicus infections in the uterus of problem mares. These bacteria enter a low-metabolic persister state that evades standard uterine cultures and resists antibiotics. bActivate reactivates them within 48 hours, making them detectable by standard culture. One vial €229. Available from bactivate.eu and authorised European distributors.</p>
@@ -332,11 +411,11 @@
         <p>1. Obtain a pre-activation uterine culture sample. 2. Instill 10 ml of bActivate into the uterus in early estrus (largest follicle 25–30 mm). 3. Obtain a post-activation culture 48 hours later. 4. Begin targeted antibiotic therapy based on culture results. Breeding in the same estrus cycle is not recommended. Requires a veterinarian with documented education and authorisation to practice.</p>
 
         <h2>Clinical Studies — 83% Pregnancy Rate at Hagyard</h2>
-        <p>Hagyard Equine Medical Institute (Dr. Kristina Lu, Davidson, McGee): 64 problem mares treated, 53 (83%) became pregnant. Kildangan Stud – Godolphin: 19 problem mares, 89% pregnancy rate. Copenhagen University / Breeders Club: 72% live foal rate. Peer-reviewed research: Petersen &amp; Bojesen, Veterinary Microbiology, 2015. DOI: 10.1016/j.vetmic.2015.06.006</p>
+        <p>Hagyard Equine Medical Institute (project led by Dr. Kristina Lu, Hagyard, Davidson and McGee): 64 problem mares treated, 53 (83%) became pregnant, 32 live foals (70% foaling rate), 30 of 64 (47%) activation-positive. Published as Petersen &amp; Bojesen, Clinical Theriogenology 2014;6(3):313-314; the authors note no placebo group was included, against a historic expected foaling rate of 15–50% for this group of mares. Kildangan Stud – Godolphin: 19 problem mares, 89% pregnancy rate (internal clinical data). Peer-reviewed and reference literature: Petersen et al., Veterinary Microbiology 2015, DOI 10.1016/j.vetmic.2015.06.006; Petersen et al., Clinical Theriogenology 2009;1:393-409; Petersen &amp; Bojesen, chapter 38 in Equine Reproductive Procedures, 2nd ed., Wiley-Blackwell 2021, DOI 10.1002/9781119556015.ch38</p>
 
         <h2>About the Founders — E-E-A-T Credentials</h2>
-        <p><strong>Dr. Morten Rønn Petersen DVM, PhD, Dipl. ACT</strong> — Equine reproduction specialist, 21+ peer-reviewed publications including Nature Medicine (2025). Head of Laboratory, Fertility Clinic Rigshospitalet, Copenhagen. Co-founder, Bojesen &amp; Petersen Biotech ApS. LinkedIn: linkedin.com/in/mortenrpetersen</p>
-        <p><strong>Prof. Anders Miki Bojesen DVM, PhD, Diplomate ECPVS</strong> — Professor of Veterinary Microbiology, University of Copenhagen. 157+ peer-reviewed publications. Invited speaker, International Workshop on Equine Endometritis, Al Shaqab Qatar 2016. Co-founder, Bojesen &amp; Petersen Biotech ApS. LinkedIn: linkedin.com/in/anders-miki-bojesen</p>
+        <p><strong>Dr. Morten Rønn Petersen DVM, PhD, Dipl. ACT</strong> — Equine reproduction specialist and Diplomate of the American College of Theriogenologists. First author on all three studies underlying bActivate (Veterinary Microbiology 2015, Clinical Theriogenology 2009, Clinical Theriogenology 2014) and co-author of chapter 38, "Latent Uterine Bacterial Infections", in Equine Reproductive Procedures, 2nd ed. (Wiley-Blackwell, 2021). Head of Laboratory, Fertility Clinic Rigshospitalet, Copenhagen. Co-founder, Bojesen &amp; Petersen Biotech ApS. LinkedIn: linkedin.com/in/mortenrpetersen</p>
+        <p><strong>Prof. Anders Miki Bojesen DVM, PhD, Diplomate ECPVS</strong> — Professor of Veterinary Microbiology, University of Copenhagen. 157+ peer-reviewed publications. Co-author of chapter 38, "Latent Uterine Bacterial Infections", in Equine Reproductive Procedures, 2nd ed. (Wiley-Blackwell, 2021), edited by Prof. John Dascanio (Texas Tech University) and Prof. Patrick McCue (Colorado State University). Invited speaker, International Workshop on Equine Endometritis, Al Shaqab Qatar 2016. Co-founder, Bojesen &amp; Petersen Biotech ApS. ORCID 0000-0003-4030-0019. LinkedIn: linkedin.com/in/anders-miki-bojesen</p>
 
         <h2>Distributors — Europe, US, Australia</h2>
         <p>Europe direct: Bojesen &amp; Petersen Biotech ApS, Strandboulevarden 23, DK-2100 Copenhagen. contact@bactivate.eu. UK: Nupsala LTD, Melton Mowbray (+44 1865 922 227). Netherlands: Grovet, Soesterberg (+44 142 248 1900). Denmark: proVET Nordic ApS (+45 53 28 29 29). USA: Hagyard Pharmacy, Lexington KY (859-281-9511). Midwest Veterinary Supply, Lakeville MN (1-800-643-9378). Australia: Scone Equine Hospital (+61 2 6545 1333).</p>
