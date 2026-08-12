@@ -7,7 +7,7 @@ import InternalLinks from '@/components/InternalLinks';
 export default function WhatIsBactivate() {
     useEffect(() => {
         document.title = 'What is bActivate? | Diagnosing Hidden Infections in Problem & Non-Pregnant Mares';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate diagnoses dormant Streptococcus zooepidemicus in non-pregnant mares and barren mares, a hidden infection causing 70–80% of recurring fertility failure in problem mares.');
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate diagnoses dormant Streptococcus zooepidemicus in non-pregnant mares and barren mares, a hidden infection that standard swab culture misses in roughly 60% of affected mares.');
 
         let schema = document.getElementById('medcond-schema') as HTMLScriptElement | null;
         if (!schema) {
@@ -21,7 +21,7 @@ export default function WhatIsBactivate() {
             '@type': 'MedicalCondition',
             'name': 'Subclinical Endometritis in Mares',
             'alternateName': ['Equine subclinical endometritis', 'Dormant uterine infection in mares', 'Chronic subclinical endometritis', 'Culture-negative endometritis'],
-            'description': 'Subclinical endometritis is a persistent low-grade uterine infection in broodmares caused by dormant Streptococcus equi subspecies zooepidemicus in a biofilm state. Standard uterine swab cultures yield false-negative results in over 60% of affected mares because the bacteria have lowered their metabolic rate and resist detection. The condition causes recurring fertility failure, accumulation of uterine fluid, and early embryo loss. It is estimated to affect 70–80% of mares that remain open at the end of the breeding season. Diagnosis requires reactivation of the dormant bacteria — achieved by uterine instillation of bActivate — followed by a post-activation culture 48 hours later.',
+            'description': 'Subclinical endometritis is a persistent low-grade uterine infection in broodmares caused by dormant Streptococcus equi subspecies zooepidemicus in a biofilm state. Standard uterine swab cultures yield false-negative results in over 60% of affected mares because the bacteria have lowered their metabolic rate and resist detection. The condition causes recurring fertility failure, accumulation of uterine fluid, and early embryo loss. Across clinical studies, 47–87% of problem mares tested activation-positive, indicating a latent infection that standard culture had not detected. Diagnosis requires reactivation of the dormant bacteria — achieved by uterine instillation of bActivate — followed by a post-activation culture 48 hours later.',
             'associatedAnatomy': { '@type': 'AnatomicalStructure', 'name': 'Equine uterus (endometrium)' },
             'signOrSymptom': [
                 { '@type': 'MedicalSymptom', 'name': 'Failure to conceive despite breeding to fertile stallion' },

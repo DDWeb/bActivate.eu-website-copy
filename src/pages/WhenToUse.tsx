@@ -7,7 +7,7 @@ import InternalLinks from '@/components/InternalLinks';
 export default function WhenToUse() {
     useEffect(() => {
         document.title = 'When to Use bActivate | Signs Your Mare Has a Hidden Infection';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Use bActivate when your mare fails to conceive despite fertile breeding, has recurring uterine fluid, or previous infections. 50–75% of open mares are chronically infected.');
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Use bActivate when your mare fails to conceive despite fertile breeding, has recurring uterine fluid, or previous infections. 47–87% of problem mares test positive after activation.');
     }, []);
     return (
         <main>
@@ -164,7 +164,7 @@ export default function WhenToUse() {
                             <li className="flex gap-2"><span className="text-red-600 font-bold">✓</span><span>Helps farms <strong>plan breeding schedules</strong> with greater confidence</span></li>
                         </ul>
                     </div>
-                    <p className="mt-6 text-gray-600">Our studies indicate that 50–75% of mares that remain open at the end of the breeding season are chronically infected. Off-season screening with bActivate addresses this directly.</p>
+                    <p className="mt-6 text-gray-600">Across clinical studies, 47–87% of problem mares tested activation-positive, meaning they carried an infection standard culture had missed. Off-season screening with bActivate addresses this directly.</p>
                 </div>
             </section>
 
