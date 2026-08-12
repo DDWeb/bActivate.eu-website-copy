@@ -9,3 +9,14 @@
     Header set X-Robots-Tag "all"
     Header set Access-Control-Allow-Origin "*"
 </IfModule>
+
+# Return a real 404 for a missing OKF file instead of falling through to the
+# SPA shell, which would answer with the homepage under HTTP 200. A crawler
+# asking for a file that does not exist must be told so, and a mistyped
+# citation must not appear to resolve.
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ - [R=404,L]
+</IfModule>
