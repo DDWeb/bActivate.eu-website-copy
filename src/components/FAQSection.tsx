@@ -1,25 +1,28 @@
 import { useState } from 'react';
 
-const faqItems = [
+// Two distinct question sets. The visible accordion must stay in sync with the
+// FAQPage structured data injected per route in scripts/prerender.mjs
+// ('/' = homeFaqItems, '/shop' = shopFaqItems). Edit both together.
+export const homeFaqItems = [
   {
     question: "What is bActivate?",
-    answer: "bActivate is a bacterial growth medium used by veterinarians to reactivate dormant Streptococcus equi subsp. zooepidemicus infections in the uterus of problem mares. It enables accurate diagnosis and treatment of subclinical endometritis that standard tests fail to detect.",
+    answer: "bActivate is a bacterial growth medium used by veterinarians to reactivate dormant Streptococcus equi subsp. zooepidemicus infections in the uterus of problem mares. It reveals subclinical endometritis that standard tests fail to detect, so the veterinarian can diagnose accurately and treat with targeted antibiotics.",
   },
   {
     question: "Why can't my mare get in foal despite clean swabs?",
-    answer: "Across clinical studies, 47–87% of problem mares tested activation-positive, meaning they carried a hidden uterine infection caused by dormant bacteria. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and resists antibiotics. Standard swab culture has a detection sensitivity of about 34%, so it misses roughly 60% of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated.",
+    answer: "Studies show 70 to 80% of problem mares carry a hidden uterine infection caused by dormant bacteria. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and tolerates antibiotics. Standard swab culture has a detection sensitivity of about 34%, so it misses most of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated by your veterinarian.",
   },
   {
     question: "What is subclinical endometritis and why is it hard to detect?",
-    answer: "Subclinical endometritis is a silent uterine inflammation with no visible symptoms — no discharge, no fever, no abnormal cycles. Despite appearing normal, the inflammation prevents embryo implantation. Because bacteria are in a dormant, low-metabolic state, they are not picked up by routine swabs or culture tests.",
+    answer: "Subclinical endometritis is a silent uterine inflammation with no visible symptoms: no discharge, no fever, no abnormal cycles. Despite appearing normal, the inflammation prevents embryo implantation. Because the bacteria are in a dormant, low-metabolic state, they are not picked up by routine swabs or culture tests.",
   },
   {
     question: "What is a biofilm infection in a mare's uterus?",
-    answer: "Biofilm is a protective layer that bacteria like Streptococcus zooepidemicus build around themselves inside the uterus. This shield makes them resistant to antibiotics and undetectable by standard swabs. Biofilm infections are a major cause of chronic, treatment-resistant infertility in problem mares.",
+    answer: "Biofilm is a protective layer that bacteria like Streptococcus zooepidemicus build around themselves inside the uterus. This shield makes them tolerant to antibiotics and undetectable by standard swabs. Biofilm infections are a major cause of chronic, treatment-resistant infertility in problem mares.",
   },
   {
     question: "Why do antibiotics sometimes fail to cure uterine infections in mares?",
-    answer: "When bacteria form biofilms or enter a dormant persister state, they become resistant to antibiotics — even ones they are technically sensitive to. Antibiotics cannot penetrate the biofilm shield effectively. bActivate reactivates the bacteria first, making them metabolically active and vulnerable to targeted antibiotic treatment.",
+    answer: "When bacteria form biofilms or enter a dormant persister state, they tolerate antibiotics, even ones they are technically sensitive to, because the drugs target actively dividing cells. bActivate reactivates the bacteria first, making them metabolically active and vulnerable, so the veterinarian's targeted antibiotic treatment can work.",
   },
   {
     question: "What are the signs of a hidden uterine infection in a mare?",
@@ -30,29 +33,51 @@ const faqItems = [
     answer: "A veterinarian instills 10 ml of bActivate into the mare's uterus during early estrus. The growth medium reactivates dormant bacteria within 48 hours, making them detectable by standard culture. The veterinarian then prescribes targeted antibiotic treatment based on the culture result. Breeding is recommended in the following cycle.",
   },
   {
-    question: "What pregnancy rates has bActivate achieved in clinical studies?",
-    answer: "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, 83% of 64 problem mares became pregnant after bActivate-guided diagnosis and treatment, and 70% produced a live foal. The study included no placebo group; the historic expected foaling rate for this group of mares is 15–50%. At Kildangan Stud (Godolphin), an 89% pregnancy rate was recorded in 19 problem mares (internal clinical data). At Hagyard, 47% of tested mares were positive for dormant Strep, infections that standard testing had missed.",
-  },
-  {
-    question: "When should bActivate be used?",
-    answer: "bActivate is indicated for mares that have failed to conceive despite breeding to fertile stallions, mares with recurring uterine fluid, mares with previous uterine infections, older broodmares with reduced uterine defence, and mares where antibiotics have previously failed. It is administered during estrus, approximately 5 days before intended breeding in the next cycle.",
-  },
-  {
     question: "Why does my mare lose her pregnancy so early?",
-    answer: "Early embryo loss (before day 35) affects 10–15% of pregnancies and up to 30–40% in older or problem mares. A frequently overlooked cause is subclinical endometritis from dormant bacteria. The inflammation may not be severe enough to prevent conception, but it creates a hostile environment that ends the pregnancy in the first weeks. If your mare conceives but repeatedly loses her pregnancies, ask your vet about testing for dormant Strep. zooepidemicus with bActivate.",
+    answer: "Early embryo loss (before day 35) affects 10 to 15% of pregnancies and up to 30 to 40% in older or problem mares. A frequently overlooked cause is subclinical endometritis from dormant bacteria. The inflammation may not be severe enough to prevent conception, but it creates a hostile environment that ends the pregnancy in the first weeks. If your mare conceives but repeatedly loses her pregnancies, ask your vet about testing for dormant Strep. zooepidemicus with bActivate.",
   },
   {
     question: "Can bActivate be used on older mares?",
     answer: "Yes. Older mares (10+ years) and mares with multiple previous foals are among the most common candidates for bActivate, as uterine defence mechanisms weaken with age. Clinical studies include a significant proportion of older problem mares with long histories of infertility.",
   },
+];
+
+export const shopFaqItems = [
+  {
+    question: "What does bActivate cost?",
+    answer: "bActivate costs 229 EUR per vial. One vial is one activation cycle for one mare. It ships across Europe from Copenhagen, Denmark, and is also available through local distributors in the UK, Netherlands, Denmark, Australia and more.",
+  },
+  {
+    question: "What do I get, and do I need a veterinarian?",
+    answer: "You receive a 10 ml vial of the bActivate activation growth medium. bActivate is a prescription veterinary product: it is instilled into the uterus by your veterinarian during early estrus, and the follow-up culture and any antibiotic treatment are handled by the veterinarian as well.",
+  },
+  {
+    question: "When should bActivate be used?",
+    answer: "bActivate is indicated for mares that have failed to conceive despite breeding to fertile stallions, mares with recurring uterine fluid, mares with previous uterine infections, older broodmares with reduced uterine defence, and mares where antibiotics have previously failed. It is administered during estrus, one cycle before the intended breeding cycle.",
+  },
+  {
+    question: "What pregnancy rates has bActivate achieved in clinical studies?",
+    answer: "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, 83% of 64 problem mares became pregnant after bActivate-guided diagnosis and veterinary treatment, and 70% of those with known outcomes produced a live foal. The study included no placebo group; the historic expected foaling rate for this group of mares is 15 to 50%. At Kildangan Stud (Godolphin), 89% of bred problem mares became pregnant (16/18), published as a congress abstract in the Journal of Equine Veterinary Science (2018).",
+  },
   {
     question: "Where can I buy bActivate in Europe?",
-    answer: "bActivate is produced by Bojesen and Petersen Biotech ApS in Denmark and is available through authorised equine veterinary distributors across Europe and Australia. Contact us at contact@bactivate.eu or visit our shop page to order or find your nearest distributor.",
+    answer: "bActivate is produced by Bojesen and Petersen Biotech ApS in Denmark and is available through authorised equine veterinary distributors across Europe and Australia, or directly from this shop. Contact us at contact@bactivate.eu with any questions before ordering.",
+  },
+  {
+    question: "How is bActivate shipped?",
+    answer: "Orders ship from Copenhagen, Denmark to addresses across Europe. If you are outside Europe or need a larger quantity for a clinic or stud, contact us at contact@bactivate.eu or order through your local distributor.",
   },
 ];
 
-const FAQSection = () => {
+type FAQVariant = 'home' | 'shop';
+
+const FAQSection = ({ variant = 'home' }: { variant?: FAQVariant }) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const faqItems = variant === 'shop' ? shopFaqItems : homeFaqItems;
+  const subtitle = variant === 'shop'
+    ? 'Common questions about ordering, price, shipping and what the studies show.'
+    : 'Common questions about problem mares, biofilm infections and bActivate activation.';
 
   const toggle = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -68,7 +93,7 @@ const FAQSection = () => {
           Frequently Asked Questions
         </h2>
         <p style={{ color: '#666', marginBottom: '2.5rem', fontSize: '0.95rem' }}>
-          Common questions about problem mares, biofilm infections and bActivate treatment.
+          {subtitle}
         </p>
 
         <div>

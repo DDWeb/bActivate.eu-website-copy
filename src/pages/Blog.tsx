@@ -15,15 +15,15 @@ function getExcerpt(content: string, maxLength = 140): string {
 
 export default function Blog() {
     useEffect(() => {
-        document.title = 'bActivate Blog | Mare Fertility & Equine Reproductive Health';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Expert articles on hidden uterine infections, mare fertility, and the science behind bActivate from Bojesen & Petersen Biotech ApS.');
+        document.title = 'bActivate Blog | Equine Endometritis & Mare Fertility';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Research, clinical insights and news on subclinical endometritis, dormant bacteria, and bActivate. For vets and equine reproduction specialists.');
     }, []);
     return (
         <main>
             <section className={styles.pageHeader}>
                 <div className={styles.container}>
                     <p className={styles.eyebrow}>Knowledge & Science</p>
-                    <h1 className={styles.title}>Blog</h1>
+                    <h1 className={styles.title}>Mare Fertility and Endometritis Blog</h1>
                     <p className={styles.subtitle}>Articles and news on equine reproductive health</p>
                 </div>
             </section>

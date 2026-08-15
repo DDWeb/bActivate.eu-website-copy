@@ -59,7 +59,7 @@ export default function ConsultationConfirmed() {
                     to="/studies-effect"
                     style={{ display: 'inline-block', color: '#901820', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'underline', marginBottom: '1.5rem' }}
                 >
-                    Exclusive insights — Studies &amp; Effect →
+                    Exclusive insights, Studies &amp; Effect →
                 </Link>
 
                 <p style={{ color: '#555', fontSize: '0.92rem', marginBottom: '0.75rem' }}>

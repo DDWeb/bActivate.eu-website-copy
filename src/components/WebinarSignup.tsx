@@ -15,7 +15,7 @@ export default function WebinarSignup() {
                         <span className={styles.eyebrow}>Free Expert Webinar</span>
                         <h2 className={styles.title}>WATCH OUR WEBINAR</h2>
                         <p className={styles.description}>
-                            Watch our webinar on diagnosis and treatment of problem mares — now available as a recording.
+                            Watch our webinar on diagnosis and treatment of problem mares, now available as a recording.
                         </p>
                         <p className={styles.speakers}>
                             <strong>Morten Rønn Petersen</strong>, DVM, PhD, Dipl. ACT &amp; <strong>Anders Miki Bojesen</strong>, Professor of Veterinary Microbiology
@@ -43,7 +43,7 @@ export default function WebinarSignup() {
                                 width="100%"
                                 height="500"
                                 src="https://www.youtube.com/embed/LemEnrcgVVY"
-                                title="bActivate Webinar — Diagnosis and Treatment of Problem Mares"
+                                title="bActivate Webinar, Diagnosis and Treatment of Problem Mares"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen

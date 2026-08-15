@@ -3,11 +3,12 @@ import { useEffect } from 'react';
 import styles from './Home.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 import WebinarSignup from '@/components/WebinarSignup';
+import LiteYouTube from '@/components/LiteYouTube';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'bActivate | Treat Hidden Uterine Infections in Problem Mares';
-    document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate detects hidden uterine infections in problem mares. Used at Hagyard with 83% pregnancy rate. One vial per treatment cycle.');
+    document.title = 'bActivate | Diagnose Hidden Infections in Problem Mares';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate detects hidden uterine infections in problem mares. Used at Hagyard with 83% pregnancy rate. One vial per activation cycle.');
   }, []);
   return (
     <main>
@@ -19,10 +20,10 @@ export default function Home() {
               <div className={styles.heroEyebrow}>Facilitate mare pregnancy</div>
               <h1 className={styles.heroTitle}>
                 Problem getting your mare in foal? <br />
-                bActivate is the best solution.
+                bActivate finds the infection swabs miss.
               </h1>
               <p className={styles.heroSubtitle}>
-                70-80% of all problem mares carry a hidden uterine infection with a clear negative effect on fertility. bActivate gives barren mares a second chance — by activating the dormant infections that standard tests miss.
+                70-80% of all problem mares carry a hidden uterine infection with a clear negative effect on fertility. bActivate activates the dormant infections that standard tests miss, so your veterinarian can treat them and give barren mares a second chance.
               </p>
             </div>
             <div className={styles.heroSilhouette}>
@@ -38,14 +39,7 @@ export default function Home() {
 
           <div className={styles.heroVideoWrapper}>
             <div className={styles.videoContainer}>
-              <iframe
-                  className={styles.video}
-                  src="https://www.youtube.com/embed/_1QPkyXkFgs"
-                  title="bActivate - Facilitate Mare Pregnancy"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+              <LiteYouTube id="_1QPkyXkFgs" title="bActivate - Facilitate Mare Pregnancy" className={styles.video} />
             </div>
           </div>
         </div>
@@ -66,15 +60,7 @@ export default function Home() {
             </div>
             <div className={styles.howItWorksVideo}>
               <div className={styles.videoContainer}>
-                <iframe
-                    className={styles.video}
-                    src="https://www.youtube.com/embed/acpF8se6Co8"
-                    title="How bActivate Works"
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    loading="lazy"
-                  ></iframe>
+                <LiteYouTube id="acpF8se6Co8" title="How bActivate Works" className={styles.video} />
               </div>
             </div>
           </div>
@@ -134,8 +120,8 @@ export default function Home() {
               </Link>
             </div>
             <div className={styles.twoImagesGroup}>
-              <img src="/images/colt-in-field-4078876_1920.jpg" alt="Colt" width={400} height={300} className={styles.featureImg} loading="lazy" />
-              <img src="/images/horses-2504677_1920.jpg" alt="Mare and foal" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/colt-in-field-800.webp" alt="Colt" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/horses-2504677-800.webp" alt="Mare and foal" width={400} height={300} className={styles.featureImg} loading="lazy" />
             </div>
           </div>
         </div>

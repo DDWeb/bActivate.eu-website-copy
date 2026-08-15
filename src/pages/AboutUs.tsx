@@ -1,13 +1,12 @@
 
 import { useEffect } from 'react';
 import styles from './AboutUs.module.css';
-import ReviewsSection from '@/components/ReviewsSection';
 import InternalLinks from '@/components/InternalLinks';
 
 export default function AboutUs() {
     useEffect(() => {
         document.title = 'About bActivate | Bojesen & Petersen Biotech ApS';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Meet the founders: Morten Rønn Petersen DVM PhD (Dipl. ACT) and Professor Anders Miki Bojesen — the veterinary scientists who discovered and developed bActivate.');
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Meet the founders: Morten Rønn Petersen DVM PhD (Dipl. ACT) and Professor Anders Miki Bojesen, the veterinary scientists who discovered and developed bActivate.');
     }, []);
     return (
         <main>
@@ -44,7 +43,7 @@ export default function AboutUs() {
                             <div className={styles.bio}>
                                 <p>The interest for reproduction has been the overall hall mark of my professional life. I started my professional life as a veterinarian in a large animal practice spending most of the time during the breeding season at a standard bred farm. My interest in reproduction, and in particular in equine reproduction, brought me to California as an equine reproduction resident supervised by professors Barry Ball and Irwin Liu.</p>
                                 <p>Following the residency I made a PhD at the section of Veterinary Reproduction and Obstetrics, Copenhagen University, Denmark, this time focusing on oocyte and early embryonic evaluation and development.</p>
-                                <p>I then took on a position as an assistant professor at the same section. My research focus was now on endometritis in the mare, in particular the most common cause of endometritis – the bacteria Streptococcus equi subspecies zooepidemicus (S.zoo).</p>
+                                <p>I then took on a position as an assistant professor at the same section. My research focus was now on endometritis in the mare, in particular the most common cause of endometritis, the bacteria Streptococcus equi subspecies zooepidemicus (S.zoo).</p>
                                 <p>Demonstrating localization of S.zoo deep within the endometrium of the chronically infected mare, pursued further investigations in this area. The most significant finding was to demonstrate that S.zoo in the chronically infected mare is able to enter a non-active/dormant state in the endometrium and infusion of a special bacterial growth medium into the uterus can induce active growth of S.zoo, previously residing in dormant bacterial reservoirs. With this finding diagnosis of these previously subclinic infections is now possible. </p>
                                 <p>Data from field studies using bActivate when diagnosing problem mares, indicate that improved diagnosis furthered treatment efficacy and mare fertility. My collaborators and I hope that these findings will improve reproductive efficiency in the mare to the benefit of horses and man. Dr. Petersen has authored 21+ peer-reviewed publications, including a paper in <em>Nature Medicine</em> (2025).</p>
                             </div>
@@ -86,11 +85,10 @@ export default function AboutUs() {
                 </div>
             </section>
             <InternalLinks links={[
-                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate — peer-reviewed evidence' },
+                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate, peer-reviewed evidence' },
                 { to: '/what-is-bactivate', label: 'What is bActivate?', description: 'The science behind dormant bacterial activation' },
-                { to: '/shop', label: 'Order bActivate', description: '€229 per vial — order directly online' },
+                { to: '/shop', label: 'Order bActivate', description: '€229 per vial, order directly online' },
             ]} />
-            <ReviewsSection />
         </main>
     );
 }

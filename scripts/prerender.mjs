@@ -29,10 +29,46 @@ const BREADCRUMB_LABELS = {
   '/shop': 'Shop',
   '/terms-and-conditions': 'Terms and Conditions',
   '/privacy-policy': 'Privacy Policy',
+  '/contact': 'Contact',
+  '/swab-culture-vs-bactivate': 'Swab Culture vs bActivate',
 };
 
 // Per-route schema injections (for schemas that can't run during SSR via useEffect)
 const ROUTE_SCHEMAS = {
+  '/contact': {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    'name': 'Contact bActivate',
+    'url': `${BASE_URL}/contact`,
+    'about': {
+      '@type': 'Organization',
+      'name': 'Bojesen & Petersen Biotech ApS',
+      'url': BASE_URL,
+      'vatID': 'DK34690324',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': 'Strandboulevarden 23',
+        'postalCode': '2100',
+        'addressLocality': 'Copenhagen',
+        'addressCountry': 'DK',
+      },
+      'contactPoint': [
+        {
+          '@type': 'ContactPoint',
+          'contactType': 'customer service',
+          'email': 'contact@bactivate.eu',
+          'telephone': '+45 60 71 21 69',
+          'availableLanguage': ['English', 'Danish'],
+        },
+        {
+          '@type': 'ContactPoint',
+          'contactType': 'sales',
+          'email': 'contact@bactivate.eu',
+          'availableLanguage': ['English', 'Danish'],
+        },
+      ],
+    },
+  },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -63,7 +99,7 @@ const ROUTE_SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     'name': 'bActivate',
-    'description': 'Veterinary uterine treatment for problem mares. Reactivates dormant Streptococcus equi subsp. zooepidemicus infections, enabling accurate diagnosis and targeted antibiotic treatment. 83% pregnancy rate in clinical trials at Hagyard Equine Medical Institute.',
+    'description': 'Veterinary diagnostic growth medium for problem mares. Reveals dormant Streptococcus equi subsp. zooepidemicus infections so the veterinarian can diagnose accurately and treat with targeted antibiotics. 83% pregnancy rate in a clinical study at Hagyard Equine Medical Institute.',
     'url': `${BASE_URL}/shop`,
     'image': `${BASE_URL}/images/hero.gif`,
     'brand': { '@type': 'Brand', 'name': 'Bojesen & Petersen Biotech ApS' },
@@ -76,14 +112,22 @@ const ROUTE_SCHEMAS = {
       'priceCurrency': 'EUR',
       'availability': 'https://schema.org/InStock',
       'itemCondition': 'https://schema.org/NewCondition',
+      'priceValidUntil': '2026-12-31',
       'seller': { '@type': 'Organization', 'name': 'Bojesen & Petersen Biotech ApS', 'url': BASE_URL },
     },
-    'aggregateRating': { '@type': 'AggregateRating', 'ratingValue': '5', 'reviewCount': '12' },
+    'sku': 'bactivate-1-vial',
+    '@id': `${BASE_URL}/shop#product`,
+    'review': [
+      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Dr. Kristina Lu, DVM' }, 'reviewBody': 'We incorporated bActivate into our standard reproductive work-up for problem mares at Hagyard. Out of 64 mares that had failed to conceive for at least 3 cycles, 83% became pregnant following bActivate activation and targeted antibiotic treatment.' },
+      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Meta Osborne MVB CertESM MRCVS' }, 'reviewBody': 'We used bActivate on 19 of our most persistent problem mares, horses that had been barren for over a year despite every conventional treatment we tried. 89% of them got in foal. What really opened our eyes was how many had a hidden infection.' },
+      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Charlotte Meldgaard, DVM' }, 'reviewBody': 'This mare lost her foal during delivery and developed a uterine infection resistant to conventional treatment. bActivate confirmed what we suspected, bacteria lying dormant deep in the endometrium, completely invisible to standard diagnostics.' },
+      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Maria Borre Nielsen' }, 'reviewBody': 'My biggest problem mare would never get in foal until we used bActivate. Last time we started with this and she was in foal on the very first insemination, instead of the usual 5 or 6 attempts.' },
+    ],
   },
   '/how-to-use': {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    'name': 'How to Use bActivate — Veterinary Protocol for Problem Mares',
+    'name': 'How to Use bActivate, Veterinary Protocol for Problem Mares',
     'description': 'Step-by-step protocol for uterine instillation of bActivate, post-activation culture, and antibiotic treatment of subclinical endometritis in problem mares.',
     'totalTime': 'PT48H',
     'tool': [
@@ -92,11 +136,11 @@ const ROUTE_SCHEMAS = {
       { '@type': 'HowToTool', 'name': '0.9% NaCl saline (10 ml)' },
     ],
     'step': [
-      { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a biopsy or low volume lavage to improve diagnostic sensitivity and specificity. Perform when the mare is in early oestrus (largest follicle 25–30 mm).' },
+      { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a biopsy or low volume lavage to improve diagnostic sensitivity and specificity. Perform when the mare is in early oestrus (largest follicle 25-30 mm).' },
       { '@type': 'HowToStep', 'position': 2, 'name': 'Prepare the bActivate vial', 'text': 'Thaw and shake the vial. For freeze-dried formulation: add 10 ml of NaCl (0.9%) and shake until a homogeneous solution is established.' },
       { '@type': 'HowToStep', 'position': 3, 'name': 'Instil bActivate into the uterus', 'text': 'Instil bActivate (10 ml) into the uterus of the mare using an insemination pipette and standard insemination technique.' },
       { '@type': 'HowToStep', 'position': 4, 'name': 'Obtain post-activation culture after 48 hours', 'text': 'Obtain a post-activation uterine culture sample 48 hours after instillation. Dormant Streptococcus zooepidemicus will now be reactivated and detectable by standard culture.' },
-      { '@type': 'HowToStep', 'position': 5, 'name': 'Begin targeted antibiotic therapy', 'text': 'Begin appropriate antimicrobial therapy (uterine and systemic antibiotics) based on the results of the post-activation culture. Do not breed in the same oestrus cycle — breed in the following cycle.' },
+      { '@type': 'HowToStep', 'position': 5, 'name': 'Begin targeted antibiotic therapy', 'text': 'Begin appropriate antimicrobial therapy (uterine and systemic antibiotics) based on the results of the post-activation culture. Do not breed in the same oestrus cycle, breed in the following cycle.' },
     ],
   },
   '/studies-effect': {
@@ -106,7 +150,7 @@ const ROUTE_SCHEMAS = {
       {
         '@type': 'Question',
         'name': 'What pregnancy rate has bActivate achieved in clinical studies?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'In the largest independent clinical evaluation at Hagyard Equine Medical Institute in Lexington, Kentucky, Dr. Kristina Lu treated 64 problem Thoroughbred mares (barren for 3 or more consecutive seasons). 83% became pregnant (53 of 64 mares). A separate study at Kildangan Stud, operated by Godolphin, reported an 89% pregnancy rate in 19 problem mares. Both studies were conducted independently of the manufacturer.' },
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'In the largest clinical evaluation, at Hagyard Equine Medical Institute in Lexington, Kentucky, Dr. Kristina Lu\'s team activated and treated 64 problem Thoroughbred mares (barren for 3 or more consecutive seasons). 83% became pregnant (53 of 64 mares). A separate field study at Kildangan Stud, operated by Godolphin, reported an 89% pregnancy rate among bred problem mares (16 of 18). The studies were carried out at independent clinics and studs; the founders of bActivate co-authored the reporting of the results.' },
       },
       {
         '@type': 'Question',
@@ -126,7 +170,7 @@ const ROUTE_SCHEMAS = {
       {
         '@type': 'Question',
         'name': 'Is bActivate supported by peer-reviewed research?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. The core laboratory science is published in Veterinary Microbiology (Petersen et al., 2015, DOI 10.1016/j.vetmic.2015.06.006), confirming bActivate reactivates dormant Streptococcus zooepidemicus in mares. The clinical data was presented at the Society for Theriogenology Annual Conference (Petersen and Bojesen, Clinical Theriogenology, 2014). Both studies were conducted independently of the manufacturer.' },
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. The core laboratory science is published in Veterinary Microbiology (Petersen et al., 2015, DOI 10.1016/j.vetmic.2015.06.006), a placebo-controlled study confirming bActivate reactivates dormant Streptococcus zooepidemicus in mares. The Hagyard clinical data was presented at the Society for Theriogenology Annual Conference (Petersen and Bojesen, Clinical Theriogenology, 2014), and the Kildangan field study was published as a congress abstract in the Journal of Equine Veterinary Science (2018, DOI 10.1016/j.jevs.2018.05.162). The founders of bActivate are authors on these publications.' },
       },
       {
         '@type': 'Question',
@@ -135,8 +179,8 @@ const ROUTE_SCHEMAS = {
       },
       {
         '@type': 'Question',
-        'name': 'How was bActivate validated at independent equine hospitals?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'The Hagyard study was designed and led by Dr. Kristina Lu at the world\'s largest equine hospital in Lexington, Kentucky. The Kildangan/Godolphin study was conducted at one of the world\'s premier Thoroughbred breeding operations in Ireland. Both studies were initiated independently, without manufacturer involvement in study design or data analysis, and were presented at peer-reviewed scientific conferences.' },
+        'name': 'Where has bActivate been evaluated clinically?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'The Hagyard study was led by Dr. Kristina Lu at one of the world\'s largest equine hospitals, in Lexington, Kentucky. The Kildangan/Godolphin field study was run with Meta Osborne MVB at one of the world\'s premier Thoroughbred breeding operations, in Ireland. The clinics and studs are independent of the manufacturer; the founders of bActivate introduced the activation protocol and co-authored the reporting, which was presented at scientific conferences and published as a congress abstract in the Journal of Equine Veterinary Science (2018).' },
       },
     ],
   },
@@ -230,6 +274,78 @@ const ROUTE_SCHEMAS = {
 };
 
 // Per-page metadata for canonical, title and meta description injection
+// FAQPage schema is generated from the SAME arrays that render the visible
+// accordion (src/components/FAQSection.tsx), so markup and visible content
+// cannot drift apart. Home shows the general set, /shop the purchase set.
+function getFaqItems(exportName) {
+  const content = readFileSync(path.resolve(ROOT, 'src/components/FAQSection.tsx'), 'utf8');
+  const block = content.match(new RegExp(`export const ${exportName} = \\[([\\s\\S]*?)\\n\\];`));
+  if (!block) throw new Error(`FAQ export ${exportName} not found in FAQSection.tsx`);
+  const items = [...block[1].matchAll(/question:\s*"((?:[^"\\]|\\.)*)",\s*\n\s*answer:\s*"((?:[^"\\]|\\.)*)",/g)];
+  if (!items.length) throw new Error(`No FAQ items parsed from ${exportName}`);
+  return items.map(m => ({
+    '@type': 'Question',
+    'name': JSON.parse(`"${m[1]}"`),
+    'acceptedAnswer': { '@type': 'Answer', 'text': JSON.parse(`"${m[2]}"`) },
+  }));
+}
+
+// Podcast VideoObject graph is prerendered (crawlers reading raw HTML must see
+// it), sourced from the same arrays that render the page. Falls back silently
+// if parsing fails so a refactor of Podcast.tsx cannot break the build.
+function getPodcastSchema() {
+  try {
+    const pod = readFileSync(path.resolve(ROOT, 'src/pages/Podcast.tsx'), 'utf8');
+    const vids = [...pod.matchAll(/\{ id: "([^"]+)", title: "([^"]+)", date: "([^"]+)" \}/g)];
+    if (vids.length === 0) return null;
+    const lib = readFileSync(path.resolve(ROOT, 'src/lib/podcastTranscript.ts'), 'utf8');
+    const tm = lib.match(/export const podcastTranscriptHtml = ("[\s\S]*?");\s*\n/);
+    const transcribedId = (pod.match(/TRANSCRIBED_EPISODE_ID = '([^']+)'/) || [])[1];
+    let transcript = null;
+    if (tm) {
+      try { transcript = JSON.parse(tm[1]).replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim(); } catch { /* keep null */ }
+    }
+    const faqm = lib.match(/export const podcastFaq[\s\S]*?=\s*\[([\s\S]*?)\n\];/);
+    const faqItems = faqm
+      ? [...faqm[1].matchAll(/"q":\s*"((?:[^"\\]|\\.)*)",\s*\n?\s*"a":\s*"((?:[^"\\]|\\.)*)"/g)]
+          .map(m => ({ '@type': 'Question', 'name': JSON.parse(`"${m[1]}"`), 'acceptedAnswer': { '@type': 'Answer', 'text': JSON.parse(`"${m[2]}"`) } }))
+      : [];
+    const graph = vids.map(v => ({
+      '@type': 'VideoObject',
+      'name': v[2],
+      'embedUrl': `https://www.youtube.com/embed/${v[1]}`,
+      'url': `https://www.youtube.com/watch?v=${v[1]}`,
+      'thumbnailUrl': `https://img.youtube.com/vi/${v[1]}/maxresdefault.jpg`,
+      'uploadDate': v[3],
+      'description': 'Expert video on dormant uterine infections in mares, problem mare fertility, and the bActivate protocol. Hosted by Prof. Anders Miki Bojesen (University of Copenhagen) and Dr. Morten Rønn Petersen (DVM, PhD, Dipl. ACT).',
+      'publisher': { '@type': 'Organization', 'name': 'bActivate, Bojesen & Petersen Biotech ApS', 'url': BASE_URL },
+      ...(transcript && v[1] === transcribedId ? { 'transcript': transcript } : {}),
+    }));
+    if (faqItems.length) graph.push({ '@type': 'FAQPage', 'mainEntity': faqItems });
+    return { '@context': 'https://schema.org', '@graph': graph };
+  } catch {
+    return null;
+  }
+}
+
+const podcastSchema = getPodcastSchema();
+if (podcastSchema) ROUTE_SCHEMAS['/podcast'] = podcastSchema;
+
+ROUTE_SCHEMAS['/'] = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': getFaqItems('homeFaqItems'),
+};
+
+ROUTE_SCHEMAS['/shop'] = [
+  ROUTE_SCHEMAS['/shop'],
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': getFaqItems('shopFaqItems'),
+  },
+];
+
 const PAGE_META = {
   '/': {
     title: 'bActivate | Diagnose Hidden Infections in Problem Mares',
@@ -249,19 +365,19 @@ const PAGE_META = {
   },
   '/studies-effect': {
     title: 'bActivate Clinical Evidence | 83% Pregnancy in Problem Mares',
-    description: 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan–Godolphin. Studies on hidden uterine infections in problem mares.',
+    description: 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan (Godolphin). Studies on hidden uterine infections in problem mares.',
   },
   '/shop': {
-    title: 'Order bActivate | Veterinary Treatment for Problem Mares',
-    description: 'Order bActivate for use in problem mares. Available through veterinary suppliers across Europe and Australia. One vial per treatment cycle.',
+    title: 'Order bActivate | Veterinary Diagnostic for Problem Mares',
+    description: 'Order bActivate for use in problem mares. Available through veterinary suppliers across Europe and Australia. One vial per activation cycle.',
   },
   '/our-distributors': {
     title: 'bActivate Distributors | Europe, UK & Australia',
     description: 'Find your local bActivate distributor. Available through veterinary suppliers across the UK, Netherlands, Denmark, Australia and more.',
   },
   '/about-us': {
-    title: 'About Us | Prof. Bojesen & Dr. Petersen — bActivate Founders',
-    description: 'bActivate was developed by Prof. Anders Miki Bojesen DVM PhD and Dr. Morten Rønn Petersen DVM PhD — leading experts in equine reproductive microbiology.',
+    title: 'About Us | Prof. Bojesen & Dr. Petersen, bActivate Founders',
+    description: 'bActivate was developed by Prof. Anders Miki Bojesen DVM PhD and Dr. Morten Rønn Petersen DVM PhD, leading experts in equine reproductive microbiology.',
   },
   '/podcast': {
     title: 'bActivate Podcast | Equine Reproduction & Mare Fertility',
@@ -277,7 +393,15 @@ const PAGE_META = {
   },
   '/privacy-policy': {
     title: 'Privacy Policy | bActivate',
-    description: 'Privacy policy for bactivate.eu — how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.',
+    description: 'Privacy policy for bactivate.eu, how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.',
+  },
+  '/swab-culture-vs-bactivate': {
+    title: 'Swab Culture vs Biopsy vs bActivate | Mare Uterine Infection',
+    description: 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. Compare the diagnostic options for problem mares.',
+  },
+  '/contact': {
+    title: 'Contact bActivate | Bojesen & Petersen Biotech, Copenhagen',
+    description: 'Contact the bActivate team: contact@bactivate.eu, +45 60 71 21 69, WhatsApp, or the contact form. Bojesen & Petersen Biotech ApS, Copenhagen, Denmark.',
   },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
@@ -289,7 +413,7 @@ const PAGE_META = {
   },
   '/blog/how-bactivate-tackles-dormant-bacteria-in-mares': {
     title: 'How bActivate Tackles Dormant Bacteria in Mares',
-    description: 'bActivate wakes dormant streptococcal bacteria in mares, making them detectable. 89% of barren mares at Godolphin/Kildangan conceived after treatment.',
+    description: 'bActivate wakes dormant streptococcal bacteria in mares, making them detectable. 89% of barren mares at Godolphin/Kildangan conceived after activation and targeted antibiotics.',
   },
   '/blog/enhancing-mare-fertility-bactivate-revolutionary-approach': {
     title: 'Enhancing Mare Fertility with bActivate',
@@ -311,9 +435,9 @@ const PAGE_META = {
     title: 'German Study: Bacterial Spectrum in Mare Uterine Health',
     description: '28,887 endometrial swabs: 25.9% showed pathogenic bacteria, 79.7% β-hemolytic Streptococci. What this landmark German study means for mare fertility.',
   },
-  '/blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-maresbojesen-petersen-biotech-aps-copenhagen-denmark': {
+  '/blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares': {
     title: '89% Pregnancy Rate in Thoroughbred Mares at Godolphin',
-    description: 'Kildangan/Godolphin stud study: 89% of thoroughbred mares (16/19) conceived after bActivate treatment. All 14 who conceived delivered healthy live foals.',
+    description: 'Kildangan/Godolphin stud study: 89% of bred thoroughbred mares (16/18) conceived after bActivate activation and targeted antibiotics prescribed by the stud vet.',
   },
 };
 
@@ -330,6 +454,8 @@ const STATIC_ROUTES = [
   '/shop',
   '/terms-and-conditions',
   '/privacy-policy',
+  '/contact',
+  '/swab-culture-vs-bactivate',
 ];
 
 function parseBlogDate(dateStr) {
@@ -349,7 +475,7 @@ function getBlogPostData() {
   const content = readFileSync(path.resolve(ROOT, 'src/lib/blogData.ts'), 'utf8');
   const slugs = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)].map(m => m[1]);
   const titles = [...content.matchAll(/title:\s*"([^"]+)"/g)].map(m =>
-    m[1].replace(/&amp;/g, '&').replace(/&ndash;/g, '–').replace(/&mdash;/g, '—').replace(/&nbsp;/g, ' ')
+    m[1].replace(/&amp;/g, '&').replace(/, /g, '-').replace(/, /g, ', ').replace(/&nbsp;/g, ' ')
   );
   const dates = [...content.matchAll(/date:\s*"([^"]+)"/g)].map(m => m[1]);
   const images = [...content.matchAll(/image:\s*"([^"]+)"/g)].map(m => m[1]);
@@ -369,8 +495,8 @@ function getBlogTitles() {
     if (titleMatches[i]) {
       result[m[1]] = titleMatches[i][1]
         .replace(/&amp;/g, '&')
-        .replace(/&ndash;/g, '–')
-        .replace(/&mdash;/g, '—')
+        .replace(/, /g, '-')
+        .replace(/, /g, ', ')
         .replace(/&nbsp;/g, ' ');
     }
   });
@@ -574,6 +700,7 @@ async function main() {
             .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
             .replace(/\s+/g, ' ')
             .trim()
+            .replace(/^(?:←\s*)?Back to blog\s*/i, '')
             .slice(0, 9000);
           const articleSchema = {
             '@context': 'https://schema.org',
@@ -585,6 +712,7 @@ async function main() {
             'dateModified': post.date,
             'image': post.image ? `${BASE_URL}${post.image}` : `${BASE_URL}/og-image.jpg`,
             'url': `${BASE_URL}${route}`,
+            'mainEntityOfPage': { '@type': 'WebPage', '@id': `${BASE_URL}${route}` },
             'inLanguage': 'en',
             'articleSection': 'Equine Reproductive Health',
             'keywords': ['problem mare', 'barren mare', 'non-pregnant mare', 'Streptococcus zooepidemicus', 'subclinical endometritis', 'mare fertility', 'bActivate'],
@@ -630,7 +758,7 @@ async function main() {
         '/how-to-use': {
           '@context': 'https://schema.org',
           '@type': 'MedicalWebPage',
-          'name': 'How to Use bActivate — Veterinary Protocol for Problem Mares',
+          'name': 'How to Use bActivate, Veterinary Protocol for Problem Mares',
           'description': 'Step-by-step veterinary protocol: pre-activation uterine culture, bActivate instillation during early oestrus, post-activation culture at 48 hours, and targeted antibiotic therapy based on culture results.',
           'url': `${BASE_URL}/how-to-use`,
           'inLanguage': 'en',

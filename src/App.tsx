@@ -17,6 +17,8 @@ import Shop from './pages/Shop';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import ConsultationConfirmed from './pages/ConsultationConfirmed';
+import Contact from './pages/Contact';
+import SwabComparison from './pages/SwabComparison';
 import WhatsAppButton from './components/WhatsAppButton';
 
 function ScrollToTop() {
@@ -29,7 +31,9 @@ function ScrollToTop() {
 
 function App() {
   const { pathname } = useLocation();
-  const isConfirmationPage = pathname === '/consultation-confirmed';
+  // FAQ lives on the homepage (general set) and the shop (purchase set) only,
+  // so passage content stays unique on every other page.
+  const faqVariant = pathname === '/' ? 'home' : pathname === '/shop' ? 'shop' : null;
 
   return (
     <>
@@ -50,9 +54,11 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/consultation-confirmed" element={<ConsultationConfirmed />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/swab-culture-vs-bactivate" element={<SwabComparison />} />
         <Route path="*" element={<Home />} />
       </Routes>
-      {!isConfirmationPage && <FAQSection />}
+      {faqVariant && <FAQSection variant={faqVariant} />}
       <Footer />
       <WhatsAppButton />
     </>
