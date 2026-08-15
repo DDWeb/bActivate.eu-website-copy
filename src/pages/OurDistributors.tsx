@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import styles from './OurDistributors.module.css';
-import ReviewsSection from '@/components/ReviewsSection';
 
 export default function OurDistributors() {
     useEffect(() => {
@@ -116,7 +115,6 @@ export default function OurDistributors() {
                 </div>
             </section>
 
-            <ReviewsSection />
         </main>
     );
 }

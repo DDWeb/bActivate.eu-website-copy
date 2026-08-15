@@ -5,8 +5,8 @@ import ReviewsSection from '@/components/ReviewsSection';
 
 export default function Shop() {
     useEffect(() => {
-        document.title = 'Buy bActivate | Equine Uterine Treatment for Problem Mares';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate online. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US. One vial per treatment cycle for problem mares.');
+        document.title = 'Order bActivate | Veterinary Diagnostic for Problem Mares';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate online. Available through Hagyard Pharmacy and Midwest Veterinary Supply in the US. One vial per activation cycle for problem mares.');
 
         // Product schema
         const existing = document.getElementById('product-schema');
@@ -18,7 +18,7 @@ export default function Shop() {
                 "@context": "https://schema.org/",
                 "@type": "Product",
                 "name": "bActivate",
-                "description": "Veterinary uterine treatment for problem mares. Reactivates dormant Streptococcus equi subspecies zooepidemicus infections enabling accurate diagnosis and targeted antibiotic treatment. 83% pregnancy rate in clinical trials at Hagyard Equine Medical Institute.",
+                "description": "Veterinary diagnostic growth medium for problem mares. Reveals dormant Streptococcus equi subspecies zooepidemicus infections so the veterinarian can diagnose accurately and treat with targeted antibiotics. 83% pregnancy rate in a clinical study at Hagyard Equine Medical Institute.",
                 "url": "https://bactivate.us/shop",
                 "image": "https://bactivate.us/images/hero.gif",
                 "brand": {
@@ -41,11 +41,7 @@ export default function Shop() {
                         "url": "https://bactivate.us/our-distributors"
                     }
                 },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
-                    "ratingValue": "5",
-                    "reviewCount": "12"
-                }
+                "sku": "bactivate-1-vial"
             });
             document.head.appendChild(script);
         }
@@ -126,13 +122,28 @@ export default function Shop() {
                     <h1 className="text-3xl font-bold mb-2">Buy bActivate for Problem Mares</h1>
                     <p className="text-gray-600 mb-8">Order bActivate online. A veterinary diagnostic aid for detecting dormant <em>Streptococcus zooepidemicus</em> infections in problem mares and non-pregnant mares. Available in the US through Hagyard Pharmacy and Midwest Veterinary Supply.</p>
                     <div id="my-store-130367502" className="min-h-[500px]"></div>
+
+                    <div className="grid md:grid-cols-3 gap-6 mt-12 mb-4">
+                        <div className="bg-gray-50 p-6 rounded">
+                            <h2 className="text-lg font-bold mb-3">What you get</h2>
+                            <p className="text-gray-600 text-sm">One 10 ml vial of the bActivate activation growth medium. One vial is one activation cycle for one mare. Your veterinarian instills it into the uterus during early estrus; 48 hours later a standard culture shows what was hiding, and the veterinarian can treat it with targeted antibiotics.</p>
+                        </div>
+                        <div className="bg-gray-50 p-6 rounded">
+                            <h2 className="text-lg font-bold mb-3">How ordering works</h2>
+                            <p className="text-gray-600 text-sm">Order online above, or through Hagyard Pharmacy (Lexington, KY) and Midwest Veterinary Supply. bActivate is a prescription veterinary product: plan the activation cycle with your veterinarian, ideally one cycle before the intended breeding cycle. Questions first? <a href="/contact" className="text-primary underline">Contact us</a>.</p>
+                        </div>
+                        <div className="bg-gray-50 p-6 rounded">
+                            <h2 className="text-lg font-bold mb-3">Veterinary clinics and studs</h2>
+                            <p className="text-gray-600 text-sm">Ordering for a clinic or breeding operation? Hagyard Pharmacy and Midwest Veterinary Supply stock bActivate for fast US supply. <a href="/our-distributors" className="text-primary underline">See all distributors</a> or <a href="/contact" className="text-primary underline">write to us directly</a>.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
-            {/* WhatsApp CTA — shop page only */}
+            {/* WhatsApp CTA, shop page only */}
             <section style={{ background: '#f0fdf4', borderTop: '1px solid #bbf7d0', borderBottom: '1px solid #bbf7d0', padding: '2rem 1rem', textAlign: 'center' }}>
                 <div style={{ maxWidth: '600px', margin: '0 auto' }}>
                     <p style={{ fontWeight: 700, fontSize: '1.1rem', color: '#1a1a1a', marginBottom: '0.4rem' }}>Have questions before ordering?</p>
-                    <p style={{ color: '#555', fontSize: '0.92rem', marginBottom: '1.25rem', lineHeight: 1.6 }}>Chat with us directly on WhatsApp — we typically reply within a few hours.</p>
+                    <p style={{ color: '#555', fontSize: '0.92rem', marginBottom: '1.25rem', lineHeight: 1.6 }}>Chat with us directly on WhatsApp, we typically reply within a few hours.</p>
                     <a
                         href="https://wa.me/4523991004?text=Hi!%20I%20have%20a%20question%20about%20bActivate%20before%20ordering..."
                         target="_blank"

@@ -18,7 +18,7 @@ export default function Footer() {
                     </div>
 
                     <div className={styles.copyright}>
-                        <p>&copy; 2021–2026 Bojesen and Petersen Biotech ApS. All rights reserved.</p>
+                        <p>&copy; 2021-2026 Bojesen and Petersen Biotech ApS. All rights reserved.</p>
                     </div>
                 </div>
 
@@ -60,6 +60,7 @@ export default function Footer() {
                         <li><Link to="/about-us" className={styles.link}>About us</Link></li>
                         <li><Link to="/shop" className={styles.link}>Shop</Link></li>
                         <li><Link to="/our-distributors" className={styles.link}>Our distributors</Link></li>
+                        <li><Link to="/contact" className={styles.link}>Contact</Link></li>
                         <li><a href="https://www.affiliatly.com/af-1074392/affiliate.panel?mode=register" target="_blank" rel="noopener noreferrer" className={styles.link}>Affiliate Program</a></li>
                     </ul>
                 </div>

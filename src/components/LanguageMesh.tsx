@@ -1,5 +1,5 @@
 /**
- * LanguageMesh — reciprocal language link mesh.
+ * LanguageMesh, reciprocal language link mesh.
  *
  * The 12 localised sister sites already link here as their "English" edition.
  * This component provides the return links, which hreflang requires in order

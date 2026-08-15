@@ -14,6 +14,8 @@ import Podcast from './pages/Podcast';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Shop from './pages/Shop';
+import Contact from './pages/Contact';
+import SwabComparison from './pages/SwabComparison';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -27,6 +29,9 @@ function ScrollToTop() {
 }
 
 function App() {
+  const { pathname } = useLocation();
+  // FAQ lives on the homepage (general set) and the shop (purchase set) only.
+  const faqVariant = pathname === '/' ? 'home' : pathname === '/shop' ? 'shop' : null;
   return (
     <>
       <ScrollToTop />
@@ -45,9 +50,11 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/swab-culture-vs-bactivate" element={<SwabComparison />} />
         <Route path="*" element={<Home />} />
       </Routes>
-      <FAQSection />
+      {faqVariant && <FAQSection variant={faqVariant} />}
       <Footer />
       <WhatsAppButton />
     </>

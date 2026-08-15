@@ -3,7 +3,7 @@ import styles from './TermsAndConditions.module.css';
 
 export default function TermsAndConditions() {
     useEffect(() => {
-        document.title = 'Terms and Conditions | bActivate — Bojesen & Petersen Biotech';
+        document.title = 'Terms and Conditions | bActivate, Bojesen & Petersen Biotech';
         document.querySelector('meta[name="description"]')?.setAttribute('content', 'Terms and conditions for purchasing bActivate. Usage requirements for veterinarians, liability limitations, and return policy. Governed by Danish law.');
     }, []);
     return (

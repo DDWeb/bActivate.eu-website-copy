@@ -1,7 +1,6 @@
 
 import { useEffect } from 'react';
 import styles from './HowToUse.module.css';
-import ReviewsSection from '@/components/ReviewsSection';
 import InternalLinks from '@/components/InternalLinks';
 
 export default function HowToUse() {
@@ -19,16 +18,16 @@ export default function HowToUse() {
         schema.textContent = JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'HowTo',
-            'name': 'How to Use bActivate — Veterinary Protocol for Problem Mares',
+            'name': 'How to Use bActivate, Veterinary Protocol for Problem Mares',
             'description': 'Step-by-step protocol for uterine instillation of bActivate, post-activation culture, and antibiotic treatment of subclinical endometritis in problem mares.',
             'totalTime': 'PT48H',
             'tool': [{ '@type': 'HowToTool', 'name': 'bActivate vial (10 ml)' }, { '@type': 'HowToTool', 'name': 'Insemination pipette' }, { '@type': 'HowToTool', 'name': '0.9% NaCl saline (10 ml)' }],
             'step': [
-                { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a biopsy or low volume lavage to improve diagnostic sensitivity and specificity. Perform when the mare is in early estrus (largest follicle 25–30 mm).' },
+                { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a biopsy or low volume lavage to improve diagnostic sensitivity and specificity. Perform when the mare is in early estrus (largest follicle 25-30 mm).' },
                 { '@type': 'HowToStep', 'position': 2, 'name': 'Prepare the bActivate vial', 'text': 'Thaw and shake the vial. For freeze-dried formulation: add 10 ml of NaCl (0.9%) and shake until a homogeneous solution is established.' },
                 { '@type': 'HowToStep', 'position': 3, 'name': 'Instill bActivate into the uterus', 'text': 'Instill bActivate (10 ml) into the uterus of the mare using an insemination pipette and standard insemination technique.' },
                 { '@type': 'HowToStep', 'position': 4, 'name': 'Obtain post-activation culture after 48 hours', 'text': 'Obtain a post-activation uterine culture sample 48 hours after instillation. Dormant Streptococcus zooepidemicus will now be reactivated and detectable by standard culture.' },
-                { '@type': 'HowToStep', 'position': 5, 'name': 'Begin targeted antibiotic therapy', 'text': 'Begin appropriate antimicrobial therapy (uterine and systemic antibiotics) based on the results of the post-activation culture. Do not breed in the same estrus cycle — breed in the following cycle.' }
+                { '@type': 'HowToStep', 'position': 5, 'name': 'Begin targeted antibiotic therapy', 'text': 'Begin appropriate antimicrobial therapy (uterine and systemic antibiotics) based on the results of the post-activation culture. Do not breed in the same estrus cycle, breed in the following cycle.' }
             ]
         });
 
@@ -41,7 +40,7 @@ export default function HowToUse() {
                     <div className={styles.grid}>
                         <div>
                             <div className={styles.eyebrow}>About bActivate</div>
-                            <h1 className={styles.title}>How to Use bActivate — Veterinary Protocol</h1>
+                            <h1 className={styles.title}>How to Use bActivate, Veterinary Protocol</h1>
 
                             <h2 className={styles.subtitle}>Intended use</h2>
                             <div className={styles.textBlock}>
@@ -85,7 +84,7 @@ export default function HowToUse() {
                         <h3 className="text-xl font-bold mb-4">The following steps should be included</h3>
                         <ol className={styles.instructionList}>
                             <li>Obtain a pre-activation uterine culture sample. We recommend that the sample be obtained using either a biopsy or a low volume lavage to improve diagnostic sensitivity and specificity</li>
-                            <li>Thaw and shake the vial to mix the activating compound before use. Freeze dried formulation – please add 10 ml. of NaCl (0.9%) and shake the vial until a homogeneous solution is established.</li>
+                            <li>Thaw and shake the vial to mix the activating compound before use. Freeze dried formulation, please add 10 ml. of NaCl (0.9%) and shake the vial until a homogeneous solution is established.</li>
                             <li>Instill bActivate (10 ml) in the uterus of the mare using an insemination pipette and standard insemination technique.</li>
                             <li>Obtain a post-activation uterine culture sample 48 hours after instillation of bActivate.</li>
                             <li>Begin appropriate antimicrobial therapy (uterine and systemic antibiotics) based on the results of the post-activation culture sample.</li>
@@ -119,12 +118,11 @@ export default function HowToUse() {
             </section>
 
             <InternalLinks links={[
-                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate — Hagyard, Godolphin, and more' },
+                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate, Hagyard, Godolphin, and more' },
                 { to: '/shop', label: 'Order bActivate', description: 'One vial per treatment cycle' },
                 { to: '/our-distributors', label: 'US Distributors', description: 'Hagyard Pharmacy and Midwest Veterinary Supply' },
-                { to: '/about-us', label: 'About the Founders', description: 'Prof. Bojesen & Dr. Petersen — the science team' },
+                { to: '/about-us', label: 'About the Founders', description: 'Prof. Bojesen & Dr. Petersen, the science team' },
             ]} />
-            <ReviewsSection />
         </main>
     );
 }

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 export default function PrivacyPolicy() {
     useEffect(() => {
         document.title = 'Privacy Policy | bActivate';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Privacy policy for bactivate.eu — how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.');
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Privacy policy for bactivate.eu, how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.');
     }, []);
 
     return (
@@ -24,9 +24,9 @@ export default function PrivacyPolicy() {
                 <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>2. What Data We Collect</h2>
                 <p>We may collect the following personal data:</p>
                 <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-                    <li><strong>Email address</strong> — when you sign up for our webinar or newsletter via the contact form on this site.</li>
-                    <li><strong>Name and contact details</strong> — if you contact us directly by email or phone.</li>
-                    <li><strong>Usage data</strong> — anonymised analytics data collected via Google Analytics (page views, session duration, geographic region). No personally identifiable information is stored by Google Analytics without your consent.</li>
+                    <li><strong>Email address</strong>, when you sign up for our webinar or newsletter via the contact form on this site.</li>
+                    <li><strong>Name and contact details</strong>, if you contact us directly by email or phone.</li>
+                    <li><strong>Usage data</strong>, anonymised analytics data collected via Google Analytics (page views, session duration, geographic region). No personally identifiable information is stored by Google Analytics without your consent.</li>
                 </ul>
             </section>
 
@@ -34,9 +34,9 @@ export default function PrivacyPolicy() {
                 <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>3. Purpose and Legal Basis</h2>
                 <p>We process your personal data for the following purposes:</p>
                 <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-                    <li><strong>Webinar registration / newsletter</strong> — to send you information about bActivate products and upcoming events. Legal basis: consent (GDPR Art. 6(1)(a)).</li>
-                    <li><strong>Customer enquiries</strong> — to respond to your questions and provide product support. Legal basis: legitimate interest (GDPR Art. 6(1)(f)).</li>
-                    <li><strong>Analytics</strong> — to improve the website and understand visitor behaviour. Legal basis: legitimate interest / consent.</li>
+                    <li><strong>Webinar registration / newsletter</strong>, to send you information about bActivate products and upcoming events. Legal basis: consent (GDPR Art. 6(1)(a)).</li>
+                    <li><strong>Customer enquiries</strong>, to respond to your questions and provide product support. Legal basis: legitimate interest (GDPR Art. 6(1)(f)).</li>
+                    <li><strong>Analytics</strong>, to improve the website and understand visitor behaviour. Legal basis: legitimate interest / consent.</li>
                 </ul>
             </section>
 
@@ -49,10 +49,10 @@ export default function PrivacyPolicy() {
                 <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>5. Third Parties</h2>
                 <p>We share data with the following third-party services where necessary:</p>
                 <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-                    <li><strong>HubSpot</strong> — webinar sign-up and email marketing platform.</li>
-                    <li><strong>Google Analytics</strong> — anonymised website analytics.</li>
-                    <li><strong>Google Tag Manager</strong> — tag management.</li>
-                    <li><strong>Affiliatly</strong> — affiliate programme tracking.</li>
+                    <li><strong>HubSpot</strong>, webinar sign-up and email marketing platform.</li>
+                    <li><strong>Google Analytics</strong>, anonymised website analytics.</li>
+                    <li><strong>Google Tag Manager</strong>, tag management.</li>
+                    <li><strong>Affiliatly</strong>, affiliate programme tracking.</li>
                 </ul>
                 <p style={{ marginTop: '0.75rem' }}>We do not sell your personal data to third parties.</p>
             </section>

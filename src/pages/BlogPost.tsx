@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogPosts } from '@/lib/blogData';
-import ReviewsSection from '@/components/ReviewsSection';
 
 export default function BlogPost() {
     const { slug } = useParams<{ slug: string }>();
@@ -90,7 +89,6 @@ export default function BlogPost() {
                     <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
                 </div>
             </section>
-            <ReviewsSection />
         </main>
     );
 }

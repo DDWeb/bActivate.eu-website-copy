@@ -1,13 +1,13 @@
 
 import { useEffect } from 'react';
 import styles from './WhenToUse.module.css';
-import ReviewsSection from '@/components/ReviewsSection';
 import InternalLinks from '@/components/InternalLinks';
+import LiteYouTube from '@/components/LiteYouTube';
 
 export default function WhenToUse() {
     useEffect(() => {
-        document.title = 'When to Use bActivate | Signs Your Mare Has a Hidden Infection';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Use bActivate when your mare fails to conceive despite fertile breeding, has recurring uterine fluid, or previous infections. 47–87% of problem mares test positive after activation.');
+        document.title = 'When to Use bActivate | Signs of Hidden Infection in Mares';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Is your mare failing to conceive despite clean swabs? Learn the signs of dormant uterine infection and when bActivate is indicated.');
     }, []);
     return (
         <main>
@@ -20,7 +20,7 @@ export default function WhenToUse() {
                                 <h1 className={styles.title}>When to Use bActivate for Problem Mares</h1>
 
                                 <div className={styles.introBlock}>
-                                    <h2 className={styles.subtitle}>bActivate – a diagnostic aid for the problem mare</h2>
+                                    <h2 className={styles.subtitle}>bActivate, a diagnostic aid for the problem mare</h2>
                                     <div className={styles.textBlock}>
                                         <p className="mb-4">bActivate can help establish a correct diagnosis in the chronically infected mare. bActivate initiates growth of resident dormant streptococci, which can then be diagnosed and treated by standard techniques.</p>
                                         <p className="mb-4"><strong>Chronic infections</strong> prevent establishment of a pregnancy, and might also increase the risk of early fetal loss and abortion in the mare. Our studies indicate that 50-75% of problem mares not pregnant by the end of the breeding season, despite breeding to fertile stallions and supervised by experienced veterinarians, are chronically infected.</p>
@@ -41,13 +41,7 @@ export default function WhenToUse() {
                                 </div>
 
                                 <div className={styles.videoContainer}>
-                                    <iframe
-                                        src="https://www.youtube.com/embed/sVS0kj84lMA"
-                                        title="When to use bActivate"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen
-                                    ></iframe>
+                                    <LiteYouTube id="sVS0kj84lMA" title="When to use bActivate" />
                                 </div>
                             </div>
                         </div>
@@ -63,7 +57,7 @@ export default function WhenToUse() {
                             </div>
 
                             <div className={styles.sideText}>
-                                <p className="mb-4"><strong>Repeated uterine infections</strong> indicate compromised uterine defense mechanisms predisposing for establishment of infections – acute as well as chronic. As chronic infections can be hard to identify bActivate should be considered for this group of problem mares.</p>
+                                <p className="mb-4"><strong>Repeated uterine infections</strong> indicate compromised uterine defense mechanisms predisposing for establishment of infections, acute as well as chronic. As chronic infections can be hard to identify bActivate should be considered for this group of problem mares.</p>
                                 <p><strong>Endometrial fibrosis</strong> is induced by ongoing endometrial inflammation. Presence of beta-hemolytic streptococci within the endometrium is expected to induce endometrial inflammation, hereby increasing uterine fibrosis, and consequently decreasing fertility. If endometrial fibrosis can be minimized the number of foals each mare can produce in a lifetime is expected to increase.</p>
                             </div>
                         </div>
@@ -112,7 +106,7 @@ export default function WhenToUse() {
                         </div>
                         <div className="bg-white p-6 rounded shadow-sm">
                             <h3 className="text-lg font-bold mb-3">Thoroughbred &amp; Sport Horses</h3>
-                            <p className="text-gray-600 text-sm">High-value thoroughbred and warmblood mares where the economic cost of a missed season is significant. The Kildangan/Godolphin study demonstrated an <strong>89% pregnancy rate</strong> in 19 barren thoroughbred problem mares after a single bActivate treatment cycle.</p>
+                            <p className="text-gray-600 text-sm">High-value thoroughbred and warmblood mares where the economic cost of a missed season is significant. The Kildangan/Godolphin study demonstrated an <strong>89% pregnancy rate</strong> in barren thoroughbred problem mares after a single bActivate activation cycle followed by targeted antibiotics from the stud vet.</p>
                         </div>
                         <div className="bg-white p-6 rounded shadow-sm">
                             <h3 className="text-lg font-bold mb-3">Repeat Breeders</h3>
@@ -126,13 +120,13 @@ export default function WhenToUse() {
             <section className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <h2 className="text-3xl font-bold mb-2">When in the Breeding Season to Use bActivate</h2>
-                    <p className="text-gray-600 mb-8">The bActivate protocol is designed to fit within a normal breeding cycle. Treatment takes place approximately <strong>one cycle before</strong> the intended breeding cycle.</p>
+                    <p className="text-gray-600 mb-8">The bActivate protocol is designed to fit within a normal breeding cycle. Activation and the follow-up veterinary treatment take place approximately <strong>one cycle before</strong> the intended breeding cycle.</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
                         {[
-                            { step: '1', title: 'Oestrus — Day 0', desc: 'Obtain pre-activation culture. Instil 10 ml bActivate in early oestrus (follicle 25–30 mm).' },
+                            { step: '1', title: 'Oestrus, Day 0', desc: 'Obtain pre-activation culture. Instil 10 ml bActivate in early oestrus (follicle 25-30 mm).' },
                             { step: '2', title: '48 Hours Later', desc: 'Obtain post-activation culture. Dormant Strep zoo now active. Begin targeted antibiotic treatment.' },
                             { step: '3', title: 'Recovery Cycle', desc: 'Complete antibiotic course. Uterus clears activation inflammation. Do not breed in this cycle.' },
-                            { step: '4', title: 'Next Oestrus', desc: 'Mare ready for breeding. Expected pregnancy rate: 83–89% in clinical studies.' },
+                            { step: '4', title: 'Next Oestrus', desc: 'Mare ready for breeding. Expected pregnancy rate: 83-89% in clinical studies.' },
                         ].map((item, i) => (
                             <div key={i}>
                                 <div className="bg-red-600 text-white text-center py-3 px-4">
@@ -143,7 +137,7 @@ export default function WhenToUse() {
                             </div>
                         ))}
                     </div>
-                    <p className="mt-6 text-gray-600">Total time from bActivate administration to breeding-ready: <strong>3–4 weeks</strong>. This fits within a standard 21-day oestrous cycle, meaning a single treatment cycle before the target breeding cycle.</p>
+                    <p className="mt-6 text-gray-600">Total time from bActivate administration to breeding-ready: <strong>3-4 weeks</strong>. This fits within a standard 21-day oestrous cycle, meaning a single activation cycle before the target breeding cycle.</p>
                 </div>
             </section>
 
@@ -164,7 +158,7 @@ export default function WhenToUse() {
                             <li className="flex gap-2"><span className="text-red-600 font-bold">✓</span><span>Helps farms <strong>plan breeding schedules</strong> with greater confidence</span></li>
                         </ul>
                     </div>
-                    <p className="mt-6 text-gray-600">Across clinical studies, 47–87% of problem mares tested activation-positive, meaning they carried an infection standard culture had missed. Off-season screening with bActivate addresses this directly.</p>
+                    <p className="mt-6 text-gray-600">Studies show 70 to 80% of problem mares carry a hidden uterine infection that standard culture misses. Off-season screening with bActivate addresses this directly.</p>
                 </div>
             </section>
 
@@ -178,12 +172,11 @@ export default function WhenToUse() {
             </section>
 
             <InternalLinks links={[
-                { to: '/how-to-use', label: 'How to Use bActivate', description: 'Full veterinary protocol — instillation and follow-up' },
+                { to: '/how-to-use', label: 'How to Use bActivate', description: 'Full veterinary protocol, instillation and follow-up' },
                 { to: '/studies-effect', label: 'Clinical Evidence', description: '83% pregnancy rate in 64 problem mares at Hagyard' },
                 { to: '/our-distributors', label: 'Find a Distributor', description: 'Hagyard, Midwest Vet Supply and more' },
                 { to: '/shop', label: 'Order bActivate', description: 'Order directly online' },
             ]} />
-            <ReviewsSection />
         </main>
     );
 }

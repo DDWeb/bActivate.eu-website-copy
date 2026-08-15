@@ -1,7 +1,6 @@
 
 import { useEffect } from 'react';
 import styles from './WhatIsBactivate.module.css';
-import ReviewsSection from '@/components/ReviewsSection';
 import InternalLinks from '@/components/InternalLinks';
 
 export default function WhatIsBactivate() {
@@ -21,7 +20,7 @@ export default function WhatIsBactivate() {
             '@type': 'MedicalCondition',
             'name': 'Subclinical Endometritis in Mares',
             'alternateName': ['Equine subclinical endometritis', 'Dormant uterine infection in mares', 'Chronic subclinical endometritis', 'Culture-negative endometritis'],
-            'description': 'Subclinical endometritis is a persistent low-grade uterine infection in broodmares caused by dormant Streptococcus equi subspecies zooepidemicus in a biofilm state. Standard uterine swab cultures yield false-negative results in over 60% of affected mares because the bacteria have lowered their metabolic rate and resist detection. The condition causes recurring fertility failure, accumulation of uterine fluid, and early embryo loss. Across clinical studies, 47–87% of problem mares tested activation-positive, indicating a latent infection that standard culture had not detected. Diagnosis requires reactivation of the dormant bacteria — achieved by uterine instillation of bActivate — followed by a post-activation culture 48 hours later.',
+            'description': 'Subclinical endometritis is a persistent low-grade uterine infection in broodmares caused by dormant Streptococcus equi subspecies zooepidemicus in a biofilm state. Standard uterine swab cultures yield false-negative results in over 60% of affected mares because the bacteria have lowered their metabolic rate and resist detection. The condition causes recurring fertility failure, accumulation of uterine fluid, and early embryo loss. Across clinical studies, 47-87% of problem mares tested activation-positive, indicating a latent infection that standard culture had not detected. Diagnosis requires reactivation of the dormant bacteria, achieved by uterine instillation of bActivate, followed by a post-activation culture 48 hours later.',
             'associatedAnatomy': { '@type': 'AnatomicalStructure', 'name': 'Equine uterus (endometrium)' },
             'signOrSymptom': [
                 { '@type': 'MedicalSymptom', 'name': 'Failure to conceive despite breeding to fertile stallion' },
@@ -84,7 +83,7 @@ export default function WhatIsBactivate() {
 
                             <h2 className={styles.sideTitle}>Why non-pregnant mares harbour hidden uterine infections</h2>
                             <div className="text-gray-600 space-y-4">
-                                <p>Up to 15% of all mares — often called non-pregnant mares, problem mares, or barren mares — struggle to get in foal. Recent investigations have demonstrated that dormant bacterial infections in the uterus are a major cause. Dormant bacteria are difficult to diagnose by standard techniques and highly tolerant to antibiotics. Efficient handling requires re-activation of the bacteria, achieved by instillation of bActivate, a bacterial growth medium, into the uterus.</p>
+                                <p>Up to 15% of all mares, often called non-pregnant mares, problem mares, or barren mares, struggle to get in foal. Recent investigations have demonstrated that dormant bacterial infections in the uterus are a major cause. Dormant bacteria are difficult to diagnose by standard techniques and highly tolerant to antibiotics. Efficient handling requires re-activation of the bacteria, achieved by instillation of bActivate, a bacterial growth medium, into the uterus.</p>
                                 <p>bActivate has been tested by the therio group at <strong>Hagyard Equine Medical Institute</strong>, the world’s largest equine hospital in Kentucky who basically normalized mare fertility by including bActivate into the standard repro work-up.</p>
                                 <p>This scenario is familiar across breeding operations worldwide: a mare with a clean culture that still will not conceive. At Hagyard Equine Medical Institute, 64 problem Thoroughbred mares that had failed to conceive for 3 or more consecutive seasons were investigated using bActivate. <strong>83% became pregnant</strong> (53 of 64), and of those with confirmed foaling outcomes, <strong>70% delivered live foals</strong>. For these mares, the hidden infection standard diagnostics had missed was the only thing standing between an empty season and a foal on the ground.</p>
                             </div>
@@ -154,11 +153,10 @@ export default function WhatIsBactivate() {
 
             <InternalLinks links={[
                 { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
-                { to: '/studies-effect', label: 'Clinical Results', description: '83% pregnancy rate at Hagyard — see the evidence' },
+                { to: '/studies-effect', label: 'Clinical Results', description: '83% pregnancy rate at Hagyard, see the evidence' },
                 { to: '/how-to-use', label: 'Veterinary Protocol', description: 'Step-by-step instructions for veterinarians' },
                 { to: '/shop', label: 'Order bActivate', description: 'Available through US distributors' },
             ]} />
-            <ReviewsSection />
         </main>
     );
 }
