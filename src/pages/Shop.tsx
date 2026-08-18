@@ -128,7 +128,7 @@ export default function Shop() {
             <section className="py-16">
                 <div className="container mx-auto px-4">
                     <h1 className="text-3xl font-bold mb-2">Buy bActivate for Problem Mares</h1>
-                    <p className="text-gray-600 mb-8">Order bActivate online, €229 per vial. A veterinary diagnostic aid for detecting dormant <em>Streptococcus zooepidemicus</em> infections in problem mares and non-pregnant mares. Shipped across Europe from Denmark.</p>
+                    <p className="text-gray-600 mb-8">Order bActivate online, €229 per vial. A veterinary diagnostic aid for detecting dormant <em>Streptococcus zooepidemicus</em> infections in problem mares and non-pregnant mares. We ship to most of the world, from the most suitable location among our facilities in Denmark, the USA, and Australia.</p>
                     <div id="my-store-130367502" className="min-h-[500px]"></div>
 
                     <div className="grid md:grid-cols-3 gap-6 mt-12 mb-4">
