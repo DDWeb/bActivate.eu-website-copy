@@ -89,7 +89,7 @@ export default function AboutUs() {
                 </div>
             </section>
             <InternalLinks links={[
-                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate, peer-reviewed evidence' },
+                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate, graded clinical evidence' },
                 { to: '/what-is-bactivate', label: 'What is bActivate?', description: 'The science behind dormant bacterial activation' },
                 { to: '/shop', label: 'Order bActivate', description: 'Available through US distributors' },
             ]} />

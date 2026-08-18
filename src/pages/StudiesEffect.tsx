@@ -132,7 +132,7 @@ export default function StudiesEffect() {
 
                     <div className={styles.articleGrid}>
                         <article className={styles.articleCard}>
-                            <h3 className={styles.articleTitle}>Frontiers -Streptococcus equi, Peer Review Studie</h3>
+                            <h3 className={styles.articleTitle}>Frontiers: Streptococcus equi (peer-reviewed study)</h3>
                             <div className={styles.articleContent}>
                                 <p>This study explores how <strong>Streptococcus equi subsp. zooepidemicus</strong> invades and survives within epithelial cells, contributing to latent endometritis in mares. The research, led by <strong>Associate Professor Bolette Skive</strong> and <strong>Professor Manfred Rohde</strong>, reveals three distinct bacterial invasion mechanisms.</p>
                             </div>

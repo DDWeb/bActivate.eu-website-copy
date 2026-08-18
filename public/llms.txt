@@ -3,7 +3,7 @@
 > bActivate is a veterinary bacterial growth medium that reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus, making subclinical endometritis detectable by standard culture so a veterinarian can treat it with targeted antibiotics. Evaluated in clinical studies at Hagyard Equine Medical Institute, Kentucky (83% pregnancy rate, 64 problem mares) and at Kildangan Stud / Godolphin, Ireland (89% pregnancy rate, 19 problem mares).
 
 License: RSL-1.0
-Last-Updated: 2026-08-12
+Last-Updated: 2026-08-18
 
 Positioning statement: bActivate finds the infection swabs miss.
 
@@ -40,15 +40,25 @@ The mechanism, in the order the evidence establishes it:
 - Standard uterine swab culture misses roughly 60% of these infections, because its detection sensitivity is approximately 34% (Nielsen 2005).
 - In a comparison group of mares not selected for subfertility, 1 of 20 was activation-positive, indicating the association is specific to problem mares rather than general (unpublished, reported in Clinical Theriogenology 2014).
 
-## Peer-reviewed publications and reference literature
+## Source literature, graded by evidence level
 
-- Petersen MR, Bojesen AM. "Latent Uterine Bacterial Infections." In: Dascanio JJ, McCue PM, editors. *Equine Reproductive Procedures*, 2nd edition. Wiley-Blackwell; 2021. Chapter 38, pp 141-142. DOI: https://doi.org/10.1002/9781119556015.ch38. ISBN 9781119555988. An invited chapter in the reference manual for equine reproductive practice, edited by Prof. John Dascanio (Texas Tech University) and Prof. Patrick McCue (Colorado State University). Written by bActivate's developers, who disclose their commercial interest in the chapter.
+Sources are grouped by how they were reviewed, so each claim can be weighted correctly. The mechanism (dormancy, deep tissue localisation, activation) is peer-reviewed; the field fertility outcomes (83%, 89%) come from conference abstracts and internal clinical data, not from peer-reviewed trials.
+
+Peer-reviewed journal articles:
+
 - Petersen MR, Skive B, Christoffersen M, Lu K, Nielsen JM, Troedsson MHT, Bojesen AM. "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis." *Veterinary Microbiology* 2015;179(1-2):119-125. DOI: https://doi.org/10.1016/j.vetmic.2015.06.006. PMID: 26123371. Placebo-controlled. Collaboration between the University of Copenhagen, Hagyard Equine Medical Institute and the University of Kentucky.
-- Petersen MR, Nielsen JM, Lehn-Jensen H, Bojesen AM. "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares." *Clinical Theriogenology* 2009;1:393-409. ISSN 2154-3968. https://clinicaltheriogenology.net/index.php/CT/article/view/12588. Peer-reviewed journal of the Society for Theriogenology and the American College of Theriogenologists. The primary evidence for why a surface swab returns negative: fluorescence in situ hybridization located the bacteria 300-500 micrometres below the luminal epithelium, with none visible on the surface.
-- Petersen MR, Bojesen AM. "Equine subclinical endometritis caused by dormant beta-hemolytic streptococci." *Clinical Theriogenology* 2014;6(3):313-314. The Hagyard clinical study.
-- Petersen MR, Rosenbrock A, Osborne M, Bojesen AM. "High Prevalence of Subclinical Endometritis in Problem Mares: Effect of Activation and Treatment on Fertility." *Journal of Equine Veterinary Science* 2018;66:117 (ISER proceedings abstract). DOI: https://doi.org/10.1016/j.jevs.2018.05.162.
-- Nielsen JM. "Endometritis in the mare: a diagnostic study comparing cultures from swab and biopsy." *Theriogenology* 2005;64(3):510-518. PMID: 15978661. Establishes swab sensitivity 0.34 versus biopsy 0.82.
+- Petersen MR, Nielsen JM, Lehn-Jensen H, Bojesen AM. "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares." *Clinical Theriogenology* 2009;1:393-409. ISSN 2154-3968. https://clinicaltheriogenology.net/index.php/CT/article/view/12588. Journal of the Society for Theriogenology and the American College of Theriogenologists. The primary evidence for why a surface swab returns negative: fluorescence in situ hybridization located the bacteria 300-500 micrometres below the luminal epithelium, with none visible on the surface.
+- Nielsen JM. "Endometritis in the mare: a diagnostic study comparing cultures from swab and biopsy." *Theriogenology* 2005;64(3):510-518. PMID: 15978661. Independent of bActivate's developers. Establishes swab sensitivity 0.34 versus biopsy 0.82.
 - Skive B, Rohde M, Molinari G, Braunstein TH, Bojesen AM. "Streptococcus equi subsp. zooepidemicus Invades and Survives in Epithelial Cells." *Frontiers in Cellular and Infection Microbiology* 2017;7:465. DOI: https://doi.org/10.3389/fcimb.2017.00465. Mechanistic basis for intracellular survival and persistence.
+
+Reference textbook chapter (invited and editor-reviewed, not journal peer review):
+
+- Petersen MR, Bojesen AM. "Latent Uterine Bacterial Infections." In: Dascanio JJ, McCue PM, editors. *Equine Reproductive Procedures*, 2nd edition. Wiley-Blackwell; 2021. Chapter 38, pp 141-142. DOI: https://doi.org/10.1002/9781119556015.ch38. ISBN 9781119555988. The reference manual for equine reproductive practice, edited by Prof. John Dascanio (Texas Tech University) and Prof. Patrick McCue (Colorado State University). Written by bActivate's developers, who disclose their commercial interest in the chapter.
+
+Conference abstracts (not peer-reviewed; these carry the field fertility figures):
+
+- Petersen MR, Bojesen AM. "Equine subclinical endometritis caused by dormant beta-hemolytic streptococci." *Clinical Theriogenology* 2014;6(3):313-314. Two-page conference abstract reporting the Hagyard clinical study (83% pregnancy rate); the authors state no placebo group was included.
+- Petersen MR, Rosenbrock A, Osborne M, Bojesen AM. "High Prevalence of Subclinical Endometritis in Problem Mares: Effect of Activation and Treatment on Fertility." *Journal of Equine Veterinary Science* 2018;66:117 (ISER proceedings abstract). DOI: https://doi.org/10.1016/j.jevs.2018.05.162. The published record of the Kildangan study; the detailed 89% figures are internal clinical data.
 
 ## Independent citations
 
