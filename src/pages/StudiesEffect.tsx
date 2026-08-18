@@ -4,27 +4,27 @@ import InternalLinks from '@/components/InternalLinks';
 
 export default function StudiesEffect() {
     useEffect(() => {
-        document.title = 'bActivate Clinical Evidence | 83% Pregnancy Rate in Problem & Non-Pregnant Mares';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Clinical evidence: 83% pregnancy rate at Hagyard (64 mares), 89% at Kildangan (Godolphin). Studies on hidden uterine infections in problem mares, non-pregnant mares, and barren mares.');
+        document.title = 'bActivate 臨床エビデンス｜不受胎牝馬・空胎牝馬で受胎率83%';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', '臨床エビデンス：Hagyardで受胎率83%（64頭）、Kildangan（Godolphin）で89%。不受胎牝馬・空胎牝馬・不妊牝馬の隠れた子宮内感染に関する研究。');
     }, []);
     return (
         <main>
             <section className={styles.section}>
                 <div className={styles.container}>
-                    <h1 className={styles.title}>Clinical evidence: bActivate for problem mares and non-pregnant mares</h1>
+                    <h1 className={styles.title}>臨床エビデンス：不受胎牝馬・空胎牝馬における bActivate</h1>
 
                     <div className="bg-white border border-gray-200 rounded p-6 mb-8">
-                        <p className="text-gray-700 leading-relaxed">Three clinical evaluations document what bActivate reveals, and what happens when the attending veterinarian treats the revealed infection. At <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY), Dr. Kristina Lu's team activated and treated 64 problem Thoroughbred mares (barren for 3 or more cycles): <strong>83% became pregnant</strong> (53/64) and <strong>70% achieved live foals</strong> (32/46 with known outcome) (<a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen &amp; Bojesen, Clinical Theriogenology 2014</a>). At <strong>Kildangan Stud</strong> in Ireland, operated by Godolphin, <strong>89% of the bred problem mares became pregnant</strong> (16/18) and <strong>87% delivered live foals</strong> (13/15 with known outcome) (<a href="https://doi.org/10.1016/j.jevs.2018.05.162" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen, Rosenbrock, Osborne &amp; Bojesen, J Equine Vet Sci 2018</a>). The peer-reviewed laboratory study (<a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen et al., Vet Microbiol 2015</a>) confirmed bActivate activated dormant bacteria in <strong>64% of treated mares</strong> versus 8% in PBS controls (n=37). The studies were carried out at independent clinics and studs. The founders of bActivate are co-authors on the reporting of the results, and no placebo group was included in the two field studies.</p>
+                        <p className="text-gray-700 leading-relaxed">bActivateが何を明らかにし、担当獣医師が明らかになった感染を治療したときに何が起こるかは、3つの臨床評価によって裏付けられています。<strong>Hagyard Equine Medical Institute</strong>（米国ケンタッキー州レキシントン）では、Dr. Kristina Lu のチームが64頭の不受胎サラブレッド牝馬（3サイクル以上不妊）を活性化・治療し、<strong>83%（53/64）が受胎</strong>、<strong>70%（結果が判明した46頭中32頭）が生存産駒</strong>を得ました（<a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen &amp; Bojesen, Clinical Theriogenology 2014</a>）。Godolphin が運営するアイルランドの <strong>Kildangan Stud</strong> では、<strong>交配した不受胎牝馬の89%（16/18）が受胎</strong>し、<strong>87%（結果が判明した15頭中13頭）が生存産駒を出産</strong>しました（<a href="https://doi.org/10.1016/j.jevs.2018.05.162" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen, Rosenbrock, Osborne &amp; Bojesen, J Equine Vet Sci 2018</a>）。査読付きの実験研究（<a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen et al., Vet Microbiol 2015</a>）では、bActivateが休眠細菌を活性化した割合が、PBS対照群の8%に対し<strong>投与群で64%</strong>であることが確認されました（n=37）。これらの研究は、独立した診療所・生産牧場で実施されました。bActivateの創業者は結果報告の共著者であり、2件のフィールド研究にプラセボ群は含まれていません。</p>
                     </div>
 
                     <div className={styles.textGrid}>
                         <div className="bg-gray-50 p-6 rounded">
-                            <p className="mb-4">Hidden infections. Persistent infertility. Missed opportunities. For too long, problem mares, non-pregnant mares that fail to conceive despite clean swabs, normal cycles, and confirmed stallion fertility, have faced unseen barriers to reproduction.<br />Studies show that 80% of these barren mares harbour hidden uterine infections that traditional tests fail to detect, making pregnancy an uphill battle.</p>
-                            <p>This collection introduces a breakthrough: <b>bActivate</b>. By reactivating dormant <b>Streptococcus equi subsp. zooepidemicus</b>, the most common cause of chronic uterine infections in non-pregnant mares, bActivate uncovers what was once invisible, enabling accurate diagnosis of these elusive infections for the first time.</p>
+                            <p className="mb-4">隠れた感染。続く不妊。逃してきた機会。あまりに長い間、不受胎牝馬——スワブが陰性で、発情周期も正常、種牡馬の繁殖能力も確認されているのに受胎しない空胎牝馬——は、目に見えない繁殖の壁に直面してきました。<br />研究によれば、こうした不妊牝馬の80%が、従来の検査では検出できない隠れた子宮内感染を抱えており、それが受胎を険しい闘いにしています。</p>
+                            <p>この一連の資料は、ひとつの突破口を紹介します——<b>bActivate</b>です。空胎牝馬の慢性子宮内感染の最も一般的な原因である休眠状態の <b>Streptococcus equi subsp. zooepidemicus</b> を再活性化することで、bActivateはかつて見えなかったものを明らかにし、こうしたとらえどころのない感染を初めて正確に診断できるようにします。</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded">
-                            <p className="mb-4">Supported by our studies and real-world evidence, this body of work repeatedly demonstrates the profound success of bActivate in restoring fertility in problem mares. With proven results, practical solutions, and renewed hope, this is a roadmap for transforming equine reproductive health.</p>
-                            <p>Step into a future where no infection stays hidden, and no mare is left behind.</p>
+                            <p className="mb-4">当社の研究と実地のエビデンスに支えられ、この一連の成果は、不受胎牝馬の受胎性を回復させる bActivate の確かな成功を繰り返し示しています。実証された結果、実用的な解決策、そして新たな希望——これは馬の繁殖の健康を変えていくための道しるべです。</p>
+                            <p>どの感染も隠れたままにならず、どの牝馬も置き去りにされない未来へ、踏み出しましょう。</p>
                         </div>
                     </div>
 
@@ -32,46 +32,46 @@ export default function StudiesEffect() {
 
                     {/* Benchmark: how hard is this group */}
                     <div style={{ margin: "3rem 0", padding: "2.5rem", background: "#fff", border: "1px solid #e5e7eb", borderLeft: "4px solid #901820" }}>
-                        <h2 style={{ fontSize: "1.2rem", textTransform: "uppercase", letterSpacing: "2px", color: "#901820", marginBottom: "0.5rem", fontWeight: 600 }}>How difficult is this group of mares?</h2>
-                        <p style={{ color: "#333", lineHeight: 1.7, marginBottom: "1rem" }}>The mares in these studies are the hardest group in broodmare practice. In the Kildangan cohort the average mare was <strong>12.7 years old</strong> and had been barren for an average of <strong>6.3 cycles</strong> before activation. Published research on a large commercial Irish Thoroughbred stud (2,385 mares, 3,743 oestrous cycles) identifies exactly this profile, high mare age and barren, slipped or rested status, as the significant risk factors for lower pregnancy rates and higher pregnancy loss (<a href="https://pubmed.ncbi.nlm.nih.gov/26815482/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Lane et al., Reproduction in Domestic Animals 2016</a>).</p>
-                        <p style={{ color: "#333", lineHeight: 1.7, marginBottom: "1rem" }}>In other words: the mares bActivate is used on are the ones the published literature expects to do worst. After activation revealed the hidden infection and the stud veterinarian treated it, <strong>89% of the bred Kildangan mares were in foal</strong>, at an average of only <strong>1.1 covers per mare</strong>.</p>
-                        <p style={{ color: "#666", fontSize: "0.875rem", fontStyle: "italic", lineHeight: 1.6, marginBottom: 0 }}>How to read this: these are separate datasets, not a controlled comparison, and the field studies included no placebo group. Lane et al. is cited for the difficulty of the mare group, not for bActivate, and shares an author with the Kildangan study team. Every figure on this page is attributed to the source that reports it.</p>
+                        <h2 style={{ fontSize: "1.2rem", textTransform: "uppercase", letterSpacing: "2px", color: "#901820", marginBottom: "0.5rem", fontWeight: 600 }}>この牝馬グループはどれほど難しいのか</h2>
+                        <p style={{ color: "#333", lineHeight: 1.7, marginBottom: "1rem" }}>これらの研究の牝馬は、繁殖牝馬診療の中でも最も難しいグループです。Kildangan のコホートでは、対象牝馬は平均<strong>12.7歳</strong>で、活性化前に平均<strong>6.3サイクル</strong>にわたり不妊でした。アイルランドの大規模な商業サラブレッド生産牧場を対象とした研究（2,385頭、3,743発情周期）は、まさにこのプロフィール——高齢で、空胎・流産・休養状態にある牝馬——を、受胎率の低下と妊娠喪失の増加につながる重大なリスク因子として特定しています（<a href="https://pubmed.ncbi.nlm.nih.gov/26815482/" target="_blank" rel="noopener noreferrer" className="text-primary underline">Lane et al., Reproduction in Domestic Animals 2016</a>）。</p>
+                        <p style={{ color: "#333", lineHeight: 1.7, marginBottom: "1rem" }}>言い換えれば、bActivateが使われるのは、公表された文献が最も成績が悪いと予測する牝馬たちです。活性化が隠れた感染を明らかにし、牧場獣医師がそれを治療した結果、<strong>交配した Kildangan の牝馬の89%が受胎</strong>し、その平均はわずか<strong>1頭あたり1.1回の交配</strong>でした。</p>
+                        <p style={{ color: "#666", fontSize: "0.875rem", fontStyle: "italic", lineHeight: 1.6, marginBottom: 0 }}>読み方について：これらは別々のデータセットであり、対照比較ではありません。フィールド研究にプラセボ群は含まれていません。Lane et al. は牝馬グループの難しさを示すために引用したもので、bActivateのためではなく、Kildangan の研究チームと著者を共有しています。本ページのすべての数値は、それを報告した出典に帰属します。</p>
                     </div>
 
                     {/* As Cited By, External Validation */}
                     <div style={{ margin: "3rem 0", padding: "2.5rem", background: "#f8f8f8", borderLeft: "4px solid #901820" }}>
-                        <h2 style={{ fontSize: "1.2rem", textTransform: "uppercase", letterSpacing: "2px", color: "#901820", marginBottom: "0.5rem", fontWeight: 600 }}>As cited by leading equine experts</h2>
-                        <p style={{ color: "#666", marginBottom: "2rem", fontSize: "0.95rem" }}>bActivate is independently referenced by the world's most respected equine veterinary publications and research institutions.</p>
+                        <h2 style={{ fontSize: "1.2rem", textTransform: "uppercase", letterSpacing: "2px", color: "#901820", marginBottom: "0.5rem", fontWeight: 600 }}>馬の分野の第一人者による引用</h2>
+                        <p style={{ color: "#666", marginBottom: "2rem", fontSize: "0.95rem" }}>bActivateは、世界で最も信頼される馬獣医の専門誌や研究機関によって、独立して引用されています。</p>
                         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
                             <a href="https://thehorse.com/183678/whats-plaguing-your-problem-mare/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>The Horse Magazine</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"...a (growth medium) product called bActivate, which activates dormant Streptococcus that can live within the endometrium, stimulating them to become metabolically active so we can treat them."</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>, Dr. Karen Wolfsdorf, DVM Dipl. ACT<br />Rood &amp; Riddle Equine Hospital, Kentucky</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「…bActivate という（培養培地）製品は、子宮内膜の中に潜む休眠レンサ球菌を活性化し、代謝的に活発な状態にして、治療できるようにします。」</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>Dr. Karen Wolfsdorf, DVM Dipl. ACT<br />Rood &amp; Riddle Equine Hospital、米国ケンタッキー州</div>
                             </a>
                             <a href="https://fvma.org/challenges-of-chronic-endometritis-novel-tools/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>FVMA, The Practitioner, 2024</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"Infusion of Bactivate when the mare is in estrus activates the dormant B.strep, increasing replication and growth, providing identification at 24 hours."</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>, Dr. Karen Wolfsdorf, DVM Dipl. ACT<br />Florida Veterinary Medical Association</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「牝馬が発情期にあるときに Bactivate を注入すると、休眠していた B. strep が活性化して複製・増殖が進み、24時間で同定できるようになります。」</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>Dr. Karen Wolfsdorf, DVM Dipl. ACT<br />Florida Veterinary Medical Association</div>
                             </a>
                             <a href="https://ker.com/equinews/therapy-offers-hope-infertile-mares/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Kentucky Equine Research</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"Most of the mares (83%) became pregnant within 6 weeks, and a majority of those gave birth to live foals.", Study of 64 broodmares treated with bActivate.</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>, Kentucky Equine Research, ker.com</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「大半の牝馬（83%）が6週間以内に受胎し、そのうちの多くが生存産駒を出産しました。」bActivateで治療された64頭の繁殖牝馬の研究より。</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>Kentucky Equine Research, ker.com</div>
                             </a>
                             <a href="https://breedersclub.nu/wp-content/uploads/2022/07/41-Forskning-i-fertilitet.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Breeders Club, Veterinary Journal</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"72% of problem mares achieved live foals the year after activation. 84% of participating mares had a latent streptococcal infection."</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>, Rebecca Bøk Larsen DVM + Anna Skriver DVM<br />University of Copenhagen, 2022</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「不受胎牝馬の72%が、活性化の翌年に生存産駒を得ました。参加した牝馬の84%が、潜在性のレンサ球菌感染を抱えていました。」</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>Rebecca Bøk Larsen DVM ＋ Anna Skriver DVM<br />コペンハーゲン大学、2022年</div>
                             </a>
                             <a href="https://equsana.dk/sovende-bakterier-goer-hopper-ufrugtbare/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Equsana.dk, 2015</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"Knap 10% af hopperne bliver aldrig drægtige trods dyrlægehjælp. Bactivate vækker sovende bakterier, så de kan diagnosticeres og behandles effektivt med antibiotika."</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>, Charlotte Nørgaard, Equsana.dk, 2015</div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「牝馬の約10%は、獣医の助けを受けても決して妊娠しません。bActivateは休眠細菌を目覚めさせ、抗生物質で効果的に診断・治療できるようにします。」</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>Charlotte Nørgaard, Equsana.dk, 2015</div>
                             </a>
                             <a href="https://equimanagement.com/research-medical/biofilms-and-the-equine-uterus/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>EquiManagement, 2023</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"bActivate, a growth medium specifically formulated to reactivate dormant Strep uterine infections, demonstrated effectiveness: bActivate-treated mares showed 64% bacterial activation versus only 8% in PBS controls."</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>, Nancy S. Loving, DVM<br />EquiManagement, June 2023<br /><span style={{ fontSize: "0.75rem", fontStyle: "italic" }}>Source: <a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" style={{ color: "#901820" }}>Petersen et al., Vet Microbiol 2015</a>, PMID 26123371, n=37 (25 bActivate / 12 PBS)</span></div>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「休眠したレンサ球菌の子宮内感染を再活性化するために特別に配合された培養培地 bActivate は、有効性を示しました。bActivate投与群では64%の細菌活性化が見られたのに対し、PBS対照群ではわずか8%でした。」</blockquote>
+                                <div style={{ fontSize: "0.8rem", color: "#666" }}>Nancy S. Loving, DVM<br />EquiManagement, June 2023<br /><span style={{ fontSize: "0.75rem", fontStyle: "italic" }}>出典: <a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" style={{ color: "#901820" }}>Petersen et al., Vet Microbiol 2015</a>, PMID 26123371, n=37 (25 bActivate / 12 PBS)</span></div>
                             </a>
                         </div>
                     </div>
@@ -79,87 +79,87 @@ export default function StudiesEffect() {
                     <div className={styles.studyCard}>
                         <h2 className={styles.studyTitle}>University of Copenhagen, Emilie Kähler Hjenner &amp; Kathrine Kjeldsen Ravn, 2025</h2>
                         <div className={styles.studyText}>
-                            <p>A veterinary thesis from the <strong>University of Copenhagen</strong>, Department of Veterinary and Animal Sciences, supervised by <strong>Prof. Anders Miki Bojesen</strong>. The study investigated the role of subclinical <em>Streptococcus equi</em> subsp. <em>zooepidemicus</em> infection in 31 problem mares from Ireland and Denmark, combining bacteriology, histology (Kenney-score), and Fluorescence In Situ Hybridization (FISH).</p>
+                            <p><strong>コペンハーゲン大学</strong>獣医・動物科学部の獣医学位論文で、<strong>Anders Miki Bojesen教授</strong>の指導のもとで実施されました。本研究は、アイルランドとデンマークの31頭の不受胎牝馬における無症候性 <em>Streptococcus equi</em> subsp. <em>zooepidemicus</em> 感染の役割を、細菌学・組織学（Kenneyスコア）・蛍光in situ ハイブリダイゼーション（FISH）を組み合わせて調査しました。</p>
                             <ul style={{ marginTop: '1rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
-                                <li><strong>100% pregnancy rate</strong> in mares successfully activated with bActivate and treated for S. zooepidemicus, regardless of Kenney category</li>
-                                <li><strong>86.7% (13/15)</strong> of subfertile mares tested positive for dormant S. zooepidemicus after bActivate activation, all had been negative on standard culture before</li>
-                                <li><strong>FISH detected Streptococcus spp. in 100% (16/16)</strong> of mares, including those negative on bActivate activation, confirming bacteria hiding deep in the endometrium (50-500+ µm) and intracellularly</li>
-                                <li>Live-foal rates after treatment: <strong>100%</strong> (Kenney I), <strong>83.3%</strong> (Kenney IIAi), <strong>66.7%</strong> (Kenney IIB), all higher than Kenney-Doig predicted rates</li>
+                                <li>bActivateで活性化に成功し、S. zooepidemicus の治療を受けた牝馬で、Kenney分類にかかわらず<strong>受胎率100%</strong></li>
+                                <li><strong>低受胎性（subfertile）</strong>の牝馬の<strong>86.7%（13/15）</strong>が、bActivate活性化後に休眠 S. zooepidemicus 陽性となった（いずれも活性化前は通常の培養で陰性）</li>
+                                <li><strong>FISHにより100%（16/16）</strong>の牝馬で Streptococcus spp. が検出され、bActivate活性化で陰性だった牝馬も含めて、細菌が子宮内膜の深部（50〜500µm超）および細胞内に潜んでいることが確認された</li>
+                                <li>治療後の生存産駒率：<strong>100%</strong>（Kenney I）、<strong>83.3%</strong>（Kenney IIAi）、<strong>66.7%</strong>（Kenney IIB）——いずれも Kenney–Doig の予測率を上回った</li>
                             </ul>
-                            <p style={{ marginTop: '1rem' }}><strong>Conclusion:</strong> Subclinical S. zooepidemicus infection has a markedly negative impact on fertility in mares, but this effect can be <strong>reversed by activation with bActivate and targeted antibiotic treatment</strong>.</p>
+                            <p style={{ marginTop: '1rem' }}><strong>結論：</strong> 無症候性 S. zooepidemicus 感染は牝馬の受胎性に著しい悪影響を及ぼしますが、その影響は<strong>bActivateによる活性化と標的抗菌薬治療によって回復させることができます</strong>。</p>
                         </div>
                         <div className={styles.buttonGroup}>
-                            <a href="/images/specialerapport-kathrine-emilie-ku-2025.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
-                            <a href="https://open.spotify.com/episode/1JP9FDxlJh55AKnMAGvaoG" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
+                            <a href="/images/specialerapport-kathrine-emilie-ku-2025.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">資料を見る</a>
+                            <a href="https://open.spotify.com/episode/1JP9FDxlJh55AKnMAGvaoG" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">要約を聴く</a>
                         </div>
                     </div>
 
                     <div className={styles.studyCard}>
                         <h2 className={styles.studyTitle}>Hagyard, Davidson &amp; McGee, project led by Dr. Kristina Lu</h2>
                         <div className={styles.studyText}>
-                            <p>A clinical study at <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY) led by <strong>Dr. Kristina Lu</strong>, reported by <strong>Petersen &amp; Bojesen</strong> at the Society for Theriogenology Annual Conference 2014 (<em>Clinical Theriogenology</em> 6(3):313-314). A total of <strong>64 Thoroughbred problem mares</strong> (barren ≥3 consecutive cycles) were included and subsequently bred.</p>
+                            <p><strong>Hagyard Equine Medical Institute</strong>（米国ケンタッキー州レキシントン）で <strong>Dr. Kristina Lu</strong> が主導した臨床研究で、<strong>Petersen &amp; Bojesen</strong> が Society for Theriogenology 年次大会2014で報告しました（<em>Clinical Theriogenology</em> 6(3):313-314）。<strong>64頭のサラブレッド不受胎牝馬</strong>（3サイクル以上連続して不妊）を対象に含め、その後交配しました。</p>
                             <ul style={{ marginTop: '1rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
-                                <li><strong>83% pregnancy rate</strong>, 53 of 64 mares became pregnant</li>
-                                <li><strong>70% live foal rate</strong>, 32 live foals from 46 mares with known outcome</li>
-                                <li><strong>47% activation-positive</strong>, 30 of 64 mares tested positive for dormant <em>S. zooepidemicus</em> after bActivate</li>
+                                <li><strong>受胎率83%</strong>、64頭中53頭が受胎</li>
+                                <li><strong>生存産駒率70%</strong>、結果が判明した46頭から32頭の生存産駒</li>
+                                <li><strong>活性化陽性47%</strong>、64頭中30頭が bActivate 後に休眠 <em>S. zooepidemicus</em> 陽性</li>
                             </ul>
-                            <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#666', fontStyle: 'italic' }}>Disclosure: As no placebo group was included in this clinical study, it is not possible to determine whether fertility was significantly increased following activation and treatment solely due to bActivate. The authors disclose this limitation in the proceedings.</p>
+                            <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#666', fontStyle: 'italic' }}>開示事項：本臨床研究にはプラセボ群が含まれていないため、活性化と治療の後に受胎性が有意に高まったのが bActivate のみによるものかどうかは判断できません。著者は、この限界を予稿で開示しています。</p>
                         </div>
                         <div className={styles.buttonGroup}>
-                            <a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View proceedings (Therio 2014)</a>
-                            <a href="/images/hagyarddavidsonandmcgeeinaprojectledbydr.kristinalu.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View clinical document</a>
-                            <a href="https://open.spotify.com/episode/5CqtUbpJe9YO9j96a5Zx4R" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
+                            <a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">予稿を見る（Therio 2014）</a>
+                            <a href="/images/hagyarddavidsonandmcgeeinaprojectledbydr.kristinalu.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">臨床資料を見る</a>
+                            <a href="https://open.spotify.com/episode/5CqtUbpJe9YO9j96a5Zx4R" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">要約を聴く</a>
                         </div>
                     </div>
 
                     <div className={styles.studyCard}>
                         <h2 className={styles.studyTitle}>Kildangan Stud, Godolphin, project involving Meta Osborne MVB CertESM MRCVS</h2>
                         <div className={styles.studyText}>
-                            <p>This field study investigates the impact of latent infections caused by <strong>Streptococcus equi subsp. zooepidemicus</strong> on fertility in mares. Dormant bacteria are shown to persist intracellularly within the uterus, evading detection by traditional methods. These infections disrupt the establishment and maintenance of pregnancy, which is why an activation step is needed before standard culture can find them. <strong>bActivate</strong> reveals the dormant infection so the stud veterinarian can treat it with targeted antibiotics.</p>
+                            <p>このフィールド研究は、<strong>Streptococcus equi subsp. zooepidemicus</strong> による潜在感染が牝馬の受胎性に及ぼす影響を調査しています。休眠細菌が子宮内の細胞内に持続的に潜み、従来の方法では検出を逃れることが示されています。こうした感染は妊娠の成立と維持を妨げるため、通常の培養で見つける前に活性化のステップが必要です。<strong>bActivate</strong>が休眠感染を明らかにすることで、牧場獣医師が標的抗菌薬で治療できるようになります。</p>
                             <ul style={{ marginTop: '1rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
-                                <li><strong>19 problem mares</strong>, average age 12.7 years, barren for an average of 6.3 cycles</li>
-                                <li><strong>84% activation-positive</strong> (16/19): a dormant infection standard culture had missed</li>
-                                <li><strong>89% pregnancy</strong> among bred mares (16/18), at an average of 1.1 covers per mare</li>
-                                <li><strong>87% live foals</strong> (13/15 with known outcome)</li>
+                                <li><strong>19頭の不受胎牝馬</strong>、平均年齢12.7歳、平均6.3サイクル不妊</li>
+                                <li><strong>活性化陽性84%（16/19）</strong>：通常の培養では見逃されていた休眠感染</li>
+                                <li>交配した牝馬の<strong>受胎率89%</strong>（16/18）、平均1頭あたり1.1回の交配</li>
+                                <li><strong>生存産駒87%</strong>（結果が判明した15頭中13頭）</li>
                             </ul>
-                            <p className="mt-4"><strong>Conclusion</strong><br />Latent infections significantly reduce fertility in mares, with dormant bacteria negatively affecting pregnancy outcomes. Activation dramatically improves diagnostic accuracy, and the veterinarian's targeted treatment restores reproductive performance. Published as a congress abstract: <a href="https://doi.org/10.1016/j.jevs.2018.05.162" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen MR, Rosenbrock A, Osborne M, Bojesen AM, J Equine Vet Sci 2018;66:117</a>. Also written up for breeders by the founders at <a href="https://portal.selectbreeders.com/articles/high-prevalence-of-latent-endometritis-in-problem-mares-effect-of-activation-and-treatment-on-fertility" target="_blank" rel="noopener noreferrer" className="text-primary underline">SelectBreeders Services (2019)</a>.</p>
+                            <p className="mt-4"><strong>結論</strong><br />潜在感染は牝馬の受胎性を著しく低下させ、休眠細菌が妊娠の転帰に悪影響を及ぼします。活性化は診断精度を劇的に高め、獣医師による標的治療が繁殖成績を回復させます。学会抄録として発表：<a href="https://doi.org/10.1016/j.jevs.2018.05.162" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen MR, Rosenbrock A, Osborne M, Bojesen AM, J Equine Vet Sci 2018;66:117</a>。創業者による生産者向けの解説記事も公開されています：<a href="https://portal.selectbreeders.com/articles/high-prevalence-of-latent-endometritis-in-problem-mares-effect-of-activation-and-treatment-on-fertility" target="_blank" rel="noopener noreferrer" className="text-primary underline">SelectBreeders Services (2019)</a>。</p>
                         </div>
                         <div className={styles.buttonGroup}>
-                            <a href="/images/latentendomtrititsanddormantstreptococci-effectonfertility.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
-                            <a href="https://open.spotify.com/episode/2eCFocRnJEJh8IJOdTu3pP" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
+                            <a href="/images/latentendomtrititsanddormantstreptococci-effectonfertility.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">資料を見る</a>
+                            <a href="https://open.spotify.com/episode/2eCFocRnJEJh8IJOdTu3pP" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">要約を聴く</a>
                         </div>
                     </div>
 
                     <div className={styles.articleGrid}>
                         <article className={styles.articleCard}>
-                            <h3 className={styles.articleTitle}>Frontiers -Streptococcus equi, Peer Review Studie</h3>
+                            <h3 className={styles.articleTitle}>Frontiers ― Streptococcus equi、査読研究</h3>
                             <div className={styles.articleContent}>
-                                <p>This study explores how <strong>Streptococcus equi subsp. zooepidemicus</strong> invades and survives within epithelial cells, contributing to latent endometritis in mares. The research, led by <strong>Associate Professor Bolette Skive</strong> and <strong>Professor Manfred Rohde</strong>, reveals three distinct bacterial invasion mechanisms.</p>
+                                <p>本研究は、<strong>Streptococcus equi subsp. zooepidemicus</strong> がどのように上皮細胞に侵入し、その内部で生存して牝馬の潜在性子宮内膜炎の一因となるかを探究しています。<strong>Bolette Skive准教授</strong>と <strong>Manfred Rohde教授</strong>が主導したこの研究は、3つの異なる細菌侵入メカニズムを明らかにしています。</p>
                             </div>
                             <div className="mt-4">
-                                <a href="/images/strepzoo_frontcellinfectmicrobioloriginalresearch.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
+                                <a href="/images/strepzoo_frontcellinfectmicrobioloriginalresearch.pdf" target="_blank" className="text-primary font-bold hover:underline">資料を見る</a>
                             </div>
                         </article>
 
                         <article className={styles.articleCard}>
-                            <h3 className={styles.articleTitle}>Bacterial tolerance.</h3>
+                            <h3 className={styles.articleTitle}>細菌の薬剤寛容</h3>
                             <div className={styles.articleContent}>
-                                <p>This study examines antimicrobial tolerance in beta-hemolytic streptococci (BHS) from problem mares, highlighting <strong>persister cells</strong> that tolerate penicillin at 10,000 times the normal MIC. Using <strong>bActivate</strong>, dormant BHS were reactivated and successfully treated.</p>
+                                <p>本研究は、不受胎牝馬から分離されたβ溶血性レンサ球菌（BHS）の薬剤寛容を検討し、通常のMICの1万倍のペニシリンにも耐える<strong>パーシスター細胞</strong>に注目しています。<strong>bActivate</strong>を用いて、休眠していたBHSを再活性化し、治療に成功しました。</p>
                             </div>
-                            <div className={styles.meta}>Key Contributor • Professor Ralph Bertram</div>
+                            <div className={styles.meta}>主要貢献者 • Professor Ralph Bertram</div>
                             <div className="mt-4">
-                                <a href="/images/bacterialtolerancetoantimicrobials-factorsaffectingtreatmentsuccessrossdalenon-pregnantmarecoursejan2025-3.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
+                                <a href="/images/bacterialtolerancetoantimicrobials-factorsaffectingtreatmentsuccessrossdalenon-pregnantmarecoursejan2025-3.pdf" target="_blank" className="text-primary font-bold hover:underline">資料を見る</a>
                             </div>
                         </article>
 
                         <article className={styles.articleCard}>
-                            <h3 className={styles.articleTitle}>Scientific and Practical Evidence.</h3>
+                            <h3 className={styles.articleTitle}>科学的・実務的エビデンス</h3>
                             <div className={styles.articleContent}>
-                                <p>This document provides scientific and practical evidence supporting the use of <strong>bActivate</strong> for diagnosing and treating latent endometritis in problem mares. The study highlights the reactivation of dormant <strong>Streptococcus equi subsp. zooepidemicus</strong> infections.</p>
+                                <p>本資料は、不受胎牝馬の潜在性子宮内膜炎の診断・治療における <strong>bActivate</strong> の使用を裏付ける科学的・実務的エビデンスを提供します。休眠した <strong>Streptococcus equi subsp. zooepidemicus</strong> 感染の再活性化に焦点を当てています。</p>
                             </div>
-                            <div className={styles.meta}>Key Contributor • Professor Anders Miki Bojesen</div>
+                            <div className={styles.meta}>主要貢献者 • Professor Anders Miki Bojesen</div>
                             <div className="mt-4">
-                                <a href="/images/scientificandpracticalevidencesupportingbactivateforproblemmares.pdf" target="_blank" className="text-primary font-bold hover:underline">View Document</a>
+                                <a href="/images/scientificandpracticalevidencesupportingbactivateforproblemmares.pdf" target="_blank" className="text-primary font-bold hover:underline">資料を見る</a>
                             </div>
                         </article>
                     </div>
@@ -167,10 +167,10 @@ export default function StudiesEffect() {
             </section>
 
             <InternalLinks links={[
-                { to: '/shop', label: 'Order bActivate', description: '€229 per vial, ships from Copenhagen' },
-                { to: '/how-to-use', label: 'How to Use', description: 'Full veterinary protocol for diagnosis and treatment' },
-                { to: '/our-distributors', label: 'Find a Distributor', description: 'UK, Netherlands, Denmark, Australia and more' },
-                { to: '/about-us', label: 'Meet the Founders', description: 'Prof. Bojesen & Dr. Petersen, 20+ years of research' },
+                { to: '/shop', label: 'bActivateを注文する', description: '1バイアル ¥41,999、日本へ発送' },
+                { to: '/how-to-use', label: '使い方', description: '診断と治療の完全な獣医向けプロトコル' },
+                { to: '/our-distributors', label: '販売店を探す', description: '世界各国の獣医用販売店' },
+                { to: '/about-us', label: '創業者について', description: 'Bojesen教授 & Petersen博士、20年以上の研究' },
             ]} />
 
         </main>
