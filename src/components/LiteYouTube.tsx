@@ -28,9 +28,18 @@ export default function LiteYouTube({ id, title, className }: { id: string; titl
             style={{ position: 'relative', display: 'block', width: '100%', height: '100%', padding: 0, border: 'none', cursor: 'pointer', background: '#000', overflow: 'hidden' }}
         >
             <img
-                src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+                src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
                 alt={title}
                 loading="lazy"
+                // maxresdefault is 1280x720 and natively 16:9. Not every video has
+                // one, so fall back to the 480x360 hqdefault when it is missing.
+                onError={(e) => {
+                    const img = e.currentTarget;
+                    if (!img.dataset.fallback) {
+                        img.dataset.fallback = '1';
+                        img.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+                    }
+                }}
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
             />
             <span style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 68, height: 48, background: 'rgba(144, 24, 32, 0.92)', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
