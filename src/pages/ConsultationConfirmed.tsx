@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 export default function ConsultationConfirmed() {
     useEffect(() => {
-        document.title = 'Consultation Confirmed | bActivate';
+        document.title = '相談のご予約完了｜bActivate';
         let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
         if (!canonical) {
             canonical = document.createElement('link');
             canonical.rel = 'canonical';
             document.head.appendChild(canonical);
         }
-        canonical.href = 'https://bactivate.eu/consultation-confirmed';
+        canonical.href = 'https://bactivate.jp/consultation-confirmed';
     }, []);
 
     return (
@@ -26,15 +26,15 @@ export default function ConsultationConfirmed() {
 
                 {/* Heading */}
                 <h1 style={{ fontFamily: "'Fira Sans Condensed', sans-serif", fontSize: '1.9rem', fontWeight: 700, color: '#1a1a1a', marginBottom: '1.5rem', lineHeight: 1.2 }}>
-                    You are now registered for a bActivate consultation.
+                    bActivateの相談のご予約が完了しました。
                 </h1>
 
                 {/* Info box */}
                 <div style={{ background: '#f4f4f4', borderRadius: '8px', padding: '1.25rem 1.5rem', marginBottom: '2rem', textAlign: 'left' }}>
                     <p style={{ color: '#333', fontSize: '1rem', lineHeight: 1.7, margin: 0 }}>
-                        📱 We will send you a <strong>text message</strong> before the call.<br />
-                        📞 We will call you from <strong>+45 30 14 27 52</strong>.<br />
-                        🔄 If you miss the call, please <strong>fill out the form again</strong>.
+                        📱 通話前に<strong>ショートメッセージ</strong>をお送りします。<br />
+                        📞 <strong>+45 30 14 27 52</strong> からお電話します。<br />
+                        🔄 電話に出られなかった場合は、<strong>もう一度フォームにご記入</strong>ください。
                     </p>
                 </div>
 
@@ -45,7 +45,7 @@ export default function ConsultationConfirmed() {
                     onMouseOver={e => (e.currentTarget.style.background = '#721319')}
                     onMouseOut={e => (e.currentTarget.style.background = '#901820')}
                 >
-                    Go to Home Page
+                    ホームページへ
                 </Link>
 
                 {/* Divider */}
@@ -53,17 +53,17 @@ export default function ConsultationConfirmed() {
 
                 {/* Exclusive content */}
                 <p style={{ color: '#555', fontSize: '0.92rem', marginBottom: '0.75rem' }}>
-                    While you wait, explore the science behind bActivate:
+                    お待ちの間に、bActivateの科学的背景をご覧ください：
                 </p>
                 <Link
                     to="/studies-effect"
                     style={{ display: 'inline-block', color: '#901820', fontWeight: 600, fontSize: '0.95rem', textDecoration: 'underline', marginBottom: '1.5rem' }}
                 >
-                    Exclusive insights, Studies &amp; Effect →
+                    研究と効果 →
                 </Link>
 
                 <p style={{ color: '#555', fontSize: '0.92rem', marginBottom: '0.75rem' }}>
-                    Or watch our videos on YouTube:
+                    または YouTube で動画をご覧ください：
                 </p>
                 <a
                     href="https://www.youtube.com/@bActivate-Endometritis"

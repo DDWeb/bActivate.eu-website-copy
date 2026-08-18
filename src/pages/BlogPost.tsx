@@ -31,7 +31,7 @@ export default function BlogPost() {
             canonical.setAttribute('rel', 'canonical');
             document.head.appendChild(canonical);
         }
-        canonical.setAttribute('href', `https://bactivate.eu/blog/${slug}`);
+        canonical.setAttribute('href', `https://bactivate.jp/blog/${slug}`);
 
         // Article schema
         let schemaScript = document.getElementById('article-schema') as HTMLScriptElement | null;
@@ -49,19 +49,19 @@ export default function BlogPost() {
             'author': {
                 '@type': 'Organization',
                 'name': 'Bojesen & Petersen Biotech ApS',
-                'url': 'https://bactivate.eu'
+                'url': 'https://bactivate.jp'
             },
             'publisher': {
                 '@type': 'Organization',
                 'name': 'bActivate',
-                'url': 'https://bactivate.eu'
+                'url': 'https://bactivate.jp'
             },
-            'url': `https://bactivate.eu/blog/${slug}`
+            'url': `https://bactivate.jp/blog/${slug}`
         });
 
         return () => {
             // Restore homepage canonical on unmount
-            document.querySelector('link[rel="canonical"]')?.setAttribute('href', 'https://bactivate.eu/');
+            document.querySelector('link[rel="canonical"]')?.setAttribute('href', 'https://bactivate.jp/');
             document.getElementById('article-schema')?.remove();
         };
     }, [post, slug]);
@@ -71,8 +71,8 @@ export default function BlogPost() {
             <main>
                 <section className="py-16">
                     <div className="container mx-auto px-4 text-center">
-                        <h1 className="text-3xl font-bold mb-4">Post not found</h1>
-                        <Link to="/blog" className="text-primary hover:underline">← Back to blog</Link>
+                        <h1 className="text-3xl font-bold mb-4">記事が見つかりません</h1>
+                        <Link to="/blog" className="text-primary hover:underline">← ブログに戻る</Link>
                     </div>
                 </section>
             </main>
@@ -83,7 +83,7 @@ export default function BlogPost() {
         <main>
             <section className="py-16">
                 <div className="container mx-auto px-4 max-w-3xl">
-                    <Link to="/blog" className="text-primary hover:underline text-sm mb-8 block">← Back to blog</Link>
+                    <Link to="/blog" className="text-primary hover:underline text-sm mb-8 block">← ブログに戻る</Link>
                     <h1 className="text-3xl font-bold mb-2" dangerouslySetInnerHTML={{ __html: post.title }} />
                     <div className="text-gray-500 text-sm mb-8">{post.date}</div>
                     <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
