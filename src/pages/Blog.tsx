@@ -15,16 +15,16 @@ function getExcerpt(content: string, maxLength = 140): string {
 
 export default function Blog() {
     useEffect(() => {
-        document.title = 'bActivate Blog | Equine Endometritis & Mare Fertility';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Research, clinical insights and news on subclinical endometritis, dormant bacteria, and bActivate. For vets and equine reproduction specialists.');
+        document.title = 'bActivateブログ｜馬の子宮内膜炎と牝馬の受胎性';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', '無症候性子宮内膜炎、休眠細菌、bActivateに関する研究・臨床知見・ニュース。獣医師および馬の繁殖専門家の方へ。');
     }, []);
     return (
         <main>
             <section className={styles.pageHeader}>
                 <div className={styles.container}>
-                    <p className={styles.eyebrow}>Knowledge & Science</p>
-                    <h1 className={styles.title}>Mare Fertility and Endometritis Blog</h1>
-                    <p className={styles.subtitle}>Articles and news on equine reproductive health</p>
+                    <p className={styles.eyebrow}>知識と科学</p>
+                    <h1 className={styles.title}>牝馬の受胎性と子宮内膜炎ブログ</h1>
+                    <p className={styles.subtitle}>馬の繁殖の健康に関する記事とニュース</p>
                 </div>
             </section>
 
@@ -39,7 +39,7 @@ export default function Blog() {
                                     <div className={styles.cardFooter}>
                                         <span className={styles.date}>{post.date}</span>
                                         <span className={styles.readMore}>
-                                            Read more <span className={styles.arrow}>→</span>
+                                            もっと読む <span className={styles.arrow}>→</span>
                                         </span>
                                     </div>
                                 </Link>
