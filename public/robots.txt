@@ -38,4 +38,4 @@ Disallow: /*?profiletab=
 Disallow: /*?wordfence_lh=
 Disallow: /*?wordfence_whitelisted=
 
-Sitemap: https://bactivate.eu/sitemap.xml
+Sitemap: https://bactivate.jp/sitemap.xml

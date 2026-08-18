@@ -19,6 +19,9 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import ConsultationConfirmed from './pages/ConsultationConfirmed';
 import Contact from './pages/Contact';
 import SwabComparison from './pages/SwabComparison';
+import Glossary from './pages/Glossary';
+import AffiliateProgram from './pages/AffiliateProgram';
+import Tokushoho from './pages/Tokushoho';
 import WhatsAppButton from './components/WhatsAppButton';
 
 function ScrollToTop() {
@@ -56,6 +59,9 @@ function App() {
         <Route path="/consultation-confirmed" element={<ConsultationConfirmed />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/swab-culture-vs-bactivate" element={<SwabComparison />} />
+        <Route path="/glossary" element={<Glossary />} />
+        <Route path="/affiliate-program" element={<AffiliateProgram />} />
+        <Route path="/tokushoho" element={<Tokushoho />} />
         <Route path="*" element={<Home />} />
       </Routes>
       {faqVariant && <FAQSection variant={faqVariant} />}

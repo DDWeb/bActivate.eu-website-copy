@@ -7,6 +7,7 @@
  */
 
 const LANGUAGES = [
+    { code: 'en', label: 'English', site: 'bActivate', href: 'https://bactivate.eu/', flag: 'gb' },
     { code: 'de', label: 'Deutsch', site: 'Problem-Stute', href: 'https://problem-stute.de/', flag: 'de' },
     { code: 'fr', label: 'Français', site: 'Jument Non-Gestante', href: 'https://jument-non-gestante.fr/', flag: 'fr' },
     { code: 'nl', label: 'Nederlands', site: 'Probleem Merrie', href: 'https://probleem-merrie.nl/', flag: 'nl' },
@@ -16,7 +17,7 @@ const LANGUAGES = [
 export default function LanguageMesh() {
     return (
         <nav
-            aria-label="Available languages"
+            aria-label="他の言語"
             style={{
                 maxWidth: '1200px',
                 margin: '3rem auto 0',
@@ -33,7 +34,7 @@ export default function LanguageMesh() {
                     fontFamily: 'inherit',
                 }}
             >
-                This information in other languages
+                他の言語での情報
             </h3>
             <ul
                 style={{

@@ -54,6 +54,7 @@ export default function Footer() {
                     <ul className={styles.linkList}>
                         <li><Link to="/terms-and-conditions" className={styles.link}>利用規約</Link></li>
                         <li><Link to="/privacy-policy" className={styles.link}>プライバシーポリシー</Link></li>
+                        <li><Link to="/tokushoho" className={styles.link}>特定商取引法に基づく表記</Link></li>
                         <li><Link to="/what-is-bactivate" className={styles.link}>bActivateとは？</Link></li>
                         <li><Link to="/when-to-use" className={styles.link}>いつ使うか？</Link></li>
                         <li><Link to="/how-to-use" className={styles.link}>どう使うか？</Link></li>
@@ -61,7 +62,8 @@ export default function Footer() {
                         <li><Link to="/shop" className={styles.link}>ショップ</Link></li>
                         <li><Link to="/our-distributors" className={styles.link}>販売店一覧</Link></li>
                         <li><Link to="/contact" className={styles.link}>お問い合わせ</Link></li>
-                        <li><a href="https://www.affiliatly.com/af-1074392/affiliate.panel?mode=register" target="_blank" rel="noopener noreferrer" className={styles.link}>アフィリエイトプログラム</a></li>
+                        <li><Link to="/glossary" className={styles.link}>用語集</Link></li>
+                        <li><Link to="/affiliate-program" className={styles.link}>アフィリエイトプログラム</Link></li>
                     </ul>
                 </div>
 

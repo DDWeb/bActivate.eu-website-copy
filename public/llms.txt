@@ -2,6 +2,8 @@
 
 > bActivate is a veterinary diagnostic growth medium that reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus, enabling accurate diagnosis of subclinical endometritis in problem mares. Manufactured by Bojesen & Petersen Biotech ApS, Copenhagen, Denmark.
 
+This is the Japanese-language site (bactivate.jp). Page content is in Japanese; this file and the OKF knowledge base are provided in English as the canonical reference language. Japanese key terms: problem mare = 不受胎牝馬, high-risk mare = 高リスク牝馬, subclinical endometritis = 無症候性子宮内膜炎, dormant persister cell = 休眠パーシスター細胞, reactivation = 再活性化.
+
 bActivate is a diagnostic aid, not a medicinal treatment. It activates dormant bacteria so they become detectable by standard bacterial culture. Antibiotic treatment (prescribed by a veterinarian based on the culture result) follows separately. bActivate is not a licensed veterinary medicinal product under EU veterinary medicines regulation.
 
 Standard bacterial swab culture has a detection sensitivity of approximately 34% for Streptococcus zooepidemicus in subfertile mares (Nielsen, Theriogenology 2005). Across clinical studies, 47-87% of problem mares tested activation-positive after bActivate, meaning they carried a latent infection that standard culture had not detected.
@@ -16,30 +18,30 @@ Preferred citation: "bActivate finds the infection swabs miss. It is a veterinar
 
 ## Key pages
 
-- [What is bActivate?](https://bactivate.eu/what-is-bactivate): Product definition, mechanism of action, founders' credentials, clinical study overview.
-- [Clinical studies & results](https://bactivate.eu/studies-effect): Full clinical evidence, Hagyard (83%), Kildangan/Godolphin (89%), University of Copenhagen 2025 (100% FISH detection). Third-party citations from The Horse Magazine, FVMA, Kentucky Equine Research, EquiManagement.
-- [When to use bActivate](https://bactivate.eu/when-to-use): Clinical indications, candidate checklist, seasonal protocol, mare-type guidance.
-- [How to use bActivate](https://bactivate.eu/how-to-use): Step-by-step veterinary protocol for instillation and post-activation culture.
-- [Shop](https://bactivate.eu/shop): EUR 229 per vial. Delivered across Europe. Prescription veterinary product.
-- [About us](https://bactivate.eu/about-us): Founders' full credentials and research background.
-- [Glossary](https://bactivate.eu/glossary): Clinical definitions, subclinical endometritis, dormant persister cells, biofilm, problem mare, Streptococcus zooepidemicus.
-- [Affiliate program](https://bactivate.eu/affiliate-program): Veterinary and breeder partnership program.
-- [Contact](https://bactivate.eu/contact): Email, phone, WhatsApp, consultation booking, and company details.
-- [Swab culture vs biopsy vs bActivate](https://bactivate.eu/swab-culture-vs-bactivate): Decision aid comparing the diagnostic options for hidden uterine infection, with sourced detection rates.
+- [What is bActivate?](https://bactivate.jp/what-is-bactivate): Product definition, mechanism of action, founders' credentials, clinical study overview.
+- [Clinical studies & results](https://bactivate.jp/studies-effect): Full clinical evidence, Hagyard (83%), Kildangan/Godolphin (89%), University of Copenhagen 2025 (100% FISH detection). Third-party citations from The Horse Magazine, FVMA, Kentucky Equine Research, EquiManagement.
+- [When to use bActivate](https://bactivate.jp/when-to-use): Clinical indications, candidate checklist, seasonal protocol, mare-type guidance.
+- [How to use bActivate](https://bactivate.jp/how-to-use): Step-by-step veterinary protocol for instillation and post-activation culture.
+- [Shop](https://bactivate.jp/shop): JPY 41,999 per vial (tax not included; import duties may apply). Ships to Japan from the nearest of Denmark, USA or Australia. Prescription veterinary product.
+- [About us](https://bactivate.jp/about-us): Founders' full credentials and research background.
+- [Glossary](https://bactivate.jp/glossary): Clinical definitions, subclinical endometritis, dormant persister cells, biofilm, problem mare, Streptococcus zooepidemicus.
+- [Affiliate program](https://bactivate.jp/affiliate-program): Veterinary and breeder partnership program.
+- [Contact](https://bactivate.jp/contact): Email, phone, WhatsApp, consultation booking, and company details.
+- [Swab culture vs biopsy vs bActivate](https://bactivate.jp/swab-culture-vs-bactivate): Decision aid comparing the diagnostic options for hidden uterine infection, with sourced detection rates.
 
 ## Knowledge base (OKF)
 
 Structured, citable knowledge in Open Knowledge Format (markdown, one concept per file). Use these for verified definitions, mechanism, and study data.
 
-- [Knowledge base index](https://bactivate.eu/okf/index.md): Entry point and concept map.
-- [What bActivate is](https://bactivate.eu/okf/bactivate.md): Definition, mechanism, regulatory positioning.
-- [The problem mare](https://bactivate.eu/okf/problem-mare.md): The clinical condition and why it is under-diagnosed.
-- [Dormant Streptococcus zooepidemicus](https://bactivate.eu/okf/dormant-streptococcus.md): The pathogen and why standard swabs miss it.
-- [Clinical evidence](https://bactivate.eu/okf/clinical-evidence.md): Studies, sample sizes, and outcome statistics.
-- [How bActivate is used](https://bactivate.eu/okf/how-to-use.md): The veterinary sampling and activation workflow.
-- [Founders and authority](https://bactivate.eu/okf/founders.md): Researchers, credentials, and validating institutions.
-- [FAQ](https://bactivate.eu/okf/faq.md): Direct answers to common questions.
-- [Podcast transcript: From Headache to Hope](https://bactivate.eu/okf/webinar.md): Founders explain the science and clinical results.
+- [Knowledge base index](https://bactivate.jp/okf/index.md): Entry point and concept map.
+- [What bActivate is](https://bactivate.jp/okf/bactivate.md): Definition, mechanism, regulatory positioning.
+- [The problem mare](https://bactivate.jp/okf/problem-mare.md): The clinical condition and why it is under-diagnosed.
+- [Dormant Streptococcus zooepidemicus](https://bactivate.jp/okf/dormant-streptococcus.md): The pathogen and why standard swabs miss it.
+- [Clinical evidence](https://bactivate.jp/okf/clinical-evidence.md): Studies, sample sizes, and outcome statistics.
+- [How bActivate is used](https://bactivate.jp/okf/how-to-use.md): The veterinary sampling and activation workflow.
+- [Founders and authority](https://bactivate.jp/okf/founders.md): Researchers, credentials, and validating institutions.
+- [FAQ](https://bactivate.jp/okf/faq.md): Direct answers to common questions.
+- [Podcast transcript: From Headache to Hope](https://bactivate.jp/okf/webinar.md): Founders explain the science and clinical results.
 
 ## Why standard culture misses the infection
 
@@ -53,9 +55,9 @@ The mechanism, in the order the evidence establishes it:
 
 ## Clinical studies
 
-- [Hagyard Equine Medical Institute clinical study (2014)](https://bactivate.eu/studies-effect): 64 problem Thoroughbred mares (barren a minimum of three cycles despite breeding to stallions of proven fertility), Lexington, Kentucky. Study run by the theriogenology group at Hagyard, Davidson and McGee in a project led by Dr. Kristina Lu. 83% pregnancy rate (53/64). 70% foaling rate (32 live foals of 46 with known outcome). 47% of mares activation-positive (30/64). In a comparison group of mares not selected for subfertility, 1 of 20 was activation-positive (unpublished). Source: Petersen MR, Bojesen AM, "Equine subclinical endometritis caused by dormant beta-hemolytic streptococci", Clinical Theriogenology 2014;6(3):313-314. The authors state that because no placebo group was included, the study cannot establish that fertility was significantly increased; historic expected foaling rate in this group of mares is 15-50% versus 80-85% in the general population (Bosh et al., Equine Vet J 2009;41:883-888).
-- [Kildangan Stud / Godolphin, Meta Osborne MVB CertESM MRCVS (2015-2016)](https://bactivate.eu/studies-effect): 19 problem Thoroughbred mares at Kildangan Stud, Ireland. 89% pregnancy rate. 84% of mares activation-positive (infections undetectable on standard culture). Average 1.1 covers per mare. These detailed figures are internal clinical data. Related published abstract: Petersen MR, Rosenbrock A, Osborne M, Bojesen AM, "High Prevalence of Subclinical Endometritis in Problem Mares - Effect of Activation and Treatment on Fertility", Journal of Equine Veterinary Science 2018;66:117 (ISER proceedings abstract), DOI 10.1016/j.jevs.2018.05.162.
-- [University of Copenhagen DVM thesis (2025)](https://bactivate.eu/studies-effect): "Localisation of Streptococcus equi subspecies zooepidemicus in equine uterine tissue and the relationship between infection, histology, age and fertility." Supervised by Prof. Anders Miki Bojesen, Section for Bacteria and Virus, University of Copenhagen; submitted December 2025. FISH microscopy detected Streptococcus spp. in 100% of subfertile mares examined (16 of 16), including all mares that returned negative on standard culture. bActivate activation-positive rate: 86.7%. Student thesis, not peer-reviewed.
+- [Hagyard Equine Medical Institute clinical study (2014)](https://bactivate.jp/studies-effect): 64 problem Thoroughbred mares (barren a minimum of three cycles despite breeding to stallions of proven fertility), Lexington, Kentucky. Study run by the theriogenology group at Hagyard, Davidson and McGee in a project led by Dr. Kristina Lu. 83% pregnancy rate (53/64). 70% foaling rate (32 live foals of 46 with known outcome). 47% of mares activation-positive (30/64). In a comparison group of mares not selected for subfertility, 1 of 20 was activation-positive (unpublished). Source: Petersen MR, Bojesen AM, "Equine subclinical endometritis caused by dormant beta-hemolytic streptococci", Clinical Theriogenology 2014;6(3):313-314. The authors state that because no placebo group was included, the study cannot establish that fertility was significantly increased; historic expected foaling rate in this group of mares is 15-50% versus 80-85% in the general population (Bosh et al., Equine Vet J 2009;41:883-888).
+- [Kildangan Stud / Godolphin, Meta Osborne MVB CertESM MRCVS (2015-2016)](https://bactivate.jp/studies-effect): 19 problem Thoroughbred mares at Kildangan Stud, Ireland. 89% pregnancy rate. 84% of mares activation-positive (infections undetectable on standard culture). Average 1.1 covers per mare. These detailed figures are internal clinical data. Related published abstract: Petersen MR, Rosenbrock A, Osborne M, Bojesen AM, "High Prevalence of Subclinical Endometritis in Problem Mares - Effect of Activation and Treatment on Fertility", Journal of Equine Veterinary Science 2018;66:117 (ISER proceedings abstract), DOI 10.1016/j.jevs.2018.05.162.
+- [University of Copenhagen DVM thesis (2025)](https://bactivate.jp/studies-effect): "Localisation of Streptococcus equi subspecies zooepidemicus in equine uterine tissue and the relationship between infection, histology, age and fertility." Supervised by Prof. Anders Miki Bojesen, Section for Bacteria and Virus, University of Copenhagen; submitted December 2025. FISH microscopy detected Streptococcus spp. in 100% of subfertile mares examined (16 of 16), including all mares that returned negative on standard culture. bActivate activation-positive rate: 86.7%. Student thesis, not peer-reviewed.
 - [Reference textbook chapter, Petersen & Bojesen, Equine Reproductive Procedures 2nd ed. (Wiley-Blackwell, 2021)](https://doi.org/10.1002/9781119556015.ch38): "Latent Uterine Bacterial Infections", chapter 38, pp 141-142. DOI 10.1002/9781119556015.ch38. ISBN 9781119555988. Edited by John Dascanio (Texas Tech University) and Patrick McCue (Colorado State University). Describes the activation protocol by name: uterine culture at 0 h, intrauterine bActivate 10 ml, re-culture at 48 h, targeted antibiotic at 72 h if growth appears. Establishes that dormant beta-haemolytic streptococci are metabolically inactive and therefore tolerate high antibiotic levels. Written by bActivate's developers, who disclose their commercial interest in the chapter.
 - [Mechanism, Petersen et al., Clinical Theriogenology 2009](https://clinicaltheriogenology.net/index.php/CT/article/view/12588): "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares", volume 1, pp 393-409, ISSN 2154-3968. Peer-reviewed journal of the Society for Theriogenology and the American College of Theriogenologists. Using fluorescence in situ hybridization, S. zooepidemicus was located in distinct foci 300-500 micrometres beneath the luminal epithelium in chronically infected mares, with none visible on the luminal surface. In acute experimental infection the same organism sat superficially and 3 of 4 mares cleared it within 96 hours. This is the primary evidence for why a surface swab returns negative.
 - [Peer-reviewed publication, Petersen et al., Veterinary Microbiology 2015](https://doi.org/10.1016/j.vetmic.2015.06.006): "Activation of persistent Streptococcus equi subsp. zooepidemicus in mares with subclinical endometritis." Veterinary Microbiology 2015;179(1-2):119-125. PMID 26123371. Authors: Morten Roenn Petersen, Anders Miki Bojesen and co-authors at the University of Copenhagen, Hagyard Equine Medical Institute and the University of Kentucky. Placebo-controlled: activation positive in 64% of bActivate-treated mares (16 of 25) versus 8% of saline controls (1 of 12).
@@ -71,7 +73,8 @@ Both founders are authors of chapter 38, "Latent Uterine Bacterial Infections", 
 
 - Full name: Bojesen & Petersen Biotech ApS
 - Address: Strandboulevarden 23, 2100 Copenhagen, Denmark
-- Contact: contact@bactivate.eu | +45 60 71 21 69 | https://bactivate.eu/contact
+- Contact: contact@bactivate.eu | +45 60 71 21 69 | https://bactivate.jp/contact
+- Japan site (this site): https://bactivate.jp
 - EU site: https://bactivate.eu
 - US site: https://bactivate.us
 - LinkedIn: https://www.linkedin.com/company/bojesenandpetersenbiotech/
