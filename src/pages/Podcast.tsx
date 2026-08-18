@@ -5,13 +5,7 @@ import { podcastTranscriptHtml } from '@/lib/podcastTranscript';
 
 const TRANSCRIBED_EPISODE_ID = '5t0VvgoV_ls';
 
-const danishVideos = [
-    { id: "Dr2ridUGLus", title: "Vejen til Føl Episode 1, Hvad er en problemhoppe?", date: "2024-03-01" },
-    { id: "mIar9PYcUIA", title: "Vejen til Føl Episode 2, Latent Endometritis og dormante infektioner", date: "2024-03-15" },
-    { id: "EZ-9VSvlbQk", title: "Vejen til Føl Episode 3, Diagnostiske metoder for problemhopper", date: "2024-04-01" },
-    { id: "iyVQPjPY6Vg", title: "Vejen til Føl Episode 4, Behandlingsmetoder og effektivitet", date: "2024-04-15" },
-    { id: "CLzK8RTfUG8", title: "Vejen til Føl Episode 5, Case studies og succesfortællinger", date: "2024-05-01" },
-];
+// Danish-language series "Vejen til Føl" removed from the JA site (Martin, 2026-08-18).
 
 const englishVideos = [
     { id: "5t0VvgoV_ls", title: "Breeding Breakthrough: Diagnosing and Treating Latent Infections in Problem Mares", date: "2024-06-01" },
@@ -20,8 +14,8 @@ const englishVideos = [
 
 export default function Podcast() {
     useEffect(() => {
-        document.title = 'bActivate Podcast | Equine Reproductive Health with Bojesen & Petersen';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Podcast and videos with Dr. Morten Rønn Petersen (DVM, PhD) and Prof. Anders Miki Bojesen on dormant Streptococcus zooepidemicus and the problem mare.');
+        document.title = 'bActivateポッドキャスト｜Bojesen & Petersen と学ぶ馬の繁殖の健康';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Morten Rønn Petersen博士（DVM, PhD）と Anders Miki Bojesen教授による、休眠 Streptococcus zooepidemicus と不受胎牝馬に関するポッドキャスト・動画。');
 
     }, []);
 
@@ -30,46 +24,34 @@ export default function Podcast() {
             <section className={styles.sectionMuted}>
                 <div className={styles.introGrid}>
                     <div>
-                        <h1 className={styles.title}>Podcast</h1>
+                        <h1 className={styles.title}>ポッドキャスト</h1>
                         <div className={styles.leadText}>
-                            <p className="mb-4">If you're a <strong>breeder, veterinarian, or equine professional</strong>, this podcast is a must-listen. Professor Anders Miki Bojesen and Dr. Morten Rønn Petersen share expert insights on one of equine reproduction's most stubborn challenges: the problem mare.</p>
-                            <p className="mb-4">Why do some mares fail to conceive despite multiple attempts, normal cycles and clean swab results? The answer often lies in <strong>dormant <em>Streptococcus zooepidemicus</em></strong>, a hidden bacterial infection that evades standard diagnosis and resists conventional antibiotic treatment.</p>
-                            <p>The podcast and video series cover the biology of dormant infections, diagnostic best practices, the bActivate activate-first protocol, and real-world case studies from leading breeding operations including Godolphin and Hagyard Equine Medical Institute.</p>
+                            <p className="mb-4">生産者・獣医師・馬の専門家の方にとって、このポッドキャストは必聴です。<strong>Anders Miki Bojesen教授</strong>と <strong>Morten Rønn Petersen博士</strong>が、馬の繁殖における最も手強い課題のひとつ——不受胎牝馬——について専門的な知見を語ります。</p>
+                            <p className="mb-4">何度交配しても、発情周期が正常で、スワブ検査も陰性なのに受胎しない牝馬がいるのはなぜでしょうか。その答えはしばしば、<strong>休眠状態の <em>Streptococcus zooepidemicus</em></strong> にあります。これは通常の診断をすり抜け、従来の抗菌薬治療にも抵抗する、隠れた細菌感染です。</p>
+                            <p>本ポッドキャストおよび動画シリーズでは、休眠感染の生物学、診断のベストプラクティス、bActivateの「まず活性化する」プロトコル、そして Godolphin や Hagyard Equine Medical Institute をはじめとする一流の生産現場での実例を取り上げます。</p>
                         </div>
                     </div>
                     <div>
-                        <h2 className={styles.title}>Speakers</h2>
+                        <h2 className={styles.title}>出演者</h2>
                         <div className={styles.leadText}>
                             <p className="mb-6">
-                                <strong>Dr. Morten Rønn Petersen DVM, PhD, Dipl. ACT</strong><br />
-                                Equine Reproduction Specialist. 21+ peer-reviewed publications including <em>Nature Medicine</em> (2025).<br /><br />
-                                <strong>Prof. Anders Miki Bojesen DVM, PhD</strong><br />
-                                Professor of Veterinary Microbiology, University of Copenhagen. 222+ publications. Lead researcher on dormant streptococcal persister cells in the equine uterus.
+                                <strong>Morten Rønn Petersen博士（DVM, PhD, Dipl. ACT）</strong><br />
+                                馬繁殖の専門医。<em>Nature Medicine</em>（2025年）を含む21本以上の査読付き論文。<br /><br />
+                                <strong>Anders Miki Bojesen教授（DVM, PhD）</strong><br />
+                                コペンハーゲン大学 獣医微生物学教授。222本以上の論文。馬子宮における休眠レンサ球菌パーシスター細胞の主任研究者。
                             </p>
                         </div>
                         <a href="https://open.spotify.com/show/3EhdFDhwXe6rWMOPDlculd" target="_blank" className={styles.primaryButton}>
-                            Listen on Spotify
+                            Spotifyで聴く
                         </a>
                     </div>
                 </div>
             </section>
 
             <section className={styles.videoSection}>
-                <h2 className={styles.sectionHeading}>Danish, Vejen til Føl</h2>
+                <h2 className={styles.sectionHeading}>英語コンテンツ</h2>
                 <p style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 2rem', color: '#555' }}>
-                    A five-part Danish-language series covering the problem mare from first principles: what dormant infections are, how to diagnose them, and how bActivate fits into the treatment protocol.
-                </p>
-                <div className={styles.videoGrid}>
-                    {danishVideos.map((v) => (
-                        <div key={v.id} className={styles.youtubeEmbed}>
-                            <LiteYouTube id={v.id} title={v.title} />
-                        </div>
-                    ))}
-                </div>
-
-                <h2 className={styles.sectionHeading}>English</h2>
-                <p style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 2rem', color: '#555' }}>
-                    English-language webinars and expert presentations on biofilm, dormant uterine infections, and the clinical evidence behind bActivate, accessible to breeders and veterinarians worldwide.
+                    バイオフィルム、休眠子宮内感染、bActivateの臨床エビデンスを扱う英語のウェビナー・専門家プレゼンテーションです。世界中の生産者・獣医師がご覧いただけます。
                 </p>
                 <div className={styles.videoGrid}>
                     {englishVideos.map((v) => (
@@ -81,9 +63,9 @@ export default function Podcast() {
             </section>
 
             <section className={styles.videoSection}>
-                <h2 className={styles.sectionHeading}>Transcript: From Headache to Hope</h2>
+                <h2 className={styles.sectionHeading}>トランスクリプト：From Headache to Hope</h2>
                 <p style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 2rem', color: '#555' }}>
-                    Full edited transcript of the episode "From Headache to Hope: If Only Breeders Knew," in which host Martin Hinz speaks with Prof. Anders Miki Bojesen and Dr. Morten Rønn Petersen about dormant <em>Streptococcus zooepidemicus</em>, why standard swabs miss it, and the clinical results of activation and treatment.
+                    エピソード「From Headache to Hope: If Only Breeders Knew」の全編集済みトランスクリプトです。ホストの Martin Hinz が、Anders Miki Bojesen教授と Morten Rønn Petersen博士に、休眠状態の <em>Streptococcus zooepidemicus</em>、なぜ通常のスワブでは見逃されるのか、そして活性化と治療の臨床結果について聞きます。
                 </p>
                 <div
                     style={{ maxWidth: '820px', margin: '0 auto', lineHeight: 1.7, color: '#333' }}
@@ -93,13 +75,13 @@ export default function Podcast() {
 
             <section className={styles.sponsorSection}>
                 <div className={styles.sponsorContent}>
-                    <h2 className={styles.sponsorTitle}>Find us on YouTube</h2>
+                    <h2 className={styles.sponsorTitle}>YouTubeでもご覧いただけます</h2>
                     <hr className="border-white/30 w-24 mx-auto mb-8" />
                     <p className={styles.sponsorText}>
-                        Want to learn more about <strong>problem mares and how to prevent fertility issues?</strong> Our YouTube channel is packed with <strong>webinars, expert insights, and in-depth videos</strong> covering the latest research and treatments, including the role of <strong>dormant <em>Streptococcus zooepidemicus</em></strong> in reproductive challenges.
+                        <strong>不受胎牝馬について、また受胎の問題をどう防ぐか</strong>についてもっと知りたい方へ。当社のYouTubeチャンネルには、最新の研究や治療——繁殖の課題における<strong>休眠状態の <em>Streptococcus zooepidemicus</em></strong> の役割を含む——を扱う<strong>ウェビナー、専門家の知見、詳しい動画</strong>が満載です。
                     </p>
                     <a href="https://www.youtube.com/@bActivate-Endometritis/videos" target="_blank" className={styles.button}>
-                        Go to YouTube
+                        YouTubeへ
                     </a>
                 </div>
             </section>
