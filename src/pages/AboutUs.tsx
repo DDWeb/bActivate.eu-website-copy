@@ -5,8 +5,8 @@ import InternalLinks from '@/components/InternalLinks';
 
 export default function AboutUs() {
     useEffect(() => {
-        document.title = 'About bActivate | Bojesen & Petersen Biotech ApS';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Meet the founders: Morten Rønn Petersen DVM PhD (Dipl. ACT) and Professor Anders Miki Bojesen, the veterinary scientists who discovered and developed bActivate.');
+        document.title = '私たちについて｜Bojesen & Petersen Biotech ApS';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', '創業者をご紹介します：bActivateを発見・開発した獣医学者、Morten Rønn Petersen博士（DVM, PhD, Dipl. ACT）と Anders Miki Bojesen教授。');
     }, []);
     return (
         <main>
@@ -14,10 +14,10 @@ export default function AboutUs() {
                 <div className={styles.container}>
                     <div className="grid md:grid-cols-3 gap-12 mb-16">
                         <div className="md:col-span-2">
-                            <div className={styles.eyebrow}>Om bActivate</div>
-                            <h1 className={styles.title}>The men behind bActivate</h1>
+                            <div className={styles.eyebrow}>bActivateについて</div>
+                            <h1 className={styles.title}>bActivateを生み出した人々</h1>
                             <div className={styles.lead}>
-                                <p>The concept behind bActivate (promoting bacterial-activation) was discovered by Morten Rønn Petersen, DVM, PhD and Professor Anders Miki Bojesen, DVM, PhD. They both have extensive experience with bacterial endometritis in mares and have published several scientific papers on the subject.</p>
+                                <p>bActivateの基盤となる概念（細菌の活性化を促す仕組み）は、Morten Rønn Petersen博士（DVM, PhD）と Anders Miki Bojesen教授（DVM, PhD）によって発見されました。両氏は牝馬の細菌性子宮内膜炎に関する豊富な経験を持ち、本テーマについて複数の科学論文を発表しています。</p>
                             </div>
                         </div>
                     </div>
@@ -41,11 +41,11 @@ export default function AboutUs() {
                                 </div>
                             </div>
                             <div className={styles.bio}>
-                                <p>The interest for reproduction has been the overall hall mark of my professional life. I started my professional life as a veterinarian in a large animal practice spending most of the time during the breeding season at a standard bred farm. My interest in reproduction, and in particular in equine reproduction, brought me to California as an equine reproduction resident supervised by professors Barry Ball and Irwin Liu.</p>
-                                <p>Following the residency I made a PhD at the section of Veterinary Reproduction and Obstetrics, Copenhagen University, Denmark, this time focusing on oocyte and early embryonic evaluation and development.</p>
-                                <p>I then took on a position as an assistant professor at the same section. My research focus was now on endometritis in the mare, in particular the most common cause of endometritis, the bacteria Streptococcus equi subspecies zooepidemicus (S.zoo).</p>
-                                <p>Demonstrating localization of S.zoo deep within the endometrium of the chronically infected mare, pursued further investigations in this area. The most significant finding was to demonstrate that S.zoo in the chronically infected mare is able to enter a non-active/dormant state in the endometrium and infusion of a special bacterial growth medium into the uterus can induce active growth of S.zoo, previously residing in dormant bacterial reservoirs. With this finding diagnosis of these previously subclinic infections is now possible. </p>
-                                <p>Data from field studies using bActivate when diagnosing problem mares, indicate that improved diagnosis furthered treatment efficacy and mare fertility. My collaborators and I hope that these findings will improve reproductive efficiency in the mare to the benefit of horses and man. Dr. Petersen has authored 21+ peer-reviewed publications, including a paper in <em>Nature Medicine</em> (2025).</p>
+                                <p>繁殖への関心は、私の職業人生を通じての一貫したテーマでした。私は大動物診療の獣医師として職業人生を始め、繁殖シーズンの大半をスタンダードブレッドの牧場で過ごしました。繁殖、とりわけ馬の繁殖への関心から、私はカリフォルニアへ渡り、Barry Ball教授と Irwin Liu教授の指導のもとで馬繁殖のレジデント（resident）を務めました。</p>
+                                <p>レジデンシーの後、デンマークのコペンハーゲン大学 獣医繁殖・産科学部門で博士号を取得しました。このときは、卵母細胞および初期胚の評価と発生に焦点を当てました。</p>
+                                <p>その後、同じ部門で助教の職に就きました。研究の焦点は牝馬の子宮内膜炎、とりわけ子宮内膜炎の最も一般的な原因である Streptococcus equi subspecies zooepidemicus（S. zoo）へと移りました。</p>
+                                <p>慢性的に感染した牝馬の子宮内膜深部に S. zoo が局在することを示したことで、この分野の研究をさらに進めました。最も重要な発見は、慢性感染した牝馬の S. zoo が子宮内膜の中で不活性・休眠状態に入り得ること、そして特殊な細菌培養培地を子宮内に注入することで、それまで休眠した細菌のリザーバーに潜んでいた S. zoo の活発な増殖を誘導できることを示した点です。この発見により、これまで無症候性だった感染の診断が可能になりました。</p>
+                                <p>不受胎牝馬を診断する際に bActivate を用いた実地研究のデータは、診断の向上が治療効果と牝馬の受胎性を高めたことを示しています。私と共同研究者は、これらの発見が馬とヒトの双方の利益のために牝馬の繁殖効率を高めることを願っています。Petersen博士は、2025年の <em>Nature Medicine</em> 誌掲載論文を含め、21本以上の査読付き論文を執筆しています。</p>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default function AboutUs() {
                                     className={styles.profileImage}
                                 />
                                 <h3 className="text-xl font-bold mt-4 mb-1">Anders Miki Bojesen</h3>
-                                <div className={styles.profileRole}>Professor of Veterinary Microbiology</div>
+                                <div className={styles.profileRole}>獣医微生物学教授</div>
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:bojesen@bactivate.eu">bojesen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4523844188">+45 23 84 41 88</a></div>
@@ -74,10 +74,10 @@ export default function AboutUs() {
                                 </div>
                             </div>
                             <div className={styles.bio}>
-                                <p>I have had an interest in bacteria-host interactions since I took the infection microbiology course during my veterinary studies. I became a DVM in 2000 and immediately initiated my PhD-project, which also dealt with reproductive tract infection albeit in chickens! In 2003 I defended my PhD and got a faculty position culminating with a professorship in preventive veterinary microbiology in 2012.</p>
-                                <p>I started collaborating with Morten Rønn Petersen investigating Streptococcus equi subspecies zooepidemicus (S. zoo) as a cause of endometritis in mares in 2007.</p>
-                                <p>It was a fantastic experience to discover that 5-10% of mares of all sorts may have a subclinical endometrial infection caused by S. zoo. Later, with the help of particularly Kristina Lu at the Hagyard Equine Medical Insitute, we were able to demonstrate the negative impact of such a subclinical infection as clearing enabled by bActivate virtually restored the live-foal rates to normal (75-80%) and thus re-vitalized mares that had been given up for breeding.</p>
-                                <p>My current research concerning S. zoo is focused on how this organism can switch back and forth from being actively dividing to the dormant state we see in the subclinically infected mares. Understanding the underlying regulatory events during these processes is key to further knowledge on how S. zoo and the endometrial tissue interact. Professor Bojesen has authored 157+ peer-reviewed publications and was an invited speaker at the International Workshop on Equine Endometritis, Al Shaqab, Qatar (2016).</p>
+                                <p>私は、獣医学の学生時代に感染微生物学の講義を受けて以来、細菌と宿主の相互作用に関心を抱いてきました。2000年に獣医師（DVM）となり、すぐに博士研究を開始しました。その研究もまた生殖器の感染を扱うものでしたが、対象はニワトリでした。2003年に博士号を取得して教員職に就き、2012年に予防獣医微生物学の教授職に至りました。</p>
+                                <p>2007年から、Morten Rønn Petersen博士と協力し、牝馬の子宮内膜炎の原因としての Streptococcus equi subspecies zooepidemicus（S. zoo）の研究を始めました。</p>
+                                <p>あらゆるタイプの牝馬の5〜10%が、S. zoo による無症候性の子宮内膜感染を抱えている可能性があると発見したことは、素晴らしい経験でした。その後、特に Hagyard Equine Medical Institute の Kristina Lu の協力を得て、こうした無症候性感染の悪影響を示すとともに、bActivateによる除去が生存産駒率をほぼ正常な水準（75〜80%）まで回復させ、繁殖をあきらめられていた牝馬をよみがえらせることを実証しました。</p>
+                                <p>S. zoo に関する現在の研究では、この菌が、無症候性感染の牝馬で見られる休眠状態と活発な分裂状態とを、どのように行き来するのかに焦点を当てています。これらの過程における基盤的な制御機構を理解することが、S. zoo と子宮内膜組織がどのように相互作用するかについての知見を深める鍵となります。Bojesen教授は157本以上の査読付き論文を執筆しており、カタール・アルシャカブで開催された International Workshop on Equine Endometritis（2016年）に招待講演者として登壇しました。</p>
                             </div>
                         </div>
                     </div>
@@ -85,9 +85,9 @@ export default function AboutUs() {
                 </div>
             </section>
             <InternalLinks links={[
-                { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate, peer-reviewed evidence' },
-                { to: '/what-is-bactivate', label: 'What is bActivate?', description: 'The science behind dormant bacterial activation' },
-                { to: '/shop', label: 'Order bActivate', description: '€229 per vial, order directly online' },
+                { to: '/studies-effect', label: '臨床研究', description: '受胎率83%、査読付きエビデンス' },
+                { to: '/what-is-bactivate', label: 'bActivateとは？', description: '休眠細菌の活性化の背後にある科学' },
+                { to: '/shop', label: 'bActivateを注文する', description: '1バイアル ¥41,999、オンラインで直接注文' },
             ]} />
         </main>
     );

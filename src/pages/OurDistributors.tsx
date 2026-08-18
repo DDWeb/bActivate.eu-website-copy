@@ -3,12 +3,12 @@ import styles from './OurDistributors.module.css';
 
 export default function OurDistributors() {
     useEffect(() => {
-        document.title = 'bActivate Distributors | Find a Vet in Europe or the US';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Order bActivate through authorised distributors in the US (Hagyard, Midwest Veterinary Supply), UK, Netherlands, Denmark, Australia, and direct from Europe.');
+        document.title = 'bActivate 販売店一覧｜世界各国の獣医用販売店';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivateは、米国（Hagyard、Midwest Veterinary Supply）、英国、オランダ、デンマーク、オーストラリアなど、世界各国の認定販売店を通じてご購入いただけます。');
     }, []);
     const distributors = [
         {
-            region: 'UK',
+            region: '英国（UK）',
             name: 'Nupsala LTD',
             address: ['37 Pate Road, Leicester Road Industrial Estate', 'Melton Mowbray, Leicestershire, LE13 0RG, UK'],
             phone: '+44 (0) 1865 922 227',
@@ -16,7 +16,7 @@ export default function OurDistributors() {
             website: 'https://www.nupsala.com/'
         },
         {
-            region: 'Europe',
+            region: 'ヨーロッパ',
             name: 'Bojesen & Petersen Biotech',
             address: ['Strandboulevarden 23,', 'DK-2100, Copenhagen, Denmark'],
             phone: '+45 60 71 21 69',
@@ -24,7 +24,7 @@ export default function OurDistributors() {
             website: 'https://bactivate.eu/'
         },
         {
-            region: 'The Netherlands',
+            region: 'オランダ',
             name: 'Grovet',
             address: ['Centurionbaan 140', '3769 AV Soesterberg'],
             phone: '+44 142 248 1900',
@@ -32,7 +32,7 @@ export default function OurDistributors() {
             website: 'https://www.grovet.com/en/'
         },
         {
-            region: 'Denmark',
+            region: 'デンマーク',
             name: 'proVET Nordic ApS',
             address: ['Industrivej 5,', '6640 Lunderskov, Danmark'],
             phone: '+45 53 28 29 29',
@@ -40,7 +40,7 @@ export default function OurDistributors() {
             website: 'https://provet.dk/'
         },
         {
-            region: 'USA',
+            region: '米国（USA）',
             name: 'Midwest Veterinary Supply',
             address: ['21467 Holyoke Avenue', 'Lakeville, MN 55044'],
             phone: '1-800-643-9378',
@@ -48,7 +48,7 @@ export default function OurDistributors() {
             website: 'www.midwestvetsupply.com'
         },
         {
-            region: 'USA',
+            region: '米国（USA）',
             name: 'Hagyard Pharmacy',
             address: ['4250 Iron Works Pike,', 'Lexington, KY 40511-8412'],
             phone: '001 859 281 9511',
@@ -56,7 +56,7 @@ export default function OurDistributors() {
             website: 'www.hagyardpharmacy.com'
         },
         {
-            region: 'USA',
+            region: '米国（USA）',
             name: 'Bojesen & Petersen Biotech',
             address: ['961 Cayots Corner Rd', 'Chesapeake City, MD 21915 USA'],
             phone: '+45 23844188',
@@ -64,7 +64,7 @@ export default function OurDistributors() {
             website: 'www.bactivate.eu'
         },
         {
-            region: 'Australia',
+            region: 'オーストラリア',
             name: 'Scone Equine Hospital and Referral Centre',
             address: ['406 Bunnan Road', 'Scone NSW 2337', 'PO Box 280 Scone NSW 2337'],
             phone: '+61 2 6545 1333',
@@ -72,7 +72,7 @@ export default function OurDistributors() {
             website: 'www.sconeequinehospital.com.au/'
         },
         {
-            region: 'Other places',
+            region: 'その他の地域',
             name: 'Bojesen & Petersen Biotech',
             address: ['Strandboulevarden 23,', 'DK-2100, Copenhagen, Denmark'],
             phone: '+45 23844188',
@@ -86,10 +86,10 @@ export default function OurDistributors() {
             <section className={styles.heroSection}>
                 <div className={styles.heroOverlay}></div>
                 <div className={styles.heroContent}>
-                    <div className={styles.eyebrow}>bActivate Around The World</div>
-                    <h1 className={styles.title}>Our distributors</h1>
+                    <div className={styles.eyebrow}>世界のbActivate</div>
+                    <h1 className={styles.title}>販売店一覧</h1>
                     <div className={styles.introText}>
-                        <p>With a deep understanding of the market and a commitment to excellence, bActivate distributors play a crucial role in expanding the brand’s reach. These distributors serve as the bridge between the company and consumers, ensuring that bActivate’s innovative products reach a wide audience.</p>
+                        <p>bActivateの販売店は、市場への深い理解と卓越性への取り組みをもって、ブランドの普及に重要な役割を果たしています。販売店は当社とお客様をつなぐ架け橋として、bActivateの革新的な製品を幅広いお客様のもとへお届けしています。</p>
                     </div>
                 </div>
             </section>
@@ -104,9 +104,9 @@ export default function OurDistributors() {
                                     <strong>{dist.name}</strong>
                                     {dist.address.map((line, i) => <div key={i}>{line}</div>)}
                                     <div className="mt-4">
-                                        <div>Phone: <a href={`tel:${dist.phone}`} className={styles.link}>{dist.phone}</a></div>
-                                        <div>Email: <a href={`mailto:${dist.email}`} className={styles.link}>{dist.email}</a></div>
-                                        <div>Website: <a href={dist.website.startsWith('http') ? dist.website : `https://${dist.website}`} target="_blank" rel="noopener noreferrer" className={styles.link}>{dist.website}</a></div>
+                                        <div>電話: <a href={`tel:${dist.phone}`} className={styles.link}>{dist.phone}</a></div>
+                                        <div>メール: <a href={`mailto:${dist.email}`} className={styles.link}>{dist.email}</a></div>
+                                        <div>ウェブサイト: <a href={dist.website.startsWith('http') ? dist.website : `https://${dist.website}`} target="_blank" rel="noopener noreferrer" className={styles.link}>{dist.website}</a></div>
                                     </div>
                                 </div>
                             </div>
