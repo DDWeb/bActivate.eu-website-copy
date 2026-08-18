@@ -3,71 +3,71 @@ import InternalLinks from '@/components/InternalLinks';
 
 export default function SwabComparison() {
     useEffect(() => {
-        document.title = 'Swab Culture vs Biopsy vs bActivate | Diagnosing Uterine Infection in Mares';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. Compare the diagnostic options for problem mares.');
+        document.title = 'スワブ培養 vs 生検 vs bActivate｜牝馬の子宮内感染を診断する';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', '通常の子宮スワブが見つけられる感染牝馬は約34%、生検は約82%、そのいずれも休眠細菌を見つけられません。不受胎牝馬の診断法を比較します。');
     }, []);
     return (
         <main>
             <section className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <h1 className="text-3xl font-bold mb-4">Swab culture vs biopsy vs bActivate: how do you find a hidden uterine infection?</h1>
-                    <p className="text-gray-700 leading-relaxed mb-8">If your mare keeps coming back empty despite clean swabs, the problem may not be the mare. It may be the test. The three diagnostic options differ enormously in what they can detect, and none of the standard methods can find bacteria that are dormant. Here is the honest comparison, with each figure attributed to the study that reports it.</p>
+                    <h1 className="text-3xl font-bold mb-4">スワブ培養 vs 生検 vs bActivate：隠れた子宮内感染をどう見つけるか</h1>
+                    <p className="text-gray-700 leading-relaxed mb-8">スワブ検査が陰性（clean swab）であるのに牝馬が空胎を繰り返す場合、問題は牝馬ではなく、検査の方にあるのかもしれません。3つの診断法は、検出できるものが大きく異なり、標準的な方法のいずれも休眠状態の細菌を見つけることはできません。以下に、各数値をその出典となる研究とともに示した、公正な比較を掲載します。</p>
 
                     <div className="overflow-x-auto mb-4">
                         <table className="w-full border-collapse text-sm">
                             <thead>
                                 <tr style={{ background: '#901820', color: 'white' }}>
-                                    <th className="text-left p-3">Method</th>
-                                    <th className="text-left p-3">What it detects</th>
-                                    <th className="text-left p-3">Detection of S. zooepidemicus</th>
-                                    <th className="text-left p-3">Finds dormant bacteria?</th>
+                                    <th className="text-left p-3">方法</th>
+                                    <th className="text-left p-3">検出対象</th>
+                                    <th className="text-left p-3">S. zooepidemicus の検出率</th>
+                                    <th className="text-left p-3">休眠細菌を検出できるか</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr className="border-b border-gray-200">
-                                    <td className="p-3 font-bold">Standard swab culture</td>
-                                    <td className="p-3">Actively growing bacteria on the uterine surface</td>
-                                    <td className="p-3">About 34% of infected mares (Nielsen 2005)</td>
-                                    <td className="p-3">No</td>
+                                    <td className="p-3 font-bold">通常のスワブ培養</td>
+                                    <td className="p-3">子宮表面で活発に増殖している細菌</td>
+                                    <td className="p-3">感染牝馬の約34%（Nielsen 2005）</td>
+                                    <td className="p-3">いいえ</td>
                                 </tr>
                                 <tr className="border-b border-gray-200 bg-gray-50">
-                                    <td className="p-3 font-bold">Endometrial biopsy culture</td>
-                                    <td className="p-3">Actively growing bacteria within the tissue sample</td>
-                                    <td className="p-3">About 82% of infected mares (Nielsen 2005)</td>
-                                    <td className="p-3">No</td>
+                                    <td className="p-3 font-bold">子宮内膜生検培養</td>
+                                    <td className="p-3">組織サンプル内で活発に増殖している細菌</td>
+                                    <td className="p-3">感染牝馬の約82%（Nielsen 2005）</td>
+                                    <td className="p-3">いいえ</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
-                                    <td className="p-3 font-bold">bActivate + standard culture</td>
-                                    <td className="p-3">Dormant bacteria, reactivated so any standard culture can find them</td>
-                                    <td className="p-3">64% of treated mares activation-positive vs 8% of saline controls (Petersen 2015, placebo-controlled)</td>
-                                    <td className="p-3">Yes, that is its purpose</td>
+                                    <td className="p-3 font-bold">bActivate＋通常の培養</td>
+                                    <td className="p-3">休眠細菌を再活性化し、通常の培養で検出可能にする</td>
+                                    <td className="p-3">投与群の活性化陽性64% 対 生理食塩水対照群8%（Petersen 2015、プラセボ対照）</td>
+                                    <td className="p-3">はい（それが本来の目的です）</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <p className="text-gray-500 text-sm mb-10">Sources: Nielsen JM, Theriogenology 2005;64:510-518 (swab vs biopsy sensitivity). Petersen MR et al., Veterinary Microbiology 2015;179:119-125, DOI 10.1016/j.vetmic.2015.06.006 (placebo-controlled activation study). The comparisons measure different things and come from different studies; they are shown together as a decision aid, not as a head-to-head trial.</p>
+                    <p className="text-gray-500 text-sm mb-10">出典：Nielsen JM, Theriogenology 2005;64:510-518（スワブと生検の感度）。Petersen MR et al., Veterinary Microbiology 2015;179:119-125, DOI 10.1016/j.vetmic.2015.06.006（プラセボ対照の活性化研究）。これらの比較は、それぞれ異なる項目を、異なる研究から測定したものです。直接比較試験ではなく、判断の助けとして併記しています。</p>
 
-                    <h2 className="text-2xl font-bold mb-3">Why a clean swab does not rule out infection</h2>
-                    <p className="text-gray-700 leading-relaxed mb-6">All culture-based methods depend on bacteria growing. Dormant Streptococcus equi subsp. zooepidemicus sits in a low-metabolic persister state deep in the endometrium, in foci 300 to 500 micrometres below the surface a swab can reach (Petersen et al., Clinical Theriogenology 2009). It does not grow on the plate, so the lab reports a negative, and the mare is bred again on a false all-clear.</p>
+                    <h2 className="text-2xl font-bold mb-3">陰性のスワブでも感染を否定できない理由</h2>
+                    <p className="text-gray-700 leading-relaxed mb-6">培養に基づく方法はすべて、細菌が増殖することを前提としています。休眠状態の Streptococcus equi subsp. zooepidemicus は、低代謝のパーシスター状態で子宮内膜の深部、スワブが届く表面から300〜500マイクロメートル下の病巣に潜んでいます（Petersen et al., Clinical Theriogenology 2009）。細菌は培地上で増殖しないため、検査室は陰性と報告し、牝馬は誤った「異常なし」の判定のもとで再び交配されてしまいます。</p>
 
-                    <h2 className="text-2xl font-bold mb-3">Where bActivate fits</h2>
-                    <p className="text-gray-700 leading-relaxed mb-6">bActivate does not replace your usual diagnostics. It is the step before them: the veterinarian instils 10 ml into the uterus during early oestrus, the growth medium signals dormant bacteria to resume growth, and 48 hours later a standard culture shows what was hiding. From there, everything is familiar practice: the veterinarian identifies the bacteria and prescribes targeted antibiotics, and the mare is bred in the following cycle.</p>
+                    <h2 className="text-2xl font-bold mb-3">bActivate の位置づけ</h2>
+                    <p className="text-gray-700 leading-relaxed mb-6">bActivateは、通常の診断を置き換えるものではありません。それらの<strong>前段階</strong>に位置します。獣医師が発情初期に10 mlを子宮内へ注入すると、培養培地が休眠細菌に増殖再開を促し、48時間後には通常の培養でそれまで隠れていた細菌が明らかになります。そこから先は、いつもの診療と同じです。獣医師が細菌を特定して標的抗菌薬を処方し、牝馬は次のサイクルで交配されます。</p>
 
-                    <h2 className="text-2xl font-bold mb-3">Which method should I ask my veterinarian about?</h2>
-                    <p className="text-gray-700 leading-relaxed mb-2">A practical rule of thumb, to discuss with your veterinarian:</p>
+                    <h2 className="text-2xl font-bold mb-3">どの方法を獣医師に相談すべきか</h2>
+                    <p className="text-gray-700 leading-relaxed mb-2">獣医師と相談する際の、実践的な目安です。</p>
                     <ul className="list-disc pl-6 text-gray-700 leading-relaxed mb-10">
-                        <li><strong>First workup of a mare that failed a cycle or two:</strong> start with standard diagnostics, ideally low-volume lavage or biopsy culture rather than a plain swab.</li>
-                        <li><strong>Problem mare with clean swabs:</strong> repeated negatives plus continued failure to conceive is exactly the profile where dormant infection is likely (70 to 80% of problem mares carry one). This is where activation with bActivate is indicated.</li>
-                        <li><strong>Older mare, previous endometritis, or three or more foals:</strong> each of these risk factors independently predicts a high probability of dormant infection. Consider activation as part of the off-season workup.</li>
+                        <li><strong>1〜2サイクル受胎しなかった牝馬の初回検査：</strong> まずは通常の診断から始めます。単純なスワブよりも、少量子宮洗浄（low-volume lavage）または生検培養が理想的です。</li>
+                        <li><strong>スワブが陰性の不受胎牝馬：</strong> 陰性の繰り返しに加えて受胎しない状態が続くのは、まさに休眠感染が疑われる典型例です（不受胎牝馬の70〜80%が保有）。ここが bActivate による活性化の適応となります。</li>
+                        <li><strong>高齢の牝馬、子宮内膜炎の既往、または3回以上の分娩歴：</strong> これらのリスク因子はいずれも、それぞれ単独で休眠感染の可能性が高いことを示します。オフシーズンの検査の一環として活性化を検討してください。</li>
                     </ul>
                 </div>
             </section>
 
             <InternalLinks links={[
-                { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
-                { to: '/how-to-use', label: 'Veterinary Protocol', description: 'Step-by-step instructions for veterinarians' },
-                { to: '/studies-effect', label: 'Clinical Results', description: '83% pregnancy at Hagyard, 89% at Kildangan' },
-                { to: '/shop', label: 'Order bActivate', description: '€229 per vial, order directly from Europe' },
+                { to: '/when-to-use', label: 'bActivateの使用時期', description: '牝馬に隠れた感染があるサイン' },
+                { to: '/how-to-use', label: '獣医向けプロトコル', description: '獣医師のためのステップ・バイ・ステップ手順' },
+                { to: '/studies-effect', label: '臨床結果', description: 'Hagyardで受胎率83%、Kildanganで89%' },
+                { to: '/shop', label: 'bActivateを注文する', description: '1バイアル ¥41,999、日本へ発送' },
             ]} />
         </main>
     );
