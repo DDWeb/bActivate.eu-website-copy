@@ -117,12 +117,6 @@ const ROUTE_SCHEMAS = {
     },
     'sku': 'bactivate-1-vial',
     '@id': `${BASE_URL}/shop#product`,
-    'review': [
-      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Dr. Kristina Lu, DVM' }, 'reviewBody': 'We incorporated bActivate into our standard reproductive work-up for problem mares at Hagyard. Out of 64 mares that had failed to conceive for at least 3 cycles, 83% became pregnant following bActivate activation and targeted antibiotic treatment.' },
-      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Meta Osborne MVB CertESM MRCVS' }, 'reviewBody': 'We used bActivate on 19 of our most persistent problem mares, horses that had been barren for over a year despite every conventional treatment we tried. 89% of them got in foal. What really opened our eyes was how many had a hidden infection.' },
-      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Charlotte Meldgaard, DVM' }, 'reviewBody': 'This mare lost her foal during delivery and developed a uterine infection resistant to conventional treatment. bActivate confirmed what we suspected, bacteria lying dormant deep in the endometrium, completely invisible to standard diagnostics.' },
-      { '@type': 'Review', 'author': { '@type': 'Person', 'name': 'Maria Borre Nielsen' }, 'reviewBody': 'My biggest problem mare would never get in foal until we used bActivate. Last time we started with this and she was in foal on the very first insemination, instead of the usual 5 or 6 attempts.' },
-    ],
   },
   '/how-to-use': {
     '@context': 'https://schema.org',
