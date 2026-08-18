@@ -50,8 +50,8 @@ Japanese page. Only rename the script back after fully localizing `prerender.mjs
 ## Structure that differs from .eu/.us
 
 - `/tokushoho` — 特定商取引法に基づく表記 (legally required; footer-linked). JP only.
-- `/glossary` and `/affiliate-program` are **React routes** here. On .eu/.us they are static
-  English HTML in `public/`. If those static folders reappear in `public/` on this branch,
+- `/glossary` and `/affiliate-program` are **React routes** here. On .eu they are static
+  English HTML in `public/`; .us has no such pages at all. If those static folders reappear in `public/` on this branch,
   they shadow the SPA routes and serve English — delete them (also from the live docroot;
   deploy copies but never deletes).
 - Legal pages are Japanese-law, not translations: privacy = APPI (個人情報保護法) with a
