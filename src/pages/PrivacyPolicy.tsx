@@ -2,82 +2,82 @@ import { useEffect } from 'react';
 
 export default function PrivacyPolicy() {
     useEffect(() => {
-        document.title = 'Privacy Policy | bActivate';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Privacy policy for bactivate.eu, how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.');
+        document.title = 'プライバシーポリシー｜bActivate';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'bactivate.jp のプライバシーポリシー。Bojesen & Petersen Biotech ApS が個人データをどのように収集・保管・利用するかについて。');
     }, []);
 
     return (
         <main style={{ maxWidth: '800px', margin: '0 auto', padding: '3rem 2rem', lineHeight: 1.8, color: '#333' }}>
-            <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>Privacy Policy</h1>
-            <p style={{ color: '#666', marginBottom: '2rem' }}>Last updated: 9 April 2026</p>
+            <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '0.5rem' }}>プライバシーポリシー</h1>
+            <p style={{ color: '#666', marginBottom: '2rem' }}>最終更新：2026年4月9日</p>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>1. Data Controller</h2>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>1. データ管理者</h2>
                 <p>Bojesen &amp; Petersen Biotech ApS<br />
-                Strandboulevarden 23, 2100 Copenhagen, Denmark<br />
-                VAT: 34690324<br />
-                Email: <a href="mailto:contact@bactivate.eu">contact@bactivate.eu</a><br />
-                Phone: <a href="tel:+4560712169">+45 60 71 21 69</a></p>
+                Strandboulevarden 23, 2100 コペンハーゲン、デンマーク<br />
+                VAT：34690324<br />
+                メール：<a href="mailto:contact@bactivate.eu">contact@bactivate.eu</a><br />
+                電話：<a href="tel:+4560712169">+45 60 71 21 69</a></p>
             </section>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>2. What Data We Collect</h2>
-                <p>We may collect the following personal data:</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>2. 収集するデータ</h2>
+                <p>当社は、以下の個人データを収集する場合があります。</p>
                 <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-                    <li><strong>Email address</strong>, when you sign up for our webinar or newsletter via the contact form on this site.</li>
-                    <li><strong>Name and contact details</strong>, if you contact us directly by email or phone.</li>
-                    <li><strong>Usage data</strong>, anonymised analytics data collected via Google Analytics (page views, session duration, geographic region). No personally identifiable information is stored by Google Analytics without your consent.</li>
+                    <li><strong>メールアドレス</strong>：本サイトのお問い合わせフォームからウェビナーやニュースレターに登録された場合。</li>
+                    <li><strong>氏名・連絡先</strong>：メールや電話で直接ご連絡いただいた場合。</li>
+                    <li><strong>利用データ</strong>：Google Analytics 経由で収集される匿名化された分析データ（ページビュー、セッション時間、地域）。同意なく個人を特定できる情報が Google Analytics に保存されることはありません。</li>
                 </ul>
             </section>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>3. Purpose and Legal Basis</h2>
-                <p>We process your personal data for the following purposes:</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>3. 目的と法的根拠</h2>
+                <p>当社は、以下の目的で個人データを取り扱います。</p>
                 <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-                    <li><strong>Webinar registration / newsletter</strong>, to send you information about bActivate products and upcoming events. Legal basis: consent (GDPR Art. 6(1)(a)).</li>
-                    <li><strong>Customer enquiries</strong>, to respond to your questions and provide product support. Legal basis: legitimate interest (GDPR Art. 6(1)(f)).</li>
-                    <li><strong>Analytics</strong>, to improve the website and understand visitor behaviour. Legal basis: legitimate interest / consent.</li>
+                    <li><strong>ウェビナー登録／ニュースレター</strong>：bActivate 製品や今後のイベントの情報をお送りするため。法的根拠：同意（GDPR 第6条1項(a)）。</li>
+                    <li><strong>お客様からのお問い合わせ</strong>：ご質問への回答と製品サポートのため。法的根拠：正当な利益（GDPR 第6条1項(f)）。</li>
+                    <li><strong>分析</strong>：ウェブサイトの改善と訪問者行動の理解のため。法的根拠：正当な利益／同意。</li>
                 </ul>
             </section>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>4. Data Retention</h2>
-                <p>We retain email addresses collected via the webinar sign-up for as long as you remain subscribed. You may unsubscribe at any time by emailing <a href="mailto:contact@bactivate.eu">contact@bactivate.eu</a>. Customer enquiry data is retained for up to 3 years.</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>4. データの保持</h2>
+                <p>ウェビナー登録で収集したメールアドレスは、購読を継続される限り保持します。配信停止は、<a href="mailto:contact@bactivate.eu">contact@bactivate.eu</a> へメールでお申し出いただければ、いつでも可能です。お問い合わせデータは最大3年間保持します。</p>
             </section>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>5. Third Parties</h2>
-                <p>We share data with the following third-party services where necessary:</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>5. 第三者</h2>
+                <p>当社は、必要な場合に、以下の第三者サービスとデータを共有します。</p>
                 <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-                    <li><strong>HubSpot</strong>, webinar sign-up and email marketing platform.</li>
-                    <li><strong>Google Analytics</strong>, anonymised website analytics.</li>
-                    <li><strong>Google Tag Manager</strong>, tag management.</li>
-                    <li><strong>Affiliatly</strong>, affiliate programme tracking.</li>
+                    <li><strong>HubSpot</strong>：ウェビナー登録・メールマーケティングのプラットフォーム。</li>
+                    <li><strong>Google Analytics</strong>：匿名化されたウェブサイト分析。</li>
+                    <li><strong>Google Tag Manager</strong>：タグ管理。</li>
+                    <li><strong>Affiliatly</strong>：アフィリエイトプログラムのトラッキング。</li>
                 </ul>
-                <p style={{ marginTop: '0.75rem' }}>We do not sell your personal data to third parties.</p>
+                <p style={{ marginTop: '0.75rem' }}>当社は、お客様の個人データを第三者に販売しません。</p>
             </section>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>6. Your Rights</h2>
-                <p>Under GDPR you have the right to:</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>6. お客様の権利</h2>
+                <p>GDPR の下で、お客様には以下の権利があります。</p>
                 <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
-                    <li>Access the personal data we hold about you</li>
-                    <li>Request correction or deletion of your data</li>
-                    <li>Withdraw consent at any time</li>
-                    <li>Object to processing based on legitimate interest</li>
-                    <li>Lodge a complaint with the Danish Data Protection Agency (<a href="https://www.datatilsynet.dk" target="_blank" rel="noopener noreferrer">datatilsynet.dk</a>)</li>
+                    <li>当社が保有するお客様の個人データへのアクセス</li>
+                    <li>データの訂正または削除の請求</li>
+                    <li>いつでも同意を撤回すること</li>
+                    <li>正当な利益に基づく処理への異議申立て</li>
+                    <li>デンマークデータ保護庁（<a href="https://www.datatilsynet.dk" target="_blank" rel="noopener noreferrer">datatilsynet.dk</a>）への苦情申立て</li>
                 </ul>
-                <p style={{ marginTop: '0.75rem' }}>To exercise any of these rights, contact us at <a href="mailto:contact@bactivate.eu">contact@bactivate.eu</a>.</p>
+                <p style={{ marginTop: '0.75rem' }}>これらの権利を行使される場合は、<a href="mailto:contact@bactivate.eu">contact@bactivate.eu</a> までご連絡ください。</p>
             </section>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>7. Cookies</h2>
-                <p>This site uses cookies for analytics (Google Analytics) and affiliate tracking (Affiliatly). By continuing to use this site you consent to the use of these cookies. You may disable cookies in your browser settings at any time.</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>7. クッキー</h2>
+                <p>本サイトは、分析（Google Analytics）およびアフィリエイトのトラッキング（Affiliatly）にクッキーを使用します。本サイトの利用を継続することで、これらのクッキーの使用に同意したものとみなされます。クッキーは、ブラウザの設定でいつでも無効にできます。</p>
             </section>
 
             <section>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>8. Changes to This Policy</h2>
-                <p>We may update this privacy policy from time to time. The date at the top of this page shows when it was last revised. Continued use of the site after any changes constitutes acceptance of the updated policy.</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>8. 本ポリシーの変更</h2>
+                <p>当社は、本プライバシーポリシーを随時更新することがあります。本ページ上部の日付は、最後に改訂した時期を示します。変更後も本サイトの利用を継続された場合、更新後のポリシーに同意したものとみなされます。</p>
             </section>
         </main>
     );
