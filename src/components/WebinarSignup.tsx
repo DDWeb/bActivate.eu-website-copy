@@ -12,16 +12,16 @@ export default function WebinarSignup() {
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     <div className={styles.buttonContent}>
-                        <span className={styles.eyebrow}>Free Expert Webinar</span>
-                        <h2 className={styles.title}>WATCH OUR WEBINAR</h2>
+                        <span className={styles.eyebrow}>無料の専門家ウェビナー</span>
+                        <h2 className={styles.title}>ウェビナーを見る</h2>
                         <p className={styles.description}>
-                            Watch our webinar on diagnosis and treatment of problem mares, now available as a recording.
+                            不受胎牝馬の診断と治療に関する当社のウェビナーが、録画でご覧いただけます。
                         </p>
                         <p className={styles.speakers}>
-                            <strong>Morten Rønn Petersen</strong>, DVM, PhD, Dipl. ACT &amp; <strong>Anders Miki Bojesen</strong>, Professor of Veterinary Microbiology
+                            <strong>Morten Rønn Petersen</strong>（DVM, PhD, Dipl. ACT）＆ <strong>Anders Miki Bojesen</strong>（獣医微生物学教授）
                         </p>
                         <p className={styles.subtitle}>
-                            {isOpen ? 'Close' : 'Click here to watch'}
+                            {isOpen ? '閉じる' : 'こちらをクリックして視聴'}
                         </p>
                     </div>
                     <div className={styles.iconWrapper}>

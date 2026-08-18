@@ -21,21 +21,21 @@ export default function Header() {
                 <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
                     <div className={`${styles.navItem} ${styles.dropdown}`}>
                         <div className={styles.dropdownTrigger}>
-                            Problem mare
+                            不受胎牝馬
                             <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </div>
                         <div className={styles.dropdownMenu}>
-                            <Link to="/what-is-bactivate" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>What is bActivate?</Link>
-                            <Link to="/when-to-use" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>When to use?</Link>
-                            <Link to="/how-to-use" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>How to use?</Link>
+                            <Link to="/what-is-bactivate" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>bActivateとは？</Link>
+                            <Link to="/when-to-use" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>いつ使うか？</Link>
+                            <Link to="/how-to-use" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>どう使うか？</Link>
                         </div>
                     </div>
-                    <Link to="/studies-effect" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Studies & effect</Link>
-                    <Link to="/podcast" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Podcast</Link>
-                    <Link to="/blog" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Blog</Link>
-                    <Link to="/about-us" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About us</Link>
+                    <Link to="/studies-effect" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>研究と効果</Link>
+                    <Link to="/podcast" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>ポッドキャスト</Link>
+                    <Link to="/blog" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>ブログ</Link>
+                    <Link to="/about-us" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>私たちについて</Link>
 
                     <div className={styles.headerRight}>
                         <a
@@ -45,10 +45,10 @@ export default function Header() {
                             className={styles.consultButton}
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Free Consultation
+                            無料相談
                         </a>
                         <Link to="/shop" className={styles.shopButton} onClick={() => setIsMenuOpen(false)}>
-                            SHOP
+                            ショップ
                         </Link>
                     </div>
                 </nav>
@@ -56,7 +56,7 @@ export default function Header() {
                 <button
                     className={styles.mobileMenuBtn}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    aria-label="Toggle menu"
+                    aria-label="メニューを開閉"
                 >
                     {isMenuOpen ? (
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

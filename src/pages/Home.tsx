@@ -7,8 +7,8 @@ import LiteYouTube from '@/components/LiteYouTube';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'bActivate | Diagnose Hidden Infections in Problem Mares';
-    document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate detects hidden uterine infections in problem mares. Used at Hagyard with 83% pregnancy rate. One vial per activation cycle.');
+    document.title = 'bActivate｜不受胎牝馬の隠れた感染を診断';
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivateは、不受胎牝馬の隠れた子宮内感染を検出します。Hagyard（米国ケンタッキー州）で使用され、受胎率83%。活性化サイクルごとに1バイアル。');
   }, []);
   return (
     <main>
@@ -17,13 +17,13 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.heroFlex}>
             <div className={styles.heroText}>
-              <div className={styles.heroEyebrow}>Facilitate mare pregnancy</div>
+              <div className={styles.heroEyebrow}>牝馬の妊娠をサポート</div>
               <h1 className={styles.heroTitle}>
-                Problem getting your mare in foal? <br />
-                bActivate finds the infection swabs miss.
+                牝馬がなかなか受胎しませんか？ <br />
+                bActivateは、スワブでは見逃される感染を見つけます。
               </h1>
               <p className={styles.heroSubtitle}>
-                70-80% of all problem mares carry a hidden uterine infection with a clear negative effect on fertility. bActivate activates the dormant infections that standard tests miss, so your veterinarian can treat them and give barren mares a second chance.
+                不受胎牝馬の70〜80%が、受胎に明らかな悪影響を及ぼす隠れた子宮内感染を抱えています。bActivateは、標準的な検査では見逃される休眠感染を活性化するので、獣医師がそれを治療し、不妊の牝馬に二度目のチャンスを与えることができます。
               </p>
             </div>
             <div className={styles.heroSilhouette}>
@@ -50,12 +50,12 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.howItWorksGrid}>
             <div className={styles.howItWorksText}>
-              <h2 className={styles.sectionHeadingSmall}>How bActivate works?</h2>
+              <h2 className={styles.sectionHeadingSmall}>bActivateの仕組み</h2>
               <p className={styles.description}>
-                Dormant bacteria are difficult to diagnose by standard techniques and highly tolerant to antibiotic. Efficient handling thus requires re-activation of the bacteria. This can be achieved by instillation of bActivate, a bacterial growth medium, into the uterus.
+                休眠細菌は通常の手法では診断が難しく、抗菌薬が効きにくい状態（薬剤寛容）にあります。効率的に対処するには細菌の再活性化が必要です。これは、細菌培養培地であるbActivateを子宮内に注入することで実現できます。
               </p>
               <Link to="/how-to-use" className={styles.btnRedSquare}>
-                READ MORE
+                もっと読む
               </Link>
             </div>
             <div className={styles.howItWorksVideo}>
@@ -72,12 +72,12 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.whatIsHeader}>
             <div className={styles.eyebrowRed}>bActivate</div>
-            <h2 className={styles.sectionTitleLarge}>What is bActivate?</h2>
+            <h2 className={styles.sectionTitleLarge}>bActivateとは？</h2>
             <p className={styles.description}>
-              bActivate is a bacterial growth medium capable of re-activating dormant streptococcal infections in the uterus of brood mares.
+              bActivateは、繁殖牝馬の子宮内で休眠したレンサ球菌感染を再活性化できる、細菌培養培地です。
             </p>
             <Link to="/what-is-bactivate" className={styles.btnRedSquare}>
-              READ MORE
+              もっと読む
             </Link>
           </div>
         </div>
@@ -92,13 +92,13 @@ export default function Home() {
               <img src="/images/3_82.jpg" alt="Mare 2" width={400} height={300} className={styles.featureImg} loading="lazy" />
             </div>
             <div className={styles.featureTextSide}>
-              <div className={styles.eyebrowRed}>Application</div>
-              <h2 className={styles.sectionTitleLarge}>When to use?</h2>
+              <div className={styles.eyebrowRed}>用途</div>
+              <h2 className={styles.sectionTitleLarge}>いつ使うか？</h2>
               <p className={styles.description}>
-                5-15% of all mares are not pregnant at the end of the breeding season, despite fertilised stallions and supervised by experienced veterinarians.
+                全牝馬の5〜15%が、繁殖能力のある種牡馬と交配し、経験豊富な獣医師の管理下にあったにもかかわらず、繁殖シーズンの終わりまでに受胎しません。
               </p>
               <Link to="/when-to-use" className={styles.btnRedSquare}>
-                READ MORE
+                もっと読む
               </Link>
             </div>
           </div>
@@ -110,13 +110,13 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.featureGridTwoImagesReversed}>
             <div className={styles.featureTextSide}>
-              <div className={styles.eyebrowRed}>Application</div>
-              <h2 className={styles.sectionTitleLarge}>How to use?</h2>
+              <div className={styles.eyebrowRed}>用途</div>
+              <h2 className={styles.sectionTitleLarge}>どう使うか？</h2>
               <p className={styles.description}>
-                bActivate is to be used in mares with reduced uterine defense mechanisms and in mares suspected of having a chronic subclinical infection.
+                bActivateは、子宮の防御機構が低下した牝馬、および慢性・無症候性の感染が疑われる牝馬に使用します。
               </p>
               <Link to="/how-to-use" className={styles.btnRedSquare}>
-                READ MORE
+                もっと読む
               </Link>
             </div>
             <div className={styles.twoImagesGroup}>
@@ -132,13 +132,13 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.productsFlex}>
             <div className={styles.productsText}>
-              <div className={styles.eyebrowRed}>Shop</div>
-              <h2 className={styles.sectionTitleLarge}>Our products</h2>
+              <div className={styles.eyebrowRed}>ショップ</div>
+              <h2 className={styles.sectionTitleLarge}>製品について</h2>
               <p className={styles.description}>
-                The concept behind bActivate (promoting bacterial-activation) was discovered by Morten Rønn Petersen, DVM, PhD and Professor Anders Miki Bojesen, DVM, PhD.
+                bActivateの基盤となる概念（細菌の活性化を促す仕組み）は、Morten Rønn Petersen博士（DVM, PhD）と Anders Miki Bojesen教授（DVM, PhD）によって発見されました。
               </p>
               <Link to="/shop" className={styles.btnRedSmall}>
-                SHOP
+                ショップ
               </Link>
             </div>
           </div>
@@ -149,12 +149,12 @@ export default function Home() {
       <section className={styles.menBehindFullSection}>
         <div className={styles.container}>
           <div className={styles.menBehindContent}>
-            <h2 className={styles.menBehindTitle}>The Men Behind bActivate</h2>
+            <h2 className={styles.menBehindTitle}>bActivateを生み出した人々</h2>
             <p className={styles.menBehindText}>
-              Ten percent of all mares struggle to get in foal. Now two Danish researchers have identified what might be wrong and produced a product, which can facilitate diagnostics. Veterinarians at the world's largest equine hospital in Kentucky have successfully tested the product.
+              全牝馬の10%が受胎に苦労しています。いま、2人のデンマークの研究者が、その原因かもしれないものを特定し、診断を助ける製品を生み出しました。米国ケンタッキー州にある世界最大の馬病院の獣医たちが、この製品の試験に成功しています。
             </p>
             <Link to="/about-us" className={styles.btnWhiteSolid}>
-              READ MORE ABOUT US
+              私たちについてもっと読む
             </Link>
           </div>
         </div>
