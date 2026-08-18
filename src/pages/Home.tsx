@@ -80,7 +80,7 @@ export default function Home() {
             </div>
             <div className={styles.howItWorksVideo}>
               <div className={styles.videoContainer}>
-                <LiteYouTube id="_1QPkyXkFgs" title="bActivate - Facilitate Mare Pregnancy" className={styles.video} />
+                <LiteYouTube id="_1QPkyXkFgs" title="bActivate - Facilitate Mare Pregnancy" className={styles.video} poster="/images/video-cover.jpg" />
               </div>
             </div>
           </div>

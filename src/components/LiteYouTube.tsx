@@ -3,7 +3,7 @@ import { useState } from 'react';
 // Click-to-load YouTube facade: shows the video thumbnail until the user
 // clicks play, then swaps in the real iframe. Saves ~860 KB of player JS
 // per embed on initial page load.
-export default function LiteYouTube({ id, title, className }: { id: string; title: string; className?: string }) {
+export default function LiteYouTube({ id, title, className, poster }: { id: string; title: string; className?: string; poster?: string }) {
     const [active, setActive] = useState(false);
 
     if (active) {
@@ -28,12 +28,13 @@ export default function LiteYouTube({ id, title, className }: { id: string; titl
             style={{ position: 'relative', display: 'block', width: '100%', height: '100%', padding: 0, border: 'none', cursor: 'pointer', background: '#000', overflow: 'hidden' }}
         >
             <img
-                src={`https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
+                src={poster ?? `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
                 alt={title}
                 loading="lazy"
-                // maxresdefault is 1280x720 and natively 16:9. Not every video has
-                // one, so fall back to the 480x360 hqdefault when it is missing.
-                onError={(e) => {
+                // Without a poster we use YouTube's own still. maxresdefault is
+                // 1280x720 and natively 16:9; not every video has one, so fall
+                // back to the 480x360 hqdefault when it is missing.
+                onError={poster ? undefined : (e) => {
                     const img = e.currentTarget;
                     if (!img.dataset.fallback) {
                         img.dataset.fallback = '1';
