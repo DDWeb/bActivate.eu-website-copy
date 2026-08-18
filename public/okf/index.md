@@ -37,7 +37,7 @@ with ordinary markdown links.
 ## Key facts
 
 - bActivate is a **diagnostic** medium, not a treatment. Every test returns a clear positive or negative result.
-- Lead outcome: **70 percent foaling rate**, **83 percent pregnancy rate** (Hagyard, n=64, peer-reviewed).
+- Lead outcome: **70 percent foaling rate**, **83 percent pregnancy rate** (Hagyard, n=64, conference abstract, no placebo group).
 - Proof of mechanism: **64 percent activation** with bActivate versus **8 percent** with PBS control (n=37, PMID 26123371).
 - Prevalence context: **47 percent** of problem mares in the Hagyard study carried dormant Strep that standard culture missed.
 - Regulatory status: registered veterinary product in the USA (with US patent); positioned as a diagnostic tool in the EU.

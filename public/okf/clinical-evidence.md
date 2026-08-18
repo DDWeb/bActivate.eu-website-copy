@@ -1,7 +1,7 @@
 ---
 type: evidence
 name: bActivate Clinical Evidence
-description: Peer-reviewed and clinical data on bActivate, including the Hagyard n=64 outcome study and the n=37 proof-of-mechanism study.
+description: Clinical outcome data and peer-reviewed mechanism data on bActivate, including the Hagyard n=64 outcome study and the n=37 proof-of-mechanism study.
 last_updated: 2026-06-13
 sources:
   - https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf
@@ -11,8 +11,9 @@ canonical_url: https://bactivate.eu/studies-effect
 
 # Clinical Evidence
 
-The evidence for bActivate spans a peer-reviewed outcome study, a peer-reviewed
-proof-of-mechanism study, and internal clinical data from a commercial stud.
+The evidence for bActivate spans an outcome study published as a conference
+abstract, a peer-reviewed proof-of-mechanism study, and internal clinical data
+from a commercial stud.
 The strongest buying signal for breeders is the fertility outcome: in the
 Hagyard study of 64 problem mares, mares managed with the bActivate workflow
 reached a 70 percent foaling rate and an 83 percent pregnancy rate, compared
@@ -20,7 +21,8 @@ with a historic baseline of 15 to 50 percent for problem mares.
 
 ## Hagyard outcome study (n=64)
 
-Petersen and Bojesen, *Clinical Theriogenology* 2014, 6(3):313-314. Sixty-four
+Petersen and Bojesen, *Clinical Theriogenology* 2014, 6(3):313-314 (two-page
+conference abstract, not a peer-reviewed article). Sixty-four
 mares barren for three or more cycles were included at Hagyard Equine Medical
 Institute, with Dr. Kristina Lu as clinical lead. All three figures below come
 from this single study:

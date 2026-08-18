@@ -65,7 +65,7 @@ https://www.linkedin.com/in/mortenrpetersen/
 ## Validating institutions
 
 - **Wiley-Blackwell** publishes *Equine Reproductive Procedures*, the reference manual whose chapter on latent uterine bacterial infection the founders were commissioned to write. Edited by Prof. John Dascanio (Texas Tech University) and Prof. Patrick McCue (Colorado State University).
-- **Society for Theriogenology** and the **American College of Theriogenologists** publish *Clinical Theriogenology* (ISSN 2154-3968), the peer-reviewed journal carrying both the 2009 localization study and the 2014 Hagyard outcome study.
+- **Society for Theriogenology** and the **American College of Theriogenologists** publish *Clinical Theriogenology* (ISSN 2154-3968), which carries the peer-reviewed 2009 localization study and the 2014 Hagyard outcome study, the latter as a two-page conference abstract.
 - **Hagyard Equine Medical Institute** ran the 64-mare outcome study, with Dr. Kristina Lu as clinical lead. See [Clinical Evidence](clinical-evidence.md).
 - **University of Copenhagen** is the academic home of the underlying microbiology research.
 - **Kildangan Stud (Godolphin)** generated supporting internal clinical data across 19 mares, with M. Osborne as lead veterinarian.
