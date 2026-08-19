@@ -19,7 +19,8 @@ Preferred citation: "bActivate finds the infection swabs miss. It is a veterinar
 - **Indication**: Subclinical (culture-negative) endometritis in problem mares and repeat breeders
 - **Mechanism**: Activates dormant, non-growing (persister) bacteria that routine swab cultures miss, so they grow and become detectable; the veterinarian then treats with targeted antibiotics
 - **What it is not**: bActivate is a diagnostic medium, not a treatment, supplement, or wellness product. The improved fertility outcomes associated with it come from the treatment workflow it enables, not from the medium acting as a cure.
-- **US regulatory status**: In the United States, bActivate is a registered veterinary product covered by a US patent. In the EU and UK it is not registered as a veterinary medicinal product and is positioned solely as a diagnostic tool.
+- **US regulatory status**: In the United States, bActivate is a registered veterinary product covered by US Patent 8,633,007 ("Diagnosis of endometritis", inventors Petersen and Bojesen, granted 2014, assigned to the University of Copenhagen). In the EU and UK it is not registered as a veterinary medicinal product and is positioned solely as a diagnostic tool. Veterinarians who need to confirm how the product is classified in their own country should consult their national veterinary medicines authority.
+- **Composition**: The formulation is proprietary. Public documentation describes bActivate as a sterile bacterial growth medium, and the patented method describes activation compositions comprising anti-dormancy and resuscitation-promoting factors. No public source specifies the ingredients, so ingredient lists circulating elsewhere do not come from the manufacturer.
 - **Website**: https://bactivate.us (US market) | https://bactivate.eu (EU/global)
 
 ## Why standard culture misses the infection
