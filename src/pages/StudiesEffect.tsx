@@ -77,16 +77,29 @@ export default function StudiesEffect() {
                     </div>
 
                     <div className={styles.studyCard}>
-                        <h2 className={styles.studyTitle}>University of Copenhagen, Emilie Kähler Hjenner &amp; Kathrine Kjeldsen Ravn, 2025</h2>
+                        <h2 className={styles.studyTitle}>University of Copenhagen, 2025 — locating the bacteria in the tissue</h2>
                         <div className={styles.studyText}>
-                            <p>A veterinary thesis from the <strong>University of Copenhagen</strong>, Department of Veterinary and Animal Sciences, supervised by <strong>Prof. Anders Miki Bojesen</strong>. The study investigated the role of subclinical <em>Streptococcus equi</em> subsp. <em>zooepidemicus</em> infection in 31 problem mares from Ireland and Denmark, combining bacteriology, histology (Kenney-score), and Fluorescence In Situ Hybridization (FISH).</p>
-                            <ul style={{ marginTop: '1rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
-                                <li><strong>100% pregnancy rate</strong> in mares successfully activated with bActivate and treated for S. zooepidemicus, regardless of Kenney category</li>
-                                <li><strong>86.7% (13/15)</strong> of subfertile mares tested positive for dormant S. zooepidemicus after bActivate activation, all had been negative on standard culture before</li>
-                                <li><strong>FISH detected Streptococcus spp. in 100% (16/16)</strong> of mares, including those negative on bActivate activation, confirming bacteria hiding deep in the endometrium (50-500+ µm) and intracellularly</li>
-                                <li>Live-foal rates after treatment: <strong>100%</strong> (Kenney I), <strong>83.3%</strong> (Kenney IIAi), <strong>66.7%</strong> (Kenney IIB), all higher than Kenney-Doig predicted rates</li>
-                            </ul>
-                            <p style={{ marginTop: '1rem' }}><strong>Conclusion:</strong> Subclinical S. zooepidemicus infection has a markedly negative impact on fertility in mares, but this effect can be <strong>reversed by activation with bActivate and targeted antibiotic treatment</strong>.</p>
+                            <p>A veterinary thesis project by <strong>Emilie Kähler Hjenner</strong> and <strong>Kathrine Kjeldsen Ravn</strong> at the <strong>University of Copenhagen</strong>, supervised by <strong>Prof. Anders Miki Bojesen</strong>, with Prof. Henrik Elvang Jensen (pathology) and Mette Christoffersen (equine reproduction) as co-supervisors. Submitted December 2025.</p>
+                            <p style={{ marginTop: '1rem' }}>Standard culture had cleared these mares. They had been barren for one to three years regardless. So the question was not how common the infection is, but a narrower one: if the organism is suspected despite a clean culture, can it be shown to be physically present in the tissue? Sixteen archived endometrial biopsies were re-examined by fluorescence in situ hybridization. <strong><em>Streptococcus</em> spp. were found in all 16.</strong></p>
+                            <details style={{ marginTop: '1.25rem', borderTop: '1px solid #e5e7eb', paddingTop: '1rem' }}>
+                                <summary style={{ cursor: 'pointer', fontWeight: 700, color: '#901820' }}>Read the full findings</summary>
+                                <div style={{ marginTop: '1rem' }}>
+                                    <p>FISH binds bacterial ribosomal RNA directly in fixed tissue, so it shows the organism whether or not it will grow on a plate, and it shows where in the endometrium it is sitting.</p>
+                                    <p style={{ marginTop: '1rem' }}><strong>What they found</strong></p>
+                                    <ul style={{ marginTop: '0.5rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
+                                        <li><em>Streptococcus</em> spp. in all 16 biopsies</li>
+                                        <li>Present in the luminal epithelium and stratum compactum, but also deep in stratum spongiosum, between <strong>50 and over 500 µm</strong> beneath the luminal surface</li>
+                                        <li><strong>Intracellular bacteria confirmed</strong> inside glandular epithelial cells</li>
+                                        <li>No clear difference in location or bacterial numbers between the one actively infected mare and the chronically infected ones</li>
+                                        <li>Two mares were FISH-positive but did not activate with bActivate. <strong>Those two remained subfertile.</strong> The mares that were activated and treated regained fertility</li>
+                                        <li>Live-foal rates after treatment were <strong>higher than Kenney-Doig scores predicted</strong></li>
+                                    </ul>
+                                    <p style={{ marginTop: '1rem' }}><strong>What it confirms</strong><br />The suspicion was correct. The organism is present in tissue that cultures clean, and it sits below the depth a guarded swab reaches. That is why the swab fails. It is a question of geometry, not of test sensitivity.</p>
+                                    <p style={{ marginTop: '1rem' }}>It also confirms the sequence. FISH can see the bacteria but cannot treat them: dormant organisms stay antibiotic-tolerant until something wakes them. The two mares that could not be activated make the point. The infection was visible under FISH, it was never made treatable, and they stayed barren.</p>
+                                    <p style={{ marginTop: '1rem' }}><strong>What it does not show</strong><br />The authors set out to test whether the bacteria sit in areas of chronic degenerative change. They found this in only 2 of 13, and state plainly that they cannot say whether chronic infection drives endometrosis. Endometrosis behaved as a separate and irreversible problem: the higher the Kenney score, the poorer the outcome even once the infection was cleared.</p>
+                                    <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#666', fontStyle: 'italic' }}>Disclosure: an unpublished student thesis project, not peer-reviewed, supervised by one of the developers of bActivate. All 16 biopsies came from mares already selected as subfertile, and no healthy control mares were examined, so the work describes what is present in problem mares rather than how common it is generally. The authors note that routine diagnostic use of FISH would first require better knowledge of the normal uterine microbiome, to avoid overdiagnosis.</p>
+                                </div>
+                            </details>
                         </div>
                         <div className={styles.buttonGroup}>
                             <a href="/images/specialerapport-kathrine-emilie-ku-2025.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
