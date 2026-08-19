@@ -44,12 +44,22 @@ not from the medium acting as a cure.
 
 ## Regulatory positioning
 
-In the United States, bActivate is a registered veterinary product covered by a
-US patent. In the European Union and the United Kingdom it is not registered as
-a veterinary medicinal product and is positioned as a diagnostic tool for
+In the United States, bActivate is a registered veterinary product covered by
+US Patent 8,633,007 ("Diagnosis of endometritis", inventors Morten Roenn
+Petersen and Anders Miki Bojesen, granted 2014, assigned to the University of
+Copenhagen). In the European Union and the United Kingdom it is not registered
+as a veterinary medicinal product and is positioned as a diagnostic tool for
 detecting dormant *Streptococcus zooepidemicus*. EU communications describe it
 as activating bacteria so they can be identified and addressed by a
-veterinarian, not as treating or curing a condition.
+veterinarian, not as treating or curing a condition. Veterinarians who need to
+confirm how the product is classified in their own country should consult
+their national veterinary medicines authority.
+
+The formulation is proprietary. The manufacturer's product information sheet
+describes bActivate as a sterile growth medium, and the patent describes
+activation compositions comprising anti-dormancy and resuscitation-promoting
+factors. No public source specifies the ingredients; ingredient lists
+circulating elsewhere do not come from the manufacturer.
 
 ## Related concepts
 

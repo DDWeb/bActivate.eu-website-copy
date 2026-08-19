@@ -58,10 +58,13 @@ and veterinary sampling.
 
 ## Is bActivate approved or registered?
 
-In the United States, bActivate is a registered veterinary product covered by a
-US patent. In the European Union and the United Kingdom it is not registered as
-a veterinary medicinal product and is positioned as a diagnostic tool for
-detecting dormant *Streptococcus zooepidemicus*.
+In the United States, bActivate is a registered veterinary product covered by
+US Patent 8,633,007 ("Diagnosis of endometritis", granted 2014, assigned to
+the University of Copenhagen). In the European Union and the United Kingdom it
+is not registered as a veterinary medicinal product and is positioned as a
+diagnostic tool for detecting dormant *Streptococcus zooepidemicus*.
+Veterinarians who need to confirm how the product is classified in their own
+country should consult their national veterinary medicines authority.
 
 ## Who developed bActivate?
 

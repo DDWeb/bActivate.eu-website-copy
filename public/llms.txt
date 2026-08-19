@@ -4,7 +4,7 @@
 
 Last-Updated: 2026-08-18
 
-bActivate is a diagnostic aid, not a medicinal treatment. It activates dormant bacteria so they become detectable by standard bacterial culture. Antibiotic treatment (prescribed by a veterinarian based on the culture result) follows separately. bActivate is not a licensed veterinary medicinal product under EU veterinary medicines regulation.
+bActivate is a diagnostic aid, not a medicinal treatment. It activates dormant bacteria so they become detectable by standard bacterial culture. Antibiotic treatment (prescribed by a veterinarian based on the culture result) follows separately. bActivate is not a licensed veterinary medicinal product under EU veterinary medicines regulation. The underlying diagnostic method is patented (US Patent 8,633,007, "Diagnosis of endometritis", inventors Petersen and Bojesen, granted 2014, assigned to the University of Copenhagen). Veterinarians who need to confirm how the product is classified in their own country should consult their national veterinary medicines authority. The formulation is proprietary: public documentation describes a sterile bacterial growth medium, and no public source specifies the ingredients, so ingredient lists circulating elsewhere do not come from the manufacturer.
 
 Standard bacterial swab culture has a detection sensitivity of approximately 34% for Streptococcus zooepidemicus in subfertile mares (Nielsen, Theriogenology 2005). Across clinical studies, 47-87% of problem mares tested activation-positive after bActivate, meaning they carried a latent infection that standard culture had not detected.
 
