@@ -77,16 +77,29 @@ export default function StudiesEffect() {
                     </div>
 
                     <div className={styles.studyCard}>
-                        <h2 className={styles.studyTitle}>University of Copenhagen, Emilie Kähler Hjenner &amp; Kathrine Kjeldsen Ravn, 2025</h2>
+                        <h2 className={styles.studyTitle}>コペンハーゲン大学（2025年）：細菌は子宮内膜のどこにいるのか</h2>
                         <div className={styles.studyText}>
-                            <p><strong>コペンハーゲン大学</strong>獣医・動物科学部の獣医学位論文で、<strong>Anders Miki Bojesen教授</strong>の指導のもとで実施されました。本研究は、アイルランドとデンマークの31頭の不受胎牝馬における無症候性 <em>Streptococcus equi</em> subsp. <em>zooepidemicus</em> 感染の役割を、細菌学・組織学（Kenneyスコア）・蛍光in situ ハイブリダイゼーション（FISH）を組み合わせて調査しました。</p>
-                            <ul style={{ marginTop: '1rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
-                                <li>bActivateで活性化に成功し、S. zooepidemicus の治療を受けた牝馬で、Kenney分類にかかわらず<strong>受胎率100%</strong></li>
-                                <li><strong>低受胎性（subfertile）</strong>の牝馬の<strong>86.7%（13/15）</strong>が、bActivate活性化後に休眠 S. zooepidemicus 陽性となった（いずれも活性化前は通常の培養で陰性）</li>
-                                <li><strong>FISHにより100%（16/16）</strong>の牝馬で Streptococcus spp. が検出され、bActivate活性化で陰性だった牝馬も含めて、細菌が子宮内膜の深部（50〜500µm超）および細胞内に潜んでいることが確認された</li>
-                                <li>治療後の生存産駒率：<strong>100%</strong>（Kenney I）、<strong>83.3%</strong>（Kenney IIAi）、<strong>66.7%</strong>（Kenney IIB）——いずれも Kenney–Doig の予測率を上回った</li>
-                            </ul>
-                            <p style={{ marginTop: '1rem' }}><strong>結論：</strong> 無症候性 S. zooepidemicus 感染は牝馬の受胎性に著しい悪影響を及ぼしますが、その影響は<strong>bActivateによる活性化と標的抗菌薬治療によって回復させることができます</strong>。</p>
+                            <p><strong>コペンハーゲン大学</strong>における<strong>Emilie Kähler Hjenner</strong>氏および<strong>Kathrine Kjeldsen Ravn</strong>氏の獣医学位論文プロジェクトです。指導教員は<strong>Anders Miki Bojesen教授</strong>、副指導教員はHenrik Elvang Jensen教授（病理学）およびMette Christoffersen氏（馬繁殖学）。2025年12月提出。</p>
+                            <p style={{ marginTop: '1rem' }}>対象となった牝馬は、通常の培養検査ではいずれも陰性でした。それにもかかわらず、1〜3年にわたり不受胎が続いていました。したがって本研究の問いは「感染がどれくらい多いか」ではなく、より限定的なものでした。培養が陰性であっても感染が疑われる場合、その菌が組織内に実際に存在することを示せるか、という問いです。保存されていた子宮内膜生検16検体を蛍光in situハイブリダイゼーション（FISH）で再検討しました。<strong>16検体すべてで Streptococcus spp. が検出されました。</strong></p>
+                            <details style={{ marginTop: '1.25rem', borderTop: '1px solid #e5e7eb', paddingTop: '1rem' }}>
+                                <summary style={{ cursor: 'pointer', fontWeight: 700, color: '#901820' }}>詳細な結果を読む</summary>
+                                <div style={{ marginTop: '1rem' }}>
+                                    <p>FISHは固定組織中の細菌リボソームRNAに直接結合します。このため、菌が培地上で増殖するか否かにかかわらずその存在を示し、さらに子宮内膜のどの部位に存在するかを明らかにします。</p>
+                                    <p style={{ marginTop: '1rem' }}><strong>得られた所見</strong></p>
+                                    <ul style={{ marginTop: '0.5rem', paddingLeft: '1.25rem', listStyleType: 'disc', lineHeight: 1.8 }}>
+                                        <li>16検体すべてで Streptococcus spp. を検出</li>
+                                        <li>管腔上皮および緻密層（stratum compactum）に加え、海綿層（stratum spongiosum）の深部、管腔表面から<strong>50〜500µm超</strong>の深さにも存在</li>
+                                        <li><strong>腺上皮細胞内の細胞内寄生を確認</strong></li>
+                                        <li>活動性感染を有する1頭と慢性感染の牝馬との間で、菌の局在および菌数に明らかな差は認められませんでした</li>
+                                        <li>2頭はFISH陽性でありながらbActivateで活性化しませんでした。<strong>この2頭は不受胎のままでした。</strong>活性化され治療を受けた牝馬は受胎能を回復しています</li>
+                                        <li>治療後の生存産駒率は<strong>Kenney–Doigの予測値を上回りました</strong></li>
+                                    </ul>
+                                    <p style={{ marginTop: '1rem' }}><strong>確認できたこと</strong><br />疑いは正しかったということです。培養では陰性となる組織に菌は存在しており、しかもガード付きスワブが到達できる深さより深部に位置していました。スワブが見逃す理由は検査感度ではなく、到達する深さの問題です。</p>
+                                    <p style={{ marginTop: '1rem' }}>手順の順序についても裏づけが得られました。FISHは菌を可視化できますが、治療はできません。休眠状態の菌は、何らかの刺激で目覚めるまで抗菌薬に耐性を示し続けます。活性化できなかった2頭がそれを示しています。FISHでは感染が見えていたにもかかわらず、治療可能な状態にはならず、不受胎のままでした。</p>
+                                    <p style={{ marginTop: '1rem' }}><strong>確認できなかったこと</strong><br />著者らは、菌が慢性退行性変化の部位に一致して存在するかどうかも検証しました。しかし該当したのは13例中2例のみで、慢性感染が子宮内膜症（endometrosis）を引き起こすかどうかについては結論できないと明記しています。子宮内膜症は別個の不可逆的な問題として現れ、Kenneyスコアが高いほど、感染を除去した後でも成績は不良でした。</p>
+                                    <p style={{ marginTop: '1rem', fontSize: '0.875rem', color: '#666', fontStyle: 'italic' }}>【開示事項】本研究は未発表の学位論文プロジェクトであり、査読を経た論文ではありません。また指導教員はbActivateの開発者の一人です。16検体はいずれも不受胎と判断された牝馬に由来し、健常な対照牝馬は検査されていません。したがって本結果は不受胎牝馬に何が存在するかを示すものであり、一般集団における頻度を示すものではありません。著者らは、FISHを日常的な診断に用いるには、過剰診断を避けるため、まず正常な子宮内細菌叢についての知見が必要であると述べています。</p>
+                                </div>
+                            </details>
                         </div>
                         <div className={styles.buttonGroup}>
                             <a href="/images/specialerapport-kathrine-emilie-ku-2025.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">資料を見る</a>
