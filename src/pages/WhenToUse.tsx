@@ -41,7 +41,7 @@ export default function WhenToUse() {
                                 </div>
 
                                 <div className={styles.videoContainer}>
-                                    <LiteYouTube id="sVS0kj84lMA" title="When to use bActivate" />
+                                    <LiteYouTube id="sVS0kj84lMA" title="When to use bActivate" className={styles.videoFill} />
                                 </div>
                             </div>
                         </div>
