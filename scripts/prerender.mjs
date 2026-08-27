@@ -95,6 +95,204 @@ const ROUTE_SCHEMAS = {
       },
     ],
   },
+  '/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a biofilm in a mare's uterus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A community of bacteria, most often Streptococcus equi subspecies zooepidemicus, that settles on the surface of the uterine lining and builds a protective slime layer around itself. The layer shields the bacteria from the immune system and from antibiotics, which is why biofilm infections persist across seasons."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does acetylcysteine cure a biofilm infection in the uterus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It breaks up biofilm on the surface of the lining, and that is all it does. It does not reach bacteria inside the tissue and it does not wake dormant bacteria. This is why a mare can improve after a biofilm treatment, get in foal, and then fail again the following season."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a biofilm the same as a dormant infection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The biofilm sits on the surface. The dormant infection sits in the tissue itself, where imaging research has located the bacteria 300 to 500 micrometres beneath the surface (Clinical Theriogenology, 2009). The two can coexist, and clearing the surface leaves the reservoir in the tissue untouched."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do antibiotics fail against biofilm and dormant bacteria?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most antibiotics only kill bacteria that are actively dividing. Bacteria in a biofilm divide slowly, and dormant bacteria hardly at all, so both tolerate even high antibiotic concentrations (Equine Reproductive Procedures, 2nd edition, 2021). Treatment works once the bacteria are back in active growth and identified by culture."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What actually clears the infection a biofilm hides?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The dormant reservoir has to be made detectable first. In a placebo-controlled study, activation with bActivate made the bacteria culturable in 64% of treated mares against 8% of saline controls (Veterinary Microbiology, 2015). The veterinarian can then treat the now-active infection with targeted antibiotics."
+        }
+      }
+    ]
+  },
+  '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can a mare have a uterine infection even if her swab is clean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A standard swab culture detects only about 34% of infected mares, against 82% for a biopsy culture (Nielsen, Theriogenology 2005). The bacteria most often responsible sit deep in the uterine lining and can be dormant, so they never reach the swab and do not grow on the plate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How accurate is a uterine swab culture in mares?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It finds roughly one infected mare in three. The swab samples a small patch of the surface, while the infection often sits deeper in the tissue. A clean swab narrows the search but does not end it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which test finds the infections a swab misses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A biopsy or a low-volume lavage samples far more of the uterus than a swab. For dormant bacteria, no culture method is enough on its own, because culture depends on growth. Activation before culture revealed the bacteria in 64% of treated mares versus 8% of controls (Veterinary Microbiology, 2015)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "My mare's swab is clean but she is still not in foal. What now?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ask your veterinarian about a biopsy or lavage instead of another surface swab, and about activation before the next culture. An estimated 70 to 80% of mares still open at the end of the season carry a hidden infection that standard culture misses."
+        }
+      }
+    ]
+  },
+  '/blog/bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why did antibiotics not cure my mare's uterine infection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most likely because the bacteria were dormant. Antibiotics kill bacteria that are actively growing, and dormant streptococci tolerate even very high concentrations (Equine Reproductive Procedures, 2nd edition, 2021). The mare improves for a while, then relapses when the survivors repopulate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should antibiotics be given before or after activation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After. Antibiotics given first can suppress the reactivation and produce a false-negative culture. The documented protocol is: culture, instil bActivate, culture again after 48 hours, then targeted antibiotics based on the result, completed no later than three days after ovulation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which antibiotic works against Streptococcus zooepidemicus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Penicillin, guided by culture and sensitivity. In a German study of 28,887 endometrial samples, 99.5% of beta-haemolytic streptococci were penicillin-sensitive and only 3.1% showed multidrug resistance (Journal of Equine Veterinary Science, 2024). When treatment fails, the usual reason is dormancy, not resistance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is bActivate an antibiotic or a probiotic?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Neither. It is a sterile bacterial growth medium used as a diagnostic aid. It wakes dormant bacteria so a standard culture can find them, and the treatment that follows is an ordinary veterinary antibiotic prescribed from the culture result."
+        }
+      }
+    ]
+  },
+  '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does bActivate cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EUR 229 per vial, with one vial used per activation cycle, plus your veterinarian's normal fees for the instillation and the two cultures. Set against one covering fee or one lost season, the diagnostic step is the smallest number in the calculation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it worth testing a problem mare before another breeding season?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An estimated 70 to 80% of mares still open at the end of a season carry a hidden uterine infection that standard culture misses. Testing first replaces a repeat of last season with a diagnosis, and the whole protocol fits inside one oestrus cycle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much time does the bActivate protocol take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "One cycle. Activation and the second culture take 48 hours, treatment follows the culture result and is completed no later than three days after ovulation, and the mare is bred on the following cycle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I skip the diagnostics and just treat with antibiotics?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "That is the expensive route. Blind antibiotic courses fail on dormant bacteria, clear the surface signs, and hand you the same problem next season. Identifying the bacteria first is what makes the treatment targeted and final."
+        }
+      }
+    ]
+  },
+  '/blog/insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health': {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What bacteria most often cause uterine infection in mares?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beta-haemolytic streptococci, primarily Streptococcus equi subspecies zooepidemicus. They accounted for 79.7% of positive cultures across 28,887 endometrial samples in the largest study to date (Journal of Equine Veterinary Science, 2024)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How common is uterine infection in broodmares?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In the same study, 25.9% of samples grew potentially pathogenic bacteria, roughly one mare in four at the time of sampling. Dormant bacteria do not grow in standard culture, so the true figure is likely higher."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is antibiotic resistance a big problem in mare endometritis?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Smaller than often assumed. 99.5% of the beta-haemolytic streptococci were penicillin-sensitive, and multidrug resistance stood at 3.1%. When treatment fails in these mares, the usual explanation is dormancy, not resistance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was this study connected to bActivate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. It was conducted in Germany, independently of bActivate's developers. That is exactly why it matters as context: the pathogen bActivate targets is confirmed as the dominant cause of uterine infection in the largest dataset that exists."
+        }
+      }
+    ]
+  },
   '/shop': {
     '@context': 'https://schema.org',
     '@type': 'Product',
