@@ -605,7 +605,7 @@ const PAGE_META = {
   },
   '/blog/how-bactivate-tackles-dormant-bacteria-in-mares': {
     title: 'How bActivate Tackles Dormant Bacteria in Mares',
-    description: 'bActivate wakes dormant streptococcal bacteria in mares, making them detectable. 89% of barren mares at Godolphin/Kildangan conceived after activation and targeted antibiotics.',
+    description: 'bActivate wakes dormant streptococcal bacteria in mares, making them detectable. 89% of the bred problem mares at Kildangan (Godolphin) were in foal after activation and targeted treatment (16 of 18, internal clinical data).',
   },
   '/blog/enhancing-mare-fertility-bactivate-revolutionary-approach': {
     title: 'Enhancing Mare Fertility with bActivate',
