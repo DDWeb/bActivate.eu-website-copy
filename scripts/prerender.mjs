@@ -540,11 +540,11 @@ ROUTE_SCHEMAS['/shop'] = [
 
 const PAGE_META = {
   '/': {
-    title: 'bActivate | Diagnose Hidden Infections in Problem Mares',
+    title: 'bActivate Finds the Infection Swabs Miss | Problem Mares',
     description: 'A standard uterine swab finds only 34% of infected mares. bActivate reactivates dormant bacteria so the infection can be found and treated. 83% pregnancy rate at Hagyard.',
   },
   '/what-is-bactivate': {
-    title: 'What is bActivate? | Diagnosing Infections in Problem Mares',
+    title: 'What is bActivate? | Finds the Infection Swabs Miss',
     description: 'bActivate diagnoses dormant Streptococcus zooepidemicus in problem and non-pregnant mares, a hidden infection that standard swab culture misses in roughly 60% of affected mares.',
   },
   '/when-to-use': {

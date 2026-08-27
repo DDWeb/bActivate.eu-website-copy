@@ -7,7 +7,7 @@ import LiteYouTube from '@/components/LiteYouTube';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'bActivate | Diagnose Hidden Infections in Problem Mares';
+    document.title = 'bActivate Finds the Infection Swabs Miss | Problem Mares';
     document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate detects hidden uterine infections in problem mares. Used at Hagyard with 83% pregnancy rate. One vial per activation cycle.');
   }, []);
   return (
