@@ -71,6 +71,12 @@ Coverage and listings written by third parties, not by bActivate's developers. S
 - [Florida Veterinary Medical Association, "Challenges of chronic endometritis, novel tools"](https://fvma.org/challenges-of-chronic-endometritis-novel-tools/): conference session listing on latent uterine infection and activation.
 - [Danish Breeders Club, "Forskning i fertilitet" (2022)](https://breedersclub.nu/wp-content/uploads/2022/07/41-Forskning-i-fertilitet.pdf): Danish breeder-association coverage of the fertility research.
 - [University of Copenhagen research portal, record for the 2015 study](https://researchprofiles.ku.dk/en/publications/activation-of-persistenti-streptococcus-equi-isubspecies-izooepid/): institutional record of "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis".
+- [Pasolini et al., "Endometritis and Infertility in the Mare" (IntechOpen, 2016)](https://www.intechopen.com/chapters/50058): peer-reviewed review chapter that names bActivate: "The activation of dormant bacteria, using bacterial growth mediums like bActivate, may improve significantly the sensitivity of traditional diagnostics." DOI 10.5772/63741.
+- [Timmins and Burden, "The problem broodmare, looking beyond the endometrial swab" (Equine Veterinary Education, 2023)](https://doi.org/10.1111/eve.13821): UK clinical review citing the 2015 activation study.
+- [Scoggin, "Endometritis: Nontraditional Therapies" (Veterinary Clinics of North America: Equine Practice, 2016)](https://doi.org/10.1016/j.cveq.2016.08.002): clinician review citing the 2015 activation study.
+- [Barker, "Breeding the 'difficult mare'" (Equine Health, 2020)](https://doi.org/10.12968/eqhe.2020.2.48): practitioner article citing the 2015 activation study, also published at ukvetequine.com.
+- [Sielhorst, Koehne et al., "Aktuelle Empfehlungen zur Diagnostik und Therapie der Endometritis bei der Stute" (pferde spiegel, 2019)](https://doi.org/10.1055/a-0858-4508): German practitioner guidance citing the 2015 activation study.
+- ["Antimicrobial prescribing guidelines for horses in Australia" (Australian Veterinary Journal, 2025)](https://doi.org/10.1111/avj.70003): national prescribing guidelines citing the 2015 activation study.
 
 ## Founders
 
