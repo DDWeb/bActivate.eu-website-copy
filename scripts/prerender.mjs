@@ -523,6 +523,270 @@ function routeToOutputPath(route) {
 // up with two.
 const ROUTES_WITH_CLIENT_FAQ = new Set(['/podcast']);
 
+// Schemas that describe content on ONE page only. They used to sit in
+// index.html and were therefore claimed by every prerendered page; now the
+// videos are declared on the pages that embed them and the 2015 paper on
+// the clinical evidence page.
+const EXTRA_SCHEMAS = {
+  '/': {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoObject",
+      "name": "bActivate, Facilitate Mare Pregnancy",
+      "description": "bActivate activates dormant Streptococcus zooepidemicus in problem mares, enabling accurate diagnosis and targeted treatment of subclinical endometritis. 83% pregnancy rate at Hagyard Equine Medical Institute.",
+      "thumbnailUrl": "https://img.youtube.com/vi/_1QPkyXkFgs/maxresdefault.jpg",
+      "uploadDate": "2023-04-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "bActivate",
+        "url": "https://bactivate.eu"
+      },
+      "embedUrl": "https://www.youtube.com/embed/_1QPkyXkFgs",
+      "url": "https://www.youtube.com/watch?v=_1QPkyXkFgs"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "How bActivate Works, The Science Behind Dormant Bacteria",
+      "description": "Explains how dormant bacteria in the mare's uterus evade standard culture tests and how bActivate reactivates them within 48 hours for accurate diagnosis and treatment.",
+      "thumbnailUrl": "https://img.youtube.com/vi/acpF8se6Co8/maxresdefault.jpg",
+      "uploadDate": "2023-06-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "bActivate",
+        "url": "https://bactivate.eu"
+      },
+      "embedUrl": "https://www.youtube.com/embed/acpF8se6Co8",
+      "url": "https://www.youtube.com/watch?v=acpF8se6Co8"
+    }
+  ]
+},
+  '/when-to-use': {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoObject",
+      "name": "When to Use bActivate, Indications for Problem Mares",
+      "description": "Covers the clinical indications for bActivate: mares that fail to conceive despite breeding to fertile stallions, mares with recurring uterine fluid, and mares with previous uterine infections.",
+      "thumbnailUrl": "https://img.youtube.com/vi/sVS0kj84lMA/maxresdefault.jpg",
+      "uploadDate": "2023-08-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "bActivate",
+        "url": "https://bactivate.eu"
+      },
+      "embedUrl": "https://www.youtube.com/embed/sVS0kj84lMA",
+      "url": "https://www.youtube.com/watch?v=sVS0kj84lMA"
+    }
+  ]
+},
+  '/studies-effect': {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1016/j.vetmic.2015.06.006",
+      "name": "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis",
+      "headline": "Activation of persistent Streptococcus equi subspecies zooepidemicus in mares with subclinical endometritis",
+      "author": [
+        {
+          "@type": "Person",
+          "@id": "https://bactivate.eu/#morten-petersen",
+          "name": "Morten Rønn Petersen"
+        },
+        {
+          "@type": "Person",
+          "name": "Bolette Skive"
+        },
+        {
+          "@type": "Person",
+          "name": "Mette Christoffersen"
+        },
+        {
+          "@type": "Person",
+          "name": "Kristina Lu",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "Hagyard Equine Medical Institute"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Jesper M. Nielsen"
+        },
+        {
+          "@type": "Person",
+          "name": "Mats H. T. Troedsson",
+          "affiliation": {
+            "@type": "EducationalOrganization",
+            "name": "Maxwell H. Gluck Equine Research Center, University of Kentucky"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://bactivate.eu/#anders-bojesen",
+          "name": "Anders Miki Bojesen"
+        }
+      ],
+      "datePublished": "2015-08",
+      "pagination": "119-125",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "propertyID": "DOI",
+          "value": "10.1016/j.vetmic.2015.06.006"
+        },
+        {
+          "@type": "PropertyValue",
+          "propertyID": "PMID",
+          "value": "26123371"
+        }
+      ],
+      "sameAs": "https://doi.org/10.1016/j.vetmic.2015.06.006",
+      "url": "https://doi.org/10.1016/j.vetmic.2015.06.006",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Elsevier"
+      },
+      "isPartOf": {
+        "@type": "PublicationIssue",
+        "issueNumber": "1-2",
+        "isPartOf": {
+          "@type": "PublicationVolume",
+          "volumeNumber": "179",
+          "isPartOf": {
+            "@type": "Periodical",
+            "name": "Veterinary Microbiology",
+            "issn": "0378-1135"
+          }
+        }
+      },
+      "keywords": [
+        "Streptococcus zooepidemicus",
+        "subclinical endometritis",
+        "mares",
+        "bActivate",
+        "equine reproduction"
+      ]
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://clinicaltheriogenology.net/index.php/CT/article/view/12588",
+      "name": "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares",
+      "headline": "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares",
+      "author": [
+        {
+          "@type": "Person",
+          "@id": "https://bactivate.eu/#morten-petersen",
+          "name": "Morten Rønn Petersen"
+        },
+        {
+          "@type": "Person",
+          "name": "Jesper M. Nielsen"
+        },
+        {
+          "@type": "Person",
+          "name": "H. Lehn-Jensen"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://bactivate.eu/#anders-bojesen",
+          "name": "Anders Miki Bojesen"
+        }
+      ],
+      "datePublished": "2009-08-03",
+      "pagination": "393-409",
+      "url": "https://clinicaltheriogenology.net/index.php/CT/article/view/12588",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Society for Theriogenology"
+      },
+      "isPartOf": {
+        "@type": "PublicationVolume",
+        "volumeNumber": "1",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Clinical Theriogenology",
+          "issn": "2154-3968",
+          "url": "https://clinicaltheriogenology.net/index.php/CT"
+        }
+      },
+      "keywords": [
+        "Endometritis",
+        "Streptococcus equi subspecies zooepidemicus",
+        "localization",
+        "chronic infections",
+        "equine",
+        "fluorescence in situ hybridization"
+      ]
+    },
+    {
+      "@type": "Chapter",
+      "@id": "https://doi.org/10.1002/9781119556015.ch38",
+      "name": "Latent Uterine Bacterial Infections",
+      "headline": "Latent Uterine Bacterial Infections",
+      "author": [
+        {
+          "@type": "Person",
+          "@id": "https://bactivate.eu/#morten-petersen",
+          "name": "Morten Rønn Petersen"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://bactivate.eu/#anders-bojesen",
+          "name": "Anders Miki Bojesen"
+        }
+      ],
+      "datePublished": "2021-02-19",
+      "pagination": "141-142",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "DOI",
+        "value": "10.1002/9781119556015.ch38"
+      },
+      "sameAs": "https://doi.org/10.1002/9781119556015.ch38",
+      "url": "https://doi.org/10.1002/9781119556015.ch38",
+      "isPartOf": {
+        "@type": "Book",
+        "name": "Equine Reproductive Procedures",
+        "bookEdition": "2nd",
+        "isbn": "9781119555988",
+        "datePublished": "2021-02-19",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Wiley-Blackwell"
+        },
+        "editor": [
+          {
+            "@type": "Person",
+            "name": "John J. Dascanio",
+            "affiliation": {
+              "@type": "EducationalOrganization",
+              "name": "Texas Tech University"
+            }
+          },
+          {
+            "@type": "Person",
+            "name": "Patrick M. McCue",
+            "affiliation": {
+              "@type": "EducationalOrganization",
+              "name": "Colorado State University"
+            }
+          }
+        ]
+      },
+      "keywords": [
+        "latent endometritis",
+        "dormant bacteria",
+        "Streptococcus zooepidemicus",
+        "equine reproduction",
+        "bActivate"
+      ]
+    }
+  ]
+},
+};
+
 // True if a route schema carries a FAQPage, whether it is a single object,
 // an array of schemas, or an @graph.
 function schemaHasFaqPage(schema) {
@@ -728,6 +992,10 @@ async function main() {
       }
       if (routeSchema) {
         html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(routeSchema)}</script>\n</head>`);
+      }
+      const extraSchema = EXTRA_SCHEMAS[route];
+      if (extraSchema) {
+        html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(extraSchema)}</script>\n</head>`);
       }
 
       // Inject MedicalWebPage schema for clinical guidance pages
