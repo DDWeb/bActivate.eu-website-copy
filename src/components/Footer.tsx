@@ -9,7 +9,7 @@ export default function Footer() {
             <div className={styles.container}>
                 {/* Column 1: Logo and Company Info */}
                 <div className={styles.column}>
-                    <img src="/images/bActivate-hest-roed.gif" alt="bActivate Red Horse" className={styles.footerLogo} />
+                    <img src="/images/bActivate-hest-roed.gif" alt="bActivate Red Horse" width={300} height={300} className={styles.footerLogo} />
                     <h2 className={styles.companyName}>bActivate is sold and produced by Bojesen and Petersen Biotech ApS</h2>
 
                     <div className={styles.legalLinks}>

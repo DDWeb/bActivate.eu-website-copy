@@ -2,13 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WZLKN7T3');</script>
-  <!-- End Google Tag Manager -->
+  <!-- Google Tag Manager loads on first interaction (see end of body).
+       The dataLayer stub exists from the start so pushes queue up. -->
+  <script>window.dataLayer = window.dataLayer || [];</script>
     <link rel="icon" type="image/gif" href="/images/bActivate-hest-roed.gif" />
     <link rel="preload" as="image" href="/images/bActivate-hest-roed.gif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -286,35 +282,57 @@
   <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  <!-- Affiliatly tracking -->
-  <script>var url = "https://static.affiliatly.com/framework/other.js?affiliatly_code=AF-1074392";var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = url;document.getElementsByTagName("head")[0].appendChild(script);</script>
-  <!-- End Affiliatly tracking -->
-  <!-- Google Merchant Badge -->
-  <script id="merchantWidgetScript" src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
+  <!-- Third-party scripts (GTM, Affiliatly, Google Merchant badge).
+       Loaded on the first user interaction, or after 5 s at the latest,
+       so they stay off the main thread during initial render. -->
   <script>
-    var allowedPaths = ['/', '/shop', '/studies-effect'];
-    function tryStartMerchantWidget() {
-      try {
-        if (typeof merchantwidget !== 'undefined' && allowedPaths.indexOf(window.location.pathname) !== -1) {
-          merchantwidget.start({
-            merchant_id: 5744487013,
-            position: merchantwidget.BOTTOM_RIGHT,
-            region: 'DK'
-          });
+    (function () {
+      var loaded = false;
+      function addScript(src, onload) {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = src;
+        if (onload) s.addEventListener('load', onload);
+        document.head.appendChild(s);
+      }
+      function loadThirdParties() {
+        if (loaded) return;
+        loaded = true;
+        // Google Tag Manager
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        addScript('https://www.googletagmanager.com/gtm.js?id=GTM-WZLKN7T3');
+        // Affiliatly tracking
+        addScript('https://static.affiliatly.com/framework/other.js?affiliatly_code=AF-1074392');
+        // Google Merchant badge
+        var allowedPaths = ['/', '/shop', '/studies-effect'];
+        function tryStartMerchantWidget() {
+          try {
+            if (typeof merchantwidget !== 'undefined' && allowedPaths.indexOf(window.location.pathname) !== -1) {
+              merchantwidget.start({
+                merchant_id: 5744487013,
+                position: merchantwidget.BOTTOM_RIGHT,
+                region: 'DK'
+              });
+            }
+          } catch (e) {}
         }
-      } catch(e) {}
-    }
-    document.getElementById('merchantWidgetScript').addEventListener('load', function() {
-      tryStartMerchantWidget();
-      // Re-check on SPA navigation
-      window.addEventListener('popstate', tryStartMerchantWidget);
-      var origPushState = history.pushState;
-      history.pushState = function() {
-        origPushState.apply(this, arguments);
-        setTimeout(tryStartMerchantWidget, 100);
-      };
-    });
+        addScript('https://www.gstatic.com/shopping/merchant/merchantwidget.js', function () {
+          tryStartMerchantWidget();
+          // Re-check on SPA navigation
+          window.addEventListener('popstate', tryStartMerchantWidget);
+          var origPushState = history.pushState;
+          history.pushState = function () {
+            origPushState.apply(this, arguments);
+            setTimeout(tryStartMerchantWidget, 100);
+          };
+        });
+      }
+      ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (t) {
+        window.addEventListener(t, loadThirdParties, { once: true, passive: true });
+      });
+      setTimeout(loadThirdParties, 5000);
+    })();
   </script>
-  <!-- End Google Merchant Badge -->
   </body>
 </html>
