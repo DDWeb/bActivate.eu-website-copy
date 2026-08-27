@@ -7,7 +7,7 @@ import WebinarSignup from '@/components/WebinarSignup';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'bActivate | Diagnose Hidden Infections in Problem Mares';
+    document.title = 'bActivate Finds the Infection Swabs Miss | Problem Mares';
     document.querySelector('meta[name="description"]')?.setAttribute('content', 'A standard uterine swab finds only 34% of infected mares. bActivate reactivates dormant bacteria so the infection can be found and treated. 83% pregnancy rate at Hagyard.');
   }, []);
   return (

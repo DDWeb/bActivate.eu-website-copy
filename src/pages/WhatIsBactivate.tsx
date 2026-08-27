@@ -5,7 +5,7 @@ import InternalLinks from '@/components/InternalLinks';
 
 export default function WhatIsBactivate() {
     useEffect(() => {
-        document.title = 'What is bActivate? | Diagnosing Hidden Infections in Problem & Non-Pregnant Mares';
+        document.title = 'What is bActivate? | Finds the Infection Swabs Miss';
         document.querySelector('meta[name="description"]')?.setAttribute('content', 'bActivate diagnoses dormant Streptococcus zooepidemicus in non-pregnant mares and barren mares, a hidden infection that standard swab culture misses in roughly 60% of affected mares.');
 
         let schema = document.getElementById('medcond-schema') as HTMLScriptElement | null;
