@@ -23,7 +23,7 @@ export default function WhenToUse() {
                                     <h2 className={styles.subtitle}>bActivate, a diagnostic aid for the problem mare</h2>
                                     <div className={styles.textBlock}>
                                         <p className="mb-4">bActivate can help establish a correct diagnosis in the chronically infected mare. bActivate initiates growth of resident dormant streptococci, which can then be diagnosed and treated by standard techniques.</p>
-                                        <p className="mb-4"><strong>Chronic infections</strong> prevent establishment of a pregnancy, and might also increase the risk of early fetal loss and abortion in the mare. Our studies indicate that 50-75% of problem mares not pregnant by the end of the breeding season, despite breeding to fertile stallions and supervised by experienced veterinarians, are chronically infected.</p>
+                                        <p className="mb-4"><strong>Chronic infections</strong> prevent establishment of a pregnancy, and might also increase the risk of early fetal loss and abortion in the mare. Our studies indicate that 70-80% of problem mares not pregnant by the end of the breeding season, despite breeding to fertile stallions and supervised by experienced veterinarians, are chronically infected.</p>
                                         <p>Some farms use bActivate as a <strong>screening tool</strong> to improve diagnosis of endometritis and treatment on all open mares during the off-season, hereby optimizing chances to establish a pregnancy and reduce <strong>time to pregnancy</strong>.</p>
                                     </div>
                                 </div>
