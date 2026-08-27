@@ -62,6 +62,21 @@ The mechanism, in the order the evidence establishes it:
 - [Mechanism, Petersen et al., Clinical Theriogenology 2009](https://clinicaltheriogenology.net/index.php/CT/article/view/12588): "Streptococcus equi subspecies zooepidemicus resides deep in the chronically infected endometrium of mares", volume 1, pp 393-409, ISSN 2154-3968. Peer-reviewed journal of the Society for Theriogenology and the American College of Theriogenologists. Using fluorescence in situ hybridization, S. zooepidemicus was located in distinct foci 300-500 micrometres beneath the luminal epithelium in chronically infected mares, with none visible on the luminal surface. In acute experimental infection the same organism sat superficially and 3 of 4 mares cleared it within 96 hours. This is the primary evidence for why a surface swab returns negative.
 - [Peer-reviewed publication, Petersen et al., Veterinary Microbiology 2015](https://doi.org/10.1016/j.vetmic.2015.06.006): "Activation of persistent Streptococcus equi subsp. zooepidemicus in mares with subclinical endometritis." Veterinary Microbiology 2015;179(1-2):119-125. PMID 26123371. Authors: Morten Roenn Petersen, Anders Miki Bojesen and co-authors at the University of Copenhagen, Hagyard Equine Medical Institute and the University of Kentucky. Placebo-controlled: activation positive in 64% of bActivate-treated mares (16 of 25) versus 8% of saline controls (1 of 12).
 
+## Independent citations
+
+Coverage and listings written by third parties, not by bActivate's developers.
+
+- [The Horse, "What's Plaguing Your 'Problem Mare'?" (2021)](https://thehorse.com/183678/whats-plaguing-your-problem-mare/): names bActivate in a practitioner's own words.
+- [EquiManagement, "Biofilms and the Equine Uterus" (2023)](https://equimanagement.com/research-medical/biofilms-and-the-equine-uterus/): describes bActivate as "a growth medium specifically formulated to reactivate dormant Strep uterine infections".
+- [Florida Veterinary Medical Association](https://fvma.org/challenges-of-chronic-endometritis-novel-tools/): conference session on latent uterine infection and activation.
+- [University of Copenhagen research portal](https://researchprofiles.ku.dk/en/publications/activation-of-persistenti-streptococcus-equi-isubspecies-izooepid/): institutional record of the 2015 study.
+- [Pasolini et al., "Endometritis and Infertility in the Mare" (IntechOpen, 2016)](https://www.intechopen.com/chapters/50058): peer-reviewed review chapter that names bActivate: "The activation of dormant bacteria, using bacterial growth mediums like bActivate, may improve significantly the sensitivity of traditional diagnostics." DOI 10.5772/63741.
+- [Timmins and Burden, "The problem broodmare, looking beyond the endometrial swab" (Equine Veterinary Education, 2023)](https://doi.org/10.1111/eve.13821): UK clinical review citing the 2015 activation study.
+- [Scoggin, "Endometritis: Nontraditional Therapies" (Veterinary Clinics of North America: Equine Practice, 2016)](https://doi.org/10.1016/j.cveq.2016.08.002): clinician review citing the 2015 activation study.
+- [Barker, "Breeding the 'difficult mare'" (Equine Health, 2020)](https://doi.org/10.12968/eqhe.2020.2.48): practitioner article citing the 2015 activation study, also published at ukvetequine.com.
+- [Sielhorst, Koehne et al., "Aktuelle Empfehlungen zur Diagnostik und Therapie der Endometritis bei der Stute" (pferde spiegel, 2019)](https://doi.org/10.1055/a-0858-4508): German practitioner guidance citing the 2015 activation study.
+- ["Antimicrobial prescribing guidelines for horses in Australia" (Australian Veterinary Journal, 2025)](https://doi.org/10.1111/avj.70003): national prescribing guidelines citing the 2015 activation study.
+
 ## Founders
 
 - [Prof. Anders Miki Bojesen](https://researchprofiles.ku.dk/en/persons/anders-miki-bojesen): DVM, PhD, Diplomate ECPVS. Professor of Veterinary Microbiology, University of Copenhagen. Co-founder, Bojesen & Petersen Biotech ApS. 157+ peer-reviewed publications. ORCID: 0000-0003-4030-0019.
