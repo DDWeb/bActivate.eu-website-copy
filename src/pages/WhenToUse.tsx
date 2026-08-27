@@ -41,7 +41,7 @@ export default function WhenToUse() {
                                 </div>
 
                                 <div className={styles.videoContainer}>
-                                    <LiteYouTube id="sVS0kj84lMA" title="When to use bActivate" />
+                                    <LiteYouTube id="sVS0kj84lMA" title="When to use bActivate" className={styles.videoFill} />
                                 </div>
                             </div>
                         </div>
@@ -59,6 +59,7 @@ export default function WhenToUse() {
                             <div className={styles.sideText}>
                                 <p className="mb-4"><strong>Repeated uterine infections</strong> indicate compromised uterine defense mechanisms predisposing for establishment of infections, acute as well as chronic. As chronic infections can be hard to identify bActivate should be considered for this group of problem mares.</p>
                                 <p><strong>Endometrial fibrosis</strong> is induced by ongoing endometrial inflammation. Presence of beta-hemolytic streptococci within the endometrium is expected to induce endometrial inflammation, hereby increasing uterine fibrosis, and consequently decreasing fertility. If endometrial fibrosis can be minimized the number of foals each mare can produce in a lifetime is expected to increase.</p>
+                                <p className="mt-4"><strong>Biofilm and dormant reservoirs</strong>: <em>Streptococcus zooepidemicus</em> can shelter in a biofilm on the surface of the endometrium and slip into a dormant state deeper in the tissue. Breaking up the biofilm treats the surface but leaves the dormant reservoir untouched, which is why a mare can improve after biofilm treatment and then fail again the following season. Read more about <a href="/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough" className="text-primary underline">why breaking up the biofilm is not enough</a>.</p>
                             </div>
                         </div>
                     </div>
