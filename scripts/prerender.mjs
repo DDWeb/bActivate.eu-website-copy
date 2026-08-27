@@ -310,6 +310,7 @@ const ROUTE_SCHEMAS = {
       'priceCurrency': 'USD',
       'availability': 'https://schema.org/InStock',
       'itemCondition': 'https://schema.org/NewCondition',
+      'validFrom': '2026-08-27',
       'priceValidUntil': '2026-12-31',
       'seller': { '@type': 'Organization', 'name': 'Bojesen & Petersen Biotech ApS', 'url': BASE_URL },
     },
