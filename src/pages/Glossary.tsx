@@ -59,7 +59,7 @@ export default function Glossary() {
                             <h2 style={termStyle}>無症候性子宮内膜炎（subclinical endometritis）</h2>
                             <span style={tagStyle}>繁殖医療</span>
                         </div>
-                        <p style={bodyStyle}>分泌物、発熱、発情周期の乱れといった臨床徴候を伴わない子宮の炎症です。牝馬は繁殖上は正常に見えますが、微視的な炎症や軽度の感染が胚の着床を妨げます。通常のスワブ培養で検出できるのは約33%の症例にすぎず、原因不明の不妊のよくある原因となっています。</p>
+                        <p style={bodyStyle}>分泌物、発熱、発情周期の乱れといった臨床徴候を伴わない子宮の炎症です。牝馬は繁殖上は正常に見えますが、微視的な炎症や軽度の感染が胚の着床を妨げます。通常のスワブ培養で検出できるのは約34%の症例にすぎず、原因不明の不妊のよくある原因となっています。</p>
                         <p style={{ marginTop: '0.75rem' }}><Link to="/blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares" style={relLinkStyle}>→ 牝馬の子宮内膜炎への対処ガイド</Link></p>
                     </div>
 
@@ -69,7 +69,7 @@ export default function Glossary() {
                             <span style={tagStyle}>臨床的定義</span>
                         </div>
                         <p style={{ color: '#555', fontSize: '0.875rem', marginBottom: '0.75rem', fontStyle: 'italic' }}>別名：不妊牝馬（barren mare）、リピートブリーダー</p>
-                        <p style={bodyStyle}>繁殖能力が確認された種牡馬と、3回以上連続した発情周期で交配しても受胎しない牝馬です。シーズン終了時に空胎の牝馬の約50〜75%が、通常のスワブ培養では検出できない休眠状態の <em>Streptococcus zooepidemicus</em> 感染を抱えています。</p>
+                        <p style={bodyStyle}>繁殖能力が確認された種牡馬と、3回以上連続した発情周期で交配しても受胎しない牝馬です。シーズン終了時に空胎の牝馬の約70〜80%が、通常のスワブ培養では検出できない休眠状態の <em>Streptococcus zooepidemicus</em> 感染を抱えています。</p>
                         <p style={{ marginTop: '0.75rem' }}><Link to="/blog/addressing-challenges-of-problem-mares" style={relLinkStyle}>→ 不受胎牝馬の課題に取り組む</Link></p>
                     </div>
 
