@@ -180,7 +180,7 @@
       {"@type":"HowToStep","position":3,"name":"Abortion or pregnancy loss","text":"Has the mare had a documented abortion or early pregnancy loss? A history of abortion is associated with persistent low-grade infection and is a primary risk indicator."},
       {"@type":"HowToStep","position":4,"name":"Endometritis history","text":"Has the mare been diagnosed with or treated for endometritis previously? Prior endometritis predisposes to chronic persister-state infection that recurs despite antibiotic courses."},
       {"@type":"HowToStep","position":5,"name":"Failed breeding cycles","text":"How many consecutive cycles has the mare failed to conceive — first season, 2-3 cycles, or more than 3 cycles? Repeated failure despite a fertile stallion is a primary clinical indicator."},
-      {"@type":"HowToStep","position":6,"name":"Swab results","text":"What have the mare's recent endometrial swab cultures shown — positive, negative/clean, or not tested? A clean swab does not rule out infection: standard cultures detect only approximately 33% of infections when one is present."},
+      {"@type":"HowToStep","position":6,"name":"Swab results","text":"What have the mare's recent endometrial swab cultures shown — positive, negative/clean, or not tested? A clean swab does not rule out infection: standard cultures detect only approximately 34% of infections when one is present."},
       {"@type":"HowToStep","position":7,"name":"Uterine fluid on ultrasound","text":"Has the mare shown uterine fluid accumulation on ultrasound post-breeding? Persistent fluid is a sign of impaired uterine clearance and is associated with subclinical endometritis."},
       {"@type":"HowToStep","position":8,"name":"Interpret result","text":"Mares with one or more of the four primary risk factors (age 12+, 3+ foals, abortion history, endometritis history) have approximately 75% probability of carrying a dormant Streptococcus zooepidemicus infection that standard swab culture cannot detect. bActivate is strongly indicated. Mares with zero risk factors but repeated breeding failure should also be discussed with a veterinarian."}
     ]
@@ -199,7 +199,7 @@
       {
         "@type": "Question",
         "name": "My mare has a clean swab but keeps coming back into season — is she a candidate?",
-        "acceptedAnswer": {"@type":"Answer","text":"Yes, possibly. Standard endometrial swab cultures detect only approximately 33% of infections when one is present. If your mare has one or more risk factors (age 12+, 3+ foals, abortion history, prior endometritis) and has failed to conceive for two or more consecutive cycles, bActivate is strongly indicated even with clean swabs."}
+        "acceptedAnswer": {"@type":"Answer","text":"Yes, possibly. Standard endometrial swab cultures detect only approximately 34% of infections when one is present. If your mare has one or more risk factors (age 12+, 3+ foals, abortion history, prior endometritis) and has failed to conceive for two or more consecutive cycles, bActivate is strongly indicated even with clean swabs."}
       },
       {
         "@type": "Question",
@@ -539,7 +539,7 @@
     // Logic
     var cleanSwabWithRF = (answers.swab==='clean' && rf >= 1);
     var swabNote = cleanSwabWithRF
-      ? ' Note: a clean swab does not rule out infection — standard cultures detect only approximately 33% of infections when one is present.'
+      ? ' Note: a clean swab does not rule out infection — standard cultures detect only approximately 34% of infections when one is present.'
       : '';
 
     if(rf === 0 && answers.cycles === 'first'){
@@ -928,7 +928,7 @@
     // Logic
     var cleanSwabWithRF = (answers.swab==='clean' && rf >= 1);
     var swabNote = cleanSwabWithRF
-      ? ' Note: a clean swab does not rule out infection — standard cultures detect only approximately 33% of infections when one is present.'
+      ? ' Note: a clean swab does not rule out infection — standard cultures detect only approximately 34% of infections when one is present.'
       : '';
 
     if(rf === 0 && answers.cycles === 'first'){

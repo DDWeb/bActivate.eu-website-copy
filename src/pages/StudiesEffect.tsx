@@ -19,7 +19,7 @@ export default function StudiesEffect() {
 
                     <div className={styles.textGrid}>
                         <div className="bg-gray-50 p-6 rounded">
-                            <p className="mb-4">Hidden infections. Persistent infertility. Missed opportunities. For too long, problem mares, non-pregnant mares that fail to conceive despite clean swabs, normal cycles, and confirmed stallion fertility, have faced unseen barriers to reproduction.<br />Studies show that 80% of these barren mares harbour hidden uterine infections that traditional tests fail to detect, making pregnancy an uphill battle.</p>
+                            <p className="mb-4">Hidden infections. Persistent infertility. Missed opportunities. For too long, problem mares, non-pregnant mares that fail to conceive despite clean swabs, normal cycles, and confirmed stallion fertility, have faced unseen barriers to reproduction.<br />Studies show that 70-80% of these barren mares harbour hidden uterine infections that traditional tests fail to detect, making pregnancy an uphill battle.</p>
                             <p>This collection introduces a breakthrough: <b>bActivate</b>. By reactivating dormant <b>Streptococcus equi subsp. zooepidemicus</b>, the most common cause of chronic uterine infections in non-pregnant mares, bActivate uncovers what was once invisible, enabling accurate diagnosis of these elusive infections for the first time.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded">
