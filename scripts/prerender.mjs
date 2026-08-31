@@ -1096,15 +1096,19 @@ async function main() {
       // Inject per-page hreflang: en-GB (self), en-US (peer), x-default (self)
       html = html.replace(
         /(<link rel="alternate" hreflang="en-GB" href=")[^"]*(")/,
-        `$1${BASE_URL}${routeSuffix}$2`
-      );
-      html = html.replace(
-        /(<link rel="alternate" hreflang="en-US" href=")[^"]*(")/,
         `$1${PEER_URL}${routeSuffix}$2`
       );
       html = html.replace(
-        /(<link rel="alternate" hreflang="x-default" href=")[^"]*(")/,
+        /(<link rel="alternate" hreflang="en-US" href=")[^"]*(")/,
         `$1${BASE_URL}${routeSuffix}$2`
+      );
+      html = html.replace(
+        /(<link rel="alternate" hreflang="ja" href=")[^"]*(")/,
+        `$1https://bactivate.jp${routeSuffix}$2`
+      );
+      html = html.replace(
+        /(<link rel="alternate" hreflang="x-default" href=")[^"]*(")/,
+        `$1${PEER_URL}${routeSuffix}$2`
       );
 
       // Inject page-specific title and description if defined
