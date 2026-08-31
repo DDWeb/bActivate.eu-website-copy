@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './WhenToUse.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import ReviewedBy from '@/components/ReviewedBy';
 import LiteYouTube from '@/components/LiteYouTube';
 
 export default function WhenToUse() {
@@ -11,6 +12,7 @@ export default function WhenToUse() {
     }, []);
     return (
         <main>
+            <ReviewedBy lastReviewed="June 2026" />
             <section className={styles.section}>
                 <div className={styles.container}>
                     <div className={styles.grid}>

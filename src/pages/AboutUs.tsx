@@ -14,8 +14,8 @@ export default function AboutUs() {
                 <div className={styles.container}>
                     <div className="grid md:grid-cols-3 gap-12 mb-16">
                         <div className="md:col-span-2">
-                            <div className={styles.eyebrow}>Om bActivate</div>
-                            <h1 className={styles.title}>The men behind bActivate</h1>
+                            <div className={styles.eyebrow}>About bActivate</div>
+                            <h1 className={styles.title}>The researchers behind bActivate</h1>
                             <div className={styles.lead}>
                                 <p>The concept behind bActivate (promoting bacterial-activation) was discovered by Morten Rønn Petersen, DVM, PhD and Professor Anders Miki Bojesen, DVM, PhD. They both have extensive experience with bacterial endometritis in mares and have published several scientific papers on the subject.</p>
                             </div>
@@ -33,7 +33,12 @@ export default function AboutUs() {
                                     className={styles.profileImage}
                                 />
                                 <h3 className="text-xl font-bold mt-4 mb-1">Morten Rønn Petersen</h3>
-                                <div className={styles.profileRole}>DVM PhD. Dipl, ACT</div>
+                                <div className={styles.profileRole}>DVM PhD, Diplomate ACT</div>
+                                <div style={{ fontSize: '0.85rem', color: '#555', lineHeight: 1.6, marginTop: '0.4rem' }}>
+                                    Head of Laboratory, The Fertility Clinic, Rigshospitalet<br />
+                                    First author of the core bActivate studies<br />
+                                    h-index 18 · 1,100+ citations
+                                </div>
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:petersen@bactivate.eu">petersen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4560712169">+45 60 71 21 69</a></div>
@@ -65,7 +70,10 @@ export default function AboutUs() {
                                     className={styles.profileImage}
                                 />
                                 <h3 className="text-xl font-bold mt-4 mb-1">Anders Miki Bojesen</h3>
-                                <div className={styles.profileRole}>Professor of Veterinary Microbiology</div>
+                                <div className={styles.profileRole}>DVM PhD, Diplomate ECPVS · Professor of Veterinary Microbiology, University of Copenhagen</div>
+                                <div style={{ fontSize: '0.85rem', color: '#555', lineHeight: 1.6, marginTop: '0.4rem' }}>
+                                    h-index 44 · 5,900+ citations · 157+ peer-reviewed publications
+                                </div>
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:bojesen@bactivate.eu">bojesen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4523844188">+45 23 84 41 88</a></div>
@@ -84,6 +92,11 @@ export default function AboutUs() {
                                 <p>My current research concerning S. zoo is focused on how this organism can switch back and forth from being actively dividing to the dormant state we see in the subclinically infected mares. Understanding the underlying regulatory events during these processes is key to further knowledge on how S. zoo and the endometrial tissue interact. Professor Bojesen has authored 157+ peer-reviewed publications and was an invited speaker at the International Workshop on Equine Endometritis, Al Shaqab, Qatar (2016).</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div style={{ marginTop: '2rem', padding: '1.5rem 2rem', background: '#f8f8f8', borderLeft: '4px solid #901820' }}>
+                        <h2 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#111', marginBottom: '0.5rem' }}>Authors of the reference literature</h2>
+                        <p style={{ color: '#444', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>Both researchers wrote chapter 38, "Latent Uterine Bacterial Infections", in <em>Equine Reproductive Procedures</em>, 2nd edition (<a href="https://doi.org/10.1002/9781119556015.ch38" target="_blank" rel="noopener noreferrer" className="text-primary underline">Wiley-Blackwell, 2021</a>), the veterinary reference manual edited by Prof. John Dascanio (Texas Tech University) and Prof. Patrick McCue (Colorado State University). The chapter describes the activation protocol and discloses their commercial interest. The core science is published in <a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" className="text-primary underline">Veterinary Microbiology (2015)</a> and <a href="https://clinicaltheriogenology.net/index.php/CT/article/view/12588" target="_blank" rel="noopener noreferrer" className="text-primary underline">Clinical Theriogenology (2009)</a>.</p>
                     </div>
 
                 </div>
