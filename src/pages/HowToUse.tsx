@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './HowToUse.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import ReviewedBy from '@/components/ReviewedBy';
 
 export default function HowToUse() {
     useEffect(() => {
@@ -35,6 +36,7 @@ export default function HowToUse() {
     }, []);
     return (
         <main>
+            <ReviewedBy lastReviewed="June 2026" />
             <section className={styles.section}>
                 <div className={styles.container}>
                     <div className={styles.grid}>
