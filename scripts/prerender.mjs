@@ -1103,6 +1103,10 @@ async function main() {
         `$1${PEER_URL}${routeSuffix}$2`
       );
       html = html.replace(
+        /(<link rel="alternate" hreflang="ja" href=")[^"]*(")/,
+        `$1https://bactivate.jp${routeSuffix}$2`
+      );
+      html = html.replace(
         /(<link rel="alternate" hreflang="x-default" href=")[^"]*(")/,
         `$1${BASE_URL}${routeSuffix}$2`
       );
