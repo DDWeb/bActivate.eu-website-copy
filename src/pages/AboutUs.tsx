@@ -33,7 +33,12 @@ export default function AboutUs() {
                                     className={styles.profileImage}
                                 />
                                 <h3 className="text-xl font-bold mt-4 mb-1">Morten Rønn Petersen</h3>
-                                <div className={styles.profileRole}>DVM PhD. Dipl, ACT</div>
+                                <div className={styles.profileRole}>DVM PhD, Diplomate ACT</div>
+                                <div style={{ fontSize: '0.85rem', color: '#555', lineHeight: 1.6, marginTop: '0.4rem' }}>
+                                    リグスホスピタレット（コペンハーゲン大学病院）不妊治療クリニック 検査室長<br />
+                                    bActivate中核研究の筆頭著者<br />
+                                    h-index 18 · 被引用数 1,100回以上
+                                </div>
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:petersen@bactivate.eu">petersen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4560712169">+45 60 71 21 69</a></div>
@@ -65,7 +70,10 @@ export default function AboutUs() {
                                     className={styles.profileImage}
                                 />
                                 <h3 className="text-xl font-bold mt-4 mb-1">Anders Miki Bojesen</h3>
-                                <div className={styles.profileRole}>獣医微生物学教授</div>
+                                <div className={styles.profileRole}>DVM PhD, Diplomate ECPVS · コペンハーゲン大学 獣医微生物学教授</div>
+                                <div style={{ fontSize: '0.85rem', color: '#555', lineHeight: 1.6, marginTop: '0.4rem' }}>
+                                    h-index 44 · 被引用数 5,900回以上 · 査読付き論文 157報以上
+                                </div>
                                 <div className={styles.contactInfo}>
                                     <div><strong>E:</strong> <a href="mailto:bojesen@bactivate.eu">bojesen@bactivate.eu</a></div>
                                     <div><strong>T:</strong> <a href="tel:+4523844188">+45 23 84 41 88</a></div>
@@ -84,6 +92,11 @@ export default function AboutUs() {
                                 <p>S. zoo に関する現在の研究では、この菌が、無症候性感染の牝馬で見られる休眠状態と活発な分裂状態とを、どのように行き来するのかに焦点を当てています。これらの過程における基盤的な制御機構を理解することが、S. zoo と子宮内膜組織がどのように相互作用するかについての知見を深める鍵となります。Bojesen教授は157本以上の査読付き論文を執筆しており、カタール・アルシャカブで開催された International Workshop on Equine Endometritis（2016年）に招待講演者として登壇しました。</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div style={{ marginTop: '2rem', padding: '1.5rem 2rem', background: '#f8f8f8', borderLeft: '4px solid #901820' }}>
+                        <h2 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#111', marginBottom: '0.5rem' }}>標準的参考文献の著者</h2>
+                        <p style={{ color: '#444', fontSize: '0.95rem', lineHeight: 1.7, margin: 0 }}>両研究者は、獣医学の標準的参考書『Equine Reproductive Procedures』第2版（<a href="https://doi.org/10.1002/9781119556015.ch38" target="_blank" rel="noopener noreferrer" className="text-primary underline">Wiley-Blackwell、2021年</a>）の第38章「Latent Uterine Bacterial Infections（潜在性子宮細菌感染）」を執筆しました。同書はJohn Dascanio教授（テキサス工科大学）とPatrick McCue教授（コロラド州立大学）の編集によるリファレンスマニュアルです。同章ではbActivateの活性化プロトコルが解説され、著者らの商業的利益も開示されています。中核となる研究は<a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" className="text-primary underline">Veterinary Microbiology（2015年）</a>および<a href="https://clinicaltheriogenology.net/index.php/CT/article/view/12588" target="_blank" rel="noopener noreferrer" className="text-primary underline">Clinical Theriogenology（2009年）</a>に掲載されています。</p>
                     </div>
 
                 </div>
