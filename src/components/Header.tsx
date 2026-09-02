@@ -37,29 +37,30 @@ export default function Header() {
                     <Link to="/blog" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Blog</Link>
                     <Link to="/about-us" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About us</Link>
 
-                    <div className={styles.headerRight}>
-                        <div className={`${styles.dropdown} ${styles.freeDropdown}`}>
-                            <div className={styles.consultButton} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', cursor: 'pointer' }}>
-                                Free
-                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </div>
-                            <div className={`${styles.dropdownMenu} ${styles.dropdownMenuRight}`}>
-                                <a
-                                    href="https://share-eu1.hsforms.com/1r_ir4DV2RSukWkIyzs8bzw2daoxk"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className={styles.dropdownItem}
-                                    onClick={() => setIsMenuOpen(false)}
-                                >
-                                    Free consultation
-                                </a>
-                                <a href="/donate" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>
-                                    Donate to endangered
-                                </a>
-                            </div>
+                    <div className={`${styles.navItem} ${styles.dropdown}`}>
+                        <div className={styles.dropdownTrigger}>
+                            Free
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
                         </div>
+                        <div className={styles.dropdownMenu}>
+                            <a
+                                href="https://share-eu1.hsforms.com/1r_ir4DV2RSukWkIyzs8bzw2daoxk"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.dropdownItem}
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Free consultation
+                            </a>
+                            <a href="/donate" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>
+                                Donate to endangered
+                            </a>
+                        </div>
+                    </div>
+
+                    <div className={styles.headerRight}>
                         <Link to="/shop" className={styles.shopButton} onClick={() => setIsMenuOpen(false)}>
                             SHOP
                         </Link>

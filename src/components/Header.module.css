@@ -130,34 +130,6 @@
     white-space: nowrap;
 }
 
-/* Free dropdown (Free consultation + Donate to endangered) */
-.dropdownMenuRight {
-    left: auto;
-    right: 0;
-}
-
-@media (max-width: 1023px) {
-    .freeDropdown {
-        width: 100%;
-        text-align: center;
-    }
-
-    .freeDropdown .consultButton {
-        width: 100%;
-    }
-
-    /* On mobile the two links render inline under the button instead of a hover menu */
-    .freeDropdown .dropdownMenu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        padding: 0.5rem 0 0;
-        min-width: 0;
-    }
-}
-
 /* Free Consultation Button */
 .consultButton {
     background-color: #2d7a3a;
