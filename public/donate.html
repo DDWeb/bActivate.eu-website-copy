@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Does your mare qualify for a donated bActivate sample? | Endangered Equine Program</title>
+<meta name="description" content="If your breed is endangered and your mare will not get in foal, she may qualify for a donated bActivate sample. Answer a few quick questions to find out.">
+<link rel="canonical" href="https://bactivate.eu/donate">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+  --red:#901820;
+  --red-dark:#6f1218;
+  --ink:#1c1a1a;
+  --muted:#5f5854;
+  --cream:#faf7f5;
+  --line:#e8ddd8;
+  --sel:#fbeeee;
+  --green:#2d6a4f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.55;
+  padding:32px 16px 64px;
+  display:flex;
+  justify-content:center;
+}
+.wrap{width:100%;max-width:640px}
+
+.brandbar{
+  display:flex;align-items:center;gap:8px;
+  font-family:'Fira Sans Condensed',sans-serif;
+  font-weight:700;letter-spacing:.02em;
+  color:var(--red);font-size:20px;
+  margin-bottom:24px;
+}
+.brandbar .dot{width:10px;height:10px;border-radius:50%;background:var(--red);display:inline-block}
+
+h1{
+  font-family:'Fira Sans Condensed',sans-serif;
+  font-weight:700;
+  font-size:clamp(30px,6vw,42px);
+  line-height:1.08;
+  color:var(--red);
+  margin-bottom:14px;
+}
+.lede{color:var(--muted);font-size:16.5px;margin-bottom:28px}
+.lede em{font-style:italic}
+
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:26px 24px;
+  box-shadow:0 8px 30px rgba(60,20,20,.06);
+}
+.prompt{
+  font-weight:600;font-size:15px;
+  margin-bottom:16px;color:var(--ink);
+}
+.options{display:grid;gap:12px}
+.opt{
+  display:flex;align-items:center;gap:14px;
+  border:1.5px solid var(--line);
+  border-radius:12px;
+  padding:16px 18px;
+  cursor:pointer;
+  background:#fff;
+  transition:border-color .15s,background .15s,transform .05s;
+  user-select:none;
+  text-align:left;font:inherit;color:inherit;width:100%;
+}
+.opt:hover{border-color:#d7c4bd}
+.opt:active{transform:scale(.995)}
+.opt .box{
+  flex:0 0 auto;width:24px;height:24px;border-radius:7px;
+  border:2px solid #cdbcb5;
+  display:flex;align-items:center;justify-content:center;
+  transition:border-color .15s,background .15s;
+}
+.opt .box svg{width:14px;height:14px;opacity:0;transition:opacity .12s}
+.opt .label{font-size:15.5px;font-weight:500}
+.opt[aria-pressed="true"]{border-color:var(--red);background:var(--sel)}
+.opt[aria-pressed="true"] .box{background:var(--red);border-color:var(--red)}
+.opt[aria-pressed="true"] .box svg{opacity:1}
+
+.cta-row{margin-top:22px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  font:inherit;font-weight:600;font-size:16px;
+  border-radius:12px;padding:15px 26px;
+  cursor:pointer;border:1.5px solid var(--red);
+  text-decoration:none;transition:background .15s,color .15s;
+}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.btn-outline{background:#fff;color:var(--red)}
+.btn-outline:hover{background:var(--sel)}
+.btn-block{width:100%}
+
+.result{
+  margin-top:26px;
+  border-top:1px solid var(--line);
+  padding-top:26px;
+  display:none;
+}
+.result.show{display:block;animation:fade .3s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.verdict{
+  font-family:'Fira Sans Condensed',sans-serif;
+  font-weight:700;font-size:26px;color:var(--red);
+  margin-bottom:10px;
+}
+.result p{color:var(--muted);font-size:15.5px;margin-bottom:14px}
+.donate-box{
+  display:none;
+  background:var(--sel);
+  border:1.5px solid var(--red);
+  border-radius:12px;
+  padding:16px 18px;
+  margin:0 0 20px;
+}
+.donate-box.show{display:block}
+.donate-title{
+  font-family:'Fira Sans Condensed',sans-serif;
+  font-weight:700;font-size:19px;color:var(--red);
+  margin-bottom:6px;
+}
+.donate-box p{color:var(--ink);font-size:15px;font-weight:500;margin:0;line-height:1.5}
+.ctas{display:grid;gap:12px}
+@media(min-width:480px){.ctas{grid-template-columns:1fr 1fr}}
+.ctas.hide{display:none}
+
+.foot{
+  margin-top:26px;text-align:center;
+  color:#9a8f8a;font-size:13px;
+}
+.wa{
+  position:fixed;right:20px;bottom:20px;z-index:60;
+  display:inline-flex;align-items:center;gap:10px;
+  background:#25d366;color:#fff;text-decoration:none;
+  padding:13px 18px;border-radius:999px;
+  font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;
+  box-shadow:0 6px 20px rgba(0,0,0,.18);
+}
+.wa svg{width:22px;height:22px;fill:#fff;flex:0 0 auto}
+@media(max-width:520px){
+  .wa{padding:14px;border-radius:50%}
+  .wa .t{display:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brandbar"><span class="dot"></span>bActivate &nbsp;Endangered Equine Program</div>
+
+  <h1>Does your mare qualify for a donated sample?</h1>
+  <p class="lede">For breeds on a recognized conservation watchlist, we donate bActivate for the problem mares that will not get in foal. bActivate reveals a hidden <em>Streptococcus zooepidemicus</em> infection so your own veterinarian can treat it. Answer a few quick questions about your mare.</p>
+
+  <div class="card">
+    <p class="prompt">Select everything that applies to your mare:</p>
+
+    <div class="options" id="options">
+      <button type="button" class="opt" aria-pressed="false" data-gate="breed">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="label">Her breed is listed as endangered or at risk (RBST, Livestock Conservancy, FAO DAD-IS, or a national list)</span>
+      </button>
+      <button type="button" class="opt" aria-pressed="false" data-gate="proof">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="label">I can prove it with her registration or studbook papers</span>
+      </button>
+      <button type="button" class="opt" aria-pressed="false" data-factor="1">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="label">She is 12 years or older</span>
+      </button>
+      <button type="button" class="opt" aria-pressed="false" data-factor="1">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="label">She has had 3 or more foals</span>
+      </button>
+      <button type="button" class="opt" aria-pressed="false" data-factor="1">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="label">She has a history of abortion</span>
+      </button>
+      <button type="button" class="opt" aria-pressed="false" data-factor="1">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="label">She has a history of endometritis</span>
+      </button>
+      <button type="button" class="opt" aria-pressed="false" data-factor="1">
+        <span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+        <span class="label">Her uterine sample is negative</span>
+      </button>
+    </div>
+
+    <div class="cta-row">
+      <button type="button" class="btn btn-primary btn-block" id="reveal">See if she qualifies</button>
+    </div>
+
+    <div class="result" id="result" aria-live="polite">
+      <div class="donate-box" id="donateBox">
+        <div class="donate-title">We donate bActivate for this mare</div>
+        <p>The bActivate itself is donated: your veterinarian receives a coupon and places the order in the bactivate.eu shop, and only the shipping is paid. Your own veterinarian handles her from the first culture to treatment. In return we ask only to record the outcome and, with your permission, to share the story if it succeeds.</p>
+      </div>
+      <div class="verdict" id="verdict"></div>
+      <p id="verdict-body"></p>
+      <div class="ctas" id="ctasDonate">
+        <a class="btn btn-primary" href="mailto:contact@bactivate.eu?subject=Endangered%20Equine%20Program%20-%20donated%20sample" target="_blank" rel="noopener">Apply for a donated sample</a>
+        <a class="btn btn-outline" href="https://meetings-eu1.hubspot.com/martin-hinz" target="_blank" rel="noopener">Book a 15-minute call</a>
+      </div>
+      <div class="ctas hide" id="ctasGeneral">
+        <a class="btn btn-primary" href="https://bactivate.eu/when-to-use" target="_blank" rel="noopener">See when to use bActivate</a>
+        <a class="btn btn-outline" href="https://bactivate.eu/shop" target="_blank" rel="noopener">Order bActivate</a>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">bActivate is a diagnostic growth medium, not a medicine. It reveals the hidden infection so your veterinarian can treat it.</p>
+
+</div>
+
+<a class="wa" href="https://wa.me/4523991004?text=Hi%2C%20I%20have%20an%20endangered-breed%20mare%20that%20will%20not%20get%20in%20foal" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span class="t">Questions? WhatsApp us</span>
+</a>
+
+<script>
+(function(){
+  var opts = Array.prototype.slice.call(document.querySelectorAll('.opt'));
+  opts.forEach(function(o){
+    o.addEventListener('click', function(){
+      var on = o.getAttribute('aria-pressed') === 'true';
+      o.setAttribute('aria-pressed', on ? 'false' : 'true');
+    });
+  });
+
+  function pressed(sel){
+    var el = document.querySelector(sel);
+    return el && el.getAttribute('aria-pressed') === 'true';
+  }
+
+  var reveal = document.getElementById('reveal');
+  var result = document.getElementById('result');
+  var verdict = document.getElementById('verdict');
+  var body = document.getElementById('verdict-body');
+  var donateBox = document.getElementById('donateBox');
+  var ctasDonate = document.getElementById('ctasDonate');
+  var ctasGeneral = document.getElementById('ctasGeneral');
+
+  reveal.addEventListener('click', function(){
+    var breed = pressed('.opt[data-gate="breed"]');
+    var proof = pressed('.opt[data-gate="proof"]');
+    var problems = Array.prototype.slice.call(document.querySelectorAll('.opt[data-factor="1"]'))
+      .filter(function(o){ return o.getAttribute('aria-pressed') === 'true'; }).length;
+
+    if (breed && proof && problems >= 1){
+      verdict.textContent = 'Your mare may qualify for a donated sample.';
+      body.textContent = 'A negative sample does not rule out a dormant infection, because the bacteria are not growing. bActivate wakes them so a standard culture finds what was hiding, and your veterinarian treats it. Apply below with her registration papers, and we will send your vet the coupon.';
+      donateBox.classList.add('show');
+      ctasDonate.classList.remove('hide');
+      ctasGeneral.classList.add('hide');
+    } else if (breed && proof){
+      verdict.textContent = 'She may still qualify. Let us talk.';
+      body.textContent = 'Even without those risk factors, a mare from an endangered breed that fails to conceive is worth ruling out before the season slips away. Tell us about her and we will help you decide.';
+      donateBox.classList.remove('show');
+      ctasDonate.classList.remove('hide');
+      ctasGeneral.classList.add('hide');
+    } else if (breed){
+      verdict.textContent = 'We will need her papers.';
+      body.textContent = 'The donation is reserved for documented endangered-breed mares, so we ask for her registration or studbook papers with the application. If you can get them, apply below and we will take it from there.';
+      donateBox.classList.remove('show');
+      ctasDonate.classList.remove('hide');
+      ctasGeneral.classList.add('hide');
+    } else {
+      verdict.textContent = 'The donation is for endangered breeds.';
+      body.textContent = 'This program donates bActivate for the problem mares of breeds on a conservation watchlist. Any problem mare can still benefit from bActivate through your veterinarian. Here is where to start.';
+      donateBox.classList.remove('show');
+      ctasDonate.classList.add('hide');
+      ctasGeneral.classList.remove('hide');
+    }
+
+    result.classList.add('show');
+    result.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+})();
+</script>
+</body>
+</html>

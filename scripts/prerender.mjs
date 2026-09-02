@@ -31,6 +31,7 @@ const BREADCRUMB_LABELS = {
   '/privacy-policy': 'Privacy Policy',
   '/contact': 'Contact',
   '/swab-culture-vs-bactivate': 'Swab Culture vs bActivate',
+  '/endangered-equine-program': 'Endangered Equine Program',
 };
 
 // Per-route schema injections (for schemas that can't run during SSR via useEffect)
@@ -539,6 +540,18 @@ ROUTE_SCHEMAS['/shop'] = [
   },
 ];
 
+ROUTE_SCHEMAS['/endangered-equine-program'] = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': 'Does it cost anything?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The bActivate itself is donated. If your mare qualifies, your veterinarian receives a coupon and places the order in the bactivate.eu shop, and only the shipping is paid. Your own veterinarian\'s normal fees still apply.' } },
+    { '@type': 'Question', 'name': 'Does bActivate treat the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It reveals a hidden infection so your veterinarian can treat it with targeted antibiotics. bActivate is a diagnostic aid, not a medicine.' } },
+    { '@type': 'Question', 'name': 'Which breeds qualify?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Breeds on a recognized conservation watchlist, such as the RBST watchlist, the Livestock Conservancy priority list, or FAO DAD-IS. Ask us if you are unsure.' } },
+    { '@type': 'Question', 'name': 'Who handles the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Your own veterinarian, from the first culture to the treatment that follows. The veterinarian also places the order with the coupon, since bActivate is used through a vet.' } },
+    { '@type': 'Question', 'name': 'What do you want in return?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Only that the outcome is recorded and that we may share a success story, with a foal photo and your name, with credit.' } },
+  ],
+};
+
 const PAGE_META = {
   '/': {
     title: 'bActivate Finds the Infection Swabs Miss | Problem Mares',
@@ -591,6 +604,10 @@ const PAGE_META = {
   '/swab-culture-vs-bactivate': {
     title: 'Swab Culture vs Biopsy vs bActivate | Mare Uterine Infection',
     description: 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. Compare the diagnostic options for problem mares.',
+  },
+  '/endangered-equine-program': {
+    title: 'The Endangered Equine Program | Free bActivate for Rare-Breed Problem Mares',
+    description: 'For breeds on a recognized conservation watchlist, we donate bActivate for the problem mares that will not get in foal, so your veterinarian can find the infection a standard swab misses.',
   },
   '/contact': {
     title: 'Contact bActivate | Bojesen & Petersen Biotech, Copenhagen',
@@ -649,6 +666,7 @@ const STATIC_ROUTES = [
   '/privacy-policy',
   '/contact',
   '/swab-culture-vs-bactivate',
+  '/endangered-equine-program',
 ];
 
 function parseBlogDate(dateStr) {

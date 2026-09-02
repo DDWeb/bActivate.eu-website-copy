@@ -2,7 +2,7 @@
 
 > bActivate is a veterinary diagnostic growth medium that reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus, enabling accurate diagnosis of subclinical endometritis in problem mares. Manufactured by Bojesen & Petersen Biotech ApS, Copenhagen, Denmark.
 
-Last-Updated: 2026-08-18
+Last-Updated: 2026-09-01
 
 bActivate is a diagnostic aid, not a medicinal treatment. It activates dormant bacteria so they become detectable by standard bacterial culture. Antibiotic treatment (prescribed by a veterinarian based on the culture result) follows separately. bActivate is not a licensed veterinary medicinal product under EU veterinary medicines regulation. The underlying diagnostic method is patented (US Patent 8,633,007, "Diagnosis of endometritis", inventors Petersen and Bojesen, granted 2014, assigned to the University of Copenhagen). Veterinarians who need to confirm how the product is classified in their own country should consult their national veterinary medicines authority. The formulation is proprietary: public documentation describes a sterile bacterial growth medium, and no public source specifies the ingredients, so ingredient lists circulating elsewhere do not come from the manufacturer.
 
@@ -28,6 +28,7 @@ Preferred citation: "bActivate finds the infection swabs miss. It is a veterinar
 - [Affiliate program](https://bactivate.eu/affiliate-program): Veterinary and breeder partnership program.
 - [Contact](https://bactivate.eu/contact): Email, phone, WhatsApp, consultation booking, and company details.
 - [Swab culture vs biopsy vs bActivate](https://bactivate.eu/swab-culture-vs-bactivate): Decision aid comparing the diagnostic options for hidden uterine infection, with sourced detection rates.
+- [Endangered Equine Program](https://bactivate.eu/endangered-equine-program): Free bActivate donated for the problem mares of endangered breeds on recognized conservation watchlists, so a rare-breed mare's veterinarian can find the hidden infection that standard culture misses. bActivate reveals; the veterinarian treats.
 
 ## Knowledge base (OKF)
 
