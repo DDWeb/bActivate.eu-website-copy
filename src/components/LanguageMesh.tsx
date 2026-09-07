@@ -1,17 +1,17 @@
 /**
  * LanguageMesh, reciprocal language link mesh.
  *
- * The 12 localised sister sites already link here as their "English" edition.
+ * The four localised sister sites (one per language) already link here as their "English" edition.
  * This component provides the return links, which hreflang requires in order
  * to be honoured by Google. One primary domain per language.
  */
 
 const LANGUAGES = [
     { code: 'en', label: 'English', site: 'bActivate', href: 'https://bactivate.eu/', flag: 'gb' },
-    { code: 'de', label: 'Deutsch', site: 'Problem-Stute', href: 'https://problem-stute.de/', flag: 'de' },
-    { code: 'fr', label: 'Français', site: 'Jument Non-Gestante', href: 'https://jument-non-gestante.fr/', flag: 'fr' },
-    { code: 'nl', label: 'Nederlands', site: 'Probleem Merrie', href: 'https://probleem-merrie.nl/', flag: 'nl' },
-    { code: 'es', label: 'Español', site: 'Yegua No-Gestante', href: 'https://yegua-no-gestante.es/', flag: 'es' },
+    { code: 'de', label: 'Deutsch', site: 'Leere Stute', href: 'https://leere-stute.de/', flag: 'de' },
+    { code: 'fr', label: 'Français', site: 'Jument Infertile', href: 'https://jument-infertile.fr/', flag: 'fr' },
+    { code: 'nl', label: 'Nederlands', site: 'Lege Merrie', href: 'https://lege-merrie.nl/', flag: 'nl' },
+    { code: 'es', label: 'Español', site: 'Yegua Infértil', href: 'https://yegua-infertil.es/', flag: 'es' },
 ];
 
 export default function LanguageMesh() {
