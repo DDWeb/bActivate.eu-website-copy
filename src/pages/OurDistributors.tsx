@@ -29,7 +29,7 @@ export default function OurDistributors() {
             address: ['Centurionbaan 140', '3769 AV Soesterberg'],
             phone: '+44 142 248 1900',
             email: 'info@grovet.com',
-            website: 'https://www.grovet.com/en/'
+            website: 'https://www.grovet.com/en/bactivate-1-vial.html'
         },
         {
             region: 'Denmark',
