@@ -555,11 +555,11 @@ ROUTE_SCHEMAS['/endangered-equine-program'] = {
 const PAGE_META = {
   '/': {
     title: 'bActivate Finds the Infection Swabs Miss | Problem Mares',
-    description: 'A standard uterine swab finds only 34% of infected mares. bActivate reactivates dormant bacteria so the infection can be found and treated. 83% pregnancy rate at Hagyard.',
+    description: 'A standard uterine swab finds only 34% of infected mares. bActivate reactivates dormant bacteria so the infection can be found and treated by the vet.',
   },
   '/what-is-bactivate': {
     title: 'What is bActivate? | Finds the Infection Swabs Miss',
-    description: 'bActivate diagnoses dormant Streptococcus zooepidemicus in problem and non-pregnant mares, a hidden infection that standard swab culture misses in roughly 60% of affected mares.',
+    description: 'A diagnostic culture medium that reactivates dormant Streptococcus zooepidemicus in problem mares, the hidden uterine infection a standard swab often misses.',
   },
   '/when-to-use': {
     title: 'When to Use bActivate | Signs of Hidden Infection in Mares',
@@ -603,11 +603,11 @@ const PAGE_META = {
   },
   '/swab-culture-vs-bactivate': {
     title: 'Swab Culture vs Biopsy vs bActivate | Mare Uterine Infection',
-    description: 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. Compare the diagnostic options for problem mares.',
+    description: 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. The diagnostic options for problem mares.',
   },
   '/endangered-equine-program': {
-    title: 'The Endangered Equine Program | Free bActivate for Rare-Breed Problem Mares',
-    description: 'For breeds on a recognized conservation watchlist, we donate bActivate for the problem mares that will not get in foal, so your veterinarian can find the infection a standard swab misses.',
+    title: 'Endangered Equine Program | Free bActivate for Rare Breeds',
+    description: 'For breeds on a conservation watchlist we donate bActivate for problem mares that will not get in foal, so your vet can find the infection a swab misses.',
   },
   '/contact': {
     title: 'Contact bActivate | Bojesen & Petersen Biotech, Copenhagen',
@@ -621,9 +621,17 @@ const PAGE_META = {
     title: 'Dormant Bacteria & Antibiotics: The Activate-First Protocol',
     description: 'Dormant Streptococcus zooepidemicus evades swabs and resists antibiotics. See why activating it before antibiotic treatment clears chronic endometritis.',
   },
+  '/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough': {
+    title: 'Biofilm in the Mare\'s Uterus: Why Breaking It Up Is Not Enough',
+    description: 'Breaking up biofilm does not remove the dormant streptococci beneath it. Why a swab misses them, and why activation and culture come before treatment.',
+  },
+  '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare': {
+    title: 'A Clean Swab Does Not Rule Out Infection in a Problem Mare',
+    description: 'A swab culture finds only 34% of infected mares, a biopsy culture 82% (Nielsen 2005). Why a clean swab does not clear a problem mare, and what to do next.',
+  },
   '/blog/how-bactivate-tackles-dormant-bacteria-in-mares': {
     title: 'How bActivate Tackles Dormant Bacteria in Mares',
-    description: 'bActivate wakes dormant streptococcal bacteria in mares, making them detectable. 89% of the bred problem mares at Kildangan (Godolphin) were in foal after activation and targeted treatment (16 of 18, internal clinical data).',
+    description: 'bActivate wakes dormant streptococcal bacteria in mares so they can be found and treated. At Kildangan (Godolphin), 89% of bred problem mares got in foal.',
   },
   '/blog/enhancing-mare-fertility-bactivate-revolutionary-approach': {
     title: 'Enhancing Mare Fertility with bActivate',
@@ -647,7 +655,7 @@ const PAGE_META = {
   },
   '/blog/bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares': {
     title: '89% Pregnancy Rate in Thoroughbred Mares at Godolphin',
-    description: 'Kildangan/Godolphin stud study: 89% of bred thoroughbred mares (16/18) conceived after bActivate activation and targeted antibiotics prescribed by the stud vet.',
+    description: 'Kildangan/Godolphin stud study: 89% of bred thoroughbred mares (16/18) conceived after bActivate activation and targeted antibiotics from the stud vet.',
   },
 };
 
@@ -1297,10 +1305,37 @@ async function main() {
     }
   }
 
+  syncStaticPages();
+
   rmSync(ssrOutDir, { recursive: true, force: true });
 
   console.log(`\nPrerender complete: ${success} succeeded, ${fail} failed.\n`);
   if (fail > 0) process.exit(1);
+}
+
+// Hand-made static pages under public/ carry a copy of the React header/footer and a stylesheet
+// link from the build they were made with. Class names and asset hashes change with every build,
+// so refresh them from the freshly rendered home page (and never load the app bundle there: the
+// router has no route for these paths and would replace the content with the 404 page).
+const STATIC_PAGES = ['glossary/index.html', 'is-my-mare-a-candidate/index.html'];
+function syncStaticPages() {
+  const home = readFileSync(path.resolve(ROOT, 'dist/index.html'), 'utf8');
+  const header = (home.match(/<header[\s\S]*?<\/header>/) || [])[0];
+  const footer = (home.match(/<footer[\s\S]*?<\/footer>/) || [])[0];
+  const css = (home.match(/<link rel="stylesheet"[^>]*>/) || [])[0];
+  if (!header || !footer || !css) throw new Error('syncStaticPages: header, footer or stylesheet not found in dist/index.html');
+  for (const rel of STATIC_PAGES) {
+    const p = path.resolve(ROOT, 'dist', rel);
+    let html;
+    try { html = readFileSync(p, 'utf8'); } catch { continue; }
+    html = html
+      .replace(/<header[\s\S]*?<\/header>/, () => header)
+      .replace(/<footer[\s\S]*?<\/footer>/, () => footer)
+      .replace(/<link rel="stylesheet"[^>]*>/, () => css)
+      .replace(/[ \t]*<script type="module"[^>]*><\/script>\n?/, '');
+    writeFileSync(p, html, 'utf8');
+    console.log(`  ✓ static ${rel} synced with the current header, footer and stylesheet`);
+  }
 }
 
 main().catch(err => {
