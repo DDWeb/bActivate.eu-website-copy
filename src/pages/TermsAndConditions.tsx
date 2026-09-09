@@ -70,7 +70,7 @@ export default function TermsAndConditions() {
                     <p>Copyright and other relevant intellectual property rights exists on all text relating to the Company&rsquo;s services and the full content of this website.</p>
 
                     <h3>Communication</h3>
-                    <p>We have several different e-mail addresses for different queries. These, & other contact information, can be found on our <a href="/about-us/">About Us</a> page or via Company literature or via the Company&rsquo;s stated telephone, e-mail or mobile telephone numbers.<br />Bojesen and Petersen Biotech ApS is registered in Denmark (CVR no 34690324) on the address Strandboulevarden 23, DK-2100 Copenhagen &Oslash;.<br />Bojesen and Petersen Biotech 2014 All Rights Reserved</p>
+                    <p>We have several different e-mail addresses for different queries. These, & other contact information, can be found on our <a href="/about-us">About Us</a> page or via Company literature or via the Company&rsquo;s stated telephone, e-mail or mobile telephone numbers.<br />Bojesen and Petersen Biotech ApS is registered in Denmark (CVR no 34690324) on the address Strandboulevarden 23, DK-2100 Copenhagen &Oslash;.<br />Bojesen and Petersen Biotech 2014 All Rights Reserved</p>
                 </div>
             </div>
         </main>
