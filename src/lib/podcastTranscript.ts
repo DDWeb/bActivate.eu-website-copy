@@ -4,34 +4,34 @@ export const podcastTranscriptHtml = "<h3>Key takeaways</h3><ul><li>A problem ma
 export const podcastFaq: {q: string; a: string}[] = [
   {
     "q": "What is a problem mare?",
-    "a": "A problem mare is one bred three or more times to fertile semen without conceiving. Roughly 5 to 10 percent of a broodmare population ends a season open."
+    "a": "A problem mare is one bred three or more times to fertile semen without conceiving. In the podcast the founders describe her as the mare that cycles normally, has clean swabs, and still ends the season open."
   },
   {
     "q": "Why do standard swabs miss the infection in problem mares?",
-    "a": "Dormant Streptococcus zooepidemicus shuts down its metabolism and does not grow on standard culture, and it hides inside the mare's own uterine cells and as deep as about 10 mm into the lining. So a standard swab returns a false negative."
+    "a": "Dormant Streptococcus zooepidemicus shuts down its metabolism and does not grow on standard culture, and it sits in foci 300 to 500 micrometres beneath the surface of the uterine lining (Petersen et al., 2009). A surface swab therefore returns a false negative: swab culture found 34% of uterine infections against 82% for biopsy culture (Nielsen 2005)."
   },
   {
     "q": "How common is dormant infection in problem mares?",
-    "a": "According to Bojesen and Petersen, around 80 percent of problem mares carry a dormant streptococcal infection. Three risk factors each independently flag a high probability: age 12 or older, three or more foals, or a previous episode of endometritis or abortion."
+    "a": "In the published activation series, 47 to 87% of problem mares were activation-positive: 47% at Hagyard (30 of 64), 84% at Kildangan (16 of 19) and 86.7% in the Copenhagen 2025 thesis. Three risk factors flag a higher probability: age 12 or older, three or more foals, or a previous episode of endometritis."
   },
   {
     "q": "Is breaking up a uterine biofilm enough to fix the infection?",
-    "a": "No. A biofilm is a superficial colony on the uterine lining. Acetylcysteine can break it up on the surface, but the dormant infection also sits deeper in the tissue where acetylcysteine does not reach, so it does not bring the dormant bacteria back into an active, treatable state."
+    "a": "No. A biofilm is a superficial colony on the uterine lining. Acetylcysteine can break it up on the surface, but the dormant infection also sits deeper in the tissue where acetylcysteine does not reach, so it does not bring the dormant bacteria into a state a culture can find."
   },
   {
     "q": "What were the Hagyard study results?",
-    "a": "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, about 64 problem mares were treated with the bActivate protocol; roughly 70 percent became pregnant and at least 32 delivered live foals."
+    "a": "In a study at Hagyard Equine Medical Institute led by Dr. Kristina Lu, 64 problem mares barren for three or more seasons went through the activation protocol: 47% were activation-positive (30 of 64), 83% became pregnant (53 of 64) and 70% of the mares with a known outcome foaled (32 of 46). No placebo group was included."
   },
   {
     "q": "What were the Kildangan / Godolphin study results?",
-    "a": "At Kildangan Stud (Godolphin) with Dr. Meta Osborne, 19 problem mares were tested, 16 were activation positive and treated with penicillin, and 14 of the 19 carried a live foal the following year at an average of 1.1 cycles per mare."
+    "a": "At Kildangan Stud (Godolphin) with Dr. Meta Osborne, 19 problem mares were activated: 16 were activation-positive and treated, and 89% of the bred mares became pregnant (16 of 18) at an average of 1.1 covers per mare (J Equine Vet Sci 2018;66:117)."
   },
   {
     "q": "How does the bActivate protocol work?",
-    "a": "The mare is sampled in heat, 10 ml of bActivate is infused, and after about 48 hours the uterus is re-sampled and cultured. If streptococci are activated, the mare is treated locally and systemically with penicillin for three days."
+    "a": "The mare is sampled in heat, 10 ml of bActivate is instilled, and after 48 hours the uterus is re-sampled and cultured with an antibiogram. If streptococci are activated, the veterinarian treats locally and systemically according to the antibiogram, and the mare is bred in the following cycle."
   },
   {
     "q": "How accurate is a standard swab compared with flush or biopsy?",
-    "a": "A standard swab catches only about one third of positive mares. Flush (lavage) or biopsy catch roughly 60 to 70 percent. Dormant streptococci are still missed unless an activation medium like bActivate is used."
-  }
+    "a": "A standard swab finds about 34% of infected mares and a biopsy culture about 82% (Nielsen 2005). Dormant streptococci are still missed by both unless an activation medium like bActivate is used first."
+  },
 ];

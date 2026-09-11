@@ -77,22 +77,22 @@ const ROUTE_SCHEMAS = {
       {
         '@type': 'Question',
         'name': 'Is Streptococcus zooepidemicus the same as strangles?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Strangles is caused by Streptococcus equi subspecies equi. Streptococcus equi subspecies zooepidemicus (Strep zoo) is a different, opportunistic subspecies that causes secondary respiratory, wound and uterine infections, and it is much less contagious than strangles.' },
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Strangles is caused by Streptococcus equi subspecies equi. Strep zoo is a different, opportunistic subspecies that causes secondary infections and is much less contagious.' },
       },
       {
         '@type': 'Question',
-        'name': 'What antibiotic treats Streptococcus zooepidemicus in horses?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Penicillin is usually the first choice, ideally guided by culture and sensitivity testing. In a German study of 28,887 endometrial samples, 99.5% of beta-haemolytic streptococci were penicillin-sensitive. Penicillin works on active infections but not on dormant uterine bacteria that are not actively growing.' },
+        'name': 'What antibiotic treats Strep zoo in horses?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Penicillin is usually the first choice, ideally guided by culture and sensitivity. It works well on active infections, but not on dormant uterine bacteria that are not growing.' },
       },
       {
         '@type': 'Question',
-        'name': 'Why does my mare have a clean swab but still will not get in foal?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Dormant Streptococcus zooepidemicus deep in the uterine lining does not grow on a standard culture, so the swab reads negative even though the infection is present and preventing conception. Reactivating the dormant bacteria before culture, for example with bActivate, makes the hidden infection detectable and treatable.' },
+        'name': 'Why does my mare have a clean swab but still won\'t get in foal?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Because dormant Strep zoo deep in the uterine lining does not grow on a standard culture, so the swab reads negative while the infection is still present. Reactivating the bacteria before culture reveals it.' },
       },
       {
         '@type': 'Question',
         'name': 'Can Streptococcus zooepidemicus infect people?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Rarely. Human infections are uncommon and usually linked to unpasteurised dairy products or close contact with infected animals. Basic hygiene around sick horses is a sensible precaution.' },
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Rarely. Human cases are uncommon and usually linked to unpasteurised dairy or close contact with infected animals.' },
       },
     ],
   },
@@ -557,7 +557,7 @@ const PAGE_META = {
   },
   '/blog/positive-activation-culture-what-happens-next': {
     title: 'Your Mare Is Activation-Positive: What Happens Next',
-    description: 'What a positive post-activation culture means, what the veterinarian does with the antibiogram, when the mare is bred again, and what the field data say about the outcome.',
+    description: 'What a positive post-activation culture means, what the veterinarian does with the antibiogram, when the mare is bred again, and what the field data say.',
   },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
@@ -585,7 +585,7 @@ const PAGE_META = {
   },
   '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares': {
     title: 'What an Empty Season Costs: The Breeder\'s Calculation',
-    description: 'What a lost season really costs, what it costs to find the cause (swab, activation culture), and what the figures from 64 problem mares say. No promises, with sources.',
+    description: 'What a lost season really costs, what it costs to find the cause, and what the figures from 64 problem mares say. No promises, with sources.',
   },
   '/blog/insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health': {
     title: 'German Study: Bacterial Spectrum in Mare Uterine Health',
@@ -861,6 +861,7 @@ const EXTRA_SCHEMAS = {
         }
       ],
       "datePublished": "2009-08-03",
+      "sameAs": ["https://clinicaltheriogenology.net/index.php/CT/article/view/12588"],
       "pagination": "393-409",
       "url": "https://clinicaltheriogenology.net/index.php/CT/article/view/12588",
       "publisher": {

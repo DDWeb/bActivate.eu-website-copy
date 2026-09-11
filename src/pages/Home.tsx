@@ -56,7 +56,7 @@ export default function Home() {
                 Dormant bacteria are difficult to diagnose by standard techniques and highly tolerant to antibiotic. Efficient handling thus requires re-activation of the bacteria. This can be achieved by instillation of bActivate, a bacterial growth medium, into the uterus.
               </p>
               <Link to="/how-to-use" className={styles.btnRedSquare}>
-                READ MORE
+                See how it works
               </Link>
             </div>
             <div className={styles.howItWorksVideo}>
@@ -78,7 +78,7 @@ export default function Home() {
               bActivate is a bacterial growth medium capable of re-activating dormant streptococcal infections in the uterus of brood mares.
             </p>
             <Link to="/what-is-bactivate" className={styles.btnRedSquare}>
-              READ MORE
+              What bActivate is
             </Link>
           </div>
         </div>
@@ -99,7 +99,7 @@ export default function Home() {
                 Some mares are still not pregnant at the end of the breeding season, despite fertile stallions and experienced veterinary supervision.
               </p>
               <Link to="/when-to-use" className={styles.btnRedSquare}>
-                READ MORE
+                When to use it
               </Link>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Home() {
                 bActivate is to be used in mares with reduced uterine defense mechanisms and in mares suspected of having a chronic subclinical infection.
               </p>
               <Link to="/how-to-use" className={styles.btnRedSquare}>
-                READ MORE
+                The protocol, step by step
               </Link>
             </div>
             <div className={styles.twoImagesGroup}>
@@ -150,12 +150,12 @@ export default function Home() {
       <section className={styles.menBehindFullSection}>
         <div className={styles.container}>
           <div className={styles.menBehindContent}>
-            <h2 className={styles.menBehindTitle}>The Men Behind bActivate</h2>
+            <h2 className={styles.menBehindTitle}>Who developed bActivate</h2>
             <p className={styles.menBehindText}>
               Every season, some mares fail to get in foal. Now two Danish researchers have identified what might be wrong and produced a product, which can facilitate diagnostics. Veterinarians at the world's largest equine hospital in Kentucky have successfully tested the product.
             </p>
             <Link to="/about-us" className={styles.btnWhiteSolid}>
-              READ MORE ABOUT US
+              Meet the founders
             </Link>
           </div>
         </div>

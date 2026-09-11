@@ -344,10 +344,10 @@
     <p class="section-sub">Real cases, real vets, real results. Content you can share directly with your audience.</p>
     <div class="video-grid">
       <div class="video-embed">
-        <iframe src="https://www.youtube.com/embed/opjKTwDHH9c" title="bActivate, How it works" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio:16/9"></iframe>
+        <button type="button" class="yt-facade" data-id="opjKTwDHH9c" data-ratio="16/9" aria-label="Play video: bActivate, How it works" style="position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:none;cursor:pointer;background:#000;overflow:hidden"><img src="/images/yt/opjKTwDHH9c-640.webp" alt="bActivate, How it works" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"><span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;background:rgba(144,24,32,.92);border-radius:10px;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:18px solid #fff;display:block;margin-left:4px"></span></span></button>
       </div>
       <div class="video-short">
-        <iframe src="https://www.youtube.com/embed/pKaX-KigPcc" title="bActivate Short" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio:9/16;width:100%"></iframe>
+        <button type="button" class="yt-facade" data-id="pKaX-KigPcc" data-ratio="9/16" aria-label="Play video: bActivate Short" style="position:relative;display:block;width:100%;aspect-ratio:9/16;padding:0;border:none;cursor:pointer;background:#000;overflow:hidden"><img src="/images/yt/pKaX-KigPcc-640.webp" alt="bActivate Short" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block"><span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:68px;height:48px;background:rgba(144,24,32,.92);border-radius:10px;display:flex;align-items:center;justify-content:center"><span style="width:0;height:0;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:18px solid #fff;display:block;margin-left:4px"></span></span></button>
       </div>
     </div>
   </div>
@@ -509,5 +509,6 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){
 });
 </script>
 
+<script>document.querySelectorAll('.yt-facade').forEach(function(b){b.addEventListener('click',function(){var f=document.createElement('iframe');f.src='https://www.youtube.com/embed/'+b.dataset.id+'?autoplay=1';f.title=b.getAttribute('aria-label');f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';f.allowFullscreen=true;f.style.cssText='width:100%;height:100%;border:0;display:block;aspect-ratio:'+(b.dataset.ratio||'16/9');b.replaceWith(f);});});</script>
 </body>
 </html>
