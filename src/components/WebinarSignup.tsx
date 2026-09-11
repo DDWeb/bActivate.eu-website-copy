@@ -14,7 +14,7 @@ export default function WebinarSignup() {
                 >
                     <div className={styles.buttonContent}>
                         <span className={styles.eyebrow}>Free Expert Webinar</span>
-                        <h2 className={styles.title}>WATCH OUR WEBINAR</h2>
+                        <h2 className={styles.title}>Watch our webinar</h2>
                         <p className={styles.description}>
                             Watch our webinar on diagnosis and treatment of problem mares, now available as a recording.
                         </p>

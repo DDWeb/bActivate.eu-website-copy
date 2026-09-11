@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import styles from './Podcast.module.css';
 import LiteYouTube from '@/components/LiteYouTube';
+import FAQSection from '@/components/FAQSection';
+import { podcastFaq } from '@/lib/podcastTranscript';
 import { podcastTranscriptHtml } from '@/lib/podcastTranscript';
 
 const TRANSCRIBED_EPISODE_ID = '5t0VvgoV_ls';
@@ -62,7 +64,7 @@ export default function Podcast() {
                 <div className={styles.videoGrid}>
                     {danishVideos.map((v) => (
                         <div key={v.id} className={styles.youtubeEmbed}>
-                            <LiteYouTube id={v.id} title={v.title} />
+                            <LiteYouTube id={v.id} title={v.title} poster={`/images/yt/${v.id}-640.webp`} />
                         </div>
                     ))}
                 </div>
@@ -74,7 +76,7 @@ export default function Podcast() {
                 <div className={styles.videoGrid}>
                     {englishVideos.map((v) => (
                         <div key={v.id} className={styles.youtubeEmbed}>
-                            <LiteYouTube id={v.id} title={v.title} />
+                            <LiteYouTube id={v.id} title={v.title} poster={`/images/yt/${v.id}-640.webp`} />
                         </div>
                     ))}
                 </div>
@@ -90,6 +92,8 @@ export default function Podcast() {
                     dangerouslySetInnerHTML={{ __html: podcastTranscriptHtml }}
                 />
             </section>
+
+            <FAQSection items={podcastFaq.map(f => ({ question: f.q, answer: f.a }))} subtitle="What the founders explain in the podcast, with the figures as published." />
 
             <section className={styles.sponsorSection}>
                 <div className={styles.sponsorContent}>

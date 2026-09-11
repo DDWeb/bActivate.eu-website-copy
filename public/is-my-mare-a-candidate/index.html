@@ -46,9 +46,6 @@
   <link rel="alternate" hreflang="nl" href="https://lege-merrie.nl/" />
   <link rel="alternate" hreflang="es" href="https://yegua-infertil.es/" />
   <link rel="alternate" hreflang="x-default" href="https://bactivate.eu/is-my-mare-a-candidate" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Hreflang - Regional variants (EU vs US) + language alternatives -->
 
   <!-- Structured Data - Organization -->
@@ -598,32 +595,5 @@
   <!-- Affiliatly tracking -->
   <script>var url = "https://static.affiliatly.com/framework/other.js?affiliatly_code=AF-1074392";var script = document.createElement("script");script.type = "text/javascript";script.async = true;script.src = url;document.getElementsByTagName("head")[0].appendChild(script);</script>
   <!-- End Affiliatly tracking -->
-  <!-- Google Merchant Badge -->
-  <script id="merchantWidgetScript" src="https://www.gstatic.com/shopping/merchant/merchantwidget.js" defer></script>
-  <script>
-    var allowedPaths = ['/', '/shop', '/studies-effect'];
-    function tryStartMerchantWidget() {
-      try {
-        if (typeof merchantwidget !== 'undefined' && allowedPaths.indexOf(window.location.pathname) !== -1) {
-          merchantwidget.start({
-            merchant_id: 5744487013,
-            position: merchantwidget.BOTTOM_RIGHT,
-            region: 'DK'
-          });
-        }
-      } catch(e) {}
-    }
-    document.getElementById('merchantWidgetScript').addEventListener('load', function() {
-      tryStartMerchantWidget();
-      // Re-check on SPA navigation
-      window.addEventListener('popstate', tryStartMerchantWidget);
-      var origPushState = history.pushState;
-      history.pushState = function() {
-        origPushState.apply(this, arguments);
-        setTimeout(tryStartMerchantWidget, 100);
-      };
-    });
-  </script>
-  <!-- End Google Merchant Badge -->
   <script>window.addEventListener("load",function(){var t=document.querySelector("._linkList_1f7a6_241");if(t&&!t.querySelector("[href=\"/is-my-mare-a-candidate\"]")){var l=document.createElement("li");l.innerHTML='<a class="_link_1f7a6_241" href="/is-my-mare-a-candidate">Is my mare a candidate?</a>';t.appendChild(l);}});</script></body>
 </html>
