@@ -1,8 +1,12 @@
-import { useState } from 'react';
-
-// Two distinct question sets. The visible accordion must stay in sync with the
-// FAQPage structured data injected per route in scripts/prerender.mjs
-// ('/' = homeFaqItems, '/shop' = shopFaqItems). Edit both together.
+// Visible FAQ accordion. Every answer is rendered into the DOM (native
+// <details>/<summary>), so the prerendered HTML carries the full Q&A that the
+// FAQPage structured data describes. Crawlers and AI readers see the answers
+// without JavaScript; visitors get a click-to-open accordion.
+//
+// Two site-wide question sets live here ('/' = homeFaqItems, '/shop' =
+// shopFaqItems); per-route sets live in src/lib/routeFaqs.ts. In both files the
+// FAQPage JSON-LD is generated from the SAME arrays by scripts/prerender.mjs,
+// which parses the `question: "..."` / `answer: "..."` shape. Keep that shape.
 export const homeFaqItems = [
   {
     question: "What is bActivate?",
@@ -69,19 +73,22 @@ export const shopFaqItems = [
   },
 ];
 
+export type FaqItem = { question: string; answer: string };
+
 type FAQVariant = 'home' | 'shop';
 
-const FAQSection = ({ variant = 'home' }: { variant?: FAQVariant }) => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+type FAQSectionProps = {
+  variant?: FAQVariant;
+  items?: FaqItem[];
+  subtitle?: string;
+  heading?: string;
+};
 
-  const faqItems = variant === 'shop' ? shopFaqItems : homeFaqItems;
-  const subtitle = variant === 'shop'
+const FAQSection = ({ variant = 'home', items, subtitle, heading }: FAQSectionProps) => {
+  const faqItems = items ?? (variant === 'shop' ? shopFaqItems : homeFaqItems);
+  const intro = subtitle ?? (variant === 'shop'
     ? 'Common questions about ordering, price, shipping and what the studies show.'
-    : 'Common questions about problem mares, biofilm infections and bActivate activation.';
-
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    : 'Common questions about problem mares, biofilm infections and bActivate activation.');
 
   return (
     <section style={{ background: '#f8f8f8', borderTop: '1px solid #e5e7eb', padding: '4rem 1rem' }}>
@@ -90,25 +97,23 @@ const FAQSection = ({ variant = 'home' }: { variant?: FAQVariant }) => {
           FAQ
         </p>
         <h2 style={{ fontSize: '1.6rem', fontWeight: 700, color: '#111', marginBottom: '0.75rem' }}>
-          Frequently Asked Questions
+          {heading ?? 'Frequently Asked Questions'}
         </h2>
         <p style={{ color: '#666', marginBottom: '2.5rem', fontSize: '0.95rem' }}>
-          {subtitle}
+          {intro}
         </p>
 
         <div>
           {faqItems.map((item, index) => (
-            <div
+            <details
               key={index}
+              className="faq-item"
               style={{ borderBottom: '1px solid #e5e7eb' }}
             >
-              <button
-                onClick={() => toggle(index)}
+              <summary
+                className="faq-summary"
                 style={{
-                  width: '100%',
-                  textAlign: 'left',
-                  background: 'none',
-                  border: 'none',
+                  listStyle: 'none',
                   padding: '1.1rem 0',
                   cursor: 'pointer',
                   display: 'flex',
@@ -121,28 +126,15 @@ const FAQSection = ({ variant = 'home' }: { variant?: FAQVariant }) => {
                   lineHeight: 1.4,
                 }}
               >
-                <span>{item.question}</span>
-                <span style={{
-                  flexShrink: 0,
-                  fontSize: '1.25rem',
-                  color: '#901820',
-                  transform: openIndex === index ? 'rotate(180deg)' : 'rotate(0deg)',
-                  transition: 'transform 0.2s ease',
-                }}>
+                <h3 style={{ margin: 0, fontSize: 'inherit', fontWeight: 'inherit' }}>{item.question}</h3>
+                <span aria-hidden="true" className="faq-chevron" style={{ flexShrink: 0, fontSize: '1.25rem', color: '#901820' }}>
                   &#8964;
                 </span>
-              </button>
-              {openIndex === index && (
-                <div style={{
-                  paddingBottom: '1.1rem',
-                  color: '#444',
-                  fontSize: '0.95rem',
-                  lineHeight: 1.7,
-                }}>
-                  {item.answer}
-                </div>
-              )}
-            </div>
+              </summary>
+              <div style={{ paddingBottom: '1.1rem', color: '#444', fontSize: '0.95rem', lineHeight: 1.7 }}>
+                <p style={{ margin: 0 }}>{item.answer}</p>
+              </div>
+            </details>
           ))}
         </div>
       </div>

@@ -107,6 +107,7 @@ A mare is defined as having a latent infection if more bacteria are isolated 48 
 Structured, citable knowledge in Open Knowledge Format (markdown, one concept per file). Use these for verified definitions, mechanism, and study data.
 
 - https://bactivate.us/okf/index.md : Entry point and concept map
+- https://bactivate.us/llms-full.txt : Full knowledge base in one file (every OKF file below, concatenated, for a single fetch)
 - https://bactivate.us/okf/bactivate.md : What bActivate is (definition, mechanism, regulatory positioning)
 - https://bactivate.us/okf/problem-mare.md : The clinical condition and why it is under-diagnosed
 - https://bactivate.us/okf/dormant-streptococcus.md : The pathogen and why standard swabs miss it

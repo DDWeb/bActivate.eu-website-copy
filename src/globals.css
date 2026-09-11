@@ -75,3 +75,9 @@ img {
 @media (prefers-color-scheme: dark) {
   /* Sticking to light mode for 1:1 parity */
 }
+
+/* FAQ accordion (FAQSection.tsx): native <details>, answers always in the DOM */
+details.faq-item > summary.faq-summary::-webkit-details-marker { display: none; }
+details.faq-item > summary.faq-summary::marker { content: ""; }
+details.faq-item .faq-chevron { transition: transform 0.2s ease; display: inline-block; }
+details.faq-item[open] .faq-chevron { transform: rotate(180deg); }

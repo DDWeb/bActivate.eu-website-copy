@@ -61,7 +61,7 @@ export default function LanguageMesh() {
                             }}
                         >
                             <img
-                                src={`https://flagcdn.com/24x18/${lang.flag}.png`}
+                                src={`/images/flags/${lang.flag}.png`}
                                 alt=""
                                 width={20}
                                 height={15}

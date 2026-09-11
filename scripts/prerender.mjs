@@ -337,142 +337,14 @@ const ROUTE_SCHEMAS = {
       { '@type': 'HowToStep', 'position': 5, 'name': 'Begin targeted antibiotic therapy', 'text': 'Begin appropriate antimicrobial therapy (uterine and systemic antibiotics) based on the results of the post-activation culture. Do not breed in the same estrus cycle, breed in the following cycle.' },
     ],
   },
-  '/studies-effect': {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    'mainEntity': [
-      {
-        '@type': 'Question',
-        'name': 'What pregnancy rate has bActivate achieved in clinical studies?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'In the largest clinical evaluation, at Hagyard Equine Medical Institute in Lexington, Kentucky, Dr. Kristina Lu\'s team activated and treated 64 problem Thoroughbred mares (barren for 3 or more consecutive seasons). 83% became pregnant (53 of 64 mares). A separate field study at Kildangan Stud, operated by Godolphin, reported an 89% pregnancy rate among bred problem mares (16 of 18). The studies were carried out at independent clinics and studs; the founders of bActivate co-authored the reporting of the results.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Why do problem mares test negative on routine uterine swabs even when infected?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Standard uterine swab culture relies on active bacterial growth. In problem mares and non-pregnant mares, Streptococcus equi subspecies zooepidemicus often enters a dormant, biofilm-protected state deep inside the uterine endometrium. Dormant bacteria have a very low metabolic rate and do not grow on standard culture media, producing a false-negative result even when the infection is present and actively preventing conception. bActivate reactivates these dormant bacteria so they become detectable by standard culture within 48 hours.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'How many mares have been studied with bActivate?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'The Hagyard clinical study included 64 barren Thoroughbred mares, all of whom had failed to conceive for 3 or more consecutive breeding seasons. The Kildangan/Godolphin study included 19 problem mares. A peer-reviewed laboratory study (Petersen et al., Veterinary Microbiology, 2015) included 37 mares and confirmed bActivate activated dormant bacteria in 64% of treated mares versus 8% in untreated controls.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'What was the live foal rate in the bActivate Hagyard study?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Of the 64 problem mares treated at Hagyard, 53 (83%) became pregnant. Of the 46 mares with confirmed foaling outcomes, 32 (70%) delivered live foals. These were mares with a history of 3 or more failed breeding seasons before receiving bActivate.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Is bActivate supported by peer-reviewed research?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. The core laboratory science is published in Veterinary Microbiology (Petersen et al., 2015, DOI 10.1016/j.vetmic.2015.06.006), a placebo-controlled study confirming bActivate reactivates dormant Streptococcus zooepidemicus in mares. The Hagyard clinical data was presented at the Society for Theriogenology Annual Conference (Petersen and Bojesen, Clinical Theriogenology, 2014), and the Kildangan field study was published as a congress abstract in the Journal of Equine Veterinary Science (2018, DOI 10.1016/j.jevs.2018.05.162). The founders of bActivate are authors on these publications.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'What percentage of non-pregnant mares have a hidden uterine infection?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Studies show that 70 to 80% of mares that remain non-pregnant (open) at the end of the breeding season carry a hidden subclinical uterine infection caused by dormant Streptococcus equi subspecies zooepidemicus. These infections are missed by standard swab culture in more than 60% of affected mares, because the bacteria exist in a dormant state and do not grow on standard culture media.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Where has bActivate been evaluated clinically?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'The Hagyard study was led by Dr. Kristina Lu at one of the world\'s largest equine hospitals, in Lexington, Kentucky. The Kildangan/Godolphin field study was run with Meta Osborne MVB at one of the world\'s premier Thoroughbred breeding operations, in Ireland. The clinics and studs are independent of the manufacturer; the founders of bActivate introduced the activation protocol and co-authored the reporting, which was presented at scientific conferences and published as a congress abstract in the Journal of Equine Veterinary Science (2018).' },
-      },
-    ],
-  },
-  '/what-is-bactivate': {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    'mainEntity': [
-      {
-        '@type': 'Question',
-        'name': 'What is bActivate?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate is a veterinary bacterial growth medium used to detect dormant Streptococcus equi subspecies zooepidemicus infections in the equine uterus. A veterinarian instils it into the uterus of problem mares (non-pregnant mares that fail to conceive despite normal cycles and clean swabs). By providing nutrients that reactivate dormant bacteria, bActivate makes a previously undetectable uterine infection visible to standard swab culture within 48 hours.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Is bActivate a treatment or a diagnostic tool?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate is a diagnostic tool, not a treatment. It does not treat the infection itself. It reactivates dormant bacteria hiding in a biofilm state inside the uterine endometrium, making them detectable by standard swab culture. Once the bacteria are identified, the veterinarian can prescribe targeted antibiotic therapy to clear the infection.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Why do problem mares test negative on uterine swabs despite having an infection?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Streptococcus equi subspecies zooepidemicus can enter a dormant, biofilm-protected state inside the uterine endometrium. In this dormant state the bacteria lower their metabolic rate and do not grow on standard culture media. This produces false-negative swab results in more than 60% of affected mares. The mare appears clear on testing, but the infection is still present and continues to prevent conception, causing repeated breeding failures in otherwise healthy non-pregnant mares.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'How common is hidden uterine infection in non-pregnant mares?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Research indicates that 70 to 80% of mares that remain non-pregnant (open) at the end of the breeding season have a hidden subclinical uterine infection caused by dormant Streptococcus zooepidemicus. Up to 15% of all mares at any given breeding season may be affected. These are mares that appear healthy with normal cycles but carry a bacterial infection that standard culture tests cannot detect.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Who developed bActivate?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate was developed by Prof. Anders Miki Bojesen DVM PhD, Professor of Veterinary Microbiology at the University of Copenhagen, and Dr. Morten Ronn Petersen DVM PhD Dipl. ACT, a veterinarian and researcher at Rigshospitalet Fertility Clinic in Copenhagen. Both researchers have extensive publication records in equine reproductive microbiology and Streptococcus zooepidemicus.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'What is subclinical endometritis in mares?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Subclinical endometritis is a persistent low-grade uterine infection in mares that shows no obvious clinical signs such as discharge or fever. It is caused by dormant Streptococcus equi subspecies zooepidemicus living in a biofilm state deep in the uterine endometrium. The condition causes recurring fertility failure, early embryo loss, and accumulation of uterine fluid after breeding. Standard uterine swabs miss this infection in the majority of affected mares because the bacteria are not actively growing.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'How does bActivate work?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'A veterinarian instils 10 ml of bActivate into the uterus of the problem mare during early oestrus. The growth medium provides nutrients that signal dormant Streptococcus zooepidemicus to reactivate and resume normal growth. After 48 hours, a standard uterine swab culture is taken. Bacteria that were previously invisible are now detectable, enabling accurate diagnosis and targeted antibiotic treatment.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'What makes a mare a problem mare or barren mare?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'A problem mare (also called a barren mare or non-pregnant mare) is a mare that repeatedly fails to conceive despite normal ovarian cycles, breeding to a fertile stallion, and passing routine reproductive examinations including clean uterine cultures. The classic presentation of dormant subclinical endometritis is a mare that tests negative on swabs but cannot sustain pregnancy. These mares often have a history of uterine fluid accumulation, early embryo loss, or multiple open seasons.' },
-      },
-    ],
-  },
-  '/when-to-use': {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    'mainEntity': [
-      {
-        '@type': 'Question',
-        'name': 'When should bActivate be used on a problem mare?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate is indicated for mares that have failed to conceive for two or more consecutive breeding cycles despite normal ovarian cycles, breeding to a fertile stallion, and negative routine uterine culture. It is also indicated when a mare shows signs consistent with uterine infection (uterine fluid on ultrasound, early embryo loss, irregular cycles) but standard swabs return negative results. Some practices use it as a screening tool for all open mares at the start of the off-season.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'What are the signs that a mare has a hidden uterine infection?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'The main signs are: failure to conceive despite multiple breedings to a fertile stallion, a negative routine uterine swab that does not explain the fertility failure, accumulation of uterine fluid visible on ultrasound around oestrus, early embryo loss (days 14 to 25 after ovulation), and a history of two or more open seasons. These signs combined with a negative swab are the classic presentation of dormant subclinical endometritis caused by Streptococcus zooepidemicus in non-pregnant mares.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'How many failed breeding attempts before trying bActivate on a non-pregnant mare?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Most veterinarians consider bActivate after two failed consecutive breeding cycles in a mare with no other identifiable cause. The Hagyard clinical study included mares barren for 3 or more consecutive seasons. In high-value mares or mares approaching the end of their breeding career, earlier investigation may be warranted. Some practices use bActivate as a routine diagnostic on all non-pregnant mares at the end of each breeding season.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Can bActivate be used on any non-pregnant mare or barren mare?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate is intended for non-pregnant mares (also called barren mares or problem mares) suspected of having dormant subclinical uterine infections caused by Streptococcus equi subspecies zooepidemicus. It is administered by a veterinarian and is most appropriate for mares with unexplained fertility failure and negative routine cultures. It is not a first-line tool for mares with acute visible signs of infection such as purulent discharge or positive routine culture results.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Should bActivate be used before or after antibiotics?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate should be used before antibiotics when the goal is accurate diagnosis. Administering antibiotics before bActivate may suppress bacterial reactivation and produce a false-negative post-activation culture. The correct protocol is: instil bActivate, obtain a post-activation culture 48 hours later, then begin targeted antibiotic therapy based on the culture result. The mare is not bred in the same oestrus cycle but in the following one.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Is bActivate used instead of a standard uterine swab?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'No. bActivate is used in addition to standard diagnostic procedures, not instead of them. The recommended protocol includes a pre-activation culture before bActivate instillation and a post-activation culture 48 hours later. Comparing the two cultures confirms whether dormant bacteria were present. bActivate does not replace routine culture but extends diagnostic accuracy to mares with dormant infections that standard culture would otherwise miss.' },
-      },
-      {
-        '@type': 'Question',
-        'name': 'Can bActivate be used during the breeding season?',
-        'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. bActivate is designed for use during the active breeding season. It is administered during early oestrus when the largest follicle is 25 to 30 mm. The mare is not bred in that same oestrus cycle. After a positive post-activation culture and appropriate antibiotic treatment, the mare is bred in the following cycle. In clinical studies this approach achieved an 83% pregnancy rate in problem mares that had previously failed to conceive.' },
-      },
-    ],
-  },
 };
 
 // Per-page metadata for canonical, title and meta description injection
 // FAQPage schema is generated from the SAME arrays that render the visible
 // accordion (src/components/FAQSection.tsx), so markup and visible content
 // cannot drift apart. Home shows the general set, /shop the purchase set.
-function getFaqItems(exportName) {
-  const content = readFileSync(path.resolve(ROOT, 'src/components/FAQSection.tsx'), 'utf8');
+function getFaqItems(exportName, sourceFile = 'src/components/FAQSection.tsx') {
+  const content = readFileSync(path.resolve(ROOT, sourceFile), 'utf8');
   const block = content.match(new RegExp(`export const ${exportName} = \\[([\\s\\S]*?)\\n\\];`));
   if (!block) throw new Error(`FAQ export ${exportName} not found in FAQSection.tsx`);
   const items = [...block[1].matchAll(/question:\s*"((?:[^"\\]|\\.)*)",\s*\n\s*answer:\s*"((?:[^"\\]|\\.)*)",/g)];
@@ -539,6 +411,19 @@ ROUTE_SCHEMAS['/shop'] = [
     'mainEntity': getFaqItems('shopFaqItems'),
   },
 ];
+
+// Route FAQs: visible accordion (FAQSection with items) and schema share one source.
+for (const [route, exportName] of [
+  ['/what-is-bactivate', 'whatIsFaqItems'],
+  ['/when-to-use', 'whenToUseFaqItems'],
+  ['/studies-effect', 'studiesFaqItems'],
+]) {
+  ROUTE_SCHEMAS[route] = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': getFaqItems(exportName, 'src/lib/routeFaqs.ts'),
+  };
+}
 
 ROUTE_SCHEMAS['/endangered-equine-program'] = {
   '@context': 'https://schema.org',
@@ -747,6 +632,10 @@ function routeToOutputPath(route) {
 // @graph). The global FAQPage must go for these too, or the rendered DOM ends
 // up with two.
 const ROUTES_WITH_CLIENT_FAQ = new Set(['/podcast']);
+
+// Routes with no Japanese edition: emit no hreflang="ja" for them, a link to a
+// 404 invalidates the whole cluster for that URL.
+const MISSING_ON_JP = new Set(['/endangered-equine-program']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the
@@ -1128,10 +1017,14 @@ async function main() {
         /(<link rel="alternate" hreflang="en-US" href=")[^"]*(")/,
         `$1${BASE_URL}${routeSuffix}$2`
       );
-      html = html.replace(
-        /(<link rel="alternate" hreflang="ja" href=")[^"]*(")/,
-        `$1https://bactivate.jp${routeSuffix}$2`
-      );
+      if (MISSING_ON_JP.has(route)) {
+        html = html.replace(/[ \t]*<link rel="alternate" hreflang="ja" href="[^"]*"\s*\/?>\n?/, '');
+      } else {
+        html = html.replace(
+          /(<link rel="alternate" hreflang="ja" href=")[^"]*(")/,
+          `$1https://bactivate.jp${routeSuffix}$2`
+        );
+      }
       html = html.replace(
         /(<link rel="alternate" hreflang="x-default" href=")[^"]*(")/,
         `$1${PEER_URL}${routeSuffix}$2`
@@ -1305,10 +1198,28 @@ async function main() {
     }
   }
 
+  writeLlmsFull();
+
   rmSync(ssrOutDir, { recursive: true, force: true });
 
   console.log(`\nPrerender complete: ${success} succeeded, ${fail} failed.\n`);
   if (fail > 0) process.exit(1);
+}
+
+// /llms-full.txt: the whole Open Knowledge Format bundle in one file, in reading
+// order, so an AI reader that follows llms.txt can take everything in one fetch.
+const OKF_ORDER = ['index', 'bactivate', 'problem-mare', 'dormant-streptococcus', 'clinical-evidence', 'how-to-use', 'founders', 'faq', 'webinar'];
+function writeLlmsFull() {
+  const parts = [];
+  for (const name of OKF_ORDER) {
+    let md;
+    try { md = readFileSync(path.resolve(ROOT, 'public/okf', name + '.md'), 'utf8'); } catch { continue; }
+    parts.push(`<!-- source: ${BASE_URL}/okf/${name}.md -->\n${md.trim()}\n`);
+  }
+  if (!parts.length) return;
+  const head = `# bActivate: full knowledge base\n\n> Concatenation of the Open Knowledge Format files listed in ${BASE_URL}/llms.txt. Each section starts with its source URL. bActivate is a veterinary diagnostic culture medium, not a treatment.\n\n`;
+  writeFileSync(path.resolve(ROOT, 'dist/llms-full.txt'), head + parts.join('\n---\n\n'), 'utf8');
+  console.log(`  \u2713 llms-full.txt (${parts.length} OKF files)`);
 }
 
 main().catch(err => {

@@ -33,6 +33,7 @@ Allow: /
 
 User-agent: *
 Allow: /
+Crawl-delay: 2
 Disallow: /*?trk=
 Disallow: /*?profiletab=
 Disallow: /*?wordfence_lh=

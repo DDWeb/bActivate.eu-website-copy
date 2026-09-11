@@ -2,6 +2,8 @@
 import { useEffect } from 'react';
 import styles from './WhenToUse.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import FAQSection from '@/components/FAQSection';
+import { whenToUseFaqItems } from '@/lib/routeFaqs';
 import ReviewedBy from '@/components/ReviewedBy';
 import LiteYouTube from '@/components/LiteYouTube';
 
@@ -173,6 +175,8 @@ export default function WhenToUse() {
                     </p>
                 </div>
             </section>
+
+            <FAQSection items={whenToUseFaqItems} />
 
             <InternalLinks links={[
                 { to: '/how-to-use', label: 'How to Use bActivate', description: 'Full veterinary protocol, instillation and follow-up' },

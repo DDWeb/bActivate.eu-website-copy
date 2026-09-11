@@ -2,6 +2,8 @@
 import { useEffect } from 'react';
 import styles from './WhatIsBactivate.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import FAQSection from '@/components/FAQSection';
+import { whatIsFaqItems } from '@/lib/routeFaqs';
 
 export default function WhatIsBactivate() {
     useEffect(() => {
@@ -150,6 +152,8 @@ export default function WhatIsBactivate() {
                     </div>
                 </div>
             </section>
+
+            <FAQSection items={whatIsFaqItems} />
 
             <InternalLinks links={[
                 { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
