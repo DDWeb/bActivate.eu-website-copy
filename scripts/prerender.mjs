@@ -577,16 +577,15 @@ function getBlogSlugs() {
 
 function getBlogPostData() {
   const content = readFileSync(path.resolve(ROOT, 'src/lib/blogData.ts'), 'utf8');
-  const slugs = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)].map(m => m[1]);
-  const titles = [...content.matchAll(/title:\s*"([^"]+)"/g)].map(m =>
-    m[1].replace(/&amp;/g, '&').replace(/, /g, '-').replace(/, /g, ', ').replace(/&nbsp;/g, ' ')
-  );
-  const dates = [...content.matchAll(/date:\s*"([^"]+)"/g)].map(m => m[1]);
-  const images = [...content.matchAll(/image:\s*"([^"]+)"/g)].map(m => m[1]);
   const result = {};
-  slugs.forEach((slug, i) => {
-    result[slug] = { title: titles[i] || slug, date: parseBlogDate(dates[i] || ''), image: images[i] || '' };
-  });
+  for (const block of content.split(/\n\s*slug:\s*/).slice(1)) {
+    const slug = (block.match(/^["']([^"']+)["']/) || [])[1];
+    if (!slug) continue;
+    const get = (key) => (block.match(new RegExp('\\n\\s*' + key + ':\\s*"([^"]+)"')) || [])[1];
+    const title = (get('title') || slug).replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ');
+    const updated = get('updated');
+    result[slug] = { title, date: parseBlogDate(get('date') || ''), updated: updated ? parseBlogDate(updated) : null, image: get('image') || '' };
+  }
   return result;
 }
 
@@ -1089,7 +1088,7 @@ async function main() {
             'description': pageMeta ? pageMeta.description : post.title,
             'articleBody': articleBody,
             'datePublished': post.date,
-            'dateModified': post.date,
+            'dateModified': post.updated || post.date,
             'image': post.image ? `${BASE_URL}${post.image}` : `${BASE_URL}/og-image.jpg`,
             'url': `${BASE_URL}${route}`,
             'mainEntityOfPage': { '@type': 'WebPage', '@id': `${BASE_URL}${route}` },

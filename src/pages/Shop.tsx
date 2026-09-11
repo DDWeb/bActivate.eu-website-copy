@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import ReviewsSection from '@/components/ReviewsSection';
+import InternalLinks from '@/components/InternalLinks';
 
 export default function Shop() {
     useEffect(() => {
@@ -170,6 +171,12 @@ export default function Shop() {
                     </a>
                 </div>
             </section>
+
+            <InternalLinks links={[
+                { to: '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares', label: 'What a lost season costs', description: 'The economics of testing a problem mare before breeding again' },
+                { to: '/how-to-use', label: 'How to use bActivate', description: 'The veterinary protocol, step by step' },
+                { to: '/our-distributors', label: 'Find a distributor', description: 'Order through your local veterinary supplier' },
+            ]} />
 
             <ReviewsSection />
 

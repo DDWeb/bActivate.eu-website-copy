@@ -179,6 +179,8 @@ export default function WhenToUse() {
             <FAQSection items={whenToUseFaqItems} />
 
             <InternalLinks links={[
+                { to: '/swab-culture-vs-bactivate', label: 'Swab vs biopsy vs bActivate', description: 'Detection rates of the three sampling options, side by side' },
+                { to: '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare', label: 'A clean swab is not a clean mare', description: 'Why a negative culture does not clear a problem mare' },
                 { to: '/how-to-use', label: 'How to Use bActivate', description: 'Full veterinary protocol for diagnosis and treatment' },
                 { to: '/studies-effect', label: 'Clinical Evidence', description: '83% pregnancy rate in 64 problem mares at Hagyard' },
                 { to: '/our-distributors', label: 'Find a Distributor', description: 'UK, Netherlands, Denmark, Australia and more' },

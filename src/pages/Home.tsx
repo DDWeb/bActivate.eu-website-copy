@@ -4,6 +4,7 @@ import styles from './Home.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 import WebinarSignup from '@/components/WebinarSignup';
 import LiteYouTube from '@/components/LiteYouTube';
+import InternalLinks from '@/components/InternalLinks';
 
 export default function Home() {
   useEffect(() => {
@@ -159,6 +160,12 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <InternalLinks links={[
+        { to: '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare', label: 'A clean swab is not a clean mare', description: 'Why a negative culture does not clear a problem mare' },
+        { to: '/swab-culture-vs-bactivate', label: 'Swab vs biopsy vs bActivate', description: 'Detection rates of the three sampling options, side by side' },
+        { to: '/is-my-mare-a-candidate', label: 'Is my mare a candidate?', description: 'Seven questions, two minutes', plain: true },
+      ]} />
 
       <WebinarSignup />
 
