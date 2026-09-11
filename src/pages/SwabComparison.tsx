@@ -27,19 +27,19 @@ export default function SwabComparison() {
                                 <tr className="border-b border-gray-200">
                                     <td className="p-3 font-bold">Standard swab culture</td>
                                     <td className="p-3">Actively growing bacteria on the uterine surface</td>
-                                    <td className="p-3">About 34% of infected mares (Nielsen 2005)</td>
+                                    <td className="p-3">About 34% of infected mares (<a href='https://pubmed.ncbi.nlm.nih.gov/15978661/' target='_blank' rel='noopener noreferrer'>Nielsen 2005</a>)</td>
                                     <td className="p-3">No</td>
                                 </tr>
                                 <tr className="border-b border-gray-200 bg-gray-50">
                                     <td className="p-3 font-bold">Endometrial biopsy culture</td>
                                     <td className="p-3">Actively growing bacteria within the tissue sample</td>
-                                    <td className="p-3">About 82% of infected mares (Nielsen 2005)</td>
+                                    <td className="p-3">About 82% of infected mares (<a href='https://pubmed.ncbi.nlm.nih.gov/15978661/' target='_blank' rel='noopener noreferrer'>Nielsen 2005</a>)</td>
                                     <td className="p-3">No</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
                                     <td className="p-3 font-bold">bActivate + standard culture</td>
                                     <td className="p-3">Dormant bacteria, reactivated so any standard culture can find them</td>
-                                    <td className="p-3">64% of treated mares activation-positive vs 8% of saline controls (Petersen 2015, placebo-controlled)</td>
+                                    <td className="p-3">64% of treated mares activation-positive vs 8% of saline controls (<a href='https://doi.org/10.1016/j.vetmic.2015.06.006' target='_blank' rel='noopener noreferrer'>Petersen 2015, placebo-controlled</a>)</td>
                                     <td className="p-3">Yes, that is its purpose</td>
                                 </tr>
                             </tbody>
@@ -48,7 +48,7 @@ export default function SwabComparison() {
                     <p className="text-gray-500 text-sm mb-10">Sources: Nielsen JM, Theriogenology 2005;64:510-518 (swab vs biopsy sensitivity). Petersen MR et al., Veterinary Microbiology 2015;179:119-125, DOI 10.1016/j.vetmic.2015.06.006, <a href="https://www.researchgate.net/publication/279630136_Activation_of_persistent_Streptococcus_equi_subspecies_zooepidemicus_in_mares_with_subclinical_endometritis" target="_blank" rel="noopener noreferrer" className="underline">full text on ResearchGate</a> (placebo-controlled activation study). The comparisons measure different things and come from different studies; they are shown together as a decision aid, not as a head-to-head trial.</p>
 
                     <h2 className="text-2xl font-bold mb-3">Why a clean swab does not rule out infection</h2>
-                    <p className="text-gray-700 leading-relaxed mb-6">All culture-based methods depend on bacteria growing. Dormant Streptococcus equi subsp. zooepidemicus sits in a low-metabolic persister state deep in the endometrium, in foci 300 to 500 micrometres below the surface a swab can reach (Petersen et al., Clinical Theriogenology 2009). It does not grow on the plate, so the lab reports a negative, and the mare is bred again on a false all-clear.</p>
+                    <p className="text-gray-700 leading-relaxed mb-6">All culture-based methods depend on bacteria growing. Dormant Streptococcus equi subsp. zooepidemicus sits in a low-metabolic persister state deep in the endometrium, in foci 300 to 500 micrometres below the surface a swab can reach (<a href='https://clinicaltheriogenology.net/index.php/CT/article/view/12588' target='_blank' rel='noopener noreferrer'>Petersen et al., Clinical Theriogenology 2009</a>). It does not grow on the plate, so the lab reports a negative, and the mare is bred again on a false all-clear.</p>
 
                     <h2 className="text-2xl font-bold mb-3">Where bActivate fits</h2>
                     <p className="text-gray-700 leading-relaxed mb-6">bActivate does not replace your usual diagnostics. It is the step before them: the veterinarian instils 10 ml into the uterus during early oestrus, the growth medium signals dormant bacteria to resume growth, and 48 hours later a standard culture shows what was hiding. From there, everything is familiar practice: the veterinarian identifies the bacteria and prescribes targeted antibiotics, and the mare is bred in the following cycle.</p>
