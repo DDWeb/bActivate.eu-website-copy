@@ -40,7 +40,7 @@ export default function Home() {
 
           <div className={styles.heroVideoWrapper}>
             <div className={styles.videoContainer}>
-              <LiteYouTube id="_1QPkyXkFgs" title="bActivate - Facilitate Mare Pregnancy" className={styles.video} poster="/images/video-cover.jpg" />
+              <LiteYouTube id="_1QPkyXkFgs" title="bActivate - Facilitate Mare Pregnancy" className={styles.video} poster="/images/video-cover-1200.webp" posterSrcSet="/images/video-cover-640.webp 640w, /images/video-cover-1200.webp 1200w" posterSizes="(max-width: 900px) 100vw, 860px" eager />
             </div>
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
             </div>
             <div className={styles.howItWorksVideo}>
               <div className={styles.videoContainer}>
-                <LiteYouTube id="acpF8se6Co8" title="How bActivate Works" className={styles.video} />
+                <LiteYouTube id="acpF8se6Co8" title="How bActivate Works" className={styles.video} poster="/images/how-bactivate-works-cover-640.webp" />
               </div>
             </div>
           </div>
@@ -89,8 +89,8 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.featureGridTwoImages}>
             <div className={styles.twoImagesGroup}>
-              <img src="/images/2_77.jpg" alt="Mare 1" width={400} height={300} className={styles.featureImg} loading="lazy" />
-              <img src="/images/3_82.jpg" alt="Mare 2" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/2_77-550.webp" srcSet="/images/2_77-400.webp 400w, /images/2_77-550.webp 550w" sizes="(max-width: 768px) 45vw, 350px" alt="Mare 1" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/3_82-550.webp" srcSet="/images/3_82-400.webp 400w, /images/3_82-550.webp 550w" sizes="(max-width: 768px) 45vw, 350px" alt="Mare 2" width={400} height={300} className={styles.featureImg} loading="lazy" />
             </div>
             <div className={styles.featureTextSide}>
               <div className={styles.eyebrowRed}>Application</div>
@@ -121,8 +121,8 @@ export default function Home() {
               </Link>
             </div>
             <div className={styles.twoImagesGroup}>
-              <img src="/images/colt-in-field-800.webp" alt="Colt" width={400} height={300} className={styles.featureImg} loading="lazy" />
-              <img src="/images/horses-2504677-800.webp" alt="Mare and foal" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/colt-in-field-800.webp" srcSet="/images/colt-in-field-400.webp 400w, /images/colt-in-field-800.webp 800w" sizes="(max-width: 768px) 45vw, 350px" alt="Colt" width={400} height={300} className={styles.featureImg} loading="lazy" />
+              <img src="/images/horses-2504677-800.webp" srcSet="/images/horses-2504677-400.webp 400w, /images/horses-2504677-800.webp 800w" sizes="(max-width: 768px) 45vw, 350px" alt="Mare and foal" width={400} height={300} className={styles.featureImg} loading="lazy" />
             </div>
           </div>
         </div>

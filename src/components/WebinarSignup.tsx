@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './WebinarSignup.module.css';
+import LiteYouTube from './LiteYouTube';
 
 export default function WebinarSignup() {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,16 +39,8 @@ export default function WebinarSignup() {
 
                 <div className={`${styles.contentWrapper} ${isOpen ? styles.opened : ''}`}>
                     <div className={styles.formInner}>
-                        <div className={styles.videoWrapper}>
-                            <iframe
-                                width="100%"
-                                height="500"
-                                src="https://www.youtube.com/embed/LemEnrcgVVY"
-                                title="bActivate Webinar, Diagnosis and Treatment of Problem Mares"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                            ></iframe>
+                        <div className={styles.videoWrapper} style={{ aspectRatio: '16 / 9' }}>
+                            <LiteYouTube id="LemEnrcgVVY" title="bActivate Webinar, Diagnosis and Treatment of Problem Mares" poster="/images/webinar-cover-640.webp" />
                         </div>
                     </div>
                 </div>
