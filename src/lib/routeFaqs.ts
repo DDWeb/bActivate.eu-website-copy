@@ -25,7 +25,7 @@ export const whatIsFaqItems = [
   },
   {
     question: "How does bActivate work?",
-    answer: "A veterinarian instils 10 ml of bActivate into the uterus of the problem mare during early oestrus. The growth medium provides nutrients that signal dormant Streptococcus zooepidemicus to reactivate and resume normal growth. After 48 hours, a standard uterine swab culture is taken. Bacteria that were previously invisible are now detectable, enabling accurate diagnosis and targeted antibiotic treatment.",
+    answer: "A veterinarian instils 10 ml of bActivate into the uterus of the problem mare during early estrus. The growth medium provides nutrients that signal dormant Streptococcus zooepidemicus to reactivate and resume normal growth. After 48 hours, a standard uterine swab culture is taken. Bacteria that were previously invisible are now detectable, enabling accurate diagnosis and targeted antibiotic treatment.",
   },
   {
     question: "What makes a mare a problem mare or barren mare?",
@@ -40,7 +40,7 @@ export const whenToUseFaqItems = [
   },
   {
     question: "What are the signs that a mare has a hidden uterine infection?",
-    answer: "The main signs are: failure to conceive despite multiple breedings to a fertile stallion, a negative routine uterine swab that does not explain the fertility failure, accumulation of uterine fluid visible on ultrasound around oestrus, early embryo loss (days 14 to 25 after ovulation), and a history of two or more open seasons. These signs combined with a negative swab are the classic presentation of dormant subclinical endometritis caused by Streptococcus zooepidemicus in non-pregnant mares.",
+    answer: "The main signs are: failure to conceive despite multiple breedings to a fertile stallion, a negative routine uterine swab that does not explain the fertility failure, accumulation of uterine fluid visible on ultrasound around estrus, early embryo loss (days 14 to 25 after ovulation), and a history of two or more open seasons. These signs combined with a negative swab are the classic presentation of dormant subclinical endometritis caused by Streptococcus zooepidemicus in non-pregnant mares.",
   },
   {
     question: "How many failed breeding attempts before trying bActivate on a non-pregnant mare?",
@@ -52,7 +52,7 @@ export const whenToUseFaqItems = [
   },
   {
     question: "Should bActivate be used before or after antibiotics?",
-    answer: "bActivate should be used before antibiotics when the goal is accurate diagnosis. Administering antibiotics before bActivate may suppress bacterial reactivation and produce a false-negative post-activation culture. The correct protocol is: instil bActivate, obtain a post-activation culture 48 hours later, then begin targeted antibiotic therapy based on the culture result. The mare is not bred in the same oestrus cycle but in the following one.",
+    answer: "bActivate should be used before antibiotics when the goal is accurate diagnosis. Administering antibiotics before bActivate may suppress bacterial reactivation and produce a false-negative post-activation culture. The correct protocol is: instil bActivate, obtain a post-activation culture 48 hours later, then begin targeted antibiotic therapy based on the culture result. The mare is not bred in the same estrus cycle but in the following one.",
   },
   {
     question: "Is bActivate used instead of a standard uterine swab?",
@@ -60,7 +60,7 @@ export const whenToUseFaqItems = [
   },
   {
     question: "Can bActivate be used during the breeding season?",
-    answer: "Yes. bActivate is designed for use during the active breeding season. It is administered during early oestrus when the largest follicle is 25 to 30 mm. The mare is not bred in that same oestrus cycle. After a positive post-activation culture and appropriate antibiotic treatment, the mare is bred in the following cycle. In clinical studies this approach achieved an 83% pregnancy rate in problem mares that had previously failed to conceive.",
+    answer: "Yes. bActivate is designed for use during the active breeding season. It is administered during early estrus when the largest follicle is 25 to 30 mm. The mare is not bred in that same estrus cycle. After a positive post-activation culture and appropriate antibiotic treatment, the mare is bred in the following cycle. In clinical studies this approach achieved an 83% pregnancy rate in problem mares that had previously failed to conceive.",
   },
 ];
 

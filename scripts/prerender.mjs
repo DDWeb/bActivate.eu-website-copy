@@ -235,7 +235,7 @@ const ROUTE_SCHEMAS = {
         "name": "Is it worth testing a problem mare before another breeding season?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "In clinical series, 47 to 87% of problem mares carried a hidden uterine infection that standard culture had missed (Hagyard 2014, Kildangan 2018, Copenhagen 2025). Testing first replaces a repeat of last season with a diagnosis, and the whole protocol fits inside one oestrus cycle."
+          "text": "In clinical series, 47 to 87% of problem mares carried a hidden uterine infection that standard culture had missed (Hagyard 2014, Kildangan 2018, Copenhagen 2025). Testing first replaces a repeat of last season with a diagnosis, and the whole protocol fits inside one estrus cycle."
         }
       },
       {
@@ -1196,7 +1196,7 @@ async function main() {
           '@context': 'https://schema.org',
           '@type': 'MedicalWebPage',
           'name': 'How to Use bActivate, Veterinary Protocol for Problem Mares',
-          'description': 'Step-by-step veterinary protocol: pre-activation uterine culture, bActivate instillation during early oestrus, post-activation culture at 48 hours, and targeted antibiotic therapy based on culture results.',
+          'description': 'Step-by-step veterinary protocol: pre-activation uterine culture, bActivate instillation during early estrus, post-activation culture at 48 hours, and targeted antibiotic therapy based on culture results.',
           'url': `${BASE_URL}/how-to-use`,
           'inLanguage': 'en',
           'about': {
