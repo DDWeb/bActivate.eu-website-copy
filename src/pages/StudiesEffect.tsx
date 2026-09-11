@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import styles from './StudiesEffect.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import FAQSection from '@/components/FAQSection';
+import { studiesFaqItems } from '@/lib/routeFaqs';
 
 export default function StudiesEffect() {
     useEffect(() => {
@@ -182,6 +184,8 @@ export default function StudiesEffect() {
                     </div>
                 </div>
             </section>
+
+            <FAQSection items={studiesFaqItems} />
 
             <InternalLinks links={[
                 { to: '/shop', label: 'Order bActivate', description: '€229 per vial, ships from Copenhagen' },
