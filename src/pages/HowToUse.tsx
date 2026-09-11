@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './HowToUse.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import InShort from '@/components/InShort';
 import ReviewedBy from '@/components/ReviewedBy';
 
 export default function HowToUse() {
@@ -43,6 +44,8 @@ export default function HowToUse() {
                         <div>
                             <div className={styles.eyebrow}>About bActivate</div>
                             <h1 className={styles.title}>How to Use bActivate, Veterinary Protocol</h1>
+
+                            <InShort>Culture the mare in early oestrus (largest follicle 25 to 30 mm), instil 10 ml bActivate, culture again after 48 hours, and treat according to the antibiogram if the second culture grows what the first did not. Do not breed in that cycle; breed in the following one. bActivate is a diagnostic growth medium, not a medicine: it makes dormant <em>Streptococcus zooepidemicus</em> grow so a normal culture can find it. The full protocol and references are below.</InShort>
 
                             <h2 className={styles.subtitle}>Intended use</h2>
                             <div className={styles.textBlock}>
