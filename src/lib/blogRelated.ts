@@ -19,17 +19,7 @@ export const relatedPosts: Record<string, string[]> = {
   "bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares": [
     "biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough",
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
-    "how-bactivate-tackles-dormant-bacteria-in-mares",
-  ],
-  "how-bactivate-tackles-dormant-bacteria-in-mares": [
-    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
-    "bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares",
-    "saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares",
-  ],
-  "enhancing-mare-fertility-bactivate-revolutionary-approach": [
-    "how-bactivate-tackles-dormant-bacteria-in-mares",
-    "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health",
-    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+    "addressing-challenges-of-problem-mares",
   ],
   "addressing-challenges-of-problem-mares": [
     "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health",

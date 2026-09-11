@@ -318,6 +318,15 @@ const ROUTE_SCHEMAS = {
     'sku': 'bactivate-1-vial',
     '@id': `${BASE_URL}/shop#product`,
   },
+  '/blog/addressing-challenges-of-problem-mares': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'Is bActivate a treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It reveals a dormant infection so it can be cultured, identified and treated by your veterinarian. bActivate contains no antibiotics, no hormones and no live bacteria.' } },
+      { '@type': 'Question', 'name': 'Can a mare with a positive activation culture still be bred that season?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Activation and treatment take one cycle; breeding is planned for the following cycle. At Kildangan the bred mares needed 1.1 covers on average.' } },
+      { '@type': 'Question', 'name': 'What if the post-activation culture is negative too?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a dormant streptococcal infection is unlikely to be the cause, and your veterinarian can look elsewhere with that possibility ruled out rather than assumed.' } },
+    ],
+  },
   '/how-to-use': {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -514,17 +523,9 @@ const PAGE_META = {
     title: 'A Clean Swab Does Not Rule Out Infection in a Problem Mare',
     description: 'A swab culture finds only 34% of infected mares, a biopsy culture 82% (Nielsen 2005). Why a clean swab does not clear a problem mare, and what to do next.',
   },
-  '/blog/how-bactivate-tackles-dormant-bacteria-in-mares': {
-    title: 'How bActivate Tackles Dormant Bacteria in Mares',
-    description: 'bActivate wakes dormant streptococcal bacteria in mares so they can be found and treated. At Kildangan (Godolphin), 89% of bred problem mares got in foal.',
-  },
-  '/blog/enhancing-mare-fertility-bactivate-revolutionary-approach': {
-    title: 'Enhancing Mare Fertility with bActivate',
-    description: 'Dormant streptococcal infections hide deep in the uterine wall, invisible to standard swabs. bActivate reactivates them for accurate diagnosis and treatment.',
-  },
   '/blog/addressing-challenges-of-problem-mares': {
-    title: 'Addressing the Challenges of Problem Mares',
-    description: '25.9% of mares carry uterine bacteria, 79.8% Streptococcus. Prof. Bojesen and Dr. Petersen on detecting dormant infections in problem mares with bActivate.',
+    title: 'The Problem Mare: Why She Stays Empty and What to Check First',
+    description: 'Why a mare with clean swabs and normal cycles stays empty, which signs point to a dormant uterine infection, and what activation before culture changes.',
   },
   '/blog/taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares': {
     title: 'A Guide to Handling Endometritis in Mares',
