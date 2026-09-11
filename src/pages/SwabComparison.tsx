@@ -57,7 +57,7 @@ export default function SwabComparison() {
                     <p className="text-gray-700 leading-relaxed mb-2">A practical rule of thumb, to discuss with your veterinarian:</p>
                     <ul className="list-disc pl-6 text-gray-700 leading-relaxed mb-10">
                         <li><strong>First workup of a mare that failed a cycle or two:</strong> start with standard diagnostics, ideally low-volume lavage or biopsy culture rather than a plain swab.</li>
-                        <li><strong>Problem mare with clean swabs:</strong> repeated negatives plus continued failure to conceive is exactly the profile where dormant infection is likely (70 to 80% of problem mares carry one). This is where activation with bActivate is indicated.</li>
+                        <li><strong>Problem mare with clean swabs:</strong> repeated negatives plus continued failure to conceive is exactly the profile where dormant infection is likely (47 to 87% of problem mares in the published series carried one). This is where activation with bActivate is indicated.</li>
                         <li><strong>Older mare, previous endometritis, or three or more foals:</strong> each of these risk factors independently predicts a high probability of dormant infection. Consider activation as part of the off-season workup.</li>
                     </ul>
                 </div>

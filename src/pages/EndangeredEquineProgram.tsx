@@ -13,7 +13,7 @@ export default function EndangeredEquineProgram() {
                 <div className="container mx-auto px-4 max-w-4xl">
                     <h1 className="text-3xl font-bold mb-3">The Endangered Equine Program</h1>
                     <p className="text-xl text-gray-800 font-semibold mb-6">We donate bActivate for the problem mares of endangered breeds.</p>
-                    <p className="text-gray-700 leading-relaxed mb-8">Every year, bActivate helps hundreds of broodmares get in foal. In a breed down to a few hundred animals, a mare that will not get in foal is not one lost foal. It is a lost bloodline. We donate bActivate for those mares, so your veterinarian can find what a standard swab misses.</p>
+                    <p className="text-gray-700 leading-relaxed mb-8">Every season, veterinarians in Europe, the US and Australia use bActivate on mares that will not get in foal. In a breed down to a few hundred animals, a mare that will not get in foal is not one lost foal. It is a lost bloodline. We donate bActivate for those mares, so your veterinarian can find what a standard swab misses.</p>
 
                     <div className="flex flex-wrap gap-4 mb-14">
                         <a href="/donate" className="inline-block bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-red-800 transition">Does your mare qualify?</a>

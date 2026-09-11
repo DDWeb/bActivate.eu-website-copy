@@ -14,7 +14,7 @@ export const homeFaqItems = [
   },
   {
     question: "Why can't my mare get in foal despite clean swabs?",
-    answer: "Studies show 70 to 80% of problem mares carry a hidden uterine infection caused by dormant bacteria. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and tolerates antibiotics. Standard swab culture has a detection sensitivity of about 34%, so it misses most of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated by your veterinarian.",
+    answer: "In clinical series, 47 to 87% of problem mares carried a hidden uterine infection caused by dormant bacteria that the standard swab had missed. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and tolerates antibiotics. Standard swab culture has a detection sensitivity of about 34%, so it misses most of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated by your veterinarian.",
   },
   {
     question: "What is subclinical endometritis and why is it hard to detect?",

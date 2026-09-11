@@ -19,16 +19,6 @@ export default function StudiesEffect() {
                         <p className="text-gray-700 leading-relaxed">Three clinical evaluations document what bActivate reveals, and what happens when the attending veterinarian treats the revealed infection. At <strong>Hagyard Equine Medical Institute</strong> (Lexington, KY), Dr. Kristina Lu's team activated and treated 64 problem Thoroughbred mares (barren for 3 or more cycles): <strong>83% became pregnant</strong> (53/64) and <strong>70% achieved live foals</strong> (32/46 with known outcome) (<a href="https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen &amp; Bojesen, Clinical Theriogenology 2014</a>). At <strong>Kildangan Stud</strong> in Ireland, operated by Godolphin, <strong>89% of the bred mares were in foal</strong> (16 of 18; one of the 19 mares was not covered) (<a href="https://doi.org/10.1016/j.jevs.2018.05.162" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen, Rosenbrock, Osborne &amp; Bojesen, J Equine Vet Sci 2018</a>). The peer-reviewed laboratory study (<a href="https://doi.org/10.1016/j.vetmic.2015.06.006" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen et al., Vet Microbiol 2015</a>) confirmed bActivate activated dormant bacteria in <strong>64% of treated mares</strong> versus 8% in PBS controls (n=37). The studies were carried out at independent clinics and studs. The founders of bActivate are co-authors on the reporting of the results, and no placebo group was included in the two field studies.</p>
                     </div>
 
-                    <div className={styles.textGrid}>
-                        <div className="bg-gray-50 p-6 rounded">
-                            <p className="mb-4">Hidden infections. Persistent infertility. Missed opportunities. For too long, problem mares, non-pregnant mares that fail to conceive despite clean swabs, normal cycles, and confirmed stallion fertility, have faced unseen barriers to reproduction.<br />Studies show that 70-80% of these barren mares harbour hidden uterine infections that traditional tests fail to detect, making pregnancy an uphill battle.</p>
-                            <p>This collection introduces a breakthrough: <b>bActivate</b>. By reactivating dormant <b>Streptococcus equi subsp. zooepidemicus</b>, the most common cause of chronic uterine infections in non-pregnant mares, bActivate uncovers what was once invisible, enabling accurate diagnosis of these elusive infections for the first time.</p>
-                        </div>
-                        <div className="bg-gray-50 p-6 rounded">
-                            <p className="mb-4">Supported by our studies and real-world evidence, this body of work repeatedly demonstrates the profound success of bActivate in restoring fertility in problem mares. With proven results, practical solutions, and renewed hope, this is a roadmap for transforming equine reproductive health.</p>
-                            <p>Step into a future where no infection stays hidden, and no mare is left behind.</p>
-                        </div>
-                    </div>
 
                     <hr className="mb-12 border-gray-200" />
 
@@ -62,13 +52,8 @@ export default function StudiesEffect() {
                             </a>
                             <a href="https://ker.com/equinews/therapy-offers-hope-infertile-mares/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Kentucky Equine Research</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"Most of the mares (83%) became pregnant within 6 weeks, and a majority of those gave birth to live foals.", Study of 64 broodmares treated with bActivate.</blockquote>
+                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>Study of 64 broodmares: 83% became pregnant (53 of 64) and 70% of mares with a known outcome foaled (32 of 46). No placebo group.</blockquote>
                                 <div style={{ fontSize: "0.8rem", color: "#666" }}>, Kentucky Equine Research, ker.com</div>
-                            </a>
-                            <a href="https://breedersclub.nu/wp-content/uploads/2022/07/41-Forskning-i-fertilitet.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
-                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Breeders Club, Veterinary Journal</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>"72% of problem mares achieved live foals the year after activation. 84% of participating mares had a latent streptococcal infection."</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>, Rebecca Bøk Larsen DVM + Anna Skriver DVM<br />University of Copenhagen, 2022</div>
                             </a>
                             <a href="https://equsana.dk/sovende-bakterier-goer-hopper-ufrugtbare/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Equsana.dk, 2015</div>
@@ -84,7 +69,7 @@ export default function StudiesEffect() {
                     </div>
 
                     <div className={styles.studyCard}>
-                        <h2 className={styles.studyTitle}>University of Copenhagen, 2025 — locating the bacteria in the tissue</h2>
+                        <h2 className={styles.studyTitle}>University of Copenhagen, 2025: locating the bacteria in the tissue</h2>
                         <div className={styles.studyText}>
                             <p>A veterinary thesis project by <strong>Emilie Kähler Hjenner</strong> and <strong>Kathrine Kjeldsen Ravn</strong> at the <strong>University of Copenhagen</strong>, supervised by <strong>Prof. Anders Miki Bojesen</strong>, with Prof. Henrik Elvang Jensen (pathology) and Mette Christoffersen (equine reproduction) as co-supervisors. Submitted December 2025.</p>
                             <p style={{ marginTop: '1rem' }}>Standard culture had cleared these mares. They had been barren for one to three years regardless. So the question was not how common the infection is, but a narrower one: if the organism is suspected despite a clean culture, can it be shown to be physically present in the tissue? Sixteen archived endometrial biopsies were re-examined by fluorescence in situ hybridization. <strong><em>Streptococcus</em> spp. were found in all 16.</strong></p>
@@ -141,7 +126,7 @@ export default function StudiesEffect() {
                                 <li><strong>84% activation-positive</strong> (16/19): a dormant infection standard culture had missed</li>
                                 <li><strong>89% pregnancy</strong> among bred mares (16/18), at an average of 1.1 covers per mare</li>
                             </ul>
-                            <p className="mt-4"><strong>Conclusion</strong><br />Latent infections significantly reduce fertility in mares, with dormant bacteria negatively affecting pregnancy outcomes. Activation dramatically improves diagnostic accuracy, and the veterinarian's targeted treatment restores reproductive performance. Published as a congress abstract: <a href="https://doi.org/10.1016/j.jevs.2018.05.162" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen MR, Rosenbrock A, Osborne M, Bojesen AM, J Equine Vet Sci 2018;66:117</a>. Also written up for breeders by the founders at <a href="https://portal.selectbreeders.com/articles/high-prevalence-of-latent-endometritis-in-problem-mares-effect-of-activation-and-treatment-on-fertility" target="_blank" rel="noopener noreferrer" className="text-primary underline">SelectBreeders Services (2019)</a>.</p>
+                            <p className="mt-4"><strong>Conclusion</strong><br />Latent infections significantly reduce fertility in mares, with dormant bacteria negatively affecting pregnancy outcomes. Activation dramatically improves diagnostic accuracy, and the veterinarian can then treat the infection the culture reveals. Published as a congress abstract: <a href="https://doi.org/10.1016/j.jevs.2018.05.162" target="_blank" rel="noopener noreferrer" className="text-primary underline">Petersen MR, Rosenbrock A, Osborne M, Bojesen AM, J Equine Vet Sci 2018;66:117</a>. Also written up for breeders by the founders at <a href="https://portal.selectbreeders.com/articles/high-prevalence-of-latent-endometritis-in-problem-mares-effect-of-activation-and-treatment-on-fertility" target="_blank" rel="noopener noreferrer" className="text-primary underline">SelectBreeders Services (2019)</a>.</p>
                         </div>
                         <div className={styles.buttonGroup}>
                             <a href="/images/latentendomtrititsanddormantstreptococci-effectonfertility.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
@@ -163,7 +148,7 @@ export default function StudiesEffect() {
                         <article className={styles.articleCard}>
                             <h3 className={styles.articleTitle}>Bacterial tolerance.</h3>
                             <div className={styles.articleContent}>
-                                <p>This study examines antimicrobial tolerance in beta-hemolytic streptococci (BHS) from problem mares, highlighting <strong>persister cells</strong> that tolerate penicillin at 10,000 times the normal MIC. Using <strong>bActivate</strong>, dormant BHS were reactivated and successfully treated.</p>
+                                <p>This study examines antimicrobial tolerance in beta-hemolytic streptococci (BHS) from problem mares, highlighting <strong>persister cells</strong> that tolerate penicillin at concentrations far above the normal MIC. After activation with <strong>bActivate</strong> the dormant streptococci grew in culture and could be identified, so the veterinarian could treat them.</p>
                             </div>
                             <div className={styles.meta}>Key Contributor • Professor Ralph Bertram</div>
                             <div className="mt-4">
@@ -174,7 +159,7 @@ export default function StudiesEffect() {
                         <article className={styles.articleCard}>
                             <h3 className={styles.articleTitle}>Scientific and Practical Evidence.</h3>
                             <div className={styles.articleContent}>
-                                <p>This document provides scientific and practical evidence supporting the use of <strong>bActivate</strong> for diagnosing and treating latent endometritis in problem mares. The study highlights the reactivation of dormant <strong>Streptococcus equi subsp. zooepidemicus</strong> infections.</p>
+                                <p>This document provides scientific and practical evidence supporting the use of <strong>bActivate</strong> for revealing latent endometritis so it can be diagnosed and treated by the veterinarian. The study highlights the reactivation of dormant <strong>Streptococcus equi subsp. zooepidemicus</strong> infections.</p>
                             </div>
                             <div className={styles.meta}>Key Contributor • Professor Anders Miki Bojesen</div>
                             <div className="mt-4">
@@ -188,7 +173,7 @@ export default function StudiesEffect() {
             <FAQSection items={studiesFaqItems} />
 
             <InternalLinks links={[
-                { to: '/shop', label: 'Order bActivate', description: 'One vial per treatment cycle, available in the US' },
+                { to: '/shop', label: 'Order bActivate', description: 'One vial per activation cycle, available in the US' },
                 { to: '/how-to-use', label: 'How to Use', description: 'Full veterinary protocol for diagnosis and treatment' },
                 { to: '/our-distributors', label: 'Find a Distributor', description: 'Hagyard, Midwest Vet Supply and international distributors' },
                 { to: '/about-us', label: 'Meet the Founders', description: 'Prof. Bojesen & Dr. Petersen, 20+ years of research' },

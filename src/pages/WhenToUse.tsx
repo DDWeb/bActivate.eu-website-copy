@@ -27,7 +27,7 @@ export default function WhenToUse() {
                                     <h2 className={styles.subtitle}>bActivate, a diagnostic aid for the problem mare</h2>
                                     <div className={styles.textBlock}>
                                         <p className="mb-4">bActivate can help establish a correct diagnosis in the chronically infected mare. bActivate initiates growth of resident dormant streptococci, which can then be diagnosed and treated by standard techniques.</p>
-                                        <p className="mb-4"><strong>Chronic infections</strong> prevent establishment of a pregnancy, and might also increase the risk of early fetal loss and abortion in the mare. Our studies indicate that 70-80% of problem mares not pregnant by the end of the breeding season, despite breeding to fertile stallions and supervised by experienced veterinarians, are chronically infected.</p>
+                                        <p className="mb-4"><strong>Chronic infections</strong> prevent establishment of a pregnancy, and might also increase the risk of early fetal loss and abortion in the mare. In our field series, 47% (Hagyard, 30 of 64) to 84% (Kildangan, 16 of 19) of mares still not pregnant at the end of the season, despite fertile stallions and veterinary supervision, were activation-positive for a dormant infection.</p>
                                         <p>Some farms use bActivate as a <strong>screening tool</strong> to improve diagnosis of endometritis and treatment on all open mares during the off-season, hereby optimizing chances to establish a pregnancy and reduce <strong>time to pregnancy</strong>.</p>
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@ export default function WhenToUse() {
                             <li className="flex gap-2"><span className="text-red-600 font-bold">✓</span><span>Helps farms <strong>plan breeding schedules</strong> with greater confidence</span></li>
                         </ul>
                     </div>
-                    <p className="mt-6 text-gray-600">Studies show 70 to 80% of problem mares carry a hidden uterine infection that standard culture misses. Off-season screening with bActivate addresses this directly.</p>
+                    <p className="mt-6 text-gray-600">In clinical series, 47 to 87% of problem mares carried a dormant uterine infection that the standard swab had missed. Off-season screening with bActivate addresses this directly.</p>
                 </div>
             </section>
 
