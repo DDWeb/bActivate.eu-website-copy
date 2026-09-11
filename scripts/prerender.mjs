@@ -327,6 +327,46 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'What if the post-activation culture is negative too?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a dormant streptococcal infection is unlikely to be the cause, and your veterinarian can look elsewhere with that possibility ruled out rather than assumed.' } },
     ],
   },
+  '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'Is bActivate expensive?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One vial is 229 EUR from the manufacturer\'s shop (September 2026), plus your veterinarian\'s fees. Compare that with your own figure for one more cycle of stud fee, semen and veterinary work.' } },
+      { '@type': 'Question', 'name': 'Do I have to buy bActivate myself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Your veterinarian orders it through the veterinary trade and instils it. What the vet needs is on the how to use page.' } },
+      { '@type': 'Question', 'name': 'What if the activation culture is negative?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a bacterial uterine infection is unlikely, and the veterinarian looks elsewhere: cycle, semen, anatomy, hormones. The money has ruled out one cause before the next cycle was paid for.' } },
+      { '@type': 'Question', 'name': 'Does the work-up guarantee a foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. The Kentucky figures come from a field study without a placebo group. They show what happened to 64 problem mares after diagnosis and targeted treatment, not what will happen to your mare.' } },
+    ],
+  },
+  '/blog/uterine-lavage-mare-when-and-why': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'How often can a mare be flushed?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The veterinarian decides per mare and per cycle. After covering, flushing is often done on one or two consecutive days. If a mare needs flushing again in every cycle, that is a reason to look for the cause, not to keep flushing.' } },
+      { '@type': 'Question', 'name': 'Can I flush the uterus myself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. A uterine lavage is a sterile procedure with a catheter through the cervix and belongs in the veterinarian\'s hands.' } },
+      { '@type': 'Question', 'name': 'Do antibiotics belong in the flushing fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Only with a positive culture and an antibiogram, and then the drug that follows from it. Not as a precaution.' } },
+      { '@type': 'Question', 'name': 'Is bActivate a lavage?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. bActivate is a growth medium that stays in the uterus so that dormant bacteria grow and can be detected 48 hours later in a normal culture. It is a diagnostic step, not a treatment.' } },
+    ],
+  },
+  '/blog/ultrasound-empty-mare-what-the-vet-sees': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'From when does the ultrasound confirm pregnancy?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The embryonic vesicle is visible about two weeks after ovulation. The veterinarian re-checks afterwards to confirm the pregnancy continues and to rule out twins.' } },
+      { '@type': 'Question', 'name': 'Does fluid on the scan always mean infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Just after covering, a little fluid is a normal reaction. Fluid that persists, or fluid without any covering, signals a problem that needs an explanation.' } },
+      { '@type': 'Question', 'name': 'Does a normal scan rule out a uterine infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. The scan shows fluid and the wall, not bacteria. A chronic infection in the tissue can give a uterus that looks normal.' } },
+      { '@type': 'Question', 'name': 'Can bActivate be seen on the scan?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No, and that is not its role. bActivate is a culture medium the veterinarian instils so that dormant bacteria grow, then cultures 48 hours later. It is a diagnostic step, not a treatment.' } },
+    ],
+  },
+  '/blog/positive-activation-culture-what-happens-next': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'Is a positive activation culture bad news?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'It is an explanation. A mare that has been empty for seasons now has a named cause, an antibiogram, and a plan for the next cycle.' } },
+      { '@type': 'Question', 'name': 'Can she be bred in the same cycle?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Activation, culture and treatment take one cycle; breeding is planned for the following one. At Kildangan the bred mares needed 1.1 covers on average.' } },
+      { '@type': 'Question', 'name': 'What if the second culture is negative?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a dormant streptococcal infection is unlikely to be the cause, and the veterinarian can look elsewhere with that possibility ruled out rather than assumed.' } },
+      { '@type': 'Question', 'name': 'Does bActivate treat the infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It makes the dormant bacteria grow so a normal culture can find them. The treatment is the veterinarian\'s, chosen from the antibiogram.' } },
+    ],
+  },
   '/how-to-use': {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -507,6 +547,18 @@ const PAGE_META = {
     title: 'Contact bActivate | Bojesen & Petersen Biotech, Copenhagen',
     description: 'Contact the bActivate team: contact@bactivate.eu, +45 60 71 21 69, WhatsApp, or the contact form. Bojesen & Petersen Biotech ApS, Copenhagen, Denmark.',
   },
+  '/blog/uterine-lavage-mare-when-and-why': {
+    title: 'Uterine Lavage in the Mare: When and Why',
+    description: 'Uterine lavage in the mare: when the vet flushes, which fluid is used, what a flush solves and what it does not, and what to do when the mare still stays empty.',
+  },
+  '/blog/ultrasound-empty-mare-what-the-vet-sees': {
+    title: 'Ultrasound of the Empty Mare: What the Vet Sees',
+    description: 'Ultrasound of an empty mare: what the veterinarian sees in the uterus and ovaries, what fluid means, what the scan cannot show, and the next step.',
+  },
+  '/blog/positive-activation-culture-what-happens-next': {
+    title: 'Your Mare Is Activation-Positive: What Happens Next',
+    description: 'What a positive post-activation culture means, what the veterinarian does with the antibiogram, when the mare is bred again, and what the field data say about the outcome.',
+  },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
     description: 'Streptococcus zooepidemicus is the most common opportunistic bacterium in horses, behind respiratory and uterine infections. Symptoms, spread and treatment.',
@@ -532,8 +584,8 @@ const PAGE_META = {
     description: 'Endometritis in mares is often caused by dormant Streptococcus missed by swabs. Signs, options, and why bActivate finds what antibiotics alone cannot.',
   },
   '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares': {
-    title: 'Save Time and Money on Endometritis Treatment',
-    description: 'Repeated breeding failures from hidden endometritis are costly. bActivate activates dormant uterine bacteria so targeted antibiotics clear the root cause.',
+    title: 'What an Empty Season Costs: The Breeder\'s Calculation',
+    description: 'What a lost season really costs, what it costs to find the cause (swab, activation culture), and what the figures from 64 problem mares say. No promises, with sources.',
   },
   '/blog/insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health': {
     title: 'German Study: Bacterial Spectrum in Mare Uterine Health',

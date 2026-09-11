@@ -1,6 +1,21 @@
 // Related reading per blog post (slug -> sibling slugs). Rendered by BlogPost.tsx
 // under the article so every post links to two or three others.
 export const relatedPosts: Record<string, string[]> = {
+  "positive-activation-culture-what-happens-next": [
+    "addressing-challenges-of-problem-mares",
+    "bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares",
+    "bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares",
+  ],
+  "ultrasound-empty-mare-what-the-vet-sees": [
+    "uterine-lavage-mare-when-and-why",
+    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+    "addressing-challenges-of-problem-mares",
+  ],
+  "uterine-lavage-mare-when-and-why": [
+    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+    "ultrasound-empty-mare-what-the-vet-sees",
+    "taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares",
+  ],
   "streptococcus-zooepidemicus-in-horses": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
     "biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough",
@@ -33,8 +48,8 @@ export const relatedPosts: Record<string, string[]> = {
   ],
   "saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
-    "bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares",
-    "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health",
+    "addressing-challenges-of-problem-mares",
+    "uterine-lavage-mare-when-and-why",
   ],
   "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health": [
     "streptococcus-zooepidemicus-in-horses",
