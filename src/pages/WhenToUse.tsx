@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './WhenToUse.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import InShort from '@/components/InShort';
 import FAQSection from '@/components/FAQSection';
 import { whenToUseFaqItems } from '@/lib/routeFaqs';
 import ReviewedBy from '@/components/ReviewedBy';
@@ -22,6 +23,8 @@ export default function WhenToUse() {
                             <div>
                                 <div className={styles.eyebrow}>About bActivate</div>
                                 <h1 className={styles.title}>When to Use bActivate for Problem Mares</h1>
+
+                                <InShort>bActivate is for the mare that stays empty despite normal cycles, a fertile stallion and a clean swab. The strongest signs are two or more failed cycles, uterine fluid on ultrasound, early embryo loss, a previous endometritis, and age 10 or older. In the published series, 47 to 87% of such mares carried a dormant infection the swab had missed, and the whole activation protocol fits inside one estrus cycle, so the earlier in the season, the better.</InShort>
 
                                 <div className={styles.introBlock}>
                                     <h2 className={styles.subtitle}>bActivate, a diagnostic aid for the problem mare</h2>
