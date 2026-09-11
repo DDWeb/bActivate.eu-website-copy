@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { blogPosts } from '@/lib/blogData';
+import { relatedPosts } from '@/lib/blogRelated';
 
 export default function BlogPost() {
     const { slug } = useParams<{ slug: string }>();
@@ -46,6 +47,7 @@ export default function BlogPost() {
             '@type': 'Article',
             'headline': cleanTitle,
             'datePublished': post.date,
+            'dateModified': (post as { updated?: string }).updated || post.date,
             'author': {
                 '@type': 'Organization',
                 'name': 'Bojesen & Petersen Biotech ApS',
@@ -79,14 +81,32 @@ export default function BlogPost() {
         );
     }
 
+    const updated = (post as { updated?: string }).updated;
+    const related = (relatedPosts[post.slug] || []).flatMap(s => {
+        const p = blogPosts.find(x => x.slug === s);
+        return p ? [p] : [];
+    });
+
     return (
         <main>
             <section className="py-16">
                 <div className="container mx-auto px-4 max-w-3xl">
                     <Link to="/blog" className="text-primary hover:underline text-sm mb-8 block">← Back to blog</Link>
                     <h1 className="text-3xl font-bold mb-2" dangerouslySetInnerHTML={{ __html: post.title }} />
-                    <div className="text-gray-500 text-sm mb-8">{post.date}</div>
+                    <div className="text-gray-500 text-sm mb-8">{`Published ${post.date}${updated ? `, updated ${updated}` : ''}`}</div>
                     <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
+                    {related.length > 0 && (
+                        <section aria-label="Related reading" style={{ marginTop: '3rem', borderTop: '1px solid #e5e7eb', paddingTop: '1.5rem' }}>
+                            <p style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', color: '#901820', marginBottom: '0.75rem' }}>Related reading</p>
+                            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                {related.map(r => (
+                                    <li key={r.slug} style={{ marginBottom: '0.5rem' }}>
+                                        <Link to={`/blog/${r.slug}`} className="text-primary hover:underline" dangerouslySetInnerHTML={{ __html: r.title }} />
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
                 </div>
             </section>
         </main>

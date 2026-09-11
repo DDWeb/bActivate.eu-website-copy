@@ -577,16 +577,15 @@ function getBlogSlugs() {
 
 function getBlogPostData() {
   const content = readFileSync(path.resolve(ROOT, 'src/lib/blogData.ts'), 'utf8');
-  const slugs = [...content.matchAll(/slug:\s*["']([^"']+)["']/g)].map(m => m[1]);
-  const titles = [...content.matchAll(/title:\s*"([^"]+)"/g)].map(m =>
-    m[1].replace(/&amp;/g, '&').replace(/, /g, '-').replace(/, /g, ', ').replace(/&nbsp;/g, ' ')
-  );
-  const dates = [...content.matchAll(/date:\s*"([^"]+)"/g)].map(m => m[1]);
-  const images = [...content.matchAll(/image:\s*"([^"]+)"/g)].map(m => m[1]);
   const result = {};
-  slugs.forEach((slug, i) => {
-    result[slug] = { title: titles[i] || slug, date: parseBlogDate(dates[i] || ''), image: images[i] || '' };
-  });
+  for (const block of content.split(/\n\s*slug:\s*/).slice(1)) {
+    const slug = (block.match(/^["']([^"']+)["']/) || [])[1];
+    if (!slug) continue;
+    const get = (key) => (block.match(new RegExp('\\n\\s*' + key + ':\\s*"([^"]+)"')) || [])[1];
+    const title = (get('title') || slug).replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ');
+    const updated = get('updated');
+    result[slug] = { title, date: parseBlogDate(get('date') || ''), updated: updated ? parseBlogDate(updated) : null, image: get('image') || '' };
+  }
   return result;
 }
 
@@ -1089,7 +1088,7 @@ async function main() {
             'description': pageMeta ? pageMeta.description : post.title,
             'articleBody': articleBody,
             'datePublished': post.date,
-            'dateModified': post.date,
+            'dateModified': post.updated || post.date,
             'image': post.image ? `${BASE_URL}${post.image}` : `${BASE_URL}/og-image.jpg`,
             'url': `${BASE_URL}${route}`,
             'mainEntityOfPage': { '@type': 'WebPage', '@id': `${BASE_URL}${route}` },
@@ -1198,12 +1197,38 @@ async function main() {
     }
   }
 
+  syncStaticPages();
   writeLlmsFull();
 
   rmSync(ssrOutDir, { recursive: true, force: true });
 
   console.log(`\nPrerender complete: ${success} succeeded, ${fail} failed.\n`);
   if (fail > 0) process.exit(1);
+}
+
+// Hand-made static pages under public/ carry a copy of the React header/footer and a stylesheet
+// link from the build they were made with. Class names and asset hashes change with every build,
+// so refresh them from the freshly rendered home page (and never load the app bundle there: the
+// router has no route for these paths and would replace the content with the 404 page).
+const STATIC_PAGES = ['glossary/index.html'];
+function syncStaticPages() {
+  const home = readFileSync(path.resolve(ROOT, 'dist/index.html'), 'utf8');
+  const header = (home.match(/<header[\s\S]*?<\/header>/) || [])[0];
+  const footer = (home.match(/<footer[\s\S]*?<\/footer>/) || [])[0];
+  const css = (home.match(/<link rel="stylesheet"[^>]*>/) || [])[0];
+  if (!header || !footer || !css) throw new Error('syncStaticPages: header, footer or stylesheet not found in dist/index.html');
+  for (const rel of STATIC_PAGES) {
+    const p = path.resolve(ROOT, 'dist', rel);
+    let html;
+    try { html = readFileSync(p, 'utf8'); } catch { continue; }
+    html = html
+      .replace(/<header[\s\S]*?<\/header>/, () => header)
+      .replace(/<footer[\s\S]*?<\/footer>/, () => footer)
+      .replace(/<link rel="stylesheet"[^>]*>/, () => css)
+      .replace(/[ \t]*<script type="module"[^>]*><\/script>\n?/, '');
+    writeFileSync(p, html, 'utf8');
+    console.log(`  \u2713 static ${rel} synced with the current header, footer and stylesheet`);
+  }
 }
 
 // /llms-full.txt: the whole Open Knowledge Format bundle in one file, in reading

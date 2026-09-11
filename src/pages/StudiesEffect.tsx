@@ -173,6 +173,7 @@ export default function StudiesEffect() {
             <FAQSection items={studiesFaqItems} />
 
             <InternalLinks links={[
+                { to: '/blog/insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health', label: 'What 28,887 uterine samples showed', description: 'The German study on the bacterial spectrum in mares' },
                 { to: '/shop', label: 'Order bActivate', description: 'One vial per activation cycle, available in the US' },
                 { to: '/how-to-use', label: 'How to Use', description: 'Full veterinary protocol for diagnosis and treatment' },
                 { to: '/our-distributors', label: 'Find a Distributor', description: 'Hagyard, Midwest Vet Supply and international distributors' },
