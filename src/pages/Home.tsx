@@ -96,7 +96,7 @@ export default function Home() {
               <div className={styles.eyebrowRed}>Application</div>
               <h2 className={styles.sectionTitleLarge}>When to use?</h2>
               <p className={styles.description}>
-                5-15% of all mares are not pregnant at the end of the breeding season, despite fertilised stallions and supervised by experienced veterinarians.
+                Some mares are still not pregnant at the end of the breeding season, despite fertile stallions and experienced veterinary supervision.
               </p>
               <Link to="/when-to-use" className={styles.btnRedSquare}>
                 READ MORE
@@ -152,7 +152,7 @@ export default function Home() {
           <div className={styles.menBehindContent}>
             <h2 className={styles.menBehindTitle}>The Men Behind bActivate</h2>
             <p className={styles.menBehindText}>
-              Ten percent of all mares struggle to get in foal. Now two Danish researchers have identified what might be wrong and produced a product, which can facilitate diagnostics. Veterinarians at the world's largest equine hospital in Kentucky have successfully tested the product.
+              Every season, some mares fail to get in foal. Now two Danish researchers have identified what might be wrong and produced a product, which can facilitate diagnostics. Veterinarians at the world's largest equine hospital in Kentucky have successfully tested the product.
             </p>
             <Link to="/about-us" className={styles.btnWhiteSolid}>
               READ MORE ABOUT US
