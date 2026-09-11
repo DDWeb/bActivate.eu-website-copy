@@ -23,7 +23,7 @@ export default function Home() {
                 bActivate finds the infection swabs miss.
               </h1>
               <p className={styles.heroSubtitle}>
-                70-80% of all problem mares carry a hidden uterine infection with a clear negative effect on fertility. bActivate activates the dormant infections that standard tests miss, so your veterinarian can treat them and give barren mares a second chance.
+                In clinical series, 47 to 87% of problem mares carried a dormant uterine infection that the standard swab had missed. bActivate activates the dormant infections that standard tests miss, so your veterinarian can treat them and give barren mares a second chance.
               </p>
             </div>
             <div className={styles.heroSilhouette}>

@@ -90,7 +90,7 @@
     "@id": "https://bactivate.eu/#morten-petersen",
     "name": "Morten Rønn Petersen",
     "honorificSuffix": "DVM, PhD, Dipl. ACT",
-    "jobTitle": "Veterinarian, Co-founder — Head of Laboratory, Fertility Clinic Rigshospitalet",
+    "jobTitle": "Veterinarian, Co-founder, Head of Laboratory, Fertility Clinic Rigshospitalet",
     "image": "https://bactivate.eu/images/morten.jpg",
     "worksFor": [
       { "@type": "Organization", "name": "Bojesen & Petersen Biotech ApS", "url": "https://bactivate.eu" },
@@ -177,10 +177,10 @@
       {"@type":"HowToStep","position":2,"name":"Number of foals","text":"Has the mare had no foals (maiden), 1-2 foals, or 3 or more foals? Three or more previous foals is a recognised high-risk threshold for persistent uterine infection."},
       {"@type":"HowToStep","position":3,"name":"Abortion or pregnancy loss","text":"Has the mare had a documented abortion or early pregnancy loss? A history of abortion is associated with persistent low-grade infection and is a primary risk indicator."},
       {"@type":"HowToStep","position":4,"name":"Endometritis history","text":"Has the mare been diagnosed with or treated for endometritis previously? Prior endometritis predisposes to chronic persister-state infection that recurs despite antibiotic courses."},
-      {"@type":"HowToStep","position":5,"name":"Failed breeding cycles","text":"How many consecutive cycles has the mare failed to conceive — first season, 2-3 cycles, or more than 3 cycles? Repeated failure despite a fertile stallion is a primary clinical indicator."},
-      {"@type":"HowToStep","position":6,"name":"Swab results","text":"What have the mare's recent endometrial swab cultures shown — positive, negative/clean, or not tested? A clean swab does not rule out infection: standard cultures detect only approximately 34% of infections when one is present."},
+      {"@type":"HowToStep","position":5,"name":"Failed breeding cycles","text":"How many consecutive cycles has the mare failed to conceive: first season, 2-3 cycles, or more than 3 cycles? Repeated failure despite a fertile stallion is a primary clinical indicator."},
+      {"@type":"HowToStep","position":6,"name":"Swab results","text":"What have the mare's recent endometrial swab cultures shown: positive, negative/clean, or not tested? A clean swab does not rule out infection: standard cultures detect only approximately 34% of infections when one is present."},
       {"@type":"HowToStep","position":7,"name":"Uterine fluid on ultrasound","text":"Has the mare shown uterine fluid accumulation on ultrasound post-breeding? Persistent fluid is a sign of impaired uterine clearance and is associated with subclinical endometritis."},
-      {"@type":"HowToStep","position":8,"name":"Interpret result","text":"Mares with one or more of the four primary risk factors (age 12+, 3+ foals, abortion history, endometritis history) have approximately 75% probability of carrying a dormant Streptococcus zooepidemicus infection that standard swab culture cannot detect. bActivate is strongly indicated. Mares with zero risk factors but repeated breeding failure should also be discussed with a veterinarian."}
+      {"@type":"HowToStep","position":8,"name":"Interpret result","text":"Mares with one or more of the four primary risk factors (age 12+, 3+ foals, abortion history, endometritis history) had the highest activation-positive rates in the published series (up to 84% at Kildangan, average age 12.7 years). bActivate is strongly indicated. Mares with zero risk factors but repeated breeding failure should also be discussed with a veterinarian."}
     ]
   }
   </script>
@@ -238,8 +238,8 @@
     <p style="color:#666;font-size:0.875rem;margin-bottom:1.25rem">Age is the strongest single predictor of dormant uterine infection.</p>
     <div class="options">
       <label class="opt"><input type="radio" name="age" value="under10"><span>Under 10 years</span></label>
-      <label class="opt"><input type="radio" name="age" value="10-11"><span>10–11 years</span></label>
-      <label class="opt risk"><input type="radio" name="age" value="12-15"><span>12–15 years <em style="color:#901820;font-size:0.8rem;font-style:normal;margin-left:0.4rem">risk factor</em></span></label>
+      <label class="opt"><input type="radio" name="age" value="10-11"><span>10 to 11 years</span></label>
+      <label class="opt risk"><input type="radio" name="age" value="12-15"><span>12 to 15 years <em style="color:#901820;font-size:0.8rem;font-style:normal;margin-left:0.4rem">risk factor</em></span></label>
       <label class="opt risk"><input type="radio" name="age" value="16plus"><span>16 years or older <em style="color:#901820;font-size:0.8rem;font-style:normal;margin-left:0.4rem">risk factor</em></span></label>
     </div>
   </div>
@@ -248,8 +248,8 @@
     <h2 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.25rem">How many foals has she had?</h2>
     <p style="color:#666;font-size:0.875rem;margin-bottom:1.25rem">Each pregnancy reduces uterine defence capacity over time.</p>
     <div class="options">
-      <label class="opt"><input type="radio" name="foals" value="none"><span>None — maiden mare</span></label>
-      <label class="opt"><input type="radio" name="foals" value="1-2"><span>1–2 foals</span></label>
+      <label class="opt"><input type="radio" name="foals" value="none"><span>None (maiden mare)</span></label>
+      <label class="opt"><input type="radio" name="foals" value="1-2"><span>1 to 2 foals</span></label>
       <label class="opt risk"><input type="radio" name="foals" value="3plus"><span>3 or more foals <em style="color:#901820;font-size:0.8rem;font-style:normal;margin-left:0.4rem">risk factor</em></span></label>
     </div>
   </div>
@@ -265,7 +265,7 @@
 
   <div class="step" data-step="4" data-name="endo">
     <h2 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.25rem">Has she been diagnosed with endometritis?</h2>
-    <p style="color:#666;font-size:0.875rem;margin-bottom:1.25rem">Any previous episode — treated or untreated.</p>
+    <p style="color:#666;font-size:0.875rem;margin-bottom:1.25rem">Any previous episode, treated or untreated.</p>
     <div class="options">
       <label class="opt risk"><input type="radio" name="endo" value="yes"><span>Yes <em style="color:#901820;font-size:0.8rem;font-style:normal;margin-left:0.4rem">risk factor</em></span></label>
       <label class="opt"><input type="radio" name="endo" value="no"><span>No</span></label>
@@ -277,9 +277,9 @@
     <h2 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.25rem">How many cycles has she failed to conceive?</h2>
     <p style="color:#666;font-size:0.875rem;margin-bottom:1.25rem">Counting from when you first started trying this season or across seasons.</p>
     <div class="options">
-      <label class="opt"><input type="radio" name="cycles" value="first"><span>This is the first season — still early</span></label>
-      <label class="opt"><input type="radio" name="cycles" value="2-3"><span>2–3 consecutive cycles</span></label>
-      <label class="opt"><input type="radio" name="cycles" value="4plus"><span>4 or more — or multiple seasons</span></label>
+      <label class="opt"><input type="radio" name="cycles" value="first"><span>This is the first season, still early</span></label>
+      <label class="opt"><input type="radio" name="cycles" value="2-3"><span>2 to 3 consecutive cycles</span></label>
+      <label class="opt"><input type="radio" name="cycles" value="4plus"><span>4 or more, or multiple seasons</span></label>
     </div>
   </div>
 
@@ -287,8 +287,8 @@
     <h2 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.25rem">What have her endometrial swabs shown?</h2>
     <p style="color:#666;font-size:0.875rem;margin-bottom:1.25rem">Standard culture from cytobrush or low-volume lavage.</p>
     <div class="options">
-      <label class="opt"><input type="radio" name="swab" value="positive"><span>Positive — bacteria detected</span></label>
-      <label class="opt"><input type="radio" name="swab" value="clean"><span>Negative — clean result</span></label>
+      <label class="opt"><input type="radio" name="swab" value="positive"><span>Positive, bacteria detected</span></label>
+      <label class="opt"><input type="radio" name="swab" value="clean"><span>Negative, clean result</span></label>
       <label class="opt"><input type="radio" name="swab" value="untested"><span>Not tested yet</span></label>
     </div>
   </div>
@@ -297,8 +297,8 @@
     <h2 style="font-size:1.25rem;font-weight:700;color:#111;margin-bottom:0.25rem">Has she had uterine fluid on ultrasound?</h2>
     <p style="color:#666;font-size:0.875rem;margin-bottom:1.25rem">Fluid detected post-breeding or during oestrus on rectal ultrasound.</p>
     <div class="options">
-      <label class="opt"><input type="radio" name="fluid" value="yes"><span>Yes — fluid detected</span></label>
-      <label class="opt"><input type="radio" name="fluid" value="no"><span>No — uterus clear</span></label>
+      <label class="opt"><input type="radio" name="fluid" value="yes"><span>Yes, fluid detected</span></label>
+      <label class="opt"><input type="radio" name="fluid" value="no"><span>No, uterus clear</span></label>
       <label class="opt"><input type="radio" name="fluid" value="unchecked"><span>Not checked</span></label>
     </div>
   </div>
@@ -338,15 +338,15 @@
     <div style="display:grid;gap:0.75rem">
       <div style="background:white;border-left:3px solid #901820;padding:1rem 1.25rem;border-radius:0 6px 6px 0">
         <div style="font-weight:700;color:#111;font-size:0.9rem;margin-bottom:0.3rem">14-year-old, 4 foals, clean swabs, 3 failed cycles</div>
-        <div style="font-size:0.85rem;color:#444">2 risk factors (age 12+, 3+ foals) → <strong style="color:#901820">HIGH RISK</strong> — ~75% probability of dormant infection. bActivate strongly indicated.</div>
+        <div style="font-size:0.85rem;color:#444">2 risk factors (age 12+, 3+ foals) → <strong style="color:#901820">HIGH RISK</strong>: two risk factors. In the Kildangan series (average age 12.7 years) 84% were activation-positive. bActivate strongly indicated.</div>
       </div>
       <div style="background:white;border-left:3px solid #901820;padding:1rem 1.25rem;border-radius:0 6px 6px 0">
         <div style="font-weight:700;color:#111;font-size:0.9rem;margin-bottom:0.3rem">10-year-old, 2 foals, prior endometritis, clean swab</div>
-        <div style="font-size:0.85rem;color:#444">1 risk factor (endometritis history) → <strong style="color:#901820">HIGH RISK</strong> — clean swab does not rule out infection. bActivate indicated.</div>
+        <div style="font-size:0.85rem;color:#444">1 risk factor (endometritis history) → <strong style="color:#901820">HIGH RISK</strong>: clean swab does not rule out infection. bActivate indicated.</div>
       </div>
       <div style="background:white;border-left:3px solid #901820;padding:1rem 1.25rem;border-radius:0 6px 6px 0">
         <div style="font-weight:700;color:#111;font-size:0.9rem;margin-bottom:0.3rem">12-year-old, 3 foals, abortion 2022, uterine fluid on scan</div>
-        <div style="font-size:0.85rem;color:#444">3 risk factors → <strong style="color:#901820">HIGH RISK</strong> — very high probability. bActivate strongly indicated before next breeding cycle.</div>
+        <div style="font-size:0.85rem;color:#444">3 risk factors → <strong style="color:#901820">HIGH RISK</strong>: very high probability. bActivate strongly indicated before next breeding cycle.</div>
       </div>
       <div style="background:white;border-left:3px solid #d1d5db;padding:1rem 1.25rem;border-radius:0 6px 6px 0">
         <div style="font-weight:700;color:#111;font-size:0.9rem;margin-bottom:0.3rem">8-year-old maiden, no prior issues, 2 failed cycles</div>
@@ -486,13 +486,13 @@
     var flMap   = {'yes':'uterine fluid detected on ultrasound','no':'no uterine fluid','unchecked':'ultrasound not yet done'};
 
     var profileLines = [
-      '<strong>Age:</strong> ' + (ageMap[answers.age]||'—'),
-      '<strong>Foals:</strong> ' + (foalMap[answers.foals]||'—'),
+      '<strong>Age:</strong> ' + (ageMap[answers.age]||'not stated'),
+      '<strong>Foals:</strong> ' + (foalMap[answers.foals]||'not stated'),
       '<strong>Abortion history:</strong> ' + (answers.abort==='yes'?'Yes':'No'),
       '<strong>Endometritis history:</strong> ' + (answers.endo==='yes'?'Yes':answers.endo==='unsure'?'Unsure':'No'),
-      '<strong>Failed cycles:</strong> ' + (cycMap[answers.cycles]||'—'),
-      '<strong>Swab result:</strong> ' + (swabMap[answers.swab]||'—'),
-      '<strong>Uterine fluid:</strong> ' + (flMap[answers.fluid]||'—')
+      '<strong>Failed cycles:</strong> ' + (cycMap[answers.cycles]||'not stated'),
+      '<strong>Swab result:</strong> ' + (swabMap[answers.swab]||'not stated'),
+      '<strong>Uterine fluid:</strong> ' + (flMap[answers.fluid]||'not stated')
     ];
 
     document.getElementById('result-profile').innerHTML = profileLines.join('<br>');
@@ -505,7 +505,7 @@
     // Logic
     var cleanSwabWithRF = (answers.swab==='clean' && rf >= 1);
     var swabNote = cleanSwabWithRF
-      ? ' Note: a clean swab does not rule out infection — standard cultures detect only approximately 34% of infections when one is present.'
+      ? ' Note: a clean swab does not rule out infection, standard cultures detect only approximately 34% of infections when one is present.'
       : '';
 
     if(rf === 0 && answers.cycles === 'first'){
@@ -514,7 +514,7 @@
       badge.style.background = '#f3f4f6'; badge.style.color = '#374151';
       badge.textContent      = 'Monitor';
       title.style.color      = '#374151';
-      title.textContent      = 'No risk factors — too early to tell';
+      title.textContent      = 'No risk factors, too early to tell';
       body.textContent       = 'Your mare has no primary risk factors and this is her first season. Most mares take 1-3 attempts. If she fails to conceive over 2-3 consecutive cycles, consider a full reproductive workup and discuss bActivate with your veterinarian.';
       document.getElementById('result-cta').style.display = 'none';
     } else if(rf === 0){
@@ -523,20 +523,20 @@
       badge.style.background = '#fef3c7'; badge.style.color = '#92400e';
       badge.textContent      = 'Consider';
       title.style.color      = '#92400e';
-      title.textContent      = 'No primary risk factors — but repeated failure warrants investigation';
-      body.textContent       = 'Your mare has no primary risk factors, but has failed to conceive across multiple cycles. Dormant infection is still possible without risk factors — approximately 25-50% of open mares without classic risk factors carry subclinical infection. Discuss bActivate with your veterinarian as part of a full reproductive workup.' + swabNote;
+      title.textContent      = 'No primary risk factors, but repeated failure warrants investigation';
+      body.textContent       = 'Your mare has no primary risk factors, but has failed to conceive across multiple cycles. Dormant infection is still possible without risk factors, approximately 25-50% of open mares without classic risk factors carry subclinical infection. Discuss bActivate with your veterinarian as part of a full reproductive workup.' + swabNote;
       document.getElementById('result-cta').style.display = 'flex';
     } else {
       box.style.background   = '#fff3f3';
       box.style.borderColor  = '#901820';
       badge.style.background = '#901820'; badge.style.color = 'white';
-      badge.textContent      = rf === 1 ? '1 risk factor — HIGH RISK' : rf + ' risk factors — HIGH RISK';
+      badge.textContent      = rf === 1 ? '1 risk factor, HIGH RISK' : rf + ' risk factors, HIGH RISK';
       title.style.color      = '#901820';
       title.textContent      = 'bActivate is strongly indicated';
       var factorText = factors.length === 1
         ? 'Your mare has 1 primary risk factor: ' + factors[0] + '.'
         : 'Your mare has ' + rf + ' primary risk factors: ' + factors.slice(0,-1).join(', ') + ' and ' + factors[factors.length-1] + '.';
-      body.textContent       = factorText + ' Mares with one or more risk factors have approximately 75% probability of carrying a dormant Streptococcus zooepidemicus infection that standard swab culture cannot detect. bActivate reactivates these bacteria so they become detectable and treatable.' + swabNote + ' Discuss with your veterinarian before the next breeding cycle.';
+      body.textContent       = factorText + ' In the published series, mares with these risk factors had the highest activation-positive rates (up to 84% at Kildangan, average age 12.7 years). bActivate reactivates these bacteria so they become detectable and treatable.' + swabNote + ' Discuss with your veterinarian before the next breeding cycle.';
       document.getElementById('result-cta').style.display = 'flex';
     }
 

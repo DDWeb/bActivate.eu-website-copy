@@ -175,7 +175,7 @@ const ROUTE_SCHEMAS = {
         "name": "My mare's swab is clean but she is still not in foal. What now?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ask your veterinarian about a biopsy or lavage instead of another surface swab, and about activation before the next culture. An estimated 70 to 80% of mares still open at the end of the season carry a hidden infection that standard culture misses."
+          "text": "Ask your veterinarian about a biopsy or lavage instead of another surface swab, and about activation before the next culture. In clinical series, 47 to 87% of problem mares carried a hidden infection that standard culture had missed (Hagyard 2014, Kildangan 2018, Copenhagen 2025)."
         }
       }
     ]
@@ -235,7 +235,7 @@ const ROUTE_SCHEMAS = {
         "name": "Is it worth testing a problem mare before another breeding season?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "An estimated 70 to 80% of mares still open at the end of a season carry a hidden uterine infection that standard culture misses. Testing first replaces a repeat of last season with a diagnosis, and the whole protocol fits inside one oestrus cycle."
+          "text": "In clinical series, 47 to 87% of problem mares carried a hidden uterine infection that standard culture had missed (Hagyard 2014, Kildangan 2018, Copenhagen 2025). Testing first replaces a repeat of last season with a diagnosis, and the whole protocol fits inside one oestrus cycle."
         }
       },
       {
