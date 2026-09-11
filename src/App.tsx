@@ -16,6 +16,7 @@ import BlogPost from './pages/BlogPost';
 import Shop from './pages/Shop';
 import Contact from './pages/Contact';
 import SwabComparison from './pages/SwabComparison';
+import EndangeredEquineProgram from './pages/EndangeredEquineProgram';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -52,6 +53,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/swab-culture-vs-bactivate" element={<SwabComparison />} />
+        <Route path="/endangered-equine-program" element={<EndangeredEquineProgram />} />
         <Route path="*" element={<Home />} />
       </Routes>
       {faqVariant && <FAQSection variant={faqVariant} />}

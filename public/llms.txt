@@ -3,7 +3,7 @@
 > bActivate is a veterinary bacterial growth medium that reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus, making subclinical endometritis detectable by standard culture so a veterinarian can treat it with targeted antibiotics. Evaluated in clinical studies at Hagyard Equine Medical Institute, Kentucky (83% pregnancy rate, 64 problem mares) and at Kildangan Stud / Godolphin, Ireland (89% pregnancy rate, 19 problem mares).
 
 License: RSL-1.0
-Last-Updated: 2026-08-18
+Last-Updated: 2026-09-11
 
 Positioning statement: bActivate finds the infection swabs miss.
 
@@ -100,6 +100,7 @@ A mare is defined as having a latent infection if more bacteria are isolated 48 
 - https://bactivate.us/shop : Purchase bActivate
 - https://bactivate.us/contact : Email, phone, WhatsApp, consultation booking, and company details
 - https://bactivate.us/swab-culture-vs-bactivate : Decision aid comparing swab culture, biopsy and bActivate activation, with sourced detection rates
+- [Endangered Equine Program](https://bactivate.us/endangered-equine-program): Free bActivate donated for the problem mares of endangered breeds on recognized conservation watchlists, so a rare-breed mare's veterinarian can find the hidden infection that standard culture misses. bActivate reveals; the veterinarian treats.
 
 ## Knowledge base (OKF)
 

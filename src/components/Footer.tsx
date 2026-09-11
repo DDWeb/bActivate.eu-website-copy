@@ -58,6 +58,7 @@ export default function Footer() {
                         <li><Link to="/when-to-use" className={styles.link}>When to use?</Link></li>
                         <li><Link to="/how-to-use" className={styles.link}>How to use?</Link></li>
                         <li><Link to="/about-us" className={styles.link}>About us</Link></li>
+                        <li><Link to="/endangered-equine-program" className={styles.link}>Endangered Equine Program</Link></li>
                         <li><Link to="/shop" className={styles.link}>Shop</Link></li>
                         <li><Link to="/our-distributors" className={styles.link}>Our distributors</Link></li>
                         <li><Link to="/contact" className={styles.link}>Contact</Link></li>

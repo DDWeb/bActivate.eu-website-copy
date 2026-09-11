@@ -38,16 +38,30 @@ export default function Header() {
                     <Link to="/blog" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>Blog</Link>
                     <Link to="/about-us" className={styles.navItem} onClick={() => setIsMenuOpen(false)}>About us</Link>
 
+                    <div className={`${styles.navItem} ${styles.dropdown}`}>
+                        <div className={styles.dropdownTrigger}>
+                            Free
+                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                        </div>
+                        <div className={styles.dropdownMenu}>
+                            <a
+                                href="https://portal.non-pregnant-mare.com/free-trial"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={styles.dropdownItem}
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                Free trial
+                            </a>
+                            <a href="/donate" className={styles.dropdownItem} onClick={() => setIsMenuOpen(false)}>
+                                Donate to endangered
+                            </a>
+                        </div>
+                    </div>
+
                     <div className={styles.headerRight}>
-                        <a
-                            href="https://portal.non-pregnant-mare.com/free-trial"
-                            className={styles.navItem}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Free Trial
-                        </a>
                         <Link to="/shop" className={styles.shopButton} onClick={() => setIsMenuOpen(false)}>
                             SHOP
                         </Link>
