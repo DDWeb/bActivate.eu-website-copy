@@ -64,6 +64,7 @@ export default function Footer() {
                         <li><Link to="/contact" className={styles.link}>Contact</Link></li>
                         <li><Link to="/swab-culture-vs-bactivate" className={styles.link}>Swab culture vs bActivate</Link></li>
                         <li><a href="/glossary" className={styles.link}>Glossary</a></li>
+                        <li><a href="/is-my-mare-a-candidate" className={styles.link}>Is my mare a candidate?</a></li>
                         <li><a href="/affiliate-program" className={styles.link}>Affiliate Program</a></li>
                         <li><a href="/okf/index.md" className={styles.link}>Knowledge base (OKF)</a></li>
                     </ul>

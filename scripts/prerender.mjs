@@ -1263,7 +1263,7 @@ async function main() {
 // link from the build they were made with. Class names and asset hashes change with every build,
 // so refresh them from the freshly rendered home page (and never load the app bundle there: the
 // router has no route for these paths and would replace the content with the 404 page).
-const STATIC_PAGES = ['glossary/index.html'];
+const STATIC_PAGES = ['glossary/index.html', 'is-my-mare-a-candidate/index.html'];
 function syncStaticPages() {
   const home = readFileSync(path.resolve(ROOT, 'dist/index.html'), 'utf8');
   const header = (home.match(/<header[\s\S]*?<\/header>/) || [])[0];

@@ -184,7 +184,7 @@ export default function Home() {
       <InternalLinks links={[
         { to: '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare', label: 'A clean swab is not a clean mare', description: 'Why a negative culture does not clear a problem mare' },
         { to: '/swab-culture-vs-bactivate', label: 'Swab vs biopsy vs bActivate', description: 'Detection rates of the three sampling options, side by side' },
-        { to: '/when-to-use', label: 'When to use bActivate', description: 'Signs of a hidden infection and when activation is indicated' },
+        { to: '/is-my-mare-a-candidate', label: 'Is my mare a candidate?', description: 'Seven questions, two minutes', plain: true },
       ]} />
 
       <WebinarSignup />
