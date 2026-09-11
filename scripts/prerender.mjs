@@ -867,7 +867,7 @@ const EXTRA_SCHEMAS = {
           "value": "26123371"
         }
       ],
-      "sameAs": "https://doi.org/10.1016/j.vetmic.2015.06.006",
+      "sameAs": ["https://doi.org/10.1016/j.vetmic.2015.06.006", "https://www.researchgate.net/publication/279630136_Activation_of_persistent_Streptococcus_equi_subspecies_zooepidemicus_in_mares_with_subclinical_endometritis"],
       "url": "https://doi.org/10.1016/j.vetmic.2015.06.006",
       "publisher": {
         "@type": "Organization",
