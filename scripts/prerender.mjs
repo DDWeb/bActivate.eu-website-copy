@@ -368,6 +368,17 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'Does bActivate treat the infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It makes the dormant bacteria grow so a normal culture can find them. The treatment is the veterinarian\'s, chosen from the antibiogram.' } },
     ],
   },
+  '/blog/mare-not-getting-in-foal-what-to-do': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'How many times may a mare stay empty before looking deeper?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'After two failed cycles with good timing and good semen. With any sign of hidden endometritis (fluid on the scan, previous inflammation, repeated resorption, 10 years or older), at once.' } },
+      { '@type': 'Question', 'name': 'Is a clean swab enough to rule out endometritis?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. In the comparison study, swab culture found 34 % of infections and biopsy culture 82 % (Nielsen 2005). Dormant streptococci deep in the lining do not grow in the standard culture.' } },
+      { '@type': 'Question', 'name': 'Can an older mare still get in foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Often yes. Age is a risk factor, not a verdict. What matters is the state of the uterine lining, which a biopsy shows, and whether a hidden infection is found and treated.' } },
+      { '@type': 'Question', 'name': 'Is bActivate a treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. bActivate is a diagnostic culture medium. It wakes dormant bacteria so they grow in a normal culture. Treatment follows with antibiotics chosen from the sensitivity test.' } },
+      { '@type': 'Question', 'name': 'What does the work-up cost?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'That depends on the vet and the route. For an activation, count on two visits 48 hours apart plus laboratory costs for two cultures. The price of bActivate itself is on the shop page; your vet orders it through the veterinary wholesaler.' } },
+    ],
+  },
   '/how-to-use': {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -545,6 +556,10 @@ const PAGE_META = {
     title: 'Equine Endometritis: Causes, Diagnosis and What Vets Do',
     description: 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.',
   },
+  '/blog/mare-not-getting-in-foal-what-to-do': {
+    title: 'Mare Not Getting in Foal: What to Do, and in What Order',
+    description: 'Scan shows nothing again? The five causes a vet rules out, in order, what you can do at each step, and why a clean swab is not the end of the search.',
+  },
   '/endangered-equine-program': {
     title: 'Endangered Equine Program | Free bActivate for Rare Breeds',
     description: 'For breeds on a conservation watchlist we donate bActivate for problem mares that will not get in foal, so your vet can find the infection a swab misses.',
@@ -694,7 +709,7 @@ const ROUTES_WITH_CLIENT_FAQ = new Set(['/podcast']);
 
 // Routes with no Japanese edition: emit no hreflang="ja" for them, a link to a
 // 404 invalidates the whole cluster for that URL.
-const MISSING_ON_JP = new Set(['/endangered-equine-program', '/equine-endometritis']);
+const MISSING_ON_JP = new Set(['/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the

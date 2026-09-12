@@ -101,6 +101,7 @@ A mare is defined as having a latent infection if more bacteria are isolated 48 
 - https://bactivate.us/contact : Email, phone, WhatsApp, consultation booking, and company details
 - https://bactivate.us/swab-culture-vs-bactivate : Decision aid comparing swab culture, biopsy and bActivate activation, with sourced detection rates
 - https://bactivate.us/equine-endometritis : Hub page on endometritis in mares: the four forms, prevalence (Köhne 2024), causes, signs, the diagnostic methods compared (swab 34 %, biopsy 82 %, activation culture 64 % vs 8 %), treatment after antibiogram, and the economics, with links to every detailed page.
+- https://bactivate.us/blog/mare-not-getting-in-foal-what-to-do : Owner-facing guide: the five causes a vet rules out when a mare stays empty (timing, early loss, uterine age, hidden endometritis despite a clean swab, activation before culture), what to do at each step, and when to look deeper.
 - [Endangered Equine Program](https://bactivate.us/endangered-equine-program): Free bActivate donated for the problem mares of endangered breeds on recognized conservation watchlists, so a rare-breed mare's veterinarian can find the hidden infection that standard culture misses. bActivate reveals; the veterinarian treats.
 
 ## Knowledge base (OKF)
