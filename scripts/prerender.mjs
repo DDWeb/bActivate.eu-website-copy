@@ -31,6 +31,7 @@ const BREADCRUMB_LABELS = {
   '/privacy-policy': 'Privacy Policy',
   '/contact': 'Contact',
   '/swab-culture-vs-bactivate': 'Swab Culture vs bActivate',
+  '/equine-endometritis': 'Equine Endometritis',
   '/endangered-equine-program': 'Endangered Equine Program',
 };
 
@@ -466,6 +467,7 @@ for (const [route, exportName] of [
   ['/what-is-bactivate', 'whatIsFaqItems'],
   ['/when-to-use', 'whenToUseFaqItems'],
   ['/studies-effect', 'studiesFaqItems'],
+  ['/equine-endometritis', 'endometritisFaqItems'],
 ]) {
   ROUTE_SCHEMAS[route] = {
     '@context': 'https://schema.org',
@@ -538,6 +540,10 @@ const PAGE_META = {
   '/swab-culture-vs-bactivate': {
     title: 'Swab Culture vs Biopsy vs bActivate | Mare Uterine Infection',
     description: 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. The diagnostic options for problem mares.',
+  },
+  '/equine-endometritis': {
+    title: 'Equine Endometritis: Causes, Diagnosis and What Vets Do',
+    description: 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.',
   },
   '/endangered-equine-program': {
     title: 'Endangered Equine Program | Free bActivate for Rare Breeds',
@@ -612,6 +618,7 @@ const STATIC_ROUTES = [
   '/privacy-policy',
   '/contact',
   '/swab-culture-vs-bactivate',
+  '/equine-endometritis',
   '/endangered-equine-program',
 ];
 
@@ -687,7 +694,7 @@ const ROUTES_WITH_CLIENT_FAQ = new Set(['/podcast']);
 
 // Routes with no Japanese edition: emit no hreflang="ja" for them, a link to a
 // 404 invalidates the whole cluster for that URL.
-const MISSING_ON_JP = new Set(['/endangered-equine-program']);
+const MISSING_ON_JP = new Set(['/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the
@@ -1175,6 +1182,18 @@ async function main() {
 
       // Inject MedicalWebPage schema for clinical guidance pages
       const MEDICAL_PAGE_SCHEMAS = {
+        '/equine-endometritis': {
+          '@context': 'https://schema.org',
+          '@type': 'MedicalWebPage',
+          'name': 'Equine Endometritis: Causes, Diagnosis and What Vets Do',
+          'description': 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.',
+          'url': `${BASE_URL}/equine-endometritis`,
+          'inLanguage': 'en',
+          'about': { '@type': 'MedicalCondition', 'name': 'Subclinical Endometritis in Mares', '@id': `${BASE_URL}/#subclinical-endometritis` },
+          'audience': { '@type': 'MedicalAudience', 'audienceType': 'Veterinarian' },
+          'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
+          'isPartOf': { '@type': 'WebSite', '@id': `${BASE_URL}/#website` },
+        },
         '/when-to-use': {
           '@context': 'https://schema.org',
           '@type': 'MedicalWebPage',

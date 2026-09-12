@@ -90,3 +90,27 @@ export const studiesFaqItems = [
     answer: "The Hagyard study was led by Dr. Kristina Lu at one of the world's largest equine hospitals, in Lexington, Kentucky. The Kildangan/Godolphin field study was run with Meta Osborne MVB at one of the world's premier Thoroughbred breeding operations, in Ireland. The clinics and studs are independent of the manufacturer; the founders of bActivate introduced the activation protocol and co-authored the reporting, which was presented at scientific conferences and published as a congress abstract in the Journal of Equine Veterinary Science (2018).",
   },
 ];
+
+// /equine-endometritis hub page
+export const endometritisFaqItems = [
+  {
+    question: "Can a mare have endometritis with a clean swab?",
+    answer: "Yes. In a direct comparison, swab culture found 34 % of infected mares and biopsy culture 82 % (Nielsen 2005). Dormant bacteria deep in the lining do not reach the swab and do not grow on the plate.",
+  },
+  {
+    question: "Is subclinical endometritis contagious?",
+    answer: "Streptococcus zooepidemicus lives on healthy horses and is an opportunist rather than a contagious disease of the uterus. The risk is the individual mare's inability to clear it, not spread between mares.",
+  },
+  {
+    question: "How long after covering should fluid be gone?",
+    answer: "A healthy mare clears semen and inflammatory fluid within about 48 hours. Fluid that persists beyond that is the classic sign of delayed uterine clearance and should be discussed with the vet before the next cover.",
+  },
+  {
+    question: "Does bActivate treat endometritis?",
+    answer: "No. bActivate is a diagnostic culture medium. It activates dormant bacteria so they grow in the standard culture and can be identified and tested for antibiotic sensitivity. The treatment that follows is prescribed by the veterinarian.",
+  },
+  {
+    question: "When should a breeder ask for the activation culture?",
+    answer: "When a mare stays empty after two or more well-timed covers with proven semen, after an early loss, with fluid on the ultrasound, or with a clean swab and still no pregnancy. The mares in the published series had been empty for at least three cycles.",
+  },
+];

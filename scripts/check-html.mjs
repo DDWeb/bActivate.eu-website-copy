@@ -58,7 +58,7 @@ function htmlFiles(dir, out = []) {
 
 const REQUIRED = ["index.html", "404.html", "what-is-bactivate/index.html", "when-to-use/index.html", "how-to-use/index.html",
   "studies-effect/index.html", "shop/index.html", "about-us/index.html", "contact/index.html", "blog/index.html",
-  "swab-culture-vs-bactivate/index.html", "glossary/index.html", "is-my-mare-a-candidate/index.html", "affiliate-program/index.html",
+  "swab-culture-vs-bactivate/index.html", "equine-endometritis/index.html", "glossary/index.html", "is-my-mare-a-candidate/index.html", "affiliate-program/index.html",
   "privacy-policy/index.html", "terms-and-conditions/index.html", "llms.txt", "llms-full.txt", "sitemap.xml", "robots.txt"];
 for (const f of REQUIRED) expect(`${f} exists`, existsSync(`dist/${f}`));
 
