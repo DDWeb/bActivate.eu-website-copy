@@ -182,6 +182,7 @@ export default function WhenToUse() {
             <FAQSection items={whenToUseFaqItems} />
 
             <InternalLinks links={[
+                { to: '/blog/mare-not-getting-in-foal-what-to-do', label: 'Mare not getting in foal?', description: 'The five causes a vet rules out, in order, and what you can do' },
                 { to: '/equine-endometritis', label: 'Equine endometritis explained', description: 'Forms, causes, diagnosis and treatment, with sources' },
                 { to: '/swab-culture-vs-bactivate', label: 'Swab vs biopsy vs bActivate', description: 'Detection rates of the three sampling options, side by side' },
                 { to: '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare', label: 'A clean swab is not a clean mare', description: 'Why a negative culture does not clear a problem mare' },

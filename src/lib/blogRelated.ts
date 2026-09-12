@@ -1,15 +1,20 @@
 // Related reading per blog post (slug -> sibling slugs). Rendered by BlogPost.tsx
 // under the article so every post links to two or three others.
 export const relatedPosts: Record<string, string[]> = {
+  "mare-not-getting-in-foal-what-to-do": [
+    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+    "ultrasound-empty-mare-what-the-vet-sees",
+    "saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares",
+  ],
   "positive-activation-culture-what-happens-next": [
     "addressing-challenges-of-problem-mares",
     "bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares",
     "bactivate-demonstrates-remarkable-improvement-in-fertility-rates-for-thoroughbred-mares",
   ],
   "ultrasound-empty-mare-what-the-vet-sees": [
+    "mare-not-getting-in-foal-what-to-do",
     "uterine-lavage-mare-when-and-why",
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
-    "addressing-challenges-of-problem-mares",
   ],
   "uterine-lavage-mare-when-and-why": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
@@ -22,9 +27,9 @@ export const relatedPosts: Record<string, string[]> = {
     "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health",
   ],
   "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare": [
+    "mare-not-getting-in-foal-what-to-do",
     "streptococcus-zooepidemicus-in-horses",
     "biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough",
-    "saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares",
   ],
   "biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",

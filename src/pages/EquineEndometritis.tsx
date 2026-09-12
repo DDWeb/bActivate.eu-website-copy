@@ -94,6 +94,7 @@ export default function EquineEndometritis() {
             <FAQSection items={endometritisFaqItems} heading="Frequently asked questions about equine endometritis" subtitle="Short answers; the sources are on this page." />
 
             <InternalLinks links={[
+                { to: '/blog/mare-not-getting-in-foal-what-to-do', label: 'Mare not getting in foal?', description: 'The five causes a vet rules out, in order, and what you can do' },
                 { to: '/swab-culture-vs-bactivate', label: 'Swab vs biopsy vs bActivate', description: 'Detection rates of the sampling options, side by side' },
                 { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
                 { to: '/how-to-use', label: 'Veterinary Protocol', description: 'Step-by-step instructions for veterinarians' },
