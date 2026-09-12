@@ -64,6 +64,7 @@ export default function SwabComparison() {
             </section>
 
             <InternalLinks links={[
+                { to: '/equine-endometritis', label: 'Equine endometritis explained', description: 'Forms, causes, diagnosis and treatment, with sources' },
                 { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
                 { to: '/how-to-use', label: 'Veterinary Protocol', description: 'Step-by-step instructions for veterinarians' },
                 { to: '/studies-effect', label: 'Clinical Results', description: '83% pregnancy at Hagyard, 89% at Kildangan' },

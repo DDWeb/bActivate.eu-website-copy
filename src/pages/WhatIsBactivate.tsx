@@ -156,6 +156,7 @@ export default function WhatIsBactivate() {
             <FAQSection items={whatIsFaqItems} />
 
             <InternalLinks links={[
+                { to: '/equine-endometritis', label: 'Equine endometritis explained', description: 'Forms, causes, diagnosis and treatment, with sources' },
                 { to: '/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough', label: 'Biofilm is not the whole story', description: 'Why breaking up biofilm does not remove the dormant bacteria' },
                 { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
                 { to: '/studies-effect', label: 'Clinical Results', description: '83% pregnancy rate at Hagyard, see the evidence' },
