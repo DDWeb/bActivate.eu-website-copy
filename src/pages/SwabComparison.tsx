@@ -57,7 +57,7 @@ export default function SwabComparison() {
                     <p className="text-gray-700 leading-relaxed mb-2">獣医師と相談する際の、実践的な目安です。</p>
                     <ul className="list-disc pl-6 text-gray-700 leading-relaxed mb-10">
                         <li><strong>1〜2サイクル受胎しなかった牝馬の初回検査：</strong> まずは通常の診断から始めます。単純なスワブよりも、少量子宮洗浄（low-volume lavage）または生検培養が理想的です。</li>
-                        <li><strong>スワブが陰性の不受胎牝馬：</strong> 陰性の繰り返しに加えて受胎しない状態が続くのは、まさに休眠感染が疑われる典型例です（不受胎牝馬の70〜80%が保有）。ここが bActivate による活性化の適応となります。</li>
+                        <li><strong>スワブが陰性の不受胎牝馬：</strong> 陰性の繰り返しに加えて受胎しない状態が続くのは、まさに休眠感染が疑われる典型例です（公表されたシリーズでは不受胎牝馬の47〜87%が保有）。ここが bActivate による活性化の適応となります。</li>
                         <li><strong>高齢の牝馬、子宮内膜炎の既往、または3回以上の分娩歴：</strong> これらのリスク因子はいずれも、それぞれ単独で休眠感染の可能性が高いことを示します。オフシーズンの検査の一環として活性化を検討してください。</li>
                     </ul>
                 </div>

@@ -69,7 +69,7 @@ export default function Glossary() {
                             <span style={tagStyle}>臨床的定義</span>
                         </div>
                         <p style={{ color: '#555', fontSize: '0.875rem', marginBottom: '0.75rem', fontStyle: 'italic' }}>別名：不妊牝馬（barren mare）、リピートブリーダー</p>
-                        <p style={bodyStyle}>繁殖能力が確認された種牡馬と、3回以上連続した発情周期で交配しても受胎しない牝馬です。シーズン終了時に空胎の牝馬の約70〜80%が、通常のスワブ培養では検出できない休眠状態の <em>Streptococcus zooepidemicus</em> 感染を抱えています。</p>
+                        <p style={bodyStyle}>繁殖能力が確認された種牡馬と、3回以上連続した発情周期で交配しても受胎しない牝馬です。公表された活性化シリーズでは、不受胎牝馬の47〜87%が、標準的なスワブでは見逃されていた休眠状態の <em>Streptococcus zooepidemicus</em> 感染を抱えています。</p>
                         <p style={{ marginTop: '0.75rem' }}><Link to="/blog/addressing-challenges-of-problem-mares" style={relLinkStyle}>→ 不受胎牝馬の課題に取り組む</Link></p>
                     </div>
 

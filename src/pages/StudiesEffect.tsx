@@ -58,11 +58,6 @@ export default function StudiesEffect() {
                                 <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「大半の牝馬（83%）が6週間以内に受胎し、そのうちの多くが生存産駒を出産しました。」bActivateで治療された64頭の繁殖牝馬の研究より。</blockquote>
                                 <div style={{ fontSize: "0.8rem", color: "#666" }}>Kentucky Equine Research, ker.com</div>
                             </a>
-                            <a href="https://breedersclub.nu/wp-content/uploads/2022/07/41-Forskning-i-fertilitet.pdf" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
-                                <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Breeders Club, Veterinary Journal</div>
-                                <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「不受胎牝馬の72%が、活性化の翌年に生存産駒を得ました。参加した牝馬の84%が、潜在性のレンサ球菌感染を抱えていました。」</blockquote>
-                                <div style={{ fontSize: "0.8rem", color: "#666" }}>Rebecca Bøk Larsen DVM ＋ Anna Skriver DVM<br />コペンハーゲン大学、2022年</div>
-                            </a>
                             <a href="https://equsana.dk/sovende-bakterier-goer-hopper-ufrugtbare/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit", display: "block", background: "white", padding: "1.5rem", borderBottom: "3px solid #901820" }}>
                                 <div style={{ fontSize: "0.75rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "1px", color: "#901820", marginBottom: "0.75rem" }}>Equsana.dk, 2015</div>
                                 <blockquote style={{ fontStyle: "italic", color: "#333", lineHeight: 1.7, margin: "0 0 1rem", fontSize: "0.9rem" }}>「牝馬の約10%は、獣医の助けを受けても決して妊娠しません。bActivateは休眠細菌を目覚めさせ、抗生物質で効果的に診断・治療できるようにします。」</blockquote>

@@ -23,7 +23,7 @@ export default function WhenToUse() {
                                     <h2 className={styles.subtitle}>bActivate ― 不受胎牝馬のための診断補助</h2>
                                     <div className={styles.textBlock}>
                                         <p className="mb-4">bActivateは、慢性的に感染した牝馬において、正しい診断を下す助けとなります。bActivateは、子宮内に潜む休眠状態のレンサ球菌の増殖を促し、それによって通常の手法で診断・治療できるようにします。</p>
-                                        <p className="mb-4"><strong>慢性感染</strong>は妊娠の成立を妨げるだけでなく、早期胎子喪失（early fetal loss）や流産のリスクを高める可能性もあります。当社の研究では、繁殖能力のある種牡馬と交配し、経験豊富な獣医師の管理下にあったにもかかわらず、繁殖シーズンの終わりまでに受胎しなかった不受胎牝馬の70〜80%が、慢性感染を抱えていることが示されています。</p>
+                                        <p className="mb-4"><strong>慢性感染</strong>は妊娠の成立を妨げるだけでなく、早期胎子喪失（early fetal loss）や流産のリスクを高める可能性もあります。当社のフィールドシリーズでは、繁殖能力のある種牡馬と交配し、獣医師の管理下にあったにもかかわらずシーズン終了時に受胎していなかった牝馬のうち、47%（Hagyard、64頭中30頭）から84%（Kildangan、19頭中16頭）が、休眠感染に対して活性化陽性でした。</p>
                                         <p>一部の牧場では、bActivateを<strong>スクリーニングツール</strong>として活用し、オフシーズン中にすべての空胎牝馬に対して子宮内膜炎の診断と治療を行っています。これにより妊娠成立の可能性を高め、<strong>受胎までの期間（time to pregnancy）</strong>を短縮しています。</p>
                                     </div>
                                 </div>
@@ -158,7 +158,7 @@ export default function WhenToUse() {
                             <li className="flex gap-2"><span className="text-red-600 font-bold">✓</span><span>牧場が<strong>交配スケジュール</strong>をより確実に計画できる</span></li>
                         </ul>
                     </div>
-                    <p className="mt-6 text-gray-600">研究では、不受胎牝馬の70〜80%が、通常の培養検査では見逃される隠れた子宮内感染を抱えていることが示されています。bActivateによるオフシーズンのスクリーニングは、この問題に直接対処します。</p>
+                    <p className="mt-6 text-gray-600">標準的なスワブは感染牝馬の約34%しか検出しません（Nielsen 2005）。公表された活性化シリーズでは、不受胎牝馬の47〜87%に隠れた子宮内感染が見つかっています。bActivateによるオフシーズンのスクリーニングは、この問題に直接対処します。</p>
                 </div>
             </section>
 
