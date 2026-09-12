@@ -20,6 +20,7 @@ export default function EquineEndometritis() {
                 <div className="container mx-auto px-4 max-w-4xl">
                     <h1 className="text-3xl font-bold mb-4">Equine endometritis: causes, diagnosis and what the vet does next</h1>
                     <P>Endometritis is inflammation of the lining of the mare's uterus, and it is the most common reason a mare fails to conceive or loses an early pregnancy. It comes in two forms: the clinical form with fluid and discharge, and the subclinical form with no outward sign at all. The subclinical form is the one that costs breeders seasons, because the standard swab culture finds only about 34 % of infected mares (Nielsen 2005). This page collects what is known, with sources, and links to the detailed pages on each part.</P>
+                    <P>The hidden form goes by several names in the veterinary literature: subclinical endometritis, latent uterine infection, dormant endometritis. Breeders usually do not name the condition at all; they say the mare is barren, empty, or simply a problem mare. This page uses the terms side by side so that each reader finds what they are looking for.</P>
 
                     <H2>What is equine endometritis?</H2>
                     <P>Endometritis is the uterus reacting to something it should clear: bacteria or fungi after mating or foaling, semen and debris after insemination, or urine and air in a mare with poor conformation. A healthy mare clears this within a day or two. A susceptible mare does not, and the inflammation persists, damages the lining and prevents an embryo from surviving.</P>
@@ -50,7 +51,7 @@ export default function EquineEndometritis() {
                     <More><Link to="/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough">Biofilm in the mare's uterus: why breaking it up is not enough</Link>.</More>
 
                     <H2>What are the signs?</H2>
-                    <P>In the clinical form: vaginal discharge, fluid in the uterus on ultrasound, a short interval between heats, sometimes a mare that "does not look right" after covering. In the subclinical form there is often nothing to see. The signs are then in the breeding record: two or more well-timed covers with proven semen without a pregnancy, an early loss before day 40, fluid after covering, or a clean swab in a mare that still stays empty.</P>
+                    <P>In the clinical form: vaginal discharge, fluid in the uterus on ultrasound, a short interval between heats, sometimes a mare that "does not look right" after covering. In the subclinical form there is often nothing to see. The signs are then in the breeding record: two or more well-timed covers with proven semen without a pregnancy, an early loss before day 40, fluid after covering, or a clean swab in a mare that still stays empty. An older mare, from about 10 years, or a mare with several foals is more often affected than a young maiden mare, because the lining clears infection less well with age and parity.</P>
                     <More><Link to="/blog/ultrasound-empty-mare-what-the-vet-sees">Ultrasound of the empty mare: what the vet sees</Link> and <a href="/is-my-mare-a-candidate">Is my mare a candidate?</a></More>
 
                     <H2>How is it diagnosed?</H2>

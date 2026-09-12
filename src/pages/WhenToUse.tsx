@@ -11,7 +11,7 @@ import LiteYouTube from '@/components/LiteYouTube';
 export default function WhenToUse() {
     useEffect(() => {
         document.title = 'When to Use bActivate | Signs of Hidden Infection in Mares';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Is your mare failing to conceive despite clean swabs? Learn the signs of dormant uterine infection and when bActivate is indicated.');
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Barren mare despite clean swabs? The signs of a latent uterine infection, which mares are at risk (age, parity, history), and when bActivate is indicated.');
     }, []);
     return (
         <main>
@@ -30,6 +30,7 @@ export default function WhenToUse() {
                                     <h2 className={styles.subtitle}>bActivate, a diagnostic aid for the problem mare</h2>
                                     <div className={styles.textBlock}>
                                         <p className="mb-4">bActivate can help establish a correct diagnosis in the chronically infected mare. bActivate initiates growth of resident dormant streptococci, which can then be diagnosed and treated by standard techniques.</p>
+                                        <p className="mb-4">Veterinarians call this condition subclinical endometritis, latent uterine infection or dormant endometritis. To the breeder it is the barren mare or the empty mare: covered on time, with good semen, and still not in foal.</p>
                                         <p className="mb-4"><strong>Chronic infections</strong> prevent establishment of a pregnancy, and might also increase the risk of early fetal loss and abortion in the mare. In our field series, 47% (Hagyard, 30 of 64) to 84% (Kildangan, 16 of 19) of mares still not pregnant at the end of the season, despite fertile stallions and veterinary supervision, were activation-positive for a dormant infection.</p>
                                         <p>Some farms use bActivate as a <strong>screening tool</strong> to improve diagnosis of endometritis and treatment on all open mares during the off-season, hereby optimizing chances to establish a pregnancy and reduce <strong>time to pregnancy</strong>.</p>
                                     </div>

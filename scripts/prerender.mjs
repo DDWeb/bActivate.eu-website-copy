@@ -510,7 +510,7 @@ const PAGE_META = {
   },
   '/when-to-use': {
     title: 'When to Use bActivate | Signs of Hidden Infection in Mares',
-    description: 'Is your mare failing to conceive despite clean swabs? Learn the signs of dormant uterine infection and when bActivate is indicated.',
+    description: 'Barren mare despite clean swabs? The signs of a latent uterine infection, which mares are at risk (age, parity, history), and when bActivate is indicated.',
   },
   '/how-to-use': {
     title: 'How to Use bActivate | Veterinary Protocol',
