@@ -509,7 +509,7 @@ const PAGE_META = {
     description: 'A diagnostic culture medium that reactivates dormant Streptococcus zooepidemicus in problem mares, the hidden uterine infection a standard swab often misses.',
   },
   '/when-to-use': {
-    title: 'When to Use bActivate | Signs of Hidden Infection in Mares',
+    title: 'When to Use bActivate: Barren Mare Signs and Indications',
     description: 'Barren mare despite clean swabs? The signs of a latent uterine infection, which mares are at risk (age, parity, history), and when bActivate is indicated.',
   },
   '/how-to-use': {
@@ -549,11 +549,11 @@ const PAGE_META = {
     description: 'Privacy policy for bactivate.eu, how Bojesen & Petersen Biotech ApS collects, stores and uses personal data in accordance with GDPR.',
   },
   '/swab-culture-vs-bactivate': {
-    title: 'Swab Culture vs Biopsy vs bActivate | Mare Uterine Infection',
+    title: 'Swab vs Biopsy vs Activation Culture: Endometritis Diagnosis',
     description: 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. The diagnostic options for problem mares.',
   },
   '/equine-endometritis': {
-    title: 'Equine Endometritis: Causes, Diagnosis and What Vets Do',
+    title: 'Equine Endometritis, Clinical and Subclinical: Diagnosis',
     description: 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.',
   },
   '/blog/mare-not-getting-in-foal-what-to-do': {
@@ -589,7 +589,7 @@ const PAGE_META = {
     description: 'Dormant Streptococcus zooepidemicus evades swabs and resists antibiotics. See why activating it before antibiotic treatment clears chronic endometritis.',
   },
   '/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough': {
-    title: 'Biofilm in the Mare\'s Uterus: Why Breaking It Up Is Not Enough',
+    title: 'What Is Biofilm in a Mare\'s Uterus, and Why It Is Not Enough',
     description: 'Breaking up biofilm does not remove the dormant streptococci beneath it. Why a swab misses them, and why activation and culture come before treatment.',
   },
   '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare': {
@@ -1200,7 +1200,7 @@ async function main() {
         '/equine-endometritis': {
           '@context': 'https://schema.org',
           '@type': 'MedicalWebPage',
-          'name': 'Equine Endometritis: Causes, Diagnosis and What Vets Do',
+          'name': 'Equine Endometritis, Clinical and Subclinical: Diagnosis',
           'description': 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.',
           'url': `${BASE_URL}/equine-endometritis`,
           'inLanguage': 'en',
@@ -1212,7 +1212,7 @@ async function main() {
         '/when-to-use': {
           '@context': 'https://schema.org',
           '@type': 'MedicalWebPage',
-          'name': 'When to Use bActivate for Problem Mares | Clinical Indications',
+          'name': 'When to Use bActivate: Barren Mare Signs and Indications',
           'description': 'Clinical indicators for bActivate use: mares with repeated failure to conceive, culture-negative swabs combined with unexplained infertility, recurring uterine fluid, early embryo loss, or chronic subclinical endometritis.',
           'url': `${BASE_URL}/when-to-use`,
           'inLanguage': 'en',

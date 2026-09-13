@@ -44,7 +44,7 @@ export const blogPosts = [
   },
   {
     slug: "biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough",
-    title: "Biofilm in the Mare's Uterus: Why Breaking It Up Is Not Enough",
+    title: "What Is Biofilm in a Mare's Uterus, and Why It Is Not Enough",
     date: "14. June 2026",
     updated: "11. September 2026",
     image: "/images/horses-2504677_1920.jpg",
