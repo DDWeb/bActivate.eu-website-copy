@@ -3,7 +3,7 @@ import InternalLinks from '@/components/InternalLinks';
 
 export default function SwabComparison() {
     useEffect(() => {
-        document.title = 'Swab Culture vs Biopsy vs bActivate | Diagnosing Uterine Infection in Mares';
+        document.title = 'Swab vs Biopsy vs Activation Culture: Endometritis Diagnosis';
         document.querySelector('meta[name="description"]')?.setAttribute('content', 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. Compare the diagnostic options for problem mares.');
     }, []);
     return (

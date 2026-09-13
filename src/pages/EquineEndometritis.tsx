@@ -11,7 +11,7 @@ const More = ({ children }: { children: React.ReactNode }) => <p className="text
 
 export default function EquineEndometritis() {
     useEffect(() => {
-        document.title = 'Equine Endometritis: Causes, Diagnosis and What Vets Do';
+        document.title = 'Equine Endometritis, Clinical and Subclinical: Diagnosis';
         document.querySelector('meta[name="description"]')?.setAttribute('content', 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.');
     }, []);
     return (
@@ -50,11 +50,19 @@ export default function EquineEndometritis() {
                     </ul>
                     <More><Link to="/blog/biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough">Biofilm in the mare's uterus: why breaking it up is not enough</Link>.</More>
 
+                    <H2>Chronic endometritis: when the lining itself has changed</H2>
+                    <P>Chronic endometritis is the state a mare ends up in after repeated or untreated inflammation. Two things happen at once. The bacteria settle in: in chronically infected mares, <em>Streptococcus zooepidemicus</em> sits 300 to 500 micrometres deep in the lining, out of reach of the swab, and can go dormant there (Petersen 2009, Petersen 2015). And the lining itself changes: more fibrous tissue, more cysts, poorer blood supply, the picture a biopsy grades as endometrosis. The first part can still be found and treated; the second is the reason to look before another season passes, not after.</P>
+                    <More><Link to="/how-to-use">How to use bActivate</Link> and <Link to="/studies-effect">Studies and effect</Link>.</More>
+
+                    <H2>Uterine fluid: what it means when the scan shows it</H2>
+                    <P>Fluid in the uterus on ultrasound is the sign vets take most seriously, because a healthy mare clears semen and inflammatory fluid within about 48 hours of covering. Fluid before covering points to inflammation or a lining that no longer drains; fluid that is still there two or three days after covering is the classic sign of delayed uterine clearance, and the mare is unlikely to hold a pregnancy while it stays. The vet will usually lavage, help the uterus contract, and take a sample. If the sample is clean and the fluid comes back next cycle, that is the profile in which a hidden infection should be looked for.</P>
+                    <More><Link to="/blog/ultrasound-empty-mare-what-the-vet-sees">Ultrasound of the empty mare: what the vet sees</Link> and <Link to="/blog/uterine-lavage-mare-when-and-why">Uterine lavage in the mare: when and why</Link>.</More>
+
                     <H2>What are the signs?</H2>
                     <P>In the clinical form: vaginal discharge, fluid in the uterus on ultrasound, a short interval between heats, sometimes a mare that "does not look right" after covering. In the subclinical form there is often nothing to see. The signs are then in the breeding record: two or more well-timed covers with proven semen without a pregnancy, an early loss before day 40, fluid after covering, or a clean swab in a mare that still stays empty. An older mare, from about 10 years, or a mare with several foals is more often affected than a young maiden mare, because the lining clears infection less well with age and parity.</P>
                     <More><Link to="/blog/ultrasound-empty-mare-what-the-vet-sees">Ultrasound of the empty mare: what the vet sees</Link> and <a href="/is-my-mare-a-candidate">Is my mare a candidate?</a></More>
 
-                    <H2>How is it diagnosed?</H2>
+                    <H2>Endometritis diagnosis: how the vet finds it</H2>
                     <p className="text-gray-700 leading-relaxed mb-3">No single test finds everything. The vet usually combines them.</p>
                     <div className="overflow-x-auto mb-6">
                         <table className="w-full border-collapse text-sm">
