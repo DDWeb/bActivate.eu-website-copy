@@ -607,7 +607,7 @@ const PAGE_META = {
     description: 'Breaking up biofilm does not remove the dormant streptococci beneath it. Why a swab misses them, and why activation and culture come before treatment.',
   },
   '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare': {
-    title: 'A Clean Swab Does Not Rule Out Infection in a Problem Mare',
+    title: "Culture Came Back Clean, but She Still Didn't Take",
     description: 'A swab culture finds only 34% of infected mares, a biopsy culture 82% (Nielsen 2005). Why a clean swab does not clear a problem mare, and what to do next.',
   },
   '/blog/addressing-challenges-of-problem-mares': {
