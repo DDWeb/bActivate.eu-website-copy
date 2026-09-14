@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import styles from './WhatIsBactivate.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import ProductFacts from '@/components/ProductFacts';
 import FAQSection from '@/components/FAQSection';
 import { whatIsFaqItems } from '@/lib/routeFaqs';
 
@@ -152,6 +153,8 @@ export default function WhatIsBactivate() {
                     </div>
                 </div>
             </section>
+
+            <ProductFacts />
 
             <FAQSection items={whatIsFaqItems} />
 

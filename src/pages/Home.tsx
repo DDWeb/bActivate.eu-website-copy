@@ -5,6 +5,7 @@ import ReviewsSection from '@/components/ReviewsSection';
 import WebinarSignup from '@/components/WebinarSignup';
 import LiteYouTube from '@/components/LiteYouTube';
 import InternalLinks from '@/components/InternalLinks';
+import ProductFacts from '@/components/ProductFacts';
 
 export default function Home() {
   useEffect(() => {
@@ -160,6 +161,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ProductFacts short />
 
       <InternalLinks links={[
         { to: '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare', label: 'A clean swab is not a clean mare', description: 'Why a negative culture does not clear a problem mare' },
