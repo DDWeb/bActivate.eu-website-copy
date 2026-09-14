@@ -10,11 +10,11 @@
 export const homeFaqItems = [
   {
     question: "What is bActivate?",
-    answer: "bActivate is a bacterial growth medium used by veterinarians to reactivate dormant Streptococcus equi subsp. zooepidemicus infections in the uterus of problem mares. It reveals subclinical endometritis that standard tests fail to detect, so the veterinarian can diagnose accurately and treat with targeted antibiotics.",
+    answer: "bActivate is a bacterial growth medium used by veterinarians to reactivate dormant Streptococcus equi subsp. zooepidemicus infections in the uterus of problem mares. It reveals subclinical endometritis that standard tests fail to detect, so the veterinarian can diagnose accurately and treat with targeted antibiotics (an antibiotic chosen from the antibiogram, the laboratory's sensitivity test on the cultured bacteria).",
   },
   {
     question: "Why can't my mare get in foal despite clean swabs?",
-    answer: "In clinical series, 47 to 87% of problem mares carried a hidden uterine infection caused by dormant bacteria that the standard swab had missed. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and tolerates antibiotics. Standard swab culture has a detection sensitivity of about 34%, so it misses most of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated by your veterinarian.",
+    answer: "In clinical series (Hagyard 2014, Kildangan 2018 and a University of Copenhagen thesis, 2025), 47 to 87% of problem mares carried a hidden uterine infection caused by dormant bacteria that the standard swab had missed. These bacteria enter a low-metabolic 'persister' state that evades standard uterine cultures and tolerates antibiotics. Standard swab culture has a detection sensitivity of about 34% (Nielsen 2005), so it misses most of these infections. bActivate reactivates the bacteria so they can be accurately diagnosed and treated by your veterinarian.",
   },
   {
     question: "What is subclinical endometritis and why is it hard to detect?",
