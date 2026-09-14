@@ -117,4 +117,16 @@ export const endometritisFaqItems = [
     question: "When should a breeder ask for the activation culture?",
     answer: "When a mare stays empty after two or more well-timed covers with proven semen, after an early loss, with fluid on the ultrasound, or with a clean swab and still no pregnancy. The mares in the published series had been empty for at least three cycles.",
   },
+  {
+    question: "Culture and cytology came back clean, but she still didn't take. What now?",
+    answer: "A clean culture and cytology rules out an active infection at the surface, not a dormant one deeper in the lining. In a direct comparison, swab culture found 34 % of infected mares and biopsy culture 82 % (Nielsen 2005), because the bacteria sit 300 to 500 micrometres down and do not grow on the plate. The next step is a sample that reaches deeper, a biopsy or a low-volume lavage, or an activation culture, where the vet wakes the dormant bacteria before culturing. In the activation study, 64 % of the activated mares grew bacteria against 8 % of the controls (Petersen 2015). Ask your vet, or a repro vet, which of the three fits your mare.",
+  },
+  {
+    question: "My mare absorbed at 30 days. Could it be an infection?",
+    answer: "It can. An early loss before day 40 has several causes: twins, an aged lining, embryo quality, stress, and endometritis, which is the one most often missed because the swab does not find it. One loss in a young mare with no history is usually left to the next cycle. A mare that has absorbed before, is 10 or older, or has fluid on the scan should have the uterus checked with a method that reaches deeper than the swab before she is covered again.",
+  },
+  {
+    question: "Is my mare too old to breed, or is something else going on?",
+    answer: "Age lowers fertility on its own, but it also makes a hidden infection more likely, because the lining clears bacteria less well with age and parity. Before a season is written off to age, the vet can rule out a dormant infection with a biopsy or an activation culture. In the published series, 47 to 87 % of problem mares carried a dormant infection that the standard swab had missed. That is a cause with a name and a treatment, which age is not.",
+  },
 ];
