@@ -88,7 +88,7 @@ export default function HowToUse() {
 
                         <h3 className="text-xl font-bold mb-4">The following steps should be included</h3>
                         <ol className={styles.instructionList}>
-                            <li>Obtain a pre-activation uterine culture sample. We recommend that the sample be obtained using either a biopsy or a low volume lavage to improve diagnostic sensitivity and specificity</li>
+                            <li>Obtain a pre-activation uterine culture sample. The sample can be obtained with a swab, a low-volume lavage or a biopsy; lavage or biopsy improve diagnostic sensitivity and specificity</li>
                             <li>Thaw and shake the vial to mix the activating compound before use. Freeze dried formulation, please add 10 ml. of NaCl (0.9%) and shake the vial until a homogeneous solution is established.</li>
                             <li>Instill bActivate (10 ml) in the uterus of the mare using an insemination pipette and standard insemination technique.</li>
                             <li>Obtain a post-activation uterine culture sample 48 hours after instillation of bActivate.</li>
