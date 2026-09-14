@@ -709,6 +709,28 @@ const ROUTES_WITH_CLIENT_FAQ = new Set(['/podcast']);
 
 // Routes with no Japanese edition: emit no hreflang="ja" for them, a link to a
 // 404 invalidates the whole cluster for that URL.
+// Satellite equivalents per route (reciprocal with the satellites' hreflangPages.ts). Routes not listed
+// here keep only en-GB, en-US, ja and x-default: their de/fr/nl/es lines are removed rather than pointed
+// at the satellite homes.
+const SATELLITE_MAP = {
+  '/': { de: '/', fr: '/', nl: '/', es: '/' },
+  '/how-to-use': { de: '/fuer-tieraerzte', fr: '/pour-les-veterinaires', nl: '/voor-dierenartsen', es: '/para-veterinarios' },
+  '/studies-effect': { de: '/studien', fr: '/etudes', nl: '/studies', es: '/estudios' },
+  '/about-us': { de: '/experten', fr: '/experts', nl: '/experts', es: '/expertos' },
+  '/privacy-policy': { de: '/datenschutz', fr: '/politique-de-confidentialite', nl: '/privacybeleid', es: '/politica-de-privacidad' },
+  '/blog': { de: '/blog', fr: '/blog', nl: '/blog', es: '/blog' },
+  '/equine-endometritis': { de: '/blog/gebaermutterentzuendung-pferd-symptome-behandlung', fr: '/blog/endometrite-jument-symptomes-traitement', nl: '/blog/baarmoederontsteking-merrie-symptomen-behandeling', es: '/blog/endometritis-yeguas-sintomas-tratamiento' },
+  '/blog/streptococcus-zooepidemicus-in-horses': { de: '/blog/streptococcus-zooepidemicus-pferd', fr: '/blog/streptococcus-zooepidemicus-cheval', nl: '/blog/streptococcus-zooepidemicus-paard', es: '/blog/streptococcus-zooepidemicus-caballos' },
+  '/blog/insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health': { de: '/blog/deutsche-studie-erregerspektrum-uterusgesundheit-stute', fr: '/blog/etude-allemande-spectre-bacterien-uterus-jument', nl: '/blog/duitse-studie-bacterieel-spectrum-baarmoeder-merrie', es: '/blog/estudio-aleman-espectro-bacteriano-salud-uterina-yegua' },
+  '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare': { de: '/blog/tupferprobe-stute-was-sie-zeigt-und-uebersieht', fr: '/blog/ecouvillon-uterin-jument-ce-quil-montre-et-rate', nl: '/blog/baarmoederswab-merrie-wat-hij-laat-zien-en-mist', es: '/blog/hisopo-uterino-yegua-que-muestra-y-que-se-le-escapa' },
+  '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares': { de: '/blog/was-kostet-eine-leere-saison-rechnung-zuechter', fr: '/blog/combien-coute-une-saison-vide-eleveur', nl: '/blog/wat-kost-een-leeg-seizoen-rekensom-fokker', es: '/blog/cuanto-cuesta-una-temporada-vacia-cuenta-criador' },
+  '/blog/uterine-lavage-mare-when-and-why': { de: '/blog/uterusspuelung-stute-wann-warum', nl: '/blog/baarmoederspoeling-merrie-wanneer-waarom' },
+  '/blog/ultrasound-empty-mare-what-the-vet-sees': { fr: '/blog/echographie-jument-vide-ce-que-le-veterinaire-voit' },
+  '/blog/mare-not-getting-in-foal-what-to-do': { de: '/blog/was-tun-wenn-stute-nicht-tragend', fr: '/blog/que-faire-si-jument-pas-en-gestation', nl: '/blog/wat-doen-als-merrie-niet-drachtig', es: '/blog/que-hacer-cuando-yegua-no-queda-prenada' },
+  '/blog/addressing-challenges-of-problem-mares': { de: '/blog/problemstute-praxisleitfaden-endometritis', fr: '/blog/maitriser-jument-probleme-guide-endometrite', nl: '/blog/probleemmerrie-praktische-gids-endometritis', es: '/blog/dominar-yegua-problema-guia-endometritis' },
+};
+const SATELLITE_HOST = { de: 'https://leere-stute.de', fr: 'https://jument-infertile.fr', nl: 'https://lege-merrie.nl', es: 'https://yegua-infertil.es' };
+
 const MISSING_ON_JP = new Set(['/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
@@ -1104,6 +1126,18 @@ async function main() {
         /(<link rel="alternate" hreflang="x-default" href=")[^"]*(")/,
         `$1${PEER_URL}${routeSuffix}$2`
       );
+      // de/fr/nl/es: the matching satellite page, or no link at all (see SATELLITE_MAP)
+      {
+        const sat = SATELLITE_MAP[route] || {};
+        for (const lang of ['de', 'fr', 'nl', 'es']) {
+          const re = new RegExp(`[ \\t]*<link rel="alternate" hreflang="${lang}" href="[^"]*"\\s*\\/?>\\n?`);
+          if (sat[lang]) {
+            html = html.replace(re, (m) => m.replace(/href="[^"]*"/, `href="${SATELLITE_HOST[lang]}${sat[lang]}"`));
+          } else {
+            html = html.replace(re, '');
+          }
+        }
+      }
 
       // Inject page-specific title and description if defined
       if (meta) {
