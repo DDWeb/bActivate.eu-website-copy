@@ -138,7 +138,7 @@ export default function Home() {
               <div className={styles.eyebrowRed}>Application</div>
               <h2 className={styles.sectionTitleLarge}>How to use?</h2>
               <p className={styles.description}>
-                bActivate is to be used in mares with reduced uterine defense mechanisms and in mares suspected of having a chronic subclinical infection.
+                bActivate is to be used in mares with reduced <a href="/glossary#uterine-defense-mechanisms">uterine defense mechanisms</a> (the uterus's own ability to clear bacteria and fluid after breeding) and in mares suspected of having a chronic subclinical infection.
               </p>
               <Link to="/how-to-use" className={styles.btnRedSquare}>
                 The protocol, step by step
