@@ -6,6 +6,7 @@ import WebinarSignup from '@/components/WebinarSignup';
 import LiteYouTube from '@/components/LiteYouTube';
 import InternalLinks from '@/components/InternalLinks';
 import ProductFacts from '@/components/ProductFacts';
+import KeyTakeaways from '@/components/KeyTakeaways';
 
 export default function Home() {
   useEffect(() => {
@@ -46,6 +47,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <KeyTakeaways />
 
       {/* How bActivate works Section */}
       <section className={styles.howItWorksSection}>
