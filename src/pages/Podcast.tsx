@@ -44,7 +44,7 @@ export default function Podcast() {
                         <div className={styles.leadText}>
                             <p className="mb-6">
                                 <strong>Dr. Morten Rønn Petersen DVM, PhD, Dipl. ACT</strong><br />
-                                Equine Reproduction Specialist. 21+ peer-reviewed publications including <em>Nature Medicine</em> (2025).<br /><br />
+                                Equine Reproduction Specialist. 21+ peer-reviewed publications including <em>Human Reproduction</em> (2025).<br /><br />
                                 <strong>Prof. Anders Miki Bojesen DVM, PhD</strong><br />
                                 Professor of Veterinary Microbiology, University of Copenhagen. 222+ publications. Lead researcher on dormant streptococcal persister cells in the equine uterus.
                             </p>

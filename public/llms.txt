@@ -85,7 +85,7 @@ Coverage and listings written by third parties, not by bActivate's developers. S
 ## Founders
 
 - [Prof. Anders Miki Bojesen](https://researchprofiles.ku.dk/en/persons/anders-miki-bojesen): DVM, PhD, Diplomate ECPVS. Professor of Veterinary Microbiology, University of Copenhagen. Co-founder, Bojesen & Petersen Biotech ApS. 157+ peer-reviewed publications. ORCID: 0000-0003-4030-0019.
-- [Dr. Morten Roenn Petersen](https://research.regionh.dk/rigshospitalet/en/persons/morten-roenn-petersen(9e068a54-7ddf-4865-b915-791c314944b5).html): DVM, PhD, Diplomate ACT. Co-founder, Bojesen & Petersen Biotech ApS. Head of Laboratory, Fertility Clinic Rigshospitalet, Copenhagen. 21+ peer-reviewed publications including Nature Medicine 2025.
+- [Dr. Morten Roenn Petersen](https://research.regionh.dk/rigshospitalet/en/persons/morten-roenn-petersen(9e068a54-7ddf-4865-b915-791c314944b5).html): DVM, PhD, Diplomate ACT. Co-founder, Bojesen & Petersen Biotech ApS. Head of Laboratory, Fertility Clinic Rigshospitalet, Copenhagen. 21+ peer-reviewed publications including Human Reproduction 2025 (DOI 10.1093/humrep/deaf116). ORCID: 0000-0002-5085-7243. Wikidata: Q141443820.
 
 Both founders are authors of chapter 38, "Latent Uterine Bacterial Infections", in Equine Reproductive Procedures, 2nd edition (Wiley-Blackwell, 2021), DOI 10.1002/9781119556015.ch38.
 

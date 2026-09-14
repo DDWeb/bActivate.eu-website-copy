@@ -90,7 +90,7 @@ for (const p of htmlFiles("dist")) {
   // hreflang: every route page carries the reciprocal cluster with itself in it (8 with ja and the four satellites, 4 for pages that exist only on the brand sites).
   const hl = count(s, /<link[^>]*hreflang=/g);
   if (isRoute && !is404) {
-    expect(`${f} has the hreflang cluster (${hl})`, hl >= 4 && hl <= 8);  // 4 when the page has no satellite equivalent
+    expect(`${f} has the hreflang cluster (${hl})`, hl >= 3 && hl <= 8);  // 3 when the page has neither a satellite nor a Japanese equivalent
     expect(`${f} hreflang includes itself`, new RegExp(`hreflang="en-(GB|US)" href="${BASE_URL.replace(/\./g, "\\.")}${route === "/" ? "/" : route}"`).test(s));
     expect(`${f} hreflang has x-default`, s.includes('hreflang="x-default"'));
   } else if (hl > 0) {
