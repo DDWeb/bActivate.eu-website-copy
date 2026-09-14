@@ -43,7 +43,7 @@ export const blogPosts = [
   },
   {
     slug: "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
-    title: "Why a Clean Swab Does Not Rule Out Infection in a Problem Mare",
+    title: "Culture Came Back Clean, but She Still Didn't Take",
     date: "14. June 2026",
     updated: "11. September 2026",
     image: "/images/horses-2504677_1920.jpg",
