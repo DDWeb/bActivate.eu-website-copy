@@ -228,7 +228,7 @@ const ROUTE_SCHEMAS = {
         "name": "How much does bActivate cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "EUR 229 per vial, with one vial used per activation cycle, plus your veterinarian's normal fees for the instillation and the two cultures. Set against one covering fee or one lost season, the diagnostic step is the smallest number in the calculation."
+          "text": "264.90 USD per vial when ordered online, or through Hagyard Pharmacy and Midwest Veterinary Supply, with one vial used per activation cycle, plus your veterinarian's normal fees for the instillation and the two cultures. Set against one covering fee or one lost season, the diagnostic step is the smallest number in the calculation."
         }
       },
       {
@@ -308,7 +308,7 @@ const ROUTE_SCHEMAS = {
     'offers': {
       '@type': 'Offer',
       'url': `${BASE_URL}/shop`,
-      'price': 229,
+      'price': 264.90,
       'priceCurrency': 'USD',
       'availability': 'https://schema.org/InStock',
       'itemCondition': 'https://schema.org/NewCondition',
@@ -332,7 +332,7 @@ const ROUTE_SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     'mainEntity': [
-      { '@type': 'Question', 'name': 'Is bActivate expensive?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One vial is 229 USD from the manufacturer\'s online shop, or through Hagyard Pharmacy and Midwest Veterinary Supply (September 2026), plus your veterinarian\'s fees. Compare that with your own figure for one more cycle of stud fee, semen and veterinary work.' } },
+      { '@type': 'Question', 'name': 'Is bActivate expensive?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One vial is 264.90 USD from the manufacturer\'s online shop, or through Hagyard Pharmacy and Midwest Veterinary Supply (September 2026), plus your veterinarian\'s fees. Compare that with your own figure for one more cycle of stud fee, semen and veterinary work.' } },
       { '@type': 'Question', 'name': 'Do I have to buy bActivate myself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Your veterinarian orders it through the veterinary trade and instills it. What the vet needs is on the how to use page.' } },
       { '@type': 'Question', 'name': 'What if the activation culture is negative?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a bacterial uterine infection is unlikely, and the veterinarian looks elsewhere: cycle, semen, anatomy, hormones. The money has ruled out one cause before the next cycle was paid for.' } },
       { '@type': 'Question', 'name': 'Does the work-up guarantee a foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. The Kentucky figures come from a field study without a placebo group. They show what happened to 64 problem mares after diagnosis and targeted treatment, not what will happen to your mare.' } },
@@ -391,7 +391,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'HowToTool', 'name': '0.9% NaCl saline (10 ml)' },
     ],
     'step': [
-      { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a biopsy or low volume lavage to improve diagnostic sensitivity and specificity. Perform when the mare is in early estrus (largest follicle 25-30 mm).' },
+      { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a swab, a low-volume lavage or a biopsy (lavage or biopsy improve diagnostic sensitivity and specificity). Perform when the mare is in early estrus (largest follicle 25-30 mm).' },
       { '@type': 'HowToStep', 'position': 2, 'name': 'Prepare the bActivate vial', 'text': 'Thaw and shake the vial. For freeze-dried formulation: add 10 ml of NaCl (0.9%) and shake until a homogeneous solution is established.' },
       { '@type': 'HowToStep', 'position': 3, 'name': 'Instill bActivate into the uterus', 'text': 'Instill bActivate (10 ml) into the uterus of the mare using an insemination pipette and standard insemination technique.' },
       { '@type': 'HowToStep', 'position': 4, 'name': 'Obtain post-activation culture after 48 hours', 'text': 'Obtain a post-activation uterine culture sample 48 hours after instillation. Dormant Streptococcus zooepidemicus will now be reactivated and detectable by standard culture.' },

@@ -51,7 +51,7 @@ export default function Contact() {
             </section>
 
             <InternalLinks links={[
-                { to: '/shop', label: 'Order bActivate', description: '229 EUR per vial, ships from Copenhagen' },
+                { to: '/shop', label: 'Order bActivate', description: '264.90 USD per vial online, or through US distributors' },
                 { to: '/our-distributors', label: 'Find a Distributor', description: 'UK, Netherlands, Denmark, Australia and more' },
                 { to: '/when-to-use', label: 'When to Use', description: 'Is your mare a candidate? Signs and risk factors' },
                 { to: '/studies-effect', label: 'Clinical Evidence', description: 'Hagyard, Kildangan and the peer-reviewed research' },
