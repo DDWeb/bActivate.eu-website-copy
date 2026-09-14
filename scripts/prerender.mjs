@@ -368,6 +368,16 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'Does bActivate treat the infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It makes the dormant bacteria grow so a normal culture can find them. The treatment is the veterinarian\'s, chosen from the antibiogram.' } },
     ],
   },
+  '/blog/mare-absorbed-early-pregnancy-loss-signs-causes': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'Can a mare get in foal again in the same year after absorbing?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes, often. After an early loss the mare usually comes back into season within a few weeks and can be covered again. After repeated losses the cause should be worked out first, otherwise the pattern repeats.' } },
+      { '@type': 'Question', 'name': 'Does the mare notice anything herself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'As a rule, no. There is no pain and no visible sign. The first thing breeders notice is usually that the mare is back in season.' } },
+      { '@type': 'Question', 'name': 'Is a clean swab enough before the next cover?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'In a mare that has absorbed before, not necessarily. The standard swab finds only about one in three uterine infections (Nielsen 2005). If a dormant infection is suspected, a low-volume lavage, a biopsy or an activation before the culture are the more reliable routes.' } },
+      { '@type': 'Question', 'name': 'Can I do the activation myself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Activation, sampling and treatment belong in the hands of your vet. Our page How to use has the protocol, the evidence and the ordering details you can pass on.' } },
+    ],
+  },
   '/blog/mare-not-getting-in-foal-what-to-do': {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -556,6 +566,10 @@ const PAGE_META = {
     title: 'Equine Endometritis, Clinical and Subclinical: Diagnosis',
     description: 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.',
   },
+  '/blog/mare-absorbed-early-pregnancy-loss-signs-causes': {
+    title: 'Mare Absorbed at 30 Days: Signs, Causes, Next Steps',
+    description: 'Vesicle gone on the next scan? How to recognize early embryonic loss in the mare, what causes it, and what the vet should check before she is covered again.',
+  },
   '/blog/mare-not-getting-in-foal-what-to-do': {
     title: 'Mare Not Getting in Foal: What to Do, and in What Order',
     description: 'Scan shows nothing again? The five causes a vet rules out, in order, what you can do at each step, and why a clean swab is not the end of the search.',
@@ -726,12 +740,13 @@ const SATELLITE_MAP = {
   '/blog/saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares': { de: '/blog/was-kostet-eine-leere-saison-rechnung-zuechter', fr: '/blog/combien-coute-une-saison-vide-eleveur', nl: '/blog/wat-kost-een-leeg-seizoen-rekensom-fokker', es: '/blog/cuanto-cuesta-una-temporada-vacia-cuenta-criador' },
   '/blog/uterine-lavage-mare-when-and-why': { de: '/blog/uterusspuelung-stute-wann-warum', nl: '/blog/baarmoederspoeling-merrie-wanneer-waarom' },
   '/blog/ultrasound-empty-mare-what-the-vet-sees': { fr: '/blog/echographie-jument-vide-ce-que-le-veterinaire-voit' },
+  '/blog/mare-absorbed-early-pregnancy-loss-signs-causes': { de: '/blog/stute-resorbiert-anzeichen-ursachen', fr: '/blog/resorption-embryonnaire-jument-signes-causes', es: '/blog/reabsorcion-embrionaria-yegua-senales-causas' },
   '/blog/mare-not-getting-in-foal-what-to-do': { de: '/blog/was-tun-wenn-stute-nicht-tragend', fr: '/blog/que-faire-si-jument-pas-en-gestation', nl: '/blog/wat-doen-als-merrie-niet-drachtig', es: '/blog/que-hacer-cuando-yegua-no-queda-prenada' },
   '/blog/addressing-challenges-of-problem-mares': { de: '/blog/problemstute-praxisleitfaden-endometritis', fr: '/blog/maitriser-jument-probleme-guide-endometrite', nl: '/blog/probleemmerrie-praktische-gids-endometritis', es: '/blog/dominar-yegua-problema-guia-endometritis' },
 };
 const SATELLITE_HOST = { de: 'https://leere-stute.de', fr: 'https://jument-infertile.fr', nl: 'https://lege-merrie.nl', es: 'https://yegua-infertil.es' };
 
-const MISSING_ON_JP = new Set(['/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
+const MISSING_ON_JP = new Set(['/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the

@@ -1,10 +1,16 @@
 // Related reading per blog post (slug -> sibling slugs). Rendered by BlogPost.tsx
 // under the article so every post links to two or three others.
 export const relatedPosts: Record<string, string[]> = {
+  "mare-absorbed-early-pregnancy-loss-signs-causes": [
+    "ultrasound-empty-mare-what-the-vet-sees",
+    "mare-not-getting-in-foal-what-to-do",
+    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+  ],
   "mare-not-getting-in-foal-what-to-do": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
     "ultrasound-empty-mare-what-the-vet-sees",
     "saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares",
+    "mare-absorbed-early-pregnancy-loss-signs-causes",
   ],
   "positive-activation-culture-what-happens-next": [
     "addressing-challenges-of-problem-mares",
