@@ -49,7 +49,7 @@ export const homeFaqItems = [
 export const shopFaqItems = [
   {
     question: "What does bActivate cost?",
-    answer: "bActivate costs 229 EUR per vial. One vial is one activation cycle for one mare. It ships across Europe from Copenhagen, Denmark, and is also available through local distributors in the UK, Netherlands, Denmark, Australia and more.",
+    answer: "bActivate costs 229 EUR per vial. One vial is one activation cycle for one mare. The minimum online order is 2 vials. Volume prices apply from 4 vials: 199 EUR per vial at 4, 159 EUR at 16, 139 EUR at 33, 129 EUR at 65 and 109 EUR at 129 vials. It ships across Europe from Copenhagen, Denmark, and is also available through local distributors in the UK, Netherlands, Denmark, Australia and more.",
   },
   {
     question: "What do I get, and do I need a veterinarian?",
