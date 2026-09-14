@@ -228,7 +228,7 @@ const ROUTE_SCHEMAS = {
         "name": "How much does bActivate cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "264.90 USD per vial when ordered online, or through Hagyard Pharmacy and Midwest Veterinary Supply, with one vial used per activation cycle, plus your veterinarian's normal fees for the instillation and the two cultures. Set against one covering fee or one lost season, the diagnostic step is the smallest number in the calculation."
+          "text": "229 EUR per vial (about 265 USD at the current exchange rate, charged in EUR) when ordered online, or through Hagyard Pharmacy and Midwest Veterinary Supply, with one vial used per activation cycle, plus your veterinarian's normal fees for the instillation and the two cultures. Set against one covering fee or one lost season, the diagnostic step is the smallest number in the calculation."
         }
       },
       {
@@ -308,8 +308,8 @@ const ROUTE_SCHEMAS = {
     'offers': {
       '@type': 'Offer',
       'url': `${BASE_URL}/shop`,
-      'price': 264.90,
-      'priceCurrency': 'USD',
+      'price': 229,
+      'priceCurrency': 'EUR',
       'availability': 'https://schema.org/InStock',
       'itemCondition': 'https://schema.org/NewCondition',
       'validFrom': '2026-08-27',
@@ -332,7 +332,7 @@ const ROUTE_SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     'mainEntity': [
-      { '@type': 'Question', 'name': 'Is bActivate expensive?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One vial is 264.90 USD from the manufacturer\'s online shop, or through Hagyard Pharmacy and Midwest Veterinary Supply (September 2026), plus your veterinarian\'s fees. Compare that with your own figure for one more cycle of stud fee, semen and veterinary work.' } },
+      { '@type': 'Question', 'name': 'Is bActivate expensive?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One vial is 229 EUR per vial (about 265 USD at the current exchange rate, charged in EUR) from the manufacturer\'s online shop, or through Hagyard Pharmacy and Midwest Veterinary Supply (September 2026), plus your veterinarian\'s fees. Compare that with your own figure for one more cycle of stud fee, semen and veterinary work.' } },
       { '@type': 'Question', 'name': 'Do I have to buy bActivate myself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Your veterinarian orders it through the veterinary trade and instills it. What the vet needs is on the how to use page.' } },
       { '@type': 'Question', 'name': 'What if the activation culture is negative?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a bacterial uterine infection is unlikely, and the veterinarian looks elsewhere: cycle, semen, anatomy, hormones. The money has ruled out one cause before the next cycle was paid for.' } },
       { '@type': 'Question', 'name': 'Does the work-up guarantee a foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. The Kentucky figures come from a field study without a placebo group. They show what happened to 64 problem mares after diagnosis and targeted treatment, not what will happen to your mare.' } },

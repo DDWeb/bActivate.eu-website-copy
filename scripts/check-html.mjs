@@ -104,7 +104,7 @@ for (const p of htmlFiles("dist")) {
   expect(`${f} has no Review object`, !/"@type":\s?"Review"/.test(ldAll));
   const products = count(ldAll, /"@type":\s?"Product"/g);
   if (f === "shop/index.html") {
-    expect(`${f} has the Product node with the Offer`, products === 1 && /"@type":\s?"Offer"/.test(ldAll) && /"price":\s?(229|264\.9)/.test(ldAll) && /"priceCurrency":\s?"(EUR|USD)"/.test(ldAll));
+    expect(`${f} has the Product node with the Offer`, products === 1 && /"@type":\s?"Offer"/.test(ldAll) && /"price":\s?229/.test(ldAll) && /"priceCurrency":\s?"(EUR|USD)"/.test(ldAll));
   } else {
     expect(`${f} has no Product node`, products === 0);
   }
