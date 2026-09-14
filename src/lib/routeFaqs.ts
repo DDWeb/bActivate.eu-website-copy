@@ -31,6 +31,10 @@ export const whatIsFaqItems = [
     question: "What makes a mare a problem mare or barren mare?",
     answer: "A problem mare (also called a barren mare or non-pregnant mare) is a mare that repeatedly fails to conceive despite normal ovarian cycles, breeding to a fertile stallion, and passing routine reproductive examinations including clean uterine cultures. The classic presentation of dormant subclinical endometritis is a mare that tests negative on swabs but cannot sustain pregnancy. These mares often have a history of uterine fluid accumulation, early embryo loss, or multiple open seasons.",
   },
+  {
+    question: "Is bActivate approved or registered?",
+    answer: "In the United States bActivate is a registered veterinary product covered by US Patent 8,633,007. In the European Union and the United Kingdom it is not registered as a veterinary medicinal product and is positioned as a diagnostic tool for detecting dormant Streptococcus zooepidemicus. Ask your national veterinary medicines authority if you need to confirm the classification in your country.",
+  },
 ];
 
 export const whenToUseFaqItems = [

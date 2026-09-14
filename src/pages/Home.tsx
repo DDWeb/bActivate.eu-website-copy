@@ -4,6 +4,7 @@ import styles from './Home.module.css';
 import ReviewsSection from '@/components/ReviewsSection';
 import LiteYouTube from '@/components/LiteYouTube';
 import InternalLinks from '@/components/InternalLinks';
+import ProductFacts from '@/components/ProductFacts';
 import WebinarSignup from '@/components/WebinarSignup';
 
 export default function Home() {
@@ -180,6 +181,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ProductFacts short />
 
       <InternalLinks links={[
         { to: '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare', label: 'A clean swab is not a clean mare', description: 'Why a negative culture does not clear a problem mare' },
