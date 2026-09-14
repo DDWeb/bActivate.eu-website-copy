@@ -5,6 +5,7 @@ import ReviewsSection from '@/components/ReviewsSection';
 import LiteYouTube from '@/components/LiteYouTube';
 import InternalLinks from '@/components/InternalLinks';
 import ProductFacts from '@/components/ProductFacts';
+import KeyTakeaways from '@/components/KeyTakeaways';
 import WebinarSignup from '@/components/WebinarSignup';
 
 export default function Home() {
@@ -88,6 +89,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <KeyTakeaways />
 
       {/* What is bActivateSection */}
       <section className={styles.whatIsSection}>
