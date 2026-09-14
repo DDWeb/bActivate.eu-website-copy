@@ -391,7 +391,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'HowToTool', 'name': '0.9% NaCl saline (10 ml)' },
     ],
     'step': [
-      { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a biopsy or low volume lavage to improve diagnostic sensitivity and specificity. Perform when the mare is in early oestrus (largest follicle 25-30 mm).' },
+      { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a swab, a low-volume lavage or a biopsy (lavage or biopsy improve diagnostic sensitivity and specificity). Perform when the mare is in early oestrus (largest follicle 25-30 mm).' },
       { '@type': 'HowToStep', 'position': 2, 'name': 'Prepare the bActivate vial', 'text': 'Thaw and shake the vial. For freeze-dried formulation: add 10 ml of NaCl (0.9%) and shake until a homogeneous solution is established.' },
       { '@type': 'HowToStep', 'position': 3, 'name': 'Instil bActivate into the uterus', 'text': 'Instil bActivate (10 ml) into the uterus of the mare using an insemination pipette and standard insemination technique.' },
       { '@type': 'HowToStep', 'position': 4, 'name': 'Obtain post-activation culture after 48 hours', 'text': 'Obtain a post-activation uterine culture sample 48 hours after instillation. Dormant Streptococcus zooepidemicus will now be reactivated and detectable by standard culture.' },
