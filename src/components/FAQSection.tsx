@@ -49,7 +49,7 @@ export const homeFaqItems = [
 export const shopFaqItems = [
   {
     question: "What does bActivate cost?",
-    answer: "bActivate costs 229 EUR per vial (about 265 USD at the current exchange rate, charged in EUR) when ordered online. One vial is one activation cycle for one mare. In the US it is also available through Hagyard Pharmacy (Lexington, KY) and Midwest Veterinary Supply.",
+    answer: "bActivate costs 229 EUR per vial (about 265 USD at the current exchange rate, charged in EUR) when ordered online. One vial is one activation cycle for one mare. The minimum online order is 2 vials. Volume prices apply from 4 vials: 199 EUR per vial at 4, 159 EUR at 16, 139 EUR at 33, 129 EUR at 65 and 109 EUR at 129 vials. In the US it is also available through Hagyard Pharmacy (Lexington, KY) and Midwest Veterinary Supply.",
   },
   {
     question: "What do I get, and do I need a veterinarian?",
