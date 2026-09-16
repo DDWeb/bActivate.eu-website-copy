@@ -31,6 +31,12 @@ export default function SwabComparison() {
                                     <td className="p-3">No</td>
                                 </tr>
                                 <tr className="border-b border-gray-200 bg-gray-50">
+                                    <td className="p-3 font-bold">Low-volume lavage culture</td>
+                                    <td className="p-3">Actively growing bacteria from the whole surface of the lining, plus any retained fluid</td>
+                                    <td className="p-3">More than the swab; no direct comparison figure. Method by method in <a href='/blog/uterine-swab-vs-lavage-vs-biopsy-mare'>swab vs lavage vs biopsy</a></td>
+                                    <td className="p-3">No</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
                                     <td className="p-3 font-bold">Endometrial biopsy culture</td>
                                     <td className="p-3">Actively growing bacteria within the tissue sample</td>
                                     <td className="p-3">About 82% of infected mares (<a href='https://pubmed.ncbi.nlm.nih.gov/15978661/' target='_blank' rel='noopener noreferrer'>Nielsen 2005</a>)</td>
