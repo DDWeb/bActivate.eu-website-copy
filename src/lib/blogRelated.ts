@@ -1,6 +1,26 @@
 // Related reading per blog post (slug -> sibling slugs). Rendered by BlogPost.tsx
 // under the article so every post links to two or three others.
 export const relatedPosts: Record<string, string[]> = {
+  "uterine-swab-vs-lavage-vs-biopsy-mare": [
+    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+    "fluid-in-mares-uterus-after-breeding",
+    "positive-activation-culture-what-happens-next",
+  ],
+  "repeated-early-embryonic-loss-mares": [
+    "mare-absorbed-early-pregnancy-loss-signs-causes",
+    "ultrasound-empty-mare-what-the-vet-sees",
+    "older-mare-not-getting-in-foal",
+  ],
+  "older-mare-not-getting-in-foal": [
+    "fluid-in-mares-uterus-after-breeding",
+    "mare-absorbed-early-pregnancy-loss-signs-causes",
+    "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+  ],
+  "fluid-in-mares-uterus-after-breeding": [
+    "ultrasound-empty-mare-what-the-vet-sees",
+    "uterine-lavage-mare-when-and-why",
+    "older-mare-not-getting-in-foal",
+  ],
   "mare-absorbed-early-pregnancy-loss-signs-causes": [
     "ultrasound-empty-mare-what-the-vet-sees",
     "mare-not-getting-in-foal-what-to-do",

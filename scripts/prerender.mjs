@@ -389,6 +389,46 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'What does the work-up cost?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'That depends on the vet and the route. For an activation, count on two visits 48 hours apart plus laboratory costs for two cultures. The price of bActivate itself is on the shop page; your vet orders it through the veterinary wholesaler.' } },
     ],
   },
+  '/blog/fluid-in-mares-uterus-after-breeding': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'How long after covering should the uterus be clear of fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Within about 48 hours in a healthy mare. Fluid on the scan two or three days after covering is delayed uterine clearance and should be treated, and a mare that holds fluid every cycle should be examined for the cause before she is covered again.' } },
+      { '@type': 'Question', 'name': 'Is fluid in the uterus always an infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. After covering it is the normal reaction to semen, and in older mares it is often poor drainage rather than bacteria. Fluid before covering, or in a mare that has not been covered, usually is an infection. Only a sample can tell, and a swab is the least sensitive way of taking it.' } },
+      { '@type': 'Question', 'name': 'My mare is flushed every cycle and still not in foal. What now?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ask your vet for a sample that reaches deeper than the swab, a low-volume lavage or a biopsy, and, if she has failed two or more well-timed covers, for an activation culture with bActivate before the next cover. Seven questions to check first: is my mare a candidate?' } },
+      { '@type': 'Question', 'name': 'Does bActivate treat the fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It is a diagnostic aid that wakes dormant bacteria so a standard culture can find them. The treatment is your vet\'s, chosen from the antibiogram, and the lavage and oxytocin for the fluid stay as they are.' } },
+    ],
+  },
+  '/blog/older-mare-not-getting-in-foal': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'At what age do mares stop getting in foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'There is no fixed age. Mares conceive into their twenties. Pregnancy and foaling rates fall from about ten years because the uterus clears fluid and bacteria less well, not because the mare stops cycling.' } },
+      { '@type': 'Question', 'name': 'Should an older mare be bred with frozen semen?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'It can work, but frozen semen provokes a stronger post-breeding inflammation, so an older mare should be scanned and, if needed, lavaged within 24 hours of insemination. If she holds fluid every cycle, have the uterus examined before spending another dose.' } },
+      { '@type': 'Question', 'name': 'What does a IIB biopsy score mean for an older mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Moderate chronic changes in the lining. She can still carry a foal, with a lower chance than a I or IIA. The score does not change, but any infection that is found alongside it can be treated, and that is what improves her odds.' } },
+      { '@type': 'Question', 'name': 'Is bActivate for old mares?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'It is for problem mares of any age, and older mares are the largest group among them. It does not treat age; it finds the dormant infection that age lets accumulate.' } },
+    ],
+  },
+  '/blog/repeated-early-embryonic-loss-mares': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'How many early losses before the mare should be investigated?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'After the first loss in a young mare with no history, waiting one cycle is reasonable. After a second loss, or a first loss in a mare that is ten or older, has fluid on the scan, or has a clean swab and an empty season behind her, investigate before the next cover.' } },
+      { '@type': 'Question', 'name': 'Can a uterine infection cause a mare to absorb even though she conceived?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. A low-grade or dormant infection does not prevent conception every time; it makes the uterus unable to keep the pregnancy. Because the infection stays, the loss repeats.' } },
+      { '@type': 'Question', 'name': 'Does a clean culture and cytology rule out infection as the cause?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It rules out an active infection on the surface of the lining. Deeper and dormant infections need a biopsy or an activation culture to be found.' } },
+      { '@type': 'Question', 'name': 'What does the activation culture involve for the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One instillation of 10 ml in early estrus, a second sample two days later, and treatment only if something grows. The cycle is used for diagnosis, and she is covered on the next one.' } },
+    ],
+  },
+  '/blog/uterine-swab-vs-lavage-vs-biopsy-mare': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'Is a uterine biopsy dangerous for the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. The lining of the mare\'s uterus is thick, the sample is a few millimeters, and the procedure is routine in reproductive practice. She can be covered in the same or the next cycle depending on the findings.' } },
+      { '@type': 'Question', 'name': 'Can a low-volume lavage replace the biopsy?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'For culture and cytology it comes close and it is gentler. It does not give the Kenney score, so for an older or problem mare the biopsy still adds something.' } },
+      { '@type': 'Question', 'name': 'If the biopsy culture is clean, is the mare clean?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Probably, if she has no history. In a problem mare, no: the biopsy still depends on bacteria growing, and dormant bacteria do not. The activation culture is the step that answers that question.' } },
+      { '@type': 'Question', 'name': 'Does bActivate replace the swab, lavage or biopsy?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It comes before them. The medium wakes the dormant bacteria; the sample and the culture are then taken as usual, with whichever method the vet prefers.' } },
+    ],
+  },
   '/how-to-use': {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -594,6 +634,22 @@ const PAGE_META = {
     title: 'Your Mare Is Activation-Positive: What Happens Next',
     description: 'What a positive post-activation culture means, what the veterinarian does with the antibiogram, when the mare is bred again, and what the field data say.',
   },
+  '/blog/fluid-in-mares-uterus-after-breeding': {
+    title: 'Fluid in the Mare\'s Uterus After Breeding: What It Means',
+    description: 'Why some mares hold fluid after covering, when it is normal, when it is a problem, what the vet does about it, and why a clean swab does not close the case.',
+  },
+  '/blog/older-mare-not-getting-in-foal': {
+    title: 'Is My Mare Too Old to Breed? The Older Mare Work-Up',
+    description: 'Why pregnancy rates fall from about ten years, what age does to the uterus, what can be fixed and what cannot, and the check every older mare deserves.',
+  },
+  '/blog/repeated-early-embryonic-loss-mares': {
+    title: 'Repeated Early Embryonic Loss in Mares: Causes and Work-Up',
+    description: 'When a mare conceives and loses the pregnancy more than once: the causes in order of likelihood, the test for each, and the one cause the routine swab misses.',
+  },
+  '/blog/uterine-swab-vs-lavage-vs-biopsy-mare': {
+    title: 'Uterine Swab vs Lavage vs Biopsy: Which Finds the Infection?',
+    description: 'Swab, low-volume lavage and biopsy compared: what each collects, what each finds, the published sensitivity, when to use which, and what none of them finds.',
+  },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
     description: 'Streptococcus zooepidemicus is the most common opportunistic bacterium in horses, behind respiratory and uterine infections. Symptoms, spread and treatment.',
@@ -746,7 +802,7 @@ const SATELLITE_MAP = {
 };
 const SATELLITE_HOST = { de: 'https://leere-stute.de', fr: 'https://jument-infertile.fr', nl: 'https://lege-merrie.nl', es: 'https://yegua-infertil.es' };
 
-const MISSING_ON_JP = new Set(['/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
+const MISSING_ON_JP = new Set(['/blog/uterine-swab-vs-lavage-vs-biopsy-mare', '/blog/repeated-early-embryonic-loss-mares', '/blog/older-mare-not-getting-in-foal', '/blog/fluid-in-mares-uterus-after-breeding', '/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the
