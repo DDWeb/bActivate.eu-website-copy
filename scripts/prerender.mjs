@@ -92,6 +92,11 @@ const ROUTE_SCHEMAS = {
       },
       {
         '@type': 'Question',
+        'name': 'What should be done about Strep zoo in a mare\'s uterus?',
+        'acceptedAnswer': { '@type': 'Answer', 'text': 'Culture with a sensitivity test, then targeted treatment, usually penicillin for an active infection. If the mare repeatedly fails to conceive despite a clean swab, the veterinarian should look deeper: a biopsy, a low-volume lavage, or activation of the dormant bacteria before the culture.' },
+      },
+      {
+        '@type': 'Question',
         'name': 'Can Streptococcus zooepidemicus infect people?',
         'acceptedAnswer': { '@type': 'Answer', 'text': 'Rarely. Human cases are uncommon and usually linked to unpasteurised dairy or close contact with infected animals.' },
       },
@@ -652,7 +657,7 @@ const PAGE_META = {
   },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
-    description: 'Streptococcus zooepidemicus is the most common opportunistic bacterium in horses, behind respiratory and uterine infections. Symptoms, spread and treatment.',
+    description: 'Strep zoo is the top bacterial cause of infertility in broodmares: symptoms, how it differs from strangles, treatment, and the dormant form swabs miss.',
   },
   '/blog/bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares': {
     title: 'Dormant Bacteria & Antibiotics: The Activate-First Protocol',
