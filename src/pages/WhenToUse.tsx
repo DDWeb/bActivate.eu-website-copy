@@ -133,7 +133,7 @@ export default function WhenToUse() {
                     <p className="text-gray-600 mb-8">The bActivate protocol is designed to fit within a normal breeding cycle. Activation and the follow-up veterinary treatment take place approximately <strong>one cycle before</strong> the intended breeding cycle.</p>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
                         {[
-                            { step: '1', title: 'Oestrus, Day 0', desc: 'Obtain pre-activation culture. Instil 10 ml bActivate in early oestrus (follicle 25-30 mm).' },
+                            { step: '1', title: 'Oestrus, Day 0', desc: 'Obtain pre-activation culture. Instil 10 ml bActivate in early oestrus (follicle over 20 mm).' },
                             { step: '2', title: '48 Hours Later', desc: 'Obtain post-activation culture. Dormant Strep zoo now active. Begin targeted antibiotic treatment.' },
                             { step: '3', title: 'Recovery Cycle', desc: 'Complete antibiotic course. Uterus clears activation inflammation. Do not breed in this cycle.' },
                             { step: '4', title: 'Next Oestrus', desc: 'Mare ready for breeding. Expected pregnancy rate: 83-89% in clinical studies.' },

@@ -25,7 +25,7 @@ export default function HowToUse() {
             'totalTime': 'PT48H',
             'tool': [{ '@type': 'HowToTool', 'name': 'bActivate vial (10 ml)' }, { '@type': 'HowToTool', 'name': 'Insemination pipette' }, { '@type': 'HowToTool', 'name': '0.9% NaCl saline (10 ml)' }],
             'step': [
-                { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a swab, a low-volume lavage or a biopsy (lavage or biopsy improve diagnostic sensitivity and specificity). Perform when the mare is in early estrus (largest follicle 25-30 mm).' },
+                { '@type': 'HowToStep', 'position': 1, 'name': 'Obtain pre-activation culture', 'text': 'Obtain a pre-activation uterine culture sample using a swab, a low-volume lavage or a biopsy (lavage or biopsy improve diagnostic sensitivity and specificity). Perform when the mare is in early estrus (largest follicle over 20 mm).' },
                 { '@type': 'HowToStep', 'position': 2, 'name': 'Prepare the bActivate vial', 'text': 'Thaw and shake the vial. For freeze-dried formulation: add 10 ml of NaCl (0.9%) and shake until a homogeneous solution is established.' },
                 { '@type': 'HowToStep', 'position': 3, 'name': 'Instill bActivate into the uterus', 'text': 'Instill bActivate (10 ml) into the uterus of the mare using an insemination pipette and standard insemination technique.' },
                 { '@type': 'HowToStep', 'position': 4, 'name': 'Obtain post-activation culture after 48 hours', 'text': 'Obtain a post-activation uterine culture sample 48 hours after instillation. Dormant Streptococcus zooepidemicus will now be reactivated and detectable by standard culture.' },
@@ -45,7 +45,7 @@ export default function HowToUse() {
                             <div className={styles.eyebrow}>About bActivate</div>
                             <h1 className={styles.title}>How to Use bActivate, Veterinary Protocol</h1>
 
-                            <InShort>Culture the mare in early oestrus (largest follicle 25 to 30 mm), instil 10 ml bActivate, culture again after 48 hours, and treat according to the antibiogram if the second culture grows what the first did not. Do not breed in that cycle; breed in the following one. bActivate is a diagnostic growth medium, not a medicine: it makes dormant <em>Streptococcus zooepidemicus</em> grow so a normal culture can find it. The full protocol and references are below.</InShort>
+                            <InShort>Culture the mare in early oestrus (largest follicle over 20 mm), instil 10 ml bActivate, culture again after 48 hours, and treat according to the antibiogram if the second culture grows what the first did not. Do not breed in that cycle; breed in the following one. bActivate is a diagnostic growth medium, not a medicine: it makes dormant <em>Streptococcus zooepidemicus</em> grow so a normal culture can find it. The full protocol and references are below.</InShort>
 
                             <h2 className={styles.subtitle}>Intended use</h2>
                             <div className={styles.textBlock}>
@@ -83,7 +83,7 @@ export default function HowToUse() {
                 <div className={styles.container}>
                     <h2 className={styles.title}>Instructions for use</h2>
                     <div className={styles.textBlock}>
-                        <p className="mb-4">Bacterial culture, activation and standard endometritis treatment should be conducted when the mare is in estrus, activation ideally taking place in early estrus (moderate uterine edema, largest follicle 25-30 mm) to allow as much of the treatment during estrus as possible.</p>
+                        <p className="mb-4">Bacterial culture, activation and standard endometritis treatment should be conducted when the mare is in estrus, activation ideally taking place in early estrus (moderate uterine edema, largest follicle over 20 mm) to allow as much of the treatment during estrus as possible.</p>
                         <p className="mb-4">This protocol is published in the veterinary reference literature. It is set out in <em>Equine Reproductive Procedures</em>, 2nd edition (Wiley-Blackwell, 2021), chapter 38, &quot;Latent Uterine Bacterial Infections&quot;, a reference manual edited by Prof. John Dascanio (Texas Tech University) and Prof. Patrick McCue (Colorado State University). Full citation under References below.</p>
 
                         <h3 className="text-xl font-bold mb-4">The following steps should be included</h3>
