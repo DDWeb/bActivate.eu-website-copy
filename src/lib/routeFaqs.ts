@@ -64,7 +64,7 @@ export const whenToUseFaqItems = [
   },
   {
     question: "Can bActivate be used during the breeding season?",
-    answer: "Yes. bActivate is designed for use during the active breeding season. It is administered during early estrus when the largest follicle is 25 to 30 mm. The mare is not bred in that same estrus cycle. After a positive post-activation culture and appropriate antibiotic treatment, the mare is bred in the following cycle. In clinical studies this approach achieved an 83% pregnancy rate in problem mares that had previously failed to conceive.",
+    answer: "Yes. bActivate is designed for use during the active breeding season. It is administered during early estrus when the largest follicle is over 20 mm. The mare is not bred in that same estrus cycle. After a positive post-activation culture and appropriate antibiotic treatment, the mare is bred in the following cycle. In clinical studies this approach achieved an 83% pregnancy rate in problem mares that had previously failed to conceive.",
   },
 ];
 
