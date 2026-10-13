@@ -628,8 +628,8 @@ const PAGE_META = {
     description: 'Contact the bActivate team: contact@bactivate.eu, +45 60 71 21 69, WhatsApp, or the contact form. Bojesen & Petersen Biotech ApS, Copenhagen, Denmark.',
   },
   '/blog/uterine-lavage-mare-when-and-why': {
-    title: 'Uterine Lavage in the Mare: When and Why',
-    description: 'Uterine lavage in the mare: when the vet flushes, which fluid is used, what a flush solves and what it does not, and what to do if the mare stays empty.',
+    title: 'Uterine Lavage (Flush) in the Mare: When and Why',
+    description: 'Uterine lavage, the flush or wash of a mare’s uterus: when the vet does it, which fluid is used, what it solves and what it misses.',
   },
   '/blog/ultrasound-empty-mare-what-the-vet-sees': {
     title: 'Ultrasound of the Empty Mare: What the Vet Sees',
