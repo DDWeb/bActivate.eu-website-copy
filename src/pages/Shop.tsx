@@ -1,6 +1,6 @@
 
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import ReviewsSection from '@/components/ReviewsSection';
 
 export default function Shop() {
@@ -20,7 +20,7 @@ export default function Shop() {
                 "name": "bActivate",
                 "description": "Veterinary diagnostic growth medium for problem mares. Reveals dormant Streptococcus equi subspecies zooepidemicus infections so the veterinarian can diagnose accurately and treat with targeted antibiotics. 83% pregnancy rate in a clinical study at Hagyard Equine Medical Institute.",
                 "url": "https://bactivate.jp/shop",
-                "image": "https://bactivate.eu/images/hero.gif",
+                "image": "https://bactivate.jp/images/bactivate-vial-400.webp",
                 "brand": {
                     "@type": "Brand",
                     "name": "Bojesen & Petersen Biotech ApS"
@@ -53,7 +53,13 @@ export default function Shop() {
         };
     }, []);
 
+    // Ecwid is heavy (store script, Stripe, gtag): about 12 s to the product on a mobile in PageSpeed
+    // (2026-10-13). The prerendered preview below shows the product and price at once; the store script
+    // loads when the browser is idle after page load, or at the first interaction, whichever comes first.
+    const [storeReady, setStoreReady] = useState(false);
+
     useEffect(() => {
+        let started = false;
         const initEcwid = () => {
             // @ts-ignore
             if (window.xProductBrowser) {
@@ -68,36 +74,16 @@ export default function Shop() {
                     "id=my-store-130367502"
                 );
             }
-        };
-
-        if (document.getElementById('ecwid-script')) {
-            // Script already loaded, just reinitialise the widget in the new div
-            initEcwid();
-            return;
-        }
-
-        const script = document.createElement('script');
-        script.id = 'ecwid-script';
-        script.type = 'text/javascript';
-        script.charset = 'utf-8';
-        script.async = true;
-        script.src = 'https://app.business.shop/script.js?130367502&data_platform=code&data_date=2024-04-09';
-        script.onload = initEcwid;
-
-        // Append to body, not to the store div (which React recreates on navigation)
-        document.body.appendChild(script);
-
-        // Google Customer Reviews - survey opt-in after order placement
-        // @ts-ignore
-        window.renderOptIn = function () {
             // @ts-ignore
-            if (window.Ecwid) {
-                // @ts-ignore
-                window.Ecwid.OnOrderPlaced.add(function (order: any) {
-                    const deliveryDate = new Date();
-                    deliveryDate.setDate(deliveryDate.getDate() + 7);
-                    const estimatedDelivery = deliveryDate.toISOString().split('T')[0];
-
+            const Ecwid = window.Ecwid;
+            if (!Ecwid) return;
+            Ecwid.OnPageLoaded.add(() => setStoreReady(true));
+            // Google Customer Reviews survey opt-in after an order. platform.js is only fetched then,
+            // not on every visit.
+            Ecwid.OnOrderPlaced.add(function (order: any) {
+                const deliveryDate = new Date();
+                deliveryDate.setDate(deliveryDate.getDate() + 7);
+                const render = () => {
                     // @ts-ignore
                     window.gapi.load('surveyoptin', function () {
                         // @ts-ignore
@@ -106,21 +92,55 @@ export default function Shop() {
                             "order_id": String(order.orderNumber),
                             "email": order.email,
                             "delivery_country": order.shippingPerson.countryCode,
-                            "estimated_delivery_date": estimatedDelivery
+                            "estimated_delivery_date": deliveryDate.toISOString().split('T')[0]
                         });
                     });
-                });
-            }
+                };
+                // @ts-ignore
+                if (window.gapi) { render(); return; }
+                const g = document.createElement('script');
+                g.id = 'google-customer-reviews-script';
+                g.src = 'https://apis.google.com/js/platform.js';
+                g.async = true;
+                g.onload = render;
+                document.head.appendChild(g);
+            });
         };
 
-        if (!document.getElementById('google-customer-reviews-script')) {
-            const googleScript = document.createElement('script');
-            googleScript.id = 'google-customer-reviews-script';
-            googleScript.src = 'https://apis.google.com/js/platform.js?onload=renderOptIn';
-            googleScript.async = true;
-            googleScript.defer = true;
-            document.head.appendChild(googleScript);
-        }
+        const start = () => {
+            if (started) return;
+            started = true;
+            events.forEach((e) => window.removeEventListener(e, start));
+            if (document.getElementById('ecwid-script')) {
+                // Script already loaded (client navigation): reinitialise the widget in the new div
+                initEcwid();
+                return;
+            }
+            const script = document.createElement('script');
+            script.id = 'ecwid-script';
+            script.type = 'text/javascript';
+            script.charset = 'utf-8';
+            script.async = true;
+            script.src = 'https://app.business.shop/script.js?130367502&data_platform=code&data_date=2024-04-09';
+            script.onload = initEcwid;
+            // Append to body, not to the store div (which React recreates on navigation)
+            document.body.appendChild(script);
+        };
+
+        const events = ['pointerdown', 'touchstart', 'keydown', 'scroll'];
+        events.forEach((e) => window.addEventListener(e, start, { once: true, passive: true }));
+        const idle = () => {
+            // @ts-ignore
+            if (window.requestIdleCallback) window.requestIdleCallback(start, { timeout: 1500 });
+            else setTimeout(start, 1200);
+        };
+        if (document.readyState === 'complete') idle();
+        else window.addEventListener('load', idle, { once: true });
+
+        return () => {
+            events.forEach((e) => window.removeEventListener(e, start));
+            window.removeEventListener('load', idle);
+        };
     }, []);
 
     return (
@@ -129,7 +149,20 @@ export default function Shop() {
                 <div className="container mx-auto px-4">
                     <h1 className="text-3xl font-bold mb-2">不受胎牝馬のための bActivate ご購入</h1>
                     <p className="text-gray-600 mb-8">bActivateをオンラインでご注文いただけます。1バイアル ¥41,999（税別）。不受胎牝馬・空胎牝馬における休眠状態の <em>Streptococcus zooepidemicus</em> 感染を検出するための、獣医療用の診断補助です。日本国内へお届けします。デンマーク・米国・オーストラリアの各拠点のうち、お届け先に最も適した拠点から発送します。</p>
-                    <div id="my-store-130367502" className="min-h-[500px]"></div>
+                    <div className="relative min-h-[500px]">
+                        <div id="my-store-130367502"></div>
+                        {!storeReady && (
+                            <div className="absolute inset-x-0 top-0 flex flex-col sm:flex-row gap-6 items-center sm:items-start bg-white" aria-live="polite">
+                                <img src="/images/bactivate-vial-400.webp" width={400} height={400} alt="bActivate バイアルと箱 10 ml"
+                                    className="w-full max-w-[360px] h-auto rounded" {...{ fetchpriority: 'high' }} />
+                                <div className="pt-2">
+                                    <p className="text-xl font-bold mb-1">bActivate 1バイアル</p>
+                                    <p className="text-lg mb-4">¥41,999（税別）</p>
+                                    <p className="text-sm text-gray-600 mt-3">ショップを読み込んでいます…</p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
 
                     <div className="grid md:grid-cols-3 gap-6 mt-12 mb-4">
                         <div className="bg-gray-50 p-6 rounded">

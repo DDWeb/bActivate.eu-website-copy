@@ -79,7 +79,7 @@ const ROUTE_SCHEMAS = {
     'name': 'bActivate',
     'description': '不受胎牝馬のための獣医用診断培地。休眠状態の Streptococcus equi subsp. zooepidemicus を活性化して検出可能にし、獣医師による正確な診断と的を絞った抗生物質治療を可能にします。Hagyard Equine Medical Institute の臨床研究で受胎率83%。',
     'url': `${BASE_URL}/shop`,
-    'image': `${BASE_URL}/images/hero.gif`,
+    'image': `${BASE_URL}/images/bactivate-vial-400.webp`,
     'brand': { '@type': 'Brand', 'name': 'Bojesen & Petersen Biotech ApS' },
     'manufacturer': { '@type': 'Organization', 'name': 'Bojesen & Petersen Biotech ApS', 'url': BASE_URL },
     'audience': { '@type': 'Audience', 'audienceType': 'Veterinarians, Equine reproduction specialists' },
