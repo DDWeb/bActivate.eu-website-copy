@@ -734,7 +734,9 @@ function getBlogPostData() {
     const get = (key) => (block.match(new RegExp('\\n\\s*' + key + ':\\s*"([^"]+)"')) || [])[1];
     const title = (get('title') || slug).replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ');
     const updated = get('updated');
-    result[slug] = { title, date: parseBlogDate(get('date') || ''), updated: updated ? parseBlogDate(updated) : null, image: get('image') || '' };
+    const metaTitle = get('metaTitle');
+    const metaDescription = get('metaDescription');
+    result[slug] = { title, date: parseBlogDate(get('date') || ''), updated: updated ? parseBlogDate(updated) : null, image: get('image') || '', metaTitle, metaDescription };
   }
   return result;
 }
@@ -1255,6 +1257,10 @@ async function main() {
         const post = blogPostData[slug];
         if (post) {
           const pageMeta = PAGE_META[route];
+          const unq = (s) => (s || '').replace(/\\"/g, '"');
+          if (pageMeta && (unq(post.metaTitle) !== pageMeta.title || unq(post.metaDescription) !== pageMeta.description)) {
+            throw new Error(`blogData metaTitle/metaDescription for ${route} differ from PAGE_META: keep them identical`);
+          }
           const articleBody = appHtml
             .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, ' ')
             .replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, ' ')
