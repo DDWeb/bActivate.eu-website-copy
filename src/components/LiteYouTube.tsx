@@ -3,7 +3,7 @@ import { useState } from 'react';
 // Click-to-load YouTube facade: shows the video thumbnail until the user
 // clicks play, then swaps in the real iframe. Saves ~860 KB of player JS
 // per embed on initial page load.
-export default function LiteYouTube({ id, title, className, poster }: { id: string; title: string; className?: string; poster?: string }) {
+export default function LiteYouTube({ id, title, className, poster, posterSrcSet, posterSizes, eager }: { id: string; title: string; className?: string; poster?: string; posterSrcSet?: string; posterSizes?: string; eager?: boolean }) {
     const [active, setActive] = useState(false);
 
     if (active) {
@@ -29,8 +29,11 @@ export default function LiteYouTube({ id, title, className, poster }: { id: stri
         >
             <img
                 src={poster ?? `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`}
+                srcSet={posterSrcSet}
+                sizes={posterSrcSet ? posterSizes : undefined}
                 alt={title}
-                loading="lazy"
+                loading={eager ? 'eager' : 'lazy'}
+                {...(eager ? ({ fetchpriority: 'high' } as Record<string, string>) : {})}
                 // Without a poster we use YouTube's own still. maxresdefault is
                 // 1280x720 and natively 16:9; not every video has one, so fall
                 // back to the 480x360 hqdefault when it is missing.
