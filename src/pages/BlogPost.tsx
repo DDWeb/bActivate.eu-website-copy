@@ -15,15 +15,12 @@ export default function BlogPost() {
         tempEl.innerHTML = post.title.replace(/<[^>]*>/g, '');
         const cleanTitle = tempEl.value;
 
-        // Strip HTML from content for description
-        const cleanDesc = post.content
-            .replace(/<[^>]*>/g, ' ')
-            .replace(/\s+/g, ' ')
-            .trim()
-            .substring(0, 155);
-
-        document.title = `${cleanTitle} | bActivate`;
-        document.querySelector('meta[name="description"]')?.setAttribute('content', cleanDesc);
+        // Title and description are the prerendered PAGE_META values (blogData metaTitle/metaDescription,
+        // kept identical by prerender.mjs). Overwriting them after load used to give Google a second,
+        // different title and a body-text snippet as description.
+        const meta = post as { metaTitle?: string; metaDescription?: string };
+        document.title = meta.metaTitle || cleanTitle;
+        if (meta.metaDescription) document.querySelector('meta[name="description"]')?.setAttribute('content', meta.metaDescription);
 
         // Set canonical to this post's URL (overrides homepage canonical in index.html)
         let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
@@ -34,37 +31,11 @@ export default function BlogPost() {
         }
         canonical.setAttribute('href', `https://bactivate.us/blog/${slug}`);
 
-        // Article schema
-        let schemaScript = document.getElementById('article-schema') as HTMLScriptElement | null;
-        if (!schemaScript) {
-            schemaScript = document.createElement('script');
-            schemaScript.id = 'article-schema';
-            schemaScript.setAttribute('type', 'application/ld+json');
-            document.head.appendChild(schemaScript);
-        }
-        schemaScript.textContent = JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Article',
-            'headline': cleanTitle,
-            'datePublished': post.date,
-            'dateModified': (post as { updated?: string }).updated || post.date,
-            'author': {
-                '@type': 'Organization',
-                'name': 'Bojesen & Petersen Biotech ApS',
-                'url': 'https://bactivate.us'
-            },
-            'publisher': {
-                '@type': 'Organization',
-                'name': 'bActivate',
-                'url': 'https://bactivate.us'
-            },
-            'url': `https://bactivate.us/blog/${slug}`
-        });
+        // No client Article schema: the prerendered BlogPosting (authors, citations) is the one.
 
         return () => {
             // Restore homepage canonical on unmount
             document.querySelector('link[rel="canonical"]')?.setAttribute('href', 'https://bactivate.us/');
-            document.getElementById('article-schema')?.remove();
         };
     }, [post, slug]);
 
