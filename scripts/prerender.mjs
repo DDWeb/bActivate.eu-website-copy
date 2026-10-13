@@ -1267,6 +1267,8 @@ async function main() {
             .trim()
             .replace(/^(?:←\s*)?Back to blog\s*/i, '')
             .slice(0, 9000);
+          // Scholarly sources linked in the post (DOI, PubMed, Clinical Theriogenology) as schema citations.
+          const citationUrls = [...new Set([...appHtml.matchAll(/href=["'](https:\/\/(?:doi\.org|pubmed\.ncbi\.nlm\.nih\.gov|clinicaltheriogenology\.net|cdn\.ymaws\.com\/www\.therio\.org)\/[^"']+)["']/g)].map((m) => m[1].replace(/&amp;/g, '&')))];
           const articleSchema = {
             '@context': 'https://schema.org',
             '@type': 'BlogPosting',
@@ -1287,6 +1289,7 @@ async function main() {
             ],
             'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
             'isPartOf': { '@type': 'WebSite', '@id': `${BASE_URL}/#website` },
+            ...(citationUrls.length ? { 'citation': citationUrls.map((u) => ({ '@type': 'CreativeWork', 'url': u })) } : {}),
           };
           html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(articleSchema)}</script>\n</head>`);
         }
