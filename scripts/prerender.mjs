@@ -306,7 +306,7 @@ const ROUTE_SCHEMAS = {
     'name': 'bActivate',
     'description': 'Veterinary diagnostic growth medium for problem mares. Reveals dormant Streptococcus equi subsp. zooepidemicus infections so the veterinarian can diagnose accurately and treat with targeted antibiotics. 83% pregnancy rate in a clinical study at Hagyard Equine Medical Institute.',
     'url': `${BASE_URL}/shop`,
-    'image': `${BASE_URL}/images/hero.gif`,
+    'image': `${BASE_URL}/images/bactivate-vial-400.webp`,
     'brand': { '@type': 'Brand', 'name': 'Bojesen & Petersen Biotech ApS' },
     'manufacturer': { '@type': 'Organization', 'name': 'Bojesen & Petersen Biotech ApS', 'url': BASE_URL },
     'audience': { '@type': 'Audience', 'audienceType': 'Veterinarians, Equine reproduction specialists' },
