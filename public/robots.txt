@@ -31,6 +31,12 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
+User-agent: Meta-WebIndexer
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
 User-agent: *
 Allow: /
 Disallow: /*?trk=
