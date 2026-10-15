@@ -351,6 +351,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'Can I flush the uterus myself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. A uterine lavage is a sterile procedure with a catheter through the cervix and belongs in the veterinarian\'s hands.' } },
       { '@type': 'Question', 'name': 'Do antibiotics belong in the flushing fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Only with a positive culture and an antibiogram, and then the drug that follows from it. Not as a precaution.' } },
       { '@type': 'Question', 'name': 'Is bActivate a lavage?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. bActivate is a growth medium that stays in the uterus so that dormant bacteria grow and can be detected 48 hours later in a normal culture. It is a diagnostic step, not a treatment.' } },
+      { '@type': 'Question', 'name': 'What does it mean to short cycle a mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Short cycling means the vet brings the mare back into heat early with a prostaglandin injection a few days after ovulation, instead of waiting the full three weeks. It is used to get a fresh cycle after a lavage or a treatment, and to save time in the season. It does not treat the cause of the fluid or the infection; if the mare builds fluid again on the new cycle, the cause is still there.' } },
     ],
   },
   '/blog/ultrasound-empty-mare-what-the-vet-sees': {
