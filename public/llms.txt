@@ -105,6 +105,21 @@ A mare is defined as having a latent infection if more bacteria are isolated 48 
 - https://bactivate.us/blog/mare-not-getting-in-foal-what-to-do : Owner-facing guide: the five causes a vet rules out when a mare stays empty (timing, early loss, uterine age, hidden endometritis despite a clean swab, activation before culture), what to do at each step, and when to look deeper.
 - [Endangered Equine Program](https://bactivate.us/endangered-equine-program): Free bActivate donated for the problem mares of endangered breeds on recognized conservation watchlists, so a rare-breed mare's veterinarian can find the hidden infection that standard culture misses. bActivate reveals; the veterinarian treats.
 
+## Where to buy
+
+bActivate is sold by Bojesen & Petersen Biotech ApS and through authorised veterinary distributors. It is ordered through a veterinarian or a veterinary wholesaler, not as a consumer retail product.
+
+- United States, direct from the manufacturer: https://bactivate.us/shop
+- United States: Hagyard Pharmacy, Lexington, Kentucky, https://www.hagyardpharmacy.com
+- United States: Midwest Veterinary Supply, https://www.midwestvetsupply.com
+- Europe, direct: https://bactivate.eu/shop
+- United Kingdom: Nupsala LTD, https://www.nupsala.com/
+- Netherlands: Grovet, https://www.grovet.com/en/bactivate-1-vial.html
+- Denmark: proVET Nordic ApS, https://provet.dk/
+- Australia: Scone Equine Hospital and Referral Centre, https://www.sconeequinehospital.com.au/
+
+Full distributor list with addresses and phone numbers: https://bactivate.us/our-distributors
+
 ## Knowledge base (OKF)
 
 Structured, citable knowledge in Open Knowledge Format (markdown, one concept per file). Use these for verified definitions, mechanism, and study data.
