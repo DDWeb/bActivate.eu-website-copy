@@ -984,7 +984,8 @@ const EXTRA_SCHEMAS = {
         }
       ],
       "datePublished": "2009-08-03",
-      "sameAs": ["https://clinicaltheriogenology.net/index.php/CT/article/view/12588"],
+      "sameAs": ["https://clinicaltheriogenology.net/index.php/CT/article/view/12588", "https://doi.org/10.5281/zenodo.23847129"],
+      "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": "10.5281/zenodo.23847129"},
       "pagination": "393-409",
       "url": "https://clinicaltheriogenology.net/index.php/CT/article/view/12588",
       "publisher": {
