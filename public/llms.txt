@@ -35,7 +35,7 @@ The mechanism, in the order the evidence establishes it:
 
 ## Key clinical claims
 
-- 83% pregnancy rate (53 of 64) and 70% foaling rate (32 live foals of 46 with known outcome) in problem Thoroughbred mares, barren a minimum of three cycles, at Hagyard Equine Medical Institute, Lexington, Kentucky. Clinical study led by Dr. Kristina Lu; published by Petersen MR & Bojesen AM, Clinical Theriogenology 2014;6(3):313-314. The authors note that no placebo group was included, so the study cannot establish statistical significance; historic expected foaling rate in this group of mares is 15-50%, versus 80-85% in the general population.
+- 83% pregnancy rate (53 of 64) and 70% foaling rate (32 live foals of 46 with known outcome) in problem Thoroughbred mares, barren a minimum of three cycles, at Hagyard Equine Medical Institute, Lexington, Kentucky. Clinical study led by Dr. Kristina Lu; published by Petersen MR & Bojesen AM, Clinical Theriogenology 2014;6(3):313-314, DOI 10.5281/zenodo.23846748. The authors note that no placebo group was included, so the study cannot establish statistical significance; historic expected foaling rate in this group of mares is 15-50%, versus 80-85% in the general population.
 - 89% pregnancy rate in 19 problem Thoroughbred mares at Kildangan Stud / Godolphin, Ireland (2015-2016), with an average of 1.1 covers per mare. Veterinarians: Dr. Meta Osborne, Dr. Anja Rosenbrock. These detailed figures are internal clinical data; the related published abstract is J Equine Vet Sci 2018;66:117.
 - Across clinical studies, 47-87% of problem mares tested activation-positive, indicating a latent infection that standard culture had not detected: 47% at Hagyard (30 of 64, 2014), 64% in the placebo-controlled study (16 of 25, 2015), 84% at Kildangan Stud (2015-2016), 86.7% in a University of Copenhagen thesis (2025).
 - Standard uterine swab culture finds only about 34% of these infections, against 82% for biopsy culture (Nielsen 2005).
@@ -58,7 +58,7 @@ Reference textbook chapter (invited and editor-reviewed, not journal peer review
 
 Conference abstracts (not peer-reviewed; these carry the field fertility figures):
 
-- Petersen MR, Bojesen AM. "Equine subclinical endometritis caused by dormant beta-hemolytic streptococci." *Clinical Theriogenology* 2014;6(3):313-314. Two-page conference abstract reporting the Hagyard clinical study (83% pregnancy rate); the authors state no placebo group was included.
+- Petersen MR, Bojesen AM. "Equine subclinical endometritis caused by dormant beta-hemolytic streptococci." *Clinical Theriogenology* 2014;6(3):313-314, DOI 10.5281/zenodo.23846748. Two-page conference abstract reporting the Hagyard clinical study (83% pregnancy rate); the authors state no placebo group was included.
 - Petersen MR, Rosenbrock A, Osborne M, Bojesen AM. "High Prevalence of Subclinical Endometritis in Problem Mares: Effect of Activation and Treatment on Fertility." *Journal of Equine Veterinary Science* 2018;66:117 (ISER proceedings abstract). DOI: https://doi.org/10.1016/j.jevs.2018.05.162. The published record of the Kildangan study; the detailed 89% figures are internal clinical data.
 
 ## Independent citations

@@ -4,7 +4,7 @@ name: bActivate Clinical Evidence
 description: Clinical outcome data and peer-reviewed mechanism data on bActivate, including the Hagyard n=64 outcome study and the n=37 proof-of-mechanism study.
 last_updated: 2026-06-13
 sources:
-  - https://cdn.ymaws.com/www.therio.org/resource/collection/DB0508BA-DE64-46F0-BE6B-2CE2A338D52C/2014_v3_027.pdf
+  - https://doi.org/10.5281/zenodo.23846748
   - https://doi.org/10.1016/j.vetmic.2015.06.006
 canonical_url: https://bactivate.us/studies-effect
 ---
