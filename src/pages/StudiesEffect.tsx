@@ -96,6 +96,7 @@ export default function StudiesEffect() {
                         <div className={styles.buttonGroup}>
                             <a href="/images/specialerapport-kathrine-emilie-ku-2025.pdf" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">View document</a>
                             <a href="https://open.spotify.com/episode/1JP9FDxlJh55AKnMAGvaoG" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary</a>
+                            <a href="/images/specialerapport-kathrine-emilie-ku-2025-dansk.m4a" target="_blank" className="bg-primary text-white px-4 py-2 rounded hover:bg-red-800 transition">Listen to summary (Dansk)</a>
                         </div>
                     </div>
 
