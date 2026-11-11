@@ -160,16 +160,16 @@ export const howToUseFaqItems = [
     answer: "In early estrus, when the largest follicle is over 20 mm. The veterinarian takes a uterine culture first and then instills 10 ml of bActivate.",
   },
   {
-    question: "When is the second culture taken?",
-    answer: "48 hours after instillation. A normal uterine swab is enough at that point, because the bacteria that were dormant are now growing.",
+    question: "When is the culture after activation taken?",
+    answer: "48 hours after bActivate was instilled. This is the post-activation culture, and a normal uterine swab is enough at that point, because the bacteria that were dormant are now growing.",
   },
   {
-    question: "What happens if the second culture is positive?",
+    question: "What happens if the culture after activation is positive?",
     answer: "The veterinarian treats according to the antibiogram, with uterine and systemic antibiotics. The cycle is used for diagnosis and treatment, and the mare is covered on the next one.",
   },
   {
-    question: "What does a negative second culture mean?",
-    answer: "A dormant streptococcal infection is then unlikely, and the search for the cause moves on with that possibility ruled out.",
+    question: "What does it mean if the culture after activation is negative?",
+    answer: "The culture taken 48 hours after bActivate grew no bacteria. A dormant streptococcal infection is then unlikely, and the veterinarian goes on to look for other causes of the mare staying empty.",
   },
   {
     question: "Why is the mare cultured both before and after activation?",
