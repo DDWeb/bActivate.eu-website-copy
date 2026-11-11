@@ -435,6 +435,17 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'Does bActivate replace the swab, lavage or biopsy?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It comes before them. The medium wakes the dormant bacteria; the sample and the culture are then taken as usual, with whichever method the vet prefers.' } },
     ],
   },
+  '/blog/problem-mare-options': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'What is the first thing to check in a mare that will not get in foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The timing of covering and the quality of the semen. Only when two cycles have failed with good timing and a proven stallion is the mare herself the likely cause.' } },
+      { '@type': 'Question', 'name': 'My mare\'s swab and cytology are clean. What is left?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'A low-volume lavage, a biopsy, and activation before culture. A clean swab finds only about a third of infected mares, so it does not rule infection out.' } },
+      { '@type': 'Question', 'name': 'Which diagnostic tools do vets use for problem mares?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ultrasound, uterine swab culture, cytology, low-volume lavage, endometrial biopsy and, when those are clean, activation with a growth medium such as bActivate before a new culture.' } },
+      { '@type': 'Question', 'name': 'Is bActivate a treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It makes dormant bacteria grow so that a normal swab can find them. The treatment is the vet\'s, chosen from the culture result.' } },
+      { '@type': 'Question', 'name': 'When is it time to stop trying?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'When the biopsy shows severe, permanent scarring of the lining. That is the one finding that treatment does not change.' } },
+    ],
+  },
   '/how-to-use': {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -656,6 +667,10 @@ const PAGE_META = {
     title: 'Uterine Swab, Lavage or Biopsy in Mares: What Each Finds',
     description: 'What a uterine swab collects and how often it misses infection, compared with low-volume lavage and biopsy: when to use which, and what none of them finds.',
   },
+  '/blog/problem-mare-options': {
+    title: 'Problem Mare Not Getting in Foal: The Options, Step by Step',
+    description: 'Every option for a mare that stays empty, in the order a vet works through them: scan, swab, cytology, lavage, biopsy, activation, hormones and surgery.',
+  },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
     description: 'Strep zoo is the top bacterial cause of infertility in broodmares: symptoms, how it differs from strangles, treatment, and the dormant form swabs miss.',
@@ -810,7 +825,7 @@ const SATELLITE_MAP = {
 };
 const SATELLITE_HOST = { de: 'https://leere-stute.de', fr: 'https://jument-infertile.fr', nl: 'https://lege-merrie.nl', es: 'https://yegua-infertil.es' };
 
-const MISSING_ON_JP = new Set(['/blog/uterine-swab-vs-lavage-vs-biopsy-mare', '/blog/repeated-early-embryonic-loss-mares', '/blog/older-mare-not-getting-in-foal', '/blog/fluid-in-mares-uterus-after-breeding', '/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
+const MISSING_ON_JP = new Set(['/blog/problem-mare-options', '/blog/uterine-swab-vs-lavage-vs-biopsy-mare', '/blog/repeated-early-embryonic-loss-mares', '/blog/older-mare-not-getting-in-foal', '/blog/fluid-in-mares-uterus-after-breeding', '/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the
