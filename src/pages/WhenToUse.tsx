@@ -10,8 +10,8 @@ import LiteYouTube from '@/components/LiteYouTube';
 
 export default function WhenToUse() {
     useEffect(() => {
-        document.title = 'When to Use bActivate: Barren Mare Signs and Indications';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Barren mare despite clean swabs? The signs of a latent uterine infection, which mares are at risk (age, parity, history), and when bActivate is indicated.');
+        document.title = 'What Is a Barren Mare? Signs, Causes and When to Test';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'A barren mare was covered and is not in foal. The signs of a hidden uterine infection, which mares are at risk, and when bActivate is indicated.');
     }, []);
     return (
         <main>
@@ -187,6 +187,7 @@ export default function WhenToUse() {
                 { to: '/blog/mare-not-getting-in-foal-what-to-do', label: 'Mare not getting in foal?', description: 'The five causes a vet rules out, in order, and what you can do' },
                 { to: '/blog/older-mare-not-getting-in-foal', label: 'Is my mare too old to breed?', description: 'What age does to the uterus, and the work-up every older mare deserves' },
                 { to: '/blog/fluid-in-mares-uterus-after-breeding', label: 'Fluid after breeding', description: 'When it is normal, when it is a problem, what the vet does' },
+                { to: '/blog/problem-mare-options', label: 'The options for a problem mare', description: 'Every step a vet works through, in order, and where activation fits' },
                 { to: '/equine-endometritis', label: 'Equine endometritis explained', description: 'Forms, causes, diagnosis and treatment, with sources' },
                 { to: '/swab-culture-vs-bactivate', label: 'Swab vs biopsy vs bActivate', description: 'Detection rates of the three sampling options, side by side' },
                 { to: '/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare', label: 'A clean swab is not a clean mare', description: 'Why a negative culture does not clear a problem mare' },

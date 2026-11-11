@@ -211,7 +211,7 @@ const ROUTE_SCHEMAS = {
         "name": "Which antibiotic works against Streptococcus zooepidemicus?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Penicillin, guided by culture and sensitivity. In a German study of 28,887 endometrial samples, 99.5% of beta-haemolytic streptococci were penicillin-sensitive and only 3.1% showed multidrug resistance (Journal of Equine Veterinary Science, 2024). When treatment fails, the usual reason is dormancy, not resistance."
+          "text": "Penicillin, guided by culture and sensitivity. In a German study of 28,887 endometrial samples, 99.5% of beta-haemolytic streptococci were penicillin-sensitive; across all bacteria in the study, 3.1% of isolates were multidrug-resistant (Journal of Equine Veterinary Science, 2024). When treatment fails, the usual reason is dormancy, not resistance."
         }
       },
       {
@@ -271,7 +271,7 @@ const ROUTE_SCHEMAS = {
         "name": "What bacteria most often cause uterine infection in mares?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Beta-haemolytic streptococci, primarily Streptococcus equi subspecies zooepidemicus. They accounted for 79.7% of positive cultures across 28,887 endometrial samples in the largest study to date (Journal of Equine Veterinary Science, 2024)."
+          "text": "Beta-haemolytic streptococci, primarily Streptococcus equi subspecies zooepidemicus. They accounted for 79.7% of positive cultures across 28,887 endometrial samples in one of the largest datasets published (Journal of Equine Veterinary Science, 2024)."
         }
       },
       {
@@ -435,6 +435,17 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'Does bActivate replace the swab, lavage or biopsy?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It comes before them. The medium wakes the dormant bacteria; the sample and the culture are then taken as usual, with whichever method the vet prefers.' } },
     ],
   },
+  '/blog/problem-mare-options': {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      { '@type': 'Question', 'name': 'What is the first thing to check in a mare that will not get in foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The timing of covering and the quality of the semen. Only when two cycles have failed with good timing and a proven stallion is the mare herself the likely cause.' } },
+      { '@type': 'Question', 'name': 'My mare\'s swab and cytology are clean. What is left?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'A low-volume lavage, a biopsy, and activation before culture. A clean swab finds only about a third of infected mares, so it does not rule infection out.' } },
+      { '@type': 'Question', 'name': 'Which diagnostic tools do vets use for problem mares?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ultrasound, uterine swab culture, cytology, low-volume lavage, endometrial biopsy and, when those are clean, activation with a growth medium such as bActivate before a new culture.' } },
+      { '@type': 'Question', 'name': 'Is bActivate a treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It makes dormant bacteria grow so that a normal swab can find them. The treatment is the vet\'s, chosen from the culture result.' } },
+      { '@type': 'Question', 'name': 'When is it time to stop trying?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'When the biopsy shows severe, permanent scarring of the lining. That is the one finding that treatment does not change.' } },
+    ],
+  },
   '/how-to-use': {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -565,8 +576,8 @@ const PAGE_META = {
     description: 'A diagnostic culture medium that reactivates dormant Streptococcus zooepidemicus in problem mares, the hidden uterine infection a standard swab often misses.',
   },
   '/when-to-use': {
-    title: 'When to Use bActivate: Barren Mare Signs and Indications',
-    description: 'Barren mare despite clean swabs? The signs of a latent uterine infection, which mares are at risk (age, parity, history), and when bActivate is indicated.',
+    title: 'What Is a Barren Mare? Signs, Causes and When to Test',
+    description: 'A barren mare was covered and is not in foal. The signs of a hidden uterine infection, which mares are at risk, and when bActivate is indicated.',
   },
   '/how-to-use': {
     title: 'How to Use bActivate | Veterinary Protocol',
@@ -645,16 +656,20 @@ const PAGE_META = {
     description: 'Why some mares hold fluid after covering, when it is normal, when it is a problem, what the vet does about it, and why a clean swab does not close the case.',
   },
   '/blog/older-mare-not-getting-in-foal': {
-    title: 'Is My Mare Too Old to Breed? The Older Mare Work-Up',
-    description: 'Why pregnancy rates fall from about ten years, what age does to the uterus, what can be fixed and what cannot, and the check every older mare deserves.',
+    title: 'When Is a Mare Too Old to Breed? Age, Fertility and Checks',
+    description: 'Age alone rarely stops a mare getting in foal. Why pregnancy rates fall from about ten, what age does to the uterus, and the check an older mare deserves.',
   },
   '/blog/repeated-early-embryonic-loss-mares': {
     title: 'Repeated Early Embryonic Loss in Mares: Causes and Work-Up',
     description: 'When a mare conceives and loses the pregnancy more than once: the causes in order of likelihood, the test for each, and the one cause the routine swab misses.',
   },
   '/blog/uterine-swab-vs-lavage-vs-biopsy-mare': {
-    title: 'Uterine Swab vs Lavage vs Biopsy: Which Finds the Infection?',
-    description: 'Swab, low-volume lavage and biopsy compared: what each collects, what each finds, the published sensitivity, when to use which, and what none of them finds.',
+    title: 'Uterine Swab, Lavage or Biopsy in Mares: What Each Finds',
+    description: 'What a uterine swab collects and how often it misses infection, compared with low-volume lavage and biopsy: when to use which, and what none of them finds.',
+  },
+  '/blog/problem-mare-options': {
+    title: 'Problem Mare Not Getting in Foal: The Options, Step by Step',
+    description: 'Every option for a mare that stays empty, in the order a vet works through them: scan, swab, cytology, lavage, biopsy, activation, hormones and surgery.',
   },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
@@ -810,7 +825,7 @@ const SATELLITE_MAP = {
 };
 const SATELLITE_HOST = { de: 'https://leere-stute.de', fr: 'https://jument-infertile.fr', nl: 'https://lege-merrie.nl', es: 'https://yegua-infertil.es' };
 
-const MISSING_ON_JP = new Set(['/blog/uterine-swab-vs-lavage-vs-biopsy-mare', '/blog/repeated-early-embryonic-loss-mares', '/blog/older-mare-not-getting-in-foal', '/blog/fluid-in-mares-uterus-after-breeding', '/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
+const MISSING_ON_JP = new Set(['/blog/problem-mare-options', '/blog/uterine-swab-vs-lavage-vs-biopsy-mare', '/blog/repeated-early-embryonic-loss-mares', '/blog/older-mare-not-getting-in-foal', '/blog/fluid-in-mares-uterus-after-breeding', '/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the
@@ -1333,7 +1348,7 @@ async function main() {
         '/when-to-use': {
           '@context': 'https://schema.org',
           '@type': 'MedicalWebPage',
-          'name': 'When to Use bActivate: Barren Mare Signs and Indications',
+          'name': 'What Is a Barren Mare? Signs, Causes and When to Test',
           'description': 'Clinical indicators for bActivate use: mares with repeated failure to conceive, culture-negative swabs combined with unexplained infertility, recurring uterine fluid, early embryo loss, or chronic subclinical endometritis.',
           'url': `${BASE_URL}/when-to-use`,
           'inLanguage': 'en',

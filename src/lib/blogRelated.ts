@@ -1,6 +1,11 @@
 // Related reading per blog post (slug -> sibling slugs). Rendered by BlogPost.tsx
 // under the article so every post links to two or three others.
 export const relatedPosts: Record<string, string[]> = {
+  "problem-mare-options": [
+    "mare-not-getting-in-foal-what-to-do",
+    "uterine-swab-vs-lavage-vs-biopsy-mare",
+    "positive-activation-culture-what-happens-next",
+  ],
   "uterine-swab-vs-lavage-vs-biopsy-mare": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
     "fluid-in-mares-uterus-after-breeding",
