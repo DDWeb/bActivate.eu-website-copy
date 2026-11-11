@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import InternalLinks from '@/components/InternalLinks';
+import FAQSection from '@/components/FAQSection';
+import { swabFaqItems } from '@/lib/routeFaqs';
 
 export default function SwabComparison() {
     useEffect(() => {
@@ -69,6 +71,7 @@ export default function SwabComparison() {
                 </div>
             </section>
 
+            <FAQSection items={swabFaqItems} heading="Frequently asked questions about swab, biopsy and activation" />
             <InternalLinks links={[
                 { to: '/equine-endometritis', label: 'Equine endometritis explained', description: 'Forms, causes, diagnosis and treatment, with sources' },
                 { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },

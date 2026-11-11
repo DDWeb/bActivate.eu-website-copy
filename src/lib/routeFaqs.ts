@@ -130,3 +130,53 @@ export const endometritisFaqItems = [
     answer: "Age lowers fertility on its own, but it also makes a hidden infection more likely, because the lining clears bacteria less well with age and parity. Before a season is written off to age, the vet can rule out a dormant infection with a biopsy or an activation culture. In the published series, 47 to 87 % of problem mares carried a dormant infection that the standard swab had missed. That is a cause with a name and a treatment, which age is not.",
   },
 ];
+
+export const swabFaqItems = [
+  {
+    question: "How accurate is a uterine swab culture in mares?",
+    answer: "In a direct comparison, culture from a uterine swab found 34% of infected mares and culture from an endometrial biopsy found 82% (Nielsen, Theriogenology 2005). A positive swab is reliable. A negative swab does not rule out infection.",
+  },
+  {
+    question: "Why can a mare have a clean swab and still be infected?",
+    answer: "In chronically infected mares, Streptococcus zooepidemicus has been found in foci 300 to 500 micrometers below the surface of the uterine lining (Petersen et al., Clinical Theriogenology 2009). A swab samples only the surface, and dormant bacteria do not grow in culture.",
+  },
+  {
+    question: "What does bActivate add to a swab culture?",
+    answer: "bActivate is a growth medium the veterinarian instills in the uterus in early estrus. It makes dormant bacteria grow again, so a normal swab taken 48 hours later can find them. In the placebo-controlled study the organism was found in 64% of mares after activation and in 8% after saline (Petersen et al., Veterinary Microbiology 2015).",
+  },
+  {
+    question: "Does bActivate replace the swab, the lavage or the biopsy?",
+    answer: "No. It is used before the sample is taken. The sample after activation is an ordinary uterine swab, cultured in the usual way.",
+  },
+  {
+    question: "Is a biopsy better than a swab?",
+    answer: "For culture, yes. A biopsy samples the tissue itself and found 82% of infected mares against 34% for the swab (Nielsen, Theriogenology 2005), and it also shows the condition of the lining. It still does not find bacteria that are dormant.",
+  },
+];
+
+export const howToUseFaqItems = [
+  {
+    question: "When in the cycle is bActivate used?",
+    answer: "In early estrus, when the largest follicle is over 20 mm. The veterinarian takes a uterine culture first and then instills 10 ml of bActivate.",
+  },
+  {
+    question: "When is the second culture taken?",
+    answer: "48 hours after instillation. A normal uterine swab is enough at that point, because the bacteria that were dormant are now growing.",
+  },
+  {
+    question: "What happens if the second culture is positive?",
+    answer: "The veterinarian treats according to the antibiogram, with uterine and systemic antibiotics. The cycle is used for diagnosis and treatment, and the mare is covered on the next one.",
+  },
+  {
+    question: "What does a negative second culture mean?",
+    answer: "A dormant streptococcal infection is then unlikely, and the search for the cause moves on with that possibility ruled out.",
+  },
+  {
+    question: "Why is the mare cultured both before and after activation?",
+    answer: "Because the comparison is the result. Some mares are culture-positive for E. coli before activation and for Streptococcus zooepidemicus only afterwards.",
+  },
+  {
+    question: "Is bActivate a treatment?",
+    answer: "No. It contains no antibiotics, no hormones and no live bacteria. It makes dormant bacteria grow so that a culture can find them. The treatment is chosen by the veterinarian from the culture result.",
+  },
+];

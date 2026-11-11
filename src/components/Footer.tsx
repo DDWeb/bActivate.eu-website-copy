@@ -36,6 +36,8 @@ export default function Footer() {
 
                     <div className={styles.socialIcons}>
                         <a href="https://www.tiktok.com/@bactivate.eu" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>TikTok</a>
+                        <a href="https://www.youtube.com/@bActivate-Endometritis" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>YouTube</a>
+                        <a href="https://open.spotify.com/show/3EhdFDhwXe6rWMOPDlculd" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>Podcast</a>
                         <a href="https://www.facebook.com/Bojesen.and.Petersen.Biotech/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>FB</a>
                         <a href="https://www.linkedin.com/company/bojesenandpetersenbiotech/" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>IN</a>
                     </div>
@@ -63,6 +65,8 @@ export default function Footer() {
                         <li><Link to="/our-distributors" className={styles.link}>Our distributors</Link></li>
                         <li><Link to="/contact" className={styles.link}>Contact</Link></li>
                         <li><Link to="/swab-culture-vs-bactivate" className={styles.link}>Swab culture vs bActivate</Link></li>
+                        <li><Link to="/equine-endometritis" className={styles.link}>Equine endometritis</Link></li>
+                        <li><Link to="/blog/problem-mare-options" className={styles.link}>Options for a problem mare</Link></li>
                         <li><a href="/glossary" className={styles.link}>Glossary</a></li>
                         <li><a href="/is-my-mare-a-candidate" className={styles.link}>Is my mare a candidate?</a></li>
                         <li><a href="/affiliate-program" className={styles.link}>Affiliate Program</a></li>

@@ -546,6 +546,7 @@ for (const [route, exportName] of [
   ['/when-to-use', 'whenToUseFaqItems'],
   ['/studies-effect', 'studiesFaqItems'],
   ['/equine-endometritis', 'endometritisFaqItems'],
+  ['/swab-culture-vs-bactivate', 'swabFaqItems'],
 ]) {
   ROUTE_SCHEMAS[route] = {
     '@context': 'https://schema.org',
@@ -553,6 +554,12 @@ for (const [route, exportName] of [
     'mainEntity': getFaqItems(exportName, 'src/lib/routeFaqs.ts'),
   };
 }
+
+// /how-to-use keeps its HowTo and adds one FAQPage built from the visible accordion.
+ROUTE_SCHEMAS['/how-to-use'] = [
+  ROUTE_SCHEMAS['/how-to-use'],
+  { '@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': getFaqItems('howToUseFaqItems', 'src/lib/routeFaqs.ts') },
+];
 
 ROUTE_SCHEMAS['/endangered-equine-program'] = {
   '@context': 'https://schema.org',

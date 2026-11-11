@@ -25,17 +25,21 @@ export const relatedPosts: Record<string, string[]> = {
     "ultrasound-empty-mare-what-the-vet-sees",
     "uterine-lavage-mare-when-and-why",
     "older-mare-not-getting-in-foal",
+    "problem-mare-options",
+    "repeated-early-embryonic-loss-mares",
   ],
   "mare-absorbed-early-pregnancy-loss-signs-causes": [
     "ultrasound-empty-mare-what-the-vet-sees",
     "mare-not-getting-in-foal-what-to-do",
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+    "repeated-early-embryonic-loss-mares",
   ],
   "mare-not-getting-in-foal-what-to-do": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
     "ultrasound-empty-mare-what-the-vet-sees",
     "saving-time-and-money-with-bactivate-a-smarter-approach-to-endometritis-in-mares",
     "mare-absorbed-early-pregnancy-loss-signs-causes",
+    "problem-mare-options",
   ],
   "positive-activation-culture-what-happens-next": [
     "addressing-challenges-of-problem-mares",
@@ -46,16 +50,19 @@ export const relatedPosts: Record<string, string[]> = {
     "mare-not-getting-in-foal-what-to-do",
     "uterine-lavage-mare-when-and-why",
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
+    "repeated-early-embryonic-loss-mares",
   ],
   "uterine-lavage-mare-when-and-why": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
     "ultrasound-empty-mare-what-the-vet-sees",
     "taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares",
+    "problem-mare-options",
   ],
   "streptococcus-zooepidemicus-in-horses": [
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
     "biofilm-in-the-mares-uterus-why-breaking-it-up-is-not-enough",
     "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health",
+    "problem-mare-options",
   ],
   "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare": [
     "mare-not-getting-in-foal-what-to-do",
@@ -76,6 +83,7 @@ export const relatedPosts: Record<string, string[]> = {
     "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health",
     "why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare",
     "taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares",
+    "problem-mare-options",
   ],
   "taming-the-troublemaker-a-guide-to-handling-endometritis-in-mares": [
     "insights-from-a-landmark-german-study-the-bacterial-spectrum-in-mare-uterine-health",
