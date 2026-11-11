@@ -2,6 +2,8 @@
 import { useEffect } from 'react';
 import styles from './HowToUse.module.css';
 import InternalLinks from '@/components/InternalLinks';
+import FAQSection from '@/components/FAQSection';
+import { howToUseFaqItems } from '@/lib/routeFaqs';
 import InShort from '@/components/InShort';
 import ReviewedBy from '@/components/ReviewedBy';
 
@@ -122,6 +124,7 @@ export default function HowToUse() {
                 </div>
             </section>
 
+            <FAQSection items={howToUseFaqItems} heading="Frequently asked questions about the protocol" />
             <InternalLinks links={[
                 { to: '/blog/bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares', label: 'Why antibiotics fail on dormant bacteria', description: 'The culture has to come before the antibiotic' },
                 { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate, Hagyard, Godolphin, and more' },
