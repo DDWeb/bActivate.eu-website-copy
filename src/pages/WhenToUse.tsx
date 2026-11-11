@@ -10,8 +10,8 @@ import LiteYouTube from '@/components/LiteYouTube';
 
 export default function WhenToUse() {
     useEffect(() => {
-        document.title = 'When to Use bActivate: Barren Mare Signs and Indications';
-        document.querySelector('meta[name="description"]')?.setAttribute('content', 'Barren mare despite clean swabs? The signs of a latent uterine infection, which mares are at risk (age, parity, history), and when bActivate is indicated.');
+        document.title = 'What Is a Barren Mare? Signs, Causes and When to Test';
+        document.querySelector('meta[name="description"]')?.setAttribute('content', 'A barren mare was covered and is not in foal. The signs of a hidden uterine infection, which mares are at risk, and when bActivate is indicated.');
     }, []);
     return (
         <main>
