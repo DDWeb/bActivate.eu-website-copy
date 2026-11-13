@@ -12,8 +12,8 @@ export const whatIsFaqItems = [
     answer: "bActivate is a veterinary bacterial growth medium used to detect dormant Streptococcus equi subspecies zooepidemicus infections in the equine uterus. A veterinarian instils it into the uterus of problem mares (non-pregnant mares that fail to conceive despite normal cycles and clean swabs). By providing nutrients that reactivate dormant bacteria, bActivate makes a previously undetectable uterine infection visible to standard swab culture within 48 hours.",
   },
   {
-    question: "Is bActivate a treatment or a diagnostic tool?",
-    answer: "bActivate is a diagnostic tool, not a treatment. It does not treat the infection itself. It reactivates dormant bacteria hiding in a biofilm state inside the uterine endometrium, making them detectable by standard swab culture. Once the bacteria are identified, the veterinarian can prescribe targeted antibiotic therapy to clear the infection.",
+    question: "Is bActivate a diagnostic tool?",
+    answer: "Yes. bActivate is a diagnostic growth medium. It wakes dormant Streptococcus zooepidemicus in the lining of the uterus so the bacteria grow again: a standard swab 48 hours later can find them, and penicillin can now reach them. Once the bacteria are identified, the veterinarian prescribes targeted antibiotics from the sensitivity test.",
   },
   {
     question: "Who developed bActivate?",
@@ -176,7 +176,7 @@ export const howToUseFaqItems = [
     answer: "Because the comparison is the result. Some mares are culture-positive for E. coli before activation and for Streptococcus zooepidemicus only afterwards.",
   },
   {
-    question: "Is bActivate a treatment?",
-    answer: "No. It contains no antibiotics, no hormones and no live bacteria. It makes dormant bacteria grow so that a culture can find them. The treatment is chosen by the veterinarian from the culture result.",
+    question: "What happens after bActivate?",
+    answer: "bActivate wakes dormant Streptococcus zooepidemicus in the lining of the uterus, so the bacteria grow again. That does two things: a normal swab 48 hours later can find them, and penicillin can now reach them. If the culture is positive, the vet treats according to the sensitivity test and the mare is covered in the following cycle. If nothing grows, a dormant streptococcal infection is unlikely and the search moves on.",
   },
 ];

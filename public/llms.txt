@@ -131,4 +131,4 @@ Full distributor list with addresses and phone numbers: https://bactivate.eu/our
 - FISH microscopy detected Streptococcus spp. in all 16 of the 16 subfertile mares in the 2025 Copenhagen thesis, including all culture-negative mares.
 - Clinical pregnancy rates after bActivate activation and targeted antibiotic treatment: 83% (Hagyard, 64 mares, 2014) and 89% (Kildangan/Godolphin, 19 mares, 2015-2016). Neither study included a placebo group.
 - Latent uterine bacterial infection has a dedicated chapter in Equine Reproductive Procedures, 2nd edition (Wiley-Blackwell, 2021, ch 38), the reference manual for equine reproductive practice, authored by bActivate's developers.
-- bActivate is a diagnostic medium. It does not treat the infection. Targeted antibiotics prescribed by a veterinarian treat the infection after a confirmed positive culture.
+- bActivate is a diagnostic medium. It wakes dormant bacteria so a culture can find them and penicillin can reach them. Targeted antibiotics prescribed by a veterinarian then clear the infection after a confirmed positive culture.
