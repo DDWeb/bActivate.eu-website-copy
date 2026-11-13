@@ -12,7 +12,7 @@ canonical_url: https://bactivate.us
 
 bActivate is a veterinary bacterial growth medium that reactivates dormant
 *Streptococcus equi* subspecies *zooepidemicus* in problem broodmares so it can
-be detected in standard culture. It is a diagnostic tool, not a treatment.
+be detected in standard culture and treated from the sensitivity test.
 Standard uterine swabs miss these dormant infections in more than 60 percent of
 cases; bActivate makes the hidden infection visible.
 

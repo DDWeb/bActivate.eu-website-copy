@@ -76,7 +76,7 @@ export default function EquineEndometritis() {
                             </tbody>
                         </table>
                     </div>
-                    <P>In the peer-reviewed activation study, <em>Streptococcus zooepidemicus</em> grew in 64 % of mares (16 of 25) after activation and in 8 % (1 of 12) after a control flush with saline (Petersen 2015). bActivate is a culture medium, not a treatment: it makes dormant bacteria visible to the standard culture so the vet can choose an antibiotic from the antibiogram.</P>
+                    <P>In the peer-reviewed activation study, <em>Streptococcus zooepidemicus</em> grew in 64 % of mares (16 of 25) after activation and in 8 % (1 of 12) after a control flush with saline (Petersen 2015). bActivate is a culture medium: it makes dormant bacteria visible to the standard culture so the vet can choose an antibiotic from the antibiogram.</P>
                     <More><Link to="/blog/uterine-swab-vs-lavage-vs-biopsy-mare">Swab vs lavage vs biopsy</Link>, <Link to="/swab-culture-vs-bactivate">Swab culture vs bActivate</Link>, <Link to="/blog/why-a-clean-swab-does-not-rule-out-infection-in-a-problem-mare">Why a clean swab does not rule out infection</Link> and <Link to="/what-is-bactivate">What is bActivate?</Link></More>
 
                     <H2>How is it treated?</H2>

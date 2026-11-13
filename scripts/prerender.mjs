@@ -329,7 +329,7 @@ const ROUTE_SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     'mainEntity': [
-      { '@type': 'Question', 'name': 'Is bActivate a treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It reveals a dormant infection so it can be cultured, identified and treated by your veterinarian. bActivate contains no antibiotics, no hormones and no live bacteria.' } },
+      { '@type': 'Question', 'name': 'What happens after bActivate?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate wakes dormant Streptococcus zooepidemicus in the lining of the uterus, so the bacteria grow again. That does two things: a normal swab 48 hours later can find them, and penicillin can now reach them. If the culture is positive, the vet treats according to the sensitivity test and the mare is covered in the following cycle. If nothing grows, a dormant streptococcal infection is unlikely and the search moves on.' } },
       { '@type': 'Question', 'name': 'Can a mare with a positive activation culture still be bred that season?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Activation and treatment take one cycle; breeding is planned for the following cycle. At Kildangan the bred mares needed 1.1 covers on average.' } },
       { '@type': 'Question', 'name': 'What if the post-activation culture is negative too?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a dormant streptococcal infection is unlikely to be the cause, and your veterinarian can look elsewhere with that possibility ruled out rather than assumed.' } },
     ],
@@ -351,7 +351,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'How often can a mare be flushed?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The veterinarian decides per mare and per cycle. After covering, flushing is often done on one or two consecutive days. If a mare needs flushing again in every cycle, that is a reason to look for the cause, not to keep flushing.' } },
       { '@type': 'Question', 'name': 'Can I flush the uterus myself?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. A uterine lavage is a sterile procedure with a catheter through the cervix and belongs in the veterinarian\'s hands.' } },
       { '@type': 'Question', 'name': 'Do antibiotics belong in the flushing fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Only with a positive culture and an antibiogram, and then the drug that follows from it. Not as a precaution.' } },
-      { '@type': 'Question', 'name': 'Is bActivate a lavage?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. bActivate is a growth medium that stays in the uterus so that dormant bacteria grow and can be detected 48 hours later in a normal culture. It is a diagnostic step, not a treatment.' } },
+      { '@type': 'Question', 'name': 'Is bActivate a lavage?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. bActivate is a growth medium that stays in the uterus so that dormant bacteria grow and can be detected 48 hours later in a normal culture.' } },
       { '@type': 'Question', 'name': 'What does it mean to short cycle a mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Short cycling means the vet brings the mare back into heat early with a prostaglandin injection a few days after ovulation, instead of waiting the full three weeks. It is used to get a fresh cycle after a lavage or a treatment, and to save time in the season. It does not treat the cause of the fluid or the infection; if the mare builds fluid again on the new cycle, the cause is still there.' } },
     ],
   },
@@ -362,7 +362,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'From when does the ultrasound confirm pregnancy?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The embryonic vesicle is visible about two weeks after ovulation. The veterinarian re-checks afterwards to confirm the pregnancy continues and to rule out twins.' } },
       { '@type': 'Question', 'name': 'Does fluid on the scan always mean infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Just after covering, a little fluid is a normal reaction. Fluid that persists, or fluid without any covering, signals a problem that needs an explanation.' } },
       { '@type': 'Question', 'name': 'Does a normal scan rule out a uterine infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. The scan shows fluid and the wall, not bacteria. A chronic infection in the tissue can give a uterus that looks normal.' } },
-      { '@type': 'Question', 'name': 'Can bActivate be seen on the scan?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No, and that is not its role. bActivate is a culture medium the veterinarian instills so that dormant bacteria grow, then cultures 48 hours later. It is a diagnostic step, not a treatment.' } },
+      { '@type': 'Question', 'name': 'Can bActivate be seen on the scan?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No, and that is not its role. bActivate is a culture medium the veterinarian instills so that dormant bacteria grow, then cultures 48 hours later.' } },
     ],
   },
   '/blog/positive-activation-culture-what-happens-next': {
@@ -392,7 +392,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'How many times may a mare stay empty before looking deeper?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'After two failed cycles with good timing and good semen. With any sign of hidden endometritis (fluid on the scan, previous inflammation, repeated resorption, 10 years or older), at once.' } },
       { '@type': 'Question', 'name': 'Is a clean swab enough to rule out endometritis?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. In the comparison study, swab culture found 34 % of infections and biopsy culture 82 % (Nielsen 2005). Dormant streptococci deep in the lining do not grow in the standard culture.' } },
       { '@type': 'Question', 'name': 'Can an older mare still get in foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Often yes. Age is a risk factor, not a verdict. What matters is the state of the uterine lining, which a biopsy shows, and whether a hidden infection is found and treated.' } },
-      { '@type': 'Question', 'name': 'Is bActivate a treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. bActivate is a diagnostic culture medium. It wakes dormant bacteria so they grow in a normal culture. Treatment follows with antibiotics chosen from the sensitivity test.' } },
+      { '@type': 'Question', 'name': 'What happens after bActivate?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate wakes dormant Streptococcus zooepidemicus in the lining of the uterus, so the bacteria grow again. That does two things: a normal swab 48 hours later can find them, and penicillin can now reach them. If the culture is positive, the vet treats according to the sensitivity test and the mare is covered in the following cycle. If nothing grows, a dormant streptococcal infection is unlikely and the search moves on.' } },
       { '@type': 'Question', 'name': 'What does the work-up cost?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'That depends on the vet and the route. For an activation, count on two visits 48 hours apart plus laboratory costs for two cultures. The price of bActivate itself is on the shop page; your vet orders it through the veterinary wholesaler.' } },
     ],
   },
@@ -443,7 +443,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'What is the first thing to check in a mare that will not get in foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The timing of covering and the quality of the semen. Only when two cycles have failed with good timing and a proven stallion is the mare herself the likely cause.' } },
       { '@type': 'Question', 'name': 'My mare\'s swab and cytology are clean. What is left?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'A low-volume lavage, a biopsy, and activation before culture. A clean swab finds only about a third of infected mares, so it does not rule infection out.' } },
       { '@type': 'Question', 'name': 'Which diagnostic tools do vets use for problem mares?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ultrasound, uterine swab culture, cytology, low-volume lavage, endometrial biopsy and, when those are clean, activation with a growth medium such as bActivate before a new culture.' } },
-      { '@type': 'Question', 'name': 'Is bActivate a treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It makes dormant bacteria grow so that a normal swab can find them. The treatment is the vet\'s, chosen from the culture result.' } },
+      { '@type': 'Question', 'name': 'What happens after bActivate?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate wakes dormant Streptococcus zooepidemicus in the lining of the uterus, so the bacteria grow again. That does two things: a normal swab 48 hours later can find them, and penicillin can now reach them. If the culture is positive, the vet treats according to the sensitivity test and the mare is covered in the following cycle. If nothing grows, a dormant streptococcal infection is unlikely and the search moves on.' } },
       { '@type': 'Question', 'name': 'When is it time to stop trying?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'When the biopsy shows severe, permanent scarring of the lining. That is the one finding that treatment does not change.' } },
     ],
   },
@@ -1474,7 +1474,7 @@ function writeLlmsFull() {
     parts.push(`<!-- source: ${BASE_URL}/okf/${name}.md -->\n${md.trim()}\n`);
   }
   if (!parts.length) return;
-  const head = `# bActivate: full knowledge base\n\n> Concatenation of the Open Knowledge Format files listed in ${BASE_URL}/llms.txt. Each section starts with its source URL. bActivate is a veterinary diagnostic culture medium, not a treatment.\n\n`;
+  const head = `# bActivate: full knowledge base\n\n> Concatenation of the Open Knowledge Format files listed in ${BASE_URL}/llms.txt. Each section starts with its source URL. bActivate is a veterinary diagnostic culture medium.\n\n`;
   writeFileSync(path.resolve(ROOT, 'dist/llms-full.txt'), head + parts.join('\n---\n\n'), 'utf8');
   console.log(`  \u2713 llms-full.txt (${parts.length} OKF files)`);
 }
