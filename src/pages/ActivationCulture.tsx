@@ -24,7 +24,7 @@ export default function ActivationCulture() {
                     <P>Activation with bActivate changes both. The growth medium wakes the bacteria, so a normal swab 48 hours later can find them, and penicillin can now reach them.</P>
 
                     <H2>Which mares is it for?</H2>
-                    <P>Activation culture is for the problem mare: she cycles normally, is covered at the right time with good semen, her culture and cytology are clean, and she still does not get in foal. It is not the first test. Timing, semen, the scan, swab and cytology come first. The full list of signs and when to ask for it is on <Link to="/when-to-use">when to use bActivate</Link>.</P>
+                    <P>Activation culture is for the problem mare: she cycles normally, is covered at the right time with good semen, her culture and cytology are clean, and she still does not get in foal. It is not the first test. Timing, semen, the scan, swab and cytology come first. The full list of signs and when to ask for it is on <Link to="/when-to-use#risk-checklist">the risk checklist</Link>.</P>
 
                     <H2>How activation culture works, step by step</H2>
                     <ol className="list-decimal pl-6 text-gray-700 leading-relaxed mb-6 space-y-2">

@@ -24,7 +24,7 @@ export default function WhenToUse() {
                                 <div className={styles.eyebrow}>About bActivate</div>
                                 <h1 className={styles.title}>When to Use bActivate for Problem Mares</h1>
 
-                                <InShort>bActivate is for the mare that stays empty despite normal cycles, a fertile stallion and a clean swab. The strongest signs are two or more failed cycles, uterine fluid on ultrasound, early embryo loss, a previous endometritis, and age 10 or older. In the published series, 47 to 87% of such mares carried a dormant infection the swab had missed, and the whole activation protocol fits inside one estrus cycle, so the earlier in the season, the better.</InShort>
+                                <InShort>bActivate is for the mare that stays empty despite normal cycles, a fertile stallion and a clean swab. The strongest signs are two or more failed cycles, uterine fluid on ultrasound, early embryo loss, a previous endometritis, three or more foals, and age 12 or older. In the field series, 83 % of 64 problem mares at Hagyard and 16 of the 18 covered mares at Kildangan became pregnant after activation and treatment; neither series had a placebo group. The whole activation protocol fits inside one estrus cycle, so the earlier in the season, the better.</InShort>
 
                                 <div className={styles.introBlock}>
                                     <h2 className={styles.subtitle}>bActivate, a diagnostic aid for the problem mare</h2>
@@ -75,32 +75,29 @@ export default function WhenToUse() {
                 </div>
             </section>
 
-            {/* Clinical Indicators */}
-            <section className="py-16">
+            {/* Risk checklist */}
+            <section className="py-16" id="risk-checklist">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <h2 className="text-3xl font-bold mb-2">Is My Mare a Candidate for bActivate?</h2>
-                    <p className="text-gray-600 mb-8">bActivate is indicated for mares with reduced uterine defence mechanisms and suspected chronic subclinical infection. Use the checklist below as a starting point when discussing with your veterinarian.</p>
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="bg-red-50 border-l-4 border-red-600 p-6 rounded">
-                            <h3 className="text-xl font-bold mb-4 text-red-700">Strong indications</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-2"><span className="text-red-600 font-bold mt-0.5">✓</span><span>Mare has failed to conceive for <strong>two or more consecutive seasons</strong> despite breeding to a proven fertile stallion</span></li>
-                                <li className="flex gap-2"><span className="text-red-600 font-bold mt-0.5">✓</span><span><strong>Culture-negative swabs</strong> combined with unexplained infertility or recurrent uterine fluid on ultrasound</span></li>
-                                <li className="flex gap-2"><span className="text-red-600 font-bold mt-0.5">✓</span><span>Previous antibiotic treatment <strong>resolved fluid temporarily</strong> but fertility did not improve</span></li>
-                                <li className="flex gap-2"><span className="text-red-600 font-bold mt-0.5">✓</span><span>History of <strong>early embryo loss</strong> (before day 15) in multiple seasons</span></li>
-                            </ul>
-                        </div>
-                        <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded">
-                            <h3 className="text-xl font-bold mb-4 text-orange-700">Consider bActivate when</h3>
-                            <ul className="space-y-3">
-                                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5">✓</span><span>Mare is <strong>10 years or older</strong> with a history of uterine infections or fluid accumulation</span></li>
-                                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5">✓</span><span>Mare has had <strong>repeated bacterial isolations</strong> (Strep zoo, E. coli) over multiple seasons</span></li>
-                                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5">✓</span><span>Mare is an <strong>open mare at end of season</strong> entering the off-season with no pregnancy</span></li>
-                                <li className="flex gap-2"><span className="text-orange-500 font-bold mt-0.5">✓</span><span>Mare has documented <strong>endometrial fibrosis</strong> (category IIB or III) and compromised uterine clearance</span></li>
-                            </ul>
-                        </div>
+                    <h2 className="text-3xl font-bold mb-2">Is my mare at risk of a dormant infection? The checklist</h2>
+                    <p className="text-gray-700 leading-relaxed mb-6">Activation culture with bActivate is for the problem mare: normal cycles, good timing, good semen, a clean culture and cytology, and still empty. Within that group, some mares are much more likely to carry a dormant infection than others. These are the signs, why each one counts, and what to ask the vet.</p>
+                    <div className="overflow-x-auto mb-6">
+                        <table className="w-full border-collapse text-sm">
+                            <thead><tr style={{ background: '#901820', color: 'white' }}><th className="text-left p-3">Sign</th><th className="text-left p-3">Why it counts</th><th className="text-left p-3">What to ask the vet</th></tr></thead>
+                            <tbody>
+                                <tr className="border-b border-gray-200"><td className="p-3 font-bold align-top">12 years or older</td><td className="p-3 align-top">The lining clears bacteria less well with age. The mares in the Kildangan series averaged 12.7 years.</td><td className="p-3 align-top">An activation culture with bActivate before the next cover, even if the swab is clean.</td></tr>
+                                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-bold align-top">Three or more foals</td><td className="p-3 align-top">Each pregnancy stretches the uterus. In older, multiparous mares it sinks below the pelvic brim, so fluid and bacteria drain less well.</td><td className="p-3 align-top">A scan for fluid after covering, and an activation culture with bActivate if she stays empty.</td></tr>
+                                <tr className="border-b border-gray-200"><td className="p-3 font-bold align-top">A previous endometritis</td><td className="p-3 align-top">A mare that has been infected once has shown she clears poorly. <em>Streptococcus zooepidemicus</em> can stay behind in a dormant state that a swab does not find (Petersen 2015).</td><td className="p-3 align-top">An activation culture with bActivate before she is treated again on a clean swab.</td></tr>
+                                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-bold align-top">Fluid in the uterus after covering</td><td className="p-3 align-top">Fluid that is still there two or three days after covering is the classic sign of delayed clearance, and the most common finding in a mare that comes back empty.</td><td className="p-3 align-top">A culture and cytology, and an activation culture with bActivate if they are clean.</td></tr>
+                                <tr className="border-b border-gray-200"><td className="p-3 font-bold align-top">Early pregnancy loss</td><td className="p-3 align-top">An inflamed lining cannot hold an embryo, and a dormant infection keeps the lining inflamed without showing on the swab.</td><td className="p-3 align-top">A check of the uterus that reaches deeper than the swab before she is covered again: a biopsy or an activation culture with bActivate.</td></tr>
+                                <tr className="border-b border-gray-200 bg-gray-50"><td className="p-3 font-bold align-top">Two or more failed cycles</td><td className="p-3 align-top">With good timing and proven semen. When the breeding has been right twice, the cause is with the mare. The mares in the published series had been empty for three or more cycles.</td><td className="p-3 align-top">An activation culture with bActivate in the next early estrus.</td></tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <p className="mt-6 text-gray-600 text-sm">bActivate is a prescription veterinary product. Your veterinarian will assess suitability based on reproductive history, clinical examination and ultrasound findings.</p>
+                    <p className="text-gray-700 leading-relaxed mb-4"><strong>Any one is enough to ask.</strong> Prof. Anders Miki Bojesen, who developed bActivate with Dr. Morten Rønn Petersen, names three that each put a mare in the high-probability group on their own: age 12 or older, three or more foals, and a previous endometritis or abortion.</p>
+                    <p className="text-gray-700 leading-relaxed mb-4"><strong>If she has one or more of the signs and the swab is clean:</strong> ask for an activation culture with bActivate in her next early estrus. The vet instills 10 ml, takes a normal swab 48 hours later, and treats according to the sensitivity test if anything grows. She is covered in the following cycle.</p>
+                    <p className="text-gray-700 leading-relaxed mb-4"><strong>If she has none and has failed one cycle:</strong> check the timing and the semen first. Most of these mares get in foal on the next cycle.</p>
+                    <p className="text-gray-700 leading-relaxed mb-4"><strong>What to say to the vet:</strong> "My mare is [age], has had [number] foals, her culture and cytology are clean, and she is still empty. Can we do an activation culture with bActivate in her next early estrus?"</p>
+                    <p className="text-gray-600 text-sm">Prefer to answer the questions one at a time? <a href="/is-my-mare-a-candidate" className="underline">Take the 2-minute assessment</a>. bActivate is a prescription veterinary product; your veterinarian assesses suitability from the reproductive history, the examination and the scan.</p>
                 </div>
             </section>
 
@@ -112,11 +109,11 @@ export default function WhenToUse() {
                     <div className="grid md:grid-cols-3 gap-6">
                         <div className="bg-white p-6 rounded shadow-sm">
                             <h3 className="text-lg font-bold mb-3">Older Broodmares</h3>
-                            <p className="text-gray-600 text-sm">Uterine defence mechanisms decline with age and parity. Mares aged 10+ with multiple previous foalings have reduced mucociliary clearance and lymphatic drainage, making them more susceptible to persistent infection. Clinical studies include a significant proportion of older mares with long histories of infertility.</p>
+                            <p className="text-gray-600 text-sm">Uterine defence mechanisms decline with age and parity. Mares aged 12 or older, or with three or more foals, have reduced mucociliary clearance and lymphatic drainage, making them more susceptible to persistent infection. Clinical studies include a significant proportion of older mares with long histories of infertility.</p>
                         </div>
                         <div className="bg-white p-6 rounded shadow-sm">
                             <h3 className="text-lg font-bold mb-3">Thoroughbred &amp; Sport Horses</h3>
-                            <p className="text-gray-600 text-sm">High-value thoroughbred and warmblood mares where the economic cost of a missed season is significant. The Kildangan/Godolphin study demonstrated an <strong>89% pregnancy rate</strong> in barren thoroughbred problem mares after a single bActivate activation cycle followed by targeted antibiotics from the stud vet.</p>
+                            <p className="text-gray-600 text-sm">High-value thoroughbred and warmblood mares where the economic cost of a missed season is significant. The Kildangan/Godolphin study demonstrated an <strong>89% pregnancy rate</strong> (16 of 18 covered mares, no placebo group) in barren thoroughbred problem mares after a single bActivate activation cycle followed by targeted antibiotics from the stud vet.</p>
                         </div>
                         <div className="bg-white p-6 rounded shadow-sm">
                             <h3 className="text-lg font-bold mb-3">Repeat Breeders</h3>
@@ -136,7 +133,7 @@ export default function WhenToUse() {
                             { step: '1', title: 'Estrus, Day 0', desc: 'Obtain pre-activation culture. Instil 10 ml bActivate in early estrus (follicle over 20 mm).' },
                             { step: '2', title: '48 Hours Later', desc: 'Obtain post-activation culture. Dormant Strep zoo now active. Begin targeted antibiotic treatment.' },
                             { step: '3', title: 'Recovery Cycle', desc: 'Complete antibiotic course. Uterus clears activation inflammation. Do not breed in this cycle.' },
-                            { step: '4', title: 'Next Estrus', desc: 'Mare ready for breeding. Expected pregnancy rate: 83-89% in clinical studies.' },
+                            { step: '4', title: 'Next Estrus', desc: 'Mare ready for breeding. In the field series, 83 % (Hagyard) and 16 of 18 (Kildangan) became pregnant. Neither had a placebo group.' },
                         ].map((item, i) => (
                             <div key={i}>
                                 <div className="bg-red-600 text-white text-center py-3 px-4">
@@ -168,7 +165,7 @@ export default function WhenToUse() {
                             <li className="flex gap-2"><span className="text-red-600 font-bold">✓</span><span>Helps farms <strong>plan breeding schedules</strong> with greater confidence</span></li>
                         </ul>
                     </div>
-                    <p className="mt-6 text-gray-600">In clinical series, 47 to 87% of problem mares carried a dormant uterine infection that the standard swab had missed. Off-season screening with bActivate addresses this directly.</p>
+                    <p className="mt-6 text-gray-600">A dormant infection found in the off-season can be treated before the first cover of the next season, which is what off-season screening with bActivate is for.</p>
                 </div>
             </section>
 

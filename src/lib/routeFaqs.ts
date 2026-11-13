@@ -39,6 +39,14 @@ export const whatIsFaqItems = [
 
 export const whenToUseFaqItems = [
   {
+    question: "Which mares are most likely to carry a dormant uterine infection?",
+    answer: "Problem mares that are 12 or older, have had three or more foals, or have had endometritis or an abortion before. Fluid after covering, an early loss and two or more failed cycles with good timing also count. Any one of them is a reason to ask the vet for an activation culture with bActivate.",
+  },
+  {
+    question: "My mare is 12 and has had three foals, but her swab is clean. What should I ask the vet?",
+    answer: "Ask for an activation culture with bActivate in her next early estrus. A clean swab does not rule out a dormant infection: in a direct comparison, swab culture found 34 % of infected mares and biopsy culture 82 % (Nielsen 2005).",
+  },
+  {
     question: "When should bActivate be used on a problem mare?",
     answer: "bActivate is indicated for mares that have failed to conceive for two or more consecutive breeding cycles despite normal ovarian cycles, breeding to a fertile stallion, and negative routine uterine culture. It is also indicated when a mare shows signs consistent with uterine infection (uterine fluid on ultrasound, early embryo loss, irregular cycles) but standard swabs return negative results. Some practices use it as a screening tool for all open mares at the start of the off-season.",
   },
@@ -123,7 +131,7 @@ export const endometritisFaqItems = [
   },
   {
     question: "My mare absorbed at 30 days. Could it be an infection?",
-    answer: "It can. An early loss before day 40 has several causes: twins, an aged lining, embryo quality, stress, and endometritis, which is the one most often missed because the swab does not find it. One loss in a young mare with no history is usually left to the next cycle. A mare that has absorbed before, is 10 or older, or has fluid on the scan should have the uterus checked with a method that reaches deeper than the swab before she is covered again.",
+    answer: "It can. An early loss before day 40 has several causes: twins, an aged lining, embryo quality, stress, and endometritis, which is the one most often missed because the swab does not find it. One loss in a young mare with no history is usually left to the next cycle. A mare that has absorbed before, is 12 or older, or has fluid on the scan should have the uterus checked with a method that reaches deeper than the swab before she is covered again.",
   },
   {
     question: "Is my mare too old to breed, or is something else going on?",
