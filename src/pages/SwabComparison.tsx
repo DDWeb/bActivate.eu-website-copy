@@ -13,7 +13,7 @@ export default function SwabComparison() {
             <section className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl">
                     <h1 className="text-3xl font-bold mb-4">Swab culture vs biopsy vs bActivate: how do you find a hidden uterine infection?</h1>
-                    <p className="text-gray-700 leading-relaxed mb-8">If your mare keeps coming back empty despite a clean culture and cytology, the problem may not be the mare. It may be the test. The three diagnostic options differ enormously in what they can detect, and none of the standard methods can find bacteria that are dormant. Here is the honest comparison, with each figure attributed to the study that reports it.</p>
+                    <p className="text-gray-700 leading-relaxed mb-8">If your mare keeps coming back empty despite a clean culture and cytology, the problem may not be the mare. It may be the test. The three diagnostic options differ enormously in what they can detect, and none of the standard methods can find bacteria that are dormant. Here is the honest comparison, with each figure attributed to the study that reports it. The third option, activation culture with bActivate, wakes those bacteria first and then cultures a normal swab 48 hours later.</p>
 
                     <div className="overflow-x-auto mb-4">
                         <table className="w-full border-collapse text-sm">
@@ -73,6 +73,7 @@ export default function SwabComparison() {
 
             <FAQSection items={swabFaqItems} heading="Frequently asked questions about swab, biopsy and activation" />
             <InternalLinks links={[
+                { to: '/activation-culture', label: 'Activation culture explained', description: 'What it is, which mares it is for, and the steps' },
                 { to: '/equine-endometritis', label: 'Equine endometritis explained', description: 'Forms, causes, diagnosis and treatment, with sources' },
                 { to: '/when-to-use', label: 'When to Use bActivate', description: 'Signs your mare may have a hidden infection' },
                 { to: '/how-to-use', label: 'Veterinary Protocol', description: 'Step-by-step instructions for veterinarians' },

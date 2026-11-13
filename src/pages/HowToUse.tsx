@@ -47,7 +47,7 @@ export default function HowToUse() {
                             <div className={styles.eyebrow}>About bActivate</div>
                             <h1 className={styles.title}>How to Use bActivate, Veterinary Protocol</h1>
 
-                            <InShort>Culture the mare in early estrus (largest follicle over 20 mm), instill 10 ml bActivate, culture again after 48 hours, and treat according to the antibiogram if the second culture grows what the first did not. Do not breed in that cycle; breed in the following one. bActivate is a diagnostic growth medium, not a medicine: it makes dormant <em>Streptococcus zooepidemicus</em> grow so a normal culture can find it. The full protocol and references are below.</InShort>
+                            <InShort>Culture the mare in early estrus (largest follicle over 20 mm), instill 10 ml bActivate, take the activation culture 48 hours later, and treat according to the antibiogram if it grows what the culture before activation did not. Do not breed in that cycle; breed in the following one. bActivate is a diagnostic growth medium, not a medicine: it makes dormant <em>Streptococcus zooepidemicus</em> grow so a normal culture can find it. The full protocol and references are below.</InShort>
 
                             <h2 className={styles.subtitle}>Intended use</h2>
                             <div className={styles.textBlock}>
@@ -126,6 +126,7 @@ export default function HowToUse() {
 
             <FAQSection items={howToUseFaqItems} heading="Frequently asked questions about the protocol" />
             <InternalLinks links={[
+                { to: '/activation-culture', label: 'Activation culture explained', description: 'What it is, which mares it is for, and the steps' },
                 { to: '/blog/bactivate-antibiotics-a-smarter-approach-to-treating-endometritis-in-mares', label: 'Why antibiotics fail on dormant bacteria', description: 'The culture has to come before the antibiotic' },
                 { to: '/studies-effect', label: 'Clinical Studies', description: '83% pregnancy rate, Hagyard, Godolphin, and more' },
                 { to: '/shop', label: 'Order bActivate', description: 'One vial per activation cycle' },

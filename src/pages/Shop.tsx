@@ -165,7 +165,7 @@ export default function Shop() {
                     <div className="grid md:grid-cols-3 gap-6 mt-12 mb-4">
                         <div className="bg-gray-50 p-6 rounded">
                             <h2 className="text-lg font-bold mb-3">What you get</h2>
-                            <p className="text-gray-600 text-sm">One 10 ml vial of the bActivate activation growth medium. One vial is one activation cycle for one mare. Your veterinarian instills it into the uterus during early estrus; 48 hours later a standard culture shows what was hiding, and the veterinarian can treat it with targeted antibiotics.</p>
+                            <p className="text-gray-600 text-sm">One 10 ml vial of bActivate, the growth medium for activation culture. One vial is one activation cycle for one mare. Your veterinarian instills it into the uterus during early estrus; 48 hours later a standard culture shows what was hiding, and the veterinarian can treat it with targeted antibiotics.</p>
                         </div>
                         <div className="bg-gray-50 p-6 rounded">
                             <h2 className="text-lg font-bold mb-3">How ordering works</h2>

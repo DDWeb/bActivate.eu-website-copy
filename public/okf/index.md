@@ -10,6 +10,8 @@ license: CC-BY-4.0
 
 # bActivate Knowledge Base
 
+Activation culture finds dormant uterine infection in problem mares. The vet instills bActivate, the growth medium the method was developed and tested with, and cultures a normal swab 48 hours later, when Streptococcus zooepidemicus grows.
+
 bActivate is a veterinary diagnostic growth medium that reactivates dormant
 *Streptococcus equi* subspecies *zooepidemicus* in problem broodmares so the
 bacteria can be identified in culture. Standard uterine swabs miss these
