@@ -550,6 +550,7 @@ for (const [route, exportName] of [
   ['/equine-endometritis', 'endometritisFaqItems'],
   ['/activation-culture', 'activationCultureFaqItems'],
   ['/swab-culture-vs-bactivate', 'swabFaqItems'],
+  ['/our-distributors', 'distributorsFaqItems'],
 ]) {
   ROUTE_SCHEMAS[route] = {
     '@context': 'https://schema.org',

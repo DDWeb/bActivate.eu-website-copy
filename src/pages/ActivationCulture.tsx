@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import InternalLinks from '@/components/InternalLinks';
 import FAQSection from '@/components/FAQSection';
+import NextStep from '@/components/NextStep';
 import { activationCultureFaqItems } from '@/lib/routeFaqs';
 
 const P = ({ children }: { children: React.ReactNode }) => <p className="text-gray-700 leading-relaxed mb-6">{children}</p>;
@@ -45,6 +46,8 @@ export default function ActivationCulture() {
                     <p className="text-sm text-gray-600 mb-8">Read more: <Link to="/blog/positive-activation-culture-what-happens-next">Positive activation culture: what happens next</Link>, <Link to="/swab-culture-vs-bactivate">Swab vs biopsy vs bActivate</Link> and <Link to="/blog/problem-mare-options">Problem mare: the options, step by step</Link>.</p>
                 </div>
             </section>
+
+            <NextStep />
 
             <FAQSection items={activationCultureFaqItems} heading="Frequently asked questions about activation culture" subtitle="Short answers; the sources are on this page." />
 

@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 import styles from './OurDistributors.module.css';
+import NextStep from '@/components/NextStep';
+import FAQSection from '@/components/FAQSection';
+import { distributorsFaqItems } from '@/lib/routeFaqs';
 
 export default function OurDistributors() {
     useEffect(() => {
@@ -94,6 +97,8 @@ export default function OurDistributors() {
                 </div>
             </section>
 
+            <NextStep />
+
             <section className="bg-gray-50 py-16">
                 <div className="container mx-auto px-4">
                     <div className={styles.distributorGrid}>
@@ -114,6 +119,8 @@ export default function OurDistributors() {
                     </div>
                 </div>
             </section>
+
+            <FAQSection items={distributorsFaqItems} heading="Buying bActivate: frequently asked questions" />
 
         </main>
     );

@@ -4,6 +4,7 @@ import styles from './WhenToUse.module.css';
 import InternalLinks from '@/components/InternalLinks';
 import InShort from '@/components/InShort';
 import FAQSection from '@/components/FAQSection';
+import NextStep from '@/components/NextStep';
 import { whenToUseFaqItems } from '@/lib/routeFaqs';
 import ReviewedBy from '@/components/ReviewedBy';
 import LiteYouTube from '@/components/LiteYouTube';
@@ -100,6 +101,8 @@ export default function WhenToUse() {
                     <p className="text-gray-600 text-sm">Prefer to answer the questions one at a time? <a href="/is-my-mare-a-candidate" className="underline">Take the 2-minute assessment</a>. bActivate is a prescription veterinary product; your veterinarian assesses suitability from the reproductive history, the examination and the scan.</p>
                 </div>
             </section>
+
+            <NextStep />
 
             {/* Mare Types */}
             <section className="bg-gray-50 py-16">
