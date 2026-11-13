@@ -184,6 +184,7 @@ export default function WhenToUse() {
             <FAQSection items={whenToUseFaqItems} />
 
             <InternalLinks links={[
+                { to: '/activation-culture', label: 'Activation culture explained', description: 'What it is, which mares it is for, and the steps' },
                 { to: '/blog/mare-not-getting-in-foal-what-to-do', label: 'Mare not getting in foal?', description: 'The five causes a vet rules out, in order, and what you can do' },
                 { to: '/blog/older-mare-not-getting-in-foal', label: 'Is my mare too old to breed?', description: 'What age does to the uterus, and the work-up every older mare deserves' },
                 { to: '/blog/fluid-in-mares-uterus-after-breeding', label: 'Fluid after breeding', description: 'When it is normal, when it is a problem, what the vet does' },

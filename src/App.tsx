@@ -20,6 +20,7 @@ import ConsultationConfirmed from './pages/ConsultationConfirmed';
 import Contact from './pages/Contact';
 import SwabComparison from './pages/SwabComparison';
 import EquineEndometritis from './pages/EquineEndometritis';
+import ActivationCulture from './pages/ActivationCulture';
 import EndangeredEquineProgram from './pages/EndangeredEquineProgram';
 import WhatsAppButton from './components/WhatsAppButton';
 
@@ -59,6 +60,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/swab-culture-vs-bactivate" element={<SwabComparison />} />
         <Route path="/equine-endometritis" element={<EquineEndometritis />} />
+        <Route path="/activation-culture" element={<ActivationCulture />} />
         <Route path="/endangered-equine-program" element={<EndangeredEquineProgram />} />
         <Route path="*" element={<Home />} />
       </Routes>

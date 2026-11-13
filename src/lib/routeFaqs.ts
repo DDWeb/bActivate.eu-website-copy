@@ -110,8 +110,8 @@ export const endometritisFaqItems = [
     answer: "A healthy mare clears semen and inflammatory fluid within about 48 hours. Fluid that persists beyond that is the classic sign of delayed uterine clearance and should be discussed with the vet before the next cover.",
   },
   {
-    question: "Does bActivate treat endometritis?",
-    answer: "No. bActivate is a diagnostic culture medium. It activates dormant bacteria so they grow in the standard culture and can be identified and tested for antibiotic sensitivity. The treatment that follows is prescribed by the veterinarian.",
+    question: "How does bActivate help with endometritis?",
+    answer: "It finds the dormant form. Activation culture with bActivate wakes dormant bacteria so they grow in the standard culture and can be identified and tested for antibiotic sensitivity. The veterinarian then treats according to that result.",
   },
   {
     question: "When should a breeder ask for the activation culture?",
@@ -178,5 +178,25 @@ export const howToUseFaqItems = [
   {
     question: "What happens after bActivate?",
     answer: "bActivate wakes dormant Streptococcus zooepidemicus in the lining of the uterus, so the bacteria grow again. That does two things: a normal swab 48 hours later can find them, and penicillin can now reach them. If the culture is positive, the vet treats according to the sensitivity test and the mare is covered in the following cycle. If nothing grows, a dormant streptococcal infection is unlikely and the search moves on.",
+  },
+];
+
+// /activation-culture definition page
+export const activationCultureFaqItems = [
+  {
+    question: "What is a post-activation culture?",
+    answer: "The culture taken 48 hours after the vet has instilled bActivate. It is a normal uterine culture; the difference is that dormant bacteria are now growing and can be found.",
+  },
+  {
+    question: "Does activation culture need a lavage?",
+    answer: "No. After activation with bActivate a normal swab is enough. A low-volume lavage or a biopsy can be used if the vet prefers.",
+  },
+  {
+    question: "How long does activation culture take?",
+    answer: "Two days from instillation to sample, and the culture result one or two days after that. The mare is covered in the following cycle.",
+  },
+  {
+    question: "What if the activation culture is negative?",
+    answer: "Then a dormant streptococcal infection is unlikely, and the vet looks for another cause, such as fluid after covering, the cervix or the biopsy grade.",
   },
 ];

@@ -55,8 +55,8 @@ export default function EndangeredEquineProgram() {
                             <p className="text-gray-700 leading-relaxed">The bActivate itself is donated. If your mare qualifies, your veterinarian receives a coupon and places the order in the <a href="/shop" className="text-primary underline">bactivate.eu shop</a>, and only the shipping is paid. Your own veterinarian's normal fees still apply.</p>
                         </div>
                         <div>
-                            <h3 className="font-bold text-gray-900 mb-1">Does bActivate treat the mare?</h3>
-                            <p className="text-gray-700 leading-relaxed">No. It reveals a hidden infection so your veterinarian can treat it with targeted antibiotics. bActivate is a diagnostic aid, not a medicine.</p>
+                            <h3 className="font-bold text-gray-900 mb-1">Who treats the mare?</h3>
+                            <p className="text-gray-700 leading-relaxed">Your own veterinarian. bActivate reveals a hidden infection, and the vet treats it with targeted antibiotics chosen from the culture.</p>
                         </div>
                         <div>
                             <h3 className="font-bold text-gray-900 mb-1">Which breeds qualify?</h3>

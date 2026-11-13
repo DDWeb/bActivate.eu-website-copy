@@ -32,6 +32,7 @@ const BREADCRUMB_LABELS = {
   '/contact': 'Contact',
   '/swab-culture-vs-bactivate': 'Swab Culture vs bActivate',
   '/equine-endometritis': 'Equine Endometritis',
+  '/activation-culture': 'Activation Culture',
   '/endangered-equine-program': 'Endangered Equine Program',
 };
 
@@ -249,7 +250,7 @@ const ROUTE_SCHEMAS = {
         "name": "How much time does the bActivate protocol take?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "One cycle. Activation and the second culture take 48 hours, treatment follows the culture result and is completed no later than three days after ovulation, and the mare is bred on the following cycle."
+          "text": "One cycle. Activation and the culture after it take 48 hours, treatment follows the culture result and is completed no later than three days after ovulation, and the mare is bred on the following cycle."
         }
       },
       {
@@ -371,8 +372,8 @@ const ROUTE_SCHEMAS = {
     'mainEntity': [
       { '@type': 'Question', 'name': 'Is a positive activation culture bad news?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'It is an explanation. A mare that has been empty for seasons now has a named cause, an antibiogram, and a plan for the next cycle.' } },
       { '@type': 'Question', 'name': 'Can she be bred in the same cycle?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Activation, culture and treatment take one cycle; breeding is planned for the following one. At Kildangan the bred mares needed 1.1 covers on average.' } },
-      { '@type': 'Question', 'name': 'What if the second culture is negative?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a dormant streptococcal infection is unlikely to be the cause, and the veterinarian can look elsewhere with that possibility ruled out rather than assumed.' } },
-      { '@type': 'Question', 'name': 'Does bActivate treat the infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It makes the dormant bacteria grow so a normal culture can find them. The treatment is the veterinarian\'s, chosen from the antibiogram.' } },
+      { '@type': 'Question', 'name': 'What if the post-activation culture is negative?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Then a dormant streptococcal infection is unlikely to be the cause, and the veterinarian can look elsewhere with that possibility ruled out rather than assumed.' } },
+      { '@type': 'Question', 'name': 'Who treats the infection after a positive result?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Your veterinarian, with antibiotics chosen from the antibiogram. bActivate made the dormant bacteria grow, so the culture could find them and penicillin can now reach them.' } },
     ],
   },
   '/blog/mare-absorbed-early-pregnancy-loss-signs-causes': {
@@ -403,7 +404,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'How long after covering should the uterus be clear of fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Within about 48 hours in a healthy mare. Fluid on the scan two or three days after covering is delayed uterine clearance and should be treated, and a mare that holds fluid every cycle should be examined for the cause before she is covered again.' } },
       { '@type': 'Question', 'name': 'Is fluid in the uterus always an infection?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. After covering it is the normal reaction to semen, and in older mares it is often poor drainage rather than bacteria. Fluid before covering, or in a mare that has not been covered, usually is an infection. Only a sample can tell, and a swab is the least sensitive way of taking it.' } },
       { '@type': 'Question', 'name': 'My mare is flushed every cycle and still not in foal. What now?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ask your vet for a sample that reaches deeper than the swab, a low-volume lavage or a biopsy, and, if she has failed two or more well-timed covers, for an activation culture with bActivate before the next cover. Seven questions to check first: is my mare a candidate?' } },
-      { '@type': 'Question', 'name': 'Does bActivate treat the fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It is a diagnostic aid that wakes dormant bacteria so a standard culture can find them. The treatment is your vet\'s, chosen from the antibiogram, and the lavage and oxytocin for the fluid stay as they are.' } },
+      { '@type': 'Question', 'name': 'How does bActivate fit with the treatment for fluid?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Alongside it. Activation culture with bActivate wakes dormant bacteria so a standard culture can find them and penicillin can reach them. Your vet treats what grows according to the antibiogram, and the lavage and oxytocin for the fluid stay as they are.' } },
     ],
   },
   '/blog/older-mare-not-getting-in-foal': {
@@ -423,7 +424,7 @@ const ROUTE_SCHEMAS = {
       { '@type': 'Question', 'name': 'How many early losses before the mare should be investigated?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'After the first loss in a young mare with no history, waiting one cycle is reasonable. After a second loss, or a first loss in a mare that is ten or older, has fluid on the scan, or has a clean swab and an empty season behind her, investigate before the next cover.' } },
       { '@type': 'Question', 'name': 'Can a uterine infection cause a mare to absorb even though she conceived?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. A low-grade or dormant infection does not prevent conception every time; it makes the uterus unable to keep the pregnancy. Because the infection stays, the loss repeats.' } },
       { '@type': 'Question', 'name': 'Does a clean culture and cytology rule out infection as the cause?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It rules out an active infection on the surface of the lining. Deeper and dormant infections need a biopsy or an activation culture to be found.' } },
-      { '@type': 'Question', 'name': 'What does the activation culture involve for the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One instillation of 10 ml in early oestrus, a second sample two days later, and treatment only if something grows. The cycle is used for diagnosis, and she is covered on the next one.' } },
+      { '@type': 'Question', 'name': 'What does the activation culture involve for the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'One instillation of 10 ml in early oestrus, the culture after activation two days later, and treatment only if something grows. The cycle is used for diagnosis, and she is covered on the next one.' } },
     ],
   },
   '/blog/uterine-swab-vs-lavage-vs-biopsy-mare': {
@@ -441,8 +442,8 @@ const ROUTE_SCHEMAS = {
     '@type': 'FAQPage',
     'mainEntity': [
       { '@type': 'Question', 'name': 'What is the first thing to check in a mare that will not get in foal?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The timing of covering and the quality of the semen. Only when two cycles have failed with good timing and a proven stallion is the mare herself the likely cause.' } },
-      { '@type': 'Question', 'name': 'My mare\'s swab and cytology are clean. What is left?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'A low-volume lavage, a biopsy, and activation before culture. A clean swab finds only about a third of infected mares, so it does not rule infection out.' } },
-      { '@type': 'Question', 'name': 'Which diagnostic tools do vets use for problem mares?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ultrasound, uterine swab culture, cytology, low-volume lavage, endometrial biopsy and, when those are clean, activation with a growth medium such as bActivate before a new culture.' } },
+      { '@type': 'Question', 'name': 'My mare\'s swab and cytology are clean. What is left?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'A low-volume lavage, a biopsy, and activation culture with bActivate. A clean swab finds only about a third of infected mares, so it does not rule infection out.' } },
+      { '@type': 'Question', 'name': 'Which diagnostic tools do vets use for problem mares?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ultrasound, uterine swab culture, cytology, low-volume lavage, endometrial biopsy and, when those are clean, activation culture with bActivate.' } },
       { '@type': 'Question', 'name': 'What happens after bActivate?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'bActivate wakes dormant Streptococcus zooepidemicus in the lining of the uterus, so the bacteria grow again. That does two things: a normal swab 48 hours later can find them, and penicillin can now reach them. If the culture is positive, the vet treats according to the sensitivity test and the mare is covered in the following cycle. If nothing grows, a dormant streptococcal infection is unlikely and the search moves on.' } },
       { '@type': 'Question', 'name': 'When is it time to stop trying?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'When the biopsy shows severe, permanent scarring of the lining. That is the one finding that treatment does not change.' } },
     ],
@@ -547,6 +548,7 @@ for (const [route, exportName] of [
   ['/when-to-use', 'whenToUseFaqItems'],
   ['/studies-effect', 'studiesFaqItems'],
   ['/equine-endometritis', 'endometritisFaqItems'],
+  ['/activation-culture', 'activationCultureFaqItems'],
   ['/swab-culture-vs-bactivate', 'swabFaqItems'],
 ]) {
   ROUTE_SCHEMAS[route] = {
@@ -567,7 +569,7 @@ ROUTE_SCHEMAS['/endangered-equine-program'] = {
   '@type': 'FAQPage',
   'mainEntity': [
     { '@type': 'Question', 'name': 'Does it cost anything?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The bActivate itself is donated. If your mare qualifies, your veterinarian receives a coupon and places the order in the bactivate.eu shop, and only the shipping is paid. Your own veterinarian\'s normal fees still apply.' } },
-    { '@type': 'Question', 'name': 'Does bActivate treat the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. It reveals a hidden infection so your veterinarian can treat it with targeted antibiotics. bActivate is a diagnostic aid, not a medicine.' } },
+    { '@type': 'Question', 'name': 'Who treats the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Your own veterinarian. bActivate reveals a hidden infection, and the vet treats it with targeted antibiotics chosen from the culture.' } },
     { '@type': 'Question', 'name': 'Which breeds qualify?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Breeds on a recognized conservation watchlist, such as the RBST watchlist, the Livestock Conservancy priority list, or FAO DAD-IS. Ask us if you are unsure.' } },
     { '@type': 'Question', 'name': 'Who handles the mare?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Your own veterinarian, from the first culture to the treatment that follows. The veterinarian also places the order with the coupon, since bActivate is used through a vet.' } },
     { '@type': 'Question', 'name': 'What do you want in return?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Only that the outcome is recorded and that we may share a success story, with a foal photo and your name, with credit.' } },
@@ -627,6 +629,10 @@ const PAGE_META = {
     title: 'Swab vs Biopsy vs Activation Culture: Endometritis Diagnosis',
     description: 'A standard uterine swab finds about 34% of infected mares, biopsy about 82%, and neither finds dormant bacteria. The diagnostic options for problem mares.',
   },
+  '/activation-culture': {
+    title: 'Activation Culture in Mares: What It Is and When to Use It',
+    description: 'Activation culture finds dormant Streptococcus zooepidemicus that a normal swab misses: what it is, which mares it is for, the steps and the studies.',
+  },
   '/equine-endometritis': {
     title: 'Equine Endometritis, Clinical and Subclinical: Diagnosis',
     description: 'Endometritis in mares: clinical and subclinical forms, why a swab finds only 34 %, how activation culture and biopsy compare, and what the vet does next.',
@@ -677,7 +683,7 @@ const PAGE_META = {
   },
   '/blog/problem-mare-options': {
     title: 'Problem Mare Not Getting in Foal: The Options, Step by Step',
-    description: 'Every option for a mare that stays empty, in the order a vet works through them: scan, swab, cytology, lavage, biopsy, activation, hormones and surgery.',
+    description: 'Every option for an empty mare, in the order a vet uses them: scan, swab, cytology, lavage, biopsy, activation culture with bActivate, hormones, surgery.',
   },
   '/blog/streptococcus-zooepidemicus-in-horses': {
     title: 'Streptococcus zooepidemicus in Horses: Symptoms & Treatment',
@@ -733,6 +739,7 @@ const STATIC_ROUTES = [
   '/contact',
   '/swab-culture-vs-bactivate',
   '/equine-endometritis',
+  '/activation-culture',
   '/endangered-equine-program',
 ];
 
@@ -833,7 +840,7 @@ const SATELLITE_MAP = {
 };
 const SATELLITE_HOST = { de: 'https://leere-stute.de', fr: 'https://jument-infertile.fr', nl: 'https://lege-merrie.nl', es: 'https://yegua-infertil.es' };
 
-const MISSING_ON_JP = new Set(['/blog/problem-mare-options', '/blog/uterine-swab-vs-lavage-vs-biopsy-mare', '/blog/repeated-early-embryonic-loss-mares', '/blog/older-mare-not-getting-in-foal', '/blog/fluid-in-mares-uterus-after-breeding', '/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
+const MISSING_ON_JP = new Set(['/activation-culture', '/blog/problem-mare-options', '/blog/uterine-swab-vs-lavage-vs-biopsy-mare', '/blog/repeated-early-embryonic-loss-mares', '/blog/older-mare-not-getting-in-foal', '/blog/fluid-in-mares-uterus-after-breeding', '/blog/mare-absorbed-early-pregnancy-loss-signs-causes', '/blog/mare-not-getting-in-foal-what-to-do', '/blog/positive-activation-culture-what-happens-next', '/blog/ultrasound-empty-mare-what-the-vet-sees', '/blog/uterine-lavage-mare-when-and-why', '/endangered-equine-program', '/equine-endometritis']);
 
 // Schemas that describe content on ONE page only. They used to sit in
 // index.html and were therefore claimed by every prerendered page; now the
@@ -1341,6 +1348,19 @@ async function main() {
 
       // Inject MedicalWebPage schema for clinical guidance pages
       const MEDICAL_PAGE_SCHEMAS = {
+        '/activation-culture': {
+          '@context': 'https://schema.org',
+          '@type': 'MedicalWebPage',
+          'name': 'Activation Culture in Mares: What It Is and When to Use It',
+          'description': 'Activation culture finds dormant Streptococcus zooepidemicus that a normal swab misses: what it is, which mares it is for, the steps and the studies.',
+          'url': `${BASE_URL}/activation-culture`,
+          'inLanguage': 'en',
+          'about': { '@type': 'DefinedTerm', 'name': 'Activation culture', 'alternateName': ['Post-activation culture', 'Activation test'], 'description': 'Activation culture finds dormant uterine infection in problem mares. The vet instils bActivate, the growth medium the method was developed and tested with, and cultures a normal swab 48 hours later, when Streptococcus zooepidemicus grows.', 'inDefinedTermSet': `${BASE_URL}/glossary`, '@id': `${BASE_URL}/glossary#activation-culture` },
+          'mentions': { '@id': `${BASE_URL}/shop#product`, 'name': 'bActivate' },
+          'audience': { '@type': 'MedicalAudience', 'audienceType': 'Veterinarian' },
+          'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
+          'isPartOf': { '@type': 'WebSite', '@id': `${BASE_URL}/#website` },
+        },
         '/equine-endometritis': {
           '@context': 'https://schema.org',
           '@type': 'MedicalWebPage',

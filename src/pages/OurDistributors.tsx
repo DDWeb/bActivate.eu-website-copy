@@ -89,7 +89,7 @@ export default function OurDistributors() {
                     <div className={styles.eyebrow}>bActivate Around The World</div>
                     <h1 className={styles.title}>Our distributors</h1>
                     <div className={styles.introText}>
-                        <p>With a deep understanding of the market and a commitment to excellence, bActivate distributors play a crucial role in expanding the brand’s reach. These distributors serve as the bridge between the company and consumers, ensuring that bActivate’s innovative products reach a wide audience.</p>
+                        <p>Our distributors supply bActivate, the growth medium for activation culture in problem mares, to vets in their country. With a deep understanding of the market and a commitment to excellence, bActivate distributors play a crucial role in expanding the brand’s reach. These distributors serve as the bridge between the company and consumers, ensuring that bActivate’s innovative products reach a wide audience.</p>
                     </div>
                 </div>
             </section>
