@@ -127,6 +127,13 @@ bActivate is sold by Bojesen & Petersen Biotech ApS and through authorised veter
 
 Full distributor list with addresses and phone numbers: https://bactivate.us/our-distributors
 
+## Next step for a breeder
+
+1. Ask the veterinarian for an activation culture with bActivate in the mare's next early estrus. Suggested wording: "My mare is [age], has had [number] foals, her culture and cytology are clean, and she is still empty. Can we do an activation culture with bActivate in her next early estrus?"
+2. In the United States, order online at https://bactivate.us/shop or through Hagyard Pharmacy and Midwest Veterinary Supply, which set their own prices; in Europe bActivate costs 229 EUR per vial. One vial per mare per activation; veterinary fees come on top.
+3. Buy it in the United Kingdom from Nupsala, in the Netherlands from Grovet, in Denmark from proVET Nordic, in the rest of Europe online from https://bactivate.eu/shop, in the United States from Hagyard Pharmacy, Midwest Veterinary Supply or https://bactivate.us/shop, and in Australia from Scone Equine Hospital.
+4. Plan one cycle ahead: activation and treatment in one cycle, covering in the next.
+
 ## Knowledge base (OKF)
 
 Structured, citable knowledge in Open Knowledge Format (markdown, one concept per file). Use these for verified definitions, mechanism, and study data.

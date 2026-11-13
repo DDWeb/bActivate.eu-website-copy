@@ -10,7 +10,7 @@ const testimonials = [
         tag: "Clinical Study"
     },
     {
-        quote: "We used bActivate on 19 of our most persistent problem mares, horses that had been barren for over a year despite every conventional treatment we tried. 89% of them got in foal. What really opened our eyes was how many had a hidden infection.",
+        quote: "We used bActivate on 19 of our most persistent problem mares, horses that had been barren for over a year despite every conventional treatment we tried. Of the 18 we covered, 89% got in foal. What really opened our eyes was how many had a hidden infection.",
         name: "Meta Osborne MVB CertESM MRCVS",
         title: "Kildangan Stud, Godolphin",
         initials: "MO",

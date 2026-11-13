@@ -208,3 +208,19 @@ export const activationCultureFaqItems = [
     answer: "Then a dormant streptococcal infection is unlikely, and the vet looks for another cause, such as fluid after covering, the cervix or the biopsy grade.",
   },
 ];
+
+// /our-distributors (spor 4)
+export const distributorsFaqItems = [
+  {
+    question: "How do I get bActivate for my mare?",
+    answer: "Ask your vet for an activation culture with bActivate in the mare's next early estrus. Your vet orders it from the distributor in your country, or you can order it online from the manufacturer. In the US, Hagyard Pharmacy and Midwest Veterinary Supply set their own prices; one vial is one activation for one mare.",
+  },
+  {
+    question: "Can I buy bActivate without a vet?",
+    answer: "You can order it, but only a veterinarian can instill it and take the cultures. Plan the activation cycle with your vet first.",
+  },
+  {
+    question: "Is there a distributor in my country?",
+    answer: "There are distributors in the UK, the Netherlands, Denmark, the US and Australia. Everywhere else, bActivate is shipped from Copenhagen; write to us if you are unsure.",
+  },
+];

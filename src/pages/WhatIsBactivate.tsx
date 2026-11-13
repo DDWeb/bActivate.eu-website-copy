@@ -4,6 +4,7 @@ import styles from './WhatIsBactivate.module.css';
 import InternalLinks from '@/components/InternalLinks';
 import ProductFacts from '@/components/ProductFacts';
 import FAQSection from '@/components/FAQSection';
+import NextStep from '@/components/NextStep';
 import { whatIsFaqItems } from '@/lib/routeFaqs';
 
 export default function WhatIsBactivate() {
@@ -155,6 +156,8 @@ export default function WhatIsBactivate() {
             </section>
 
             <ProductFacts />
+
+            <NextStep />
 
             <FAQSection items={whatIsFaqItems} />
 
