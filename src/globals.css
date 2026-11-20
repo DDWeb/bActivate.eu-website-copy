@@ -170,3 +170,18 @@ details.faq-item[open] .faq-chevron { transform: rotate(180deg); }
 .tldr { background: #f8f8f8; border-left: 3px solid #901820; padding: 1rem 1.25rem; margin: 1.25rem 0 2rem; font-size: 0.95rem; line-height: 1.7; color: #333; }
 .tldr p { margin: 0; }
 .tldr a { color: #901820; }
+
+/* Long unbroken strings (DOIs and URLs in the source lists) must wrap on narrow
+   screens, otherwise they push blog posts wider than a phone screen. */
+.prose a,
+.prose li,
+.prose p,
+.prose td {
+  overflow-wrap: anywhere;
+}
+
+/* Preflight is off, so Tailwind's .container is content-box: width 100% plus
+   px-4 padding made every container 2rem wider than the screen on phones. */
+.container {
+  box-sizing: border-box;
+}
