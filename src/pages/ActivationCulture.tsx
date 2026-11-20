@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import InternalLinks from '@/components/InternalLinks';
 import FAQSection from '@/components/FAQSection';
 import NextStep from '@/components/NextStep';
+import MortenShort from '@/components/MortenShort';
 import { activationCultureFaqItems } from '@/lib/routeFaqs';
 
 const P = ({ children }: { children: React.ReactNode }) => <p className="text-gray-700 leading-relaxed mb-6">{children}</p>;
@@ -47,6 +48,7 @@ export default function ActivationCulture() {
                 </div>
             </section>
 
+            <MortenShort path="/activation-culture" />
             <NextStep />
 
             <FAQSection items={activationCultureFaqItems} heading="Frequently asked questions about activation culture" subtitle="Short answers; the sources are on this page." />

@@ -524,6 +524,29 @@ function getPodcastSchema() {
   }
 }
 
+// "Problem Mares" shorts (src/lib/mortenShorts.json): one VideoObject on the page that embeds the
+// short, all four on /podcast. Same file renders the visible transcript, so they cannot drift apart.
+function shortVideoObject(v) {
+  const m = Math.floor(v.seconds / 60), sec = v.seconds % 60;
+  return {
+    '@type': 'VideoObject',
+    'name': v.title,
+    'description': v.description,
+    'thumbnailUrl': [`https://i.ytimg.com/vi/${v.id}/oar2.jpg`, `${BASE_URL}/images/yt/${v.id}-short-540.webp`],
+    'uploadDate': v.uploadDate,
+    'duration': `PT${m ? m + 'M' : ''}${sec}S`,
+    'embedUrl': `https://www.youtube.com/embed/${v.id}`,
+    'url': `https://www.youtube.com/shorts/${v.id}`,
+    'inLanguage': 'en',
+    'transcript': v.transcript,
+    'creator': { '@type': 'Person', '@id': `${BASE_URL}/#morten-petersen`, 'name': 'Morten Rønn Petersen' },
+    'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
+  };
+}
+const MORTEN_SHORTS = (() => {
+  try { return JSON.parse(readFileSync(path.resolve(ROOT, 'src/lib/mortenShorts.json'), 'utf8')); } catch { return []; }
+})();
+
 const podcastSchema = getPodcastSchema();
 if (podcastSchema) ROUTE_SCHEMAS['/podcast'] = podcastSchema;
 
@@ -1341,6 +1364,11 @@ async function main() {
       }
       if (routeSchema) {
         html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(routeSchema)}</script>\n</head>`);
+      }
+      const shortsHere = route === '/podcast' ? MORTEN_SHORTS : MORTEN_SHORTS.filter((v) => v.page === route);
+      if (shortsHere.length) {
+        const shortSchema = { '@context': 'https://schema.org', '@graph': shortsHere.map(shortVideoObject) };
+        html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(shortSchema)}</script>\n</head>`);
       }
       const extraSchema = EXTRA_SCHEMAS[route];
       if (extraSchema) {

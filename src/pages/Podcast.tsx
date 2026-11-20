@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import styles from './Podcast.module.css';
 import LiteYouTube from '@/components/LiteYouTube';
+import { MortenShortsGrid } from '@/components/MortenShort';
 import FAQSection from '@/components/FAQSection';
 import { podcastFaq } from '@/lib/podcastTranscript';
 import { podcastTranscriptHtml } from '@/lib/podcastTranscript';
@@ -80,6 +81,14 @@ export default function Podcast() {
                         </div>
                     ))}
                 </div>
+            </section>
+
+            <section className={styles.videoSection}>
+                <h2 className={styles.sectionHeading}>Problem Mares: short answers from Dr. Morten Rønn Petersen</h2>
+                <p style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 2rem', color: '#555' }}>
+                    Four questions breeders ask most often, each answered in under a minute and a half. Every video sits on the page that covers the same question, with the full transcript.
+                </p>
+                <MortenShortsGrid />
             </section>
 
             <section className={styles.videoSection}>
