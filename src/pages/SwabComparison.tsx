@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import InternalLinks from '@/components/InternalLinks';
 import FAQSection from '@/components/FAQSection';
+import MortenShort from '@/components/MortenShort';
 import { swabFaqItems } from '@/lib/routeFaqs';
 
 export default function SwabComparison() {
@@ -71,6 +72,7 @@ export default function SwabComparison() {
                 </div>
             </section>
 
+            <MortenShort path="/swab-culture-vs-bactivate" />
             <FAQSection items={swabFaqItems} heading="Frequently asked questions about swab, biopsy and activation" />
             <InternalLinks links={[
                 { to: '/activation-culture', label: 'Activation culture explained', description: 'What it is, which mares it is for, and the steps' },
