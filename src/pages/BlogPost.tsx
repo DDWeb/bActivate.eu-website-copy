@@ -67,7 +67,7 @@ export default function BlogPost() {
                     <h1 className="text-3xl font-bold mb-2" dangerouslySetInnerHTML={{ __html: post.title }} />
                     <div className="text-gray-500 text-sm mb-8">{`Published ${post.date}${updated ? `, updated ${updated}` : ''}`}</div>
                     <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: post.content }} />
-                    <div className="not-prose" style={{ margin: '2rem -1rem 0' }}><MortenShort path={`/blog/${post.slug}`} /></div>
+                    <div className="not-prose" style={{ marginTop: '2rem' }}><MortenShort path={`/blog/${post.slug}`} /></div>
                     {related.length > 0 && (
                         <section aria-label="Related reading" style={{ marginTop: '3rem', borderTop: '1px solid #e5e7eb', paddingTop: '1.5rem' }}>
                             <p style={{ fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '2px', color: '#901820', marginBottom: '0.75rem' }}>Related reading</p>
