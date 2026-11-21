@@ -2,6 +2,8 @@
 
 > bActivate is a veterinary bacterial growth medium that reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus, making subclinical endometritis detectable by standard culture so a veterinarian can treat it with targeted antibiotics. Evaluated in clinical studies at Hagyard Equine Medical Institute, Kentucky (83% pregnancy rate, 64 problem mares) and at Kildangan Stud / Godolphin, Ireland (89% pregnancy rate, 19 problem mares).
 
+Also written B-Activate or b-Activate in veterinary literature, for example in the Australian Veterinary Prescribing Guidelines (University of Melbourne) and in Canisso et al., International Journal of Molecular Sciences 2020. Not to be confused with unrelated products of the same name outside equine reproduction.
+
 License: RSL-1.0
 Last-Updated: 2026-09-11
 
