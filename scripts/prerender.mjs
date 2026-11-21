@@ -540,7 +540,7 @@ function shortVideoObject(v) {
     'url': `https://www.youtube.com/shorts/${v.id}`,
     'inLanguage': 'en',
     'transcript': v.transcript,
-    'creator': { '@type': 'Person', '@id': `${BASE_URL}/#morten-petersen`, 'name': 'Morten Rønn Petersen' },
+    'creator': { '@type': 'Person', '@id': `${BASE_URL}/#morten-petersen`, 'name': 'Morten Rønn Petersen', 'url': `${BASE_URL}/about-us`, 'sameAs': ['https://orcid.org/0000-0002-5085-7243', 'https://www.wikidata.org/wiki/Q141443820'] },
     'publisher': { '@type': 'Organization', '@id': `${BASE_URL}/#organization`, 'name': 'bActivate', 'url': BASE_URL },
   };
 }
