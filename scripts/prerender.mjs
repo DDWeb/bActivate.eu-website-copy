@@ -305,6 +305,7 @@ const ROUTE_SCHEMAS = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     'sameAs': 'https://www.wikidata.org/wiki/Q142116479',
+    'alternateName': ['B-Activate', 'b-Activate'],
     'name': 'bActivate',
     'description': 'Veterinary diagnostic growth medium for problem mares. Reveals dormant Streptococcus equi subsp. zooepidemicus infections so the veterinarian can diagnose accurately and treat with targeted antibiotics. 83% pregnancy rate in a clinical study at Hagyard Equine Medical Institute.',
     'url': `${BASE_URL}/shop`,

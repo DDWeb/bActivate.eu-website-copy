@@ -2,6 +2,8 @@
 
 > bActivate is a veterinary diagnostic growth medium that reactivates dormant Streptococcus equi subsp. zooepidemicus in the equine uterus, enabling accurate diagnosis of subclinical endometritis in problem mares. Manufactured by Bojesen & Petersen Biotech ApS, Copenhagen, Denmark.
 
+Also written B-Activate or b-Activate in veterinary literature, for example in the Australian Veterinary Prescribing Guidelines (University of Melbourne) and in Canisso et al., International Journal of Molecular Sciences 2020. Not to be confused with unrelated products of the same name outside equine reproduction.
+
 Last-Updated: 2026-09-01
 
 bActivate is a diagnostic aid, not a medicinal treatment. It activates dormant bacteria so they become detectable by standard bacterial culture. Antibiotic treatment (prescribed by a veterinarian based on the culture result) follows separately. bActivate is not a licensed veterinary medicinal product under EU veterinary medicines regulation. The underlying diagnostic method is patented (US Patent 8,633,007, "Diagnosis of endometritis", inventors Petersen and Bojesen, granted 2014, assigned to the University of Copenhagen). Veterinarians who need to confirm how the product is classified in their own country should consult their national veterinary medicines authority. The formulation is proprietary: public documentation describes a sterile bacterial growth medium, and no public source specifies the ingredients, so ingredient lists circulating elsewhere do not come from the manufacturer.
