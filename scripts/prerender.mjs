@@ -880,7 +880,7 @@ const EXTRA_SCHEMAS = {
       "name": "bActivate, Facilitate Mare Pregnancy",
       "description": "bActivate activates dormant Streptococcus zooepidemicus in problem mares, enabling accurate diagnosis and targeted treatment of subclinical endometritis. 83% pregnancy rate at Hagyard Equine Medical Institute.",
       "thumbnailUrl": "https://img.youtube.com/vi/_1QPkyXkFgs/maxresdefault.jpg",
-      "uploadDate": "2023-04-01",
+      "uploadDate": "2026-01-27T02:06:12-08:00",
       "publisher": {
         "@type": "Organization",
         "name": "bActivate",
@@ -894,7 +894,7 @@ const EXTRA_SCHEMAS = {
       "name": "How bActivate Works, The Science Behind Dormant Bacteria",
       "description": "Explains how dormant bacteria in the mare's uterus evade standard culture tests and how bActivate reactivates them within 48 hours for accurate diagnosis and treatment.",
       "thumbnailUrl": "https://img.youtube.com/vi/acpF8se6Co8/maxresdefault.jpg",
-      "uploadDate": "2023-06-01",
+      "uploadDate": "2024-03-05T03:18:07-08:00",
       "publisher": {
         "@type": "Organization",
         "name": "bActivate",
@@ -913,7 +913,7 @@ const EXTRA_SCHEMAS = {
       "name": "When to Use bActivate, Indications for Problem Mares",
       "description": "Covers the clinical indications for bActivate: mares that fail to conceive despite breeding to fertile stallions, mares with recurring uterine fluid, and mares with previous uterine infections.",
       "thumbnailUrl": "https://img.youtube.com/vi/sVS0kj84lMA/maxresdefault.jpg",
-      "uploadDate": "2023-08-01",
+      "uploadDate": "2022-05-10T12:41:54-07:00",
       "publisher": {
         "@type": "Organization",
         "name": "bActivate",
