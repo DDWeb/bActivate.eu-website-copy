@@ -9,16 +9,16 @@ import { podcastTranscriptHtml } from '@/lib/podcastTranscript';
 const TRANSCRIBED_EPISODE_ID = '5t0VvgoV_ls';
 
 const danishVideos = [
-    { id: "Dr2ridUGLus", title: "Vejen til Føl Episode 1, Hvad er en problemhoppe?", date: "2024-03-01" },
-    { id: "mIar9PYcUIA", title: "Vejen til Føl Episode 2, Latent Endometritis og dormante infektioner", date: "2024-03-15" },
-    { id: "EZ-9VSvlbQk", title: "Vejen til Føl Episode 3, Diagnostiske metoder for problemhopper", date: "2024-04-01" },
-    { id: "iyVQPjPY6Vg", title: "Vejen til Føl Episode 4, Behandlingsmetoder og effektivitet", date: "2024-04-15" },
-    { id: "CLzK8RTfUG8", title: "Vejen til Føl Episode 5, Case studies og succesfortællinger", date: "2024-05-01" },
+    { id: "Dr2ridUGLus", title: "Vejen til Føl Episode 1, Hvad er en problemhoppe?", date: "2025-01-21T00:34:11-08:00" },
+    { id: "mIar9PYcUIA", title: "Vejen til Føl Episode 2, Latent Endometritis og dormante infektioner", date: "2025-01-21T01:02:56-08:00" },
+    { id: "EZ-9VSvlbQk", title: "Vejen til Føl Episode 3, Diagnostiske metoder for problemhopper", date: "2025-01-21T01:44:17-08:00" },
+    { id: "iyVQPjPY6Vg", title: "Vejen til Føl Episode 4, Behandlingsmetoder og effektivitet", date: "2025-01-21T02:04:11-08:00" },
+    { id: "CLzK8RTfUG8", title: "Vejen til Føl Episode 5, Case studies og succesfortællinger", date: "2025-01-21T02:00:16-08:00" },
 ];
 
 const englishVideos = [
-    { id: "5t0VvgoV_ls", title: "Breeding Breakthrough: Diagnosing and Treating Latent Infections in Problem Mares", date: "2024-06-01" },
-    { id: "LemEnrcgVVY", title: "Non Pregnant Mare Webinar, Biofilm and Dormant Uterine Infections in Mares", date: "2025-06-10" },
+    { id: "5t0VvgoV_ls", title: "Breeding Breakthrough: Diagnosing and Treating Latent Infections in Problem Mares", date: "2024-12-22T23:38:45-08:00" },
+    { id: "LemEnrcgVVY", title: "Non Pregnant Mare Webinar, Biofilm and Dormant Uterine Infections in Mares", date: "2025-06-16T14:14:56-07:00" },
 ];
 
 export default function Podcast() {
