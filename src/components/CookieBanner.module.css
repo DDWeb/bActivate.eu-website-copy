@@ -1,0 +1,94 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.banner {
+    width: 100%;
+    max-width: 760px;
+    background: #ffffff;
+    border-radius: 14px;
+    border-top: 4px solid #901820;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title {
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 0.35rem;
+}
+
+.text p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #444444;
+}
+
+.link {
+    color: #901820;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.decline,
+.accept {
+    border: 0;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.decline {
+    background: #f0f0f0;
+    color: #333333;
+}
+
+.decline:hover {
+    background: #e4e4e4;
+}
+
+.accept {
+    background: #2d6a4f;
+    color: #ffffff;
+}
+
+.accept:hover {
+    background: #255a42;
+}
+
+@media (max-width: 600px) {
+    .banner {
+        padding: 1.25rem;
+    }
+
+    .buttons {
+        justify-content: stretch;
+    }
+
+    .decline,
+    .accept {
+        flex: 1;
+    }
+}

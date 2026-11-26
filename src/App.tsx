@@ -22,6 +22,7 @@ import EndangeredEquineProgram from './pages/EndangeredEquineProgram';
 import TermsAndConditions from './pages/TermsAndConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import WhatsAppButton from './components/WhatsAppButton';
+import CookieBanner from './components/CookieBanner';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -63,6 +64,7 @@ function App() {
       {faqVariant && <FAQSection variant={faqVariant} />}
       <Footer />
       <WhatsAppButton />
+      <CookieBanner />
     </>
   );
 }
