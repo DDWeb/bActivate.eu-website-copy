@@ -48,8 +48,7 @@ export default function CookieBanner() {
         <div className={styles.text}>
           <strong className={styles.title}>Cookieの使用について</strong>
           <p>
-            当サイトではGoogleアナリティクスを利用して利用状況を測定します。同意いただいた場合のみ、GoogleおよびMetaを通じて
-            他のウェブサイトでbActivateの情報を表示します。選択するまで何も読み込まれません。選択はいつでも変更できます。
+            当サイトの利用状況を測定します。選択するまで何も読み込まれません。選択はいつでも変更できます。
             <Link to="/privacy-policy" className={styles.link}>プライバシーポリシー</Link>。
           </p>
         </div>
