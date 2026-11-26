@@ -2,13 +2,16 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './CookieBanner.module.css';
 
-// "accepted" loads tracking (Google Analytics + Ads + Affiliatly, via window.loadTracking in index.html);
-// "declined" loads none of it. The Google store-rating badge is not gated: it is a trust widget, not tracking.
+// The Google tag loads for everyone with all storage denied (Consent Mode v2, set in index.html).
+// "accepted" grants analytics and advertising storage and loads Affiliatly. "declined" leaves every
+// storage denied, which still lets GA4 model the visit from cookieless pings. The Google store-rating
+// badge is not gated: it is a trust widget, not tracking.
 const CONSENT_KEY = 'cookie_consent';
 
 declare global {
   interface Window {
     loadTracking?: () => void;
+    setConsent?: (accepted: boolean) => void;
   }
 }
 
@@ -22,9 +25,8 @@ export default function CookieBanner() {
     } catch {
       /* private mode: show the banner */
     }
-    if (choice === 'accepted') {
-      window.loadTracking?.();
-    } else if (!choice) {
+    // A stored choice was already applied to Consent Mode by index.html before React ran.
+    if (!choice) {
       const t = setTimeout(() => setVisible(true), 400);
       return () => clearTimeout(t);
     }
@@ -36,7 +38,7 @@ export default function CookieBanner() {
     } catch {
       /* ignore */
     }
-    if (accepted) window.loadTracking?.();
+    window.setConsent?.(accepted);
     setVisible(false);
   };
 
@@ -48,8 +50,9 @@ export default function CookieBanner() {
         <div className={styles.text}>
           <strong className={styles.title}>We use cookies</strong>
           <p>
-            We measure how the site is used. Nothing is loaded until you choose. You can change your
-            choice any time. <Link to="/privacy-policy" className={styles.link}>Privacy policy</Link>.
+            We measure how the site is used. If you accept, we also let Google and Meta show you
+            bActivate information on other websites. Until you choose, nothing is stored on your
+            device. <Link to="/privacy-policy" className={styles.link}>Privacy policy</Link>.
           </p>
         </div>
         <div className={styles.buttons}>

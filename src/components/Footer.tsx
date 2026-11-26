@@ -56,6 +56,7 @@ export default function Footer() {
                     <ul className={styles.linkList}>
                         <li><Link to="/terms-and-conditions" className={styles.link}>Terms and Conditions</Link></li>
                         <li><Link to="/privacy-policy" className={styles.link}>Privacy Policy</Link></li>
+                        <li><button type="button" className={styles.link} style={{ background: 'none', border: 0, padding: 0, font: 'inherit', cursor: 'pointer' }} onClick={() => { try { localStorage.removeItem('cookie_consent'); } catch { /* ignore */ } window.location.reload(); }}>Manage cookies</button></li>
                         <li><Link to="/what-is-bactivate" className={styles.link}>What is bActivate?</Link></li>
                         <li><Link to="/when-to-use" className={styles.link}>When to use?</Link></li>
                         <li><Link to="/how-to-use" className={styles.link}>How to use?</Link></li>

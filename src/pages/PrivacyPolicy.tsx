@@ -52,6 +52,7 @@ export default function PrivacyPolicy() {
                     <li><strong>HubSpot</strong>, webinar sign-up and email marketing platform.</li>
                     <li><strong>Google Analytics</strong>, anonymised website analytics.</li>
                     <li><strong>Google Tag Manager</strong>, tag management.</li>
+                    <li><strong>Meta Pixel</strong> (Meta Platforms Ireland Ltd), advertising measurement and remarketing on Facebook and Instagram.</li>
                     <li><strong>Affiliatly</strong>, affiliate programme tracking.</li>
                 </ul>
                 <p style={{ marginTop: '0.75rem' }}>We do not sell your personal data to third parties.</p>
@@ -71,8 +72,15 @@ export default function PrivacyPolicy() {
             </section>
 
             <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>7. Cookies</h2>
-                <p>This site uses cookies for analytics (Google Analytics) and affiliate tracking (Affiliatly). By continuing to use this site you consent to the use of these cookies. You may disable cookies in your browser settings at any time.</p>
+                <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '0.75rem' }}>7. Cookies and Consent</h2>
+                <p>Nothing is stored on your device until you choose. When the page loads, Google's tag runs with every storage category denied: no cookies and no identifiers are set, and only anonymous signals that carry no identifier are sent, so visits can be counted without recognising you.</p>
+                <p style={{ marginTop: '0.75rem' }}>If you accept, we set:</p>
+                <ul style={{ paddingLeft: '1.5rem', marginTop: '0.5rem' }}>
+                    <li><strong>Google Analytics</strong> cookies, to measure how the site is used.</li>
+                    <li><strong>Meta Pixel</strong> cookies, so Meta can show you bActivate information on Facebook and Instagram, and so we can see whether those visits lead to an order.</li>
+                    <li><strong>Affiliatly</strong> cookies, to credit the partner who referred you.</li>
+                </ul>
+                <p style={{ marginTop: '0.75rem' }}>If you decline, none of those cookies are set. You can change your choice at any time with the "Manage cookies" link at the foot of any page, which brings the banner back.</p>
             </section>
 
             <section>
