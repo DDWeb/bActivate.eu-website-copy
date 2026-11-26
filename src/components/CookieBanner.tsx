@@ -48,9 +48,8 @@ export default function CookieBanner() {
         <div className={styles.text}>
           <strong className={styles.title}>We use cookies</strong>
           <p>
-            We use Google Analytics to measure how the site is used, and, only if you accept, Google and
-            Meta to show you bActivate information on other websites. Nothing is loaded until you choose.
-            You can change your choice any time. <Link to="/privacy-policy" className={styles.link}>Privacy policy</Link>.
+            We measure how the site is used. Nothing is loaded until you choose. You can change your
+            choice any time. <Link to="/privacy-policy" className={styles.link}>Privacy policy</Link>.
           </p>
         </div>
         <div className={styles.buttons}>
