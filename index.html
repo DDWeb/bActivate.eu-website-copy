@@ -147,12 +147,12 @@
   <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-  <!-- Third-party scripts (GTM, Affiliatly, Google Merchant badge).
-       Loaded on the first user interaction, or after 5 s at the latest,
-       so they stay off the main thread during initial render. -->
+  <!-- Third-party scripts.
+       Tracking (GTM + Affiliatly) loads ONLY after the visitor accepts cookies: the
+       CookieBanner calls window.loadTracking(). The Google store-rating badge is a trust
+       widget (not personal tracking), so it loads for everyone, lazily, bottom-left. -->
   <script>
     (function () {
-      var loaded = false;
       function addScript(src, onload) {
         var s = document.createElement('script');
         s.async = true;
@@ -160,23 +160,28 @@
         if (onload) s.addEventListener('load', onload);
         document.head.appendChild(s);
       }
-      function loadThirdParties() {
-        if (loaded) return;
-        loaded = true;
-        // Google Tag Manager
+      // Tracking: gated behind cookie consent (see src/components/CookieBanner.tsx).
+      var trackingLoaded = false;
+      window.loadTracking = function () {
+        if (trackingLoaded) return;
+        trackingLoaded = true;
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
         addScript('https://www.googletagmanager.com/gtm.js?id=GTM-WZLKN7T3');
-        // Affiliatly tracking
         addScript('https://static.affiliatly.com/framework/other.js?affiliatly_code=AF-1074392');
-        // Google Merchant badge
+      };
+      // Google Merchant badge: shown to all, lazily, so it stays off the initial render.
+      var badgeLoaded = false;
+      function loadBadge() {
+        if (badgeLoaded) return;
+        badgeLoaded = true;
         var allowedPaths = ['/', '/shop', '/studies-effect'];
         function tryStartMerchantWidget() {
           try {
             if (typeof merchantwidget !== 'undefined' && allowedPaths.indexOf(window.location.pathname) !== -1) {
               merchantwidget.start({
                 merchant_id: 5744487013,
-                position: merchantwidget.BOTTOM_RIGHT,
+                position: merchantwidget.BOTTOM_LEFT,
                 region: 'DK'
               });
             }
@@ -194,9 +199,9 @@
         });
       }
       ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function (t) {
-        window.addEventListener(t, loadThirdParties, { once: true, passive: true });
+        window.addEventListener(t, loadBadge, { once: true, passive: true });
       });
-      setTimeout(loadThirdParties, 5000);
+      setTimeout(loadBadge, 5000);
     })();
   </script>
   </body>

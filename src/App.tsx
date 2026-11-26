@@ -23,6 +23,7 @@ import EquineEndometritis from './pages/EquineEndometritis';
 import ActivationCulture from './pages/ActivationCulture';
 import EndangeredEquineProgram from './pages/EndangeredEquineProgram';
 import WhatsAppButton from './components/WhatsAppButton';
+import CookieBanner from './components/CookieBanner';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -67,6 +68,7 @@ function App() {
       {faqVariant && <FAQSection variant={faqVariant} />}
       <Footer />
       <WhatsAppButton />
+      <CookieBanner />
     </>
   );
 }
