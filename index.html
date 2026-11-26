@@ -283,9 +283,12 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   <!-- Third-party scripts.
-       Tracking (GTM + Affiliatly) loads ONLY after the visitor accepts cookies: the
-       CookieBanner calls window.loadTracking(). The Google store-rating badge is a trust
-       widget (not personal tracking), so it loads for everyone, lazily, bottom-left. -->
+       Google Consent Mode v2, advanced. The Google tag loads for everyone, but every
+       storage is denied until the visitor chooses, so no cookies and no identifiers are
+       set beforehand. That denied state is what lets GA4 model the visitors who decline.
+       CookieBanner.tsx calls window.setConsent(). Affiliatly sets its own cookie and is
+       not consent-aware, so it stays behind an actual accept. The Google store-rating
+       badge is a trust widget (not personal tracking), so it loads for everyone. -->
   <script>
     (function () {
       function addScript(src, onload) {
@@ -295,16 +298,66 @@
         if (onload) s.addEventListener('load', onload);
         document.head.appendChild(s);
       }
-      // Tracking: gated behind cookie consent (see src/components/CookieBanner.tsx).
-      var trackingLoaded = false;
-      window.loadTracking = function () {
-        if (trackingLoaded) return;
-        trackingLoaded = true;
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-        addScript('https://www.googletagmanager.com/gtm.js?id=GTM-WZLKN7T3');
+      // Consent Mode v2, advanced. CONSENT_KEY must stay in step with CookieBanner.tsx.
+      var CONSENT_KEY = 'cookie_consent';
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      var stored = null;
+      try { stored = localStorage.getItem(CONSENT_KEY); } catch (e) { /* private mode */ }
+      var accepted = stored === 'accepted';
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        functionality_storage: 'granted',
+        security_storage: 'granted'
+      });
+      if (accepted) {
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+          analytics_storage: 'granted'
+        });
+      }
+      // Meta's pixel ignores Google Consent Mode, so it gets its own gate. The stub is
+      // created here and consent revoked before GTM can fire the pixel, which stops the
+      // _fbp cookie being set. Verified: without this, _fbp appears before any choice.
+      (function (f) {
+        if (f.fbq) return;
+        var n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+        if (!f._fbq) f._fbq = n;
+        n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+      })(window);
+      window.fbq('consent', accepted ? 'grant' : 'revoke');
+      // The tag loads for everyone. Under the denied default above it sends cookieless
+      // pings only, and those are what GA4 models the declining visitors from.
+      window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      addScript('https://www.googletagmanager.com/gtm.js?id=GTM-WZLKN7T3');
+      // Affiliatly is not consent-aware and sets its own cookie, so it needs a real accept.
+      var affiliatlyLoaded = false;
+      function loadAffiliatly() {
+        if (affiliatlyLoaded) return;
+        affiliatlyLoaded = true;
         addScript('https://static.affiliatly.com/framework/other.js?affiliatly_code=AF-1074392');
+      }
+      if (accepted) loadAffiliatly();
+      // Called by the cookie banner the moment the visitor chooses.
+      window.setConsent = function (isAccepted) {
+        gtag('consent', 'update', {
+          ad_storage: isAccepted ? 'granted' : 'denied',
+          ad_user_data: isAccepted ? 'granted' : 'denied',
+          ad_personalization: isAccepted ? 'granted' : 'denied',
+          analytics_storage: isAccepted ? 'granted' : 'denied'
+        });
+        // Makes the accept rate a measurable event in GA4.
+        window.dataLayer.push({ event: 'consent_choice', consent_choice: isAccepted ? 'accepted' : 'declined' });
+        if (window.fbq) window.fbq('consent', isAccepted ? 'grant' : 'revoke');
+        if (isAccepted) loadAffiliatly();
       };
+      // Kept so a cached copy of the previous bundle keeps working.
+      window.loadTracking = function () { window.setConsent(true); };
       // Google Merchant badge: shown to all, lazily, so it stays off the initial render.
       var badgeLoaded = false;
       function loadBadge() {

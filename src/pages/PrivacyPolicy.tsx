@@ -141,6 +141,12 @@ export default function PrivacyPolicy() {
                                 <td style={td}>動画配信サービスの提供および同社サービスの改善のため</td>
                             </tr>
                             <tr>
+                                <td style={td}>Meta ピクセル<br />（Meta Platforms Ireland Ltd）</td>
+                                <td style={td}>IPアドレス、閲覧ページのURL、クッキー識別子、ブラウザ・端末に関する情報</td>
+                                <td style={td}>Facebook・Instagram での広告配信、および広告経由のご注文の計測のため</td>
+                                <td style={td}>広告配信サービスの提供および同社サービスの改善のため</td>
+                            </tr>
+                            <tr>
                                 <td style={td}>Affiliatly<br />（アフィリエイト管理サービス）</td>
                                 <td style={td}>紹介元を識別するためのクッキー識別子、参照元、閲覧ページのURL</td>
                                 <td style={td}>アフィリエイト経由のご注文を把握し、紹介者に報酬をお支払いするため</td>

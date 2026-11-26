@@ -54,6 +54,7 @@ export default function Footer() {
                     <ul className={styles.linkList}>
                         <li><Link to="/terms-and-conditions" className={styles.link}>利用規約</Link></li>
                         <li><Link to="/privacy-policy" className={styles.link}>プライバシーポリシー</Link></li>
+                        <li><button type="button" className={styles.link} style={{ background: 'none', border: 0, padding: 0, font: 'inherit', cursor: 'pointer' }} onClick={() => { try { localStorage.removeItem('cookie_consent'); } catch { /* ignore */ } window.location.reload(); }}>Cookieの設定</button></li>
                         <li><Link to="/tokushoho" className={styles.link}>特定商取引法に基づく表記</Link></li>
                         <li><Link to="/what-is-bactivate" className={styles.link}>bActivateとは？</Link></li>
                         <li><Link to="/when-to-use" className={styles.link}>いつ使うか？</Link></li>
